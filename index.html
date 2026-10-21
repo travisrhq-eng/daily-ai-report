@@ -845,7 +845,8 @@
 
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function () {
-      navigator.serviceWorker.register('sw.js').catch(function () {});
+      navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (reg) { reg.update(); document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') reg.update(); }); }).catch(function () {});
+      var reloaded = false; navigator.serviceWorker.addEventListener('controllerchange', function () { if (reloaded) return; reloaded = true; location.reload(); });
     });
   }
 })();
