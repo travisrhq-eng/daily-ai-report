@@ -1,0 +1,278 @@
+{
+ "date": "2026-10-21",
+ "updated_at": "2026-10-21T12:40:00+08:00",
+ "sections": {
+  "ai_labs": [
+   {
+    "lab": "OpenAI",
+    "title": "OpenAI 收购生物医药协作平台 Orchestra Bio",
+    "summary": "OpenAI 宣布收购 Orchestra Bio，这是一个帮助药企协调药物研发流程的平台。双方将基于 OpenAI 面向生命科学研究的 Rosalind 模型和工具，简化研发运营，加快新疗法走向患者。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/OpenAI/status/2112607347688583586",
+    "source_name": "X @OpenAI"
+   },
+   {
+    "lab": "OpenAI",
+    "title": "API 支持 12 小时提示缓存",
+    "summary": "OpenAI 开发者账号宣布，API 现在可以选择 12 小时的提示缓存。长期运行的智能体可以在一天内反复复用共享的指令、工具和上下文，即使请求间隔数小时，也能按更低的缓存输入价格计费。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+    "source_name": "X @OpenAIDevs"
+   },
+   {
+    "lab": "OpenAI",
+    "title": "ChatGPT 推出团队定时任务",
+    "summary": "ChatGPT 新增团队任务（team tasks），可自动执行重复的工程工作，例如每周五汇总已上线和受阻的事项。团队成员可以审阅结果，并修改下一次更新要覆盖的内容。",
+    "date": "2026-10-20",
+    "source_url": "https://x.com/OpenAIDevs/status/2112565702552940794",
+    "source_name": "X @OpenAIDevs"
+   },
+   {
+    "lab": "OpenAI",
+    "title": "ChatGPT「锁定聊天」全面推送",
+    "summary": "据 TestingCatalog 报道，ChatGPT 的 Locked Chats 正在向免费、Go、Plus、Pro、Business、Enterprise 和 Edu 各档推送。用户可以把对话移入受保护空间，网页和桌面端用 PIN 解锁，移动端支持 PIN、Face ID、Touch ID 或设备解锁。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/testingcatalog/status/2112605106642600283",
+    "source_name": "X @testingcatalog"
+   },
+   {
+    "lab": "OpenAI",
+    "title": "新模型进步：可构建和迁移 COBOL、Fortran 等老语言软件",
+    "summary": "OpenAI 表示，其最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上的软件构建和迁移能力明显增强。这些语言支撑着银行、政府和企业的大量关键系统。",
+    "date": "2026-10-20",
+    "source_url": "https://x.com/OpenAI/status/2112310345863930168",
+    "source_name": "X @OpenAI"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude 参与设计抗蝎毒蛋白结合物",
+    "summary": "Anthropic 科学博客发布新研究：用 Claude 设计能结合蝎子神经毒素的蛋白结合物。全球每年约 120 万人被蝎子蛰伤，抗蛇（蝎）毒血清昂贵且常短缺，这是 Claude 朝新疗法迈出的早期一步。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/AnthropicAI/status/2112579251555721573",
+    "source_name": "X @AnthropicAI"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "社区热议 Claude Fable 5.5，但官方尚未发布",
+    "summary": "X 上大量用户根据 Azure 目录条目、代码变更等线索期待 Anthropic 的 Claude Fable 5.5 于 10 月 20 日发布，但截至 10 月 21 日仍未上线，官方没有公布时间和价格。此条为传闻汇总，非官方消息。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/i/trending/2112684369697743264",
+    "source_name": "X 新闻（传闻）"
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini 4 Argon 演示：3D 元素周期表",
+    "summary": "Google DeepMind 展示 Gemini 4 Argon 在 Antigravity 中做出的 3D 元素周期表，与 Tom Lehrer 的歌曲《The Elements》同步，带有电子轨道动画、原子数据和光谱。X 上开发者同时在讨论它的编程能力与使用配额偏紧的问题。",
+    "date": "2026-10-20",
+    "source_url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
+    "source_name": "X @GoogleDeepMind"
+   },
+   {
+    "lab": "xAI",
+    "title": "X 时间线换上新的 AI 排序模型",
+    "summary": "马斯克称 X 的时间线推荐有两项重要更新：一是新的 AI 排序模型，能更准确预测用户可能停留的时长；二是检索模型改为专门挑出用户会完整读完的帖子。他表示用户活跃时长正在创新高。",
+    "date": "2026-10-20",
+    "source_url": "https://x.com/elonmusk/status/2112373713937084809",
+    "source_name": "X @elonmusk"
+   },
+   {
+    "lab": "xAI",
+    "title": "Grok 迎来大更新",
+    "summary": "马斯克发帖称 Grok 有一次「大更新」，并附上视频说明。帖子本身没有列出具体功能，详情需看原帖附件。",
+    "date": "2026-10-21",
+    "source_url": "https://x.com/elonmusk/status/2112589019380875714",
+    "source_name": "X @elonmusk"
+   }
+  ],
+  "x_top": [
+   {
+    "rank": 1,
+    "author": "@elonmusk",
+    "author_name": "Elon Musk",
+    "summary": "马斯克称 Terafab（他推动的超大芯片工厂）的产出价值，单栋楼就能排进全球国家 GDP 前 20，反映出他对自建 AI 芯片产能的押注。",
+    "url": "https://x.com/elonmusk/status/2112590295334277253",
+    "created_at": "2026-10-20T17:02:31Z",
+    "likes": 29442,
+    "replies": 1061,
+    "reposts": 2584,
+    "quotes": 209,
+    "score": 33296
+   },
+   {
+    "rank": 2,
+    "author": "@elonmusk",
+    "author_name": "Elon Musk",
+    "summary": "X 时间线推荐换上新的 AI 排序模型，更准确预测停留时长，并优先推送用户会读完的帖子；马斯克说用户活跃时长正在指数增长。",
+    "url": "https://x.com/elonmusk/status/2112373713937084809",
+    "created_at": "2026-10-20T02:41:54Z",
+    "likes": 18562,
+    "replies": 1823,
+    "reposts": 1876,
+    "quotes": 667,
+    "score": 22928
+   },
+   {
+    "rank": 3,
+    "author": "@elonmusk",
+    "author_name": "Elon Musk",
+    "summary": "马斯克认为「缺电」只是简化说法：要极快地上线海量算力，每个环节都很难；时间如果多一倍会容易得多，但没有这个时间。",
+    "url": "https://x.com/elonmusk/status/2112603906723487744",
+    "created_at": "2026-10-20T17:56:36Z",
+    "likes": 9175,
+    "replies": 1402,
+    "reposts": 1126,
+    "quotes": 154,
+    "score": 11857
+   },
+   {
+    "rank": 4,
+    "author": "@OpenAI",
+    "author_name": "OpenAI",
+    "summary": "OpenAI 宣布最新模型在 COBOL、Fortran、Visual Basic 等老旧语言上的构建和迁移能力增强，这些语言仍支撑银行和政府系统。",
+    "url": "https://x.com/OpenAI/status/2112310345863930168",
+    "created_at": "2026-10-19T22:30:05Z",
+    "likes": 9133,
+    "replies": 789,
+    "reposts": 652,
+    "quotes": 524,
+    "score": 11098
+   },
+   {
+    "rank": 5,
+    "author": "@elonmusk",
+    "author_name": "Elon Musk",
+    "summary": "马斯克宣布 Grok 大更新，附视频，文字未列出具体功能。",
+    "url": "https://x.com/elonmusk/status/2112589019380875714",
+    "created_at": "2026-10-20T16:57:26Z",
+    "likes": 7196,
+    "replies": 606,
+    "reposts": 684,
+    "quotes": 55,
+    "score": 8541
+   },
+   {
+    "rank": 6,
+    "author": "@OpenAI",
+    "author_name": "OpenAI",
+    "summary": "OpenAI 收购药物研发协作平台 Orchestra Bio，结合 Rosalind 生命科学模型加速新药研发。",
+    "url": "https://x.com/OpenAI/status/2112607347688583586",
+    "created_at": "2026-10-20T18:10:16Z",
+    "likes": 5780,
+    "replies": 365,
+    "reposts": 509,
+    "quotes": 294,
+    "score": 6948
+   },
+   {
+    "rank": 7,
+    "author": "@AnthropicAI",
+    "author_name": "Anthropic",
+    "summary": "Anthropic 介绍用 Claude 设计抗蝎毒神经毒素的蛋白结合物，是寻找廉价新疗法的早期尝试。",
+    "url": "https://x.com/AnthropicAI/status/2112579251555721573",
+    "created_at": "2026-10-20T16:18:38Z",
+    "likes": 5679,
+    "replies": 385,
+    "reposts": 441,
+    "quotes": 281,
+    "score": 6786
+   },
+   {
+    "rank": 8,
+    "author": "@sama",
+    "author_name": "Sam Altman",
+    "summary": "Sam Altman 感谢一位名叫 Aleksander 的人接受邀请，负责 OpenAI 面对超级智能时的安全与安保挑战，称其能力非常适合这份工作（具体职位见原帖附图）。",
+    "url": "https://x.com/sama/status/2112652656602923366",
+    "created_at": "2026-10-20T21:10:19Z",
+    "likes": 4156,
+    "replies": 344,
+    "reposts": 140,
+    "quotes": 31,
+    "score": 4671
+   },
+   {
+    "rank": 9,
+    "author": "@GoogleDeepMind",
+    "author_name": "Google DeepMind",
+    "summary": "Gemini 4 Argon 在 Antigravity 中做出与歌曲同步的 3D 元素周期表，展示其编程与动画能力。",
+    "url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
+    "created_at": "2026-10-20T14:53:53Z",
+    "likes": 2833,
+    "replies": 219,
+    "reposts": 311,
+    "quotes": 86,
+    "score": 3449
+   },
+   {
+    "rank": 10,
+    "author": "@OpenAIDevs",
+    "author_name": "OpenAI Developers",
+    "summary": "OpenAI API 新增 12 小时提示缓存，长期运行的智能体可更便宜地复用上下文。",
+    "url": "https://x.com/OpenAIDevs/status/2112603916076781778",
+    "created_at": "2026-10-20T17:56:38Z",
+    "likes": 2702,
+    "replies": 208,
+    "reposts": 135,
+    "quotes": 112,
+    "score": 3157
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "Solstice（网络 v29）升级已于 10 月 19 日完成",
+    "summary": "Filecoin 主网在 2026-10-19 12:59:30 UTC（北京时间 20:59）激活 Solstice 升级。官方状态页已标记维护完成。这是强制升级，节点和存储提供商都需要更新。",
+    "date": "2026-10-19",
+    "source_url": "https://status.filecoin.io/",
+    "source_name": "Filecoin Status",
+    "type": "web"
+   },
+   {
+    "title": "Messari 解读：Filecoin 转向需求驱动的服务经济",
+    "summary": "Solstice 取消 Fil+ 人工审核，新扇区默认获得 10 倍有效算力；区块奖励中分给能带来付费客户的服务的比例将逐步提高，矿工份额约九个季度内从 95% 降到 50%，未赚取部分销毁。PL 和基金会的归属期于 10 月 15 日结束，此后新增发行只剩区块奖励，约每年 2100 万 FIL。",
+    "date": "2026-10-19",
+    "source_url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy",
+    "source_name": "Messari",
+    "type": "web"
+   },
+   {
+    "title": "FIP-0118：废除 Fil+，通过区块奖励分成资助服务",
+    "summary": "Solstice 的核心提案 FIP-0118 状态为已接受，内容是废除 Fil+ 并把一部分区块奖励分给带来付费需求的服务。",
+    "date": "2026-10",
+    "source_url": "https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0118.md",
+    "source_name": "GitHub FIPs",
+    "type": "web"
+   },
+   {
+    "title": "数据持有证明（PDP）上线主网",
+    "summary": "Filecoin 的 Proof of Data Presence 系统 10 月 13 日在主网上线，用来验证存储完整性，回应外界对数据安全和存储商可靠性的担忧。",
+    "date": "2026-10-13",
+    "source_url": "https://www.tokenpost.com/news/technology/31477",
+    "source_name": "TokenPost",
+    "type": "web"
+   },
+   {
+    "title": "X 热议：归属期结束，新增供应下降约 75%",
+    "summary": "X 上互动最高的 Filecoin 帖子称，10 月 15 日六年创始归属计划结束，年度总通胀从约 8900 万 FIL 降到约 2100 万，团队测算每日新增流通 FIL 下降约 75%。",
+    "date": "2026-10-17",
+    "source_url": "https://x.com/Lucky_m_X/status/2111405993674326027",
+    "source_name": "X @Lucky_m_X",
+    "type": "x"
+   },
+   {
+    "title": "X 观点：解锁不等于抛售",
+    "summary": "有分析指出，归属期结束只代表代币解锁，并不意味着这些 FIL 会被卖出，持有方会卖多少目前未知。",
+    "date": "2026-10-14",
+    "source_url": "https://x.com/BitcoinStrat/status/2110400406346215498",
+    "source_name": "X @BitcoinStrat",
+    "type": "x"
+   },
+   {
+    "title": "X 行情：升级前「卖消息」",
+    "summary": "有用户指出 FIL 在 Solstice 上线前一天从周六高点 1.2236 跌约 13% 到 1.065，市场选择了升级前先卖出。仅为个人观点，不构成投资建议。",
+    "date": "2026-10-18",
+    "source_url": "https://x.com/STEVE8lily/status/2111675236282192122",
+    "source_name": "X @STEVE8lily",
+    "type": "x"
+   }
+  ]
+ }
+}

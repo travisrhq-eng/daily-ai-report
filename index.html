@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AI 日报</title>
+<meta name="theme-color" content="#07080A">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="AI 日报">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+  :root {
+    --bg: #07080A;
+    --t-head: rgba(255,255,255,0.97);
+    --t-body: rgba(255,255,255,0.90);
+    --t-sub: rgba(255,255,255,0.62);
+    --t-meta: rgba(255,255,255,0.56);
+    --t-dim: rgba(255,255,255,0.22);
+    --line: rgba(255,255,255,0.12);
+    --accent: #2962FF;
+    --pad: 24px;
+    --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+    --sl: env(safe-area-inset-left, 0px);
+    --sr: env(safe-area-inset-right, 0px);
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--t-body);
+    font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Source Han Sans SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    padding-bottom: calc(48px + env(safe-area-inset-bottom, 0px));
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: calc(var(--pad) + var(--sl));
+    padding-right: calc(var(--pad) + var(--sr));
+  }
+  header { padding-top: calc(40px + env(safe-area-inset-top, 0px)); padding-bottom: 24px; }
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: var(--t-head);
+  }
+  .meta-row {
+    margin-top: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px 20px;
+  }
+  .updated {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--t-sub);
+    font-variant-numeric: tabular-nums;
+  }
+  .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    flex: none;
+  }
+  .label {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--t-meta);
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .date-pick { display: inline-flex; align-items: center; gap: 10px; position: relative; }
+  .date-pick::after {
+    content: ""; position: absolute; right: 3px; top: 50%;
+    width: 5px; height: 5px; margin-top: -5px;
+    border-right: 1px solid rgba(255,255,255,0.56); border-bottom: 1px solid rgba(255,255,255,0.56);
+    transform: rotate(45deg); pointer-events: none;
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    color: var(--t-body);
+    border: 0;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    font: inherit;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    padding: 4px 18px 4px 0;
+    cursor: pointer;
+  }
+  select:focus { outline: none; border-bottom-color: rgba(255,255,255,0.56); }
+  select:disabled { color: var(--t-dim); cursor: default; }
+  option { background: var(--bg); color: var(--t-body); }
+
+  nav.tabs {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    padding-top: env(safe-area-inset-top, 0px);
+    border-bottom: 1px solid var(--line);
+  }
+  .tabs .wrap { display: flex; gap: 28px; overflow-x: auto; scrollbar-width: none; }
+  .tabs .wrap::-webkit-scrollbar { display: none; }
+  .tab {
+    appearance: none;
+    background: none;
+    border: 0;
+    margin: 0;
+    padding: 16px 0 14px;
+    font: inherit;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--t-meta);
+    white-space: nowrap;
+    cursor: pointer;
+    position: relative;
+    transition: color 500ms var(--ease);
+  }
+  .tab::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: -1px;
+    height: 1px;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 500ms var(--ease);
+  }
+  .tab[aria-selected="true"] { color: var(--t-head); }
+  .tab[aria-selected="true"]::after { opacity: 1; }
+  .tab:focus-visible { outline: 1px solid var(--line); outline-offset: 4px; }
+
+  main { padding-top: 8px; }
+  .list { list-style: none; margin: 0; padding: 0; }
+  .card {
+    padding: 32px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .card:last-child { border-bottom: 0; }
+  .card-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 16px;
+    margin-bottom: 10px;
+  }
+  .card h2 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--t-head);
+  }
+  .card h2 a { color: inherit; text-decoration: none; }
+  .card h2 a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+  .summary { margin: 0; color: var(--t-body); word-break: break-word; }
+  .src {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 13px;
+    color: var(--t-sub);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    word-break: break-all;
+  }
+  .src:hover { color: var(--t-head); }
+  .author { font-size: 15px; font-weight: 700; color: var(--t-head); }
+  .author a { color: inherit; text-decoration: none; }
+  .handle { font-size: 13px; color: var(--t-meta); }
+  .rank { font-variant-numeric: tabular-nums; }
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 20px;
+    margin-top: 16px;
+    font-variant-numeric: tabular-nums;
+  }
+  .metrics span b { font-weight: 400; color: var(--t-sub); margin-left: 6px; }
+  .num { font-variant-numeric: tabular-nums; }
+  .empty, .error {
+    padding: 64px 0;
+    color: var(--t-meta);
+    font-size: 15px;
+  }
+
+  .fade {
+    opacity: 0;
+    transform: translateY(8px);
+    animation: rise 500ms var(--ease) forwards;
+  }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) {
+    .fade { animation: none; opacity: 1; transform: none; }
+    .tab, .tab::after { transition: none; }
+  }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>AI 日报</h1>
+  <div class="meta-row">
+    <div class="updated"><span class="dot" aria-hidden="true"></span><span id="updated">加载中…</span></div>
+    <label class="date-pick"><span class="label">日期</span><select id="date" aria-label="选择日期" disabled></select></label>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="栏目">
+  <div class="wrap" role="tablist">
+    <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态</button>
+    <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热帖 Top10</button>
+    <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin</button>
+  </div>
+</nav>
+
+<main class="wrap" id="main" role="tabpanel" aria-live="polite"></main>
+
+<script>
+(function () {
+  'use strict';
+
+  var state = { data: null, tab: 'ai_labs', latestDate: null, reqId: 0 };
+  var $main = document.getElementById('main');
+  var $updated = document.getElementById('updated');
+  var $date = document.getElementById('date');
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+
+  var EMPTY = {
+    ai_labs: '今日暂无大厂动态',
+    x_top: '今日暂无 X 热帖',
+    filecoin: '今日暂无 Filecoin 相关动态'
+  };
+
+  // ---- helpers (no innerHTML with data; everything via textContent) ----
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null && text !== '') n.textContent = String(text);
+    return n;
+  }
+  function safeUrl(u) {
+    if (typeof u !== 'string') return null;
+    try {
+      var p = new URL(u, location.href);
+      return (p.protocol === 'https:' || p.protocol === 'http:') ? p.href : null;
+    } catch (e) { return null; }
+  }
+  function link(href, cls, text) {
+    var url = safeUrl(href);
+    if (!url) return el('span', cls, text);
+    var a = el('a', cls, text);
+    a.href = url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    return a;
+  }
+  function str(v) { return v == null ? '' : String(v); }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function beijing(iso) {
+    var d = new Date(iso);
+    if (!iso || isNaN(d.getTime())) return null;
+    var b = new Date(d.getTime() + 8 * 3600 * 1000);
+    return b.getUTCFullYear() + '-' + pad(b.getUTCMonth() + 1) + '-' + pad(b.getUTCDate()) +
+      ' ' + pad(b.getUTCHours()) + ':' + pad(b.getUTCMinutes());
+  }
+  function fmtNum(v) {
+    var n = Number(v);
+    if (!isFinite(n)) return '0';
+    if (n >= 10000) return (Math.round(n / 1000) / 10) + '万';
+    return String(Math.round(n * 10) / 10);
+  }
+  function arr(v) { return Array.isArray(v) ? v : []; }
+
+  // ---- rendering ----
+  function cardShell(i) {
+    var li = el('li', 'card fade');
+    li.style.animationDelay = Math.min(i, 10) * 50 + 'ms';
+    return li;
+  }
+
+  function renderLab(item, i) {
+    var li = cardShell(i);
+    var top = el('div', 'card-top');
+    if (item.lab) top.appendChild(el('span', 'label', item.lab));
+    if (item.date) top.appendChild(el('span', 'label num', item.date));
+    li.appendChild(top);
+    var h = el('h2');
+    h.appendChild(link(item.source_url, '', str(item.title) || '(无标题)'));
+    li.appendChild(h);
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    if (safeUrl(item.source_url)) li.appendChild(link(item.source_url, 'src', str(item.source_name) || '查看原文'));
+    return li;
+  }
+
+  function renderX(item, i) {
+    var li = cardShell(i);
+    var top = el('div', 'card-top');
+    top.appendChild(el('span', 'label rank', 'No. ' + pad(Number(item.rank) || i + 1)));
+    var t = beijing(item.created_at);
+    if (t) top.appendChild(el('span', 'label num', t));
+    li.appendChild(top);
+
+    var who = el('div');
+    var handle = str(item.author).replace(/^@/, '');
+    var name = str(item.author_name) || (handle ? '@' + handle : '');
+    if (name) {
+      var a = el('span', 'author');
+      a.appendChild(handle ? link('https://x.com/' + encodeURIComponent(handle), '', name) : document.createTextNode(name));
+      who.appendChild(a);
+    }
+    if (handle && item.author_name) {
+      who.appendChild(document.createTextNode(' '));
+      who.appendChild(el('span', 'handle', '@' + handle));
+    }
+    who.style.marginBottom = '8px';
+    li.appendChild(who);
+
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+
+    var m = el('div', 'metrics');
+    [['赞', item.likes], ['评', item.replies], ['转', item.reposts], ['引', item.quotes], ['热度', item.score]]
+      .forEach(function (p) {
+        var s = el('span', 'label', p[0]);
+        s.appendChild(el('b', '', fmtNum(p[1])));
+        m.appendChild(s);
+      });
+    li.appendChild(m);
+    if (safeUrl(item.url)) li.appendChild(link(item.url, 'src', '查看原帖'));
+    return li;
+  }
+
+  function renderFil(item, i) {
+    var li = cardShell(i);
+    var top = el('div', 'card-top');
+    top.appendChild(el('span', 'label', item.type === 'x' ? 'X' : 'WEB'));
+    if (item.date) top.appendChild(el('span', 'label num', item.date));
+    li.appendChild(top);
+    var h = el('h2');
+    h.appendChild(link(item.source_url, '', str(item.title) || '(无标题)'));
+    li.appendChild(h);
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    if (safeUrl(item.source_url)) li.appendChild(link(item.source_url, 'src', str(item.source_name) || '查看原文'));
+    return li;
+  }
+
+  var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil };
+
+  function message(cls, text) {
+    $main.replaceChildren(el('div', cls + ' fade', text));
+  }
+
+  function render() {
+    if (!state.data) return;
+    var secs = state.data.sections || {};
+    var items = arr(secs[state.tab]);
+    if (state.tab === 'x_top') {
+      items = items.slice().sort(function (a, b) { return (Number(a.rank) || 99) - (Number(b.rank) || 99); });
+    }
+    if (!items.length) { message('empty', EMPTY[state.tab]); return; }
+    var ul = el('ul', 'list');
+    items.forEach(function (it, i) {
+      if (it && typeof it === 'object') ul.appendChild(RENDER[state.tab](it, i));
+    });
+    $main.replaceChildren(ul);
+  }
+
+  function setData(d) {
+    state.data = d || {};
+    var t = beijing(state.data.updated_at);
+    $updated.textContent = t ? '更新于 ' + t + ' (北京时间)' : '更新时间未知';
+    if (state.data.date && $date.value !== state.data.date) {
+      ensureOption(state.data.date);
+      $date.value = state.data.date;
+    }
+    render();
+  }
+
+  function ensureOption(d) {
+    for (var i = 0; i < $date.options.length; i++) if ($date.options[i].value === d) return;
+    var o = el('option', '', d); o.value = d;
+    $date.insertBefore(o, $date.firstChild);
+    $date.disabled = false;
+  }
+
+  function getJSON(url, opts) {
+    return fetch(url, opts).then(function (r) {
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    });
+  }
+
+  function loadDate(d) {
+    var id = ++state.reqId;
+    message('empty', '加载中…');
+    var url = 'data/' + encodeURIComponent(d) + '.json';
+    getJSON(url, d === state.latestDate ? { cache: 'no-cache' } : undefined)
+      .then(function (data) { if (id === state.reqId) setData(data); })
+      .catch(function () { if (id === state.reqId) message('error', '无法加载 ' + d + ' 的日报'); });
+  }
+
+  // ---- events ----
+  tabs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      if (state.tab === b.dataset.tab) return;
+      state.tab = b.dataset.tab;
+      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      render();
+    });
+  });
+  $date.addEventListener('change', function () { if ($date.value) loadDate($date.value); });
+
+  // ---- boot ----
+  var idxP = getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
+    var dates = arr(idx && idx.dates).filter(function (x) { return typeof x === 'string'; });
+    var frag = document.createDocumentFragment();
+    dates.forEach(function (d) { var o = el('option', '', d); o.value = d; frag.appendChild(o); });
+    $date.replaceChildren(frag);
+    $date.disabled = dates.length === 0;
+    state.latestDate = dates[0] || null;
+    return dates;
+  }).catch(function () { return []; });
+
+  var latestId = ++state.reqId;
+  message('empty', '加载中…');
+  getJSON('data/latest.json', { cache: 'no-cache' }).then(function (data) {
+    return idxP.then(function () {
+      if (latestId !== state.reqId) return;
+      if (data && data.date) state.latestDate = state.latestDate || data.date;
+      setData(data);
+    });
+  }).catch(function () {
+    idxP.then(function (dates) {
+      if (latestId !== state.reqId) return;
+      if (dates.length) { loadDate(dates[0]); }
+      else { $updated.textContent = '暂无数据'; message('error', '无法加载日报，请稍后重试'); }
+    });
+  });
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function () {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
