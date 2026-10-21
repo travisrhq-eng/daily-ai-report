@@ -293,7 +293,10 @@
   .blk h3 { margin: 0 0 8px; font-size: 12px; letter-spacing: .08em; color: var(--t-meta); font-weight: 500; }
   .blk ul { margin: 0; padding: 0; list-style: none; }
   .blk li { font-size: 14px; color: var(--t-sub); line-height: 1.6; margin-bottom: 8px; }
-  .blk li .r { color: var(--t-meta); }
+  .blk li .r { display:block; font-size:12px; color: var(--t-meta); margin-top:2px; }
+  .blk li a { color: var(--t-sub); text-decoration: none; }
+  .blk summary { cursor:pointer; list-style:none; font-size:12px; letter-spacing:.08em; color:var(--t-meta); font-weight:500; margin:0 0 8px; }
+  .blk summary::-webkit-details-marker { display:none; }
   .lab-h { margin: 26px 0 4px; font-size: 12px; letter-spacing: .12em; color: var(--t-meta); font-weight: 500; text-transform: uppercase; }
   .lab-h:first-child { margin-top: 0; }
   .times { margin-top: 10px; font-size: 12px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
@@ -445,13 +448,13 @@
   }
   function pendBlock(list, title) {
     list = arr(list); if (!list.length) return null;
-    var b = el('section', 'blk fade'); b.appendChild(el('h3', '', title || '待验证'));
+    var b = el('details', 'blk fade'); b.appendChild(el('summary', '', (title || '待验证') + '（' + list.length + ' 条，点开查看）'));
     var u = el('ul');
     list.forEach(function (it) {
       var li = el('li');
       li.appendChild(link(it.source_url || it.url, '', str(it.title || it.summary).slice(0, 60)));
       var r = [it.pending_reason, it.published_at ? '发布 ' + it.published_at : '', it.grade].filter(Boolean).join(' · ');
-      if (r) li.appendChild(el('span', 'r', ' — ' + r));
+      if (r) li.appendChild(el('span', 'r', r));
       u.appendChild(li);
     });
     b.appendChild(u); return b;
