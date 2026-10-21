@@ -1,6 +1,6 @@
 {
  "date": "2026-10-21",
- "updated_at": "2026-10-21T12:40:00+08:00",
+ "updated_at": "2026-10-21T12:44:21+08:00",
  "sections": {
   "ai_labs": [
    {
@@ -82,6 +82,14 @@
     "date": "2026-10-21",
     "source_url": "https://x.com/elonmusk/status/2112589019380875714",
     "source_name": "X @elonmusk"
+   },
+   {
+    "lab": "Grok Bot",
+    "title": "今日无更新",
+    "summary": "近 48 小时没有查到 Grok Bot 官方发布的新功能。官方更新日志最新一版是 10 月 14 日的 v0.71.2（单条消息最多 20 个附件、电脑端通知、预填表单等）；10 月 16—17 日公布的提速、X Chat 和新连接器更新已超出本期时间窗口。",
+    "date": "2026-10-21",
+    "source_url": "https://x.ai/changelog/bot",
+    "source_name": "Grok Bot Changelog"
    }
   ],
   "x_top": [
@@ -273,6 +281,311 @@
     "source_name": "X @STEVE8lily",
     "type": "x"
    }
-  ]
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-10-21",
+   "cutoff": "2026-10-21 12:42（北京时间）",
+   "cutoff_note": "美股指数与美国10年期国债收益率为 10 月 20 日美股收盘（北京时间 10 月 21 日凌晨）；美元指数、黄金、布伦特原油为北京时间 12:32 前后的盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（12:41），涨跌为 24 小时变动。",
+   "missing": [
+    {
+     "item": "以太坊现货 ETF 10 月 20 日资金流",
+     "reason": "仅查到 10 月 19 日数据（CoinDesk 引 SoSoValue：净流出 1.03 亿美元），20 日数据未核实"
+    },
+    {
+     "item": "FIL 当前流通量精确数字",
+     "reason": "未找到可抓取的同批数据源，本期只写年度新增发行量"
+    }
+   ],
+   "yesterday_check": null,
+   "three_lines": [
+    {
+     "conclusion": "美股分化：道指涨 1.02%，纳指微跌 0.02%。",
+     "support": "财报强劲托住大盘，但 AI 基建债务担忧压制科技股（WSJ、Investrade）。"
+    },
+    {
+     "conclusion": "美债长端回落，10 年期仍在 5.1% 以上。",
+     "support": "10 年期收益率降 1.9 个基点至 5.116%，2 年期反升 2.6 个基点，市场在等 10 月 27—28 日 FOMC。"
+    },
+    {
+     "conclusion": "比特币 ETF 连续两天净流入，但力度骤降。",
+     "support": "10 月 19 日净流入 5.267 亿美元，20 日只有 2,320 万美元（Farside）。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,712.57",
+     "change": "+0.28%",
+     "time": "10/21 04:00",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5EGSPC/"
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "26,424.82",
+     "change": "−0.02%",
+     "time": "10/21 04:00",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5EIXIC/"
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "101.77",
+     "change": "+0.04%",
+     "time": "10/21 12:32",
+     "status": "盘中",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "5.117%",
+     "change": "−1.9bp",
+     "time": "10/21 02:59",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5ETNX/"
+    },
+    {
+     "asset": "COMEX 黄金（12月）",
+     "value": "4,138.90 美元/盎司",
+     "change": "−0.09%",
+     "time": "10/21 12:32",
+     "status": "盘中",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/GC%3DF/"
+    },
+    {
+     "asset": "布伦特原油（12月）",
+     "value": "110.33 美元/桶",
+     "change": "+1.42%",
+     "time": "10/21 12:31",
+     "status": "盘中",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/BZ%3DF/"
+    },
+    {
+     "asset": "BTC",
+     "value": "82,711 美元",
+     "change": "+0.85%（24h）",
+     "time": "10/21 12:41",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+     "asset": "ETH",
+     "value": "2,441.78 美元",
+     "change": "+1.29%（24h）",
+     "time": "10/21 12:41",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/ethereum"
+    },
+    {
+     "asset": "FIL",
+     "value": "1.034 美元",
+     "change": "+1.07%（24h）",
+     "time": "10/21 12:41",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/filecoin"
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "美股周二收盘分化，道指大涨、纳指微跌。",
+       "facts": "10 月 20 日道指涨 529.85 点（1.02%）至 52,495.88；标普500 涨 21.84 点（0.28%）至 7,712.57；纳指跌 6.07 点（0.02%）至 26,424.82（WSJ）。3M 财报超预期并上调全年指引，股价涨超 5%；韩国 AI 基建公司 Elice 上市首日较发行价跌 32%（The Asia Business Daily）。",
+       "plain": "传统行业财报好，把大盘往上拉；科技股因为市场担心 AI 数据中心靠借债扩张，表现偏弱。",
+       "affects": "美股科技股、AI 基建与新云（如 CoreWeave）、工业股。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "纳指日内回升后收平，AI 担忧未完全释放。",
+       "next_check": "特斯拉、IBM、Meta 等 10/21 盘后财报（北京时间 10/22 凌晨）对科技股的带动。",
+       "risks": "判断：若大型科技财报不及预期，AI 债务担忧可能扩散到大盘。",
+       "sources": [
+        {
+         "outlet": "WSJ",
+         "title": "S&P 500 Rises and Nasdaq Edges Down as Earnings Offset AI Worries",
+         "url": "https://www.wsj.com/finance/stocks/u-s-stocks-mixed-as-strong-earnings-offset-ai-credit-fears-d55414c3",
+         "date": "2026-10-20"
+        },
+        {
+         "outlet": "The Asia Business Daily",
+         "title": "[Wall Street] Oil Prices Fall... Dow Closes Up 1%",
+         "url": "https://www.asiae.co.kr/en/article/2026102106005029793",
+         "date": "2026-10-21"
+        }
+       ],
+       "grade": "主流媒体"
+      },
+      {
+       "no": 2,
+       "headline": "美债长端收益率下行，曲线趋平，10 年期仍高于 5.1%。",
+       "facts": "10 年期收益率降 1.9 个基点至 5.116%，30 年期降 4.7 个基点至 5.425%，2 年期升 2.6 个基点至 4.785%（Investrade）。FOMC 会议定于 10 月 27—28 日（美联储官网）；Investrade 称交易员预期按兵不动。",
+       "plain": "长期借贷成本略降，短期利率反而上升，说明市场对近期加息仍有顾虑。",
+       "affects": "美债、按揭利率、成长股估值、黄金。",
+       "pricing": "部分定价",
+       "pricing_evidence": "交易员预期利率不变（Investrade），但金价走弱显示市场仍在考虑年内再加息（The Asia Business Daily）。",
+       "next_check": "北京时间 10/22 01:00 20 年期美债拍卖需求。",
+       "risks": "判断：油价反弹会重新推高通胀预期和收益率。",
+       "sources": [
+        {
+         "outlet": "Investrade",
+         "title": "Market Review: October 20, 2026",
+         "url": "https://investrade.com/market-review-october-20-2026/",
+         "date": "2026-10-20"
+        },
+        {
+         "outlet": "美联储",
+         "title": "Meeting calendars and information",
+         "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+         "date": "2026"
+        }
+       ],
+       "grade": "主流媒体"
+      },
+      {
+       "no": 3,
+       "headline": "油价冲高回落，美元与黄金小幅走弱。",
+       "facts": "WTI 11 月合约跌 1.80% 至 101.79 美元/桶，布伦特 12 月合约跌 0.69% 至 108.79 美元/桶，此前一度接近对伊朗战争开始以来的高位（AP、Investrade）。12 月黄金跌 0.42% 至 4,142.60 美元/盎司；美元指数跌 0.27% 至 101.70（Investrade）。今日亚洲盘中布伦特报 110.33 美元，较前收涨 1.42%（Yahoo Finance）。",
+       "plain": "油价昨天先涨后跌，今天亚洲时段又涨回去了；黄金因为高利率下不生息而吃亏。",
+       "affects": "能源股、航空、通胀预期、黄金持有者。",
+       "pricing": "无法判断",
+       "pricing_evidence": "油价日内波动极大，单日走势无法确认方向。",
+       "next_check": "北京时间 10/21 22:30 EIA 原油库存。",
+       "risks": "判断：中东局势任何变化都可能让油价单日大幅波动。",
+       "sources": [
+        {
+         "outlet": "AP News",
+         "title": "How major US stock indexes fared Tuesday 10/20/2026",
+         "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-0a5ea168499c6ae617c49e10bf48f9c6",
+         "date": "2026-10-20"
+        },
+        {
+         "outlet": "Investrade",
+         "title": "Market Review: October 20, 2026",
+         "url": "https://investrade.com/market-review-october-20-2026/",
+         "date": "2026-10-20"
+        }
+       ],
+       "grade": "主流媒体"
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 4,
+       "headline": "比特币现货 ETF 连续两日净流入，但 20 日明显降温。",
+       "facts": "10 月 19 日净流入 5.267 亿美元，其中 IBIT 6.652 亿美元；10 月 20 日净流入 2,320 万美元，IBIT 2,990 万、FBTC 360 万、BITB −1,030 万（Farside）。以太坊基金 19 日净流出 1.033 亿美元，连续第四天流出（CoinDesk 引 SoSoValue）。",
+       "plain": "机构资金还在小幅买入比特币，但买盘几乎全靠贝莱德一家；以太坊基金在持续被赎回。",
+       "affects": "BTC、ETH 现货与相关 ETF 持有者。",
+       "pricing": "部分定价",
+       "pricing_evidence": "BTC 24 小时仅涨 0.85%（CoinGecko），未随 19 日大额流入明显上行。",
+       "next_check": "10 月 21 日 ETF 流向是否转负。",
+       "risks": "判断：流入集中于单一产品，持续性存疑。",
+       "sources": [
+        {
+         "outlet": "Farside Investors",
+         "title": "Bitcoin ETF Flow (US$m)",
+         "url": "https://farside.co.uk/btc/",
+         "date": "2026-10-20"
+        },
+        {
+         "outlet": "CoinDesk",
+         "title": "Bitcoin ETFs just saw their biggest day in a month thanks entirely to BlackRock",
+         "url": "https://www.coindesk.com/business/2026/10/20/bitcoin-etfs-just-saw-their-biggest-day-in-a-month-thanks-entirely-to-blackrock",
+         "date": "2026-10-20"
+        }
+       ],
+       "grade": "专业数据平台"
+      },
+      {
+       "no": 5,
+       "headline": "FIL 归属期结束后年度新增发行降至约 2,100 万枚，价格仍在 1 美元附近。",
+       "facts": "Protocol Labs 与 Filecoin 基金会归属期于 10 月 15 日结束，新增发行只剩区块奖励，约每年 2,100 万 FIL，略高于流通量的 2%（Messari）。CoinGecko 快照 FIL 报 1.034 美元，24 小时涨 1.07%。",
+       "plain": "FIL 新币释放大幅减少，但价格暂时没有明显反应。",
+       "affects": "FIL 持有者、存储提供商。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "价格在 1 美元附近震荡，供应减少的影响尚难从价格分离。",
+       "next_check": "Solstice 升级后链上付费存储量与 FIL 交易所净流量。",
+       "risks": "判断：解锁后的存量代币若被抛售，可能抵消新增发行减少的利好。",
+       "sources": [
+        {
+         "outlet": "Messari",
+         "title": "Filecoin: Solstice and the Shift to a Demand-Driven Service Economy",
+         "url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy",
+         "date": "2026-10-19"
+        },
+        {
+         "outlet": "CoinGecko",
+         "title": "Simple Price API 快照",
+         "url": "https://www.coingecko.com/",
+         "date": "2026-10-21"
+        }
+       ],
+       "grade": "专业数据平台"
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "time_bj": "10/21 22:30",
+     "event": "美国 EIA 原油库存",
+     "watch": "库存变化对油价的影响"
+    },
+    {
+     "time_bj": "10/22 01:00",
+     "event": "美国 20 年期国债拍卖（130 亿美元）",
+     "watch": "投标倍数与长端收益率"
+    },
+    {
+     "time_bj": "10/22 凌晨",
+     "event": "特斯拉、IBM、Meta、德州仪器盘后财报",
+     "watch": "AI 资本开支与科技股情绪"
+    },
+    {
+     "time_bj": "10/22 20:30",
+     "event": "美国初请失业金人数",
+     "watch": "劳动力市场是否降温"
+    },
+    {
+     "time_bj": "10/23 01:00",
+     "event": "美国 5 年期 TIPS 拍卖",
+     "watch": "实际利率与通胀预期"
+    },
+    {
+     "time_bj": "10/23 21:45",
+     "event": "标普全球 10 月 PMI 初值",
+     "watch": "制造业与服务业景气"
+    },
+    {
+     "time_bj": "10/23 22:00",
+     "event": "密歇根大学消费者信心终值及通胀预期",
+     "watch": "1 年与 5 年通胀预期"
+    }
+   ],
+   "events_source": [
+    {
+     "outlet": "Investrade",
+     "title": "Weekly Event Calendar: 10/19/2026 - 10/23/2026",
+     "url": "https://investrade.com/weekly-event-calendar-10-19-2026-10-23-2026/"
+    },
+    {
+     "outlet": "Macro Bullseye",
+     "title": "October 2026 economic calendar",
+     "url": "https://macrobullseye.com/calendar/2026/10/"
+    }
+   ],
+   "footer": "以上仅作信息参考。"
+  }
  }
 }

@@ -202,6 +202,70 @@
     font-size: 15px;
   }
 
+  /* ---- 金融简报 ---- */
+  .fin-head { padding: 32px 0 28px; }
+  .fin-title {
+    margin: 0 0 12px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.45;
+    color: var(--t-head);
+  }
+  .fin-cutoff { margin: 0; font-size: 13px; color: var(--t-sub); font-variant-numeric: tabular-nums; }
+  .fin-note { margin: 4px 0 0; font-size: 13px; color: var(--t-meta); }
+  .fin-sec { padding: 28px 0; border-top: 1px solid var(--line); }
+  .fin-sec > .label { display: block; margin: 0 0 14px; }
+  .fin-p { margin: 0; color: var(--t-body); word-break: break-word; }
+  .fin-list { list-style: none; margin: 0; padding: 0; }
+  .fin-miss li { padding: 6px 0; word-break: break-word; }
+  .fin-miss .r { color: var(--t-meta); font-size: 14px; }
+  .fin-three li { display: flex; gap: 14px; padding: 10px 0; }
+  .fin-three .n { flex: none; width: 18px; padding-top: 1px; font-size: 13px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
+  .fin-three b { display: block; font-weight: 700; color: var(--t-head); }
+  .fin-three p { margin: 2px 0 0; color: var(--t-sub); font-size: 15px; word-break: break-word; }
+  .snap li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .snap li:first-child { padding-top: 0; }
+  .snap li:last-child { border-bottom: 0; padding-bottom: 0; }
+  .snap-top { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; }
+  .snap-asset { font-size: 15px; color: var(--t-head); }
+  .snap-val { font-variant-numeric: tabular-nums; color: var(--t-body); white-space: nowrap; }
+  .snap-val .chg { margin-left: 10px; color: var(--t-sub); }
+  .snap-meta { margin-top: 4px; font-size: 13px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
+  .snap-meta a, .fin-srcs a, .fin-evsrc a {
+    color: var(--t-sub);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    word-break: break-word;
+  }
+  .snap-meta a:hover, .fin-srcs a:hover, .fin-evsrc a:hover { color: var(--t-head); }
+  .snap-reason { margin-top: 4px; font-size: 13px; color: var(--t-meta); word-break: break-word; }
+  .fin-item { padding: 24px 0; border-bottom: 1px solid var(--line); }
+  .fin-item:first-of-type { padding-top: 0; }
+  .fin-item:last-child { border-bottom: 0; padding-bottom: 0; }
+  .fin-item h3 { margin: 0 0 14px; font-size: 18px; font-weight: 700; line-height: 1.5; color: var(--t-head); }
+  .fin-item h3 .n { font-variant-numeric: tabular-nums; margin-right: 8px; }
+  .fin-dl { margin: 0; }
+  .fin-dl dt { margin-top: 14px; }
+  .fin-dl dt:first-child { margin-top: 0; }
+  .fin-dl dd { margin: 2px 0 0; color: var(--t-body); word-break: break-word; }
+  .fin-tag { color: var(--t-meta); margin-right: 10px; }
+  .fin-srcs { font-size: 13px; color: var(--t-meta); }
+  .fin-srcs div { padding: 2px 0; }
+  .fin-grade { color: var(--t-meta); }
+  .fin-ev li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .fin-ev li:first-child { padding-top: 0; }
+  .fin-ev li:last-child { border-bottom: 0; }
+  .fin-ev .ev { margin: 2px 0 0; color: var(--t-body); word-break: break-word; }
+  .fin-ev .w { margin: 2px 0 0; color: var(--t-sub); font-size: 14px; word-break: break-word; }
+  .fin-evsrc { margin-top: 10px; font-size: 13px; color: var(--t-meta); }
+  .fin-evsrc div { padding: 2px 0; }
+  .fin-foot { padding: 28px 0 0; border-top: 1px solid var(--line); font-size: 13px; color: var(--t-meta); }
+
+  @media (max-width: 400px) {
+    .tabs .wrap { gap: 20px; }
+    .tab { font-size: 14px; }
+  }
+
   .fade {
     opacity: 0;
     transform: translateY(8px);
@@ -228,6 +292,7 @@
     <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态</button>
     <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热帖 Top10</button>
     <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin</button>
+    <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融简报</button>
   </div>
 </nav>
 
@@ -246,7 +311,8 @@
   var EMPTY = {
     ai_labs: '今日暂无大厂动态',
     x_top: '今日暂无 X 热帖',
-    filecoin: '今日暂无 Filecoin 相关动态'
+    filecoin: '今日暂无 Filecoin 相关动态',
+    finance: '今日暂无金融简报'
   };
 
   // ---- helpers (no innerHTML with data; everything via textContent) ----
@@ -363,6 +429,194 @@
 
   var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil };
 
+  // ---- 金融简报 ----
+  function finSection(label, i) {
+    var s = el('section', 'fin-sec fade');
+    s.style.animationDelay = Math.min(i, 10) * 50 + 'ms';
+    s.appendChild(el('h2', 'label', label));
+    return s;
+  }
+  function sep(parent) { parent.appendChild(document.createTextNode(' · ')); }
+
+  function renderFinance(f) {
+    var root = el('div', 'fin');
+    var k = 0;
+
+    // title + 资料截止 + cutoff_note
+    var head = el('div', 'fin-head fade');
+    head.appendChild(el('h2', 'fin-title', str(f.title) || '每日金融市场简报'));
+    if (f.cutoff) head.appendChild(el('p', 'fin-cutoff', '资料截止 ' + str(f.cutoff)));
+    if (f.cutoff_note) head.appendChild(el('p', 'fin-note', f.cutoff_note));
+    root.appendChild(head);
+
+    // 本期缺失
+    var missing = arr(f.missing).filter(function (m) { return m && typeof m === 'object'; });
+    if (missing.length) {
+      var ms = finSection('本期缺失', ++k);
+      var mu = el('ul', 'fin-list fin-miss');
+      missing.forEach(function (m) {
+        var li = el('li', '', str(m.item));
+        if (m.reason) {
+          li.appendChild(document.createTextNode(' '));
+          li.appendChild(el('span', 'r', '— ' + str(m.reason)));
+        }
+        mu.appendChild(li);
+      });
+      ms.appendChild(mu);
+      root.appendChild(ms);
+    }
+
+    // 昨日验证 (hidden when null/empty)
+    if (f.yesterday_check != null && str(f.yesterday_check).trim() !== '') {
+      var ys = finSection('昨日验证', ++k);
+      ys.appendChild(el('p', 'fin-p', f.yesterday_check));
+      root.appendChild(ys);
+    }
+
+    // 今日三句话
+    var three = arr(f.three_lines).filter(function (t) { return t && typeof t === 'object'; });
+    if (three.length) {
+      var ts = finSection('今日三句话', ++k);
+      var ol = el('ol', 'fin-list fin-three');
+      three.forEach(function (t, i) {
+        var li = el('li');
+        li.appendChild(el('span', 'n', String(i + 1)));
+        var body = el('div');
+        body.appendChild(el('b', '', t.conclusion));
+        if (t.support) body.appendChild(el('p', '', t.support));
+        li.appendChild(body);
+        ol.appendChild(li);
+      });
+      ts.appendChild(ol);
+      root.appendChild(ts);
+    }
+
+    // 行情快照
+    var snap = arr(f.snapshot).filter(function (s) { return s && typeof s === 'object'; });
+    if (snap.length) {
+      var ss = finSection('行情快照', ++k);
+      var su = el('ul', 'fin-list snap');
+      snap.forEach(function (s) {
+        var li = el('li');
+        var top = el('div', 'snap-top');
+        top.appendChild(el('span', 'snap-asset', s.asset));
+        var v = el('span', 'snap-val', str(s.value) || '—');
+        if (s.change != null && s.change !== '') v.appendChild(el('span', 'chg', s.change));
+        top.appendChild(v);
+        li.appendChild(top);
+        var meta = el('div', 'snap-meta');
+        var parts = [str(s.time), str(s.status)].filter(Boolean);
+        if (parts.length) meta.appendChild(document.createTextNode(parts.join(' · ')));
+        if (s.source) {
+          if (parts.length) sep(meta);
+          meta.appendChild(link(s.source_url, '', s.source));
+        }
+        if (meta.childNodes.length) li.appendChild(meta);
+        if (s.status === '未核实' && s.reason) li.appendChild(el('div', 'snap-reason', '原因：' + str(s.reason)));
+        su.appendChild(li);
+      });
+      ss.appendChild(su);
+      root.appendChild(ss);
+    }
+
+    // groups
+    arr(f.groups).forEach(function (g) {
+      if (!g || typeof g !== 'object') return;
+      var items = arr(g.items).filter(function (it) { return it && typeof it === 'object'; });
+      if (!items.length) return;
+      var gs = finSection(str(g.name), ++k);
+      items.forEach(function (it, i) {
+        var art = el('article', 'fin-item');
+        var h = el('h3');
+        h.appendChild(el('span', 'n', str(it.no != null && it.no !== '' ? it.no : i + 1) + '.'));
+        h.appendChild(document.createTextNode(str(it.headline)));
+        art.appendChild(h);
+
+        var dl = el('dl', 'fin-dl');
+        function block(label, content) {
+          if (content == null || content === '') return;
+          dl.appendChild(el('dt', 'label', label));
+          var dd = el('dd');
+          if (typeof content === 'string') dd.textContent = content; else dd.appendChild(content);
+          dl.appendChild(dd);
+        }
+        block('事实', str(it.facts));
+        block('白话解读', str(it.plain));
+        block('影响对象', str(it.affects));
+        if (it.pricing || it.pricing_evidence) {
+          var pf = document.createDocumentFragment();
+          if (it.pricing) pf.appendChild(el('span', 'fin-tag', it.pricing));
+          if (it.pricing_evidence) pf.appendChild(document.createTextNode(str(it.pricing_evidence)));
+          block('市场是否定价', pf);
+        }
+        block('下一步验证', str(it.next_check));
+        block('风险与反证', str(it.risks));
+
+        var srcs = arr(it.sources).filter(function (s) { return s && typeof s === 'object'; });
+        if (srcs.length || it.grade) {
+          var sw = el('div', 'fin-srcs');
+          srcs.forEach(function (s) {
+            var line = el('div');
+            var first = true;
+            if (s.outlet) { line.appendChild(document.createTextNode(str(s.outlet))); first = false; }
+            if (s.title || safeUrl(s.url)) {
+              if (!first) sep(line);
+              line.appendChild(link(s.url, '', str(s.title) || '查看原文'));
+              first = false;
+            }
+            if (s.date) { if (!first) sep(line); line.appendChild(document.createTextNode(str(s.date))); }
+            sw.appendChild(line);
+          });
+          if (it.grade) {
+            var last = sw.lastChild || sw.appendChild(el('div'));
+            if (last.childNodes.length) sep(last);
+            last.appendChild(el('span', 'fin-grade', it.grade));
+          }
+          block('来源', sw);
+        }
+        art.appendChild(dl);
+        gs.appendChild(art);
+      });
+      root.appendChild(gs);
+    });
+
+    // 未来24—72小时
+    var evs = arr(f.events).filter(function (e) { return e && typeof e === 'object'; });
+    var evSrc = arr(f.events_source).filter(function (s) { return s && typeof s === 'object'; });
+    if (evs.length || evSrc.length) {
+      var es = finSection('未来24—72小时', ++k);
+      if (evs.length) {
+        var eu = el('ul', 'fin-list fin-ev');
+        evs.forEach(function (e) {
+          var li = el('li');
+          if (e.time_bj) li.appendChild(el('div', 'label num', e.time_bj));
+          if (e.event) li.appendChild(el('p', 'ev', e.event));
+          if (e.watch) li.appendChild(el('p', 'w', e.watch));
+          eu.appendChild(li);
+        });
+        es.appendChild(eu);
+      }
+      if (evSrc.length) {
+        var ew = el('div', 'fin-evsrc');
+        evSrc.forEach(function (s) {
+          var line = el('div');
+          if (s.outlet) { line.appendChild(document.createTextNode(str(s.outlet))); sep(line); }
+          line.appendChild(link(s.url, '', str(s.title) || '查看原文'));
+          ew.appendChild(line);
+        });
+        es.appendChild(ew);
+      }
+      root.appendChild(es);
+    }
+
+    if (f.footer) {
+      var ft = el('footer', 'fin-foot fade', f.footer);
+      ft.style.animationDelay = Math.min(++k, 10) * 50 + 'ms';
+      root.appendChild(ft);
+    }
+    return root;
+  }
+
   function message(cls, text) {
     $main.replaceChildren(el('div', cls + ' fade', text));
   }
@@ -370,6 +624,12 @@
   function render() {
     if (!state.data) return;
     var secs = state.data.sections || {};
+    if (state.tab === 'finance') {
+      var f = secs.finance;
+      if (!f || typeof f !== 'object' || Array.isArray(f)) { message('empty', EMPTY.finance); return; }
+      $main.replaceChildren(renderFinance(f));
+      return;
+    }
     var items = arr(secs[state.tab]);
     if (state.tab === 'x_top') {
       items = items.slice().sort(function (a, b) { return (Number(a.rank) || 99) - (Number(b.rank) || 99); });
@@ -422,6 +682,7 @@
       if (state.tab === b.dataset.tab) return;
       state.tab = b.dataset.tab;
       tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      if (b.scrollIntoView) b.scrollIntoView({ block: 'nearest', inline: 'nearest' });
       render();
     });
   });
