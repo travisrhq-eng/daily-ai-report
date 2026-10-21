@@ -1,95 +1,124 @@
 {
  "date": "2026-10-21",
- "updated_at": "2026-10-21T12:44:21+08:00",
+ "updated_at": "2026-10-21T13:33:39+08:00",
  "sections": {
   "ai_labs": [
    {
     "lab": "OpenAI",
     "title": "OpenAI 收购生物医药协作平台 Orchestra Bio",
     "summary": "OpenAI 宣布收购 Orchestra Bio，这是一个帮助药企协调药物研发流程的平台。双方将基于 OpenAI 面向生命科学研究的 Rosalind 模型和工具，简化研发运营，加快新疗法走向患者。",
-    "date": "2026-10-21",
     "source_url": "https://x.com/OpenAI/status/2112607347688583586",
-    "source_name": "X @OpenAI"
+    "source_name": "X @OpenAI",
+    "published_at": "2026-10-21 02:10",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "agy（Gemini 订阅）",
+     "source": "Axios",
+     "url": "https://www.axios.com/2026/10/20/exclusive-openai-biotech-startup-drug-development"
+    }
+   },
+   {
+    "lab": "OpenAI",
+    "title": "ChatGPT「锁定聊天」全面推送",
+    "summary": "TestingCatalog 报道、Engadget 交叉印证：ChatGPT 的 Locked Chats 于 2026-10-20 起向免费、Go、Plus、Pro、Business、Enterprise 和 Edu 各档推送。用户可把对话移入受保护空间，网页和桌面端用 PIN 解锁，移动端支持 PIN、Face ID、Touch ID 或设备解锁。",
+    "source_url": "https://x.com/testingcatalog/status/2112605106642600283",
+    "source_name": "X @testingcatalog",
+    "published_at": "2026-10-21 02:01",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "agy（Gemini 订阅）",
+     "source": "Engadget",
+     "url": "https://www.engadget.com/2292365/chatgpt-now-lets-you-lock-sensitive-chats-behind-a-pin/"
+    }
    },
    {
     "lab": "OpenAI",
     "title": "API 支持 12 小时提示缓存",
     "summary": "OpenAI 开发者账号宣布，API 现在可以选择 12 小时的提示缓存。长期运行的智能体可以在一天内反复复用共享的指令、工具和上下文，即使请求间隔数小时，也能按更低的缓存输入价格计费。",
-    "date": "2026-10-21",
     "source_url": "https://x.com/OpenAIDevs/status/2112603916076781778",
-    "source_name": "X @OpenAIDevs"
-   },
-   {
-    "lab": "OpenAI",
-    "title": "ChatGPT 推出团队定时任务",
-    "summary": "ChatGPT 新增团队任务（team tasks），可自动执行重复的工程工作，例如每周五汇总已上线和受阻的事项。团队成员可以审阅结果，并修改下一次更新要覆盖的内容。",
-    "date": "2026-10-20",
-    "source_url": "https://x.com/OpenAIDevs/status/2112565702552940794",
-    "source_name": "X @OpenAIDevs"
-   },
-   {
-    "lab": "OpenAI",
-    "title": "ChatGPT「锁定聊天」全面推送",
-    "summary": "据 TestingCatalog 报道，ChatGPT 的 Locked Chats 正在向免费、Go、Plus、Pro、Business、Enterprise 和 Edu 各档推送。用户可以把对话移入受保护空间，网页和桌面端用 PIN 解锁，移动端支持 PIN、Face ID、Touch ID 或设备解锁。",
-    "date": "2026-10-21",
-    "source_url": "https://x.com/testingcatalog/status/2112605106642600283",
-    "source_name": "X @testingcatalog"
-   },
-   {
-    "lab": "OpenAI",
-    "title": "新模型进步：可构建和迁移 COBOL、Fortran 等老语言软件",
-    "summary": "OpenAI 表示，其最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上的软件构建和迁移能力明显增强。这些语言支撑着银行、政府和企业的大量关键系统。",
-    "date": "2026-10-20",
-    "source_url": "https://x.com/OpenAI/status/2112310345863930168",
-    "source_name": "X @OpenAI"
+    "source_name": "X @OpenAIDevs",
+    "published_at": "2026-10-21 01:56",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "agy（Gemini 订阅）",
+     "source": "hermes-ai.net",
+     "url": "https://hermes-ai.net/news/openai-extends-prompt-caching-to-12-hours-for-long-running-agents/"
+    }
    },
    {
     "lab": "Anthropic",
     "title": "Claude 参与设计抗蝎毒蛋白结合物",
-    "summary": "Anthropic 科学博客发布新研究：用 Claude 设计能结合蝎子神经毒素的蛋白结合物。全球每年约 120 万人被蝎子蛰伤，抗蛇（蝎）毒血清昂贵且常短缺，这是 Claude 朝新疗法迈出的早期一步。",
-    "date": "2026-10-21",
+    "summary": "Anthropic 科学博客发布新研究：用 Claude 设计能结合蝎子神经毒素的蛋白结合物。Anthropic 给出的数据：全球每年超过 120 万人被蝎子蛰伤；抗蝎毒血清价格高且常短缺。这是一项早期研究，尚未进入临床。",
     "source_url": "https://x.com/AnthropicAI/status/2112579251555721573",
-    "source_name": "X @AnthropicAI"
+    "source_name": "X @AnthropicAI",
+    "published_at": "2026-10-21 00:18",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "agy（Gemini 订阅）",
+     "source": "Hunterbrook",
+     "url": "https://newsletter.hntrbrk.com/p/claude-unshackled-ai-designs-experimental"
+    }
    },
    {
-    "lab": "Anthropic",
-    "title": "社区热议 Claude Fable 5.5，但官方尚未发布",
-    "summary": "X 上大量用户根据 Azure 目录条目、代码变更等线索期待 Anthropic 的 Claude Fable 5.5 于 10 月 20 日发布，但截至 10 月 21 日仍未上线，官方没有公布时间和价格。此条为传闻汇总，非官方消息。",
-    "date": "2026-10-21",
-    "source_url": "https://x.com/i/trending/2112684369697743264",
-    "source_name": "X 新闻（传闻）"
+    "lab": "xAI",
+    "title": "Grok 迎来大更新",
+    "summary": "马斯克发帖称 Grok 有一次「大更新」，附视频。帖子正文未列出具体功能；本期未查到 xAI 官方更新日志对应条目，具体功能列入本期缺失。",
+    "source_url": "https://x.com/elonmusk/status/2112589019380875714",
+    "source_name": "X @elonmusk",
+    "published_at": "2026-10-21 00:57",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源"
+    }
+   },
+   {
+    "lab": "xAI",
+    "title": "X 时间线换上新的 AI 排序模型",
+    "summary": "马斯克称 X 时间线推荐有两项更新：一是新的 AI 排序模型，用于预测用户在帖子上的停留时长；二是检索模型改为挑选用户会完整读完的帖子。他称用户活跃时长创新高，未给出具体数字。",
+    "source_url": "https://x.com/elonmusk/status/2112373713937084809",
+    "source_name": "X @elonmusk",
+    "published_at": "2026-10-20 10:41",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源"
+    }
    },
    {
     "lab": "Google",
     "title": "Gemini 4 Argon 演示：3D 元素周期表",
     "summary": "Google DeepMind 展示 Gemini 4 Argon 在 Antigravity 中做出的 3D 元素周期表，与 Tom Lehrer 的歌曲《The Elements》同步，带有电子轨道动画、原子数据和光谱。X 上开发者同时在讨论它的编程能力与使用配额偏紧的问题。",
-    "date": "2026-10-20",
     "source_url": "https://x.com/GoogleDeepMind/status/2112557925264752930",
-    "source_name": "X @GoogleDeepMind"
-   },
-   {
-    "lab": "xAI",
-    "title": "X 时间线换上新的 AI 排序模型",
-    "summary": "马斯克称 X 的时间线推荐有两项重要更新：一是新的 AI 排序模型，能更准确预测用户可能停留的时长；二是检索模型改为专门挑出用户会完整读完的帖子。他表示用户活跃时长正在创新高。",
-    "date": "2026-10-20",
-    "source_url": "https://x.com/elonmusk/status/2112373713937084809",
-    "source_name": "X @elonmusk"
-   },
-   {
-    "lab": "xAI",
-    "title": "Grok 迎来大更新",
-    "summary": "马斯克发帖称 Grok 有一次「大更新」，并附上视频说明。帖子本身没有列出具体功能，详情需看原帖附件。",
-    "date": "2026-10-21",
-    "source_url": "https://x.com/elonmusk/status/2112589019380875714",
-    "source_name": "X @elonmusk"
+    "source_name": "X @GoogleDeepMind",
+    "published_at": "2026-10-20 22:53",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源"
+    }
    },
    {
     "lab": "Grok Bot",
     "title": "今日无更新",
-    "summary": "近 48 小时没有查到 Grok Bot 官方发布的新功能。官方更新日志最新一版是 10 月 14 日的 v0.71.2（单条消息最多 20 个附件、电脑端通知、预填表单等）；10 月 16—17 日公布的提速、X Chat 和新连接器更新已超出本期时间窗口。",
-    "date": "2026-10-21",
+    "summary": "截至 2026-10-21 12:40（北京时间），近 48 小时没有查到 Grok Bot 官方新功能。官方更新日志最新一版为 2026-10-14 的 v0.71.2（单条消息最多 20 个附件、电脑端通知、预填表单）；2026-10-16—17 公布的提速、X Chat 和新连接器更新已超出 48 小时窗口。",
     "source_url": "https://x.ai/changelog/bot",
-    "source_name": "Grok Bot Changelog"
+    "source_name": "Grok Bot Changelog",
+    "published_at": "2026-10-14",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源"
+    },
+    "status_card": true
    }
   ],
   "x_top": [
@@ -104,7 +133,14 @@
     "replies": 1061,
     "reposts": 2584,
     "quotes": 209,
-    "score": 33296
+    "score": 33296,
+    "published_at": "2026-10-21 01:02",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 2,
@@ -117,7 +153,14 @@
     "replies": 1823,
     "reposts": 1876,
     "quotes": 667,
-    "score": 22928
+    "score": 22928,
+    "published_at": "2026-10-20 10:41",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 3,
@@ -130,7 +173,14 @@
     "replies": 1402,
     "reposts": 1126,
     "quotes": 154,
-    "score": 11857
+    "score": 11857,
+    "published_at": "2026-10-21 01:56",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 4,
@@ -143,7 +193,14 @@
     "replies": 789,
     "reposts": 652,
     "quotes": 524,
-    "score": 11098
+    "score": 11098,
+    "published_at": "2026-10-20 06:30",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 5,
@@ -156,7 +213,14 @@
     "replies": 606,
     "reposts": 684,
     "quotes": 55,
-    "score": 8541
+    "score": 8541,
+    "published_at": "2026-10-21 00:57",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 6,
@@ -169,7 +233,14 @@
     "replies": 365,
     "reposts": 509,
     "quotes": 294,
-    "score": 6948
+    "score": 6948,
+    "published_at": "2026-10-21 02:10",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 7,
@@ -182,7 +253,14 @@
     "replies": 385,
     "reposts": 441,
     "quotes": 281,
-    "score": 6786
+    "score": 6786,
+    "published_at": "2026-10-21 00:18",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 8,
@@ -195,7 +273,14 @@
     "replies": 344,
     "reposts": 140,
     "quotes": 31,
-    "score": 4671
+    "score": 4671,
+    "published_at": "2026-10-21 05:10",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 9,
@@ -208,7 +293,14 @@
     "replies": 219,
     "reposts": 311,
     "quotes": 86,
-    "score": 3449
+    "score": 3449,
+    "published_at": "2026-10-20 22:53",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    },
    {
     "rank": 10,
@@ -221,177 +313,227 @@
     "replies": 208,
     "reposts": 135,
     "quotes": 112,
-    "score": 3157
+    "score": 3157,
+    "published_at": "2026-10-21 01:56",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    }
    }
   ],
   "filecoin": [
    {
-    "title": "Solstice（网络 v29）升级已于 10 月 19 日完成",
-    "summary": "Filecoin 主网在 2026-10-19 12:59:30 UTC（北京时间 20:59）激活 Solstice 升级。官方状态页已标记维护完成。这是强制升级，节点和存储提供商都需要更新。",
-    "date": "2026-10-19",
+    "title": "Solstice（网络 v29）升级已于 2026-10-19 完成",
+    "summary": "Filecoin 主网在 2026-10-19 12:59:30 UTC（北京时间 20:59:30）于高度 6,470,279 激活 Solstice 升级，官方状态页已标记维护完成。这是强制升级，节点和存储提供商都需要更新。",
     "source_url": "https://status.filecoin.io/",
     "source_name": "Filecoin Status",
-    "type": "web"
+    "type": "web",
+    "published_at": "2026-10-19 20:59",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "agy（Gemini 订阅）",
+     "source": "Binance Square",
+     "url": "https://www.binance.com/en/square/post/376482072909928"
+    }
    },
    {
     "title": "Messari 解读：Filecoin 转向需求驱动的服务经济",
-    "summary": "Solstice 取消 Fil+ 人工审核，新扇区默认获得 10 倍有效算力；区块奖励中分给能带来付费客户的服务的比例将逐步提高，矿工份额约九个季度内从 95% 降到 50%，未赚取部分销毁。PL 和基金会的归属期于 10 月 15 日结束，此后新增发行只剩区块奖励，约每年 2100 万 FIL。",
-    "date": "2026-10-19",
+    "summary": "Solstice 取消 Fil+ 人工审核，新扇区默认获得 10 倍有效算力；区块奖励中分给能带来付费客户的服务的比例逐步提高，矿工份额在 9 个季度内从 95% 降到 50%（Messari，The Defiant 交叉印证），未赚取部分销毁。PL 和基金会的归属期于 2026-10-15 结束，此后新增发行只剩区块奖励。",
     "source_url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy",
     "source_name": "Messari",
-    "type": "web"
-   },
-   {
-    "title": "FIP-0118：废除 Fil+，通过区块奖励分成资助服务",
-    "summary": "Solstice 的核心提案 FIP-0118 状态为已接受，内容是废除 Fil+ 并把一部分区块奖励分给带来付费需求的服务。",
-    "date": "2026-10",
-    "source_url": "https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0118.md",
-    "source_name": "GitHub FIPs",
-    "type": "web"
-   },
-   {
-    "title": "数据持有证明（PDP）上线主网",
-    "summary": "Filecoin 的 Proof of Data Presence 系统 10 月 13 日在主网上线，用来验证存储完整性，回应外界对数据安全和存储商可靠性的担忧。",
-    "date": "2026-10-13",
-    "source_url": "https://www.tokenpost.com/news/technology/31477",
-    "source_name": "TokenPost",
-    "type": "web"
-   },
-   {
-    "title": "X 热议：归属期结束，新增供应下降约 75%",
-    "summary": "X 上互动最高的 Filecoin 帖子称，10 月 15 日六年创始归属计划结束，年度总通胀从约 8900 万 FIL 降到约 2100 万，团队测算每日新增流通 FIL 下降约 75%。",
-    "date": "2026-10-17",
-    "source_url": "https://x.com/Lucky_m_X/status/2111405993674326027",
-    "source_name": "X @Lucky_m_X",
-    "type": "x"
-   },
-   {
-    "title": "X 观点：解锁不等于抛售",
-    "summary": "有分析指出，归属期结束只代表代币解锁，并不意味着这些 FIL 会被卖出，持有方会卖多少目前未知。",
-    "date": "2026-10-14",
-    "source_url": "https://x.com/BitcoinStrat/status/2110400406346215498",
-    "source_name": "X @BitcoinStrat",
-    "type": "x"
-   },
-   {
-    "title": "X 行情：升级前「卖消息」",
-    "summary": "有用户指出 FIL 在 Solstice 上线前一天从周六高点 1.2236 跌约 13% 到 1.065，市场选择了升级前先卖出。仅为个人观点，不构成投资建议。",
-    "date": "2026-10-18",
-    "source_url": "https://x.com/STEVE8lily/status/2111675236282192122",
-    "source_name": "X @STEVE8lily",
-    "type": "x"
+    "type": "web",
+    "published_at": "2026-10-19",
+    "fetched_at": "2026-10-21 12:40",
+    "grade": "专业数据平台",
+    "crosscheck": {
+     "status": "冲突",
+     "by": "agy（Gemini 订阅）",
+     "values": [
+      {
+       "value": "年新增发行 2,100 万 FIL",
+       "source": "Messari",
+       "url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy"
+      },
+      {
+       "value": "年新增发行 2,100—2,200 万 FIL",
+       "source": "KuCoin",
+       "url": "https://www.kucoin.com/news/flash/filecoin-vesting-ends-in-2026-cutting-fil-issuance-by-75"
+      }
+     ],
+     "reason": "Messari 给出单一取整值，KuCoin 给出区间；两者均为按当前区块奖励推算的年化值，差异来自取整口径。"
+    }
    }
   ],
   "finance": {
    "title": "每日金融市场简报｜2026-10-21",
    "cutoff": "2026-10-21 12:42（北京时间）",
-   "cutoff_note": "美股指数与美国10年期国债收益率为 10 月 20 日美股收盘（北京时间 10 月 21 日凌晨）；美元指数、黄金、布伦特原油为北京时间 12:32 前后的盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（12:41），涨跌为 24 小时变动。",
+   "cutoff_note": "美股指数与美国10年期国债收益率为 2026-10-20 美股收盘（北京时间 2026-10-21 凌晨）；美元指数、黄金、布伦特原油为北京时间 2026-10-21 12:32 前后盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（12:41），涨跌为 24 小时变动。",
    "missing": [
     {
-     "item": "以太坊现货 ETF 10 月 20 日资金流",
-     "reason": "仅查到 10 月 19 日数据（CoinDesk 引 SoSoValue：净流出 1.03 亿美元），20 日数据未核实"
+     "item": "以太坊现货 ETF 2026-10-20 资金流",
+     "reason": "仅查到 2026-10-19 数据（CoinDesk 引 SoSoValue：净流出 1.033 亿美元），2026-10-20 数据未发布或未抓到"
     },
     {
      "item": "FIL 当前流通量精确数字",
-     "reason": "未找到可抓取的同批数据源，本期只写年度新增发行量"
+     "reason": "未找到与价格同批的可抓取数据源，本期只写年度新增发行量"
     }
    ],
-   "yesterday_check": null,
+   "yesterday_check": "首期无昨日数据。",
    "three_lines": [
     {
      "conclusion": "美股分化：道指涨 1.02%，纳指微跌 0.02%。",
-     "support": "财报强劲托住大盘，但 AI 基建债务担忧压制科技股（WSJ、Investrade）。"
+     "support": "道指涨 529.85 点至 52,495.88（WSJ，Morningstar 交叉印证）；WSJ 将科技股走弱归因于 AI 基建债务担忧。"
     },
     {
-     "conclusion": "美债长端回落，10 年期仍在 5.1% 以上。",
-     "support": "10 年期收益率降 1.9 个基点至 5.116%，2 年期反升 2.6 个基点，市场在等 10 月 27—28 日 FOMC。"
+     "conclusion": "美债长端回落，10 年期收益率 5.116%，仍高于 5.1%。",
+     "support": "10 年期收益率降 1.9 个基点至 5.116%（Investrade，Morningstar 交叉印证），2 年期升 2.6 个基点，FOMC 会议在 2026-10-27—28。"
     },
     {
      "conclusion": "比特币 ETF 连续两天净流入，但力度骤降。",
-     "support": "10 月 19 日净流入 5.267 亿美元，20 日只有 2,320 万美元（Farside）。"
+     "support": "2026-10-19 净流入 5.267 亿美元，2026-10-20 净流入 2,320 万美元（Farside，KuCoin 交叉印证）。"
     }
    ],
    "snapshot": [
     {
      "asset": "标普500",
      "value": "7,712.57",
-     "change": "+0.28%",
-     "time": "10/21 04:00",
+     "change": "+0.28%（较前收）",
+     "time": "2026-10-21 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/%5EGSPC/"
+     "source_url": "https://finance.yahoo.com/quote/%5EGSPC/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "agy（Gemini 订阅）",
+      "source": "Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610208627/djia-rises-102-to-5249588-data-talk"
+     }
     },
     {
      "asset": "纳斯达克综合指数",
      "value": "26,424.82",
-     "change": "−0.02%",
-     "time": "10/21 04:00",
+     "change": "−0.02%（较前收）",
+     "time": "2026-10-21 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/%5EIXIC/"
+     "source_url": "https://finance.yahoo.com/quote/%5EIXIC/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "agy（Gemini 订阅）",
+      "source": "Morningstar",
+      "url": "https://www.morningstar.com/news/dow-jones/202610208627/djia-rises-102-to-5249588-data-talk"
+     }
     },
     {
      "asset": "美元指数 DXY",
      "value": "101.77",
-     "change": "+0.04%",
-     "time": "10/21 12:32",
+     "change": "+0.04%（较前收）",
+     "time": "2026-10-21 12:32",
      "status": "盘中",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+     "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     },
     {
      "asset": "美国10年期国债收益率",
      "value": "5.117%",
-     "change": "−1.9bp",
-     "time": "10/21 02:59",
+     "change": "−1.9 bp（较前收）",
+     "time": "2026-10-21 02:59",
      "status": "收盘",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/%5ETNX/"
+     "source_url": "https://finance.yahoo.com/quote/%5ETNX/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "agy（Gemini 订阅）",
+      "values": [
+       {
+        "value": "5.117%",
+        "source": "Yahoo Finance（^TNX）",
+        "url": "https://finance.yahoo.com/quote/%5ETNX/"
+       },
+       {
+        "value": "5.116%",
+        "source": "Morningstar（Tradeweb 收盘）",
+        "url": "https://www.morningstar.com/news/dow-jones/202610207404/10-year-treasury-yield-falls-to-5116-data-talk"
+       }
+      ],
+      "reason": "Yahoo 取 CBOE ^TNX 报价，Morningstar 取 Tradeweb FTSE 收盘值，两家收盘时点与报价源不同，差 0.1 bp。"
+     }
     },
     {
      "asset": "COMEX 黄金（12月）",
      "value": "4,138.90 美元/盎司",
-     "change": "−0.09%",
-     "time": "10/21 12:32",
+     "change": "−0.09%（较前收）",
+     "time": "2026-10-21 12:32",
      "status": "盘中",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/GC%3DF/"
+     "source_url": "https://finance.yahoo.com/quote/GC%3DF/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     },
     {
      "asset": "布伦特原油（12月）",
      "value": "110.33 美元/桶",
-     "change": "+1.42%",
-     "time": "10/21 12:31",
+     "change": "+1.42%（较前收）",
+     "time": "2026-10-21 12:31",
      "status": "盘中",
      "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/BZ%3DF/"
+     "source_url": "https://finance.yahoo.com/quote/BZ%3DF/",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     },
     {
      "asset": "BTC",
      "value": "82,711 美元",
      "change": "+0.85%（24h）",
-     "time": "10/21 12:41",
+     "time": "2026-10-21 12:41",
      "status": "快照",
      "source": "CoinGecko",
-     "source_url": "https://www.coingecko.com/en/coins/bitcoin"
+     "source_url": "https://www.coingecko.com/en/coins/bitcoin",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     },
     {
      "asset": "ETH",
      "value": "2,441.78 美元",
      "change": "+1.29%（24h）",
-     "time": "10/21 12:41",
+     "time": "2026-10-21 12:41",
      "status": "快照",
      "source": "CoinGecko",
-     "source_url": "https://www.coingecko.com/en/coins/ethereum"
+     "source_url": "https://www.coingecko.com/en/coins/ethereum",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     },
     {
      "asset": "FIL",
      "value": "1.034 美元",
      "change": "+1.07%（24h）",
-     "time": "10/21 12:41",
+     "time": "2026-10-21 12:41",
      "status": "快照",
      "source": "CoinGecko",
-     "source_url": "https://www.coingecko.com/en/coins/filecoin"
+     "source_url": "https://www.coingecko.com/en/coins/filecoin",
+     "fetched_at": "2026-10-21 12:41",
+     "crosscheck": {
+      "status": "单一来源"
+     }
     }
    ],
    "groups": [
@@ -401,13 +543,13 @@
       {
        "no": 1,
        "headline": "美股周二收盘分化，道指大涨、纳指微跌。",
-       "facts": "10 月 20 日道指涨 529.85 点（1.02%）至 52,495.88；标普500 涨 21.84 点（0.28%）至 7,712.57；纳指跌 6.07 点（0.02%）至 26,424.82（WSJ）。3M 财报超预期并上调全年指引，股价涨超 5%；韩国 AI 基建公司 Elice 上市首日较发行价跌 32%（The Asia Business Daily）。",
-       "plain": "传统行业财报好，把大盘往上拉；科技股因为市场担心 AI 数据中心靠借债扩张，表现偏弱。",
+       "facts": "2026-10-20 道指涨 529.85 点（1.02%）至 52,495.88；标普500 涨 21.84 点（0.28%）至 7,712.57；纳指跌 6.07 点（0.02%）至 26,424.82（WSJ）。3M 财报超预期并上调全年指引，股价涨超 5%；韩国 AI 基建公司 Elice 上市首日较发行价跌 32%（The Asia Business Daily）。",
+       "plain": "WSJ 的归因：传统行业财报强，托住大盘；科技股受 AI 数据中心举债扩张担忧拖累。",
        "affects": "美股科技股、AI 基建与新云（如 CoreWeave）、工业股。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "纳指日内回升后收平，AI 担忧未完全释放。",
+       "pricing_evidence": "纳指收跌 0.02%，较标普 +0.28% 落后 0.30 个百分点，AI 担忧未在指数上完全体现。",
        "next_check": "特斯拉、IBM、Meta 等 10/21 盘后财报（北京时间 10/22 凌晨）对科技股的带动。",
-       "risks": "判断：若大型科技财报不及预期，AI 债务担忧可能扩散到大盘。",
+       "risks": "判断：特斯拉、IBM、Meta 等 4 家公司财报若不及预期，纳指 −0.02% 的弱势会扩大到标普500。",
        "sources": [
         {
          "outlet": "WSJ",
@@ -422,18 +564,24 @@
          "date": "2026-10-21"
         }
        ],
-       "grade": "主流媒体"
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "agy（Gemini 订阅）",
+        "source": "Morningstar",
+        "url": "https://www.morningstar.com/news/dow-jones/202610208627/djia-rises-102-to-5249588-data-talk"
+       }
       },
       {
        "no": 2,
        "headline": "美债长端收益率下行，曲线趋平，10 年期仍高于 5.1%。",
        "facts": "10 年期收益率降 1.9 个基点至 5.116%，30 年期降 4.7 个基点至 5.425%，2 年期升 2.6 个基点至 4.785%（Investrade）。FOMC 会议定于 10 月 27—28 日（美联储官网）；Investrade 称交易员预期按兵不动。",
-       "plain": "长期借贷成本略降，短期利率反而上升，说明市场对近期加息仍有顾虑。",
+       "plain": "长期借贷成本降 1.9 个基点，2 年期反升 2.6 个基点，曲线趋平。",
        "affects": "美债、按揭利率、成长股估值、黄金。",
        "pricing": "部分定价",
-       "pricing_evidence": "交易员预期利率不变（Investrade），但金价走弱显示市场仍在考虑年内再加息（The Asia Business Daily）。",
+       "pricing_evidence": "交易员预期 2026-10-27—28 FOMC 利率不变（Investrade）；12 月黄金当日跌 0.42%，The Asia Business Daily 将其归因于市场仍考虑年内再加息。",
        "next_check": "北京时间 10/22 01:00 20 年期美债拍卖需求。",
-       "risks": "判断：油价反弹会重新推高通胀预期和收益率。",
+       "risks": "判断：布伦特今日盘中已涨 1.42% 至 110.33 美元，油价继续上行会推高通胀预期，10 年期收益率有回到 5.13% 以上的压力。",
        "sources": [
         {
          "outlet": "Investrade",
@@ -445,21 +593,27 @@
          "outlet": "美联储",
          "title": "Meeting calendars and information",
          "url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
-         "date": "2026"
+         "date": "2026-10-20"
         }
        ],
-       "grade": "主流媒体"
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "agy（Gemini 订阅）",
+        "source": "Morningstar",
+        "url": "https://www.morningstar.com/news/dow-jones/202610207404/10-year-treasury-yield-falls-to-5116-data-talk"
+       }
       },
       {
        "no": 3,
        "headline": "油价冲高回落，美元与黄金小幅走弱。",
-       "facts": "WTI 11 月合约跌 1.80% 至 101.79 美元/桶，布伦特 12 月合约跌 0.69% 至 108.79 美元/桶，此前一度接近对伊朗战争开始以来的高位（AP、Investrade）。12 月黄金跌 0.42% 至 4,142.60 美元/盎司；美元指数跌 0.27% 至 101.70（Investrade）。今日亚洲盘中布伦特报 110.33 美元，较前收涨 1.42%（Yahoo Finance）。",
-       "plain": "油价昨天先涨后跌，今天亚洲时段又涨回去了；黄金因为高利率下不生息而吃亏。",
+       "facts": "WTI 11 月合约跌 1.80% 至 101.79 美元/桶，布伦特 12 月合约跌 0.69% 至 108.79 美元/桶，盘中一度接近对伊朗战争开始以来的高位（AP、Investrade）。12 月黄金跌 0.42% 至 4,142.60 美元/盎司；美元指数跌 0.27% 至 101.70（Investrade）。今日亚洲盘中布伦特报 110.33 美元，较前收涨 1.42%（Yahoo Finance）。",
+       "plain": "油价 2026-10-20 先涨后跌，今日亚洲时段布伦特又涨 1.42%；黄金跌 0.42%。",
        "affects": "能源股、航空、通胀预期、黄金持有者。",
        "pricing": "无法判断",
        "pricing_evidence": "油价日内波动极大，单日走势无法确认方向。",
        "next_check": "北京时间 10/21 22:30 EIA 原油库存。",
-       "risks": "判断：中东局势任何变化都可能让油价单日大幅波动。",
+       "risks": "判断：布伦特单日振幅已超 2%（−0.69% 收盘、次日盘中 +1.42%），中东局势消息仍是油价主导变量。",
        "sources": [
         {
          "outlet": "AP News",
@@ -474,7 +628,10 @@
          "date": "2026-10-20"
         }
        ],
-       "grade": "主流媒体"
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "单一来源"
+       }
       }
      ]
     },
@@ -489,8 +646,8 @@
        "affects": "BTC、ETH 现货与相关 ETF 持有者。",
        "pricing": "部分定价",
        "pricing_evidence": "BTC 24 小时仅涨 0.85%（CoinGecko），未随 19 日大额流入明显上行。",
-       "next_check": "10 月 21 日 ETF 流向是否转负。",
-       "risks": "判断：流入集中于单一产品，持续性存疑。",
+       "next_check": "2026-10-21 BTC 现货 ETF 流向是否转负（Farside）。",
+       "risks": "判断：2026-10-20 的 2,320 万美元净流入中 IBIT 占 2,990 万美元，流入集中于单一产品，持续性需看后续 2—3 个交易日。",
        "sources": [
         {
          "outlet": "Farside Investors",
@@ -505,18 +662,24 @@
          "date": "2026-10-20"
         }
        ],
-       "grade": "专业数据平台"
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "agy（Gemini 订阅）",
+        "source": "KuCoin",
+        "url": "https://www.kucoin.com/news/flash/us-bitcoin-etfs-attract-526-7m-on-oct-19-largest-inflow-in-nearly-a-month"
+       }
       },
       {
        "no": 5,
-       "headline": "FIL 归属期结束后年度新增发行降至约 2,100 万枚，价格仍在 1 美元附近。",
-       "facts": "Protocol Labs 与 Filecoin 基金会归属期于 10 月 15 日结束，新增发行只剩区块奖励，约每年 2,100 万 FIL，略高于流通量的 2%（Messari）。CoinGecko 快照 FIL 报 1.034 美元，24 小时涨 1.07%。",
-       "plain": "FIL 新币释放大幅减少，但价格暂时没有明显反应。",
+       "headline": "FIL 归属期结束后年度新增发行降至 2,100 万枚，价格在 1.034 美元。",
+       "facts": "Protocol Labs 与 Filecoin 基金会归属期于 2026-10-15 结束，新增发行只剩区块奖励，每年 2,100 万 FIL，略高于流通量的 2%（Messari；KuCoin 给出 2,100—2,200 万区间）。CoinGecko 快照 FIL 报 1.034 美元，24 小时涨 1.07%。",
+       "plain": "FIL 新币释放减少，价格单日涨 1.07%。",
        "affects": "FIL 持有者、存储提供商。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "价格在 1 美元附近震荡，供应减少的影响尚难从价格分离。",
+       "pricing_evidence": "FIL 24 小时涨 1.07%，与供应减少的单日关联无法从价格中分离。",
        "next_check": "Solstice 升级后链上付费存储量与 FIL 交易所净流量。",
-       "risks": "判断：解锁后的存量代币若被抛售，可能抵消新增发行减少的利好。",
+       "risks": "判断：已解锁存量若进入交易所，会抵消年新增发行降至 2,100 万枚的减供效应；需看交易所净流量数据。",
        "sources": [
         {
          "outlet": "Messari",
@@ -531,44 +694,61 @@
          "date": "2026-10-21"
         }
        ],
-       "grade": "专业数据平台"
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "冲突",
+        "by": "agy（Gemini 订阅）",
+        "values": [
+         {
+          "value": "2,100 万 FIL/年",
+          "source": "Messari",
+          "url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy"
+         },
+         {
+          "value": "2,100—2,200 万 FIL/年",
+          "source": "KuCoin",
+          "url": "https://www.kucoin.com/news/flash/filecoin-vesting-ends-in-2026-cutting-fil-issuance-by-75"
+         }
+        ],
+        "reason": "取整口径不同：Messari 单值、KuCoin 区间，均为年化推算。"
+       }
       }
      ]
     }
    ],
    "events": [
     {
-     "time_bj": "10/21 22:30",
+     "time_bj": "2026-10-21 22:30",
      "event": "美国 EIA 原油库存",
      "watch": "库存变化对油价的影响"
     },
     {
-     "time_bj": "10/22 01:00",
+     "time_bj": "2026-10-22 01:00",
      "event": "美国 20 年期国债拍卖（130 亿美元）",
      "watch": "投标倍数与长端收益率"
     },
     {
-     "time_bj": "10/22 凌晨",
-     "event": "特斯拉、IBM、Meta、德州仪器盘后财报",
+     "time_bj": "2026-10-22 04:00",
+     "event": "特斯拉、IBM、Meta、德州仪器盘后财报（美东 2026-10-21 收盘后，北京时间 04:00 起陆续发布）",
      "watch": "AI 资本开支与科技股情绪"
     },
     {
-     "time_bj": "10/22 20:30",
+     "time_bj": "2026-10-22 20:30",
      "event": "美国初请失业金人数",
      "watch": "劳动力市场是否降温"
     },
     {
-     "time_bj": "10/23 01:00",
+     "time_bj": "2026-10-23 01:00",
      "event": "美国 5 年期 TIPS 拍卖",
      "watch": "实际利率与通胀预期"
     },
     {
-     "time_bj": "10/23 21:45",
+     "time_bj": "2026-10-23 21:45",
      "event": "标普全球 10 月 PMI 初值",
      "watch": "制造业与服务业景气"
     },
     {
-     "time_bj": "10/23 22:00",
+     "time_bj": "2026-10-23 22:00",
      "event": "密歇根大学消费者信心终值及通胀预期",
      "watch": "1 年与 5 年通胀预期"
     }
@@ -586,6 +766,369 @@
     }
    ],
    "footer": "以上仅作信息参考。"
+  },
+  "falcon": [
+   {
+    "author": "@Alexs_jame",
+    "author_name": "Alexs James",
+    "summary": "回顾马斯克与 SpaceX 团队庆祝 Falcon Heavy 首飞成功的画面，称它曾是当时最强火箭、后被 Starship 取代，并为 Starship IFT-4 倒计时 14 小时。",
+    "url": "https://x.com/Alexs_jame/status/2112296129945813271",
+    "created_at": "2026-10-19T21:33:36.000Z",
+    "published_at": "2026-10-20 05:33",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 195,
+    "replies": 19,
+    "reposts": 28,
+    "quotes": 4,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 246,
+    "rank": 1
+   },
+   {
+    "author": "@LunarCitizens",
+    "author_name": "Lunar Citizen",
+    "summary": "Falcon 9 发射频率在下降、Starship 接近常态化：Falcon 9 已超过三周没有发射 Starlink，同期 Starship 送入轨道 26 颗 V3 Starlink 卫星。",
+    "url": "https://x.com/LunarCitizens/status/2112157042811256883",
+    "created_at": "2026-10-19T12:20:55.000Z",
+    "published_at": "2026-10-19 20:20",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 132,
+    "replies": 6,
+    "reposts": 16,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 154,
+    "rank": 2
+   },
+   {
+    "author": "@SpaceToday1",
+    "author_name": "Sacani (Space Today) - AKA Gordão Foguetes",
+    "summary": "（葡萄牙语）Falcon 9 执行 Bandwagon-5 拼车任务，搭载 32 个载荷，含 Starfall 返回舱。",
+    "url": "https://x.com/SpaceToday1/status/2112058612386283561",
+    "created_at": "2026-10-19T05:49:48.000Z",
+    "published_at": "2026-10-19 13:49",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 65,
+    "replies": 0,
+    "reposts": 1,
+    "quotes": 2,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 68,
+    "rank": 3
+   },
+   {
+    "author": "@TaiigerBlue",
+    "author_name": "TaiigerBlue 🇨🇦",
+    "summary": "列举马斯克 11 项「不可能」承诺的兑现，第 1 项为可复用轨道火箭：Falcon 9 首次成功着陆。",
+    "url": "https://x.com/TaiigerBlue/status/2112700546369159576",
+    "created_at": "2026-10-21T00:20:36.000Z",
+    "published_at": "2026-10-21 08:20",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 10,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 10,
+    "rank": 4
+   },
+   {
+    "author": "@Send_me_a_song",
+    "author_name": "Hit me with music",
+    "summary": "SpaceX Falcon 9 Bandwagon 拼车任务定于美东 2026-10-20 6:30 起 1 小时窗口发射，天气不佳则顺延至周三。",
+    "url": "https://x.com/Send_me_a_song/status/2112084795274490269",
+    "created_at": "2026-10-19T07:33:50.000Z",
+    "published_at": "2026-10-19 15:33",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 4,
+    "replies": 1,
+    "reposts": 1,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 6,
+    "rank": 5
+   },
+   {
+    "author": "@MDForkanHo22135",
+    "author_name": "MD Forkan Hossain",
+    "summary": "Falcon 9 从卡角 SLC-40 发射 Bandwagon-5 拼车任务。",
+    "url": "https://x.com/MDForkanHo22135/status/2112516502062592057",
+    "created_at": "2026-10-20T12:09:17.000Z",
+    "published_at": "2026-10-20 20:09",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 2,
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 1,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 4,
+    "rank": 6
+   },
+   {
+    "author": "@JohnfKenne5r3f",
+    "author_name": "John f Kennedy Jr",
+    "summary": "与第 1 条正文相同：Falcon Heavy 首飞庆祝画面回顾 + Starship IFT-4 倒计时。",
+    "url": "https://x.com/JohnfKenne5r3f/status/2112306710475837849",
+    "created_at": "2026-10-19T22:15:39.000Z",
+    "published_at": "2026-10-20 06:15",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 3,
+    "replies": 0,
+    "reposts": 0,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 3,
+    "rank": 7
+   },
+   {
+    "author": "@DiplomaticTake",
+    "author_name": "DiplomaticTrade",
+    "summary": "特斯拉与 SpaceX 近期日程：2026-10-20 Falcon 9 Bandwagon-5（32 个载荷 + Starfall 返回舱演示）、SpaceX Q3 财报、Falcon 9 Starlink 15-15 发射。",
+    "url": "https://x.com/DiplomaticTake/status/2112206658600305032",
+    "created_at": "2026-10-19T15:38:04.000Z",
+    "published_at": "2026-10-19 23:38",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 1,
+    "replies": 1,
+    "reposts": 0,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 2,
+    "rank": 8
+   },
+   {
+    "author": "@Giuseppe_147",
+    "author_name": "Giuseppe Portaluppi",
+    "summary": "（西班牙语）调侃卡洛斯·斯利姆：造几颗卫星、用 SpaceX Falcon Heavy 发射即可。",
+    "url": "https://x.com/Giuseppe_147/status/2112678810520895661",
+    "created_at": "2026-10-20T22:54:14.000Z",
+    "published_at": "2026-10-21 06:54",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 1,
+    "replies": 0,
+    "reposts": 1,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 2,
+    "rank": 9
+   },
+   {
+    "author": "@versXplorer",
+    "author_name": "versXplorer",
+    "summary": "Falcon 9 Block 5 执行 Bandwagon 5（专用中倾角拼车）的发射尝试信息。",
+    "url": "https://x.com/versXplorer/status/2112126684338004178",
+    "created_at": "2026-10-19T10:20:17.000Z",
+    "published_at": "2026-10-19 18:20",
+    "fetched_at": "2026-10-21 13:35",
+    "likes": 1,
+    "replies": 0,
+    "reposts": 1,
+    "quotes": 0,
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数"
+    },
+    "score": 2,
+    "rank": 10
+   }
+  ]
+ },
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-10-21 12:40",
+   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），每家最多 3 条，组内按发布时间倒序；窗口 72 小时",
+   "missing": [
+    {
+     "item": "Grok「大更新」具体功能",
+     "reason": "马斯克帖子正文未列功能，xAI 官方未发布更新说明"
+    }
+   ],
+   "pending": [
+    {
+     "lab": "Anthropic",
+     "title": "社区热议 Claude Fable 5.5，但官方尚未发布",
+     "summary": "X 用户根据 Azure 目录条目、代码变更等线索期待 Claude Fable 5.5 于 2026-10-20 发布；截至 2026-10-21 12:40（北京时间）未上线，Anthropic 未公布时间和价格。",
+     "source_url": "https://x.com/i/trending/2112684369697743264",
+     "source_name": "X 新闻（传闻）",
+     "published_at": "2026-10-21",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "unverified": true,
+     "unverified_reason": "仅有社区线索（Azure 目录条目、代码变更），Anthropic 官方未公布",
+     "pending_reason": "未证实：仅有社区线索（Azure 目录条目、代码变更），Anthropic 官方未公布"
+    }
+   ],
+   "overflow": [
+    {
+     "lab": "OpenAI",
+     "title": "ChatGPT 推出团队定时任务",
+     "summary": "ChatGPT 新增团队任务（team tasks），可自动执行重复的工程工作，例如每周五汇总已上线和受阻的事项。团队成员可以审阅结果，并修改下一次更新要覆盖的内容。",
+     "source_url": "https://x.com/OpenAIDevs/status/2112565702552940794",
+     "source_name": "X @OpenAIDevs",
+     "published_at": "2026-10-20 23:24",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "agy（Gemini 订阅）",
+      "source": "codexworkshop.com",
+      "url": "https://www.codexworkshop.com/research/chatgpt-team-tasks-weekly-engineering-update"
+     }
+    },
+    {
+     "lab": "OpenAI",
+     "title": "新模型进步：可构建和迁移 COBOL、Fortran 等老语言软件",
+     "summary": "OpenAI 表示，其最新模型在 COBOL、Fortran、Visual Basic 等低资源编程语言上的软件构建和迁移能力明显增强。这些语言支撑着银行、政府和企业的大量关键系统。",
+     "source_url": "https://x.com/OpenAI/status/2112310345863930168",
+     "source_name": "X @OpenAI",
+     "published_at": "2026-10-20 06:30",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "单一来源"
+     }
+    }
+   ]
+  },
+  "x_top": {
+   "as_of": "2026-10-21 12:40",
+   "basis": "近 48 小时 AI 相关帖子，按 赞+评+转+引 之和排序",
+   "missing": [],
+   "pending": []
+  },
+  "filecoin": {
+   "as_of": "2026-10-21 12:40",
+   "basis": "近 72 小时官方、研究机构、媒体与 X 帖子，按发布时间倒序",
+   "missing": [
+    {
+     "item": "FIL 当前流通量精确数字",
+     "reason": "未找到与价格同批的可抓取数据源"
+    }
+   ],
+   "pending": [
+    {
+     "title": "FIP-0118：废除 Fil+，通过区块奖励分成资助服务",
+     "summary": "Solstice 的核心提案 FIP-0118 状态为已接受（Accepted），内容是废除 Fil+，并把一部分区块奖励分给带来付费需求的服务。",
+     "source_url": "https://github.com/filecoin-project/FIPs/blob/master/FIPS/fip-0118.md",
+     "source_name": "GitHub FIPs",
+     "type": "web",
+     "published_at": "2026-10",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "pending_reason": "无法确定完整发布日期（YYYY-MM-DD）"
+    },
+    {
+     "title": "数据持有证明（PDP）上线主网",
+     "summary": "TokenPost 报道：Filecoin 的 Proof of Data Presence（PDP）系统 2026-10-13 在主网上线，用于验证存储完整性。",
+     "source_url": "https://www.tokenpost.com/news/technology/31477",
+     "source_name": "TokenPost",
+     "type": "web",
+     "published_at": "2026-10-13",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "主流媒体",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "pending_reason": "发布超过 72 小时"
+    },
+    {
+     "title": "X 热议：归属期结束，新增供应下降 75%",
+     "summary": "@Lucky_m_X 称：2026-10-15 六年创始归属计划结束，年度总通胀从 8,900 万 FIL 降到 2,100 万 FIL，其团队测算每日新增流通 FIL 下降 75%（社媒数据，未经官方确认）。",
+     "source_url": "https://x.com/Lucky_m_X/status/2111405993674326027",
+     "source_name": "X @Lucky_m_X",
+     "type": "x",
+     "published_at": "2026-10-17 18:36",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "pending_reason": "发布超过 72 小时"
+    },
+    {
+     "title": "X 观点：解锁不等于抛售",
+     "summary": "@BitcoinStrat 指出：归属期结束只代表代币解锁，不等于这些 FIL 会被卖出，持有方卖出数量未公开。",
+     "source_url": "https://x.com/BitcoinStrat/status/2110400406346215498",
+     "source_name": "X @BitcoinStrat",
+     "type": "x",
+     "published_at": "2026-10-15 00:00",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "pending_reason": "发布超过 72 小时"
+    },
+    {
+     "title": "X 行情：升级前「卖消息」",
+     "summary": "@STEVE8lily 称：FIL 在 Solstice 上线前一天从周六高点 1.2236 美元跌 13% 到 1.065 美元。仅为个人观点。",
+     "source_url": "https://x.com/STEVE8lily/status/2111675236282192122",
+     "source_name": "X @STEVE8lily",
+     "type": "x",
+     "published_at": "2026-10-18 12:26",
+     "fetched_at": "2026-10-21 12:40",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源"
+     },
+     "pending_reason": "发布超过 72 小时"
+    }
+   ]
+  },
+  "finance": {
+   "as_of": "2026-10-21 12:42",
+   "basis": "固定 9 项行情 + 5 条要闻，按 FINANCE_SPEC 结构",
+   "missing": []
+  },
+  "falcon": {
+   "as_of": "2026-10-21 13:35",
+   "basis": "近 48 小时 X 上提及 SpaceX Falcon 9 / Falcon Heavy 火箭的原创帖（不含转发与回复），按 赞+评+转+引 之和排序",
+   "note": "「Falcon」本期取 SpaceX Falcon 火箭含义（相关帖子数量与互动量最高）；未纳入 Falcon 后量子签名、Falcon 公务机、亚特兰大猎鹰队、千年隼乐高等其他含义。本期热度整体偏低，第 1 名互动合计 246。",
+   "missing": [],
+   "pending": []
   }
  }
 }

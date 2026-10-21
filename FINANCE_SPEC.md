@@ -22,3 +22,11 @@ JSON 结构：
 规则：推断以「判断：」开头，纯事实不加；百分比两位小数，负号用「−」；千分位；时间一律北京时间；
 所有数字必须来自已抓取来源，否则标「未核实」并写原因。Filecoin 新闻只放 Filecoin 板块，这里只写 FIL 价格/供应。
 样式：沿用站点黑白灰，标签为灰色纯文字，涨跌不着色。
+
+## 2026-10-21 起新增硬性规则（generate.py 校验）
+- cutoff、snapshot.time、events.time_bj 一律 YYYY-MM-DD HH:MM（北京时间）；sources[].date 完整 YYYY-MM-DD。
+- change 单位与窗口分开写：百分比 `+0.28%（较前收）`、收益率 `−1.9 bp（较前收）`、加密 `+0.85%（24h）`；负号「−」；页面用灰色 ▲▼，不着色。
+- 每行 snapshot 与每条 item 带 crosscheck（已交叉核对|单一来源|冲突）；第二来源走 agy；冲突须并列两个值+来源+差异原因。
+- risks 必须以「判断：」开头且引用具体数字；全文禁用模糊词（见 README）。
+- yesterday_check 留 null 时自动生成：读前一天 next_check；无前一天数据写「首期无昨日数据。」。
+- meta.finance：as_of / basis / missing 必填。

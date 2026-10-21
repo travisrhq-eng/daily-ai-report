@@ -1,4 +1,16 @@
-const CACHE='v1792559312';
-self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['./','index.html','manifest.webmanifest','icons/icon-192.png?v=2','icons/apple-touch-icon.png?v=2'])));self.skipWaiting()});
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x)))));self.clients.claim()});
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(fetch(e.request).then(r=>{const c=r.clone();caches.open(CACHE).then(x=>x.put(e.request,c));return r}).catch(()=>caches.match(e.request)))});
+const CACHE='v1792560819';
+const STATIC=['./','index.html','manifest.webmanifest','apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','icons/favicon-32.png','icons/og.png','favicon.ico'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(STATIC)));self.skipWaiting()});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==CACHE).map(x=>caches.delete(x))))) ;self.clients.claim()});
+self.addEventListener('fetch',e=>{
+  const r=e.request; if(r.method!=='GET')return;
+  const u=new URL(r.url); if(u.origin!==location.origin)return;           // same-origin only
+  const page=r.mode==='navigate'||/\/data\/|\.html$|\/$/.test(u.pathname);
+  if(page){                                                               // stale-while-revalidate
+    e.respondWith(caches.open(CACHE).then(c=>c.match(r).then(hit=>{
+      const net=fetch(r).then(res=>{if(res.ok)c.put(r,res.clone());return res}).catch(()=>hit);
+      return hit||net;})));
+  } else {                                                                // cache-first static
+    e.respondWith(caches.match(r).then(hit=>hit||fetch(r).then(res=>{if(res.ok){const cl=res.clone();caches.open(CACHE).then(c=>c.put(r,cl))}return res})));
+  }
+});
