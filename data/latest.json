@@ -1,158 +1,138 @@
 {
- "date": "2026-10-22",
+ "date": "2026-10-23",
  "sections": {
   "ai_labs": [
    {
     "lab": "OpenAI",
-    "title": "OpenAI 模型登陆 Google Cloud Model Garden",
-    "summary": "OpenAI 宣布把前沿模型和 Codex 智能体工作流接入 Google Cloud 的 Model Garden。Google Cloud 博客写明：GPT-6 Astra、GPT-6.1 Sol、GPT-6 Luna 目前为面向部分企业客户的私有预览，通过 Google Cloud Marketplace 购买、统一账单结算。",
-    "source_url": "https://x.com/OpenAI/status/2112988118471295323",
+    "title": "Decisions API 正式可用",
+    "summary": "OpenAI 开发者账号宣布 Decisions API 正式可用（GA）：应用和智能体可以对文本和图片做分类、评估输入并决定下一步，不需要生成完整的模型回复，响应更快、成本更低。OpenAI 官方页面写明调用接口为 POST /v1/decisions，支持判断、选择、打分三类输出。",
+    "source_url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+    "source_name": "X @OpenAIDevs",
+    "published_at": "2026-10-23 03:07",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "source": "OpenAI 官方页面",
+     "url": "https://openai.com/index/decisions-api"
+    }
+   },
+   {
+    "lab": "OpenAI",
+    "title": "METR 与 Redwood Research 嵌入式评估 OpenAI 内部监控系统",
+    "summary": "OpenAI 称今年夏天邀请第三方机构 METR 和 Redwood Research 试点「嵌入式评估」：在 3 周内获得 OpenAI 基础设施的深度访问权限，检查其内部监控系统。OpenAI 表示评估结论已用于加强安全措施，并会影响后续做法。",
+    "source_url": "https://x.com/OpenAI/status/2113298833392496746",
     "source_name": "X @OpenAI",
-    "published_at": "2026-10-22 03:23",
-    "fetched_at": "2026-10-22 08:10",
+    "published_at": "2026-10-22 23:57",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 OpenAI 官方帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "前沿红队博客：用 Claude 大规模做软件形式化验证",
+    "summary": "Anthropic 前沿红队（Frontier Red Team）博客发文介绍用 Claude 对大规模代码做形式化验证。形式化验证能证明代码不存在某些类型的漏洞，过去只适用于小型代码库或需要大量专家时间。",
+    "source_url": "https://x.com/AnthropicAI/status/2113390212911083894",
+    "source_name": "X @AnthropicAI",
+    "published_at": "2026-10-23 06:01",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 Anthropic 官方帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude Models on Google Cloud（Anthropic 托管）正式可用",
+    "summary": "Anthropic 宣布由其托管的 Claude Models on Google Cloud 正式可用：在 Google Cloud 上提供完整的 Claude Platform 功能，使用 Google Cloud IAM 凭证、Google Cloud 账单，并可抵扣已有的云承诺消费。",
+    "source_url": "https://x.com/claudeai/status/2113380122468454765",
+    "source_name": "X @claudeai",
+    "published_at": "2026-10-23 05:21",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch 人工核对（agy 额度已用尽）",
      "source": "Google Cloud 博客",
-     "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
-    }
-   },
-   {
-    "lab": "OpenAI",
-    "title": "OpenAI 公开 ChatGPT 广告系统架构",
-    "summary": "OpenAI 开发者账号发文介绍 ChatGPT 广告栈：由 LLM 编排器、检索、排序和竞价工具组成，OpenAI 表示设计目标是广告随对话变化，同时回答内容保持独立。",
-    "source_url": "https://x.com/OpenAIDevs/status/2112962753682198969",
-    "source_name": "X @OpenAIDevs",
-    "published_at": "2026-10-22 01:42",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "仅官方帖"
-    }
-   },
-   {
-    "lab": "OpenAI",
-    "title": "Patch the Planet：OpenAI 模型协助发现 PHP 严重漏洞",
-    "summary": "OpenAI 称其模型在 Patch the Planet 计划中帮助研究人员发现 PHP 运行时的严重漏洞（Wiz 命名为 PHP2Shell，CVE-2026-109618 与 CVE-2026-109619），PHP 运行着 70% 的网站（OpenAI 原文用语为 estimated）。PHP 已于 2026-10-21 发布修复版 8.5.12、8.4.27、8.3.36、8.2.35；OpenAI 另发布一个 Codex 技能帮助网站自查。",
-    "source_url": "https://x.com/OpenAI/status/2112907856018309586",
-    "source_name": "X @OpenAI",
-    "published_at": "2026-10-21 22:04",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "CISA",
-     "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
+     "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud"
     }
    },
    {
     "lab": "Anthropic",
-    "title": "Claude Duet 研究预览：主动型智能体应用",
-    "summary": "Anthropic 发布独立应用 Claude Duet（研究预览）：Claude 会主动提醒需要关注的事项、完成交办任务、在用户离开时继续工作，代用户执行操作前先征求同意。官方帮助中心写明目前通过候补名单向美国 Pro 和 Max 订阅用户开放，Team 和 Enterprise 暂不包含。",
-    "source_url": "https://x.com/claudeai/status/2112984664256241837",
+    "title": "下周起 Claude 应用默认使用自动模式",
+    "summary": "Anthropic 宣布从下周开始，Pro、Max 和 Team 套餐的 Claude 网页版、桌面版和手机 App 会话默认进入自动模式：不再逐步请用户批准，由自动检查拦截有风险的操作；用户可随时切回手动模式。",
+    "source_url": "https://x.com/claudeai/status/2113360845409583307",
     "source_name": "X @claudeai",
-    "published_at": "2026-10-22 03:09",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "CNBC",
-     "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html"
-    }
-   },
-   {
-    "lab": "Anthropic",
-    "title": "Anthropic 发布年度公益报告，长期利益信托新增成员",
-    "summary": "Anthropic 作为公益公司发布年度 Public Benefit Report，列出五大支柱及相应行动。同日宣布前哈佛大学理学院院长、实验物理学家 Christopher Stubbs 加入其长期利益信托（Long-Term Benefit Trust）。",
-    "source_url": "https://x.com/AnthropicAI/status/2112966949273801086",
-    "source_name": "X @AnthropicAI",
-    "published_at": "2026-10-22 01:59",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "两条均为 Anthropic 官方帖"
-    }
-   },
-   {
-    "lab": "Anthropic",
-    "title": "Claude Security 支持持续扫描代码库",
-    "summary": "Claude Security 现在连接代码仓库一次后，先做一次深度扫描，之后随代码变更自动复扫，并跟踪漏洞直到修复。该功能在 Claude Enterprise 上公开测试；官方文章写明每个项目最多连接 8 个仓库。",
-    "source_url": "https://x.com/claudeai/status/2112962248218148878",
-    "source_name": "X @claudeai",
-    "published_at": "2026-10-22 01:40",
-    "fetched_at": "2026-10-22 08:10",
+    "published_at": "2026-10-23 04:04",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch 人工核对（agy 额度已用尽）",
      "source": "Claude 官方文章",
-     "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
+     "url": "https://claude.com/resources/articles/auto-mode-default-in-claude-code"
     }
    },
    {
     "lab": "xAI",
     "title": "今日无更新",
-    "summary": "截至 2026-10-22 08:10（北京时间），@xai 与 @grok 官方账号在近 48 小时内没有发布新功能或新模型。马斯克 2026-10-21 13:44 发帖「Honest feedback from Grok and Fable」，内容为图片，不是更新公告。",
+    "summary": "截至 2026-10-23 07:29（北京时间），@xai 与 @grok 官方账号自 2026-10-22 08:00 起没有发布原创帖。马斯克 2026-10-23 00:22 与 02:00 两次发帖推荐 Grok Bot（帖文分别为「Grok @Bot」「Try Grok @Bot」），不是新功能公告。",
     "source_url": "https://x.com/xai",
     "source_name": "X @xai",
-    "published_at": "2026-10-22 08:10",
-    "fetched_at": "2026-10-22 08:10",
+    "published_at": "2026-10-23 07:29",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "X API 检索 from:xai OR from:grok，2026-10-20 08:10 起无原创帖"
+     "note": "X API 检索 from:xai OR from:grok，2026-10-22 08:00 起无原创帖"
     },
     "status_card": true
    },
    {
     "lab": "Google",
-    "title": "Gemini 4 Argon 演示：交互式 3D 人体解剖",
-    "summary": "Google DeepMind 展示 Gemini 4 Argon 组合 3 个开源数据集，做出可分层查看肌肉、可进入跳动心脏内部的交互式 3D 人体解剖可视化。",
-    "source_url": "https://x.com/GoogleDeepMind/status/2112974723659247896",
-    "source_name": "X @GoogleDeepMind",
-    "published_at": "2026-10-22 02:30",
-    "fetched_at": "2026-10-22 08:10",
+    "title": "Gemini 4 Argon 演示：在 Antigravity 中自主驱动 Blender 建 3D 场景",
+    "summary": "Google 展示 Gemini 4 Argon 从一张 Nano Banana 生成的图片出发，在 Antigravity 中以自主循环方式驱动 Blender MCP，完成一个随音频变化的哥特式大教堂 3D 场景，包括建模、相机布置和音频联动。",
+    "source_url": "https://x.com/Google/status/2113353489938075794",
+    "source_name": "X @Google",
+    "published_at": "2026-10-23 03:35",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "仅官方演示帖"
+     "note": "仅 Google 官方演示帖"
     }
    },
    {
     "lab": "Google",
-    "title": "Gemini 进入 CarPlay 上的 Google 地图导航",
-    "summary": "Google 宣布 Gemini 已可在 Apple CarPlay 上的 Google 地图导航中使用：点 Gemini 图标即可用对话找停车位、报告交通事件或修改路线。9to5Google 报道称先在美国推出。",
-    "source_url": "https://x.com/Google/status/2112963255924674955",
-    "source_name": "X @Google",
-    "published_at": "2026-10-22 01:44",
-    "fetched_at": "2026-10-22 08:10",
+    "title": "Gemini 可结合 Google 地图搜索记录给出当日建议",
+    "summary": "Gemini App 宣布：在用户授权后，Gemini 现在可以参考用户的 Google 地图搜索记录和收藏地点，并结合 Google 日历，为当天行程给出个性化建议。",
+    "source_url": "https://x.com/GeminiApp/status/2113343041805127839",
+    "source_name": "X @GeminiApp",
+    "published_at": "2026-10-23 02:53",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "9to5Google",
-     "url": "https://9to5google.com/2026/10/21/google-maps-carplay-gemini/"
+     "status": "单一来源",
+     "note": "仅 Gemini 官方帖"
     }
    },
    {
     "lab": "Google",
-    "title": "Wiz 实测：Gemini 4 Argon 发现的漏洞是基线模型的 2 倍以上",
-    "summary": "Google 称安全公司 Wiz 在真实环境测试中，用 Gemini 4 Argon 发现的漏洞数量超过基线模型的 2 倍，并抓到一个严重漏洞。Wiz 博客介绍了用 Argon 在授权环境中查找并协助修复关键暴露面的案例。",
-    "source_url": "https://x.com/Google/status/2112914740058181739",
-    "source_name": "X @Google",
-    "published_at": "2026-10-21 22:31",
-    "fetched_at": "2026-10-22 08:10",
+    "title": "Google DeepMind 发布 10 米分辨率森林类型地图 ForTy",
+    "summary": "Google DeepMind 发布 Forest Typology（ForTy）：一张 10 米分辨率的地图，区分天然林、人工林和农林，用于识别毁林并保护最重要的森林。",
+    "source_url": "https://x.com/GoogleDeepMind/status/2113278710795153785",
+    "source_name": "X @GoogleDeepMind",
+    "published_at": "2026-10-22 22:38",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "Wiz 博客",
-     "url": "https://www.wiz.io/blog/scan-for-good-critical-ai-exposures"
+     "status": "单一来源",
+     "note": "仅 Google DeepMind 官方帖"
     }
    },
    {
@@ -162,11 +142,11 @@
     "source_url": "https://x.ai/changelog/bot",
     "source_name": "x.ai Grok Bot Changelog",
     "published_at": "2026-10-14 00:00",
-    "fetched_at": "2026-10-22 08:10",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "2026-10-22 08:08 抓取官方更新日志"
+     "note": "2026-10-23 07:30 抓取官方更新日志"
     },
     "status_card": true
    }
@@ -175,205 +155,265 @@
    {
     "author": "@claudeai",
     "author_name": "Claude",
-    "summary": "Anthropic 发布 Claude Duet 研究预览：一个主动型智能体应用，会主动提醒待办、完成交办任务、用户离开时继续工作，代为操作前先确认。",
-    "url": "https://x.com/claudeai/status/2112984664256241837",
-    "created_at": "2026-10-21T19:09:35Z",
-    "likes": 33790,
-    "replies": 1378,
-    "reposts": 2395,
-    "quotes": 2700,
-    "published_at": "2026-10-22 03:09",
-    "fetched_at": "2026-10-22 08:10",
+    "summary": "Anthropic 宣布下周起 Pro、Max、Team 用户的 Claude 网页、桌面和手机会话默认使用自动模式：由自动检查拦截有风险的操作，不再逐步请用户批准，可随时切回手动。",
+    "url": "https://x.com/claudeai/status/2113360845409583307",
+    "created_at": "2026-10-22T20:04:24Z",
+    "likes": 9248,
+    "replies": 382,
+    "reposts": 310,
+    "quotes": 151,
+    "published_at": "2026-10-23 04:04",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 40263,
+    "score": 10091,
     "rank": 1
    },
    {
-    "author": "@OpenAI",
-    "author_name": "OpenAI",
-    "summary": "OpenAI 称其模型在 Patch the Planet 计划中协助发现 PHP 严重安全漏洞，PHP 支撑着 70% 的网站（OpenAI 原文为 estimated）；PHP 已于 2026-10-21 发布修复。",
-    "url": "https://x.com/OpenAI/status/2112907856018309586",
-    "created_at": "2026-10-21T14:04:23Z",
-    "likes": 13326,
-    "replies": 504,
-    "reposts": 2694,
-    "quotes": 1329,
-    "published_at": "2026-10-21 22:04",
-    "fetched_at": "2026-10-22 08:10",
+    "author": "@elonmusk",
+    "author_name": "Elon Musk",
+    "summary": "马斯克发帖推荐 Grok Bot（帖文：Grok @Bot），附链接。",
+    "url": "https://x.com/elonmusk/status/2113304960326652163",
+    "created_at": "2026-10-22T16:22:20Z",
+    "likes": 4985,
+    "replies": 791,
+    "reposts": 525,
+    "quotes": 58,
+    "published_at": "2026-10-23 00:22",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 17853,
+    "score": 6359,
     "rank": 2
    },
    {
     "author": "@elonmusk",
     "author_name": "Elon Musk",
-    "summary": "马斯克推荐用户试用 Grok Bot（帖文：Try Grok @Bot, you will love it!），附链接。",
-    "url": "https://x.com/elonmusk/status/2113010364178964616",
-    "created_at": "2026-10-21T20:51:43Z",
-    "likes": 11058,
-    "replies": 721,
-    "reposts": 662,
-    "quotes": 75,
-    "published_at": "2026-10-22 04:51",
-    "fetched_at": "2026-10-22 08:10",
+    "summary": "马斯克再次推荐用户试用 Grok Bot（帖文：Try Grok @Bot），附链接。",
+    "url": "https://x.com/elonmusk/status/2113329537509449744",
+    "created_at": "2026-10-22T18:00:00Z",
+    "likes": 4011,
+    "replies": 695,
+    "reposts": 443,
+    "quotes": 48,
+    "published_at": "2026-10-23 02:00",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 12516,
+    "score": 5197,
     "rank": 3
-   },
-   {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克发帖：People are buying FSD with a car attached, not the other way around（人们买的是附带一辆车的 FSD，而不是反过来）。FSD 是特斯拉的辅助驾驶软件。",
-    "url": "https://x.com/elonmusk/status/2113011056847278486",
-    "created_at": "2026-10-21T20:54:28Z",
-    "likes": 10423,
-    "replies": 938,
-    "reposts": 912,
-    "quotes": 137,
-    "published_at": "2026-10-22 04:54",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
-    },
-    "score": 12410,
-    "rank": 4
-   },
-   {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克发图称是 Grok 与 Fable 给出的「诚实反馈」，具体内容在图片中，帖文没有文字说明。",
-    "url": "https://x.com/elonmusk/status/2112781998624555086",
-    "created_at": "2026-10-21T05:44:16Z",
-    "likes": 9156,
-    "replies": 1361,
-    "reposts": 718,
-    "quotes": 95,
-    "published_at": "2026-10-21 13:44",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
-    },
-    "score": 11330,
-    "rank": 5
-   },
-   {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克称 Grok Bot 可以帮用户维护和修复信用评分，「只要让它去做」。这是马斯克个人说法，官方更新日志未列出该功能。",
-    "url": "https://x.com/elonmusk/status/2112966832969708020",
-    "created_at": "2026-10-21T17:58:44Z",
-    "likes": 7635,
-    "replies": 1110,
-    "reposts": 854,
-    "quotes": 79,
-    "published_at": "2026-10-22 01:58",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
-    },
-    "score": 9678,
-    "rank": 6
-   },
-   {
-    "author": "@OpenAI",
-    "author_name": "OpenAI",
-    "summary": "OpenAI 发布一个 Codex 技能，帮助网站所有者检查是否受本次 PHP 漏洞影响，把 Codex 指向其 GitHub 仓库即可。",
-    "url": "https://x.com/OpenAI/status/2112945805686604033",
-    "created_at": "2026-10-21T16:35:11Z",
-    "likes": 7380,
-    "replies": 269,
-    "reposts": 909,
-    "quotes": 171,
-    "published_at": "2026-10-22 00:35",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
-    },
-    "score": 8729,
-    "rank": 7
    },
    {
     "author": "@claudeai",
     "author_name": "Claude",
-    "summary": "Claude Security 支持持续扫描：连接仓库后先深度扫描，再随代码变更复扫；在 Claude Enterprise 公开测试。",
-    "url": "https://x.com/claudeai/status/2112962248218148878",
-    "created_at": "2026-10-21T17:40:31Z",
-    "likes": 6687,
-    "replies": 288,
-    "reposts": 332,
-    "quotes": 139,
-    "published_at": "2026-10-22 01:40",
-    "fetched_at": "2026-10-22 08:10",
+    "summary": "Anthropic 托管的 Claude Models on Google Cloud 正式可用：在 Google Cloud 上用 IAM 凭证、Google Cloud 账单使用完整的 Claude Platform 功能。",
+    "url": "https://x.com/claudeai/status/2113380122468454765",
+    "created_at": "2026-10-22T21:21:00Z",
+    "likes": 2197,
+    "replies": 149,
+    "reposts": 125,
+    "quotes": 59,
+    "published_at": "2026-10-23 05:21",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 7446,
-    "rank": 8
+    "score": 2530,
+    "rank": 4
    },
    {
     "author": "@OpenAI",
     "author_name": "OpenAI",
-    "summary": "OpenAI 称 GPT-Rosalind 在小鼠脑数据中发现 DCTN1 基因与胆固醇转运相关基因表达的联系，提出保护神经元的新研究方向。",
-    "url": "https://x.com/OpenAI/status/2112899854569762936",
-    "created_at": "2026-10-21T13:32:35Z",
-    "likes": 5386,
-    "replies": 320,
-    "reposts": 554,
-    "quotes": 207,
-    "published_at": "2026-10-21 21:32",
-    "fetched_at": "2026-10-22 08:10",
+    "summary": "OpenAI 称邀请 METR 和 Redwood Research 在 3 周内深度访问其基础设施，试点评估内部监控系统，结论已用于加强安全措施。",
+    "url": "https://x.com/OpenAI/status/2113298833392496746",
+    "created_at": "2026-10-22T15:57:59Z",
+    "likes": 1901,
+    "replies": 268,
+    "reposts": 117,
+    "quotes": 63,
+    "published_at": "2026-10-22 23:57",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 6467,
+    "score": 2349,
+    "rank": 5
+   },
+   {
+    "author": "@AnthropicAI",
+    "author_name": "Anthropic",
+    "summary": "Anthropic 前沿红队博客介绍用 Claude 对大规模代码做形式化验证，证明代码不存在某些类型的漏洞。",
+    "url": "https://x.com/AnthropicAI/status/2113390212911083894",
+    "created_at": "2026-10-22T22:01:06Z",
+    "likes": 1859,
+    "replies": 182,
+    "reposts": 164,
+    "quotes": 80,
+    "published_at": "2026-10-23 06:01",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    },
+    "score": 2285,
+    "rank": 6
+   },
+   {
+    "author": "@satyanadella",
+    "author_name": "Satya Nadella",
+    "summary": "微软 CEO 纳德拉称大众汽车集团正在全公司范围使用 Copilot。",
+    "url": "https://x.com/satyanadella/status/2113182815189942357",
+    "created_at": "2026-10-22T08:16:58Z",
+    "likes": 1345,
+    "replies": 123,
+    "reposts": 72,
+    "quotes": 17,
+    "published_at": "2026-10-22 16:16",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    },
+    "score": 1557,
+    "rank": 7
+   },
+   {
+    "author": "@demishassabis",
+    "author_name": "Demis Hassabis",
+    "summary": "Google DeepMind CEO 哈萨比斯入选《华尔街日报》创新者专刊，称相信人类能应对前沿模型的潜在挑战，迎来科学发现的新黄金时代。",
+    "url": "https://x.com/demishassabis/status/2113352276026990972",
+    "created_at": "2026-10-22T19:30:21Z",
+    "likes": 1250,
+    "replies": 79,
+    "reposts": 72,
+    "quotes": 11,
+    "published_at": "2026-10-23 03:30",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    },
+    "score": 1412,
+    "rank": 8
+   },
+   {
+    "author": "@OpenAIDevs",
+    "author_name": "OpenAI Developers",
+    "summary": "OpenAI 宣布 Decisions API 正式可用：无需生成完整回复即可对文本和图片做分类、评估和下一步决策。",
+    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
+    "created_at": "2026-10-22T19:07:58Z",
+    "likes": 831,
+    "replies": 100,
+    "reposts": 50,
+    "quotes": 33,
+    "published_at": "2026-10-23 03:07",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "互动数为 X API 一手计数，无第二来源"
+    },
+    "score": 1014,
     "rank": 9
    },
    {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克称 Grok Bot「就像雇了一个超级聪明又有趣的员工」，附链接。",
-    "url": "https://x.com/elonmusk/status/2113011511429902609",
-    "created_at": "2026-10-21T20:56:16Z",
-    "likes": 4502,
-    "replies": 868,
-    "reposts": 530,
-    "quotes": 51,
-    "published_at": "2026-10-22 04:56",
-    "fetched_at": "2026-10-22 08:10",
+    "author": "@satyanadella",
+    "author_name": "Satya Nadella",
+    "summary": "纳德拉介绍在科隆了解到的案例：TK Elevator 用微软技术让维修技师调用数十年积累的知识，维护超过 100 万部电梯和扶梯。",
+    "url": "https://x.com/satyanadella/status/2113217359108595808",
+    "created_at": "2026-10-22T10:34:14Z",
+    "likes": 817,
+    "replies": 78,
+    "reposts": 56,
+    "quotes": 10,
+    "published_at": "2026-10-22 18:34",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "互动数为 X API 一手计数，无第二来源"
     },
-    "score": 5951,
+    "score": 961,
     "rank": 10
    }
   ],
   "filecoin": [
+   {
+    "title": "Filecoin 官方：数据读取从 15 分钟级降到 300 毫秒级",
+    "summary": "@Filecoin 回应「Filecoin 不是冷存储吗」的疑问：经典存储交易上一次读取过去要 15 分钟级，现在 300 毫秒级（原文两个数字都带 ~ 符号），足够支撑 AI 智能体使用。同时发布供智能体使用的 Filecoin skills。",
+    "source_url": "https://x.com/Filecoin/status/2113338667099927022",
+    "source_name": "X @Filecoin",
+    "type": "x",
+    "published_at": "2026-10-23 02:36",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 Filecoin 官方帖；CoinMarketCal 2026-10-23 02:40 收录「Warm Storage fast reads」事件，日期标为 2026-10-22"
+    }
+   },
+   {
+    "title": "FilOz 详解 Solstice 升级：区块奖励与付费客户挂钩",
+    "summary": "Filecoin 核心开发团队 FilOz 发文解读 2026-10-19 在主网上线的 Solstice 升级：每个新扇区获得 10 倍 QAP（质量调整算力），不再需要 datacap 或分配者，Fil+ 机制被替换，奖励更多与赢得并留住付费客户挂钩。",
+    "source_url": "https://x.com/_FilOz/status/2113294495588495392",
+    "source_name": "X @_FilOz",
+    "type": "x",
+    "published_at": "2026-10-22 23:40",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "source": "X @Filecoin（2026-10-20 22:11，Blockworks Research 解读）",
+     "url": "https://x.com/Filecoin/status/2112547367253864532"
+    }
+   },
+   {
+    "title": "Lotus 发布 v1.38.3：拒绝已失信证书",
+    "summary": "Filecoin 节点软件 Lotus 于 2026-10-22 00:43 发布 v1.38.3（含 miner/v1.38.3），重新构建节点、矿工和 worker 软件包，使其拒绝已被吊销信任的证书；使用更早二进制包的运营者被建议升级。",
+    "source_url": "https://github.com/filecoin-project/lotus/releases/tag/v1.38.3",
+    "source_name": "GitHub filecoin-project/lotus",
+    "type": "web",
+    "published_at": "2026-10-22 00:43",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "source": "X @NetNapz（2026-10-22 21:57）",
+     "url": "https://x.com/NetNapz/status/2113268400625422482"
+    }
+   },
+   {
+    "title": "Filecoin 官方：开放基础设施",
+    "summary": "@Filecoin 发帖「Open infrastructure = millions of winners」（开放基础设施＝千万个赢家），附链接，帖文无更多说明。",
+    "source_url": "https://x.com/Filecoin/status/2113310891223433560",
+    "source_name": "X @Filecoin",
+    "type": "x",
+    "published_at": "2026-10-23 00:45",
+    "fetched_at": "2026-10-23 07:29",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅官方帖"
+    }
+   },
    {
     "title": "Filecoin 官方转发 The Breakdown 节目：解读网络经济模型变化",
     "summary": "@Filecoin 推荐 Blockworks 旗下节目 The Breakdown 中 @martabelcher 与 @davidgohkstein 关于 Filecoin 网络经济模型变化的讨论。",
@@ -381,52 +421,21 @@
     "source_name": "X @Filecoin",
     "type": "x",
     "published_at": "2026-10-22 01:48",
-    "fetched_at": "2026-10-22 08:10",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源"
-    }
-   },
-   {
-    "title": "TokenPost：FIL 2026-10-21 涨 2.05% 至 1.07 美元，仍低于 7 日和 10 日均线",
-    "summary": "TokenPost 记录 2026-10-21 17:20 UTC FIL 报 1.07 美元、涨 2.05%；7 日均价 1.08 美元、10 日均价 1.10 美元（原文用 about）。FIL 2026-10-15 收于 1.16 美元，2026-10-19 收于 1.019 美元，2026-10-20 收于 1.032 美元。",
-    "source_url": "https://www.tokenpost.com/news/investing/37030",
-    "source_name": "TokenPost",
-    "type": "web",
-    "published_at": "2026-10-22 04:55",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "主流媒体",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "CoinGecko（2026-10-22 08:07 快照 1.058 美元，24h +2.10%）",
-     "url": "https://www.coingecko.com/en/coins/filecoin"
-    }
-   },
-   {
-    "title": "Filecoin 重申付费存储战略",
-    "summary": "TokenPost 报道：Solstice 升级后，Filecoin 于 2026-10-20（美东）重申推动链上付费存储交易，目标客户包括 AI 工作负载；计划提出覆盖存储、检索和计算的链上支付层，并提供让 AI 智能体存储文件、获取公开链接和链上付款的工具。",
-    "source_url": "https://www.tokenpost.com/news/technology/36636",
-    "source_name": "TokenPost",
-    "type": "web",
-    "published_at": "2026-10-21 20:02",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "主流媒体",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "X @Filecoin（2026-10-21 08:06）",
-     "url": "https://x.com/Filecoin/status/2112696869042233480"
+     "status": "单一来源",
+     "note": "仅官方帖"
     }
    },
    {
     "title": "Filecoin 官方：从容量网络转向创收型业务网络",
-    "summary": "@Filecoin 称运行 6 年后，Filecoin 正从「容量网络」转向「创收型业务网络」：冷存储完成了从 0 到 1，接下来重点是 AI 和智能体的存储需求；@momack28 介绍了正在推进的工作。",
+    "summary": "@Filecoin 称运行 6 年后，Filecoin 正从「容量网络」转向「创收型业务网络」：冷存储完成了从 0 到 1，接下来重点是 AI 和智能体的存储需求。",
     "source_url": "https://x.com/Filecoin/status/2112696869042233480",
     "source_name": "X @Filecoin",
     "type": "x",
     "published_at": "2026-10-21 08:06",
-    "fetched_at": "2026-10-22 08:10",
+    "fetched_at": "2026-10-23 07:29",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
@@ -434,260 +443,210 @@
      "source": "TokenPost",
      "url": "https://www.tokenpost.com/news/technology/36636"
     }
-   },
-   {
-    "title": "Blockworks Research：奖励与付费客户挂钩",
-    "summary": "@Filecoin 转引 Blockworks Research（Messari by Blockworks）的分析：Filecoin 网络奖励中越来越大的份额与赢得并留住付费客户挂钩，称这是主网上线以来奖励机制最重要的变化之一。",
-    "source_url": "https://x.com/Filecoin/status/2112547367253864532",
-    "source_name": "X @Filecoin",
-    "type": "x",
-    "published_at": "2026-10-20 22:11",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "Messari by Blockworks",
-     "url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy"
-    }
-   },
-   {
-    "title": "Solstice（网络 v29）升级已于 2026-10-19 完成",
-    "summary": "Filecoin 主网在 2026-10-19 12:59:30 UTC（北京时间 20:59:30）激活 Solstice 升级，官方状态页已标记维护完成。@Filecoin 2026-10-20 04:07 发帖确认：越来越大的奖励份额将流向带来付费客户的服务，份额随付费需求增长。",
-    "source_url": "https://status.filecoin.io/",
-    "source_name": "Filecoin Status",
-    "type": "web",
-    "published_at": "2026-10-19 20:59",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
-     "source": "X @Filecoin",
-     "url": "https://x.com/Filecoin/status/2112274354033529097"
-    }
-   },
-   {
-    "title": "X 热帖：FIL 从容量网络转向收入网络",
-    "summary": "@Joshuwa 认为 FIL 最关键的转变是收入：AI 存储给了 Filecoin 目标市场，但 AI 需求必须转化为收入。个人观点。",
-    "source_url": "https://x.com/Joshuwa/status/2112735727595221175",
-    "source_name": "X @Joshuwa",
-    "type": "x",
-    "published_at": "2026-10-21 10:40",
-    "fetched_at": "2026-10-22 08:10",
-    "grade": "社媒传闻",
-    "crosscheck": {
-     "status": "单一来源"
-    }
    }
   ],
   "finance": {
-   "title": "每日金融市场简报｜2026-10-22",
-   "cutoff": "2026-10-22 08:10（北京时间）",
-   "cutoff_note": "美股指数为 2026-10-21 美股收盘（北京时间 2026-10-22 04:00）；美国10年期国债收益率为 ^TNX 收盘（北京时间 02:59）；美元指数、黄金、布伦特原油为北京时间 2026-10-22 07:54—07:57 盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（08:07），涨跌为 24 小时变动。",
+   "title": "每日金融市场简报｜2026-10-23",
+   "cutoff": "2026-10-23 07:29（北京时间）",
+   "cutoff_note": "美股指数为 2026-10-22 美股收盘（北京时间 2026-10-23 04:00）；美国10年期国债收益率为 ^TNX 收盘（北京时间 02:59）；美元指数、黄金、布伦特原油为北京时间 2026-10-23 06:04—07:16 盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（07:26），涨跌为 24 小时变动。",
    "missing": [
     {
      "item": "Gemini（agy）第二来源核对",
-     "reason": "agy 订阅返回 429：个人额度用尽，2026-10-22 08:09 起 50 小时后重置；本期第二来源改为 WebSearch 逐条人工核对"
+     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置，本期未调用；第二来源改为 WebSearch 逐条人工核对"
     },
     {
-     "item": "BTC 现货 ETF 2026-10-21 完整资金流",
-     "reason": "Farside 截至 2026-10-22 08:10 未公布 IBIT、FBTC 等 5 只基金当日数据，已公布部分合计 +7,710 万美元"
+     "item": "BTC 现货 ETF 2026-10-22 完整资金流",
+     "reason": "Farside 截至 2026-10-23 07:29 未公布 IBIT、FBTC 等 9 只基金当日数据，已公布部分合计 −5,460 万美元"
     },
     {
-     "item": "以太坊现货 ETF 2026-10-21 资金流",
-     "reason": "仅查到 2026-10-20 数据（CryptoWatchDesk 引 Farside：净流出 2,610 万美元）"
+     "item": "以太坊现货 ETF 2026-10-21、2026-10-22 资金流",
+     "reason": "本期截止前未核到可打开的数据页"
     },
     {
      "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
-     "reason": "昨日待验证项；未找到可抓取的同批数据源"
+     "reason": "未找到可抓取的同批数据源"
     }
    ],
-   "yesterday_check": "昨日 5 项待验证结果：① 财报：Meta 第三季度营收 646 亿美元、同比 +26%，盘后涨 3%—4%（AP）；IBM 营收 171 亿美元、同比 +5%（IBM 新闻室）；特斯拉经调整每股收益 0.48 美元高于预期 0.45 美元，盘后跌 1.8%（Reuters）；纳指当日收涨 1.05%。② 20 年期美债拍卖：中标收益率 5.469%，较发行前 5.460% 有 0.9 bp 尾差，投标倍数 2.73（上次 2.57），需求偏软。③ EIA：原油库存降 306 万桶至 4.125 亿桶，市场预期降 82 万桶；布伦特收 108.82 美元、+0.03 美元。④ BTC 现货 ETF 未转负：已公布部分 +7,710 万美元，IBIT、FBTC 尚未公布。⑤ Filecoin 付费存储量与交易所净流量：未找到数据，列入本期缺失。",
+   "yesterday_check": "昨日 6 项待验证结果：① 纳指未守住 26,702.86，收 26,008.86、−2.60%；Meta 盘后涨幅未延续（Yahoo Finance）。② Meta 收 648.85 美元、−6.98%，特斯拉收 374.58 美元、−3.08%，IBM 收 252.11 美元、+0.26%（Yahoo Finance）。③ 260 亿美元 5 年期 TIPS 拍卖中标收益率 2.367%（上次 1.955%），投标倍数 2.41（Helious）。④ 布伦特 12 月合约结算 113.17 美元、+4.00%，站稳 110 美元（Dow Jones 经 Morningstar）。⑤ Farside 补齐后 2026-10-21 BTC 现货 ETF 全天净流入 5.248 亿美元（IBIT 2.350 亿、FBTC 2.127 亿），高于 7,000 万美元。⑥ FIL 未收复 1.10 美元，CoinGecko 07:26 快照 0.977 美元。",
    "three_lines": [
     {
-     "conclusion": "美股三大指数齐涨，纳指涨 1.05% 领涨。",
-     "support": "SpaceX 第三季度营收同比 +161% 带动科技股，标普500 收 7,757.17、连涨 3 天（CNBC、AP）。"
+     "conclusion": "AI 支出担忧再起，纳指跌 2.60%，为 6 月以来最大单日跌幅。",
+     "support": "标普500 跌 1.21% 至 7,663.43；Meta 跌 6.98%，AMD 跌 8.1%，英伟达跌 4.4%（WSJ、CNBC、Yahoo Finance）。"
     },
     {
-     "conclusion": "20 年期美债拍卖需求偏软，中标收益率 5.469%。",
-     "support": "尾差 0.9 bp，为 1986-01-08 以来 20 年期拍卖最高中标收益率（Dow Jones 经 MarketScreener）。"
+     "conclusion": "资金涌入美债，10 年期收益率跌 19.3 bp 至 4.953%。",
+     "support": "为 2023-03-10 以来最大单日降幅；CME FedWatch 显示下周加息至少 25 bp 的概率降至 7.2%（Reuters 经 Livemint）。"
     },
     {
-     "conclusion": "比特币 ETF 连续第三天净流入，BTC 站上 8.4 万美元。",
-     "support": "Farside 已公布部分 +7,710 万美元；CoinGecko 08:07 快照 BTC 84,219 美元，24h +1.59%。"
+     "conclusion": "布伦特涨 4.00% 至 113.17 美元，BTC 24h 跌 3.63%。",
+     "support": "布伦特创 2026-05-04 以来最高结算价（Dow Jones）；CoinGecko 07:26 快照 BTC 81,255 美元。"
     }
    ],
    "snapshot": [
     {
      "asset": "标普500",
-     "value": "7,757.17",
-     "change": "+0.58%（较前收）",
-     "time": "2026-10-22 04:00",
+     "value": "7,663.43",
+     "change": "−1.21%（较前收）",
+     "time": "2026-10-23 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/%5EGSPC/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
-      "source": "AP News",
-      "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+      "source": "WSJ（收 7,663.43、−1.21%）",
+      "url": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-drop-on-ai-spending-concerns-05400b55"
      }
     },
     {
      "asset": "纳斯达克综合指数",
-     "value": "26,702.86",
-     "change": "+1.05%（较前收）",
-     "time": "2026-10-22 04:00",
+     "value": "26,008.86",
+     "change": "−2.60%（较前收）",
+     "time": "2026-10-23 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/%5EIXIC/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
-      "source": "CNBC",
-      "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
+      "source": "WSJ（收 26,008.86、−2.6%）",
+      "url": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-drop-on-ai-spending-concerns-05400b55"
      }
     },
     {
      "asset": "美元指数 DXY",
-     "value": "101.685",
-     "change": "−0.09%（较前收）",
-     "time": "2026-10-22 07:57",
+     "value": "101.617",
+     "change": "+0.01%（较前收）",
+     "time": "2026-10-23 06:04",
      "status": "盘中",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
-      "status": "冲突",
+      "status": "已交叉核对",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
-      "values": [
-       {
-        "value": "前收 101.78",
-        "source": "Yahoo Finance",
-        "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
-       },
-       {
-        "value": "前收 101.70",
-        "source": "Ausecure",
-        "url": "https://www.ausecure.com/gold-market-close-oct-21-2026/"
-       }
-      ],
-      "reason": "两家前收取值时点不同，相差 0.08；本表涨跌按 Yahoo 前收计算"
+      "source": "CoinNess（2026-10-22 收 101.608、−0.17%）",
+      "url": "https://coinness.com/en/stock-news/151952"
      }
     },
     {
      "asset": "美国10年期国债收益率",
-     "value": "5.146%",
-     "change": "+2.9 bp（较前收）",
-     "time": "2026-10-22 02:59",
+     "value": "4.953%",
+     "change": "−19.3 bp（较前收）",
+     "time": "2026-10-23 02:59",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/%5ETNX/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "冲突",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
       "values": [
        {
-        "value": "5.146%",
+        "value": "4.953%",
         "source": "Yahoo Finance（^TNX）",
         "url": "https://finance.yahoo.com/quote/%5ETNX/"
        },
        {
-        "value": "5.13%",
+        "value": "4.96%",
         "source": "美国财政部每日面值收益率曲线",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
        }
       ],
-      "reason": "^TNX 为 CBOE 收盘报价，财政部数据为面值收益率曲线并保留两位小数，口径与时点不同，相差 1.6 bp"
+      "reason": "^TNX 为 CBOE 收盘报价，财政部数据为面值收益率曲线并保留两位小数，口径不同，相差 0.7 bp；Dow Jones（Tradeweb 15:00 ET）为 4.952%"
      }
     },
     {
      "asset": "COMEX 黄金（12月）",
-     "value": "4,143.10 美元/盎司",
-     "change": "−0.17%（较前收）",
-     "time": "2026-10-22 07:57",
+     "value": "4,041.30 美元/盎司",
+     "change": "−0.47%（较前收）",
+     "time": "2026-10-23 07:16",
      "status": "盘中",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/GC%3DF/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "冲突",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
       "values": [
        {
-        "value": "前收 4,150.00",
-        "source": "Yahoo Finance（GC=F）",
+        "value": "前收 4,060.40",
+        "source": "Yahoo Finance（GC=F，12 月合约）",
         "url": "https://finance.yahoo.com/quote/GC%3DF/"
        },
        {
-        "value": "结算 4,130.50（+0.20%）",
-        "source": "WSJ（Comex 近月合约）",
-        "url": "https://www.wsj.com/finance/commodities-futures/gold-falls-amid-pressure-from-rising-crude-prices-ea4a6f71"
+        "value": "结算 4,042.80（−2.12%）",
+        "source": "Dow Jones 经 Morningstar（COMEX 10 月近月合约）",
+        "url": "https://www.morningstar.com/news/dow-jones/202610229578/comex-gold-settles-212-lower-at-404280-data-talk"
        }
       ],
-      "reason": "Yahoo 为 12 月合约（GC=F）前收，WSJ 为 COMEX 近月合约结算价，合约月份与取价时点不同；本表涨跌按 Yahoo 前收计算"
+      "reason": "Yahoo 为 12 月合约前收，Dow Jones 为 10 月近月合约结算价，合约月份不同，相差 17.60 美元；本表涨跌按 Yahoo 前收计算"
      }
     },
     {
      "asset": "布伦特原油（12月）",
-     "value": "110.06 美元/桶",
-     "change": "+1.14%（较前收）",
-     "time": "2026-10-22 07:54",
+     "value": "113.03 美元/桶",
+     "change": "−0.12%（较前收）",
+     "time": "2026-10-23 07:15",
      "status": "盘中",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/BZ%3DF/",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
-      "source": "CNBC（前收结算 108.82 美元）",
-      "url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html"
+      "source": "Dow Jones 经 Morningstar（12 月合约结算 113.17 美元）",
+      "url": "https://www.morningstar.com/news/dow-jones/2026102210027/front-month-ice-brent-crude-rose-400-to-settle-at-11317-data-talk"
      }
     },
     {
      "asset": "BTC",
-     "value": "84,219 美元",
-     "change": "+1.59%（24h）",
-     "time": "2026-10-22 08:07",
+     "value": "81,255 美元",
+     "change": "−3.63%（24h）",
+     "time": "2026-10-23 07:26",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/bitcoin",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
-      "status": "单一来源"
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "source": "CoinDesk（2026-10-22 报 BTC 回落至 81,000 美元）",
+      "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
      }
     },
     {
      "asset": "ETH",
-     "value": "2,478.22 美元",
-     "change": "+1.34%（24h）",
-     "time": "2026-10-22 08:07",
+     "value": "2,382.21 美元",
+     "change": "−3.85%（24h）",
+     "time": "2026-10-23 07:26",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/ethereum",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
-      "status": "单一来源"
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "source": "TradingKey（2026-10-22 报 ETH 跌破 2,400 美元）",
+      "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/262232188-crypto-btc-eth-long-short-dxy-fed-tradingkey"
      }
     },
     {
      "asset": "FIL",
-     "value": "1.058 美元",
-     "change": "+2.10%（24h）",
-     "time": "2026-10-22 08:07",
+     "value": "0.977 美元",
+     "change": "−7.83%（24h）",
+     "time": "2026-10-23 07:26",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/filecoin",
-     "fetched_at": "2026-10-22 08:07",
+     "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch 人工核对（agy 额度已用尽）",
-      "source": "TokenPost（2026-10-21 17:20 UTC 报 1.07 美元）",
-      "url": "https://www.tokenpost.com/news/investing/37030"
+      "source": "ChartExchange（2026-10-22 收 0.9746 美元）",
+      "url": "https://chartexchange.com/symbol/crypto-filusd/historical/"
      }
     }
    ],
@@ -697,26 +656,26 @@
      "items": [
       {
        "no": 1,
-       "headline": "SpaceX 财报带动科技股，美股三大指数齐涨。",
-       "facts": "2026-10-21 道指涨 360.21 点（0.69%）至 52,856.09；标普500 涨 44.60 点（0.58%）至 7,757.17；纳指涨 278.04 点（1.05%）至 26,702.86（CNBC、AP）。SpaceX 称第三季度营收同比增长 161%，股价涨 7%；马斯克称 SpaceX 与特斯拉已各自成立特别委员会讨论合并，特斯拉盘中涨超 3%。AMD 涨超 3%，英伟达涨超 2%；Netflix 下调全年广告收入指引后跌超 5%（CNBC）。",
-       "plain": "市场把 SpaceX 的高增长当成 AI 需求仍强的证据，资金回到科技和芯片股。",
-       "affects": "美股科技与半导体、特斯拉、SpaceX 相关资产。",
+       "headline": "AI 支出担忧再起，纳指跌 2.60%，标普500 创 7 月以来最差单日。",
+       "facts": "2026-10-22 标普500 跌 93.74 点（1.21%）至 7,663.43；纳指跌 694 点（2.60%）至 26,008.86，为 6 月以来最大跌幅；道指涨 11.89 点（0.02%）至 52,867.98（WSJ）。科技板块跌 3%，英伟达跌 4.4%，Alphabet 跌 3.2%，AMD 跌 8.1%（CNBC）；CoreWeave 跌 10%（Yahoo Finance）。收盘后美股期货持平，纳指100 期货跌 0.1%（CNBC）。",
+       "plain": "投资者担心 AI 投入过大、靠举债建数据中心难以为继，卖出科技股、买入美债和防御型蓝筹。",
+       "affects": "美股科技与半导体、AI 数据中心与云算力股。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "纳指当日 +1.05%，盘后 Meta、IBM、特斯拉财报反应方向不一（见第 2 条），收盘涨幅尚未包含盘后信息。",
-       "next_check": "2026-10-22 美股收盘时纳指能否守住 26,702.86，以及 Meta 盘后 3%—4% 涨幅是否延续到正式交易时段。",
-       "risks": "判断：Netflix 单日跌超 5% 与特斯拉盘后跌 1.8% 说明财报季个股分化大，纳指 1.05% 的涨幅依赖少数 AI 主题股。",
+       "pricing_evidence": "纳指单日 −2.60%，盘后期货仅变动 −0.1% 至 +0.1%，尚无后续方向。",
+       "next_check": "2026-10-23 美股收盘时纳指能否守住 26,008.86，以及英伟达能否收复 4.4% 跌幅。",
+       "risks": "判断：道指 +0.02% 与纳指 −2.60% 相差 2.62 个百分点，资金在板块间轮动；若 2026-10-23 PMI 低于预期 55.6，科技股压力会扩散到周期股。",
        "sources": [
         {
-         "outlet": "CNBC",
-         "title": "S&P 500 notches 3-day win streak, Nasdaq jumps 1% as SpaceX and Tesla rally",
-         "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html",
-         "date": "2026-10-21"
+         "outlet": "WSJ",
+         "title": "U.S. Tech Stocks Drop on AI Spending Concerns",
+         "url": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-drop-on-ai-spending-concerns-05400b55",
+         "date": "2026-10-22"
         },
         {
-         "outlet": "AP News",
-         "title": "A strong profit report from SpaceX helps lift tech stocks and Wall Street",
-         "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d",
-         "date": "2026-10-21"
+         "outlet": "CNBC",
+         "title": "Stock futures are little changed after tech sector sell-off: Live updates",
+         "url": "https://www.cnbc.com/2026/10/22/stock-market-today-live-update.html",
+         "date": "2026-10-22"
         }
        ],
        "grade": "主流媒体",
@@ -724,121 +683,109 @@
         "status": "已交叉核对",
         "by": "WebSearch 人工核对（agy 额度已用尽）",
         "source": "AP News",
-        "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
+        "url": "https://apnews.com/article/stocks-wall-street-nasdaq-dow-1970e79d013cbddcae89c53b4b98f384"
        }
       },
       {
        "no": 2,
-       "headline": "特斯拉、Meta、IBM 盘后财报：方向不一。",
-       "facts": "特斯拉第三季度营收 280.5 亿美元，经调整每股收益 0.48 美元（预期 0.45），自由现金流 15.3 亿美元，资本开支 47 亿美元低于 LSEG 统计的预期 75 亿美元，盘后跌 1.8%（Reuters）。Meta 第三季度营收 646 亿美元、同比 +26%，计入 98.9 亿美元法律和解费用，2026 年资本开支指引收窄至 1,350 亿—1,450 亿美元，盘后涨 3%—4%（AP）。IBM 营收 171 亿美元、同比 +5%，软件收入 78 亿美元、同比 +8%（IBM 新闻室）。",
-       "plain": "Meta 收入超预期受欢迎；特斯拉现金流好转，但 AI 投入少于预期反而让一部分投资者担心增长。",
-       "affects": "Meta、特斯拉、IBM 股价，AI 资本开支相关的芯片与数据中心股。",
-       "pricing": "部分定价",
-       "pricing_evidence": "三家公司盘后涨跌在 −1.8% 到 +4% 之间，正式交易时段尚未开盘。",
-       "next_check": "2026-10-22 美股正式交易时段 Meta、特斯拉、IBM 收盘涨跌幅。",
-       "risks": "判断：特斯拉资本开支 47 亿美元比预期少 28 亿美元，若市场解读为 AI 投入放缓，会压制特斯拉 2026-10-21 盘中 3% 以上的涨幅。",
+       "headline": "Meta 财报后跌 6.98%，特斯拉跌 3.08%，IBM 涨 0.26%。",
+       "facts": "Meta 收 648.85 美元、−6.98%；特斯拉收 374.58 美元、−3.08%；IBM 收 252.11 美元、+0.26%（Yahoo Finance 日线）。Meta 公布季报并宣布 1 拆 2 拆股，同时宣布发行新的无投票权股份为 AI 扩张融资（Yahoo Finance、Reuters）。特斯拉投资者权衡 2026 年资本开支下调与 2027—2028 年 Optimus、Cybercab、Terafab 支出增加；SpaceX 回吐 2026-10-21 财报后涨幅的一半以上（Yahoo Finance）。",
+       "plain": "盘后看好的 Meta 在正式交易时段反转大跌，市场更在意 AI 投入的融资方式和成本。",
+       "affects": "Meta、特斯拉、SpaceX 股价，AI 资本开支链条。",
+       "pricing": "已定价",
+       "pricing_evidence": "Meta 盘后 +3%—4% 已在正式时段转为 −6.98%，财报信息已进入收盘价。",
+       "next_check": "2026-10-23 美股收盘 Meta 能否守住 648.85 美元。",
+       "risks": "判断：Meta 单日 −6.98% 叠加发行无投票权股份融资，若更多大型科技公司跟进股权融资，纳指 2026-10-22 的 −2.60% 跌幅会延续。",
        "sources": [
         {
-         "outlet": "Reuters（Investing.com 转载）",
-         "title": "Tesla posts surprise positive cash flow on lower-than-expected AI spending",
-         "url": "https://www.investing.com/news/stock-market-news/musks-tesla-revenue-beats-estimates-as-deliveries-rebound-energy-storage-grows-4963934",
-         "date": "2026-10-21"
+         "outlet": "Yahoo Finance",
+         "title": "Stock market today: S&P 500, Nasdaq tanks as tech stocks sink amid AI trade worries, Meta shares plummet",
+         "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-october-22-dow-sp-500-nasdaq-tesla-meta-112217857.html",
+         "date": "2026-10-22"
         },
         {
-         "outlet": "AP News",
-         "title": "Meta Q3 revenue tops estimates and Zuckerberg says Muse accounts have topped 10 million",
-         "url": "https://apnews.com/article/meta-earnings-facebook-instagram-muse-capex-13ecd6c459e39a3602f302bcc2412fe9",
-         "date": "2026-10-21"
-        },
-        {
-         "outlet": "IBM 新闻室",
-         "title": "IBM Releases Third-Quarter Results",
-         "url": "https://newsroom.ibm.com/2026-10-21-IBM-RELEASES-THIRD-QUARTER-RESULTS?asPDF=1",
-         "date": "2026-10-21"
+         "outlet": "Reuters（Livemint 转载）",
+         "title": "Yields plummet as fears about AI boom sustainability flare",
+         "url": "https://www.livemint.com/market/yields-plummet-as-fears-about-ai-boom-sustainability-flare-11792695822319.html",
+         "date": "2026-10-22"
         }
        ],
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch 人工核对（agy 额度已用尽）",
-        "source": "AP News（特斯拉）",
-        "url": "https://apnews.com/article/tesla-quarterly-earning-musk-spacex-merger-cfe0453f6bf0d08d22150022128492fa"
+        "source": "Reuters（Livemint 转载，Meta 跌近 8%）",
+        "url": "https://www.livemint.com/market/yields-plummet-as-fears-about-ai-boom-sustainability-flare-11792695822319.html"
        }
       },
       {
        "no": 3,
-       "headline": "20 年期美债拍卖需求偏软，10 年期收益率回升。",
-       "facts": "美国财政部 2026-10-21 拍卖 130 亿美元 20 年期国债，中标收益率 5.469%（9 月为 5.420%），发行前收益率 5.460%，尾差 0.9 bp，投标倍数 2.73（9 月 2.57），间接投标人占 58.2%（Capital Finance Bureau、investingLive）。Dow Jones 称这是 1986-01-08 以来 20 年期拍卖最高中标收益率。^TNX 收于 5.146%，较前收 +2.9 bp（Yahoo Finance）。",
-       "plain": "政府借长钱要付的利息又创新高，买家要求更高回报才肯接。",
-       "affects": "美债长端、按揭利率、成长股估值。",
-       "pricing": "已有反应但程度不明",
-       "pricing_evidence": "拍卖后 20 年期收益率在 5.468%，较拍卖前 5.460% 变化 0.8 bp（Dow Jones）；10 年期收盘 +2.9 bp。",
-       "next_check": "北京时间 2026-10-23 01:00 美国 260 亿美元 5 年期 TIPS 拍卖的中标收益率与投标倍数。",
-       "risks": "判断：布伦特在 108—110 美元区间维持，通胀预期难降，20 年期 5.469% 的中标收益率在下次拍卖前回落的空间有限。",
+       "headline": "避险买盘涌入美债，10 年期收益率跌 19.3 bp 至 4.953%。",
+       "facts": "10 年期美债收益率跌 19.3 bp 至 4.953%，为 2023-03-10 以来最大单日降幅，首次自 2026-09-23 以来低于 5%；30 年期跌 15 bp 至 5.287%（Reuters）。CME FedWatch 显示下周 FOMC 加息至少 25 bp 的概率为 7.2%，一周前 27.7%、一个月前 55.4%（Reuters）。Dow Jones 口径 10 年期 4.952%，为 2026-09-17 以来最低（Morningstar）。260 亿美元 5 年期 TIPS 拍卖中标收益率 2.367%，投标倍数 2.41（Helious）。",
+       "plain": "股市大跌时资金买国债避险，市场基本不再押注美联储下周加息。",
+       "affects": "美债、美元、黄金、成长股估值、按揭利率。",
+       "pricing": "部分定价",
+       "pricing_evidence": "加息概率一周内从 27.7% 降至 7.2%，下周 FOMC 尚未召开。",
+       "next_check": "北京时间 2026-10-23 22:00 密歇根大学 1 年通胀预期（预期 4.7%）公布后，10 年期收益率能否守在 5% 以下。",
+       "risks": "判断：10 年期 2026-10-07 曾升至 5.3645%，较现值高 41.15 bp；若通胀预期数据高于 4.7%，单日 19.3 bp 的降幅会被回吐。",
        "sources": [
         {
-         "outlet": "Capital Finance Bureau",
-         "title": "Treasury Auction Schedule: Next Auctions and Latest Results",
-         "url": "https://capitalfinancebureau.com/news/treasury-auction-schedule-results/",
-         "date": "2026-10-21"
+         "outlet": "Reuters（Livemint 转载）",
+         "title": "Yields plummet as fears about AI boom sustainability flare",
+         "url": "https://www.livemint.com/market/yields-plummet-as-fears-about-ai-boom-sustainability-flare-11792695822319.html",
+         "date": "2026-10-22"
         },
         {
-         "outlet": "investingLive",
-         "title": "US treasury sells $13 billion of 20 year bonds at a high yield of 5.469%",
-         "url": "https://investinglive.com/news/us-treasury-sells-13-billion-of-20-year-bonds-at-a-high-yield-of-5-469/",
-         "date": "2026-10-21"
+         "outlet": "Dow Jones（Morningstar 转载）",
+         "title": "10-Year Treasury Yield Falls to 4.952% — Data Talk",
+         "url": "https://www.morningstar.com/news/dow-jones/2026102210244/10-year-treasury-yield-falls-to-4952-data-talk",
+         "date": "2026-10-22"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "source": "美国财政部每日收益率曲线（2026-10-22 10 年期 4.96%）",
+        "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "中东局势推高油价，布伦特涨 4.00%，黄金跌 2.12%。",
+       "facts": "布伦特 12 月合约涨 4.35 美元（4.00%）结算于 113.17 美元，为 2026-05-04 以来最高结算价，本月累计 +9.31%（Dow Jones）。沙特境内遭袭击加剧中东冲突升级担忧（RTÉ）。COMEX 黄金 10 月近月合约跌 87.70 美元（2.12%）结算于 4,042.80 美元，为 2026-08-03 以来最低结算价（Dow Jones）。",
+       "plain": "油价因供应担忧大涨；黄金在美债收益率大跌的一天反而下跌，能源成本上升带来的利率不确定性压过了避险需求。",
+       "affects": "原油与能源股、航空运输、通胀预期、黄金。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "布伦特北京时间 07:15 报 113.03 美元，较结算价 −0.12%，涨幅未回吐也未扩大。",
+       "next_check": "布伦特 12 月合约 2026-10-23 结算价能否守住 113 美元；COMEX 黄金能否守住 4,000 美元。",
+       "risks": "判断：布伦特距 2026 年结算高点 118.35 美元差 4.38%，若中东冲突继续升级，油价上行会推高通胀预期并抵消 10 年期 19.3 bp 的降幅。",
+       "sources": [
+        {
+         "outlet": "Dow Jones（Morningstar 转载）",
+         "title": "Front Month ICE Brent Crude Rose 4.00% to Settle at $113.17 — Data Talk",
+         "url": "https://www.morningstar.com/news/dow-jones/2026102210027/front-month-ice-brent-crude-rose-400-to-settle-at-11317-data-talk",
+         "date": "2026-10-22"
         },
         {
-         "outlet": "MarketScreener（Dow Jones）",
-         "title": "U.S. 20-Year Treasury Auction Shows Softer Demand",
-         "url": "https://ca.marketscreener.com/news/u-s-20-year-treasury-auction-shows-softer-demand-ce785cd9dd88f524",
-         "date": "2026-10-21"
+         "outlet": "Dow Jones（Morningstar 转载）",
+         "title": "Comex Gold Settles 2.12% Lower at $4042.80 — Data Talk",
+         "url": "https://www.morningstar.com/news/dow-jones/202610229578/comex-gold-settles-212-lower-at-404280-data-talk",
+         "date": "2026-10-22"
+        },
+        {
+         "outlet": "RTÉ",
+         "title": "Brent at 5 month high on escalating Middle East conflict",
+         "url": "https://www.rte.ie/news/business/2026/1022/1596480-world-oil-prices/",
+         "date": "2026-10-22"
         }
        ],
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch 人工核对（agy 额度已用尽）",
-        "source": "CME Group（Econoday）",
-        "url": "https://www.cmegroup.com/education/events/econoday/692950"
-       }
-      },
-      {
-       "no": 4,
-       "headline": "EIA 原油库存降幅超预期，布伦特收平、WTI 回落。",
-       "facts": "EIA 数据：截至 2026-10-16 当周美国商业原油库存降 306 万桶至 4.125 亿桶，Reuters 调查预期降 82 万桶；馏分油库存增 168 万桶至 1.043 亿桶（Business Recorder 转 Reuters）。布伦特 12 月合约收 108.82 美元/桶、+0.03 美元，WTI 收 97.15 美元/桶、−0.67 美元（CNBC）。北京时间 2026-10-22 07:54 布伦特报 110.06 美元，较前收 +1.14%（Yahoo Finance）。",
-       "plain": "美国原油库存降得比预期多，但伊朗相关消息反复，油价在高位来回拉锯。",
-       "affects": "能源股、航空、通胀预期。",
-       "pricing": "已有反应但程度不明",
-       "pricing_evidence": "库存降幅是预期的 3.7 倍，布伦特当日仅 +0.03 美元，亚洲早盘再涨 1.14%。",
-       "next_check": "布伦特 12 月合约 2026-10-22 结算价是否站稳 110 美元。",
-       "risks": "判断：布伦特与 WTI 价差为 11.67 美元，Newsquawk 称这一价差反映集中在海运基准上的地缘溢价，伊朗或俄乌出现缓和消息时该价差有收窄压力。",
-       "sources": [
-        {
-         "outlet": "Business Recorder（Reuters）",
-         "title": "Oil prices steady as investors weigh progress on Russia-Ukraine talks against falling US oil stocks",
-         "url": "https://www.brecorder.com/news/40445237",
-         "date": "2026-10-21"
-        },
-        {
-         "outlet": "CNBC",
-         "title": "Oil price today: WTI, Brent rise on Middle East worries",
-         "url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html",
-         "date": "2026-10-21"
-        },
-        {
-         "outlet": "Newsquawk",
-         "title": "CRUDE WRAP: WTI (Z6) settles USD 0.67 lower at 97.15/bbl; Brent (X6) settles USD 0.03 higher at USD 108.82/bbl",
-         "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-067-lower-at-9715bbl",
-         "date": "2026-10-21"
-        }
-       ],
-       "grade": "主流媒体",
-       "crosscheck": {
-        "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
-        "source": "OilPrice.com",
-        "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Says-US-Crude-Inventories-Sink-Further.html"
+        "source": "WSJ 行情页（布伦特 12 月结算 113.17）",
+        "url": "https://www.wsj.com/market-data/quotes/futures/UK/IFEU/BRN1/contracts"
        }
       }
      ]
@@ -848,14 +795,46 @@
      "items": [
       {
        "no": 5,
-       "headline": "比特币现货 ETF 连续第三天净流入，BTC 站上 8.4 万美元。",
-       "facts": "Farside：2026-10-19 净流入 5.267 亿美元，2026-10-20 净流入 2,320 万美元；2026-10-21 已公布部分合计 +7,710 万美元，其中 GBTC +3,260 万、BITB +1,920 万、ARKB +980 万，IBIT 与 FBTC 尚未公布。以太坊现货 ETF 2026-10-20 净流出 2,610 万美元（CryptoWatchDesk 引 Farside）。CoinGecko 2026-10-22 08:07 快照：BTC 84,219 美元（24h +1.59%），ETH 2,478.22 美元（24h +1.34%）。",
-       "plain": "比特币基金连续三天有资金进来，价格也小幅走高；以太坊基金还在被赎回。",
-       "affects": "BTC、ETH 现货与相关 ETF 持有者。",
-       "pricing": "部分定价",
-       "pricing_evidence": "BTC 24h 仅 +1.59%，2026-10-21 ETF 数据还缺 IBIT 和 FBTC。",
-       "next_check": "Farside 补齐 IBIT、FBTC 后，2026-10-21 BTC 现货 ETF 全天净流量是否高于 7,000 万美元。",
-       "risks": "判断：IBIT 在 2026-10-19 单日流入 6.652 亿美元，占当日净流入的 126%，资金集中于单一产品，后续流向取决于这一只基金。",
+       "headline": "美股科技股拖累加密市场，BTC 24h 跌 3.63%，DeFi 跌幅最大。",
+       "facts": "CoinGecko 07:26 快照：BTC 81,255 美元、24h −3.63%；ETH 2,382.21 美元、−3.85%；FIL 0.977 美元、−7.83%。CoinDesk DeFi 指数跌 5.6%，CoinDesk 80 跌 3.2%，CoinDesk 5 跌 2.5%；加密衍生品成交增 19% 至 2,266 亿美元，持仓量降 2.46% 至 1,418 亿美元，爆仓额增 52% 至 4.311 亿美元（CoinDesk）。",
+       "plain": "币价跟着美股科技股一起跌，山寨币和 DeFi 代币跌得比比特币更多，杠杆交易者在平仓。",
+       "affects": "BTC、ETH、DeFi 代币、加密衍生品。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "BTC 24h −3.63%，但 CoinDesk 称 BVIV、EVIV 隐含波动率仍在 2026 年低点附近，期权市场未为大波动定价。",
+       "next_check": "BTC 能否守住 80,000 美元；ETH 能否收复 2,400 美元。",
+       "risks": "判断：BTC 距 80,000 美元整数关口只差 1,255 美元（1.54%），若纳指继续下跌，爆仓额会高于 2026-10-22 的 4.311 亿美元。",
+       "sources": [
+        {
+         "outlet": "CoinDesk",
+         "title": "DeFi tokens lead crypto lower as bitcoin (BTC) price gives up Wednesday’s surge",
+         "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-slides-below-usd82-000-as-ai-doubts-return-with-defi-tokens-leading-declines",
+         "date": "2026-10-22"
+        },
+        {
+         "outlet": "CoinDesk",
+         "title": "Live updates: Bitcoin falls back to $81,000, with interest rates tumbling as stocks crack",
+         "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides",
+         "date": "2026-10-22"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "source": "Crypto Economy（多头爆仓 4.18 亿美元）",
+        "url": "https://crypto-economy.com/bitcoin-and-ethereum-extend-sell-off-as-crypto-long-liquidations-reach-418m/"
+       }
+      },
+      {
+       "no": 6,
+       "headline": "BTC 现货 ETF 2026-10-21 净流入 5.248 亿美元，2026-10-22 已公布部分转为净流出。",
+       "facts": "Farside：2026-10-21 BTC 现货 ETF 全天净流入 5.248 亿美元，其中 IBIT 2.350 亿、FBTC 2.127 亿、GBTC 3,260 万美元；2026-10-22 已公布部分合计 −5,460 万美元（BITB −2,740 万、GBTC −2,950 万、MSBT +230 万），IBIT、FBTC 尚未公布。CoinDesk 引 SoSoValue：本周前 3 个交易日净流入超 10 亿美元；2026-07-01 以来日均净流入 8,600 万美元，低于过去 3 轮急涨期间的 2 亿美元以上。",
+       "plain": "机构资金前三天在买，但价格下跌当天部分基金开始赎回，IBIT 的数据决定全天方向。",
+       "affects": "BTC 现货需求、ETF 发行商、BTC 价格支撑。",
+       "pricing": "无法判断",
+       "pricing_evidence": "2026-10-22 IBIT、FBTC 数据缺失，全天净流向未定。",
+       "next_check": "Farside 补齐 IBIT、FBTC 后，2026-10-22 BTC 现货 ETF 全天净流量是否为负。",
+       "risks": "判断：已公布部分 −5,460 万美元，若 IBIT 也转为净流出，本周前 3 日超 10 亿美元的流入势头会中断。",
        "sources": [
         {
          "outlet": "Farside Investors",
@@ -864,47 +843,9 @@
          "date": "2026-10-22"
         },
         {
-         "outlet": "CryptoWatchDesk",
-         "title": "ETF Desk 20 Oct: bitcoin ETFs +$23.2M, ether −$26.1M",
-         "url": "https://cryptowatchdesk.com/news/etf-desk-oct-20-bitcoin-etfs-23-million-inflow-ether-outflows-13-of-14-sessions",
-         "date": "2026-10-21"
-        },
-        {
-         "outlet": "TradingNews",
-         "title": "Bitcoin ETF Inflows — IBIT ETF Drives $549.8M in 2 Days",
-         "url": "https://www.tradingnews.com/news/ibit-etf-absorb-8130-btc-in-a-day-as-fund-reverse-89-percent-of-ovctobers-redemptions",
-         "date": "2026-10-21"
-        }
-       ],
-       "grade": "专业数据平台",
-       "crosscheck": {
-        "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
-        "source": "TradingNews",
-        "url": "https://www.tradingnews.com/news/ibit-etf-absorb-8130-btc-in-a-day-as-fund-reverse-89-percent-of-ovctobers-redemptions"
-       }
-      },
-      {
-       "no": 6,
-       "headline": "FIL 小幅反弹至 1.06 美元，仍低于短期均线。",
-       "facts": "CoinGecko 2026-10-22 08:07 快照：FIL 1.058 美元，24h +2.10%。TokenPost：FIL 2026-10-19 收于 1.019 美元、2026-10-20 收于 1.032 美元，2026-10-21 17:20 UTC 报 1.07 美元；7 日均价 1.08 美元、10 日均价 1.10 美元。",
-       "plain": "Solstice 升级后 FIL 价格没有大幅波动，还没回到 10 月中旬 1.16 美元的水平。",
-       "affects": "FIL 持有者、存储提供商。",
-       "pricing": "无法判断",
-       "pricing_evidence": "升级后 3 个交易日价格在 1.019—1.07 美元之间，链上付费需求数据缺失，无法区分供应收缩与大盘带动的影响。",
-       "next_check": "FIL 能否收复 10 日均价 1.10 美元（TokenPost 口径）。",
-       "risks": "判断：FIL 1.058 美元比 2026-10-15 收盘 1.16 美元低 8.79%，归属期结束后的解锁代币若流入交易所，会压制反弹。",
-       "sources": [
-        {
-         "outlet": "TokenPost",
-         "title": "Filecoin Gains 2.05% to $1.07 but Trails Recent Price Averages",
-         "url": "https://www.tokenpost.com/news/investing/37030",
-         "date": "2026-10-21"
-        },
-        {
-         "outlet": "CoinGecko",
-         "title": "Simple Price API 快照",
-         "url": "https://www.coingecko.com/en/coins/filecoin",
+         "outlet": "CoinDesk",
+         "title": "Bitcoin ETFs attract $1.08 billion in 3 days but it may not be enough for a steep rally",
+         "url": "https://www.coindesk.com/markets/2026/10/22/bitcoin-etfs-attract-usd1-08-billion-in-3-days-but-it-may-not-be-enough-for-a-steep-rally",
          "date": "2026-10-22"
         }
        ],
@@ -912,8 +853,8 @@
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch 人工核对（agy 额度已用尽）",
-        "source": "TokenPost",
-        "url": "https://www.tokenpost.com/news/investing/37030"
+        "source": "InflowScan（2026-10-21 FBTC +2.127 亿美元）",
+        "url": "https://inflowscan.com/brief/premarket/2026-10-22-btc-etfs-307m-settled-wed-btc-81-768-2-7-fbtc-leads-inflows"
        }
       }
      ]
@@ -921,201 +862,211 @@
    ],
    "events": [
     {
-     "time_bj": "2026-10-22 20:30",
-     "event": "美国初请失业金人数",
-     "watch": "劳动力市场是否降温"
-    },
-    {
-     "time_bj": "2026-10-23 01:00",
-     "event": "美国 260 亿美元 5 年期 TIPS 拍卖",
-     "watch": "实际利率与通胀预期"
-    },
-    {
      "time_bj": "2026-10-23 21:45",
-     "event": "标普全球 10 月 PMI 初值",
-     "watch": "制造业与服务业景气"
+     "event": "标普全球 10 月制造业、服务业 PMI 初值",
+     "watch": "制造业预期 55.6（前值 55.9），服务业预期 57.9（前值 58.8）"
     },
     {
      "time_bj": "2026-10-23 22:00",
-     "event": "密歇根大学消费者信心终值及通胀预期",
-     "watch": "1 年与 5 年通胀预期"
+     "event": "密歇根大学消费者信心及通胀预期",
+     "watch": "信心指数预期 46.3；1 年通胀预期预期 4.7%，5 年预期 3.5%"
+    },
+    {
+     "time_bj": "2026-10-24 01:00",
+     "event": "Baker Hughes 美国石油钻机数",
+     "watch": "前值 459 台，油价 113 美元下供给反应"
+    },
+    {
+     "time_bj": "2026-10-24 03:30",
+     "event": "CFTC 持仓报告（黄金、原油、标普500 非商业净持仓）",
+     "watch": "黄金前值 20.8 万手，原油前值 10.0 万手"
     }
    ],
    "events_source": [
     {
-     "outlet": "Investrade",
-     "title": "Weekly Event Calendar: 10/19/2026 - 10/23/2026",
-     "url": "https://investrade.com/weekly-event-calendar-10-19-2026-10-23-2026/"
+     "outlet": "Helious",
+     "title": "US Economic Calendar: Week 2026-w43",
+     "url": "https://helious.io/calendar/2026-w43"
     },
     {
-     "outlet": "Capital Finance Bureau",
-     "title": "Treasury Auction Schedule: Next Auctions and Latest Results",
-     "url": "https://capitalfinancebureau.com/news/treasury-auction-schedule-results/"
+     "outlet": "Helious",
+     "title": "5-Year TIPS Auction: Results, Schedule & History",
+     "url": "https://helious.io/auctions/5-year-tips"
     }
    ],
    "footer": "以上仅作信息参考。"
   },
   "github_tools": [
    {
-    "name": "microsoft/markitdown",
-    "url": "https://github.com/microsoft/markitdown",
-    "title": "微软开源的「任意文件转 Markdown」工具，给大模型喂资料前的预处理利器",
-    "summary": "把 PDF、Word、PowerPoint、Excel、图片、音频、HTML 等文件统一转换成结构清晰的 Markdown，方便直接交给 ChatGPT、Claude 等模型阅读。适合要做知识库、RAG 或批量整理文档的人。pip install 'markitdown[all]' 后，命令行执行 markitdown 文件名.pdf 即可输出 Markdown，也提供 MCP 服务器接入 AI 客户端。",
-    "stars": 191631,
+    "name": "ollama/ollama",
+    "url": "https://github.com/ollama/ollama",
+    "title": "本地一键运行开源大模型的命令行工具与服务",
+    "summary": "Ollama 让你在 macOS、Windows、Linux 或 Docker 里下载并运行开源模型，数据留在本机。适合想离线用大模型、或给自己应用接一个本地模型接口的开发者。上手：用官方一行脚本安装后执行 `ollama run gemma4`，程序里可调用它的 REST API 或 ollama-python / ollama-js 库。",
+    "stars": 184337,
+    "last_push": "2026-10-23",
+    "fetched_at": "2026-10-23 07:27",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "ollama/ollama"
+   },
+   {
+    "name": "infiniflow/ragflow",
+    "url": "https://github.com/infiniflow/ragflow",
+    "title": "基于深度文档理解的开源 RAG 引擎",
+    "summary": "RAGFlow 是开源检索增强生成（RAG）引擎，把复杂格式的非结构化文档解析成知识，并结合 Agent 能力做有引用依据的问答。适合要搭企业知识库或文档问答系统的团队。上手：准备 Docker ≥ 24.0.0、Docker Compose ≥ v2.26.1，README 建议 4 核 CPU、16 GB 内存、50 GB 磁盘，克隆仓库后执行 `docker compose -f docker-compose.yml up -d`。",
+    "stars": 92672,
     "last_push": "2026-10-22",
-    "fetched_at": "2026-10-23 01:16",
+    "fetched_at": "2026-10-23 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "GitHub API 一手数据"
     },
-    "repo": "microsoft/markitdown"
+    "repo": "infiniflow/ragflow"
    },
    {
-    "name": "browser-use/browser-use",
-    "url": "https://github.com/browser-use/browser-use",
-    "title": "让 AI 代理直接操作浏览器的 Python 库",
-    "summary": "用大模型驱动真实浏览器完成点击、填表、搜索、抓取等网页任务，用一句自然语言描述目标即可。适合想自动化网页流程、做 AI 代理产品的开发者。pip install browser-use 并安装 Chromium 后，写几行 Python 指定任务和模型就能运行，也有托管云服务可选。",
-    "stars": 118865,
+    "name": "crewAIInc/crewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "title": "搭建多智能体协作流程的 Python 框架",
+    "summary": "CrewAI 是开源 Python 框架，用 Crews 组织按角色分工、自主协作的 AI 智能体，用 Flows 做事件驱动、可精确控制的工作流。适合要把多步骤业务交给多个智能体协同完成的 Python 开发者。上手：`uv tool install crewai` 安装，再用 README 里的示例项目（如 Trip Planner）照着改。",
+    "stars": 59998,
     "last_push": "2026-10-23",
-    "fetched_at": "2026-10-23 01:16",
+    "fetched_at": "2026-10-23 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "GitHub API 一手数据"
     },
-    "repo": "browser-use/browser-use"
+    "repo": "crewAIInc/crewAI"
    },
    {
-    "name": "unclecode/crawl4ai",
-    "url": "https://github.com/unclecode/crawl4ai",
-    "title": "专为大模型和 AI 代理设计的开源网页爬虫",
-    "summary": "把任意网站抓取并清洗成干净的、适合大模型阅读的 Markdown，支持动态页面、批量抓取和结构化提取。适合做 RAG、数据采集或给代理提供实时网页资料的开发者。pip install crawl4ai 后运行 crawl4ai-setup 初始化浏览器，即可用 Python 或命令行 crwl 抓取网址。",
-    "stars": 86033,
+    "name": "cline/cline",
+    "url": "https://github.com/cline/cline",
+    "title": "装进 VS Code / JetBrains 的开源编码智能体",
+    "summary": "Cline 是开源编码智能体，在 IDE、终端和桌面端读写代码、执行终端命令并实时查看输出，还能通过 MCP 连接数据库和外部 API。适合想让 AI 按计划改多文件、跑测试的程序员；Plan 模式先梳理方案，Act 模式再执行，每次改文件都可审阅。上手：在 VS Code 或 JetBrains 插件市场安装 Cline，项目里可用 `.clinerules` 写团队规则。",
+    "stars": 70743,
     "last_push": "2026-10-23",
-    "fetched_at": "2026-10-23 01:16",
+    "fetched_at": "2026-10-23 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "GitHub API 一手数据"
     },
-    "repo": "unclecode/crawl4ai"
+    "repo": "cline/cline"
    },
    {
-    "name": "BerriAI/litellm",
-    "url": "https://github.com/BerriAI/litellm",
-    "title": "用同一套 OpenAI 格式调用 100 多家大模型的网关",
-    "summary": "把 OpenAI、Anthropic、Gemini、Bedrock、Azure、vLLM 等不同厂商的接口统一成 OpenAI 格式，并附带费用统计、限流、负载均衡和日志。适合同时用多家模型、需要统一管理密钥和成本的个人或团队。pip install litellm 后在代码里调用 completion()，或启动 litellm 代理服务给全团队共用。",
-    "stars": 61824,
-    "last_push": "2026-10-22",
-    "fetched_at": "2026-10-23 01:16",
+    "name": "ggml-org/whisper.cpp",
+    "url": "https://github.com/ggml-org/whisper.cpp",
+    "title": "纯 C/C++ 实现的 Whisper 本地语音转文字",
+    "summary": "whisper.cpp 是 OpenAI Whisper 语音识别模型的高性能 C/C++ 实现，无外部依赖，支持纯 CPU 运行，也支持 Apple Silicon、NVIDIA、AMD 等硬件加速和量化。适合要在电脑、手机或嵌入式设备上离线转写音频的开发者。上手：`sh ./models/download-ggml-model.sh base.en` 下载模型，编译后运行 `./build/bin/whisper-cli -f samples/jfk.wav`（输入需 16-bit WAV）。",
+    "stars": 54570,
+    "last_push": "2026-10-19",
+    "fetched_at": "2026-10-23 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "GitHub API 一手数据"
     },
-    "repo": "BerriAI/litellm"
-   },
-   {
-    "name": "continuedev/continue",
-    "url": "https://github.com/continuedev/continue",
-    "title": "开源的 AI 编程代理，可接入 VS Code 和 JetBrains",
-    "summary": "在编辑器里提供聊天、代码补全、改写和自动化代理能力，模型可以自由选择，包括本地模型。适合想要可定制、不绑定单一厂商的 AI 编程助手的开发者。在 VS Code 或 JetBrains 插件市场搜索 Continue 安装，配置自己的模型密钥即可开始使用。",
-    "stars": 36290,
-    "last_push": "2026-10-23",
-    "fetched_at": "2026-10-23 01:16",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "GitHub API 一手数据"
-    },
-    "repo": "continuedev/continue"
+    "repo": "ggml-org/whisper.cpp"
    }
   ]
  },
  "meta": {
   "ai_labs": {
-   "as_of": "2026-10-22 08:10",
-   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），每家最多 3 条，组内按发布时间倒序；只收 2026-10-21 12:40 上期截止后的新内容",
-   "missing": [],
-   "note": "本期第二来源由 WebSearch 人工核对：agy（Gemini 订阅）个人额度用尽，2026-10-22 08:09 起 50 小时后重置。",
-   "pending": [
+   "as_of": "2026-10-23 07:29",
+   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），每家最多 3 条，组内按发布时间倒序；只收 2026-10-22 08:10 上期截止后的新内容",
+   "missing": [
     {
-     "lab": "Grok Bot",
-     "title": "TestingCatalog：Grok Bot 支持实时 artifacts",
-     "summary": "TestingCatalog 称 Grok Bot 现在可以构建报告、备忘录和仪表盘等实时页面，并可按要求编辑或持续更新。官方更新日志截至 2026-10-22 08:08 未收录此功能。",
-     "source_url": "https://x.com/testingcatalog/status/2113046603041038418",
-     "source_name": "X @testingcatalog",
-     "published_at": "2026-10-22 07:15",
-     "fetched_at": "2026-10-22 08:10",
-     "grade": "社媒传闻",
-     "crosscheck": {
-      "status": "单一来源"
-     },
-     "unverified": true,
-     "unverified_reason": "仅 TestingCatalog 一家，官方更新日志未收录",
-     "pending_reason": "未证实：仅 TestingCatalog 一家，官方更新日志未收录"
+     "item": "Gemini（agy）第二来源核对",
+     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置；改用 WebSearch 人工核对"
     }
    ],
-   "overflow": [
-    {
-     "lab": "OpenAI",
-     "title": "GPT-Rosalind 给出神经退行性疾病新研究线索",
-     "summary": "OpenAI 称 GPT-Rosalind 在小鼠脑数据中发现：破坏与罕见神经退行性疾病 Perry 综合征相关的 DCTN1 基因，会改变胆固醇转运相关基因的表达，由此提出「恢复胆固醇转运能否保护神经元」的研究方向。这是研究线索，不是已验证疗法。",
-     "source_url": "https://x.com/OpenAI/status/2112899854569762936",
-     "source_name": "X @OpenAI",
-     "published_at": "2026-10-21 21:32",
-     "fetched_at": "2026-10-22 08:10",
-     "grade": "官方一手",
-     "crosscheck": {
-      "status": "单一来源",
-      "note": "仅 OpenAI 官方帖，未找到第二来源报道"
-     }
-    },
-    {
-     "lab": "Google",
-     "title": "Gemini 个人智能登陆 Android Auto",
-     "summary": "Google 宣布 Personal Intelligence 正在向 Android Auto 上的 Gemini 推送，未来几个月扩展到内置 Google 系统的汽车；在用户授权后，Gemini 可结合个人信息提供免手动帮助。",
-     "source_url": "https://x.com/Google/status/2112655614132285592",
-     "source_name": "X @Google",
-     "published_at": "2026-10-21 05:22",
-     "fetched_at": "2026-10-22 08:10",
-     "grade": "官方一手",
-     "crosscheck": {
-      "status": "单一来源",
-      "note": "仅 Google 官方帖"
-     }
-    }
-   ]
+   "note": "本期第二来源由 WebSearch 人工核对：agy（Gemini 订阅）个人额度用尽，2026-10-24 10:00 重置。",
+   "pending": [],
+   "overflow": []
   },
   "x_top": {
-   "as_of": "2026-10-22 08:10",
-   "basis": "2026-10-21 08:00 起 AI/科技相关原创帖（不含转发与回复），按 赞+评+转+引 之和排序；排除政治类帖子和无文字、内容无法从帖文判断的纯图片/视频帖",
+   "as_of": "2026-10-23 07:29",
+   "basis": "2026-10-22 08:00 起 AI/科技相关原创帖（不含转发与回复），按 赞+评+转+引 之和排序；排除政治类帖子和无文字、内容无法从帖文判断的帖子",
    "missing": [],
    "pending": []
   },
   "filecoin": {
-   "as_of": "2026-10-22 08:10",
-   "basis": "近 72 小时官方、研究机构、媒体与 X 帖子，按发布时间倒序",
+   "as_of": "2026-10-23 07:29",
+   "basis": "近 72 小时官方、开发团队、GitHub 与 X 帖子，按可信度与发布时间排列",
    "missing": [
     {
      "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
      "reason": "未找到可抓取的同批数据源"
     }
    ],
-   "pending": []
+   "pending": [
+    {
+     "title": "社区帖：RedStone 在 Filecoin 主网上线 FIL/USD 价格源",
+     "summary": "X 用户 @1_FEN_1 称预言机 RedStone 已在 Filecoin 主网上线 FIL/USD 价格源，让 FVM 智能合约读取链上价格数据。RedStone 与 Filecoin 官方账号截至 2026-10-23 07:29 未见公告。",
+     "source_url": "https://x.com/1_FEN_1/status/2113375601272734123",
+     "source_name": "X @1_FEN_1",
+     "type": "x",
+     "published_at": "2026-10-23 05:03",
+     "fetched_at": "2026-10-23 07:29",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "仅一条社区帖"
+     },
+     "unverified": true,
+     "unverified_reason": "仅社区账号一家，RedStone 与 Filecoin 官方未公告",
+     "pending_reason": "未证实：仅社区账号一家，RedStone 与 Filecoin 官方未公告"
+    },
+    {
+     "title": "MSBIntel：解锁结束后 FIL 总发行量下降",
+     "summary": "MSBIntel 称 Protocol Labs 与 Filecoin 基金会的归属解锁结束后，FIL 总发行量下降 75%，新增供应只剩区块奖励，每年 2,100 万 FIL，而 2026 年初为 8,800 万 FIL（原文数字均带 about）。",
+     "source_url": "https://x.com/MSBIntel/status/2113201194252349734",
+     "source_name": "X @MSBIntel",
+     "type": "x",
+     "published_at": "2026-10-22 17:30",
+     "fetched_at": "2026-10-23 07:29",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "仅一家分析账号"
+     },
+     "unverified": true,
+     "unverified_reason": "原文数字为近似值，未找到官方或链上数据核对",
+     "pending_reason": "未证实：原文数字为近似值，未找到官方或链上数据核对"
+    }
+   ]
   },
   "finance": {
-   "as_of": "2026-10-22 08:10",
-   "basis": "固定 9 项行情 + 6 条要闻，按 FINANCE_SPEC 结构",
-   "missing": []
+   "as_of": "2026-10-23 07:29",
+   "basis": "固定 9 项行情 + 6 条要闻，按 FINANCE_SPEC 结构；第二来源为 WebSearch 人工核对",
+   "missing": [
+    {
+     "item": "Gemini（agy）第二来源核对",
+     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置，本期未调用；第二来源改为 WebSearch 逐条人工核对"
+    },
+    {
+     "item": "BTC 现货 ETF 2026-10-22 完整资金流",
+     "reason": "Farside 截至 2026-10-23 07:29 未公布 IBIT、FBTC 等 9 只基金当日数据，已公布部分合计 −5,460 万美元"
+    },
+    {
+     "item": "以太坊现货 ETF 2026-10-21、2026-10-22 资金流",
+     "reason": "本期截止前未核到可打开的数据页"
+    },
+    {
+     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
+     "reason": "未找到可抓取的同批数据源"
+    }
+   ]
   },
   "github_tools": {
-   "as_of": "2026-10-23 01:16",
-   "basis": "GitHub 上与 AI 相关、近 90 天内仍有提交、未归档的开源工具/插件；优先选实用、上手门槛低、覆盖不同场景（文档处理、浏览器代理、网页抓取、模型网关、编程助手）；按 stars 从高到低排列；stars 与最近更新由 GitHub API 实时读取；与历史推荐不重复",
-   "missing": [],
-   "note": "本板块不适用 72 小时过期规则；stars 为抓取时刻数值。"
+   "as_of": "2026-10-23 07:27",
+   "basis": "按类别各选 1 个高星、近 90 天内仍在更新、未归档且与历史推荐不重复的仓库：本地模型运行、RAG、多智能体框架、编码助手插件、语音识别；星标与最近推送来自 GitHub API 实时数据，用途依据各仓库 README",
+   "missing": []
   }
  },
- "updated_at": "2026-10-22T08:13:19+08:00"
+ "updated_at": "2026-10-23T07:29:33+08:00"
 }
