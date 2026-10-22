@@ -954,7 +954,84 @@
     }
    ],
    "footer": "以上仅作信息参考。"
-  }
+  },
+  "github_tools": [
+   {
+    "name": "microsoft/markitdown",
+    "url": "https://github.com/microsoft/markitdown",
+    "title": "微软开源的「任意文件转 Markdown」工具，给大模型喂资料前的预处理利器",
+    "summary": "把 PDF、Word、PowerPoint、Excel、图片、音频、HTML 等文件统一转换成结构清晰的 Markdown，方便直接交给 ChatGPT、Claude 等模型阅读。适合要做知识库、RAG 或批量整理文档的人。pip install 'markitdown[all]' 后，命令行执行 markitdown 文件名.pdf 即可输出 Markdown，也提供 MCP 服务器接入 AI 客户端。",
+    "stars": 191631,
+    "last_push": "2026-10-22",
+    "fetched_at": "2026-10-23 01:16",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "microsoft/markitdown"
+   },
+   {
+    "name": "browser-use/browser-use",
+    "url": "https://github.com/browser-use/browser-use",
+    "title": "让 AI 代理直接操作浏览器的 Python 库",
+    "summary": "用大模型驱动真实浏览器完成点击、填表、搜索、抓取等网页任务，用一句自然语言描述目标即可。适合想自动化网页流程、做 AI 代理产品的开发者。pip install browser-use 并安装 Chromium 后，写几行 Python 指定任务和模型就能运行，也有托管云服务可选。",
+    "stars": 118865,
+    "last_push": "2026-10-23",
+    "fetched_at": "2026-10-23 01:16",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "browser-use/browser-use"
+   },
+   {
+    "name": "unclecode/crawl4ai",
+    "url": "https://github.com/unclecode/crawl4ai",
+    "title": "专为大模型和 AI 代理设计的开源网页爬虫",
+    "summary": "把任意网站抓取并清洗成干净的、适合大模型阅读的 Markdown，支持动态页面、批量抓取和结构化提取。适合做 RAG、数据采集或给代理提供实时网页资料的开发者。pip install crawl4ai 后运行 crawl4ai-setup 初始化浏览器，即可用 Python 或命令行 crwl 抓取网址。",
+    "stars": 86033,
+    "last_push": "2026-10-23",
+    "fetched_at": "2026-10-23 01:16",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "unclecode/crawl4ai"
+   },
+   {
+    "name": "BerriAI/litellm",
+    "url": "https://github.com/BerriAI/litellm",
+    "title": "用同一套 OpenAI 格式调用 100 多家大模型的网关",
+    "summary": "把 OpenAI、Anthropic、Gemini、Bedrock、Azure、vLLM 等不同厂商的接口统一成 OpenAI 格式，并附带费用统计、限流、负载均衡和日志。适合同时用多家模型、需要统一管理密钥和成本的个人或团队。pip install litellm 后在代码里调用 completion()，或启动 litellm 代理服务给全团队共用。",
+    "stars": 61824,
+    "last_push": "2026-10-22",
+    "fetched_at": "2026-10-23 01:16",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "BerriAI/litellm"
+   },
+   {
+    "name": "continuedev/continue",
+    "url": "https://github.com/continuedev/continue",
+    "title": "开源的 AI 编程代理，可接入 VS Code 和 JetBrains",
+    "summary": "在编辑器里提供聊天、代码补全、改写和自动化代理能力，模型可以自由选择，包括本地模型。适合想要可定制、不绑定单一厂商的 AI 编程助手的开发者。在 VS Code 或 JetBrains 插件市场搜索 Continue 安装，配置自己的模型密钥即可开始使用。",
+    "stars": 36290,
+    "last_push": "2026-10-23",
+    "fetched_at": "2026-10-23 01:16",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    },
+    "repo": "continuedev/continue"
+   }
+  ]
  },
  "meta": {
   "ai_labs": {
@@ -1032,6 +1109,12 @@
    "as_of": "2026-10-22 08:10",
    "basis": "固定 9 项行情 + 6 条要闻，按 FINANCE_SPEC 结构",
    "missing": []
+  },
+  "github_tools": {
+   "as_of": "2026-10-23 01:16",
+   "basis": "GitHub 上与 AI 相关、近 90 天内仍有提交、未归档的开源工具/插件；优先选实用、上手门槛低、覆盖不同场景（文档处理、浏览器代理、网页抓取、模型网关、编程助手）；按 stars 从高到低排列；stars 与最近更新由 GitHub API 实时读取；与历史推荐不重复",
+   "missing": [],
+   "note": "本板块不适用 72 小时过期规则；stars 为抓取时刻数值。"
   }
  },
  "updated_at": "2026-10-22T08:13:19+08:00"

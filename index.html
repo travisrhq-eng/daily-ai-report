@@ -206,6 +206,8 @@
   }
   .metrics span b { font-weight: 400; color: var(--t-sub); margin-left: 6px; }
   .num { font-variant-numeric: tabular-nums; }
+  .gh-name { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 17px !important; letter-spacing: -0.01em; }
+  .gh-title { margin: 0 0 10px; font-size: 15px; font-weight: 600; color: var(--t-head); }
   .empty, .error {
     padding: 64px 0;
     color: var(--t-meta);
@@ -325,6 +327,7 @@
     <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热帖 Top10</button>
     <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin</button>
     <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融简报</button>
+    <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub 工具</button>
   </div>
 </nav>
 
@@ -345,6 +348,7 @@
     x_top: '今日暂无 X 热帖',
     filecoin: '今日暂无 Filecoin 相关动态',
     finance: '今日暂无金融简报',
+    github_tools: '今日暂无 GitHub 工具推荐',
     falcon: '今日暂无 Falcon 热帖'
   };
 
@@ -528,7 +532,27 @@
     return li;
   }
 
-  var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil, falcon: renderX };
+  function renderGh(item, i) {
+    var li = cardShell(i);
+    var top = el('div', 'card-top');
+    top.appendChild(el('span', 'label rank', 'No. ' + pad(i + 1)));
+    li.appendChild(top);
+    var h = el('h2', 'gh-name');
+    h.appendChild(link(item.url, '', str(item.name) || '(无名称)'));
+    li.appendChild(h);
+    if (item.title) li.appendChild(el('p', 'gh-title', item.title));
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    var m = el('div', 'metrics');
+    [['Stars', fmtNum(item.stars)], ['最近更新', str(item.last_push)]].forEach(function (p) {
+      var s = el('span', 'label', p[0]); s.appendChild(el('b', '', p[1])); m.appendChild(s);
+    });
+    li.appendChild(m);
+    var x = Object.assign({}, item); delete x.published_at;
+    li.appendChild(prov(x, item.url, '查看仓库 →'));
+    return li;
+  }
+
+  var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil, github_tools: renderGh, falcon: renderX };
 
   // ---- 金融简报 ----
   function finSection(label, i) {
