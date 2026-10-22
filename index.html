@@ -825,7 +825,7 @@
     b.addEventListener('click', function () {
       if (state.tab === b.dataset.tab) return;
       state.tab = b.dataset.tab;
-      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); }); try { b.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch (e) {}
       if (b.scrollIntoView) b.scrollIntoView({ block: 'nearest', inline: 'nearest' });
       if (history.replaceState) history.replaceState(null, '', '#' + state.tab); else location.hash = state.tab;
       render();
@@ -834,7 +834,7 @@
   function fromHash() {
     var h = (location.hash || '').slice(1);
     tabs.forEach(function (x) { if (x.dataset.tab === h) state.tab = h; });
-    tabs.forEach(function (x) { x.setAttribute('aria-selected', x.dataset.tab === state.tab ? 'true' : 'false'); });
+    tabs.forEach(function (x) { x.setAttribute('aria-selected', x.dataset.tab === state.tab ? 'true' : 'false'); }); tabs.forEach(function (x) { if (x.dataset.tab === state.tab) try { x.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {} });
   }
   fromHash();
   window.addEventListener('hashchange', function () { fromHash(); render(); });
