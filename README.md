@@ -13,11 +13,10 @@
 - GitHub 工具：5 个与 AI 相关、近 90 天内有提交、未归档的仓库，每期覆盖不同用途；stars 与 last_push 由 GitHub API 实时读取；与历史推荐不重复。
 - 状态卡（今日无更新）：status_card:true；summary 写明检查范围与最近一次版本/发帖日期；published_at 填抓取时间，页面不显示。
 - 金融：见 FINANCE_SPEC.md。
-## 2. 第二来源交叉核对（Gemini 只走 agy 订阅，绝不用 GEMINI_API_KEY）
-- `python3 gemini_crosscheck.py`（补漏候选）。
-- 关键数字/事实逐条核对：`env -u GEMINI_API_KEY HOME=/home/box/agy-home agy -p "<claims 列表，要求 JSON {id,status,url,note}>" </dev/null`；vertexaisearch 跳转链接用 `curl -w %{redirect_url}` 还原真实 URL。
-- 结果写入每条的 crosscheck：`{"status":"已交叉核对","by","source","url"}` / `{"status":"单一来源","note"}` / `{"status":"冲突","values":[{value,source,url}≥2],"reason"}`。X 互动数为 X API 一手计数，标单一来源。
-- agy 额度用尽或不可用时：可改用 WebSearch 人工核对，但 crosscheck 必须加 `"fallback":true`，by 写明「WebSearch 人工核对」，页面显示「已核对·备用来源」；同时在该板块 meta.missing 记一条「Gemini（agy）第二来源核对」及额度重置时间。
+## 2. 第二来源交叉核对（用 Codex；不再使用 Gemini / agy）
+- 补漏候选与关键数字/事实逐条核对都交给 Codex（联网搜索）：`codex --search exec --skip-git-repo-check -s read-only -o crosscheck.json "<claims 列表，要求只输出 JSON 数组 [{id,status,url,note}]，url 必须是可打开的原始页面>" </dev/null`。参数以生成机上的 Codex 版本为准。gemini_crosscheck.py 与 agy 调用停用。
+- 结果写入每条的 crosscheck：`{"status":"已交叉核对","by":"Codex","source","url"}` / `{"status":"单一来源","note"}` / `{"status":"冲突","values":[{value,source,url}≥2],"reason"}`。X 互动数为 X API 一手计数，标单一来源。
+- Codex 不可用时：可改用 WebSearch 人工核对，但 crosscheck 必须加 `"fallback":true`，by 写明「WebSearch 人工核对」，页面显示「已核对·备用来源」；同时在该板块 meta.missing 记一条「Codex 第二来源核对」及不可用原因。
 - 「冲突」只用于超出容差的差异（容差见 FINANCE_SPEC.md）；四舍五入、口径不同但差值在容差内的，标「已交叉核对」并在 note 写明差值。
 - 同一个数字在页面不同位置出现时，核对状态必须一致。
 ## 3. 写 draft.json（结构同 site/data/最新.json）

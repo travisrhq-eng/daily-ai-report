@@ -13,7 +13,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Google Cloud 博客",
      "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers"
     }
@@ -43,7 +43,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "CISA",
      "url": "https://www.cisa.gov/news-events/alerts/2026/10/21/critical-vulnerabilities-php-require-immediate-patching"
     }
@@ -59,7 +59,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "CNBC",
      "url": "https://www.cnbc.com/2026/10/21/anthropic-preview-of-claude-duet-personal-ai-agent-take-on-muse-dots.html"
     }
@@ -89,7 +89,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Claude 官方文章",
      "url": "https://claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes"
     }
@@ -134,7 +134,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "9to5Google",
      "url": "https://9to5google.com/2026/10/21/google-maps-carplay-gemini/"
     }
@@ -150,7 +150,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Wiz 博客",
      "url": "https://www.wiz.io/blog/scan-for-good-critical-ai-exposures"
     }
@@ -398,7 +398,7 @@
     "grade": "主流媒体",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "CoinGecko（2026-10-22 08:07 快照 1.058 美元，24h +2.10%）",
      "url": "https://www.coingecko.com/en/coins/filecoin"
     }
@@ -414,7 +414,7 @@
     "grade": "主流媒体",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "X @Filecoin（2026-10-21 08:06）",
      "url": "https://x.com/Filecoin/status/2112696869042233480"
     }
@@ -430,7 +430,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "TokenPost",
      "url": "https://www.tokenpost.com/news/technology/36636"
     }
@@ -446,7 +446,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Messari by Blockworks",
      "url": "https://messari.io/report/filecoin-solstice-and-the-shift-to-a-demand-driven-service-economy"
     }
@@ -462,7 +462,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "X @Filecoin",
      "url": "https://x.com/Filecoin/status/2112274354033529097"
     }
@@ -486,10 +486,6 @@
    "cutoff": "2026-10-22 08:10（北京时间）",
    "cutoff_note": "美股指数为 2026-10-21 美股收盘（北京时间 2026-10-22 04:00）；美国10年期国债收益率为 ^TNX 收盘（北京时间 02:59）；美元指数、黄金、布伦特原油为北京时间 2026-10-22 07:54—07:57 盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（08:07），涨跌为 24 小时变动。",
    "missing": [
-    {
-     "item": "Gemini（agy）第二来源核对",
-     "reason": "agy 订阅返回 429：个人额度用尽，2026-10-22 08:09 起 50 小时后重置；本期第二来源改为 WebSearch 逐条人工核对"
-    },
     {
      "item": "BTC 现货 ETF 2026-10-21 完整资金流",
      "reason": "Farside 截至 2026-10-22 08:10 未公布 IBIT、FBTC 等 5 只基金当日数据，已公布部分合计 +7,710 万美元"
@@ -530,7 +526,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "AP News",
       "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
      }
@@ -546,7 +542,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "CNBC",
       "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
      }
@@ -562,7 +558,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "冲突",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "values": [
        {
         "value": "前收 101.78",
@@ -589,7 +585,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "冲突",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "values": [
        {
         "value": "5.146%",
@@ -616,7 +612,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "冲突",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "values": [
        {
         "value": "前收 4,150.00",
@@ -643,7 +639,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "CNBC（前收结算 108.82 美元）",
       "url": "https://www.cnbc.com/2026/10/21/oil-price-today-wti-brent-rise-on-middle-east-worries.html"
      }
@@ -685,7 +681,7 @@
      "fetched_at": "2026-10-22 08:07",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "TokenPost（2026-10-21 17:20 UTC 报 1.07 美元）",
       "url": "https://www.tokenpost.com/news/investing/37030"
      }
@@ -722,7 +718,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "AP News",
         "url": "https://apnews.com/article/stocks-markets-rates-oil-earnings-ai-4fa93685cd49e51e7ff0d840fdd38b0d"
        }
@@ -760,7 +756,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "AP News（特斯拉）",
         "url": "https://apnews.com/article/tesla-quarterly-earning-musk-spacex-merger-cfe0453f6bf0d08d22150022128492fa"
        }
@@ -798,7 +794,7 @@
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "CME Group（Econoday）",
         "url": "https://www.cmegroup.com/education/events/econoday/692950"
        }
@@ -836,7 +832,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "OilPrice.com",
         "url": "https://oilprice.com/Energy/Crude-Oil/EIA-Says-US-Crude-Inventories-Sink-Further.html"
        }
@@ -879,7 +875,7 @@
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "TradingNews",
         "url": "https://www.tradingnews.com/news/ibit-etf-absorb-8130-btc-in-a-day-as-fund-reverse-89-percent-of-ovctobers-redemptions"
        }
@@ -911,7 +907,7 @@
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "TokenPost",
         "url": "https://www.tokenpost.com/news/investing/37030"
        }
@@ -1038,7 +1034,7 @@
    "as_of": "2026-10-22 08:10",
    "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），每家最多 3 条，组内按发布时间倒序；只收 2026-10-21 12:40 上期截止后的新内容",
    "missing": [],
-   "note": "本期第二来源由 WebSearch 人工核对：agy（Gemini 订阅）个人额度用尽，2026-10-22 08:09 起 50 小时后重置。",
+   "note": "本期第二来源为 WebSearch 人工核对。",
    "pending": [
     {
      "lab": "Grok Bot",

@@ -26,7 +26,7 @@ JSON 结构：
 ## 2026-10-21 起新增硬性规则（generate.py 校验）
 - cutoff、snapshot.time、events.time_bj 一律 YYYY-MM-DD HH:MM（北京时间）；sources[].date 完整 YYYY-MM-DD。
 - change 单位与窗口分开写：百分比 `+0.28%（较前收）`、收益率 `−1.9 bp（较前收）`、加密 `+0.85%（24h）`；负号「−」；页面用灰色 ▲▼，不着色。
-- 每行 snapshot 与每条 item 带 crosscheck（已交叉核对|单一来源|冲突）；第二来源走 agy；冲突须并列两个值+来源+差异原因。
+- 每行 snapshot 与每条 item 带 crosscheck（已交叉核对|单一来源|冲突）；第二来源走 Codex（见 README 第 2 节）；冲突须并列两个值+来源+差异原因。
 - risks 必须以「判断：」开头且引用具体数字；全文禁用模糊词（见 README）。
 - yesterday_check 留 null 时自动生成：读前一天 next_check；无前一天数据写「首期无昨日数据。」。
 - meta.finance：as_of / basis / missing 必填。
@@ -35,4 +35,4 @@ JSON 结构：
 - 口径统一：同一资产全页只用一个合约/口径，以 snapshot 为准（黄金用 snapshot 里的 COMEX 主力合约，原油同理）。groups 里写涨跌幅时必须与 snapshot 同口径；确需引用其他合约（如近月合约结算价），同一句里写明合约月份，headline 不得使用与 snapshot 不同口径的数字。
 - 冲突容差：两来源差值超过以下容差才标「冲突」，否则标「已交叉核对」并在 note 写差值——指数/股价/商品 0.30%；外汇与美元指数 0.10%；收益率 2 bp；加密 0.50%；资金流 5%。
 - 核对状态一致：snapshot 与 groups 引用同一数字时，crosscheck.status 必须相同。
-- 第二来源降级（agy 不可用）按 README 第 2 节加 `"fallback":true`。
+- 第二来源降级（Codex 不可用）按 README 第 2 节加 `"fallback":true`。

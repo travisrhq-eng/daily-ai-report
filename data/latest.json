@@ -13,7 +13,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "OpenAI 官方页面",
      "url": "https://openai.com/index/decisions-api"
     }
@@ -57,7 +57,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Google Cloud 博客",
      "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud"
     }
@@ -73,7 +73,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "Claude 官方文章",
      "url": "https://claude.com/resources/articles/auto-mode-default-in-claude-code"
     }
@@ -379,7 +379,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "X @Filecoin（2026-10-20 22:11，Blockworks Research 解读）",
      "url": "https://x.com/Filecoin/status/2112547367253864532"
     }
@@ -395,7 +395,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "X @NetNapz（2026-10-22 21:57）",
      "url": "https://x.com/NetNapz/status/2113268400625422482"
     }
@@ -439,7 +439,7 @@
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
-     "by": "WebSearch 人工核对（agy 额度已用尽）",
+     "by": "WebSearch 人工核对",
      "source": "TokenPost",
      "url": "https://www.tokenpost.com/news/technology/36636"
     }
@@ -450,10 +450,6 @@
    "cutoff": "2026-10-23 07:29（北京时间）",
    "cutoff_note": "美股指数为 2026-10-22 美股收盘（北京时间 2026-10-23 04:00）；美国10年期国债收益率为 ^TNX 收盘（北京时间 02:59）；美元指数、黄金、布伦特原油为北京时间 2026-10-23 06:04—07:16 盘中报价；BTC、ETH、FIL 为 CoinGecko 同一批快照（07:26），涨跌为 24 小时变动。",
    "missing": [
-    {
-     "item": "Gemini（agy）第二来源核对",
-     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置，本期未调用；第二来源改为 WebSearch 逐条人工核对"
-    },
     {
      "item": "BTC 现货 ETF 2026-10-22 完整资金流",
      "reason": "Farside 截至 2026-10-23 07:29 未公布 IBIT、FBTC 等 9 只基金当日数据，已公布部分合计 −5,460 万美元"
@@ -494,7 +490,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "WSJ（收 7,663.43、−1.21%）",
       "url": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-drop-on-ai-spending-concerns-05400b55"
      }
@@ -510,7 +506,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "WSJ（收 26,008.86、−2.6%）",
       "url": "https://www.wsj.com/finance/stocks/u-s-tech-stocks-drop-on-ai-spending-concerns-05400b55"
      }
@@ -526,7 +522,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "CoinNess（2026-10-22 收 101.608、−0.17%）",
       "url": "https://coinness.com/en/stock-news/151952"
      }
@@ -542,7 +538,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "冲突",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "values": [
        {
         "value": "4.953%",
@@ -569,7 +565,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "冲突",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "values": [
        {
         "value": "前收 4,060.40",
@@ -596,7 +592,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "Dow Jones 经 Morningstar（12 月合约结算 113.17 美元）",
       "url": "https://www.morningstar.com/news/dow-jones/2026102210027/front-month-ice-brent-crude-rose-400-to-settle-at-11317-data-talk"
      }
@@ -612,7 +608,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "CoinDesk（2026-10-22 报 BTC 回落至 81,000 美元）",
       "url": "https://www.coindesk.com/business/2026/10/22/live-updates-bitcoin-s-round-trip-to-usd85-000-burns-traders-on-both-sides"
      }
@@ -628,7 +624,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "TradingKey（2026-10-22 报 ETH 跌破 2,400 美元）",
       "url": "https://www.tradingkey.com/analysis/cryptocurrencies/btc/262232188-crypto-btc-eth-long-short-dxy-fed-tradingkey"
      }
@@ -644,7 +640,7 @@
      "fetched_at": "2026-10-23 07:26",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对（agy 额度已用尽）",
+      "by": "WebSearch 人工核对",
       "source": "ChartExchange（2026-10-22 收 0.9746 美元）",
       "url": "https://chartexchange.com/symbol/crypto-filusd/historical/"
      }
@@ -681,7 +677,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "AP News",
         "url": "https://apnews.com/article/stocks-wall-street-nasdaq-dow-1970e79d013cbddcae89c53b4b98f384"
        }
@@ -713,7 +709,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "Reuters（Livemint 转载，Meta 跌近 8%）",
         "url": "https://www.livemint.com/market/yields-plummet-as-fears-about-ai-boom-sustainability-flare-11792695822319.html"
        }
@@ -745,7 +741,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "美国财政部每日收益率曲线（2026-10-22 10 年期 4.96%）",
         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?field_tdr_date_value=2026&type=daily_treasury_yield_curve"
        }
@@ -783,7 +779,7 @@
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "WSJ 行情页（布伦特 12 月结算 113.17）",
         "url": "https://www.wsj.com/market-data/quotes/futures/UK/IFEU/BRN1/contracts"
        }
@@ -820,7 +816,7 @@
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "Crypto Economy（多头爆仓 4.18 亿美元）",
         "url": "https://crypto-economy.com/bitcoin-and-ethereum-extend-sell-off-as-crypto-long-liquidations-reach-418m/"
        }
@@ -852,7 +848,7 @@
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
-        "by": "WebSearch 人工核对（agy 额度已用尽）",
+        "by": "WebSearch 人工核对",
         "source": "InflowScan（2026-10-21 FBTC +2.127 亿美元）",
         "url": "https://inflowscan.com/brief/premarket/2026-10-22-btc-etfs-307m-settled-wed-btc-81-768-2-7-fbtc-leads-inflows"
        }
@@ -978,13 +974,8 @@
   "ai_labs": {
    "as_of": "2026-10-23 07:29",
    "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），每家最多 3 条，组内按发布时间倒序；只收 2026-10-22 08:10 上期截止后的新内容",
-   "missing": [
-    {
-     "item": "Gemini（agy）第二来源核对",
-     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置；改用 WebSearch 人工核对"
-    }
-   ],
-   "note": "本期第二来源由 WebSearch 人工核对：agy（Gemini 订阅）个人额度用尽，2026-10-24 10:00 重置。",
+   "missing": [],
+   "note": "本期第二来源为 WebSearch 人工核对。",
    "pending": [],
    "overflow": []
   },
@@ -1044,10 +1035,6 @@
    "as_of": "2026-10-23 07:29",
    "basis": "固定 9 项行情 + 6 条要闻，按 FINANCE_SPEC 结构；第二来源为 WebSearch 人工核对",
    "missing": [
-    {
-     "item": "Gemini（agy）第二来源核对",
-     "reason": "agy 订阅个人额度用尽，2026-10-24 10:00 重置，本期未调用；第二来源改为 WebSearch 逐条人工核对"
-    },
     {
      "item": "BTC 现货 ETF 2026-10-22 完整资金流",
      "reason": "Farside 截至 2026-10-23 07:29 未公布 IBIT、FBTC 等 9 只基金当日数据，已公布部分合计 −5,460 万美元"
