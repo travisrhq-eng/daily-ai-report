@@ -11,10 +11,10 @@
 <meta name="apple-mobile-web-app-title" content="AI 日报">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="description" content="每日 AI 日报：OpenAI、Anthropic、xAI、Google、Grok Bot 大厂动态，X 热帖 Top10，Filecoin，金融市场简报。每条标注发布时间、抓取时间与来源等级。">
+<meta name="description" content="每日 AI 日报：OpenAI、Anthropic、xAI、Google、Grok Bot 大厂动态，X 热帖 Top10，Filecoin，金融市场简报，GitHub 工具。每条标注发布时间、抓取时间与来源等级。">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI 日报">
-<meta property="og:description" content="大厂动态 · X 热帖 · Filecoin · 金融简报，每日 08:00（北京时间）更新。">
+<meta property="og:description" content="大厂动态 · X 热帖 · Filecoin · 金融简报 · GitHub 工具，每日 08:00（北京时间）更新。">
 <meta property="og:image" content="https://travisrhq-eng.github.io/daily-ai-report/icons/og.png">
 <meta property="og:url" content="https://travisrhq-eng.github.io/daily-ai-report/">
 <meta name="twitter:card" content="summary_large_image">
@@ -158,6 +158,15 @@
   .tab[aria-selected="true"] { color: var(--t-head); }
   .tab[aria-selected="true"]::after { opacity: 1; }
   .tab:focus-visible { outline: 1px solid var(--line); outline-offset: 4px; }
+  .tab .cnt { margin-left: 5px; font-size: 11px; color: var(--t-dim); font-variant-numeric: tabular-nums; transition: color 500ms var(--ease); }
+  .tab[aria-selected="true"] .cnt { color: var(--t-meta); }
+  .tab .cnt:empty { display: none; }
+  nav.tabs::after {
+    content: ""; position: absolute; right: 0; bottom: 1px; height: 50px; width: 40px;
+    background: linear-gradient(to right, rgba(7,8,10,0), var(--bg) 75%);
+    pointer-events: none; opacity: 0; transition: opacity 300ms var(--ease);
+  }
+  nav.tabs.more::after { opacity: 1; }
 
   main { padding-top: 8px; }
   .list { list-style: none; margin: 0; padding: 0; }
@@ -235,7 +244,17 @@
   .fin-three .n { flex: none; width: 18px; padding-top: 1px; font-size: 13px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
   .fin-three b { display: block; font-weight: 700; color: var(--t-head); }
   .fin-three p { margin: 2px 0 0; color: var(--t-sub); font-size: 15px; word-break: break-word; }
-  .snap li { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .snap li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .snap summary, .fin-more > summary, .sec-head > summary { list-style: none; cursor: pointer; }
+  .snap summary::-webkit-details-marker, .fin-more > summary::-webkit-details-marker, .sec-head > summary::-webkit-details-marker { display: none; }
+  .snap-sub { margin-top: 2px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
+  .snap details[open] .snap-meta { margin-top: 8px; }
+  .chev {
+    display: inline-block; width: 5px; height: 5px; margin-left: 2px;
+    border-right: 1px solid currentColor; border-bottom: 1px solid currentColor;
+    transform: translateY(-2px) rotate(45deg); transition: transform 300ms var(--ease);
+  }
+  details[open] > summary .chev { transform: translateY(1px) rotate(-135deg); }
   .snap li:first-child { padding-top: 0; }
   .snap li:last-child { border-bottom: 0; padding-bottom: 0; }
   .snap-top { display: flex; align-items: baseline; justify-content: space-between; gap: 4px 16px; flex-wrap: wrap; }
@@ -261,6 +280,10 @@
   .fin-dl dt:first-child { margin-top: 0; }
   .fin-dl dd { margin: 2px 0 0; color: var(--t-body); word-break: break-word; }
   .fin-tag { color: var(--t-meta); margin-right: 10px; }
+  .fin-more { margin-top: 14px; }
+  .fin-more > summary { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 8px 0; font-size: 13px; color: var(--t-sub); }
+  .fin-more > summary .fin-tag { margin-right: 0; }
+  .fin-more[open] > summary { margin-bottom: 6px; }
   .fin-srcs { font-size: 13px; color: var(--t-meta); }
   .fin-srcs div { padding: 2px 0; }
   .fin-grade { color: var(--t-meta); }
@@ -273,6 +296,12 @@
   .fin-evsrc div { padding: 2px 0; }
   .fin-foot { padding: 28px 0 0; border-top: 1px solid var(--line); font-size: 13px; color: var(--t-meta); }
 
+  @media (max-width: 480px) {
+    header { padding-top: calc(28px + env(safe-area-inset-top, 0px)); padding-bottom: 14px; }
+    h1 { font-size: 26px; }
+    .meta-row { margin-top: 10px; }
+    .card { padding: 26px 0; }
+  }
   @media (max-width: 400px) {
     .tabs .wrap { gap: 20px; }
     .tab { font-size: 14px; }
@@ -280,7 +309,7 @@
 
   .js .fade {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translate(var(--dx, 0px), 8px);
     animation: rise 500ms var(--ease) forwards;
   }
   @keyframes rise { to { opacity: 1; transform: none; } }
@@ -288,8 +317,16 @@
     .js .fade { animation: none; opacity: 1; transform: none; }
     .tab, .tab::after { transition: none; }
   }
-  .sec-head { margin: 4px 0 18px; font-size: 13px; color: var(--t-meta); line-height: 1.6; font-variant-numeric: tabular-nums; }
+  .sec-head { margin: 4px 0 10px; font-size: 13px; color: var(--t-meta); line-height: 1.6; font-variant-numeric: tabular-nums; }
   .sec-head b { color: var(--t-sub); font-weight: 500; }
+  .sec-head > summary { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 12px; padding: 10px 0; }
+  .sec-head > summary .warn { color: var(--t-sub); }
+  .sec-head > summary .more { margin-left: auto; color: var(--t-sub); }
+  .sec-head .body { padding: 2px 0 12px; }
+  .sec-head .body > div + div, .sec-head .body > div + ul { margin-top: 6px; }
+  .sec-head .miss { margin: 4px 0 0; padding: 0; list-style: none; }
+  .sec-head .miss li { padding: 2px 0; color: var(--t-sub); }
+  .sec-head .miss .r { color: var(--t-meta); }
   .sec-note { margin-top: 6px; color: var(--t-sub); }
   .blk { margin: 0 0 22px; padding: 14px 0 0; border-top: 1px solid var(--line); }
   .blk h3 { margin: 0 0 8px; font-size: 12px; letter-spacing: .08em; color: var(--t-meta); font-weight: 500; }
@@ -301,6 +338,7 @@
   .blk summary::-webkit-details-marker { display:none; }
   .lab-h { margin: 26px 0 4px; font-size: 12px; letter-spacing: .12em; color: var(--t-meta); font-weight: 500; text-transform: uppercase; }
   .lab-h:first-child { margin-top: 0; }
+  .lab-h + .card { padding-top: 14px; }
   .times { margin-top: 10px; font-size: 12px; color: var(--t-meta); font-variant-numeric: tabular-nums; }
   .srcline { margin-top: 6px; font-size: 12px; color: var(--t-meta); display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
   .srcline a { color: var(--t-sub); }
@@ -309,7 +347,40 @@
   .conflict { margin-top: 8px; padding: 8px 10px; border: 1px solid var(--line); border-radius: 4px; font-size: 12px; color: var(--t-sub); line-height: 1.6; }
   .conflict .row { display: flex; justify-content: space-between; gap: 10px; }
   .conflict .why { margin-top: 4px; color: var(--t-meta); }
+  .conflict .row > * { min-width: 0; word-break: break-word; }
+  .conflict .row a { text-align: right; }
+  .conflict a, .blk li a {
+    color: var(--t-sub); text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .conflict a:hover, .blk li a:hover { color: var(--t-head); }
   .arrow { color: var(--t-sub); margin-right: 3px; font-size: 10px; }
+  .srcline a, .snap-meta a, .fin-srcs a { padding: 4px 0; }
+  .blk summary { display: flex; align-items: center; gap: 8px; padding: 6px 0; }
+  .blk li b { color: var(--t-body); font-weight: 500; margin-right: 6px; }
+  .card.compact { padding: 20px 0; }
+  .card.compact .author { font-size: 14px; }
+  .see {
+    appearance: none; background: none; border: 0; padding: 6px 0; margin: 4px 0 0;
+    font: inherit; font-size: 14px; color: var(--t-sub); cursor: pointer; text-align: left;
+  }
+  .see:hover { color: var(--t-head); }
+  .card.compact .metrics { margin-top: 6px; }
+  .card.is-seen .summary { color: var(--t-sub); }
+  [data-url] { scroll-margin-top: 72px; }
+  .flash { animation: flash 1800ms var(--ease); }
+  @keyframes flash { 0%, 30% { background: rgba(255,255,255,0.06); } 100% { background: transparent; } }
+  .toast {
+    position: fixed; left: 50%; z-index: 20;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    transform: translate(-50%, 16px); opacity: 0; pointer-events: none;
+    appearance: none; border: 1px solid var(--line); border-radius: 999px;
+    background: #14161A; color: var(--t-head);
+    font: inherit; font-size: 14px; white-space: nowrap;
+    padding: 11px 20px; cursor: pointer;
+    transition: opacity 400ms var(--ease), transform 400ms var(--ease);
+  }
+  .toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
 </style>
 </head>
 <body>
@@ -323,33 +394,38 @@
 
 <nav class="tabs" aria-label="栏目">
   <div class="wrap" role="tablist">
-    <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态</button>
+    <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态<span class="cnt"></span></button>
     <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热帖 Top10</button>
-    <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin</button>
+    <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin<span class="cnt"></span></button>
     <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融简报</button>
-    <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub 工具</button>
+    <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub 工具<span class="cnt"></span></button>
   </div>
 </nav>
 
 <main class="wrap" id="main" role="tabpanel" aria-live="polite"><noscript><p class="empty">本页需要 JavaScript 渲染；原始数据见 <a href="data/latest.json">data/latest.json</a>。</p></noscript></main>
+<button class="toast" id="toast" type="button" aria-live="polite"></button>
 
 <script>
 (function () {
   'use strict';
 
-  var state = { data: null, tab: 'ai_labs', latestDate: null, reqId: 0 };
+  var state = { data: null, tab: 'ai_labs', latestDate: null, dates: [], reqId: 0, prev: null, scroll: {} };
   var $main = document.getElementById('main');
   var $updated = document.getElementById('updated');
   var $date = document.getElementById('date');
+  var $header = document.querySelector('header');
+  var $nav = document.querySelector('nav.tabs');
+  var $strip = $nav.querySelector('.wrap');
+  var $toast = document.getElementById('toast');
   var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var asOf = null; // 当前栏目的数据截至时间；卡片抓取时间与之相同时不重复显示
 
   var EMPTY = {
     ai_labs: '今日暂无大厂动态',
     x_top: '今日暂无 X 热帖',
     filecoin: '今日暂无 Filecoin 相关动态',
     finance: '今日暂无金融简报',
-    github_tools: '今日暂无 GitHub 工具推荐',
-    falcon: '今日暂无 Falcon 热帖'
+    github_tools: '今日暂无 GitHub 工具推荐'
   };
 
   // ---- helpers (no innerHTML with data; everything via textContent) ----
@@ -391,13 +467,15 @@
     return String(Math.round(n * 10) / 10);
   }
   function arr(v) { return Array.isArray(v) ? v : []; }
+  function itemUrl(it) { return it && (it.source_url || it.url) || null; }
 
   // ---- provenance: 发布/抓取时间 + 来源 + 等级 + 交叉核对 ----
+  function isFallback(x) { return !!(x && (x.fallback || /WebSearch|人工核对/.test(str(x.by)))); }
   function xcNode(x) {
     var f = document.createDocumentFragment();
     if (!x || !x.status) return f;
     if (x.status === '已交叉核对') {
-      var s = el('span', 'xc-ok', '已交叉核对');
+      var s = el('span', 'xc-ok', isFallback(x) ? '已核对·备用来源' : '已交叉核对');
       if (x.source) { s.appendChild(document.createTextNode(' · ')); s.appendChild(link(x.url, '', x.source)); }
       f.appendChild(s);
     } else if (x.status === '冲突') {
@@ -422,9 +500,9 @@
   function prov(item, url, label) {
     var f = document.createDocumentFragment();
     var tm = [];
-    if (item.published_at) tm.push('发布 ' + item.published_at);
-    if (item.fetched_at) tm.push('抓取 ' + item.fetched_at);
-    if (tm.length) f.appendChild(el('div', 'times', tm.join(' · ') + '（北京时间）'));
+    if (item.published_at && !item.status_card) tm.push('发布 ' + item.published_at);
+    if (item.fetched_at && item.fetched_at !== asOf) tm.push('抓取 ' + item.fetched_at);
+    if (tm.length) f.appendChild(el('div', 'times', tm.join(' · ')));
     var s = el('div', 'srcline');
     if (safeUrl(url)) s.appendChild(link(url, 'src', label));
     if (item.grade) s.appendChild(el('span', 'tag', item.grade));
@@ -433,26 +511,33 @@
     var c = conflictNode(item.crosscheck); if (c) f.appendChild(c);
     return f;
   }
-  function secHead(m) {
-    var h = el('div', 'sec-head fade');
-    if (!m) return h;
-    var a = el('div'); a.appendChild(el('b', '', '数据截至 ' + str(m.as_of) + ' 北京时间'));
-    h.appendChild(a);
-    if (m.basis) h.appendChild(el('div', '', '排序依据：' + m.basis));
-    if (m.note) h.appendChild(el('div', 'sec-note', m.note));
-    return h;
-  }
-  function missBlock(list) {
-    list = arr(list); var b = el('section', 'blk fade');
-    b.appendChild(el('h3', '', '本期缺失'));
-    var u = el('ul');
-    if (!list.length) u.appendChild(el('li', '', '无'));
-    list.forEach(function (m) { var li = el('li', '', str(m.item)); if (m.reason) li.appendChild(el('span', 'r', ' — ' + m.reason)); u.appendChild(li); });
-    b.appendChild(u); return b;
+  // 栏目说明：一行摘要（截至时间 + 缺失数），点开看排序依据、备注与缺失明细
+  function secHead(m, withMissing) {
+    if (!m) return el('div', 'sec-head fade');
+    var miss = withMissing ? arr(m.missing).filter(function (x) { return x && typeof x === 'object'; }) : [];
+    var d = el('details', 'sec-head fade');
+    var s = el('summary');
+    s.appendChild(el('b', '', '数据截至 ' + str(m.as_of)));
+    if (withMissing) s.appendChild(el('span', miss.length ? 'warn' : '', miss.length ? '本期缺失 ' + miss.length + ' 项' : '无缺失'));
+    var more = el('span', 'more', '说明 '); more.appendChild(el('span', 'chev')); s.appendChild(more);
+    d.appendChild(s);
+    var body = el('div', 'body');
+    body.appendChild(el('div', '', '页面时间均为北京时间。'));
+    if (m.basis) body.appendChild(el('div', '', '排序依据：' + m.basis));
+    if (m.note) body.appendChild(el('div', 'sec-note', m.note));
+    if (miss.length) {
+      body.appendChild(el('div', '', '本期缺失：'));
+      var u = el('ul', 'miss');
+      miss.forEach(function (x) { var li = el('li', '', str(x.item)); if (x.reason) li.appendChild(el('span', 'r', ' — ' + x.reason)); u.appendChild(li); });
+      body.appendChild(u);
+    }
+    d.appendChild(body);
+    return d;
   }
   function pendBlock(list, title) {
     list = arr(list); if (!list.length) return null;
-    var b = el('details', 'blk fade'); b.appendChild(el('summary', '', (title || '待验证') + '（' + list.length + ' 条，点开查看）'));
+    var b = el('details', 'blk fade');
+    var s = el('summary', '', (title || '待验证') + '（' + list.length + ' 条）'); s.appendChild(el('span', 'chev')); b.appendChild(s);
     var u = el('ul');
     list.forEach(function (it) {
       var li = el('li');
@@ -463,19 +548,62 @@
     });
     b.appendChild(u); return b;
   }
+  // 「今日无更新」状态卡合并成一行
+  function statusBlock(list) {
+    if (!list.length) return null;
+    var b = el('details', 'blk fade');
+    var s = el('summary', '', '本期无更新：' + list.map(function (x) { return str(x.lab); }).join(' · '));
+    s.appendChild(el('span', 'chev')); b.appendChild(s);
+    var u = el('ul');
+    list.forEach(function (it) {
+      var li = el('li');
+      li.appendChild(el('b', '', it.lab));
+      li.appendChild(document.createTextNode(str(it.summary) + ' '));
+      if (safeUrl(it.source_url)) li.appendChild(link(it.source_url, '', str(it.source_name) || '查看来源'));
+      u.appendChild(li);
+    });
+    b.appendChild(u); return b;
+  }
+
+  // ---- 上期已报 ----
+  function markSeen(li) {
+    if (li.classList.contains('is-seen')) return;
+    li.classList.add('is-seen');
+    var host = li.querySelector('.card-top') || li.querySelector('.srcline') || li;
+    host.appendChild(el('span', 'tag', '上期已报'));
+  }
+  function annotateSeen() {
+    if (!state.prev) return;
+    Array.prototype.forEach.call($main.querySelectorAll('[data-url]'), function (li) {
+      if (state.prev.has(li.getAttribute('data-url'))) markSeen(li);
+    });
+  }
+  function loadPrev(date) {
+    state.prev = null;
+    var i = state.dates.indexOf(date), p = i >= 0 ? state.dates[i + 1] : null;
+    if (!p) return;
+    var id = state.reqId;
+    getJSON('data/' + encodeURIComponent(p) + '.json').then(function (pd) {
+      if (id !== state.reqId) return;
+      var set = new Set(), secs = (pd && pd.sections) || {};
+      ['ai_labs', 'x_top', 'filecoin', 'github_tools'].forEach(function (k) {
+        arr(secs[k]).forEach(function (it) { var u = itemUrl(it); if (u && !it.status_card) set.add(u); });
+      });
+      state.prev = set;
+      annotateSeen();
+    }).catch(function () {});
+  }
 
   // ---- rendering ----
-  function cardShell(i) {
+  function cardShell(i, url) {
     var li = el('li', 'card fade');
     li.style.animationDelay = Math.min(i, 10) * 50 + 'ms';
+    if (url) li.setAttribute('data-url', url);
     return li;
   }
 
   function renderLab(item, i) {
-    var li = cardShell(i);
-    var top = el('div', 'card-top');
-    if (item.lab) top.appendChild(el('span', 'label', item.lab));
-    li.appendChild(top);
+    var li = cardShell(i, item.source_url);
     var h = el('h2');
     h.appendChild(link(item.source_url, '', str(item.title) || '(无标题)'));
     li.appendChild(h);
@@ -484,12 +612,7 @@
     return li;
   }
 
-  function renderX(item, i) {
-    var li = cardShell(i);
-    var top = el('div', 'card-top');
-    top.appendChild(el('span', 'label rank', 'No. ' + pad(Number(item.rank) || i + 1)));
-    li.appendChild(top);
-
+  function authorNode(item) {
     var who = el('div');
     var handle = str(item.author).replace(/^@/, '');
     var name = str(item.author_name) || (handle ? '@' + handle : '');
@@ -502,11 +625,9 @@
       who.appendChild(document.createTextNode(' '));
       who.appendChild(el('span', 'handle', '@' + handle));
     }
-    who.style.marginBottom = '8px';
-    li.appendChild(who);
-
-    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
-
+    return who;
+  }
+  function metricsNode(item) {
     var m = el('div', 'metrics');
     [['赞', item.likes], ['评', item.replies], ['转', item.reposts], ['引', item.quotes], ['热度', item.score]]
       .forEach(function (p) {
@@ -514,13 +635,36 @@
         s.appendChild(el('b', '', fmtNum(p[1])));
         m.appendChild(s);
       });
-    li.appendChild(m);
+    return m;
+  }
+
+  function renderX(item, i, ctx) {
+    var li = cardShell(i, item.url);
+    var top = el('div', 'card-top');
+    top.appendChild(el('span', 'label rank', 'No. ' + pad(Number(item.rank) || i + 1)));
+    li.appendChild(top);
+    var who = authorNode(item);
+    // 与大厂动态同一条帖子：只留排名和互动，正文跳过去看
+    if (ctx && ctx.labUrls[item.url]) {
+      li.classList.add('compact');
+      li.appendChild(who);
+      var see = el('button', 'see', '内容见大厂动态 · ' + ctx.labUrls[item.url] + ' ›');
+      see.type = 'button';
+      see.addEventListener('click', function () { goTo('ai_labs', item.url); });
+      li.appendChild(see);
+      li.appendChild(metricsNode(item));
+      return li;
+    }
+    who.style.marginBottom = '8px';
+    li.appendChild(who);
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    li.appendChild(metricsNode(item));
     li.appendChild(prov(item, item.url, '查看原帖'));
     return li;
   }
 
   function renderFil(item, i) {
-    var li = cardShell(i);
+    var li = cardShell(i, item.source_url);
     var top = el('div', 'card-top');
     top.appendChild(el('span', 'label', item.type === 'x' ? 'X' : 'WEB'));
     li.appendChild(top);
@@ -533,7 +677,7 @@
   }
 
   function renderGh(item, i) {
-    var li = cardShell(i);
+    var li = cardShell(i, item.url);
     var top = el('div', 'card-top');
     top.appendChild(el('span', 'label rank', 'No. ' + pad(i + 1)));
     li.appendChild(top);
@@ -552,7 +696,7 @@
     return li;
   }
 
-  var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil, github_tools: renderGh, falcon: renderX };
+  var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil, github_tools: renderGh };
 
   // ---- 金融简报 ----
   function finSection(label, i) {
@@ -616,13 +760,14 @@
       root.appendChild(ts);
     }
 
-    // 行情快照
+    // 行情快照：一行看数，点开看来源与核对
     var snap = arr(f.snapshot).filter(function (s) { return s && typeof s === 'object'; });
     if (snap.length) {
       var ss = finSection('行情快照', ++k);
       var su = el('ul', 'fin-list snap');
       snap.forEach(function (s) {
         var li = el('li');
+        var d = el('details'), sm = el('summary');
         var top = el('div', 'snap-top');
         top.appendChild(el('span', 'snap-asset', s.asset));
         var v = el('span', 'snap-val', str(s.value) || '—');
@@ -634,18 +779,21 @@
           v.appendChild(cg);
         }
         top.appendChild(v);
-        li.appendChild(top);
-        var meta = el('div', 'snap-meta');
+        sm.appendChild(top);
+        var sub = el('div', 'snap-sub');
         var parts = [str(s.time), str(s.status)].filter(Boolean);
-        if (parts.length) meta.appendChild(document.createTextNode(parts.join(' · ')));
-        if (s.source) {
-          if (parts.length) sep(meta);
-          meta.appendChild(link(s.source_url, '', s.source));
-        }
-        if (s.fetched_at) { sep(meta); meta.appendChild(document.createTextNode('抓取 ' + s.fetched_at)); }
-        if (s.crosscheck) { sep(meta); meta.appendChild(xcNode(s.crosscheck)); }
-        if (meta.childNodes.length) li.appendChild(meta);
-        var cfx = conflictNode(s.crosscheck); if (cfx) li.appendChild(cfx);
+        if (parts.length) sub.appendChild(el('span', '', parts.join(' · ')));
+        if (s.crosscheck && s.crosscheck.status === '冲突') sub.appendChild(el('span', 'tag', '数据冲突'));
+        sub.appendChild(el('span', 'chev'));
+        sm.appendChild(sub);
+        d.appendChild(sm);
+        var meta = el('div', 'snap-meta');
+        if (s.source) meta.appendChild(link(s.source_url, '', s.source));
+        if (s.fetched_at) { if (meta.childNodes.length) sep(meta); meta.appendChild(document.createTextNode('抓取 ' + s.fetched_at)); }
+        if (s.crosscheck && s.crosscheck.status !== '冲突') { if (meta.childNodes.length) sep(meta); meta.appendChild(xcNode(s.crosscheck)); }
+        if (meta.childNodes.length) d.appendChild(meta);
+        var cfx = conflictNode(s.crosscheck); if (cfx) d.appendChild(cfx);
+        li.appendChild(d);
         if (s.status === '未核实' && s.reason) li.appendChild(el('div', 'snap-reason', '原因：' + str(s.reason)));
         su.appendChild(li);
       });
@@ -653,7 +801,7 @@
       root.appendChild(ss);
     }
 
-    // groups
+    // groups：事实与白话常显，其余点开
     arr(f.groups).forEach(function (g) {
       if (!g || typeof g !== 'object') return;
       var items = arr(g.items).filter(function (it) { return it && typeof it === 'object'; });
@@ -666,25 +814,28 @@
         h.appendChild(document.createTextNode(str(it.headline)));
         art.appendChild(h);
 
-        var dl = el('dl', 'fin-dl');
-        function block(label, content) {
+        function block(dl, label, content) {
           if (content == null || content === '') return;
           dl.appendChild(el('dt', 'label', label));
           var dd = el('dd');
           if (typeof content === 'string') dd.textContent = content; else dd.appendChild(content);
           dl.appendChild(dd);
         }
-        block('事实', str(it.facts));
-        block('白话解读', str(it.plain));
-        block('影响对象', str(it.affects));
+        var dl = el('dl', 'fin-dl');
+        block(dl, '事实', str(it.facts));
+        block(dl, '白话解读', str(it.plain));
+        art.appendChild(dl);
+
+        var more = el('dl', 'fin-dl');
+        block(more, '影响对象', str(it.affects));
         if (it.pricing || it.pricing_evidence) {
           var pf = document.createDocumentFragment();
           if (it.pricing) pf.appendChild(el('span', 'fin-tag', it.pricing));
           if (it.pricing_evidence) pf.appendChild(document.createTextNode(str(it.pricing_evidence)));
-          block('市场是否定价', pf);
+          block(more, '市场是否定价', pf);
         }
-        block('下一步验证', str(it.next_check));
-        block('风险与反证', str(it.risks));
+        block(more, '下一步验证', str(it.next_check));
+        block(more, '风险与反证', str(it.risks));
 
         var srcs = arr(it.sources).filter(function (s) { return s && typeof s === 'object'; });
         if (srcs.length || it.grade) {
@@ -707,9 +858,17 @@
             last.appendChild(el('span', 'fin-grade', it.grade));
           }
           if (it.crosscheck) { var xl = el('div'); xl.appendChild(xcNode(it.crosscheck)); sw.appendChild(xl); var cf2 = conflictNode(it.crosscheck); if (cf2) sw.appendChild(cf2); }
-          block('来源', sw);
+          block(more, '来源', sw);
         }
-        art.appendChild(dl);
+        if (more.childNodes.length) {
+          var det = el('details', 'fin-more'), ds = el('summary');
+          if (it.pricing) ds.appendChild(el('span', 'fin-tag', '定价：' + it.pricing));
+          ds.appendChild(el('span', '', (it.pricing ? '· ' : '') + '展开影响、验证、风险与来源'));
+          ds.appendChild(el('span', 'chev'));
+          det.appendChild(ds);
+          det.appendChild(more);
+          art.appendChild(det);
+        }
         gs.appendChild(art);
       });
       root.appendChild(gs);
@@ -759,41 +918,66 @@
   function render() {
     if (!state.data) return;
     var secs = state.data.sections || {};
+    var M = (state.data.meta || {})[state.tab];
+    asOf = M && M.as_of || null;
     if (state.tab === 'finance') {
       var f = secs.finance;
       if (!f || typeof f !== 'object' || Array.isArray(f)) { message('empty', EMPTY.finance); return; }
-      var fm = (state.data.meta || {}).finance;
-      $main.replaceChildren(secHead(fm), renderFinance(f));
+      $main.replaceChildren(secHead(M, false), renderFinance(f));
       return;
     }
-    var M = (state.data.meta || {})[state.tab];
-    var items = arr(secs[state.tab]);
-    if (state.tab === 'x_top' || state.tab === 'falcon') {
+    var items = arr(secs[state.tab]).filter(function (it) { return it && typeof it === 'object'; });
+    var ctx = { labUrls: {} };
+    if (state.tab === 'x_top') {
       items = items.slice().sort(function (a, b) { return (Number(a.rank) || 99) - (Number(b.rank) || 99); });
+      arr(secs.ai_labs).forEach(function (it) { if (it && it.source_url && !it.status_card) ctx.labUrls[it.source_url] = str(it.lab); });
     }
-    var out = [secHead(M)];
-    if (M) out.push(missBlock(M.missing));
+    var status = [];
+    if (state.tab === 'ai_labs') {
+      status = items.filter(function (it) { return it.status_card; });
+      items = items.filter(function (it) { return !it.status_card; });
+    }
+    var out = [secHead(M, true)];
+    var sb = statusBlock(status); if (sb) out.push(sb);
     if (!items.length) out.push(el('div', 'empty fade', EMPTY[state.tab]));
     var ul = el('ul', 'list'), lastLab = null;
     items.forEach(function (it, i) {
-      if (!it || typeof it !== 'object') return;
       if (state.tab === 'ai_labs' && it.lab !== lastLab) { lastLab = it.lab; ul.appendChild(el('li', 'lab-h', it.lab)); }
-      ul.appendChild(RENDER[state.tab](it, i));
+      ul.appendChild(RENDER[state.tab](it, i, ctx));
     });
     if (items.length) out.push(ul);
     if (M && M.overflow && M.overflow.length) out.push(pendBlock(M.overflow.map(function (x) { return Object.assign({}, x, { pending_reason: x.lab + ' 当日第 4 条及以后' }); }), '同公司更多条目'));
     var pb = M && pendBlock(M.pending, '待验证（超过 72 小时 / 无完整日期 / 未证实，不计入正文）'); if (pb) out.push(pb);
     $main.replaceChildren.apply($main, out);
+    annotateSeen();
+  }
+
+  function setCounts() {
+    var secs = (state.data && state.data.sections) || {};
+    tabs.forEach(function (b) {
+      var c = b.querySelector('.cnt'); if (!c) return;
+      var n = arr(secs[b.dataset.tab]).filter(function (it) { return it && !it.status_card; }).length;
+      c.textContent = n ? String(n) : '';
+    });
+    edgeHint();
   }
 
   function setData(d) {
     state.data = d || {};
     var t = beijing(state.data.updated_at);
-    $updated.textContent = t ? '更新于 ' + t + ' (北京时间)' : '更新时间未知';
+    // 事后补充：顶层 revised_at，或任一栏目截至时间晚于首发时间
+    var rev = beijing(state.data.revised_at);
+    if (!rev && t) {
+      var meta = state.data.meta || {};
+      Object.keys(meta).forEach(function (k) { var a = meta[k] && meta[k].as_of; if (typeof a === 'string' && a > t && (!rev || a > rev)) rev = a; });
+    }
+    $updated.textContent = t ? '更新于 ' + t + (rev ? ' · 补充于 ' + rev : '') + '（北京时间）' : '更新时间未知';
     if (state.data.date && $date.value !== state.data.date) {
       ensureOption(state.data.date);
       $date.value = state.data.date;
     }
+    setCounts();
+    loadPrev(state.data.date); // 先清掉上一份对比数据，再渲染
     render();
   }
 
@@ -803,6 +987,16 @@
     $date.insertBefore(o, $date.firstChild);
     $date.disabled = false;
   }
+  function setDates(dates) {
+    state.dates = dates;
+    var cur = $date.value;
+    var frag = document.createDocumentFragment();
+    dates.forEach(function (d) { var o = el('option', '', d); o.value = d; frag.appendChild(o); });
+    $date.replaceChildren(frag);
+    if (cur) { ensureOption(cur); $date.value = cur; }
+    $date.disabled = dates.length === 0;
+    state.latestDate = dates[0] || null;
+  }
 
   function getJSON(url, opts) {
     return fetch(url, opts).then(function (r) {
@@ -811,8 +1005,12 @@
     });
   }
 
+  function contentTop() { return $header.offsetHeight; }
+
   function loadDate(d) {
     var id = ++state.reqId;
+    state.scroll = {};
+    if (window.scrollY > contentTop()) window.scrollTo(0, contentTop());
     message('empty', '加载中…');
     var url = 'data/' + encodeURIComponent(d) + '.json';
     getJSON(url, d === state.latestDate ? { cache: 'no-cache' } : undefined)
@@ -820,34 +1018,102 @@
       .catch(function () { if (id === state.reqId) message('error', '无法加载 ' + d + ' 的日报'); });
   }
 
-  // ---- events ----
-  tabs.forEach(function (b) {
+  // ---- tabs ----
+  function edgeHint() {
+    $nav.classList.toggle('more', $strip.scrollWidth - $strip.clientWidth - $strip.scrollLeft > 4);
+  }
+  function syncTabs(smooth) {
+    tabs.forEach(function (x) {
+      var on = x.dataset.tab === state.tab;
+      x.setAttribute('aria-selected', on ? 'true' : 'false');
+      x.tabIndex = on ? 0 : -1;
+      if (on) {
+        var left = x.offsetLeft - $strip.offsetLeft - ($strip.clientWidth - x.offsetWidth) / 2;
+        try { $strip.scrollTo({ left: Math.max(0, left), behavior: smooth ? 'smooth' : 'auto' }); } catch (e) { $strip.scrollLeft = Math.max(0, left); }
+      }
+    });
+  }
+  // dir：1 从右滑入，-1 从左滑入，0 原地
+  function switchTab(tab, dir) {
+    if (state.tab === tab) return;
+    state.scroll[state.tab] = window.scrollY;
+    state.tab = tab;
+    syncTabs(true);
+    if (history.replaceState) history.replaceState(null, '', '#' + tab); else location.hash = tab;
+    $main.style.setProperty('--dx', (dir || 0) * 16 + 'px');
+    render();
+    var top = contentTop(), y = state.scroll[tab];
+    window.scrollTo(0, y != null ? y : Math.min(window.scrollY, top));
+  }
+  function goTo(tab, url) {
+    switchTab(tab, 0);
+    var hit = null;
+    Array.prototype.forEach.call($main.querySelectorAll('[data-url]'), function (n) { if (!hit && n.getAttribute('data-url') === url) hit = n; });
+    if (!hit) return;
+    hit.scrollIntoView({ block: 'start' });
+    hit.classList.remove('flash'); void hit.offsetWidth; hit.classList.add('flash');
+  }
+  function tabIndex() { for (var i = 0; i < tabs.length; i++) if (tabs[i].dataset.tab === state.tab) return i; return 0; }
+
+  tabs.forEach(function (b, i) {
     b.addEventListener('click', function () {
-      if (state.tab === b.dataset.tab) return;
-      state.tab = b.dataset.tab;
-      tabs.forEach(function (x) { x.setAttribute('aria-selected', x === b ? 'true' : 'false'); }); try { b.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' }); } catch (e) {}
-      if (b.scrollIntoView) b.scrollIntoView({ block: 'nearest', inline: 'nearest' });
-      if (history.replaceState) history.replaceState(null, '', '#' + state.tab); else location.hash = state.tab;
-      render();
+      if (state.tab === b.dataset.tab) {           // 再点当前栏目：回到栏目顶部，已在顶部则回到页首
+        var top = contentTop();
+        window.scrollTo({ top: window.scrollY > top + 4 ? top : 0, behavior: 'smooth' });
+        return;
+      }
+      var cur = tabIndex();
+      switchTab(b.dataset.tab, i > cur ? 1 : -1);
+    });
+    b.addEventListener('keydown', function (e) {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      var n = (i + (e.key === 'ArrowRight' ? 1 : tabs.length - 1)) % tabs.length;
+      tabs[n].focus(); tabs[n].click();
     });
   });
+  $strip.addEventListener('scroll', edgeHint, { passive: true });
+  window.addEventListener('resize', edgeHint);
+
+  // 手机左右滑动切换栏目（避开屏幕边缘的系统返回手势）
+  (function () {
+    var sx = 0, sy = 0, st = 0, on = false;
+    $main.addEventListener('touchstart', function (e) {
+      if (e.touches.length !== 1) { on = false; return; }
+      var t = e.touches[0];
+      sx = t.clientX; sy = t.clientY; st = Date.now();
+      on = sx > 24 && sx < window.innerWidth - 24;
+    }, { passive: true });
+    $main.addEventListener('touchend', function (e) {
+      if (!on) return; on = false;
+      var t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+      if (Date.now() - st > 700 || Math.abs(dx) < 60 || Math.abs(dx) < Math.abs(dy) * 1.8) return;
+      if (window.getSelection && String(window.getSelection())) return;
+      var n = tabIndex() + (dx < 0 ? 1 : -1);
+      if (n < 0 || n >= tabs.length) return;
+      switchTab(tabs[n].dataset.tab, dx < 0 ? 1 : -1);
+    }, { passive: true });
+  })();
+
   function fromHash() {
     var h = (location.hash || '').slice(1);
     tabs.forEach(function (x) { if (x.dataset.tab === h) state.tab = h; });
-    tabs.forEach(function (x) { x.setAttribute('aria-selected', x.dataset.tab === state.tab ? 'true' : 'false'); }); tabs.forEach(function (x) { if (x.dataset.tab === state.tab) try { x.scrollIntoView({ inline: 'center', block: 'nearest' }); } catch (e) {} });
+    syncTabs(false);
   }
   fromHash();
   window.addEventListener('hashchange', function () { fromHash(); render(); });
   $date.addEventListener('change', function () { if ($date.value) loadDate($date.value); });
 
+  // ---- 更新提示 ----
+  function showToast(text, onTap) {
+    $toast.textContent = text;
+    $toast.onclick = function () { $toast.classList.remove('show'); onTap(); };
+    $toast.classList.add('show');
+  }
+
   // ---- boot ----
   var idxP = getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
     var dates = arr(idx && idx.dates).filter(function (x) { return typeof x === 'string'; });
-    var frag = document.createDocumentFragment();
-    dates.forEach(function (d) { var o = el('option', '', d); o.value = d; frag.appendChild(o); });
-    $date.replaceChildren(frag);
-    $date.disabled = dates.length === 0;
-    state.latestDate = dates[0] || null;
+    setDates(dates);
     return dates;
   }).catch(function () { return []; });
 
@@ -868,9 +1134,22 @@
   });
 
   if ('serviceWorker' in navigator) {
+    var hadController = !!navigator.serviceWorker.controller;
     window.addEventListener('load', function () {
       navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (reg) { reg.update(); document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') reg.update(); }); }).catch(function () {});
-      var reloaded = false; navigator.serviceWorker.addEventListener('controllerchange', function () { if (reloaded) return; reloaded = true; location.reload(); });
+      // 新版本就绪：后台时直接刷新；正在看时给提示，不打断阅读。首次安装不刷新。
+      var reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (!hadController) { hadController = true; return; }
+        if (reloaded) return;
+        if (document.visibilityState !== 'visible') { reloaded = true; location.reload(); return; }
+        getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
+          var d = arr(idx && idx.dates)[0];
+          return d && d !== state.latestDate ? d + ' 日报已发布 · 点此查看' : '页面有更新 · 点此刷新';
+        }).catch(function () { return '页面有更新 · 点此刷新'; }).then(function (text) {
+          showToast(text, function () { reloaded = true; location.reload(); });
+        });
+      });
     });
   }
 })();

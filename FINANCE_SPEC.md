@@ -30,3 +30,9 @@ JSON 结构：
 - risks 必须以「判断：」开头且引用具体数字；全文禁用模糊词（见 README）。
 - yesterday_check 留 null 时自动生成：读前一天 next_check；无前一天数据写「首期无昨日数据。」。
 - meta.finance：as_of / basis / missing 必填。
+
+## 2026-10-23 起新增规则
+- 口径统一：同一资产全页只用一个合约/口径，以 snapshot 为准（黄金用 snapshot 里的 COMEX 主力合约，原油同理）。groups 里写涨跌幅时必须与 snapshot 同口径；确需引用其他合约（如近月合约结算价），同一句里写明合约月份，headline 不得使用与 snapshot 不同口径的数字。
+- 冲突容差：两来源差值超过以下容差才标「冲突」，否则标「已交叉核对」并在 note 写差值——指数/股价/商品 0.30%；外汇与美元指数 0.10%；收益率 2 bp；加密 0.50%；资金流 5%。
+- 核对状态一致：snapshot 与 groups 引用同一数字时，crosscheck.status 必须相同。
+- 第二来源降级（agy 不可用）按 README 第 2 节加 `"fallback":true`。
