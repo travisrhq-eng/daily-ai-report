@@ -381,6 +381,8 @@
     transition: opacity 400ms var(--ease), transform 400ms var(--ease);
   }
   .toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.topic-post{border-left:1px solid #2a2d33;padding:6px 0 6px 10px;margin:10px 0}
+.topic-post .metrics{margin-top:6px}
 </style>
 </head>
 <body>
@@ -395,7 +397,7 @@
 <nav class="tabs" aria-label="栏目">
   <div class="wrap" role="tablist">
     <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态<span class="cnt"></span></button>
-    <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热帖 Top10</button>
+    <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热点</button>
     <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin<span class="cnt"></span></button>
     <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融简报</button>
     <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub 工具<span class="cnt"></span></button>
@@ -422,7 +424,7 @@
 
   var EMPTY = {
     ai_labs: '今日暂无大厂动态',
-    x_top: '今日暂无 X 热帖',
+    x_top: '今日暂无 X 热门话题',
     filecoin: '今日暂无 Filecoin 相关动态',
     finance: '今日暂无金融简报',
     github_tools: '今日暂无 GitHub 工具推荐'
@@ -638,7 +640,42 @@
     return m;
   }
 
+  function renderTopic(item, i) {
+    var li = cardShell(i, item.url);
+    var top = el('div', 'card-top');
+    top.appendChild(el('span', 'label rank', 'No. ' + pad(Number(item.rank) || i + 1)));
+    if (item.category) top.appendChild(el('span', 'label', str(item.category)));
+    li.appendChild(top);
+    var h = el('h2');
+    h.appendChild(link(item.url, '', str(item.topic)));
+    li.appendChild(h);
+    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    var m = el('div', 'metrics');
+    [['热度', item.score], ['24h 帖数', item.post_count]].forEach(function (p) {
+      if (p[1] == null) return;
+      var s = el('span', 'label', p[0]);
+      s.appendChild(el('b', '', fmtNum(p[1])));
+      m.appendChild(s);
+    });
+    li.appendChild(m);
+    if (item.score_basis) li.appendChild(el('p', 'label', str(item.score_basis)));
+    arr(item.posts).forEach(function (p) {
+      if (!p || typeof p !== 'object') return;
+      var box = el('div', 'topic-post');
+      var who = authorNode(p);
+      if (p.created_at) { who.appendChild(document.createTextNode(' ')); who.appendChild(el('span', 'handle', str(p.created_at))); }
+      box.appendChild(who);
+      if (p.text) box.appendChild(el('p', 'summary', str(p.text)));
+      box.appendChild(metricsNode(p));
+      box.appendChild(link(p.url, '', '查看原帖 ›'));
+      li.appendChild(box);
+    });
+    li.appendChild(prov(item, item.url, 'X 话题页'));
+    return li;
+  }
+
   function renderX(item, i, ctx) {
+    if (item && item.topic) return renderTopic(item, i);
     var li = cardShell(i, item.url);
     var top = el('div', 'card-top');
     top.appendChild(el('span', 'label rank', 'No. ' + pad(Number(item.rank) || i + 1)));

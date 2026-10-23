@@ -153,203 +153,451 @@
   ],
   "x_top": [
    {
-    "author": "@claudeai",
-    "author_name": "Claude",
-    "summary": "Anthropic 宣布下周起 Pro、Max、Team 用户的 Claude 网页、桌面和手机会话默认使用自动模式：由自动检查拦截有风险的操作，不再逐步请用户批准，可随时切回手动。",
-    "url": "https://x.com/claudeai/status/2113360845409583307",
-    "created_at": "2026-10-22T20:04:24Z",
-    "likes": 9248,
-    "replies": 382,
-    "reposts": 310,
-    "quotes": 151,
-    "published_at": "2026-10-23 04:04",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "泄露录音「Democracy Files」：美国中期选举后挑战联邦政府合法性的策略",
+    "category": "时政",
+    "summary": "X 用户 @DataRepublican 连续发布一批录音和文件，称来自 Democracy Renewal Group 等团体的内部讨论，内容涉及在 2026 年中期选举后通过抗议、诉讼和州级行动挑战联邦政府合法性。保守派账号呼吁调查，Fox News 主持人 Ingraham 也在节目中跟进。这批材料未经独立认证，属未证实的泄露内容。",
+    "url": "https://x.com/i/trending/2112893265104007427",
+    "score": 156803,
+    "engagement": 121315,
+    "post_count": 35488,
+    "post_count_query": "\"Democracy Files\" OR \"Illegitimacy Playbook\"",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 121,315 + 关键词近 24h 帖数 35,488",
+    "posts": [
+     {
+      "author": "@DataRepublican",
+      "author_name": "DataRepublican (small r)",
+      "url": "https://x.com/DataRepublican/status/2113256798878916775",
+      "created_at": "2026-10-22 21:10",
+      "likes": 33492,
+      "replies": 1276,
+      "reposts": 16321,
+      "quotes": 1404,
+      "score": 52493
+     },
+     {
+      "author": "@KariLake",
+      "author_name": "Kari Lake",
+      "url": "https://x.com/KariLake/status/2113143720279408809",
+      "created_at": "2026-10-22 13:41",
+      "likes": 19983,
+      "replies": 321,
+      "reposts": 6531,
+      "quotes": 65,
+      "score": 26900
+     }
+    ],
+    "published_at": "2026-10-22 13:41",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "社媒传闻",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "New Conservative Post（注明录音未经独立认证）",
+     "url": "https://www.newconservativepost.com/2026/10/recordings-detail-plans-to-declare-federal-government-illegitimate-pursue-constitutional-overhaul/"
     },
-    "score": 10091,
     "rank": 1
    },
    {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克发帖推荐 Grok Bot（帖文：Grok @Bot），附链接。",
-    "url": "https://x.com/elonmusk/status/2113304960326652163",
-    "created_at": "2026-10-22T16:22:20Z",
-    "likes": 4985,
-    "replies": 791,
-    "reposts": 525,
-    "quotes": 58,
-    "published_at": "2026-10-23 00:22",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "印尼总统普拉博沃回应 MSCI 降级威胁",
+    "category": "财经",
+    "summary": "MSCI 提议把印尼股市从新兴市场调整为单独市场（standalone），理由包括透明度不足、股权集中等问题，雅加达综合指数随之大跌。普拉博沃在 10 月 21 日表示印尼不会被吓倒，相关讲话视频在印尼语 X 圈大量转发。",
+    "url": "https://x.com/i/trending/2112867592407036230",
+    "score": 101344,
+    "engagement": 93893,
+    "post_count": 7451,
+    "post_count_query": "MSCI (Indonesia OR Prabowo OR IHSG)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 93,893 + 关键词近 24h 帖数 7,451",
+    "posts": [
+     {
+      "author": "@LambeSahamjja",
+      "author_name": "Lambe Saham",
+      "url": "https://x.com/LambeSahamjja/status/2112841920204730473",
+      "created_at": "2026-10-21 17:42",
+      "likes": 20624,
+      "replies": 3615,
+      "reposts": 4414,
+      "quotes": 7629,
+      "score": 36282
+     },
+     {
+      "author": "@LambeSahamjja",
+      "author_name": "Lambe Saham",
+      "url": "https://x.com/LambeSahamjja/status/2112867696320925903",
+      "created_at": "2026-10-21 19:24",
+      "likes": 15983,
+      "replies": 541,
+      "reposts": 4204,
+      "quotes": 762,
+      "score": 21490
+     }
+    ],
+    "published_at": "2026-10-21 17:42",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "The Straits Times 2026-10-21",
+     "url": "https://www.straitstimes.com/asia/se-asia/prabowo-vows-indonesia-will-not-be-frightened-by-msci-amid-proposed-market-downgrade"
     },
-    "score": 6359,
     "rank": 2
    },
    {
-    "author": "@elonmusk",
-    "author_name": "Elon Musk",
-    "summary": "马斯克再次推荐用户试用 Grok Bot（帖文：Try Grok @Bot），附链接。",
-    "url": "https://x.com/elonmusk/status/2113329537509449744",
-    "created_at": "2026-10-22T18:00:00Z",
-    "likes": 4011,
-    "replies": 695,
-    "reposts": 443,
-    "quotes": 48,
-    "published_at": "2026-10-23 02:00",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "美国各州油价对比引发党派争论",
+    "category": "时政",
+    "summary": "AAA 10 月 22 日数据显示夏威夷普通汽油均价 5.65 美元/加仑、加州 6.08 美元，北卡、佐治亚等州明显更低。用户把各州油价与执政党、拜登和特朗普任期的涨幅图表放在一起比较，争论集中在州税、监管和党派政策谁该负责。",
+    "url": "https://x.com/i/trending/2113426538196525320",
+    "score": 63813,
+    "engagement": 49358,
+    "post_count": 14455,
+    "post_count_query": "\"gas prices\"",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 49,358 + 关键词近 24h 帖数 14,455",
+    "posts": [
+     {
+      "author": "@patriot_savvy",
+      "author_name": "Tiffany Savage 🇺🇸",
+      "url": "https://x.com/patriot_savvy/status/2113403860353966339",
+      "created_at": "2026-10-23 06:55",
+      "likes": 6043,
+      "replies": 849,
+      "reposts": 2569,
+      "quotes": 221,
+      "score": 9682
+     },
+     {
+      "author": "@catturd2",
+      "author_name": "Catturd ™",
+      "url": "https://x.com/catturd2/status/2113333196054200805",
+      "created_at": "2026-10-23 02:14",
+      "likes": 33561,
+      "replies": 771,
+      "reposts": 3750,
+      "quotes": 55,
+      "score": 38137
+     }
+    ],
+    "published_at": "2026-10-23 02:14",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "专业数据平台",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "AAA 各州油价表",
+     "url": "https://gasprices.aaa.com/state-gas-price-averages/"
     },
-    "score": 5197,
     "rank": 3
    },
    {
-    "author": "@claudeai",
-    "author_name": "Claude",
-    "summary": "Anthropic 托管的 Claude Models on Google Cloud 正式可用：在 Google Cloud 上用 IAM 凭证、Google Cloud 账单使用完整的 Claude Platform 功能。",
-    "url": "https://x.com/claudeai/status/2113380122468454765",
-    "created_at": "2026-10-22T21:21:00Z",
-    "likes": 2197,
-    "replies": 149,
-    "reposts": 125,
-    "quotes": 59,
-    "published_at": "2026-10-23 05:21",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "全球股市大跌，比特币守住 8 万美元",
+    "category": "财经",
+    "summary": "10 月 22 日美股开盘蒸发 7500 亿美元市值，亚洲六大市场合计蒸发近 1 万亿美元，触发因素包括油价突破 110 美元、地缘紧张和科技股资本开支担忧。比特币同期守在 8 万美元上方，Saylor 等多头称牛市未变，Peter Schiff 等人则提示风险。",
+    "url": "https://x.com/i/trending/2112843677026381935",
+    "score": 51917,
+    "engagement": 44380,
+    "post_count": 7537,
+    "post_count_query": "\"stock market\" (wiped OR selloff OR crash)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 44,380 + 关键词近 24h 帖数 7,537",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2113267112445911242",
+      "created_at": "2026-10-22 21:51",
+      "likes": 11981,
+      "replies": 726,
+      "reposts": 1768,
+      "quotes": 530,
+      "score": 15005
+     },
+     {
+      "author": "@saylor",
+      "author_name": "Michael Saylor",
+      "url": "https://x.com/saylor/status/2112892556396962226",
+      "created_at": "2026-10-21 21:03",
+      "likes": 14254,
+      "replies": 877,
+      "reposts": 1486,
+      "quotes": 186,
+      "score": 16803
+     }
+    ],
+    "published_at": "2026-10-21 21:03",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "The Cryptonomist 2026-10-22",
+     "url": "https://en.cryptonomist.ch/2026/10/22/asian-stock-market-decline-csi300/"
     },
-    "score": 2530,
     "rank": 4
    },
    {
-    "author": "@OpenAI",
-    "author_name": "OpenAI",
-    "summary": "OpenAI 称邀请 METR 和 Redwood Research 在 3 周内深度访问其基础设施，试点评估内部监控系统，结论已用于加强安全措施。",
-    "url": "https://x.com/OpenAI/status/2113298833392496746",
-    "created_at": "2026-10-22T15:57:59Z",
-    "likes": 1901,
-    "replies": 268,
-    "reposts": 117,
-    "quotes": 63,
-    "published_at": "2026-10-22 23:57",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "印度安得拉邦地方选举报名冲突，最高法院介入",
+    "category": "时政",
+    "summary": "安得拉邦 100 个城市地方机构选举报名期间，多段视频显示反对党 YSRCP 候选人的报名材料被当场抢走、警察旁观，执政党 TDP 则反指 YSRCP 攻击。印度最高法院要求邦选举委员会把最终候选人名单推迟到 10 月 26 日公布，并考虑延长报名和加强安保。",
+    "url": "https://x.com/i/trending/2112785005495615634",
+    "score": 50586,
+    "engagement": 39471,
+    "post_count": 11115,
+    "post_count_query": "\"Andhra Pradesh\" (nomination OR nominations OR polls) OR #APLocalPolls",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 6 条帖子的 赞+评+转+引 之和 39,471 + 关键词近 24h 帖数 11,115",
+    "posts": [
+     {
+      "author": "@zoo_bear",
+      "author_name": "Mohammed Zubair",
+      "url": "https://x.com/zoo_bear/status/2113310198890893324",
+      "created_at": "2026-10-23 00:43",
+      "likes": 16620,
+      "replies": 394,
+      "reposts": 5084,
+      "quotes": 184,
+      "score": 22282
+     },
+     {
+      "author": "@pbhushan1",
+      "author_name": "Prashant Bhushan",
+      "url": "https://x.com/pbhushan1/status/2113463142529577001",
+      "created_at": "2026-10-23 10:50",
+      "likes": 9241,
+      "replies": 248,
+      "reposts": 2502,
+      "quotes": 85,
+      "score": 12076
+     }
+    ],
+    "published_at": "2026-10-23 00:43",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "The Tribune 2026-10-21",
+     "url": "https://www.tribuneindia.com/news/india/andhra-civic-polls-sc-asks-state-election-body-to-defer-publication-of-final-candidates-list-till-oct-26/"
     },
-    "score": 2349,
     "rank": 5
    },
    {
-    "author": "@AnthropicAI",
-    "author_name": "Anthropic",
-    "summary": "Anthropic 前沿红队博客介绍用 Claude 对大规模代码做形式化验证，证明代码不存在某些类型的漏洞。",
-    "url": "https://x.com/AnthropicAI/status/2113390212911083894",
-    "created_at": "2026-10-22T22:01:06Z",
-    "likes": 1859,
-    "replies": 182,
-    "reposts": 164,
-    "quotes": 80,
-    "published_at": "2026-10-23 06:01",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "美国 2025 年新增就业被下修 90% 至 11.6 万",
+    "category": "财经",
+    "summary": "汇总劳工统计局数据后，2025 年非农新增就业从首次公布的合计 121 万下修到 11.6 万，降幅 90%。投资人 Steve Rattner 等人发帖后引发对就业数据可靠性和经济真实状况的争论；另一方指出最新初请失业金人数降到 19.4 万。",
+    "url": "https://x.com/i/trending/2113298168028811335",
+    "score": 38998,
+    "engagement": 38887,
+    "post_count": 111,
+    "post_count_query": "jobs (revision OR revised) (116,000 OR 116k OR \"90%\")",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 38,887 + 关键词近 24h 帖数 111",
+    "posts": [
+     {
+      "author": "@SteveRattner",
+      "author_name": "Steve Rattner",
+      "url": "https://x.com/SteveRattner/status/2113268044877209941",
+      "created_at": "2026-10-22 21:55",
+      "likes": 9942,
+      "replies": 493,
+      "reposts": 4310,
+      "quotes": 811,
+      "score": 15556
+     },
+     {
+      "author": "@AmyMcGrathKY",
+      "author_name": "Amy McGrath",
+      "url": "https://x.com/AmyMcGrathKY/status/2113287746613551218",
+      "created_at": "2026-10-22 23:13",
+      "likes": 9376,
+      "replies": 251,
+      "reposts": 3774,
+      "quotes": 202,
+      "score": 13603
+     }
+    ],
+    "published_at": "2026-10-22 21:55",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "Political Wire 2026-10-22",
+     "url": "https://politicalwire.com/2026/10/22/most-new-jobs-reported-last-year-were-revised-away/"
     },
-    "score": 2285,
     "rank": 6
    },
    {
-    "author": "@satyanadella",
-    "author_name": "Satya Nadella",
-    "summary": "微软 CEO 纳德拉称大众汽车集团正在全公司范围使用 Copilot。",
-    "url": "https://x.com/satyanadella/status/2113182815189942357",
-    "created_at": "2026-10-22T08:16:58Z",
-    "likes": 1345,
-    "replies": 123,
-    "reposts": 72,
-    "quotes": 17,
-    "published_at": "2026-10-22 16:16",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "美国驻加拿大使馆指加方官员干预美国选举",
+    "category": "国际",
+    "summary": "美国驻渥太华大使馆 10 月 21 日发布情况说明，引用加拿大工业部长 Mélanie Joly 和安大略省长 Doug Ford 针对共和党州加征反制关税的言论，指加方意图影响美国政治。加拿大方面称这些举措是对美国关税的回应，否认干预选举。",
+    "url": "https://x.com/i/trending/2112984434769109280",
+    "score": 33048,
+    "engagement": 32554,
+    "post_count": 494,
+    "post_count_query": "(\"US Embassy\" OR \"U.S. Embassy\" OR usembassyottawa) Canada",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 32,554 + 关键词近 24h 帖数 494",
+    "posts": [
+     {
+      "author": "@mario4thenorth",
+      "author_name": "Mario Zelaya",
+      "url": "https://x.com/mario4thenorth/status/2113014587994071550",
+      "created_at": "2026-10-22 05:08",
+      "likes": 11799,
+      "replies": 1074,
+      "reposts": 4185,
+      "quotes": 212,
+      "score": 17270
+     },
+     {
+      "author": "@Tablesalt13",
+      "author_name": "Tablesalt 🇨🇦🇺🇸",
+      "url": "https://x.com/Tablesalt13/status/2113000646995546138",
+      "created_at": "2026-10-22 04:13",
+      "likes": 5419,
+      "replies": 495,
+      "reposts": 1920,
+      "quotes": 159,
+      "score": 7993
+     }
+    ],
+    "published_at": "2026-10-22 04:13",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "National Post 2026-10-22",
+     "url": "https://nationalpost.com/news/politics/u-s-embassy-fact-sheet-accuses-canada-of-election-interference"
     },
-    "score": 1557,
     "rank": 7
    },
    {
-    "author": "@demishassabis",
-    "author_name": "Demis Hassabis",
-    "summary": "Google DeepMind CEO 哈萨比斯入选《华尔街日报》创新者专刊，称相信人类能应对前沿模型的潜在挑战，迎来科学发现的新黄金时代。",
-    "url": "https://x.com/demishassabis/status/2113352276026990972",
-    "created_at": "2026-10-22T19:30:21Z",
-    "likes": 1250,
-    "replies": 79,
-    "reposts": 72,
-    "quotes": 11,
-    "published_at": "2026-10-23 03:30",
-    "fetched_at": "2026-10-23 07:29",
-    "grade": "官方一手",
+    "topic": "沪深 300 进入技术性熊市",
+    "category": "财经",
+    "summary": "沪深 300 指数 10 月 22 日盘中较 6 月高点下跌 20%，进入技术性熊市。同日亚洲六大市场合计蒸发近 1 万亿美元，被称为「黑色星期四」。",
+    "url": "https://x.com/i/trending/2113147019032166574",
+    "score": 31775,
+    "engagement": 30499,
+    "post_count": 1276,
+    "post_count_query": "(\"CSI 300\" OR \"China stock\" OR \"Chinese stock\") bear",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 30,499 + 关键词近 24h 帖数 1,276",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2113138936826707975",
+      "created_at": "2026-10-22 13:22",
+      "likes": 12828,
+      "replies": 479,
+      "reposts": 1033,
+      "quotes": 198,
+      "score": 14538
+     },
+     {
+      "author": "@coinbureau",
+      "author_name": "Coin Bureau",
+      "url": "https://x.com/coinbureau/status/2113215401983152439",
+      "created_at": "2026-10-22 18:26",
+      "likes": 7805,
+      "replies": 323,
+      "reposts": 1525,
+      "quotes": 341,
+      "score": 9994
+     }
+    ],
+    "published_at": "2026-10-22 13:22",
+    "fetched_at": "2026-10-23 15:00",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "NDTV 2026-10-22",
+     "url": "https://www.ndtv.com/business-news/china-stock-market-csi-crashes-reasons-why-dragon-is-losing-its-fire-12219282"
     },
-    "score": 1412,
     "rank": 8
    },
    {
-    "author": "@OpenAIDevs",
-    "author_name": "OpenAI Developers",
-    "summary": "OpenAI 宣布 Decisions API 正式可用：无需生成完整回复即可对文本和图片做分类、评估和下一步决策。",
-    "url": "https://x.com/OpenAIDevs/status/2113346642787086538",
-    "created_at": "2026-10-22T19:07:58Z",
-    "likes": 831,
-    "replies": 100,
-    "reposts": 50,
-    "quotes": 33,
-    "published_at": "2026-10-23 03:07",
-    "fetched_at": "2026-10-23 07:29",
+    "topic": "《经济学人》批评莫迪 BJP 引发印度舆论争论",
+    "category": "时政",
+    "summary": "《经济学人》官方账号发文称莫迪领导的 BJP 用不光彩手段和对机构的控制拆散对手州级政党、拉拢议员，支持者批评该刊有偏见。同一话题下还有博士生 Neha Bora 称赞孟加拉国 2024 年学生运动引发的争议。",
+    "url": "https://x.com/i/trending/2113116088707994038",
+    "score": 28069,
+    "engagement": 28041,
+    "post_count": 28,
+    "post_count_query": "\"The Economist\" (Modi OR BJP)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 28,041 + 关键词近 24h 帖数 28",
+    "posts": [
+     {
+      "author": "@neha_aisa",
+      "author_name": "Neha",
+      "url": "https://x.com/neha_aisa/status/2112965897203945647",
+      "created_at": "2026-10-22 01:55",
+      "likes": 15559,
+      "replies": 1744,
+      "reposts": 3353,
+      "quotes": 194,
+      "score": 20850
+     },
+     {
+      "author": "@TheEconomist",
+      "author_name": "The Economist",
+      "url": "https://x.com/TheEconomist/status/2112841347405062632",
+      "created_at": "2026-10-21 17:40",
+      "likes": 2110,
+      "replies": 365,
+      "reposts": 816,
+      "quotes": 112,
+      "score": 3403
+     }
+    ],
+    "published_at": "2026-10-21 17:40",
+    "fetched_at": "2026-10-23 15:00",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "note": "Codex 未找到该文的第二来源；以 @TheEconomist 官方帖为准"
     },
-    "score": 1014,
     "rank": 9
    },
    {
-    "author": "@satyanadella",
-    "author_name": "Satya Nadella",
-    "summary": "纳德拉介绍在科隆了解到的案例：TK Elevator 用微软技术让维修技师调用数十年积累的知识，维护超过 100 万部电梯和扶梯。",
-    "url": "https://x.com/satyanadella/status/2113217359108595808",
-    "created_at": "2026-10-22T10:34:14Z",
-    "likes": 817,
-    "replies": 78,
-    "reposts": 56,
-    "quotes": 10,
-    "published_at": "2026-10-22 18:34",
-    "fetched_at": "2026-10-23 07:29",
+    "topic": "Heatbit 推出能挖比特币的热水器加热棒 Bitwater",
+    "category": "加密货币",
+    "summary": "美国初创公司 Heatbit 发布 Bitwater：一根内置 20 颗 ASIC 芯片的替换加热元件，装进普通 30–80 加仑电热水器，一边烧水一边挖比特币，标称算力 34 TH/s、功率 600W。10 月 22 日开放预订，首批售价 899 美元，2027 年第一季度发货；讨论集中在回本周期和家庭挖矿的去中心化意义。",
+    "url": "https://x.com/i/trending/2113393623446491301",
+    "score": 14423,
+    "engagement": 13288,
+    "post_count": 1135,
+    "post_count_query": "Heatbit OR Bitwater",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 13,288 + 关键词近 24h 帖数 1,135",
+    "posts": [
+     {
+      "author": "@heatbit_com",
+      "author_name": "Heatbit",
+      "url": "https://x.com/heatbit_com/status/2113299631010676766",
+      "created_at": "2026-10-23 00:01",
+      "likes": 4846,
+      "replies": 401,
+      "reposts": 650,
+      "quotes": 321,
+      "score": 6218
+     },
+     {
+      "author": "@Polymarket",
+      "author_name": "Polymarket",
+      "url": "https://x.com/Polymarket/status/2113387339250585937",
+      "created_at": "2026-10-23 05:49",
+      "likes": 5436,
+      "replies": 174,
+      "reposts": 349,
+      "quotes": 62,
+      "score": 6021
+     }
+    ],
+    "published_at": "2026-10-23 00:01",
+    "fetched_at": "2026-10-23 15:00",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "互动数为 X API 一手计数，无第二来源"
+     "status": "已交叉核对",
+     "by": "Codex 联网核对",
+     "source": "DiarioBitcoin 2026-10-22",
+     "url": "https://www.diariobitcoin.com/mineria/heatbit-presenta-bitwater-el-calentador-de-agua-que-tambien-mina-bitcoin/"
     },
-    "score": 961,
     "rank": 10
    }
   ],
@@ -980,10 +1228,12 @@
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-10-23 07:29",
-   "basis": "2026-10-22 08:00 起 AI/科技相关原创帖（不含转发与回复），按 赞+评+转+引 之和排序；排除政治类帖子和无文字、内容无法从帖文判断的帖子",
+   "as_of": "2026-10-23 15:00",
+   "basis": "候选池：X search_news 近 24h 官方聚合话题（5 组查询：news / politics / economy / crypto / science）；热度 = 每个话题聚合帖中 48h 内前 4 条去重帖子的 赞+评+转+引 之和 + 关键词近 24h 帖数（get_posts_counts_recent）；同一事件的多个话题合并；关键事实经 Codex 联网交叉核对",
+   "exclude": "排除：体育、娱乐（明星、影视、音乐、综艺、游戏电竞、梗图）、AI 相关话题；排除旧闻翻炒（事件发生超过 72 小时，如重新流传的旧视频）；排除无法核实时间地点的病毒视频",
    "missing": [],
-   "pending": []
+   "pending": [],
+   "note": "帖数为关键词检索计数，受查询式影响，查询式见每条 post_count_query"
   },
   "filecoin": {
    "as_of": "2026-10-23 07:29",
@@ -1055,5 +1305,5 @@
    "missing": []
   }
  },
- "updated_at": "2026-10-23T07:29:33+08:00"
+ "updated_at": "2026-10-23T15:00:04+08:00"
 }
