@@ -144,6 +144,7 @@
     white-space: nowrap;
     cursor: pointer;
     position: relative;
+    min-height: 48px;
     transition: color 500ms var(--ease);
   }
   .tab::after {
@@ -381,6 +382,13 @@
     transition: opacity 400ms var(--ease), transform 400ms var(--ease);
   }
   .toast.show { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.totop{position:fixed;z-index:15;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(76px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:#14161A;color:var(--t-sub);font:inherit;font-size:12px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity 300ms var(--ease)}
+.totop.show{opacity:1;pointer-events:auto}
+.gh-repo{margin:0 0 10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--t-meta)}
+.gh-repo a{color:inherit;text-decoration:none}
+.gh-seg{margin-top:12px}.gh-seg .label{display:block;margin-bottom:2px}
+.gh-seg ul{margin:0;padding-left:18px}.gh-seg li{margin:2px 0}
+.cmd{display:block;margin:8px 0;padding:8px 10px;border:1px solid var(--line);border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px;color:var(--t-sub);overflow-x:auto;white-space:pre}
 .topic-post{border-left:1px solid #2a2d33;padding:6px 0 6px 10px;margin:10px 0}
 .topic-post .metrics{margin-top:6px}
 .topic-post>a{display:inline-block;margin-top:6px;color:#9aa0a6;text-decoration:none;font-size:13px}
@@ -397,16 +405,17 @@
 
 <nav class="tabs" aria-label="栏目">
   <div class="wrap" role="tablist">
-    <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂动态<span class="cnt"></span></button>
+    <button class="tab" role="tab" data-tab="ai_labs" aria-selected="true">大厂<span class="cnt"></span></button>
     <button class="tab" role="tab" data-tab="x_top" aria-selected="false">X 热点</button>
     <button class="tab" role="tab" data-tab="filecoin" aria-selected="false">Filecoin<span class="cnt"></span></button>
-    <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融简报</button>
-    <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub 工具<span class="cnt"></span></button>
+    <button class="tab" role="tab" data-tab="finance" aria-selected="false">金融</button>
+    <button class="tab" role="tab" data-tab="github_tools" aria-selected="false">GitHub<span class="cnt"></span></button>
   </div>
 </nav>
 
 <main class="wrap" id="main" role="tabpanel" aria-live="polite"><noscript><p class="empty">本页需要 JavaScript 渲染；原始数据见 <a href="data/latest.json">data/latest.json</a>。</p></noscript></main>
 <button class="toast" id="toast" type="button" aria-live="polite"></button>
+<button class="totop" id="totop" type="button" aria-label="回到顶部">顶部</button>
 
 <script>
 (function () {
@@ -520,7 +529,7 @@
     var miss = withMissing ? arr(m.missing).filter(function (x) { return x && typeof x === 'object'; }) : [];
     var d = el('details', 'sec-head fade');
     var s = el('summary');
-    s.appendChild(el('b', '', '数据截至 ' + str(m.as_of)));
+    s.appendChild(el('b', '', '数据截至 ' + str(m.as_of) + (m._n != null ? ' · ' + m._n + ' 条' : '')));
     if (withMissing) s.appendChild(el('span', miss.length ? 'warn' : '', miss.length ? '本期缺失 ' + miss.length + ' 项' : '无缺失'));
     var more = el('span', 'more', '说明 '); more.appendChild(el('span', 'chev')); s.appendChild(more);
     d.appendChild(s);
@@ -719,11 +728,18 @@
     var top = el('div', 'card-top');
     top.appendChild(el('span', 'label rank', 'No. ' + pad(i + 1)));
     li.appendChild(top);
-    var h = el('h2', 'gh-name');
-    h.appendChild(link(item.url, '', str(item.name) || '(无名称)'));
+    var h = el('h2');
+    h.appendChild(link(item.url, '', str(item.title) || str(item.name) || '(无名称)'));
     li.appendChild(h);
-    if (item.title) li.appendChild(el('p', 'gh-title', item.title));
-    if (item.summary) li.appendChild(el('p', 'summary', item.summary));
+    var rp = el('p', 'gh-repo'); rp.appendChild(link(item.url, '', str(item.name))); li.appendChild(rp);
+    if (item.summary) li.appendChild(ghText(item.summary, 'summary'));
+    [['features', '功能'], ['scenarios', '使用场景'], ['for_you', '对你的用处'], ['setup', '上手']].forEach(function (p) {
+      var v = item[p[0]]; if (v == null || v === '' || (Array.isArray(v) && !v.length)) return;
+      var sg = el('div', 'gh-seg'); sg.appendChild(el('span', 'label', p[1]));
+      if (Array.isArray(v)) { var u = el('ul'); v.forEach(function (x) { var l2 = el('li'); l2.appendChild(ghText(x, '')); u.appendChild(l2); }); sg.appendChild(u); }
+      else sg.appendChild(ghText(v, 'summary'));
+      li.appendChild(sg);
+    });
     var m = el('div', 'metrics');
     [['Stars', fmtNum(item.stars)], ['最近更新', str(item.last_push)]].forEach(function (p) {
       var s = el('span', 'label', p[0]); s.appendChild(el('b', '', p[1])); m.appendChild(s);
@@ -734,6 +750,16 @@
     return li;
   }
 
+  // 去掉 Markdown 反引号：长命令单独成行，短标识直接内联
+  function ghText(t, cls) {
+    var box = el('div', cls); var parts = str(t).split(/`([^`]+)`/);
+    parts.forEach(function (x, j) {
+      if (j % 2 === 0) { if (x) box.appendChild(document.createTextNode(x.replace(/\*\*/g, ''))); }
+      else if (/\s/.test(x)) box.appendChild(el('code', 'cmd', x));
+      else box.appendChild(document.createTextNode(x));
+    });
+    return box;
+  }
   var RENDER = { ai_labs: renderLab, x_top: renderX, filecoin: renderFil, github_tools: renderGh };
 
   // ---- 金融简报 ----
@@ -753,12 +779,22 @@
     var head = el('div', 'fin-head fade');
     head.appendChild(el('h2', 'fin-title', str(f.title) || '每日金融市场简报'));
     if (f.cutoff) head.appendChild(el('p', 'fin-cutoff', '资料截止 ' + str(f.cutoff)));
-    if (f.cutoff_note) head.appendChild(el('p', 'fin-note', f.cutoff_note));
+    if (f.cutoff_note || arr(f.missing).length) {
+      var hd = el('details', 'sec-head'), hs = el('summary');
+      var mc = arr(f.missing).filter(function (m) { return m && typeof m === 'object'; }).length;
+      hs.appendChild(el('span', mc ? 'warn' : '', mc ? '本期缺失 ' + mc + ' 项' : '无缺失'));
+      var hm = el('span', 'more', '说明 '); hm.appendChild(el('span', 'chev')); hs.appendChild(hm);
+      hd.appendChild(hs);
+      var hb = el('div', 'body');
+      if (f.cutoff_note) hb.appendChild(el('div', '', f.cutoff_note));
+      arr(f.missing).forEach(function (m) { if (m && typeof m === 'object') hb.appendChild(el('div', '', str(m.item) + (m.reason ? ' — ' + m.reason : ''))); });
+      hd.appendChild(hb); head.appendChild(hd);
+    }
     root.appendChild(head);
 
     // 本期缺失
     var missing = arr(f.missing).filter(function (m) { return m && typeof m === 'object'; });
-    if (missing.length) {
+    if (false && missing.length) {
       var ms = finSection('本期缺失', ++k);
       var mu = el('ul', 'fin-list fin-miss');
       missing.forEach(function (m) {
@@ -860,11 +896,12 @@
           dl.appendChild(dd);
         }
         var dl = el('dl', 'fin-dl');
-        block(dl, '事实', str(it.facts));
         block(dl, '白话解读', str(it.plain));
+        block(dl, '关键风险', str(it.risks));
         art.appendChild(dl);
 
         var more = el('dl', 'fin-dl');
+        block(more, '事实', str(it.facts));
         block(more, '影响对象', str(it.affects));
         if (it.pricing || it.pricing_evidence) {
           var pf = document.createDocumentFragment();
@@ -873,7 +910,6 @@
           block(more, '市场是否定价', pf);
         }
         block(more, '下一步验证', str(it.next_check));
-        block(more, '风险与反证', str(it.risks));
 
         var srcs = arr(it.sources).filter(function (s) { return s && typeof s === 'object'; });
         if (srcs.length || it.grade) {
@@ -901,7 +937,7 @@
         if (more.childNodes.length) {
           var det = el('details', 'fin-more'), ds = el('summary');
           if (it.pricing) ds.appendChild(el('span', 'fin-tag', '定价：' + it.pricing));
-          ds.appendChild(el('span', '', (it.pricing ? '· ' : '') + '展开影响、验证、风险与来源'));
+          ds.appendChild(el('span', '', (it.pricing ? '· ' : '') + '展开分析'));
           ds.appendChild(el('span', 'chev'));
           det.appendChild(ds);
           det.appendChild(more);
@@ -961,7 +997,7 @@
     if (state.tab === 'finance') {
       var f = secs.finance;
       if (!f || typeof f !== 'object' || Array.isArray(f)) { message('empty', EMPTY.finance); return; }
-      $main.replaceChildren(secHead(M, false), renderFinance(f));
+      $main.replaceChildren(renderFinance(f));
       return;
     }
     var items = arr(secs[state.tab]).filter(function (it) { return it && typeof it === 'object'; });
@@ -975,6 +1011,7 @@
       status = items.filter(function (it) { return it.status_card; });
       items = items.filter(function (it) { return !it.status_card; });
     }
+    if (M) M._n = items.length;
     var out = [secHead(M, true)];
     var sb = statusBlock(status); if (sb) out.push(sb);
     if (!items.length) out.push(el('div', 'empty fade', EMPTY[state.tab]));
@@ -1148,6 +1185,25 @@
     $toast.classList.add('show');
   }
 
+  function checkNew() {
+    getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
+      var d = arr(idx && idx.dates)[0];
+      if (!d || !state.latestDate || d <= state.latestDate) return;
+      showToast('新日报已就绪 · 点此加载', function () {
+        var y = window.scrollY, keep = state.tab;
+        setDates(arr(idx.dates)); state.latestDate = d; $date.value = d;
+        var id = ++state.reqId; state.scroll = {};
+        getJSON('data/' + encodeURIComponent(d) + '.json', { cache: 'no-cache' }).then(function (data) {
+          if (id !== state.reqId) return; state.tab = keep; setData(data); window.scrollTo(0, Math.min(y, contentTop()));
+        }).catch(function () {});
+      });
+    }).catch(function () {});
+  }
+  document.addEventListener('visibilitychange', function () { if (document.visibilityState === 'visible') checkNew(); });
+  var $totop = document.getElementById('totop');
+  window.addEventListener('scroll', function () { $totop.classList.toggle('show', window.scrollY > window.innerHeight); }, { passive: true });
+  $totop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
   // ---- boot ----
   var idxP = getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
     var dates = arr(idx && idx.dates).filter(function (x) { return typeof x === 'string'; });
@@ -1180,7 +1236,6 @@
       navigator.serviceWorker.addEventListener('controllerchange', function () {
         if (!hadController) { hadController = true; return; }
         if (reloaded) return;
-        if (document.visibilityState !== 'visible') { reloaded = true; location.reload(); return; }
         getJSON('data/index.json', { cache: 'no-cache' }).then(function (idx) {
           var d = arr(idx && idx.dates)[0];
           return d && d !== state.latestDate ? d + ' 日报已发布 · 点此查看' : '页面有更新 · 点此刷新';
