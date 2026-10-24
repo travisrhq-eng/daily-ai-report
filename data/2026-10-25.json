@@ -5,11 +5,11 @@
    {
     "lab": "OpenAI",
     "title": "今日无更新",
-    "summary": "截至 2026-10-25 07:27（北京时间），@OpenAI、@OpenAIDevs、@ChatGPTapp、@sama 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告；@OpenAIDevs 期间只有转发，OpenAI 官方博客 RSS 最新一篇发布于 2026-10-24 01:00，早于上期截止。",
+    "summary": "截至 2026-10-25 07:32（北京时间），@OpenAI、@OpenAIDevs、@ChatGPTapp、@sama 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告；@OpenAIDevs 期间只有转发，OpenAI 官方博客 RSS 最新一篇发布于 2026-10-24 01:00，早于上期截止。",
     "source_url": "https://x.com/OpenAI",
     "source_name": "X @OpenAI",
-    "published_at": "2026-10-25 07:27",
-    "fetched_at": "2026-10-25 07:27",
+    "published_at": "2026-10-25 07:32",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -20,11 +20,11 @@
    {
     "lab": "Anthropic",
     "title": "今日无更新",
-    "summary": "截至 2026-10-25 07:27（北京时间），@AnthropicAI、@claudeai 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告。",
+    "summary": "截至 2026-10-25 07:32（北京时间），@AnthropicAI、@claudeai 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告。",
     "source_url": "https://x.com/AnthropicAI",
     "source_name": "X @AnthropicAI",
-    "published_at": "2026-10-25 07:27",
-    "fetched_at": "2026-10-25 07:27",
+    "published_at": "2026-10-25 07:32",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -35,11 +35,11 @@
    {
     "lab": "xAI",
     "title": "今日无更新",
-    "summary": "截至 2026-10-25 07:27（北京时间），@xai、@grok 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告（@grok 只有自动回复）。",
+    "summary": "截至 2026-10-25 07:32（北京时间），@xai、@grok 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告（@grok 只有自动回复）。",
     "source_url": "https://x.com/xai",
     "source_name": "X @xai",
-    "published_at": "2026-10-25 07:27",
-    "fetched_at": "2026-10-25 07:27",
+    "published_at": "2026-10-25 07:32",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -50,11 +50,11 @@
    {
     "lab": "Google",
     "title": "今日无更新",
-    "summary": "截至 2026-10-25 07:27（北京时间），@Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告。",
+    "summary": "截至 2026-10-25 07:32（北京时间），@Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 自上期截止 2026-10-24 07:27 起没有发布原创帖或新公告。",
     "source_url": "https://x.com/GoogleDeepMind",
     "source_name": "X @GoogleDeepMind",
-    "published_at": "2026-10-25 07:27",
-    "fetched_at": "2026-10-25 07:27",
+    "published_at": "2026-10-25 07:32",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -65,11 +65,11 @@
    {
     "lab": "Grok Bot",
     "title": "今日无更新",
-    "summary": "截至 2026-10-25 07:27（北京时间），x.ai Grok Bot 官方更新日志最新版本仍为 2026-10-23 的 v0.75.5，上期已收录，无新版本。",
+    "summary": "截至 2026-10-25 07:32（北京时间），x.ai Grok Bot 官方更新日志最新版本仍为 2026-10-23 的 v0.75.5，上期已收录，无新版本。",
     "source_url": "https://x.ai/changelog/bot",
     "source_name": "x.ai Grok Bot Changelog",
-    "published_at": "2026-10-25 07:27",
-    "fetched_at": "2026-10-25 07:27",
+    "published_at": "2026-10-25 07:32",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -114,7 +114,7 @@
      }
     ],
     "published_at": "2026-10-23 22:42",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -125,7 +125,7 @@
    {
     "topic": "马斯克向 Skydance（CNN、CBS 母公司）投资 10 亿美元",
     "category": "财经",
-    "summary": "Semafor 首先报道，马斯克向 Skydance 投资 10 亿美元并取得股份；Skydance 接管 Paramount 后旗下拥有 CBS News，并控制原华纳兄弟探索资产（含 CNN）。马斯克本人发帖回应。网友一方期待新闻报道转向，另一方担心亿万富翁影响媒体。",
+    "summary": "Semafor 2026-10-23 00:03（北京时间）首先报道，马斯克向 Skydance 投资 10 亿美元并取得股份（金额为媒体报道数字，双方未公布精确条款）；Skydance 接管 Paramount 后旗下拥有 CBS News，并控制原华纳兄弟探索资产（含 CNN）。马斯克本人发帖回应。网友一方期待新闻报道转向，另一方担心亿万富翁影响媒体。",
     "url": "https://x.com/i/trending/2114097960690827582",
     "score": 103884,
     "engagement": 102180,
@@ -157,18 +157,20 @@
      }
     ],
     "published_at": "2026-10-24 00:55",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "部分属实：Semafor 首报及投资报道可核实，但不能把报道中的金额认定为精确投资额。",
+     "url": "https://www.semafor.com/article/10/22/2026/elon-musk-makes-1-billion-investment-in-ellisons-skydance"
     },
     "rank": 2
    },
    {
     "topic": "新进展：内罗毕 Eastleigh 楼房倒塌 7 人失踪，开发商与承包商被查",
     "category": "社会",
-    "summary": "上期报道时被困人数未定。肯尼亚内政部长 Murkomen 称，2026-10-23 倒塌的 9th Street 在建楼 67 名工人中 66 人安全逃出，另有 7 人失踪。内罗毕州长 Sakaja 称项目提交过申请但未获县政府批准，开发商 9th Street Plaza Limited、承包商 Stromax Holdings E.A. Limited 及建筑师、工程师已被调查；红十字会、警方和军队在密集城区搜救。",
+    "summary": "上期报道时被困人数未定。肯尼亚内政部长 Murkomen 称，2026-10-23 倒塌的 9th Street 在建楼 67 名工人中 66 人安全逃出，另有 7 人失踪（官方早期通报数字，搜救中会变化）。内罗毕州长 Sakaja 称项目提交过申请但未获县政府批准，开发商 9th Street Plaza Limited、承包商 Stromax Holdings E.A. Limited 及建筑师、工程师已被调查；红十字会、警方和军队在密集城区搜救。",
     "url": "https://x.com/i/trending/2113591099021541681",
     "score": 57689,
     "engagement": 46742,
@@ -200,16 +202,18 @@
      }
     ],
     "published_at": "2026-10-23 20:56",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "部分属实：7人失踪、66人无伤逃出属于早期通报，不能作为截止时刻已经核定的最新失踪人数。",
+     "url": "https://www.the-star.co.ke/news/2026-10-24-seven-missing-after-eastleigh-building-collapse"
     },
     "rank": 3
    },
    {
-    "topic": "特朗普政府起诉：若苏利文落败则阻止阿拉斯加参议院选举认证",
+    "topic": "特朗普政府起诉阿拉斯加，要求在特定条件下暂停参议院选举认证",
     "category": "时政",
     "summary": "美国司法部提起诉讼，针对选票上另一名候选人、退休教师 Daniel J. Sullivan Jr. 的得票，称在排序复选制下会让现任参议员 Dan S. Sullivan 的支持者混淆，要求在苏利文因此落败时暂停认证、调查选民意图。民主党候选人 Mary Peltola 称这是为保住权力搞腐败，共和党参议员 Murkowski 称选票标注清楚、阿拉斯加人分得清。选举日为 2026-11-03。",
     "url": "https://x.com/i/trending/2113171470667198696",
@@ -243,18 +247,20 @@
      }
     ],
     "published_at": "2026-10-23 23:50",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "部分属实：确有起诉，但诉请包含额外条件，并非 Sullivan 一旦落败便自动阻止认证。",
+     "url": "https://www.democracydocket.com/wp-content/uploads/2026/10/1-2026-10-22-Complaint.pdf"
     },
     "rank": 4
    },
    {
     "topic": "中期选举民调：共和党追近，NYT/锡耶纳通用选票民主党领先 11 点",
     "category": "时政",
-    "summary": "Politico 报道和一段 CNN 节目称共和党在密歇根有翻盘机会，并守住缅因、得州、阿拉斯加、俄亥俄，推演参议院 53 比 47 共和党占优；民主党内部担心投票率低于 2018 年。纽约时报/锡耶纳民调显示民主党在全国通用选票上领先 11 个百分点。距 2026-11-03 选举日 9 天。",
+    "summary": "Politico 报道和一段 CNN 节目称共和党在密歇根有翻盘机会，并守住缅因、得州、阿拉斯加、俄亥俄，推演参议院 53 比 47 共和党占优；民主党内部担心投票率低于 2018 年。纽约时报/锡耶纳民调显示，有投票意向选民（likely voters）的众议院选举意向中民主党以 52% 对 41% 领先 11 个百分点。距 2026-11-03 选举日 9 天。",
     "url": "https://x.com/i/trending/2114034891533005133",
     "score": 51780,
     "engagement": 47141,
@@ -286,18 +292,20 @@
      }
     ],
     "published_at": "2026-10-24 21:25",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "属实，但须注明52%对41%对应可能投票者的众议院选举意向。",
+     "url": "https://sri.siena.edu/2026/10/21/new-york-times-siena-national-survey/"
     },
     "rank": 5
    },
    {
     "topic": "尼日利亚执政党发言人称部长花数十亿奈拉买官",
     "category": "国际",
-    "summary": "全体进步大会党（APC）发言人 Alwan Hassan 在 Arise TV 黄金时段节目中称，部长为获得任命付出数十亿，这种做法历届政府都有，并称提努布总统严控支出让部长难以回本。前副总统阿蒂库要求公布涉事人员名单，大量网友呼吁反腐机构 EFCC 调查。",
+    "summary": "全体进步大会党（APC）发言人 Alwan Hassan 在 Arise TV 黄金时段节目中称，部长为获得任命付出数十亿，这种做法历届政府都有，并称提努布总统严控支出让部长难以回本。前副总统阿蒂库要求公布涉事人员名单，大量网友呼吁反腐机构 EFCC 调查；买官指控本身尚未证实。",
     "url": "https://x.com/i/trending/2113387770102387159",
     "score": 36188,
     "engagement": 30589,
@@ -329,11 +337,13 @@
      }
     ],
     "published_at": "2026-10-24 00:01",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "言论及阿蒂库要求点名属实；部长实际买官的指控尚未得到证实。",
+     "url": "https://www.arise.tv/alwan-hassan-ministers-pay-billions-to-secure-appointments/"
     },
     "rank": 6
    },
@@ -372,11 +382,13 @@
      }
     ],
     "published_at": "2026-10-24 08:14",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "属实。",
+     "url": "https://www.space.com/space-exploration/launches-spacecraft/spacex-falcon-9-starlink-group-15-15-b1063-ocisly"
     },
     "rank": 7
    },
@@ -415,18 +427,18 @@
      }
     ],
     "published_at": "2026-10-24 21:40",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "note": "Codex 未找到能核实原始发布时间的原始出处，以 X 帖原文为准"
     },
     "rank": 8
    },
    {
     "topic": "威尔士会说威尔士语的儿童比例从 59% 降到 48%",
     "category": "社会",
-    "summary": "BBC Wales 报道的调查显示，3 至 15 岁会说威尔士语的儿童比例从 2019 年的 59% 降到 2026 年年中的 48%，减少 40,700 人。威尔士政府把原因归于新冠疫情冲击，并计划增加威尔士语授课学校，目标是 2050 年达到 100 万使用者。",
+    "summary": "BBC Wales 报道的调查显示，3 至 15 岁会说威尔士语的儿童比例从 2019 年的 59% 降到 2026 年年中的 48%，减少 40,700 人；威尔士政府原始数据中 2026 年比例为 48.3%。威尔士政府把原因归于新冠疫情冲击，并计划增加威尔士语授课学校，目标是 2050 年达到 100 万使用者。",
     "url": "https://x.com/i/trending/2113964411522343043",
     "score": 27753,
     "engagement": 27425,
@@ -458,11 +470,13 @@
      }
     ],
     "published_at": "2026-10-24 17:45",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "部分核实：BBC转载镜像包含59%降至48%的表述；政府原始发布的2026年比例为48.3%。",
+     "url": "https://www.gov.wales/welsh-language-data-annual-population-survey-july-2025-june-2026-html"
     },
     "rank": 9
    },
@@ -501,11 +515,13 @@
      }
     ],
     "published_at": "2026-10-23 18:13",
-    "fetched_at": "2026-10-25 07:24",
+    "fetched_at": "2026-10-25 07:32",
     "grade": "主流媒体",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "属实：三项背书有同期报道支持，提前投票日期获官方日程确认；未直接读取到纽约邮报三篇背书原文。",
+     "url": "https://vinnews.com/2026/10/23/new-york-post-endorses-blakeman-komatireddy-and-lawler-in-key-races/"
     },
     "rank": 10
    }
@@ -1026,22 +1042,22 @@
  },
  "meta": {
   "ai_labs": {
-   "as_of": "2026-10-25 07:27",
+   "as_of": "2026-10-25 07:32",
    "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），只收上期截止 2026-10-24 07:27 后的新内容；X API 检索 12 个官方号原创帖（不含转发与回复），另查 OpenAI 博客 RSS 与 Grok Bot 更新日志；周六五家均无新发布",
    "missing": [],
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-10-25 07:24",
+   "as_of": "2026-10-25 07:32",
    "basis": "X search_news 五组查询（news / politics government election war / economy markets business / crypto bitcoin / science space technology，max_age_hours=24，各 25 条）候选池 125 个话题；同一事件的多个话题合并；热度 = 每话题聚合帖前 4 条（只计 48h 内）赞+评+转+引 + get_posts_counts_recent 关键词近 24h 帖数，取前 10",
    "exclude": "排除 Entertainment 类及体育/影视/音乐/名人/游戏/梗图话题（漫画争论、双屏视频梗）；话题名或摘要含 AI/OpenAI/Grok/Claude/Gemini/ChatGPT；事件超过 72h 的旧闻翻炒（卡尔·萨根 1995 年访谈翻炒、Heidi Levine 遇袭发生于 2026-10-16、望远一号测量船）；无法核实的病毒视频（TikTok 母亲假死、尼日利亚小贩视频、巴斯克海岸记者被浪打倒）；生活类（约克郡陶艺师）；上期已收录且无新进展的话题（Quraishi/SIR、乌克兰卫星通信、普拉博沃、内塔尼亚胡区块链）；Democracy Renewal Group 网红资金话题为 2026-10-23 话题的延续且只有单一党派来源",
    "missing": [],
    "pending": [],
-   "note": "第 11 名为巴西「Online Hope for Bolsonaro」话题（热度 23,531），低于第 10 名未入选。X 互动数与帖数为 X API 一手计数，抓取时间 2026-10-25 07:24（北京时间）。"
+   "note": "第 11 名为巴西「Online Hope for Bolsonaro」话题（热度 23,531），低于第 10 名未入选。X 互动数与帖数为 X API 一手计数，抓取时间 2026-10-25 07:32（北京时间）。"
   },
   "filecoin": {
-   "as_of": "2026-10-25 07:27",
+   "as_of": "2026-10-25 07:32",
    "basis": "近 72 小时 @Filecoin、@_FilOz、@FilFoundation、filecoin-project GitHub releases、新闻与 X 社区帖；已去除上期重复条目（RedStone 价格源上期已收录）",
    "missing": [
     {
@@ -1065,11 +1081,11 @@
      "source_name": "X @MSBIntel",
      "type": "x",
      "published_at": "2026-10-24 10:00",
-     "fetched_at": "2026-10-25 07:27",
+     "fetched_at": "2026-10-25 07:32",
      "grade": "社媒传闻",
      "crosscheck": {
       "status": "单一来源",
-      "note": "仅社区账号，@WallStreetXHQ 转述同一数据，未找到 OKX 官方储备证明原文"
+      "note": "仅社区账号，@WallStreetXHQ 转述同一数据，未找到 OKX 官方储备证明原文；Codex 实时核查同样未找到原始数据与钱包地址"
      },
      "unverified": true,
      "unverified_reason": "原始数据出处不明，未找到 OKX 储备证明页面对应数字",
@@ -1082,7 +1098,7 @@
      "source_name": "X @OLASUNKANM10876",
      "type": "x",
      "published_at": "2026-10-25 05:47",
-     "fetched_at": "2026-10-25 07:27",
+     "fetched_at": "2026-10-25 07:32",
      "grade": "社媒传闻",
      "crosscheck": {
       "status": "单一来源",
@@ -1118,5 +1134,5 @@
    "missing": []
   }
  },
- "updated_at": "2026-10-25T07:27:34+08:00"
+ "updated_at": "2026-10-25T07:32:42+08:00"
 }
