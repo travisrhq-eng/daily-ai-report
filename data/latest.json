@@ -1,721 +1,726 @@
 {
- "date": "2026-10-26",
+ "date": "2026-10-27",
  "sections": {
   "ai_labs": [
    {
     "lab": "OpenAI",
-    "title": "今日无更新",
-    "summary": "截至 2026-10-26 07:22（北京时间），@OpenAI、@OpenAIDevs、@ChatGPTapp、@sama 自上期截止 2026-10-25 07:27 起没有发布原创帖或新公告；@OpenAIDevs 期间只有转发，OpenAI 官方博客 RSS 最新一篇发布于 2026-10-24 01:00，早于上期截止。",
-    "source_url": "https://x.com/OpenAI",
-    "source_name": "X @OpenAI",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "title": "OpenAI 发布 GPT-6.1 Terra：主打电脑操作，API 价格比上一代 Terra 低 50%",
+    "summary": "OpenAI 北京时间 2026-10-27 02:06 发布 GPT-6.1 Terra，定位是快速、低成本的电脑操作（看懂屏幕、跨应用执行）和写作模型。官方页面称：标准 API 价格比 GPT-5.6 Terra 和 GPT-6.1 Sol 低 50%，为每百万输入 token 1 美元、缓存输入 0.05 美元、输出 5 美元；Terminal-Bench 4.0 最高推理档解出 50.3% 的任务，GPT-5.6 Terra 为 21.5%；内部易错提示测试中低推理档错误率从 53.6% 降到 16.7%。即日起向 ChatGPT Work 和 Codex 的 Plus、Pro、Enterprise、Edu 用户开放，API 模型名 gpt-6.1-terra。官方也写明，最复杂的编程任务仍建议用 GPT-6.1 Sol 或 GPT-6 Astra。",
+    "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+    "source_name": "OpenAI 官方博客",
+    "published_at": "2026-10-27 02:06",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "X API 检索 @OpenAI、@OpenAIDevs、@ChatGPTapp、@sama 原创帖（不含转发与回复），2026-10-25 07:27 起无结果"
-    },
-    "status_card": true
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "OpenAI 官方页面与 @OpenAI 发布帖（https://x.com/OpenAI/status/2114780711664398349）",
+     "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+    }
    },
    {
     "lab": "Anthropic",
-    "title": "今日无更新",
-    "summary": "截至 2026-10-26 07:22（北京时间），@AnthropicAI、@claudeai 自上期截止 2026-10-25 07:27 起没有发布原创帖或新公告。",
-    "source_url": "https://x.com/AnthropicAI",
-    "source_name": "X @AnthropicAI",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "title": "Claude for Nonprofits 扩展：新增与非营利组织共建的插件",
+    "summary": "Anthropic 北京时间 2026-10-27 02:04 宣布扩展 Claude for Nonprofits，推出一个与非营利组织共同打造的插件（官方帖原文为与「around 30」家机构共建），加入筹款、营销和招聘技能，会结合各团队自己的背景资料和 AI 使用政策。官方称已有超过 25,000 家非营利组织在用 Claude，其中多数是小型本地团队。",
+    "source_url": "https://x.com/claudeai/status/2114780227465338985",
+    "source_name": "X @claudeai",
+    "published_at": "2026-10-27 02:04",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "X API 检索 @AnthropicAI、@claudeai 原创帖（不含转发与回复），2026-10-25 07:27 起无结果"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "@claudeai 官方帖与 Claude 官网文章",
+     "url": "https://claude.com/resources/articles/expanding-claude-for-nonprofits"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Anthropic 向 SEC 公开提交 S-1，拟在纳斯达克上市，代码 ANT",
+    "summary": "Anthropic 北京时间 2026-10-26 21:05 在官方账号宣布已向美国 SEC 提交 S-1 注册声明。SEC 文件显示：2026 年上半年收入 162.86 亿美元（上年同期 11.63 亿美元），净亏损 807.48 亿美元，其中 723.88 亿美元是可转债、衍生负债和 SAFE 公允价值变动的非现金费用，经营亏损 6.93 亿美元；截至 2026-06-30 现金、现金等价物和短期投资 1,316.51 亿美元。公司申请在纳斯达克全球精选市场上市，股票代码 ANT；CNBC 报道公司 6 月已秘密递交。发行规模和价格尚未公布。",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+    "source_name": "SEC EDGAR（Anthropic S-1）",
+    "published_at": "2026-10-26 21:05",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "SEC EDGAR S-1 原文、Anthropic 官方公告（https://www.anthropic.com/news/s1-sec）、AP 与 CNBC 报道",
+     "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm"
     },
-    "status_card": true
+    "x_post": "https://x.com/AnthropicAI/status/2114705042817110293"
    },
    {
     "lab": "xAI",
     "title": "今日无更新",
-    "summary": "截至 2026-10-26 07:22（北京时间），@xai、@grok 自上期截止 2026-10-25 07:27 起没有发布原创帖或新公告（@grok 只有自动回复）。",
+    "summary": "截至 2026-10-27 07:33（北京时间），@xai、@grok 自上期截止 2026-10-26 07:31 起没有发布原创帖或新公告（@grok 只有自动回复）。",
     "source_url": "https://x.com/xai",
     "source_name": "X @xai",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "published_at": "2026-10-27 07:33",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "X API 检索 @xai、@grok 原创帖（不含转发与回复），2026-10-25 07:27 起无结果"
+     "note": "X API 检索 @xai、@grok 原创帖（不含转发与回复），2026-10-26 07:31 起无结果"
     },
     "status_card": true
    },
    {
     "lab": "Google",
     "title": "今日无更新",
-    "summary": "截至 2026-10-26 07:22（北京时间），@Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 自上期截止 2026-10-25 07:27 起没有发布原创帖或新公告。",
+    "summary": "截至 2026-10-27 07:33（北京时间），@Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 自上期截止 2026-10-26 07:31 起没有发布原创帖或新公告。",
     "source_url": "https://x.com/GoogleDeepMind",
     "source_name": "X @GoogleDeepMind",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "published_at": "2026-10-27 07:33",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "X API 检索 @Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 原创帖（不含转发与回复），2026-10-25 07:27 起无结果"
+     "note": "X API 检索 @Google、@GoogleAI、@GoogleDeepMind、@GeminiApp 原创帖（不含转发与回复），2026-10-26 07:31 起无结果"
     },
     "status_card": true
    },
    {
     "lab": "Grok Bot",
     "title": "今日无更新",
-    "summary": "截至 2026-10-26 07:22（北京时间），x.ai Grok Bot 官方更新日志最新版本仍为 2026-10-23 的 v0.75.5，上期已收录，无新版本。",
+    "summary": "截至 2026-10-27 07:33（北京时间），x.ai Grok Bot 官方更新日志自上期截止起无新版本。上期漏收补录：x.ai Grok Bot 官方更新日志 2026-10-24 发布 v0.75.8（含 0.75.6、0.75.7），上期仍写最新为 v0.75.5，属漏收，本期补录。新功能：Bot 可在你确认的卡片上新增、修改或删除 Auto-review 规则（需 0.75.2 以上）。改进：Auto-review 弹审批卡前会再检查一次，减少安全操作的审批；Bot 保存或编辑自己的例行任务不再单独算高风险；排程会用你已连接的 Google 或 Outlook 日历。修复：X 等连接器新增工具或字段后无需重连即可使用；登录过期的连接器显示 Authenticate 而不是 Connected。",
     "source_url": "https://x.ai/changelog/bot",
     "source_name": "x.ai Grok Bot Changelog",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "published_at": "2026-10-27 07:33",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "官方更新日志页面"
+     "note": "官方更新日志页面；v0.75.8 只标日期 2026-10-24，未标具体时刻"
     },
     "status_card": true
    }
   ],
   "x_top": [
    {
-    "topic": "巴西总统第二轮投票：卢拉对弗拉维奥·博索纳罗，计票胶着",
+    "topic": "印度反对派号召 11 月 1 日德里大集会，要求首席选举专员辞职",
     "category": "国际",
-    "summary": "2026-10-25 巴西总统第二轮投票，现任总统卢拉对阵参议员弗拉维奥·博索纳罗；卢拉竞选团队称圣保罗、萨尔瓦多等城市公交减少，最高法院法官 Cristiano Zanin 下令投票延长 2 小时至巴西利亚时间 19:00（Codex 核对的报道称原因含公交运力不足和恶劣天气），博索纳罗阵营称这是操纵。截至北京时间 2026-10-26 07:24，X 上转述的计票数据为已计 46.48% 投票站、弗拉维奥 50.01%（28,658,071 票）对卢拉 49.99%（28,645,130 票），胜者未定；Codex 核到巴西选举法院（TSE）官方数据北京时间 07:20 快照为已计 43.24%、弗拉维奥 50.13%（26,715,056 票）对卢拉 49.87%（26,576,012 票）。X 把同一事件的 4 个话题合并统计，这里取热度最高的一个。",
-    "url": "https://x.com/i/trending/2114174004256981314",
-    "score": 219872,
-    "engagement": 193671,
-    "post_count": 26201,
-    "post_count_query": "(Lula OR Flávio) urnas apuradas",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 193,671 + 关键词近 24h 帖数 26,201",
-    "posts": [
-     {
-      "author": "@eixopolitico",
-      "author_name": "Eixo Político",
-      "url": "https://x.com/eixopolitico/status/2114498426960552445",
-      "created_at": "2026-10-26 07:24",
-      "likes": 61,
-      "replies": 3,
-      "reposts": 3,
-      "quotes": 9,
-      "score": 76
-     },
-     {
-      "author": "@poponze",
-      "author_name": "poponze",
-      "url": "https://x.com/poponze/status/2114403906843209773",
-      "created_at": "2026-10-26 01:09",
-      "likes": 42832,
-      "replies": 350,
-      "reposts": 3283,
-      "quotes": 436,
-      "score": 46901
-     }
-    ],
-    "published_at": "2026-10-26 01:09",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "属实：数字为可核验的官方快照，不能视为最终结果。AP报道，Zanin随后澄清延长决定适用于当时仍开放的投票站。（来源发布时间：官方数据文件生成：2026-10-25 20:20:49 UTC-03:00）",
-     "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"
-    },
-    "rank": 1
-   },
-   {
-    "topic": "预测市场：民主党拿下众议院概率 91%、参议院 67%、两院 66%",
-    "category": "时政",
-    "summary": "X 摘要称 Polymarket 显示民主党拿下众议院概率 91%、参议院 67%、两院通吃 66%；Codex 核到的第三方 Polymarket 快照（北京时间 2026-10-25 16:21）为众议院 91.5%、参议院 66.5%、两院 66.5%，实时报价随时变化。NYT/Siena 10-21 发布的全国民调显示民主党在众议院选举意向领先 10 个百分点。有民调称民主党众议院席位最多达 250 席、为 2008 年以来最多。质疑者举出 CNN 参议院推演共和党 53 比 46 占优，以及 2016 年希拉里被给出 92% 胜率却落败的先例。距 2026-11-03 选举日 8 天，两党都在催投票。",
-    "url": "https://x.com/i/trending/2114056886236664059",
-    "score": 82631,
-    "engagement": 81728,
-    "post_count": 903,
-    "post_count_query": "Polymarket (midterms OR House OR Senate)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 81,728 + 关键词近 24h 帖数 903",
-    "posts": [
-     {
-      "author": "@WmAG_V",
-      "author_name": "William A Goldsborough",
-      "url": "https://x.com/WmAG_V/status/2114041479299571899",
-      "created_at": "2026-10-25 01:09",
-      "likes": 53595,
-      "replies": 54,
-      "reposts": 9441,
-      "quotes": 33,
-      "score": 63123
-     },
-     {
-      "author": "@NewsWire_US",
-      "author_name": "NewsWire",
-      "url": "https://x.com/NewsWire_US/status/2113996454784380946",
-      "created_at": "2026-10-24 22:10",
-      "likes": 6075,
-      "replies": 219,
-      "reposts": 529,
-      "quotes": 196,
-      "score": 7019
-     }
-    ],
-    "published_at": "2026-10-24 22:10",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "主流媒体",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "部分属实：概率采用明确标时的第三方Polymarket快照，并非10月25日收盘值；实时页面后续报价已有变化。最新地区民调与最新全国民调须区分；市场概率也不是民调支持率。（来源发布时间：文章初发2026-10-19，时刻及时区未公开；所用报价快照2026-10-25 08:21 UTC）",
-     "url": "https://pricednews.com/odds/us-midterms-2026"
-    },
-    "rank": 2
-   },
-   {
-    "topic": "印度国大党领袖拉胡尔·甘地号召 11 月 1 日德里集会抗议「偷票」",
-    "category": "国际",
-    "summary": "拉胡尔·甘地号召学生、农民、工人、商人等 2026-11-01 到德里 Ramlila 广场参加「Chalo Dilli」游行集会，抗议选举委员会特别选民名单修订（SIR）中删除选民等他所称的「vote chori」（偷票）。INDIA 反对党联盟要求首席选举专员辞职，并计划 10-30 在德里 Ashok 酒店对首席选举专员 Gyanesh Kumar 举行象征性的「公众弹劾」；人民党（BJP）批评日期撞上 1984 年反锡克暴乱纪念日，商人担心排灯节期间封路造成损失。",
-    "url": "https://x.com/i/trending/2113987135686562176",
-    "score": 61994,
-    "engagement": 60589,
-    "post_count": 1405,
-    "post_count_query": "\"Rahul Gandhi\" (rally OR \"vote chori\" OR \"November 1\")",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 60,589 + 关键词近 24h 帖数 1,405",
+    "summary": "国大党领袖拉胡尔·甘地和哈尔格号召支持者 2026-11-01 到新德里 Ramlila 广场参加「Vote Bachao, Desh Bachao」（保选票、保国家）集会，要求首席选举专员 Gyanesh Kumar 辞职、停止选民名单「特别深度修订」（SIR）并恢复被删除的选民。选举委员会称修订按规则进行；德里商人担心集会影响排灯节生意，拉胡尔·甘地发帖专门回应商人。",
+    "url": "https://x.com/i/trending/2114225987122765958",
+    "score": 101434,
+    "engagement": 83400,
+    "post_count": 18034,
+    "post_count_query": "Ramlila OR \"Vote Bachao\" OR \"vote chori\"",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 83,400 + 关键词近 24h 帖数 18,034",
     "posts": [
      {
       "author": "@RahulGandhi",
       "author_name": "Rahul Gandhi",
-      "url": "https://x.com/RahulGandhi/status/2114204926410899607",
-      "created_at": "2026-10-25 11:58",
-      "likes": 30022,
-      "replies": 3773,
-      "reposts": 9891,
-      "quotes": 713,
-      "score": 44399
+      "url": "https://x.com/RahulGandhi/status/2114625930673225807",
+      "created_at": "2026-10-26 15:51",
+      "likes": 32631,
+      "replies": 3524,
+      "reposts": 9675,
+      "quotes": 716,
+      "score": 46546
      },
      {
-      "author": "@nishikant_dubey",
-      "author_name": "Dr Nishikant Dubey",
-      "url": "https://x.com/nishikant_dubey/status/2113928755878191398",
-      "created_at": "2026-10-24 17:41",
-      "likes": 3733,
-      "replies": 968,
-      "reposts": 790,
-      "quotes": 178,
-      "score": 5669
+      "author": "@kharge",
+      "author_name": "Mallikarjun Kharge",
+      "url": "https://x.com/kharge/status/2114649678918852973",
+      "created_at": "2026-10-26 17:25",
+      "likes": 14759,
+      "replies": 4548,
+      "reposts": 3482,
+      "quotes": 373,
+      "score": 23162
      }
     ],
-    "published_at": "2026-10-24 17:41",
-    "fetched_at": "2026-10-26 07:31",
+    "published_at": "2026-10-26 15:51",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "属实：截至核查时，两项均为未来活动安排；公众弹劾是象征性政治活动，不等于已经完成正式法定弹劾。（来源发布时间：2026-10-25；页面更新2026-10-25 11:19 UTC+05:30（IST），初发时刻未公开）",
-     "url": "https://www.aajtak.in/india/delhi/story/rahul-gandhi-chalo-delhi-march-1-november-ramlila-maidan-ntc-amkr-dskc-2679497-2026-10-25"
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+    },
+    "rank": 1
+   },
+   {
+    "topic": "肯尼亚：反对派推 Sifuna 挑战鲁托，他以塞尔维亚、巴西为例称选举能出奇迹",
+    "category": "国际",
+    "summary": "内罗毕参议员 Edwin Sifuna 发帖称塞尔维亚学生名单胜选、巴西卢拉复出说明选举可以出奇迹，外交部常秘 Korir Sing'Oei 回应称肯尼亚国情独特、不应照搬外国例子。前一天（2026-10-25）DCP 党的 Cleophas Malala 称他和前副总统加查瓜已商定由 Sifuna 作为 2027 年总统候选人挑战鲁托。本话题合并了「Sifuna 以塞尔维亚和巴西为例」与「Malala 支持 Sifuna」两个 X 话题。",
+    "url": "https://x.com/i/trending/2114826646519677395",
+    "score": 74881,
+    "engagement": 30146,
+    "post_count": 44735,
+    "post_count_query": "Sifuna",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 30,146 + 关键词近 24h 帖数 44,735",
+    "posts": [
+     {
+      "author": "@edwinsifuna",
+      "author_name": "Edwin Sifuna",
+      "url": "https://x.com/edwinsifuna/status/2114675194044260456",
+      "created_at": "2026-10-26 19:07",
+      "likes": 21347,
+      "replies": 1123,
+      "reposts": 6387,
+      "quotes": 245,
+      "score": 29102
+     },
+     {
+      "author": "@ntvkenya",
+      "author_name": "NTV Kenya",
+      "url": "https://x.com/ntvkenya/status/2114293425377873977",
+      "created_at": "2026-10-25 17:50",
+      "likes": 7153,
+      "replies": 75,
+      "reposts": 1120,
+      "quotes": 29,
+      "score": 8377
+     }
+    ],
+    "published_at": "2026-10-25 17:50",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+    },
+    "rank": 2
+   },
+   {
+    "topic": "墨西哥 16 岁女生发明声波灭火器 Vortex Tech",
+    "category": "科技",
+    "summary": "塔毛利帕斯州 Altamira 的 16 岁学生 Ángela Karime Hernández Venegas 用 12 伏电池、信号发生器、功放和音箱做出 Vortex Tech，用 30 赫兹声波扰动空气、隔开氧气来扑灭小火，适用于木材、液体、油脂和电器初期火灾。X 摘要称她在 2026 年印尼国际科学与发明展获金奖，总统辛鲍姆公开称赞；专家指出它只适合初起小火，原理建立在已有研究上。",
+    "url": "https://x.com/i/trending/2114846590779478146",
+    "score": 69351,
+    "engagement": 69221,
+    "post_count": 130,
+    "post_count_query": "\"Vortex Tech\" OR (extintor sonido) OR (fire extinguisher sound waves)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 69,221 + 关键词近 24h 帖数 130",
+    "posts": [
+     {
+      "author": "@dailycultures",
+      "author_name": "DAILY",
+      "url": "https://x.com/dailycultures/status/2114740837770789294",
+      "created_at": "2026-10-26 23:28",
+      "likes": 63859,
+      "replies": 380,
+      "reposts": 4559,
+      "quotes": 388,
+      "score": 69186
+     },
+     {
+      "author": "@DallasExpress",
+      "author_name": "The Dallas Express News",
+      "url": "https://x.com/DallasExpress/status/2114822843921793210",
+      "created_at": "2026-10-27 04:53",
+      "likes": 28,
+      "replies": 0,
+      "reposts": 3,
+      "quotes": 1,
+      "score": 32
+     }
+    ],
+    "published_at": "2026-10-26 23:28",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
     },
     "rank": 3
    },
    {
-    "topic": "俄亥俄州长选举：奥巴马助阵 Amy Acton 克利夫兰集会",
-    "category": "时政",
-    "summary": "民主党俄亥俄州长候选人、前州卫生厅长 Amy Acton 与前总统奥巴马、前参议员 Sherrod Brown 在克利夫兰 Public Auditorium 于 2026-10-24 举行「Fighting for Ohio」集会，到场数千人。对手、共和党候选人 Vivek Ramaswamy 的广告引用了 Acton 疏远的母亲的指控，Acton 在台上讲述童年受虐和居无定所的经历作回应。选举日 2026-11-03。",
-    "url": "https://x.com/i/trending/2114180756528333107",
-    "score": 55085,
-    "engagement": 48614,
-    "post_count": 6471,
-    "post_count_query": "\"Amy Acton\" (Obama OR rally OR Cleveland)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 48,614 + 关键词近 24h 帖数 6,471",
+    "topic": "以色列今天大选：艾森科特阵营民调领先但都不过半",
+    "category": "国际",
+    "summary": "以色列议会选举 2026-10-27 投票。X 摘要引民调称以前总参谋长艾森科特为首的反对派阵营 52–56 席、内塔尼亚胡阵营 48–50 席，双方都不到组阁所需的 61 席；艾森科特在采访中称内塔尼亚胡「妄想」，并排除任何让内塔尼亚胡继续任总理的联合政府，而特朗普政府盟友被报道在讨论让两人组联合政府。本话题合并了 3 个 X 话题（艾森科特民调领先、以色列人投票、联合政府传闻）。",
+    "url": "https://x.com/i/trending/2114799678369775642",
+    "score": 61464,
+    "engagement": 30366,
+    "post_count": 31098,
+    "post_count_query": "(Eisenkot OR Eizenkot OR Netanyahu) (election OR poll OR vote OR Knesset)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 30,366 + 关键词近 24h 帖数 31,098",
     "posts": [
      {
-      "author": "@amyactonoh",
-      "author_name": "Dr. Amy Acton",
-      "url": "https://x.com/amyactonoh/status/2114140585565008180",
-      "created_at": "2026-10-25 07:42",
-      "likes": 21833,
-      "replies": 1585,
-      "reposts": 3738,
-      "quotes": 163,
-      "score": 27319
+      "author": "@Megatron_ron",
+      "author_name": "Megatron",
+      "url": "https://x.com/Megatron_ron/status/2114783564675833991",
+      "created_at": "2026-10-27 02:17",
+      "likes": 7383,
+      "replies": 275,
+      "reposts": 2256,
+      "quotes": 150,
+      "score": 10064
      },
      {
-      "author": "@Acyn",
-      "author_name": "Acyn",
-      "url": "https://x.com/Acyn/status/2114060144325918864",
-      "created_at": "2026-10-25 02:23",
-      "likes": 13273,
-      "replies": 268,
-      "reposts": 1691,
-      "quotes": 75,
-      "score": 15307
+      "author": "@BRICSinfo",
+      "author_name": "BRICS News",
+      "url": "https://x.com/BRICSinfo/status/2114796603294834969",
+      "created_at": "2026-10-27 03:09",
+      "likes": 5763,
+      "replies": 468,
+      "reposts": 836,
+      "quotes": 290,
+      "score": 7357
      }
     ],
-    "published_at": "2026-10-25 02:23",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "官方一手",
+    "published_at": "2026-10-27 02:17",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "主流媒体",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "属实：Ramaswamy是Acton的州长选举对手；Brown参加的是参议院选举。广告中的指控不应作为已证实事实转述。（来源发布时间：2026-10-24 17:27 UTC-04:00（EDT）；更新2026-10-25 00:06 UTC-04:00，未公开秒数）",
-     "url": "https://www.cleveland.com/open/2026/10/obama-returns-to-cleveland-to-rally-ohio-democrats-behind-acton-brown.html?outputType=amp"
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
     },
     "rank": 4
    },
    {
-    "topic": "鲁比奥称特朗普是「有远见的人」",
-    "category": "时政",
-    "summary": "美国国务卿鲁比奥 2026-10-22 在印度孟买接受 India Today 采访时称特朗普「He's visionary」（有远见），能把别人认为做不到的事变成现实，国务院发布了讲话稿；10-24 起保守派账号在 X 上大量转发。另一方引用查塔姆研究所的分析，称特朗普或在中期选举后「不再受选举约束」，华尔街日报社论则提醒特朗普与普京、习近平峰会的风险。",
-    "url": "https://x.com/i/trending/2114079287233958290",
-    "score": 49186,
-    "engagement": 48211,
-    "post_count": 975,
-    "post_count_query": "Rubio visionary",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 48,211 + 关键词近 24h 帖数 975",
-    "posts": [
-     {
-      "author": "@EricLDaugh",
-      "author_name": "Eric Daugherty",
-      "url": "https://x.com/EricLDaugh/status/2114115528310526101",
-      "created_at": "2026-10-25 06:03",
-      "likes": 11126,
-      "replies": 154,
-      "reposts": 3414,
-      "quotes": 72,
-      "score": 14766
-     },
-     {
-      "author": "@PrometheanActn",
-      "author_name": "Promethean Action",
-      "url": "https://x.com/PrometheanActn/status/2114048787648053567",
-      "created_at": "2026-10-25 01:38",
-      "likes": 15693,
-      "replies": 276,
-      "reposts": 5344,
-      "quotes": 268,
-      "score": 21581
-     }
-    ],
-    "published_at": "2026-10-25 01:38",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "属实：可读取的是标明来自美国国务院、未经修改的发布稿镜像；采访地点使用印度时间UTC+05:30，但具体采访时刻未公开。不能把镜像分发日期当作讲话日期。（来源发布时间：国务院原稿：2026-10-22，时刻及发布时区未公开；Public Technologies分发：2026-10-23 17:04 UTC）",
-     "url": "https://pubt.io/view/C200DC59AC89A212616ED00E1A08EF0EF8251F09"
-    },
-    "rank": 5
-   },
-   {
-    "topic": "以色列 10 月 27 日大选：内塔尼亚胡催特朗普再背书",
-    "category": "国际",
-    "summary": "Axios 2026-10-25 22:44（北京时间）引述消息源称，内塔尼亚胡三天内两次致电特朗普，要求更多公开背书，利库德党否认求援。三家主要电视台最终民调与 Maariv 10-23 民调（48 席）均显示他的阵营低于 120 席议会过半所需的 61 席。内塔尼亚胡发视频要求选民周二只投利库德党、不要投或过不了门槛的小党；Axios 报道特朗普身边有人认为没有内塔尼亚胡的政府也有好处。X 把同一事件的 2 个话题合并，这里取热度较高的一个。",
-    "url": "https://x.com/i/trending/2114370983067111494",
-    "score": 33569,
-    "engagement": 32173,
-    "post_count": 1396,
-    "post_count_query": "Netanyahu Trump (endorsement OR election)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 32,173 + 关键词近 24h 帖数 1,396",
-    "posts": [
-     {
-      "author": "@netanyahu",
-      "author_name": "Benjamin Netanyahu - בנימין נתניהו",
-      "url": "https://x.com/netanyahu/status/2114067702327243186",
-      "created_at": "2026-10-25 02:53",
-      "likes": 8644,
-      "replies": 1716,
-      "reposts": 1443,
-      "quotes": 105,
-      "score": 11908
-     },
-     {
-      "author": "@netanyahu",
-      "author_name": "Benjamin Netanyahu - בנימין נתניהו",
-      "url": "https://x.com/netanyahu/status/2114286556034859410",
-      "created_at": "2026-10-25 17:22",
-      "likes": 8207,
-      "replies": 4671,
-      "reposts": 1586,
-      "quotes": 1029,
-      "score": 15493
-     }
-    ],
-    "published_at": "2026-10-25 02:53",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "主流媒体",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "部分属实：利库德否认求援，通话内容尚有争议。民调须注明机构，48席与50席来自不同调查，不能合并为唯一确定预测。（来源发布时间：2026-10-25 14:44:35 UTC）",
-     "url": "https://www.axios.com/2026/10/25/netanyahu-trump-israeli-elections"
-    },
-    "rank": 6
-   },
-   {
-    "topic": "比特币周末跌破 8 万美元，1 小时爆仓超 2 亿美元",
-    "category": "加密货币",
-    "summary": "北京时间 2026-10-24 22:23 前后，比特币跌破 80,000 美元，以太坊跌破 2,350 美元，全市场 1 小时内超过 2 亿美元杠杆多头被清算（Watcher.Guru、Kobeissi Letter 发帖；Codex 核到 BeInCrypto 北京时间 23:47 报道当时报价 79,464 美元，1 小时爆仓逾 2 亿美元指整个加密市场、其中多头 1.91 亿美元）。X 摘要和 BeInCrypto 10-25 报道把下跌与美国再次打击伊朗的风险联系起来，这是报道给出的背景，不能确认是唯一原因。CoinGecko 北京时间 2026-10-26 07:18 报 80,303 美元，已回到 8 万上方。",
-    "url": "https://x.com/i/trending/2114040161508159895",
-    "score": 28204,
-    "engagement": 24124,
-    "post_count": 4080,
-    "post_count_query": "Bitcoin (\"80,000\" OR 80k OR liquidated)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 24,124 + 关键词近 24h 帖数 4,080",
-    "posts": [
-     {
-      "author": "@WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2113999860462465397",
-      "created_at": "2026-10-24 22:23",
-      "likes": 6985,
-      "replies": 901,
-      "reposts": 876,
-      "quotes": 299,
-      "score": 9061
-     },
-     {
-      "author": "@KobeissiLetter",
-      "author_name": "The Kobeissi Letter",
-      "url": "https://x.com/KobeissiLetter/status/2114006499248816421",
-      "created_at": "2026-10-24 22:50",
-      "likes": 6600,
-      "replies": 385,
-      "reposts": 601,
-      "quotes": 161,
-      "score": 7747
-     }
-    ],
-    "published_at": "2026-10-24 22:23",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "主流媒体",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "Codex",
-     "source": "部分属实：日期应纠正为10月24日；一小时逾2亿美元是全加密市场爆仓，并非仅比特币。美伊紧张是报道中的风险背景，不能确认是下跌的唯一原因。（来源发布时间：2026-10-24 15:47 UTC，即北京时间2026-10-24 23:47；未公开秒数）",
-     "url": "https://beincrypto.com/bitcoin-below-80000-crypto-liquidations/"
-    },
-    "rank": 7
-   },
-   {
-    "topic": "SpaceX 超重型助推器 B22 完成 33 台发动机全时长静态点火",
+    "topic": "SpaceX 星舰第 15 次飞行的助推器 B22 完成 33 台发动机静态点火",
     "category": "科技",
-    "summary": "SpaceX 在得州星舰基地 2 号发射台完成 Block 3 超重型助推器 Booster 22 的 33 台猛禽发动机全时长静态点火，X 摘要称时间为当地 2026-10-25 08:22（北京时间 21:22）。SpaceX 官方账号确认该助推器用于星舰第 15 次飞行，摘要称飞行将在未来几周进行，官方未公布具体日期。",
+    "summary": "SpaceX 官方确认，用于星舰第 15 次飞行的超重型助推器（Booster 22）完成了 33 台发动机全时长静态点火，马斯克也转发了视频。X 摘要称这次飞行计划在 11 月初进行、首次尝试用发射塔同时回收助推器和飞船，SpaceX 官方未公布日期。马斯克 2026-10-26 另称下一代 Raptor 4 发动机海平面推力将达 300 吨（相关话题热度 12,913，未并入计分）。",
     "url": "https://x.com/i/trending/2114011405301227917",
-    "score": 19771,
-    "engagement": 17306,
-    "post_count": 2465,
+    "score": 56638,
+    "engagement": 52809,
+    "post_count": 3829,
     "post_count_query": "(\"Booster 22\" OR \"static fire\") (SpaceX OR Starship)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 17,306 + 关键词近 24h 帖数 2,465",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 52,809 + 关键词近 24h 帖数 3,829",
     "posts": [
      {
       "author": "@SpaceX",
       "author_name": "SpaceX",
       "url": "https://x.com/SpaceX/status/2114444137067844004",
       "created_at": "2026-10-26 03:49",
-      "likes": 9334,
-      "replies": 346,
-      "reposts": 1241,
-      "quotes": 228,
-      "score": 11149
+      "likes": 18963,
+      "replies": 785,
+      "reposts": 2340,
+      "quotes": 479,
+      "score": 22567
      },
      {
-      "author": "@NASASpaceflight",
-      "author_name": "NSF - NASASpaceflight.com",
-      "url": "https://x.com/NASASpaceflight/status/2114347288739098706",
-      "created_at": "2026-10-25 21:24",
-      "likes": 3352,
-      "replies": 77,
-      "reposts": 345,
-      "quotes": 72,
-      "score": 3846
+      "author": "@elonmusk",
+      "author_name": "Elon Musk",
+      "url": "https://x.com/elonmusk/status/2114513919566033266",
+      "created_at": "2026-10-26 08:26",
+      "likes": 21034,
+      "replies": 1548,
+      "reposts": 2045,
+      "quotes": 201,
+      "score": 24828
      }
     ],
-    "published_at": "2026-10-25 21:24",
-    "fetched_at": "2026-10-26 07:31",
+    "published_at": "2026-10-26 03:49",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "SpaceX 官方 X 账号一手发布；点火时间来自 X 话题摘要"
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+    },
+    "rank": 5
+   },
+   {
+    "topic": "尼日利亚：提努布「贫困甩锅」讲话引发电视主持人当场争执",
+    "category": "国际",
+    "summary": "Arise News 2026-10-26 早间节目中，主持人 Rufai Oseni 批评总统提努布周六在卡杜纳的竞选讲话只顾指责对手，同台的 Reuben Abati 则列举政府扶贫投入，但也批评取消燃油补贴让油价从每升 195 奈拉涨到 1,400—1,500 奈拉。X 上同时流传多段民众抱怨物价的视频；官方统计显示 9 月通胀降到 14.63%。本话题合并了「Arise 主持人争执」和「民众抱怨生活成本」两个 X 话题。",
+    "url": "https://x.com/i/trending/2114688261503484144",
+    "score": 30793,
+    "engagement": 26485,
+    "post_count": 4308,
+    "post_count_query": "Tinubu (poverty OR \"cost of living\" OR Arise OR hunger)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 26,485 + 关键词近 24h 帖数 4,308",
+    "posts": [
+     {
+      "author": "@Jesuferanmmi",
+      "author_name": "Jesuferanmi",
+      "url": "https://x.com/Jesuferanmmi/status/2114624742212694234",
+      "created_at": "2026-10-26 15:46",
+      "likes": 12619,
+      "replies": 320,
+      "reposts": 4397,
+      "quotes": 139,
+      "score": 17475
+     },
+     {
+      "author": "@TrendingEx",
+      "author_name": "Trending Explained",
+      "url": "https://x.com/TrendingEx/status/2114674519465980348",
+      "created_at": "2026-10-26 19:04",
+      "likes": 2875,
+      "replies": 557,
+      "reposts": 714,
+      "quotes": 174,
+      "score": 4320
+     }
+    ],
+    "published_at": "2026-10-26 15:46",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+    },
+    "rank": 6
+   },
+   {
+    "topic": "特朗普推俄乌和谈，X 上支持与反对两派吵翻",
+    "category": "时政",
+    "summary": "X 摘要称特朗普特使威特科夫在奥斯陆和圣彼得堡之间往返推动谈判，并提到俄乌 11 月再谈的安排，特朗普敦促泽连斯基达成协议。共和党众议员 Anna Paulina Luna 发帖质问反对立即停战的人；批评者翻出特朗普 2024 年「24 小时结束战争」的承诺，称协议是「投降方案」。",
+    "url": "https://x.com/i/trending/2114515141479838083",
+    "score": 24340,
+    "engagement": 21353,
+    "post_count": 2987,
+    "post_count_query": "Trump (Ukraine OR Zelensky OR Witkoff) (peace OR deal)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 21,353 + 关键词近 24h 帖数 2,987",
+    "posts": [
+     {
+      "author": "@realannapaulina",
+      "author_name": "Anna Paulina Luna",
+      "url": "https://x.com/realannapaulina/status/2114459732593221902",
+      "created_at": "2026-10-26 04:50",
+      "likes": 7384,
+      "replies": 829,
+      "reposts": 1262,
+      "quotes": 55,
+      "score": 9530
+     },
+     {
+      "author": "@CalltoActivism",
+      "author_name": "CALL TO ACTIVISM",
+      "url": "https://x.com/CalltoActivism/status/2114465568455901298",
+      "created_at": "2026-10-26 05:14",
+      "likes": 6695,
+      "replies": 210,
+      "reposts": 4249,
+      "quotes": 226,
+      "score": 11380
+     }
+    ],
+    "published_at": "2026-10-26 04:50",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
+    },
+    "rank": 7
+   },
+   {
+    "topic": "白宫发特朗普视频：「报复将通过成功来实现」",
+    "category": "时政",
+    "summary": "白宫官方账号 2026-10-26 发布特朗普视频，配文「Retribution will be through success. Stay locked in.」（报复将通过成功来实现）。距 2026-11-03 中期选举一周，支持者称赞视频强调政绩，批评者认为这是把政策包装成「报复」。",
+    "url": "https://x.com/i/trending/2114773315369709783",
+    "score": 21913,
+    "engagement": 18943,
+    "post_count": 2970,
+    "post_count_query": "\"Retribution will be through success\"",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 18,943 + 关键词近 24h 帖数 2,970",
+    "posts": [
+     {
+      "author": "@WhiteHouse",
+      "author_name": "The White House",
+      "url": "https://x.com/WhiteHouse/status/2114730627887214891",
+      "created_at": "2026-10-26 22:47",
+      "likes": 14331,
+      "replies": 1303,
+      "reposts": 2991,
+      "quotes": 240,
+      "score": 18865
+     }
+    ],
+    "published_at": "2026-10-26 22:47",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
     },
     "rank": 8
    },
    {
-    "topic": "印度部长戈亚尔在柏林呼吁海外印度科学家回国",
-    "category": "国际",
-    "summary": "印度商工部长皮尤什·戈亚尔访问柏林时呼吁在海外工作的印度科学家、工程师和研究人员回国，称需要更好的科研生态、产学合作和制度支持，而不只是钱。X 上的批评集中在国内岗位、研发投入不足等问题，也有用户拿他子女在海外工作说事（用户说法，未核实）。",
-    "url": "https://x.com/i/trending/2114270291736342916",
-    "score": 16798,
-    "engagement": 16546,
-    "post_count": 252,
-    "post_count_query": "\"Piyush Goyal\" (scientists OR return OR Berlin)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 16,546 + 关键词近 24h 帖数 252",
+    "topic": "BBC 下架 Bitesize 教育网站的移民、净零相关内容",
+    "category": "社会",
+    "summary": "《星期日邮报》调查后，BBC 撤下了 Bitesize 教育平台上被指偏向左翼的页面，包括面向 11—14 岁学生的「增加移民」游戏和称赞格蕾塔·通贝里的净零内容，原页面改为「内容审核中」提示。影子教育大臣 Laura Trott 发帖称发布这类内容「荒唐」，此前她曾要求下架。",
+    "url": "https://x.com/i/trending/2114309030755918289",
+    "score": 19657,
+    "engagement": 19235,
+    "post_count": 422,
+    "post_count_query": "Bitesize BBC",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 19,235 + 关键词近 24h 帖数 422",
     "posts": [
      {
-      "author": "@zhr_jafri",
-      "author_name": "Azhar Jafri",
-      "url": "https://x.com/zhr_jafri/status/2114212789057400837",
-      "created_at": "2026-10-25 12:29",
-      "likes": 6546,
-      "replies": 34,
-      "reposts": 677,
-      "quotes": 4,
-      "score": 7261
+      "author": "@Joe_Rich",
+      "author_name": "Joe Rich",
+      "url": "https://x.com/Joe_Rich/status/2114268089181470842",
+      "created_at": "2026-10-25 16:09",
+      "likes": 10312,
+      "replies": 314,
+      "reposts": 3204,
+      "quotes": 200,
+      "score": 14030
      },
      {
-      "author": "@beatsinbrief",
-      "author_name": "Beats in Brief 🗞️",
-      "url": "https://x.com/beatsinbrief/status/2113963079524585717",
-      "created_at": "2026-10-24 19:57",
-      "likes": 3067,
-      "replies": 1086,
-      "reposts": 373,
-      "quotes": 325,
-      "score": 4851
+      "author": "@LauraTrottMP",
+      "author_name": "Laura Trott MP",
+      "url": "https://x.com/LauraTrottMP/status/2114254179241783600",
+      "created_at": "2026-10-25 15:14",
+      "likes": 1331,
+      "replies": 104,
+      "reposts": 259,
+      "quotes": 14,
+      "score": 1708
      }
     ],
-    "published_at": "2026-10-24 19:57",
-    "fetched_at": "2026-10-26 07:31",
+    "published_at": "2026-10-25 15:14",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "主流媒体",
     "crosscheck": {
      "status": "单一来源",
-     "note": "讲话内容来自 X 话题摘要与转帖，未经 Codex 第二来源核对"
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
     },
     "rank": 9
    },
    {
-    "topic": "内罗毕 Eastleigh 楼房倒塌：州长与议员争执是否获批",
-    "category": "社会",
-    "summary": "2026-10-23 内罗毕 Eastleigh 9th Street 一栋在建多层楼倒塌后搜救仍在进行，X 摘要称已从废墟救出 4 名幸存者；失踪人数各方说法不一，上期内政部长 Murkomen 称 7 人失踪，X 摘要称「数十人」，未证实。州长 Sakaja 称只在 2024 年 10 月批过用途变更、完整施工图未获批，部分文件是伪造；议员 Babu Owino 晒出 2024-02-13 的批准通知，指 Sakaja 说谎并收受 1.2 亿肯尼亚先令贿赂（指控未证实），州长办公室已发律师函。Sakaja 宣布全市建筑安全排查。",
-    "url": "https://x.com/i/trending/2114312860939464862",
-    "score": 16744,
-    "engagement": 12006,
-    "post_count": 4738,
-    "post_count_query": "Eastleigh (building OR collapse OR collapsed)",
-    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 12,006 + 关键词近 24h 帖数 4,738",
+    "topic": "贝尔格莱德示威者闯入亲政府电视台 Informer 直播间",
+    "category": "国际",
+    "summary": "当地时间 2026-10-26 傍晚（X 帖称 18:40 前后，当地媒体报 18:30），数十名示威者进入塞尔维亚亲政府电视台 Informer 的场地，打断直播节目《Kolegijum》，与总编 Dragan J. Vučićević 对峙，有推搡和设备损坏，Vučićević 在直播中报警。事件发生在反对派学生名单近期胜选之后，示威者指该台报道偏颇。",
+    "url": "https://x.com/i/trending/2114782252483686885",
+    "score": 16224,
+    "engagement": 15011,
+    "post_count": 1213,
+    "post_count_query": "Informer (Vučićević OR Vucicevic OR Kolegijum OR upad)",
+    "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 15,011 + 关键词近 24h 帖数 1,213",
     "posts": [
      {
-      "author": "@HEBabuOwino",
-      "author_name": "Babu Owino",
-      "url": "https://x.com/HEBabuOwino/status/2114302932149563406",
-      "created_at": "2026-10-25 18:27",
-      "likes": 4421,
-      "replies": 240,
-      "reposts": 1485,
-      "quotes": 48,
-      "score": 6194
+      "author": "@BoraKonj",
+      "author_name": "Bora",
+      "url": "https://x.com/BoraKonj/status/2114775755288981572",
+      "created_at": "2026-10-27 01:46",
+      "likes": 5917,
+      "replies": 125,
+      "reposts": 529,
+      "quotes": 65,
+      "score": 6636
      },
      {
-      "author": "@C_NyaKundiH",
-      "author_name": "Cyprian, Is Nyakundi",
-      "url": "https://x.com/C_NyaKundiH/status/2114317387344318497",
-      "created_at": "2026-10-25 19:25",
-      "likes": 1948,
-      "replies": 105,
-      "reposts": 522,
-      "quotes": 7,
-      "score": 2582
+      "author": "@djordjemiketic",
+      "author_name": "Djordje Miketic",
+      "url": "https://x.com/djordjemiketic/status/2114778052278292542",
+      "created_at": "2026-10-27 01:55",
+      "likes": 4745,
+      "replies": 53,
+      "reposts": 434,
+      "quotes": 36,
+      "score": 5268
      }
     ],
-    "published_at": "2026-10-25 18:27",
-    "fetched_at": "2026-10-26 07:31",
-    "grade": "社媒传闻",
+    "published_at": "2026-10-27 01:46",
+    "fetched_at": "2026-10-27 07:33",
+    "grade": "主流媒体",
     "crosscheck": {
      "status": "单一来源",
-     "note": "批准文件之争与受贿指控只见于 X 帖子和话题摘要，未经第二来源核实"
+     "note": "Codex 核对未返回可用来源；以 X 聚合帖原文为准"
     },
     "rank": 10
    }
   ],
   "filecoin": [
    {
-    "title": "今日无新消息",
-    "summary": "截至 2026-10-26 07:22（北京时间），@Filecoin、@_FilOz、@FilFoundation 自上期截止 2026-10-25 07:27 起没有原创帖，filecoin-project 主要仓库近 72 小时无新版本；X 社区帖里只有旧消息转述（读取 300 毫秒，已在 2026-10-23 期收录）、交易喊单和空投广告，不收录。",
-    "source_url": "https://x.com/Filecoin",
+    "title": "Filecoin 官方：大容量硬盘产能已大部分排到 2028 年，Filecoin 网络现有存储容量可用",
+    "summary": "@Filecoin 北京时间 2026-10-27 01:29 发帖称，AI 让算力从普通商品变成瓶颈，现在存储也一样：主要厂商表示其大容量硬盘产量已大部分排期到 2028 年，需求超过供给；Filecoin 网络今天就有在线存储容量。帖子没有给出具体厂商名称和容量数字。判断：这是营销定位帖，不是新产品或协议更新，帖子 152 次互动（赞 122、评 10、转 17、引 3），市场关注有限。",
+    "source_url": "https://x.com/Filecoin/status/2114771427081753060",
     "source_name": "X @Filecoin",
-    "type": "x",
-    "published_at": "2026-10-26 07:22",
-    "fetched_at": "2026-10-26 07:22",
+    "published_at": "2026-10-27 01:29",
+    "fetched_at": "2026-10-27 07:33",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
-     "note": "X API 检索官方号原创帖，2026-10-25 07:27 起无结果；GitHub releases 接口核对"
-    },
-    "status_card": true
+     "note": "官方帖原文；「硬盘产量已排到 2028 年」为帖中转述的厂商说法，帖子未附厂商来源，未单独核实"
+    }
    }
   ],
   "finance": {
-   "title": "每日金融市场简报｜2026-10-26",
-   "cutoff": "2026-10-26 07:33（北京时间）",
-   "cutoff_note": "本周另有：以色列议会选举 2026-10-27 投票；日本央行 2026-10-30 公布决议（官方未给固定时刻）；巴西大选最终结果待 TSE 公布。标普500、纳指、美元指数、10 年期美债收益率为 2026-10-23（周五）收盘；黄金、布伦特为 2026-10-26 亚洲早盘期货报价（较周五结算）；BTC、ETH、FIL 为 CoinGecko 同一批快照（2026-10-26 07:18），涨跌为 24 小时变动。",
+   "title": "每日金融市场简报｜2026-10-27",
+   "cutoff": "2026-10-27 07:31（北京时间）",
+   "cutoff_note": "标普500、纳指、美元指数、10 年期美债收益率为 2026-10-26（周一）收盘；黄金、布伦特为 2026-10-27 亚洲早盘期货报价（较周一结算：黄金 4,038.40、布伦特 115.81）；美元指数前收 101.81，10 年期美债前收 4.988%。日本央行 2026-10-30 公布决议，官方未给固定时刻。布伦特近月合约已换到 1 月（BZF27，07:17 报 110.35 美元），本表沿用上期的 12 月合约以便前后可比。BTC、ETH、FIL 为 CoinGecko 同一批快照（2026-10-27 07:23），涨跌为 24 小时变动。以色列议会选举 2026-10-27 投票，结果见 X 热点板块后续。",
    "missing": [
     {
-     "item": "美股、美元指数、10 年期美债收益率周一新行情",
-     "reason": "截至本期截止美股现货与美债未开盘，沿用 2026-10-23 收盘"
-    },
-    {
-     "item": "沙特阿美对 10-24 袭击的损失说明",
-     "reason": "截至本期截止未查到阿美声明"
-    },
-    {
      "item": "Farside 2026-10-26 BTC 现货 ETF 流向",
-     "reason": "美股未开盘，当日数据尚未产生"
+     "reason": "截至本期截止 Farside 当日数据未出齐"
+    },
+    {
+     "item": "沙特阿美对东西输油管道遇袭的损失说明",
+     "reason": "截至本期截止沙特方面未确认"
     },
     {
      "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
      "reason": "未找到可抓取的同批数据源"
     }
    ],
-   "yesterday_check": "昨日待验证结果：① 布伦特周一开盘是否高于 116.72 美元：否，北京时间 07:17 报 115.75 美元、−0.83%（Yahoo）。② 沙特阿美是否确认设施受损：未确认，截至本期截止未查到声明（Codex）。③ BTC 能否守住 80,000 美元：周六北京时间 10-24 23:20 前后一度跌至 79,280 美元附近，现回到 80,303 美元（The Block、CoinGecko）。④ Farside 10-26 ETF 流向：美股未开盘，暂无结果。",
+   "yesterday_check": "昨日待验证结果：① 布伦特周一是否收在 116.72 美元上方：否，12 月合约结算 115.81 美元、−0.78%（WSJ、Reuters）。② 沙特阿美是否确认设施受损：未确认，Reuters 称沙特未立即确认胡塞所称袭击。③ BTC 能否守住 80,000 美元：没有守住，CoinGecko 07:23 报 79,812 美元。④ Farside 10-26 ETF 流向：截至截止时未出齐，列入本期缺失。⑤ 巴西 TSE 最终结果：卢拉 51.79% 胜出（100% 票站计完），Ibovespa 当天跌 13.88%。",
    "three_lines": [
     {
-     "conclusion": "周末中东紧张未缓解，布伦特早盘反跌 0.83% 至 115.75 美元。",
-     "support": "美国削减四国使馆人员、胡塞声称袭击沙特设施，但阿美未确认受损（AP、Reuters）。"
+     "conclusion": "卢拉连任，巴西股市单日跌 13.88%，美元兑雷亚尔涨 8.21%。",
+     "support": "TSE 计票 51.79% 对 48.21%；Ibovespa 交易中触发熔断（Exame、G1）。"
     },
     {
-     "conclusion": "本周 FOMC、欧洲央行、日本央行同周开会，叠加微软、Alphabet、亚马逊财报。",
-     "support": "FOMC 决议北京时间 10-29 02:00，GDP 与 PCE 10-29 20:30（美联储、BEA）。"
+     "conclusion": "Anthropic 公开 S-1，AI 和芯片股反弹，标普 500 +0.70%、纳指 +0.82%。",
+     "support": "芯片股 +2.8%；Meta 计划增发最多 950 亿美元股票，收跌 1.9%（Reuters）。"
     },
     {
-     "conclusion": "巴西大选计票胶着，BTC 周末一度跌破 8 万后回到 80,303 美元。",
-     "support": "TSE 07:20 快照已计 43.24%，50.13% 对 49.87%；CoinGecko 07:18 BTC 24h −0.25%。"
+     "conclusion": "美伊缓和希望升温，布伦特收跌 0.78%；BTC 跌回 8 万下方。",
+     "support": "布伦特 12 月合约结算 115.81 美元（WSJ）；CoinGecko 07:23 BTC 79,812 美元。"
     }
    ],
    "snapshot": [
     {
      "asset": "标普500",
-     "value": "7,623.68",
-     "change": "−0.52%（较前收）",
-     "time": "2026-10-24 04:00",
+     "value": "7,676.77",
+     "change": "+0.70%（较前收）",
+     "time": "2026-10-27 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/%5EGSPC/",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对",
-      "source": "WSJ、Reuters、CNBC（收 7,623.68、−0.52%）",
-      "url": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-oil-prices-hit-five-month-high-a800db83"
+      "by": "Codex",
+      "source": "Reuters、CNBC、AP（收 7,676.77、+53.09 点、+0.70%）",
+      "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
      }
     },
     {
      "asset": "纳斯达克综合指数",
-     "value": "25,955.34",
-     "change": "−0.21%（较前收）",
-     "time": "2026-10-24 04:00",
+     "value": "26,169.38",
+     "change": "+0.82%（较前收）",
+     "time": "2026-10-27 04:00",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/%5EIXIC/",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "已交叉核对",
-      "by": "WebSearch 人工核对",
-      "source": "WSJ、Reuters、CNBC（收 25,955.34、−0.21%）",
-      "url": "https://www.wsj.com/finance/stocks/u-s-stocks-fall-as-oil-prices-hit-five-month-high-a800db83"
+      "by": "Codex",
+      "source": "Reuters、CNBC、AP（收 26,169.38、+214.04 点；Reuters 正文写 +0.83%，按点数计算为 +0.82%）",
+      "url": "https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html"
      }
     },
     {
      "asset": "美元指数 DXY",
-     "value": "101.752",
-     "change": "+0.14%（较前收）",
-     "time": "2026-10-24 04:59",
+     "value": "102.03",
+     "change": "+0.22%（较前收）",
+     "time": "2026-10-27 06:04",
      "status": "收盘",
      "source": "Yahoo Finance",
      "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
-     "fetched_at": "2026-10-26 07:33",
-     "crosscheck": {
-      "status": "单一来源",
-      "by": "Codex",
-      "source": "Codex 未返回带时间的可核实来源",
-      "url": ""
-     }
-    },
-    {
-     "asset": "美国10年期国债收益率",
-     "value": "4.988%",
-     "change": "+3.5 bp（较前收）",
-     "time": "2026-10-24 02:59",
-     "status": "收盘",
-     "source": "Yahoo Finance",
-     "source_url": "https://finance.yahoo.com/quote/%5ETNX/",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "冲突",
       "by": "Codex",
       "values": [
        {
-        "value": "4.988%",
-        "source": "Yahoo Finance（^TNX）",
+        "value": "102.03（+0.22%）",
+        "source": "Yahoo Finance（DX-Y.NYB 日线）",
+        "url": "https://finance.yahoo.com/quote/DX-Y.NYB/"
+       },
+       {
+        "value": "102.00（+0.19%）",
+        "source": "Strong Tower Advisors 市场日报（美股收盘时点）",
+        "url": "https://strongtoweradvisors.net/market-commentary/2026-10-26"
+       }
+      ],
+      "reason": "取值时点不同：Yahoo 为北京时间 06:04 的日线收盘，日报为美股收盘 04:00 时点，相差 0.03"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "4.986%",
+     "change": "−0.2 bp（较前收）",
+     "time": "2026-10-27 02:59",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5ETNX/",
+     "fetched_at": "2026-10-27 07:31",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "Codex",
+      "values": [
+       {
+        "value": "4.986%（−0.2 bp）",
+        "source": "Yahoo Finance（^TNX，CBOE 收盘）",
         "url": "https://finance.yahoo.com/quote/%5ETNX/"
        },
        {
-        "value": "4.999%（+5 bp）",
-        "source": "CNBC（2026-10-23）",
-        "url": "https://www.cnbc.com/2026/10/23/bonds-yields-us-treasurys.html"
-       },
-       {
-        "value": "5.00%",
-        "source": "Advisor Perspectives（财政部口径，2026-10-23）",
-        "url": "https://www.advisorperspectives.com/dshort/updates/2026/10/23/treasury-yields-snapshot-october-23-2026"
+        "value": "4.98%（−2 bp，前值 5.00%）",
+        "source": "AP 收盘报道",
+        "url": "https://apnews.com/article/stocks-markets-oil-earnings-trump-be3a56f58a77c5be863f0289d280be92"
        }
       ],
-      "reason": "^TNX 为 CBOE 收盘报价，CNBC 为 Tradeweb 口径，财政部数据保留两位小数，相差 1.1—1.2 bp"
+      "reason": "口径不同：^TNX 保留三位小数且以 CBOE 报价为准；AP 用晚间市场收益率并保留两位小数，前值取 5.00%"
      }
     },
     {
      "asset": "COMEX 黄金（12月）",
-     "value": "4,010.20 美元/盎司",
-     "change": "+0.06%（较前收）",
-     "time": "2026-10-26 07:18",
+     "value": "4,025.20 美元/盎司",
+     "change": "−0.33%（较前收）",
+     "time": "2026-10-27 07:17",
      "status": "盘中",
      "source": "Yahoo Finance（GCZ26.CMX）",
      "source_url": "https://finance.yahoo.com/quote/GCZ26.CMX/",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "单一来源",
       "by": "Codex",
-      "source": "Codex 未返回带时间的可核实来源",
-      "url": ""
+      "source": "盘中价只有 Yahoo 一个来源；前收 4,038.40（周一结算，+0.76%）已由 Codex 核到 Estadão 报道",
+      "url": "https://sba1.com/noticias/noticia/82751/ouro-fecha-em-alta-com-queda-do-petroleo-e-a-espera-do-fed"
      }
     },
     {
      "asset": "布伦特原油（12月）",
-     "value": "115.75 美元/桶",
-     "change": "−0.83%（较前收）",
-     "time": "2026-10-26 07:17",
+     "value": "115.21 美元/桶",
+     "change": "−0.52%（较前收）",
+     "time": "2026-10-27 07:07",
      "status": "盘中",
      "source": "Yahoo Finance（BZZ26.NYM）",
      "source_url": "https://finance.yahoo.com/quote/BZZ26.NYM/",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
-      "status": "单一来源",
+      "status": "冲突",
       "by": "Codex",
-      "source": "Codex 只找到 CNBC 二手摘要（布伦特 −1.1%，无报价时刻），不计为核实",
-      "url": ""
+      "values": [
+       {
+        "value": "周一结算 115.81（−0.78%），12 月合约",
+        "source": "WSJ、Reuters、Dow Jones Market Data",
+        "url": "https://www.morningstar.com/news/dow-jones/202610266927/front-month-ice-brent-crude-fell-078-to-settle-at-11581-data-talk"
+       },
+       {
+        "value": "周一结算 110.74（−0.9%）",
+        "source": "AP 收盘报道",
+        "url": "https://apnews.com/article/stocks-markets-oil-earnings-trump-be3a56f58a77c5be863f0289d280be92"
+       }
+      ],
+      "reason": "Yahoo 显示 1 月合约（BZF27）前收正是 110.74，AP 数字对应的是 1 月合约；本表沿用上期的 12 月合约，盘中价 115.21 只有 Yahoo 一个来源"
      }
     },
     {
      "asset": "BTC",
-     "value": "80,303 美元",
-     "change": "−0.25%（24h）",
-     "time": "2026-10-26 07:18",
+     "value": "79,812 美元",
+     "change": "−0.56%（24h）",
+     "time": "2026-10-27 07:23",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/bitcoin",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "单一来源",
       "by": "Codex",
-      "source": "Codex 未返回带时间的可核实来源",
-      "url": ""
+      "source": "Codex 核到 MarketAlleys 引 CoinGecko 北京时间 04:58 快照 79,755 美元（−0.80%），时点不同，不计为核实",
+      "url": "https://www.marketalleys.com/post/marketalleys-closing-tape-2026-10-26"
      }
     },
     {
      "asset": "ETH",
-     "value": "2,336.08 美元",
-     "change": "−0.21%（24h）",
-     "time": "2026-10-26 07:18",
+     "value": "2,309.24 美元",
+     "change": "−1.13%（24h）",
+     "time": "2026-10-27 07:23",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/ethereum",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "单一来源",
       "by": "Codex",
@@ -725,13 +730,13 @@
     },
     {
      "asset": "FIL",
-     "value": "0.9244 美元",
-     "change": "−0.66%（24h）",
-     "time": "2026-10-26 07:18",
+     "value": "0.9025 美元",
+     "change": "−2.45%（24h）",
+     "time": "2026-10-27 07:23",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/en/coins/filecoin",
-     "fetched_at": "2026-10-26 07:33",
+     "fetched_at": "2026-10-27 07:31",
      "crosscheck": {
       "status": "单一来源",
       "by": "Codex",
@@ -746,98 +751,127 @@
      "items": [
       {
        "no": 1,
-       "headline": "周末中东紧张未缓解，布伦特周一亚洲早盘反而低开 0.83%。",
-       "facts": "Yahoo Finance 北京时间 2026-10-26 07:17：布伦特 12 月合约 115.75 美元，较周五结算 116.72 跌 0.83%；WTI 102.29 美元，跌 0.95%。周末消息：AP 2026-10-24 09:42（北京时间）报道美国削减驻 Jordan、黎巴嫩、卡塔尔、阿联酋使馆人员（允许撤离，使馆继续开放）；《华尔街日报》10-24 报道美军在阿拉伯海「乔治·华盛顿」号航母补充弹药，为特朗普下令新一轮对伊朗打击做准备（报道称尚未下令）。胡塞 10-24 声称攻击延布阿美设施、拉比格炼厂和东西输油管道泵站，AP 2026-10-25 15:30（北京时间）报道沙特称当天又拦截 1 枚弹道导弹和 1 架无人机。截至本期截止，未查到沙特阿美确认设施受损或停产。",
-       "plain": "周末坏消息不少，但没有确认油设施真的被打坏，所以油价开盘没有继续涨。",
-       "affects": "原油与能源股、红海航运、通胀预期、美债收益率。",
+       "headline": "卢拉连任巴西总统，巴西股市单日跌 13.88%，美元兑雷亚尔涨 8.21%。",
+       "facts": "TSE 100% 票站计完：卢拉得票 51.79%，弗拉维奥·博索纳罗 48.21%（UOL / Agência Estado）。2026-10-26 巴西 Ibovespa 收跌 13.88% 至 176,608.23 点，交易中触发熔断；美元兑雷亚尔收涨 8.21% 至 5.4027（Exame、G1）。",
+       "plain": "市场之前押的是右翼候选人赢，结果卢拉赢了，押错方向的资金一天之内集中出逃。",
+       "affects": "巴西股市与雷亚尔、巴西主权债、新兴市场基金。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "布伦特早盘 115.75 美元，低于周五结算 116.72；CNBC 二手摘要报布伦特 −1.1%，无报价时刻，未计为核实。",
-       "next_check": "布伦特 2026-10-26 收盘是否回到 116.72 美元上方；沙特阿美是否发布损失说明。",
-       "risks": "判断：若延布终端或东西输油管道受损获证实，布伦特会回到并突破 2026-10-23 盘中高点 117.38 美元（较现价高 1.4%）。",
+       "pricing_evidence": "Ibovespa 首个交易日已跌 13.88%、雷亚尔贬值 8.21%；后续是否继续下跌取决于新政府财政表态，截至本期截止未见。",
+       "next_check": "卢拉政府是否公布具体财政措施；Ibovespa 第二个交易日能否止跌。",
+       "risks": "判断：单日 13.88% 的跌幅已触发熔断，若第二个交易日跌幅仍超过 5%，说明外资撤离尚未结束。",
        "sources": [
         {
-         "outlet": "AP News",
-         "title": "US reduces embassy staff in four Middle East countries",
-         "url": "https://apnews.com/article/9635852ea973064907ed0b7c0fca4799",
-         "date": "2026-10-24"
+         "outlet": "Exame",
+         "title": "Ibovespa fecha em baixa de 13,9%, maior queda diária em 6 anos; dólar dispara 8,2%",
+         "url": "https://exame.com/live-blog/invest/bolsa-dolar-mercado-26-outubro-apos-eleicoes/",
+         "date": "2026-10-26"
         },
         {
-         "outlet": "AP（ABC News 转载）",
-         "title": "Saudi Arabia reopens airport as attacks by Houthi rebels persist",
-         "url": "https://abcnews.com/amp/International/wireStory/saudi-arabia-reopens-airport-attacks-houthi-rebels-persist-137549261",
-         "date": "2026-10-25"
+         "outlet": "G1",
+         "title": "Ibovespa desaba com reeleição de Lula",
+         "url": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml",
+         "date": "2026-10-26"
+        },
+        {
+         "outlet": "UOL / Agência Estado",
+         "title": "Com 100% das seções totalizadas, Lula teve 51,79% e Flávio, 48,21%",
+         "url": "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/10/26/com-100-das-secoes-totalizadas-lula-teve-5179-e-flavio-4821.htm",
+         "date": "2026-10-26"
         }
        ],
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "Codex",
-        "source": "Codex 核到 Reuters 10-25 报道（胡塞声称袭击沙特石油设施，沙特未直接回应）；阿美受损未获确认",
-        "url": "https://www.investing.com/news/commodities-news/saudi-arabia-intercepts-drones-and-missiles-as-fighting-with-yemens-houthis-continues-4971080"
+        "source": "Exame 与 G1 收盘数字一致；选举结果 UOL 引 TSE 100% 计票",
+        "url": "https://g1.globo.com/economia/noticia/2026/10/26/ibovespa-desaba-reeleicao-lula-acoes-recuam.ghtml"
        }
       },
       {
        "no": 2,
-       "headline": "本周密集考验：FOMC、欧洲央行、日本央行同周开会，微软、Alphabet、亚马逊发财报。",
-       "facts": "美联储官网：FOMC 10-27 至 10-28 开会，决议北京时间 2026-10-29 02:00，记者会 02:30。欧洲央行决议北京时间 10-29 21:15、记者会 21:45；日本央行 10-29 至 10-30 开会，10-30 公布决议（日本央行未给固定时刻）。微软 10-28 美股盘后发布财报、电话会北京时间 10-29 05:30；Alphabet 电话会北京时间 10-29 04:30；亚马逊 10-29 盘后发布、电话会北京时间 10-30 05:00。美国三季度 GDP 初值和 9 月 PCE 北京时间 10-29 20:30 同时公布（BEA）。Meta 已于 10-21 发布财报，苹果财报在 11-02，均不在本周。股指期货早盘：标普500 期货 7,673（+0.17%）、纳指期货 29,193（+0.26%），Yahoo 北京时间 07:18。",
-       "plain": "周三晚到周四，美联储、两家科技巨头财报、GDP 和通胀数据挤在一起，波动会集中在这两天。",
-       "affects": "美股科技股、美债、美元、BTC。",
+       "headline": "Anthropic 公开 S-1 带动 AI 和芯片股反弹，标普 500 涨 0.70%，芯片股涨 2.8%。",
+       "facts": "2026-10-26 收盘：道指 +0.28% 至 52,361.58 点，标普 500 +0.70% 至 7,676.77 点，纳指 +0.82% 至 26,169.38 点（Reuters、CNBC、AP）。Reuters：芯片股指数当日涨 2.8%；Meta 宣布计划增发最多 950 亿美元股票，收跌 1.9%。Anthropic S-1 显示 2026 年上半年收入 162.86 亿美元、净亏损 807.48 亿美元（含 723.88 亿美元非现金公允价值费用），拟在纳斯达克上市，代码 ANT（SEC 文件）。",
+       "plain": "Anthropic 账本显示 AI 收入增长很快，市场又愿意买 AI 和芯片股了；但 Meta 要大规模增发股票，说明 AI 投入的钱还得继续找。",
+       "affects": "美股 AI 与半导体股、科技股估值、即将发财报的微软和 Alphabet。",
        "pricing": "部分定价",
-       "pricing_evidence": "上期 Reuters 引 LSEG 数据：再加息概率低于 10%；股指期货早盘小涨 0.17%—0.26%。",
-       "next_check": "北京时间 2026-10-29 02:00 FOMC 是否维持 3.75%—4.00%；微软、Alphabet 资本开支指引。",
-       "risks": "判断：10 年期美债收益率周五收在 4.988%，距 5% 只差 1.2 bp，若 FOMC 释放 12 月加息信号，收益率突破 5% 的风险上升。",
+       "pricing_evidence": "芯片股单日 +2.8%；本周还有 FOMC 和三家巨头财报未落地。",
+       "next_check": "北京时间 2026-10-29 04:30 起 Alphabet、微软财报中的资本开支指引；Anthropic 发行规模与定价。",
+       "risks": "判断：若 10-29 两家巨头资本开支指引不及预期，标普 500 这次 0.70% 的反弹一天就能回吐。",
        "sources": [
         {
-         "outlet": "ECB",
-         "title": "Weekly schedule",
-         "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html",
-         "date": "2026-10-25"
+         "outlet": "Reuters（Yahoo 转载）",
+         "title": "Equities end higher as Anthropic's IPO filing buoys AI stocks",
+         "url": "https://finance.yahoo.com/markets/stocks/articles/us-stock-futures-edge-oil-100215774.html",
+         "date": "2026-10-26"
         },
         {
-         "outlet": "BEA",
-         "title": "Release schedule",
-         "url": "https://www.bea.gov/news/schedule/",
-         "date": "2026-10-25"
+         "outlet": "AP News",
+         "title": "Wall Street rises as AI stocks keep swinging",
+         "url": "https://apnews.com/article/stocks-markets-oil-earnings-trump-be3a56f58a77c5be863f0289d280be92",
+         "date": "2026-10-26"
+        },
+        {
+         "outlet": "SEC EDGAR",
+         "title": "Anthropic, PBC Form S-1",
+         "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+         "date": "2026-10-26"
         }
        ],
-       "grade": "官方一手",
+       "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "Codex",
-        "source": "Codex 核对美联储、欧洲央行、日本央行、BEA 官方日程及微软/Alphabet/亚马逊公告",
-        "url": "https://www.ecb.europa.eu/press/calendars/weekly/html/index.en.html"
+        "source": "Codex 核到 Reuters（MarketScreener 转载）收盘数字与驱动因素；CNBC、AP 一致",
+        "url": "https://www.marketscreener.com/news/wall-st-eyes-best-day-in-a-month-as-anthropic-s-ipo-filing-propels-ai-stocks-ce785cdcdc8ff722"
        }
       },
       {
        "no": 3,
-       "headline": "巴西第二轮大选计票胶着，结果未出，周一巴西资产面临方向选择。",
-       "facts": "巴西选举法院（TSE）官方数据北京时间 2026-10-26 07:20 快照：已计 43.24% 票站（215,874/499,248），弗拉维奥·博索纳罗 50.13%（26,715,056 票），卢拉 49.87%（26,576,012 票），双方均未当选。X 上 07:24 的计票帖显示已计 46.48%、50.01% 对 49.99%（@eixopolitico）。Reuters 报道，博索纳罗首轮领先曾推动巴西股市和雷亚尔上涨。",
-       "plain": "两人几乎打平，最终谁赢要等计票完成，巴西股市和雷亚尔周一会按结果大幅调整。",
-       "affects": "巴西股市、雷亚尔、新兴市场资金。",
-       "pricing": "无法判断",
-       "pricing_evidence": "结果未出；Codex 判断资产方向只能按「若弗拉维奥胜/若卢拉逆转」做条件推断，不是已发生的行情。",
-       "next_check": "TSE 最终结果与胜者；周一巴西 Ibovespa 指数和雷亚尔涨跌。",
-       "risks": "判断：两人差距 0.26 个百分点（139,044 票），剩余 56.76% 票站足以改变领先者。",
+       "headline": "美伊缓和希望升温，布伦特 12 月合约收跌 0.78% 至 115.81 美元。",
+       "facts": "2026-10-26 布伦特 12 月合约结算 115.81 美元，跌 0.91 美元（−0.78%）；WTI 结算 101.76 美元（−1.46%）（WSJ、Reuters、Dow Jones）。Reuters：卡塔尔斡旋、地区高级官员赴德黑兰会谈，增加美伊缓和希望；胡塞武装称周末袭击沙特设施，沙特未确认；美国战略石油储备降至 2.826 亿桶，为 1982 年以来最低。Yahoo 北京时间 2026-10-27 07:07：布伦特 12 月合约 115.21 美元，再跌 0.52%。",
+       "plain": "外交消息让市场先拿掉一部分战争溢价，但沙特设施还在挨打，油价仍在高位。",
+       "affects": "原油与能源股、通胀预期、美债收益率、航空运输。",
+       "pricing": "部分定价",
+       "pricing_evidence": "布伦特两天累计从 116.72 跌到 115.21（−1.29%）；沙特受袭未确认，供应风险没有消失。",
+       "next_check": "德黑兰会谈是否有正式结果；沙特是否确认设施受损。",
+       "risks": "判断：布伦特现价 115.21 美元距上周五结算 116.72 只差 1.31%，若沙特确认设施受损，1 个交易日内就能回到该水平。",
        "sources": [
         {
-         "outlet": "TSE",
-         "title": "Resultados oficiais 2026（官方数据文件）",
-         "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
-         "date": "2026-10-25"
+         "outlet": "WSJ",
+         "title": "Oil Prices Fall as Traders Weigh U.S.-Iran Diplomacy, Saudi Attacks",
+         "url": "https://www.wsj.com/business/energy-oil/oil-prices-fall-as-traders-weigh-u-s-iran-diplomacy-saudi-attacks-a59376cd",
+         "date": "2026-10-26"
         },
         {
-         "outlet": "Reuters（Business Standard 转载）",
-         "title": "Brazil votes in tight presidential runoff between Lula and Bolsonaro",
-         "url": "https://www.business-standard.com/amp/world-news/brazil-votes-in-tight-presidential-runoff-between-lula-and-bolsonaro-126102500772_1.html?isa=yes",
-         "date": "2026-10-25"
+         "outlet": "Reuters（Euronext 转载）",
+         "title": "Oil settles lower on peace hopes, Saudi attacks limit losses",
+         "url": "https://live.euronext.com/en/financial-news/oil-settles-lower-peace-hopes-saudi-attacks-limit-losses",
+         "date": "2026-10-26"
+        },
+        {
+         "outlet": "Dow Jones（Morningstar）",
+         "title": "Front-month ICE Brent crude fell 0.78% to settle at $115.81",
+         "url": "https://www.morningstar.com/news/dow-jones/202610266927/front-month-ice-brent-crude-fell-078-to-settle-at-11581-data-talk",
+         "date": "2026-10-26"
         }
        ],
-       "grade": "官方一手",
+       "grade": "主流媒体",
        "crosscheck": {
-        "status": "已交叉核对",
+        "status": "冲突",
         "by": "Codex",
-        "source": "Codex 直接读取 TSE 官方数据文件（生成于北京时间 07:20:49）",
-        "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json"
+        "values": [
+         {
+          "value": "115.81（−0.78%）",
+          "source": "WSJ、Reuters、Dow Jones",
+          "url": "https://www.morningstar.com/news/dow-jones/202610266927/front-month-ice-brent-crude-fell-078-to-settle-at-11581-data-talk"
+         },
+         {
+          "value": "110.74（−0.9%）",
+          "source": "AP",
+          "url": "https://apnews.com/article/stocks-markets-oil-earnings-trump-be3a56f58a77c5be863f0289d280be92"
+         }
+        ],
+        "reason": "AP 数字与 Yahoo 上 1 月合约前收一致，属合约月份不同；12 月合约结算 115.81 有三家来源"
        }
       }
      ]
@@ -847,34 +881,34 @@
      "items": [
       {
        "no": 4,
-       "headline": "BTC 周六一度跌破 80,000 美元，全市场 4 小时多头爆仓 4.04 亿美元，现回到 80,303 美元。",
-       "facts": "The Block 2026-10-25 01:44（北京时间）报道：BTC 于北京时间 10-24 23:20 前后跌至 79,280 美元附近；截至美东 10-24 13:00，四小时全市场爆仓 4.364 亿美元，其中多头 4.042 亿美元，24 小时全市场爆仓 8.153 亿美元（引 CoinGlass）。BeInCrypto 报跌破时报价 79,464 美元，1 小时全市场爆仓逾 2 亿美元。CoinGecko 北京时间 2026-10-26 07:18：BTC 80,303 美元（24h −0.25%）、ETH 2,336.08 美元（−0.21%）、FIL 0.9244 美元（−0.66%）。",
-       "plain": "周末杠杆多头被集中清掉，币价短暂跌破 8 万后又回到 8 万上方。",
-       "affects": "BTC 现货需求、加密杠杆、ETF 资金流。",
+       "headline": "BTC 跌回 80,000 美元下方；Strive 披露一周增持 6,182 枚 BTC。",
+       "facts": "CoinGecko 北京时间 2026-10-27 07:23：BTC 79,812 美元（24h −0.56%）、ETH 2,309.24 美元（−1.13%）、FIL 0.9025 美元（−2.45%）。The Block 2026-10-26 引 Strive 向 SEC 提交的 8-K：公司在 10-17 至 10-23 买入 6,182 枚 BTC，金额 5.114 亿美元，总持仓达 43,000 枚，成为第二大上市公司比特币持有者。",
+       "plain": "有公司在大笔买币，但币价仍没站稳 8 万，市场在等本周美联储决议。",
+       "affects": "BTC 现货需求、加密杠杆、加密概念股。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "BTC 已回到 80,303 美元，24h −0.25%；两家媒体爆仓口径（1 小时/4 小时/24 小时）不同，不能合并。",
-       "next_check": "Farside 2026-10-26 BTC 现货 ETF 流向；BTC 能否守住 80,000 美元。",
-       "risks": "判断：BTC 现价距 80,000 美元只差 303 美元（0.38%），FOMC 前若 ETF 继续流出，再次跌破的风险上升。",
+       "pricing_evidence": "Strive 的买入发生在 10-17 至 10-23，已经过去；BTC 24h 仍 −0.56%。",
+       "next_check": "Farside 2026-10-26、10-27 BTC 现货 ETF 流向；BTC 能否收回 80,000 美元。",
+       "risks": "判断：BTC 现价比 80,000 美元低 188 美元（0.24%），FOMC 结果（北京时间 10-29 02:00）出来前，24h 波动超过 1% 就会反复穿越 8 万。",
        "sources": [
         {
          "outlet": "The Block",
-         "title": "Crypto longs lose $404 million in four hours as bitcoin briefly slips below $80,000",
-         "url": "https://www.theblock.co/news/markets/2026-10-24-crypto-longs-lose-404-million-in-four-hours-as-bitcoin-briefly-slips-below-80000-431608",
-         "date": "2026-10-24"
+         "title": "Strive closes in on second-largest corporate bitcoin treasury with $511 million purchase",
+         "url": "https://www.theblock.co/news/business/2026-10-26-strive-closes-in-second-largest-corporate-bitcoin-treasury-511-million-purchase-431729",
+         "date": "2026-10-26"
         },
         {
-         "outlet": "BeInCrypto",
-         "title": "Bitcoin below $80,000 as crypto liquidations climb",
-         "url": "https://beincrypto.com/bitcoin-below-80000-crypto-liquidations/",
-         "date": "2026-10-24"
+         "outlet": "Bitcoin Magazine",
+         "title": "Strive buys 6,182 bitcoin",
+         "url": "https://bitcoinmagazine.com/news/strive-asst-buys-6182-bitcoin",
+         "date": "2026-10-26"
         }
        ],
        "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "Codex",
-        "source": "Codex 核到 The Block 与 BeInCrypto 两篇带时间报道；日期为 10-24",
-        "url": "https://beincrypto.com/bitcoin-below-80000-crypto-liquidations/"
+        "source": "Codex 核到 The Block（引 SEC 8-K）与 Bitcoin Magazine，购买期间 10-17 至 10-23、金额 5.114 亿美元",
+        "url": "https://www.theblock.co/news/business/2026-10-26-strive-closes-in-second-largest-corporate-bitcoin-treasury-511-million-purchase-431729"
        }
       }
      ]
@@ -887,13 +921,18 @@
      "watch": "预期 80.7（前值 81.9）"
     },
     {
+     "time_bj": "2026-10-28 21:45",
+     "event": "加拿大央行利率决议与货币政策报告",
+     "watch": "利率路径"
+    },
+    {
      "time_bj": "2026-10-29 02:00",
      "event": "FOMC 利率决议（02:30 记者会）",
-     "watch": "是否维持 3.75%—4.00%，12 月加息指引"
+     "watch": "是否维持 3.75%—4.00%；Reuters 引 CME FedWatch 加息概率 12.7%"
     },
     {
      "time_bj": "2026-10-29 04:30",
-     "event": "Alphabet 财报电话会（微软 05:30）",
+     "event": "Alphabet 财报电话会（微软同日盘后发布）",
      "watch": "资本开支指引"
     },
     {
@@ -919,6 +958,11 @@
      "url": "https://www.federalreserve.gov/newsevents/2026-october.htm?view=calendar"
     },
     {
+     "outlet": "Bank of Canada",
+     "title": "Upcoming events",
+     "url": "https://www.bankofcanada.ca/press/upcoming-events/"
+    },
+    {
      "outlet": "BEA",
      "title": "Release schedule",
      "url": "https://www.bea.gov/news/schedule/"
@@ -934,36 +978,36 @@
      "url": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm"
     },
     {
-     "outlet": "Kiplinger",
-     "title": "What to Look Out for in Economic Data This Week (October 26-30)",
-     "url": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
+     "outlet": "Amazon",
+     "title": "Amazon.com to Webcast Third Quarter 2026 Financial Results Conference Call",
+     "url": "https://press.aboutamazon.com/2026/10/amazon-com-to-webcast-third-quarter-2026-financial-results-conference-call"
     }
    ],
    "footer": "以上仅作信息参考。"
   },
   "github_tools": [
    {
-    "name": "heygen-com/hyperframes",
-    "repo": "heygen-com/hyperframes",
-    "url": "https://github.com/heygen-com/hyperframes",
-    "title": "用 HTML 写动画、直接渲染成 MP4，自带给 AI 代理用的技能包",
-    "summary": "HyperFrames 是 HeyGen 开源的视频框架：用 HTML、CSS、媒体文件和可逐帧定位的动画（GSAP、Lottie、Three.js 等）定义视频，再确定性地渲染成 MP4。它自带 7 个给 Claude Code、Codex、Cursor 等编程代理用的技能，说一句话就能让 AI 写出并渲染视频。适合用代码和 AI 做动效视频的人。",
+    "name": "calesthio/OpenMontage",
+    "repo": "calesthio/OpenMontage",
+    "url": "https://github.com/calesthio/OpenMontage",
+    "title": "把 Claude Code、Codex 这类编程代理变成整套视频制作流水线",
+    "summary": "OpenMontage 是开源的代理式视频制作系统：用大白话描述想要的视频，编程代理按流水线完成调研、写稿、配音、找素材或生成画面、剪辑和合成。仓库简介写明内置 12 条制作流水线，合成默认用 Remotion，也可选 HyperFrames。适合想让 AI 从零做完一整条解说或动画短片的人。",
     "features": [
-     "HTML 加 data 属性定义片段的开始时间、时长和轨道，支持 GSAP、CSS、Lottie、Three.js、Anime.js、WAAPI 动画，输出确定性 MP4",
-     "CLI 一条命令建项目、浏览器实时预览、本地或云端渲染：`npx hyperframes init / preview / render`",
-     "自带一整套可编辑组件：转场、叠加层、标题、动态文字、字幕、图表、地图、3D、运镜",
-     "`/remotion-to-hyperframes` 技能可把现有 Remotion、Motion Canvas、Lottie 项目逐帧迁移过来；`/figma` 技能可把 Figma 设计做成动效"
+     "流水线驱动：pipeline_defs/ 里定义流程，skills/pipelines/ 里是各阶段的导演技能，代理先选流水线再按阶段执行",
+     "免费开箱能力：Piper TTS 离线配音，Archive.org、NASA、Wikimedia 和 Pexels、Pixabay、Unsplash 素材，Remotion 做弹性动画场景、数据卡片、图表和逐词字幕，FFmpeg 做压制和混音",
+     "可接 Veo、Kling（经 fal.ai）等视频生成模型；有显卡还能本地免费生成视频",
+     "自带 Backlot 本地看板（python -m backlot open），实时显示每个阶段的进度、脚本和素材"
     ],
     "scenarios": [
-     "对 Claude Code 说「用 /hyperframes 做一个 10 秒产品开场：标题淡入、背景视频、轻音乐」，直接出 MP4",
-     "做数据可视化动画：图表增长、排名变化、地图动画",
-     "给社交平台短视频加动态字幕、叠加层和音乐"
+     "一句话让代理做 60 秒科普解说片：自动查资料、写稿、配音、配乐、加字幕",
+     "做数据驱动的解说动画：统计卡片、图表、逐词字幕都由 Remotion 渲染",
+     "用生成模型做短片预告：概念、分镜、生成镜头、配乐到最终合成"
     ],
-    "for_you": "对你的用处：和你已经在用的 Remotion 思路一致（用代码定义动效），但写的是网页 HTML，Claude 或 Codex 更容易一次写对；装上技能包后可以直接让 AI 出片，旧的 Remotion 项目也有迁移技能。判断：今天 5 个里它对你最直接有用，排第 1（共 5 个）。",
-    "setup": "安装：Claude Code 里执行 `claude plugin marketplace add heygen-com/hyperframes` 和 `claude plugin install hyperframes@hyperframes`，或 `npx skills add heygen-com/hyperframes`；需 Node.js 22+ 和 FFmpeg；用 AI 代理时基本不必自己写代码；开源免费（Apache-2.0），素材技能可选接 HeyGen 付费服务。",
-    "stars": 72126,
-    "last_push": "2026-10-25",
-    "fetched_at": "2026-10-26 07:24",
+    "for_you": "对你的用处：它的合成层就是你熟悉的 Remotion（也支持 HyperFrames），等于在你现有的动效做法外面套了一层「AI 导演」，让 Claude 或 Codex 先写稿分镜再出片，你只需检查和改关键帧。判断：5 个里它最贴合你的流程，排第 1（共 5 个）。",
+    "setup": "安装：需 Python 3.10+ 和 FFmpeg，git clone 后 make setup（会装 Remotion 的 npm 依赖）；在编程代理里用自然语言驱动，基本不用自己写代码；开源免费（AGPL-3.0），接 Veo、Kling 等付费模型时按服务商计费。",
+    "stars": 72169,
+    "last_push": "2026-10-24",
+    "fetched_at": "2026-10-27 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -971,27 +1015,27 @@
     }
    },
    {
-    "name": "harry0703/MoneyPrinterTurbo",
-    "repo": "harry0703/MoneyPrinterTurbo",
-    "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-    "title": "输入主题一键生成短视频：脚本、配音、素材、字幕、配乐、剪辑全自动",
-    "summary": "MoneyPrinterTurbo 是一站式 AI 短视频生成工具：给一个主题或关键词，自动写脚本、配音、匹配素材、加字幕和背景音乐，合成高清短视频。提供 AI Agent、WebUI、API、CLI 四种用法。适合批量做口播、知识类短视频的人。",
+    "name": "hypit-ai/hypit",
+    "repo": "hypit-ai/hypit",
+    "url": "https://github.com/hypit-ai/hypit",
+    "title": "丢进一条爆款视频，让 AI 代理把它拆成可复用的完整制作工作流",
+    "summary": "Hypit 给 Claude Code、Codex 等 AI 代理一套做视频的语言（SVML）和系统：放进一条视频，代理把它克隆成完整工作流，包括画面素材、字幕、B-roll 和特效，并按词对齐；也可从模板开始或直接描述想要的视频。产出是可编辑、可重跑的合成工程，不是一次性渲染。适合批量做同款短视频的人。",
     "features": [
-     "主题自动生成多语言视频脚本，也可直接用自己写的脚本；支持 Kimi、OpenAI、Claude 等多家大模型",
-     "素材可用本地图片视频，或从 Pexels、Pixabay（免费）取；也可接 Seedance、MiniMax H3 等文生视频接口生成素材，支持 9:16、16:9、1:1",
-     "自动配音、字幕和配乐，每个环节都可替换成自定义内容",
-     "支持批量生成多条成片、任务历史，以及设置和 API Key 的导入导出"
+     "克隆视频：拆出素材、逐词字幕、B-roll、特效，生成可编辑的 SVML 源文件，左边改代码右边实时预览",
+     "组件可插拔：换主持人不动字幕，换钩子、产品、语言、画幅都能复用同一工作流",
+     "支持纯代码渲染的视频：画面完全由前端代码驱动，本地渲染，不调用生成接口",
+     "生成模型可选：README 示例用 Seedance 2 Mini 等模型生成 A-roll，也可接自己的 API 或本地模型"
     ],
     "scenarios": [
-     "输入「人工智能如何改变普通人的日常生活」，一次生成竖屏口播短视频",
-     "同一主题批量出 5 个版本做 A/B 测试",
-     "通过 API 接入自己的自动化流程，每天定时出片"
+     "把一条爆款 TikTok 或 Reels 做成模板，换产品、换语言批量出 10 个版本",
+     "做 AI 口播或带货视频：配音、逐词字幕、B-roll、评论贴纸、卡点剪辑自动接好",
+     "播客和访谈切片：分屏布局、按说话人显示字幕"
     ],
-    "for_you": "对你的用处：适合把文字内容快速变成带配音字幕的成片初稿，再把关键镜头换成你自己做的动效；README 提供 Skill 文档，可以让 Claude 或 Codex 自动安装并生成。成片偏模板化，更适合当量产工具，不能替代你的动效设计。",
-    "setup": "安装：Windows 下载一键启动包解压即用；也可 pip 安装、Docker 部署或在 Google Colab 运行；不需要写代码；开源免费（MIT），但大模型和文生视频接口需自备 API Key 并按量付费。",
-    "stars": 135109,
-    "last_push": "2026-10-25",
-    "fetched_at": "2026-10-26 07:24",
+    "for_you": "对你的用处：你看到好的动效短视频时，可以直接丢给 Claude 让它用 Hypit 拆成工程，再把动效部分换成你自己的风格，省掉从零搭结构的时间；「纯代码渲染」模式和你写动效代码的做法相通。",
+    "setup": "安装：`npx skills add hypit-ai/hypit -g` 装技能，首次使用时代理会帮你准备 Hypit 程序；通过 AI 代理操作，不必自己写代码；软件开源免费、无水印，模型服务费由你选的服务商收取（许可证在 GitHub 上标为 NOASSERTION，即未识别出标准协议，商用前看仓库 LICENSE）。",
+    "stars": 25869,
+    "last_push": "2026-10-26",
+    "fetched_at": "2026-10-27 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -999,27 +1043,27 @@
     }
    },
    {
-    "name": "jianchang512/pyvideotrans",
-    "repo": "jianchang512/pyvideotrans",
-    "url": "https://github.com/jianchang512/pyvideotrans",
-    "title": "视频翻译与 AI 配音：识别语音、翻译字幕、多角色配音、合成新视频",
-    "summary": "pyVideoTrans 是开源视频翻译工具，一键完成「语音识别 → 字幕翻译 → 语音合成 → 视频合成」，也能单独做转字幕、AI 配音和声音克隆。适合要把视频做成多语言版本的人。",
+    "name": "HKUDS/ViMax",
+    "repo": "HKUDS/ViMax",
+    "url": "https://github.com/HKUDS/ViMax",
+    "title": "从一个创意到成片：AI 同时当编剧、导演、制片和视频生成",
+    "summary": "ViMax 是香港大学数据智能实验室的代理式视频生成框架，把故事规划、角色一致性、生图、生视频和最终拼接串成一条流程。输入一个概念、一段剧本或一部小说，它自动拆成分镜和镜头并生成多场景视频。2026-07-20 的 v1.2.0 加入了 Web UI。适合做剧情类或多镜头 AI 动画的人。",
     "features": [
-     "全自动视频翻译：ASR 识别、翻译、TTS 配音、合成视频一条龙，每一步都可暂停人工校对",
-     "批量把音视频转成 SRT 字幕，支持说话人区分；可给不同说话人分配不同配音",
-     "集成 F5-TTS、CosyVoice、GPT-SoVITS 做零样本声音克隆；识别可用本地 Faster-Whisper，翻译可接 DeepSeek、Claude、Gemini、本地 Ollama，配音可用免费 Edge-TTS",
-     "附人声分离、音视频对齐等工具，并提供命令行和 WebUI"
+     "Idea2Video：一句创意生成故事、角色、剧本、分镜、镜头到成片",
+     "Script2Video 和 Novel2Video：按剧本做多场景多镜头视频，或把长篇小说改编成分集视频",
+     "AutoCameo：用一张参考照片把真人或宠物放进生成的故事里，保持外观一致",
+     "Web UI 和 TUI：管理项目、和 Agent 对话修改、预览分镜和渲染进度、配置模型服务商"
     ],
     "scenarios": [
-     "把中文动效讲解视频翻译成英文配音版发海外平台",
-     "给没有字幕的素材批量生成 SRT 字幕",
-     "用自己的声音样本克隆音色，给新视频配音"
+     "写一段 3 场景的小故事剧本，生成角色外观前后一致的短片",
+     "把自家宠物照片放进一个生成的冒险故事里",
+     "把小说章节改编成分集动画的分镜和镜头"
     ],
-    "for_you": "对你的用处：你的动效视频做完后，可以低成本出英文、日文等多语言版本，字幕和配音一次搞定；全部可本地运行，不必上传素材。",
-    "setup": "安装：Windows 10/11 下载预打包 exe，解压后双击 sp.exe；macOS/Linux 需 Python 3.10、FFmpeg，用 uv 安装；不需要写代码；开源免费（GPL-3.0），接付费翻译或配音接口时需自备 Key。",
-    "stars": 19537,
-    "last_push": "2026-10-23",
-    "fetched_at": "2026-10-26 07:24",
+    "for_you": "对你的用处：做带剧情的动效短片时，它解决的是「多镜头角色不一致」这个最难的环节；你可以用它出分镜和生成镜头，再把镜头放进 Remotion 或 HyperFrames 里加字幕和动效包装。",
+    "setup": "安装：用 uv 执行 `uv sync`，在 configs/agent.local.yaml 里填大模型、生图、生视频的 API Key，Web UI 另需 Node.js 18+；需会命令行和配置文件；代码开源免费（MIT），生图生视频按所接服务商计费。",
+    "stars": 12769,
+    "last_push": "2026-09-30",
+    "fetched_at": "2026-10-27 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1027,27 +1071,27 @@
     }
    },
    {
-    "name": "modelscope/DiffSynth-Studio",
-    "repo": "modelscope/DiffSynth-Studio",
-    "url": "https://github.com/modelscope/DiffSynth-Studio",
-    "title": "魔搭社区的扩散模型引擎：图像、视频、音频模型的推理与训练，低显存可跑",
-    "summary": "DiffSynth-Studio 是魔搭（ModelScope）社区开发维护的开源扩散模型引擎，集成主流开源图像、视频、音频生成模型，几乎每个能推理的模型都支持训练（含 LoRA）。README 更新记录显示 2026-10-21 仍在接入新模型。适合想在自己显卡上跑或微调开源视频模型的人。",
+    "name": "zhouxiaoka/autoclip",
+    "repo": "zhouxiaoka/autoclip",
+    "url": "https://github.com/zhouxiaoka/autoclip",
+    "title": "贴一个长视频链接，自动剪成各平台短视频，连封面和发布文案一起出（星标 9,756，按动效视频类放宽门槛）",
+    "summary": "AutoClip 是开源 AI 视频剪辑桌面工具：贴一个播客、访谈或课程的链接，选好平台，自动剪成短视频并生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels、YouTube Shorts、B 站和 YouTube。剪辑和渲染在本机完成，分析模型可选云端或本地。星标不足 1 万，属于视频类优质项目，按规则放宽到 3,000 以上收录。",
     "features": [
-     "支持 Wan 系列（含 Wan2.2-S2V 音频驱动视频、Wan-Animate-2 动作迁移）、LTX-2.5 音视频生成等视频模型",
-     "显存管理：在硬盘、内存、显存之间动态调度参数，配合 NF4、INT8 量化，让消费级显卡也能跑大模型",
-     "支持全量训练和 LoRA 训练，可训练自己的风格模型",
-     "另有 DiffSynth-ComfyUI 节点包，可在 ComfyUI 里调用；提供给 AI 代理用的模型接入技能"
+     "每个平台按评分自动生成至多 10 条合格片段，其余列为备选，可再点「生成这条」",
+     "两种竖版版式：访谈式和满屏播客式；按平台自动适配画幅与时长，并做人物取景",
+     "字幕可用作者字幕、本地 Whisper 或 SenseVoice，或云端转写；文字模型可接 Ollama、LM Studio 本地模型",
+     "桌面版、CLI 和 MCP 共用同一条一键出片流程，可让 AI 代理批量调用"
     ],
     "scenarios": [
-     "用一张角色图加一段参考动作视频，让角色做出同样动作",
-     "用自己的作品训练一个风格 LoRA，让生成的视频保持统一画风",
-     "显存不够时用量化和分层卸载在单卡上跑视频模型"
+     "把一期 1 小时 43 分的英文访谈剪成 10 条小红书竖版切片（README 实测 7.5 分钟，文字模型费用 0.09 元）",
+     "把中文长播客剪成抖音切片，自动配封面和发布文案",
+     "通过 MCP 让 Claude 批量处理一个频道的多期节目"
     ],
-    "for_you": "对你的用处：如果想让 AI 生成的动效素材保持你自己的画风，可以用它训练 LoRA；也可作为显存不够时跑 Wan 等视频模型的低显存方案。需要显卡和 Python 基础。",
-    "setup": "安装：`git clone` 仓库后 `pip install -e .`，按示例脚本运行；需会 Python 和命令行，需 NVIDIA 显卡；开源免费（Apache-2.0），各模型权重另有各自许可。",
-    "stars": 13302,
-    "last_push": "2026-10-23",
-    "fetched_at": "2026-10-26 07:24",
+    "for_you": "对你的用处：你做好的长视频或别人的访谈素材，可以用它批量切成竖版短视频分发；它有 MCP，能接进你让 Claude 或 Codex 自动化处理视频的流程。",
+    "setup": "安装：macOS Apple Silicon 下载 .dmg、Windows 下载 setup.exe，在设置里填模型 API Key 即可用，不用写代码；CLI/MCP 需 Python 3.10+ 和 FFmpeg；软件免费开源（MIT），云端模型按量计费。",
+    "stars": 9756,
+    "last_push": "2026-10-26",
+    "fetched_at": "2026-10-27 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1055,27 +1099,27 @@
     }
    },
    {
-    "name": "index-tts/index-tts",
-    "repo": "index-tts/index-tts",
-    "url": "https://github.com/index-tts/index-tts",
-    "title": "B 站开源的零样本语音合成：一段参考音频克隆音色，可控情绪和语速",
-    "summary": "IndexTTS 是 bilibili 开源的零样本文字转语音系统，用一段参考音频就能克隆音色。README 写明最新版 IndexTTS-2.5 于 2026-08-10 发布，支持中、英、日、西、阿拉伯语。适合给视频做旁白配音的人。",
+    "name": "microsoft/playwright-mcp",
+    "repo": "microsoft/playwright-mcp",
+    "url": "https://github.com/microsoft/playwright-mcp",
+    "title": "让 AI 代理直接操作浏览器的官方 MCP 服务器",
+    "summary": "Playwright MCP 是微软官方的 MCP 服务器，让大模型通过 Playwright 操作网页：读页面的无障碍结构树来定位和点击元素，不需要截图和视觉模型。支持 VS Code、Cursor、Claude Desktop、Grok 等 MCP 客户端。适合想让 AI 自动跑网页流程的人。",
     "features": [
-     "一段参考音频零样本克隆音色",
-     "情绪细粒度控制，音色与情绪可分开控制",
-     "语速控制（`duration_factor`，时长 0.5 到 2.0 倍），可用拼音、CMU 音素、日文假名纠正读音",
-     "提供 WebUI，可用 vLLM 做生产部署"
+     "基于无障碍结构树而非像素坐标，操作快且结果确定",
+     "不需要视觉模型，纯结构化数据，对大模型友好",
+     "一段标准配置（npx @playwright/mcp@latest）即可接入大多数 MCP 客户端",
+     "README 也说明：编程代理场景可改用更省 token 的 Playwright CLI 加 Skills"
     ],
     "scenarios": [
-     "用自己的声音样本给动效视频配旁白，不用每次录音",
-     "按画面时长调语速，让配音和动画节奏对齐",
-     "多音字读错时用拼音标注纠正"
+     "让 Claude 打开素材网站批量下载参考图或查资料",
+     "让代理在浏览器里预览你做的网页动效，逐步检查交互是否正常",
+     "自动填写网页表单或跑一遍发布前检查"
     ],
-    "for_you": "对你的用处：给动效视频配旁白时，语速可调这一点能让配音贴合动画时长；中文效果是它的强项。注意许可证是 bilibili 模型使用协议，不是常见开源协议，商用前要读条款。",
-    "setup": "安装：`git clone` 后用 uv 执行 `uv sync --all-extras`，启动 WebUI；需会命令行，建议 NVIDIA 显卡；免费下载使用，许可为 bilibili Model Use License Agreement（自定义协议）。",
-    "stars": 24711,
-    "last_push": "2026-09-29",
-    "fetched_at": "2026-10-26 07:24",
+    "for_you": "对你的用处：你用 HTML 或网页技术做动效时，可以让 Claude 通过它在真实浏览器里打开页面、点击、检查效果，形成「AI 写动效、AI 自己在浏览器里验收」的闭环。",
+    "setup": "安装：Node.js 18+，在 MCP 客户端配置里加 `npx @playwright/mcp@latest` 一段即可；不需要写代码；开源免费（Apache-2.0）。",
+    "stars": 38668,
+    "last_push": "2026-10-22",
+    "fetched_at": "2026-10-27 07:27",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1086,101 +1130,47 @@
  },
  "meta": {
   "ai_labs": {
-   "as_of": "2026-10-26 07:22",
-   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），只收上期截止 2026-10-25 07:27 后的新内容；X API 检索 12 个官方号原创帖（不含转发与回复），另查 OpenAI 博客 RSS 与 Grok Bot 更新日志；周日五家均无新发布",
-   "missing": [],
+   "as_of": "2026-10-27 07:33",
+   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），只收上期截止 2026-10-26 07:31 后的新内容（Grok Bot v0.75.8 为上期漏收补录）；X API 检索 12 个官方号原创帖（不含转发与回复），另查 OpenAI 官方页面、SEC EDGAR 与 Grok Bot 更新日志",
+   "missing": [
+    {
+     "item": "Anthropic IPO 发行规模与定价",
+     "reason": "S-1 公开稿未填发行股数和价格区间"
+    }
+   ],
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-10-26 07:31",
-   "basis": "X search_news 多组查询（max_age_hours=24，每组 25 条）合并去重后候选池 129 个话题；同一事件的多个话题合并（巴西大选 4 个、以色列大选 2 个）；热度 = 每话题 X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 + get_posts_counts_recent 关键词近 24h 帖数，取前 10；事实由 Codex 实时联网核对",
-   "exclude": "排除 Entertainment/Sports 类及体育、影视、音乐、名人、游戏、梗图话题（好莱坞明星为卢拉拉票、Bondi Rescue 节目片段、大地年龄街访梗）；话题名或摘要含 AI 的话题；事件超过 72h 的旧闻翻炒（卡尔·萨根 1995 年访谈、韩国大邱清真寺工地外烤猪肉抗议实为 2022-12 和 2023-02 旧事、理化学研究所癌细胞自产毒素论文 2026-09-17 已发表、2021 年游乐设施倾斜视频、安巴尼旧言论、NASA 阿耳忒弥斯计划调整 2026-02-27 已宣布）；无法核实人物与场合的病毒视频（女孩集会演讲视频、排球赛校长视频、尼日利亚「yahoo boys」理财视频）；同一事件的重复话题（巴西「右翼落败」「卢拉投票照」等并入巴西大选）",
+   "as_of": "2026-10-27 07:33",
+   "basis": "X search_news 多组查询（max_age_hours=24，每组 25 条）合并去重后候选池 124 个话题；同一事件的多个话题合并（以色列大选 3 个、肯尼亚 Sifuna 2 个、尼日利亚提努布 2 个），合并后按其中热度最高的聚合帖计分；热度 = 每话题 X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 + get_posts_counts_recent 关键词近 24h 帖数，取前 10；事实由 Codex 实时联网核对",
+   "exclude": "排除 Entertainment/Sports 类及体育、影视、音乐、名人、游戏、梗图话题（2010 年舞蹈研究翻炒、初音未来视频）；话题名或摘要含 AI 的话题；事件超过 72h 的旧闻翻炒（日本癌细胞自毁论文 2026-09-17 已发表、癌症患者遗言帖重发、拉维·塔姆塔电动飞行器首飞在 8 月）；无法核实的病毒视频和个人轶事（男子护女友街头冲突视频、母亲陪诊帖、护士拖延 MAGA 患者止痛药，后者上期已列待验证）；无具体事件的口水话题（「我不谈政治」、马斯克「火箭飞向星辰」）",
    "missing": [],
-   "pending": [
-    "巴西大选计票截至北京时间 07:24 已计 46.48%、胜者未定，下期更新最终结果",
-    {
-     "topic": "护士举报同事：因患者戴 MAGA 帽拖延止痛药",
-     "category": "社会",
-     "summary": "X 用户 @shiestynurse 发帖称，他协助一名被刺伤、被棒球棍殴打、腿部骨折外露的一级创伤患者，另一名护士因患者戴 MAGA 帽拖延给止痛药，原帖说他「准备举报」该同事。X 摘要称州护理委员会已紧急吊销被举报护士执照，但未说明是哪个州；Codex 未查到独立新闻报道或任何执照处分记录，事件本身和处分都未证实。",
-     "url": "https://x.com/i/trending/2114045825789874526",
-     "score": 77877,
-     "engagement": 77853,
-     "post_count": 24,
-     "post_count_query": "nurse MAGA (pain OR medication OR reported)",
-     "score_basis": "热度 = 该话题 X 聚合帖中 48h 内前 4 条帖子的 赞+评+转+引 之和 77,853 + 关键词近 24h 帖数 24",
-     "posts": [
-      {
-       "author": "@shiestynurse",
-       "author_name": "Shiestynurse",
-       "url": "https://x.com/shiestynurse/status/2113966403782836730",
-       "created_at": "2026-10-24 20:10",
-       "likes": 51366,
-       "replies": 5148,
-       "reposts": 13711,
-       "quotes": 1292,
-       "score": 71517
-      },
-      {
-       "author": "@KoryYeshua",
-       "author_name": "Kory Yeshua",
-       "url": "https://x.com/KoryYeshua/status/2114222622611313026",
-       "created_at": "2026-10-25 13:08",
-       "likes": 1958,
-       "replies": 62,
-       "reposts": 867,
-       "quotes": 27,
-       "score": 2914
-      }
-     ],
-     "published_at": "2026-10-24 20:10",
-     "fetched_at": "2026-10-26 07:31",
-     "grade": "社媒传闻",
-     "crosscheck": {
-      "status": "单一来源",
-      "note": "Codex 只找到该指控的网上转帖，未查到独立新闻报道或护理委员会处分记录；所在州、处分日期均不明"
-     },
-     "unverified": true,
-     "unverified_reason": "Codex 只找到该指控的网上转帖，未查到独立新闻报道或护理委员会处分记录；所在州、处分日期均不明",
-     "pending_reason": "未证实：Codex 只找到该指控的网上转帖，未查到独立新闻报道或护理委员会处分记录；所在州、处分日期均不明"
-    }
-   ],
-   "note": "护士举报同事话题热度 77,877 原排第 3，因 Codex 查不到独立报道和处分记录，移入待验证；第 11 名以后未逐个计算帖数。X 互动数与帖数为 X API 一手计数，抓取时间 2026-10-26 07:31（北京时间）。"
+   "pending": [],
+   "note": "第 11 名起：内罗毕抗议选举法修改（14,332）、Raptor 4 推力 300 吨（13,687，作为 SpaceX 话题补充信息写入）。X 互动数与帖数为 X API 一手计数，抓取时间 2026-10-27 07:33（北京时间）。"
   },
   "filecoin": {
-   "as_of": "2026-10-26 07:22",
-   "basis": "近 72 小时 @Filecoin、@_FilOz、@FilFoundation、filecoin-project GitHub releases、新闻与 X 社区帖；已去除旧消息转述（300 毫秒读取 2026-10-23 期已收录、RedStone 价格源 2026-10-25 期已收录）与空投广告",
+   "as_of": "2026-10-27 07:33",
+   "basis": "自上期截止起检索 @Filecoin、@_FilOz、@FilFoundation 官方号原创帖与 X 社区帖",
    "missing": [
     {
-     "item": "Filecoin 官方新公告",
-     "reason": "@Filecoin、@_FilOz、@FilFoundation 自 2026-10-25 07:27 起 X API 检索无原创帖"
-    },
-    {
-     "item": "filecoin-project GitHub 新版本",
-     "reason": "lotus（v1.38.3，2026-10-21）、curio（2026-10-12）、boost（2026-10-17）、builtin-actors（2026-09-22）、filecoin-pin（2026-10-14）近 72 小时无新 release"
-    },
-    {
-     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
-     "reason": "未找到可抓取的同批数据源"
+     "item": "Filecoin 协议或网络新公告",
+     "reason": "自 2026-10-26 07:31 起 @_FilOz、@FilFoundation 无原创帖，@Filecoin 只有 1 条市场定位帖"
     }
    ],
    "pending": []
   },
   "finance": {
-   "as_of": "2026-10-26 07:33",
-   "basis": "固定 9 项行情 + 4 条要闻，按 FINANCE_SPEC 结构；美股现货与美债未开盘沿用周五收盘，黄金、原油用周一早盘期货；第二来源为 Codex 实时核对",
+   "as_of": "2026-10-27 07:31",
+   "basis": "固定 9 项行情 + 4 条要闻，按 FINANCE_SPEC 结构；美股、美元、美债为周一收盘，黄金、原油用周二早盘期货；第二来源为 Codex 实时核对加人工 WebSearch",
    "missing": [
     {
-     "item": "美股、美元指数、10 年期美债收益率周一新行情",
-     "reason": "截至本期截止美股现货与美债未开盘，沿用 2026-10-23 收盘"
-    },
-    {
-     "item": "沙特阿美对 10-24 袭击的损失说明",
-     "reason": "截至本期截止未查到阿美声明"
-    },
-    {
      "item": "Farside 2026-10-26 BTC 现货 ETF 流向",
-     "reason": "美股未开盘，当日数据尚未产生"
+     "reason": "截至本期截止 Farside 当日数据未出齐"
+    },
+    {
+     "item": "沙特阿美对东西输油管道遇袭的损失说明",
+     "reason": "截至本期截止沙特方面未确认"
     },
     {
      "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
@@ -1189,10 +1179,10 @@
    ]
   },
   "github_tools": {
-   "as_of": "2026-10-26 07:24",
-   "basis": "按用户做动效视频的需求，4 个为动效/视频类：代码动效渲染框架加 AI 技能包（HyperFrames）、AI 短视频生成（MoneyPrinterTurbo）、视频翻译配音（pyVideoTrans）、扩散模型推理训练引擎（DiffSynth-Studio），另 1 个为视频旁白配音（IndexTTS）；均未归档、近 90 天内有推送、星标 1 万以上、仓库页返回 200、与历史推荐不重复；星标与最近推送来自 GitHub API 实时数据（北京时间 2026-10-26 07:24 取数），用途依据各仓库 README",
+   "as_of": "2026-10-27 07:27",
+   "basis": "按用户做动效视频的需求，4 个为动效/视频类：代理式视频制作流水线（OpenMontage）、爆款视频克隆工作流（Hypit）、多镜头剧情视频生成（ViMax）、长视频自动切片（AutoClip，星标不足 1 万按动效视频类放宽到 3,000 以上），另 1 个为浏览器自动化 MCP（Playwright MCP）；均未归档、近 90 天内有推送、仓库页返回 200、与历史推荐不重复；星标与最近推送来自 GitHub API 实时数据（北京时间 2026-10-27 07:27 取数），用途依据各仓库 README",
    "missing": []
   }
  },
- "updated_at": "2026-10-26T07:31:04+08:00"
+ "updated_at": "2026-10-27T07:33:52+08:00"
 }
