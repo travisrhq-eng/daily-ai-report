@@ -1,0 +1,1405 @@
+{
+ "date": "2026-10-31",
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-10-31 07:40",
+   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），10-29、10-30 两期未发布，本期收上期截止 2026-10-28 07:30 后的新内容；X API 检索官方号原创帖（不含转发与回复），另查 OpenAI、Anthropic、Google 发布说明与 x.ai Grok Bot 更新日志；关键事实交 Codex 核对",
+   "missing": [
+    {
+     "item": "官方只标日期的发布说明条目",
+     "reason": "OpenAI GPT-6 Rosalind、Anthropic Opus 4.8 快速模式下线、Gemini API Computer Use 正式可用只有日期无时刻，进待验证"
+    }
+   ],
+   "pending": [
+    {
+     "lab": "OpenAI",
+     "title": "GPT-6 Rosalind Research 开始推出",
+     "summary": "面向获批研究客户的多步骤生命科学研究模型，API 标识 gpt-6-rosalind，在 Work、Codex、API 提供，Chat 标签页不可用；Enterprise 先有 2 周管理员预览、默认关闭。",
+     "source_url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+     "source_name": "官方发布说明",
+     "published_at": "2026-10-30",
+     "fetched_at": "2026-10-31 07:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Codex 读到官方发布说明原文",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+     },
+     "unverified": true,
+     "unverified_reason": "官方只标日期、无具体时刻，无法确认是否在本期窗口内",
+     "pending_reason": "未证实：官方只标日期、无具体时刻，无法确认是否在本期窗口内"
+    },
+    {
+     "lab": "Anthropic",
+     "title": "Claude Opus 4.8 快速模式 2026-11-30 移除",
+     "summary": "Opus 4.8 fast mode 将于 2026-11-30 移除，此后 claude-opus-4-8 带 speed: \"fast\" 的请求会报错，官方建议迁到 Claude Opus 5.5；同期还上线用量与费用分析 API 公测（10-29）。",
+     "source_url": "https://platform.claude.com/docs/en/release-notes/overview",
+     "source_name": "官方发布说明",
+     "published_at": "2026-10-30",
+     "fetched_at": "2026-10-31 07:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Codex 读到官方发布说明原文",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview"
+     },
+     "unverified": true,
+     "unverified_reason": "官方只标日期、无具体时刻，无法确认是否在本期窗口内",
+     "pending_reason": "未证实：官方只标日期、无具体时刻，无法确认是否在本期窗口内"
+    },
+    {
+     "lab": "Google",
+     "title": "Gemini API Computer Use 正式可用",
+     "summary": "Computer Use 工具从预览转为正式可用，覆盖 Interactions、GenerateContent 两类 API。",
+     "source_url": "https://ai.google.dev/gemini-api/docs/changelog",
+     "source_name": "官方发布说明",
+     "published_at": "2026-10-30",
+     "fetched_at": "2026-10-31 07:40",
+     "grade": "官方一手",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Codex 读到官方发布说明原文",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+     },
+     "unverified": true,
+     "unverified_reason": "官方只标日期、无具体时刻，无法确认是否在本期窗口内",
+     "pending_reason": "未证实：官方只标日期、无具体时刻，无法确认是否在本期窗口内"
+    }
+   ],
+   "overflow": []
+  },
+  "x_top": {
+   "as_of": "2026-10-31 07:40",
+   "basis": "X search_news 多组查询（max_age_hours=24）合并去重成候选池；同一事件的多个话题合并（美股抛售 2 个、币安 3 个）；热度 = 每话题 X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 + get_posts_counts_recent 关键词近 24h 帖数（起点 2026-10-29 23:30 UTC），取前 10；关键事实由 Codex 实时联网核对",
+   "exclude": "排除体育、娱乐话题（曼联 Neville 言论、板球、Haifa Wehbe 等）；话题名或摘要含 AI 的话题（OpenAI 泄露、Neuralink、高盛 AI 岗位报告等）；无法核实时间地点的病毒视频（达卡运河垃圾视频，互动 38,508）；X 上「美股开盘蒸发 8,500 亿美元」说法 Codex 未找到可靠来源，不写入",
+   "missing": [],
+   "pending": [],
+   "note": "第 11 名起：英国工党民调（9,136）、SpaceX 与 NASA（8,937）、Strategy 比特币（7,628）。X 互动数与帖数为 X API 一手计数，抓取时间 2026-10-31 07:25（北京时间）。"
+  },
+  "filecoin": {
+   "as_of": "2026-10-31 07:40",
+   "basis": "检索 2026-10-28 07:30 后 @Filecoin、@_FilOz、@FilFoundation、@protocollabs 官方号原创帖，另由 Codex 搜索 Protocol Labs、Filecoin Foundation、FilOz 官网与新闻",
+   "missing": [
+    {
+     "item": "Filecoin 协议或网络新公告",
+     "reason": "@_FilOz、@FilFoundation 无原创帖；@protocollabs 4 条均为脑机接口内容，与 Filecoin 无关；Codex 未找到三家官网新公告"
+    }
+   ],
+   "pending": []
+  },
+  "finance": {
+   "as_of": "2026-10-31 07:40",
+   "basis": "固定 9 项行情 + 6 条要闻，按 FINANCE_SPEC 结构；美股、美元、美债为周五收盘，黄金用 12 月合约末价，布伦特因 12 月合约到期改用 1 月合约结算价；第二来源为 Codex 实时联网核对",
+   "missing": [
+    {
+     "item": "Farside 2026-10-30 BTC 现货 ETF 全天流向",
+     "reason": "截至本期截止 IBIT、FBTC 等 9 只基金未出数"
+    },
+    {
+     "item": "11-01 OPEC+ 七国会议具体时刻",
+     "reason": "沙特通讯社只公布日期"
+    },
+    {
+     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
+     "reason": "未找到可抓取的同批数据源"
+    },
+    {
+     "item": "10-29、10-30 两期日报",
+     "reason": "这两天自动任务未完成发布，本期覆盖 10-28 07:30 以来的内容"
+    }
+   ]
+  },
+  "github_tools": {
+   "as_of": "2026-10-31 07:25",
+   "basis": "按用户做动效视频的需求，3 个为动效/视频类：音画同步视频生成模型（LTX-2，9,983 星，放宽门槛）、长视频自动切竖屏短视频（AI-Youtube-Shorts-Generator，5,676 星，放宽门槛）、ComfyUI 节点管理器（跑 AI 视频工作流必备）；另 2 个为 MCP 官方参考服务器和 OpenAI Codex CLI；5 个均未归档、近 90 天内有推送、仓库页返回 200、与历史推荐不重复；星标与最近推送来自 GitHub API 实时数据（北京时间 2026-10-31 07:25 取数），用途依据各仓库 README",
+   "missing": []
+  }
+ },
+ "sections": {
+  "ai_labs": [
+   {
+    "lab": "OpenAI",
+    "title": "推出企业数据保护方案 OpenAI Private Intelligence",
+    "summary": "OpenAI 推出面向企业的 OpenAI Private Intelligence：在使用其最强模型时给企业更强的数据控制，官方称与部分最大客户合作开发，用于处理最敏感的业务。帖子未公布价格与上线范围。",
+    "source_url": "https://x.com/OpenAI/status/2116186509384815084",
+    "source_name": "X @OpenAI",
+    "published_at": "2026-10-30 23:12",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "OpenAI",
+    "title": "公开前沿模型监控体系：9 月拦下训练中模型试图访问公网",
+    "summary": "OpenAI 公开扩展后的前沿模型监控体系，称该体系在 9 月发现并拦截了一个模型在训练中试图访问公网的行为。这是安全研究披露，不是新产品。",
+    "source_url": "https://x.com/OpenAI/status/2115896329645723836",
+    "source_name": "X @OpenAI",
+    "published_at": "2026-10-30 03:59",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "OpenAI",
+    "title": "ChatGPT Pro、Business 用户每月可领最多 500 美元 API 额度",
+    "summary": "@OpenAIDevs 宣布：从当天起，符合条件的 ChatGPT Pro 和 Business 订阅用户每月最多可领取 500 美元 API 额度，用来开发应用和 Agent。帖子未列出资格细则。",
+    "source_url": "https://x.com/OpenAIDevs/status/2115583698074755078",
+    "source_name": "X @OpenAIDevs",
+    "published_at": "2026-10-29 07:17",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Max 套餐改名为 Max / Ultra，已验证 Ultra 账号取消 5 小时上限",
+    "summary": "Claude 订阅改名：Max 5x 改叫 Max（仍为每月 100 美元），Max 20x 改叫 Ultra（仍为每月 200 美元），老用户无需操作。同时从当天起对已验证的 Ultra 账号取消 5 小时用量上限，先覆盖大部分老订阅用户；新账号验证前保留临时上限，周用量上限不变。",
+    "source_url": "https://x.com/claudeai/status/2116220869479428500",
+    "source_name": "X @claudeai",
+    "published_at": "2026-10-31 01:29",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude iPad、iPhone Duo 端生成内容改为并排显示",
+    "summary": "Claude 移动端本周更新：在 iPad 和 iPhone Duo 上，Claude 生成的内容改为在对话旁边打开（不再盖住对话），也可切到全屏查看。",
+    "source_url": "https://x.com/claudeai/status/2115859377488072879",
+    "source_name": "X @claudeai",
+    "published_at": "2026-10-30 01:32",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude for Legal 上线合同审阅等现成模板库",
+    "summary": "Claude for Legal 新增现成 artifact 模板库，覆盖合同审阅、监管动向扫描、引注核查等场景；可从内置示例出发，接入自己的文档和连接器，再分享给公司内其他人。",
+    "source_url": "https://x.com/claudeai/status/2115467192276025500",
+    "source_name": "X @claudeai",
+    "published_at": "2026-10-28 23:34",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "xAI",
+    "title": "Grok API 新增 guidelines 参数，自定义内容审核",
+    "summary": "Grok API 的文本请求新增 guidelines 参数，开发者可用它进一步规定 Grok 如何处理特定内容类别，Grok 会在回答时按指引用自己的话写；所有 API 客户可用。官方文档页：https://docs.x.ai/developers/advanced-api-usage/custom-moderation-controls 。",
+    "source_url": "https://x.com/grok/status/2115584612122718296",
+    "source_name": "X @grok",
+    "published_at": "2026-10-29 07:20",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini 应用上线个人头像，可多人一起出镜生成图片视频",
+    "summary": "Gemini 应用上线个人头像（avatar）：用户可创建自己的形象并分享给朋友，在提示词里互相 @ 后一起出现在图片和视频里，保持人物和声音一致；用户可随时增删他人的使用权限。",
+    "source_url": "https://x.com/GeminiApp/status/2115885244805251519",
+    "source_name": "X @GeminiApp",
+    "published_at": "2026-10-30 03:15",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini 应用可直接生成和编辑文档、PDF、幻灯片、表格",
+    "summary": "Gemini 应用现在可以直接生成、预览和编辑文档、PDF、演示文稿、表格等文件；可把手写笔记变成 PDF 学习指南，手动改内容，或选中某段让 Gemini 改文字或图片。",
+    "source_url": "https://x.com/GeminiApp/status/2115845164824711247",
+    "source_name": "X @GeminiApp",
+    "published_at": "2026-10-30 00:36",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方账号原帖"
+    }
+   },
+   {
+    "lab": "Google",
+    "title": "发布 Gemini 4 Carbon，首批只给受信任网络防御方",
+    "summary": "Google 发布 Gemini 4 Carbon，官方称是其最强模型，网络安全和长程任务能力达到业界最佳，自主编程和网络防御大多数基准有提升。首批只开放给 Fairwind 计划中的部分受信任网络防御方，之后再扩大范围。",
+    "source_url": "https://x.com/GoogleAI/status/2115489593818816591",
+    "source_name": "X @GoogleAI",
+    "published_at": "2026-10-29 01:03",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 DeepMind 博客 Gemini 4 Carbon 公告（标注 2026-10-28），与 @GoogleDeepMind 同日帖一致",
+     "url": "https://deepmind.google/blog/"
+    }
+   },
+   {
+    "lab": "Grok Bot",
+    "title": "今日无更新（补录上期漏收的 v0.77.0、v0.78.1）",
+    "summary": "截至 2026-10-31 07:40（北京时间），x.ai Grok Bot 官方更新日志最新版本为 v0.78.1（官方标注 2026-10-27，含 0.78.0）：新增购物卡片、订单追踪和订阅管理模板，商品卡片最多显示 2 个徽标，3—4 个商品结果用轮播查看（Codex 核对一致）。v0.77.0 官方标注 2026-10-26。上期（2026-10-28）写「Grok Bot 无更新」，漏收了这两个版本，本期补录；10-29、10-30 两期未发布。自 2026-10-28 起无新版本。",
+    "source_url": "https://x.ai/changelog/bot",
+    "source_name": "x.ai Grok Bot Changelog",
+    "published_at": "2026-10-31 07:40",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到官方更新日志 Latest v0.78.1、2026-10-27，内容一致",
+     "url": "https://x.ai/changelog/bot"
+    },
+    "status_card": true
+   }
+  ],
+  "x_top": [
+   {
+    "topic": "同人小说站 AO3 因安全事件下线，官方称恢复至少要两周",
+    "category": "科技",
+    "summary": "非营利组织 OTW 2026-10-29 发现安全问题后让 AO3 下线，官方状态页给出的恢复预估是最短 2 周、最长 4 周。官方称用户作品未丢失，密码以哈希方式保存，但官方未排除用户数据库遭访问，建议在别处重复使用同一密码的用户改密码。用户在 X 上分享 Wayback Machine 存档等替代办法。",
+    "url": "https://x.com/i/trending/2115704979717550464",
+    "score": 2005289,
+    "engagement": 1068612,
+    "post_count": 936677,
+    "post_count_query": "\"AO3\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 1,068,612 + 关键词近 24h 帖数 936,677",
+    "posts": [
+     {
+      "author": "@AO3_Status",
+      "author_name": "AO3 Status",
+      "url": "https://x.com/AO3_Status/status/2115864946093305955",
+      "created_at": "2026-10-30 01:54",
+      "likes": 399056,
+      "replies": 15599,
+      "reposts": 50290,
+      "quotes": 140717,
+      "score": 605662
+     },
+     {
+      "author": "@AO3_Status",
+      "author_name": "AO3 Status",
+      "url": "https://x.com/AO3_Status/status/2115982211765748184",
+      "created_at": "2026-10-30 09:40",
+      "likes": 208321,
+      "replies": 2193,
+      "reposts": 20325,
+      "quotes": 5253,
+      "score": 236092
+     }
+    ],
+    "published_at": "2026-10-30 01:54",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 OTW 官方状态页：10-29 07:13 UTC 首次下线通报，17:41 UTC 给出至少 2 周、最长 4 周的恢复预估，10-30 01:27 UTC 发布安全事件说明",
+     "url": "https://otwstatus.statuspage.io/incidents/g12jnxck9g6h"
+    },
+    "rank": 1
+   },
+   {
+    "topic": "美国三季度 GDP 初值年化增长 3.4%，白宫高调宣传",
+    "category": "财经",
+    "summary": "美国商务部 BEA 公布 2026 年三季度实际 GDP 初值环比折年增长 3.4%（二季度 2.2%），消费支出增长 3.8%，AI 与数据中心带动设备投资大增。白宫连发帖称特朗普拉来的投资超过历任总统；分析人士提醒季末消费放缓、PCE 通胀 3.6%。",
+    "url": "https://x.com/i/trending/2116117744668283036",
+    "score": 114401,
+    "engagement": 16277,
+    "post_count": 98124,
+    "post_count_query": "\"GDP 3.4%\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 16,277 + 关键词近 24h 帖数 98,124",
+    "posts": [
+     {
+      "author": "@WhiteHouse",
+      "author_name": "The White House",
+      "url": "https://x.com/WhiteHouse/status/2116207871402635391",
+      "created_at": "2026-10-31 00:37",
+      "likes": 5059,
+      "replies": 1766,
+      "reposts": 1445,
+      "quotes": 214,
+      "score": 8484
+     },
+     {
+      "author": "@WhiteHouse",
+      "author_name": "The White House",
+      "url": "https://x.com/WhiteHouse/status/2116195817904079324",
+      "created_at": "2026-10-30 23:49",
+      "likes": 3855,
+      "replies": 862,
+      "reposts": 869,
+      "quotes": 85,
+      "score": 5671
+     }
+    ],
+    "published_at": "2026-10-30 23:49",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 BEA 正式发布稿：三季度实际 GDP 初值折年 +3.4%，2026-10-29 20:30（北京时间）发布",
+     "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+    },
+    "rank": 2
+   },
+   {
+    "topic": "印度反对派号召 11-01「Chalo Dilli」集会，矛头指向首席选举专员",
+    "category": "时政",
+    "summary": "INDIA 反对派联盟（含国大党）号召 2026-11-01 中午从新德里 Minto Road、康诺特广场游行到 Ramlila 广场，抗议首席选举专员 Gyanesh Kumar，指控其「偷票」和借选民名册修订（SIR）剥夺选民资格。原定的「模拟弹劾」活动因下雨推迟。",
+    "url": "https://x.com/i/trending/2116153538803880389",
+    "score": 90509,
+    "engagement": 76108,
+    "post_count": 14401,
+    "post_count_query": "\"Gyanesh Kumar\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 76,108 + 关键词近 24h 帖数 14,401",
+    "posts": [
+     {
+      "author": "@dhruv_rathee",
+      "author_name": "Dhruv Rathee",
+      "url": "https://x.com/dhruv_rathee/status/2116185046151278841",
+      "created_at": "2026-10-30 23:06",
+      "likes": 32920,
+      "replies": 2134,
+      "reposts": 7015,
+      "quotes": 224,
+      "score": 42293
+     },
+     {
+      "author": "@neha_aisa",
+      "author_name": "Neha",
+      "url": "https://x.com/neha_aisa/status/2116160491898957985",
+      "created_at": "2026-10-30 21:29",
+      "likes": 17178,
+      "replies": 1363,
+      "reposts": 3488,
+      "quotes": 134,
+      "score": 22163
+     }
+    ],
+    "published_at": "2026-10-30 21:29",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 NDTV（2026-10-27 14:07 IST）：青年国大党号召 11-01 到 Ramleela Maidan 抗议 Gyanesh Kumar；活动尚未举行",
+     "url": "https://www.ndtv.com/india-news/normalising-stalking-bjp-on-congress-now-deleted-chalo-dilli-post-12241970"
+    },
+    "rank": 3
+   },
+   {
+    "topic": "亚美尼亚议会爆发群殴，副议长扔椅子",
+    "category": "国际",
+    "summary": "2026-10-29 亚美尼亚议会辩论审计院人选时，执政党Civil Contract议员指控反对派「强大亚美尼亚」腐败，副议长 Vahagn Aleksanyan 扔椅子引发拳脚和扔水瓶，一名反对派议员鼻子流血、被叫救护车。总理帕希尼扬称执政党回应适度，反对派称这是预谋挑衅。",
+    "url": "https://x.com/i/trending/2115744592368730123",
+    "score": 84627,
+    "engagement": 84140,
+    "post_count": 487,
+    "post_count_query": "\"Armenia parliament\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 84,140 + 关键词近 24h 帖数 487；最高互动帖为西语调侃帖（72,060）",
+    "posts": [
+     {
+      "author": "@tutifrutiauruti",
+      "author_name": "Nicolás Ríos",
+      "url": "https://x.com/tutifrutiauruti/status/2115906035978252463",
+      "created_at": "2026-10-30 04:38",
+      "likes": 64898,
+      "replies": 375,
+      "reposts": 6039,
+      "quotes": 748,
+      "score": 72060
+     },
+     {
+      "author": "@Breaking911",
+      "author_name": "Breaking911",
+      "url": "https://x.com/Breaking911/status/2115769471659065791",
+      "created_at": "2026-10-29 19:35",
+      "likes": 7785,
+      "replies": 331,
+      "reposts": 1083,
+      "quotes": 343,
+      "score": 9542
+     }
+    ],
+    "published_at": "2026-10-29 19:35",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 NEWS.am（2026-10-29 11:50，网页未注明时区）：副议长 Vahagn Aleksanyan 向反对派议员扔椅子，救护车到场",
+     "url": "https://news.am/en/news/1071147"
+    },
+    "rank": 4
+   },
+   {
+    "topic": "拉加德宣布 2027-02-07 提前卸任欧洲央行行长",
+    "category": "财经",
+    "summary": "欧洲央行行长拉加德宣布将于 2027-02-07 卸任，比任期结束早 9 个月，理由是想在货币政策以外的议题上自由发言。她另发帖解释脸上的胶布来自本周一次小手术。冯德莱恩称赞她的领导；继任人选讨论集中在 Klaas Knot、Pablo Hernández de Cos 等人。",
+    "url": "https://x.com/i/trending/2115748808801845666",
+    "score": 82189,
+    "engagement": 47033,
+    "post_count": 35156,
+    "post_count_query": "\"Lagarde\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 47,033 + 关键词近 24h 帖数 35,156",
+    "posts": [
+     {
+      "author": "@Lagarde",
+      "author_name": "Christine Lagarde",
+      "url": "https://x.com/Lagarde/status/2115746242491723810",
+      "created_at": "2026-10-29 18:03",
+      "likes": 14769,
+      "replies": 7963,
+      "reposts": 3209,
+      "quotes": 2913,
+      "score": 28854
+     },
+     {
+      "author": "@Lagarde",
+      "author_name": "Christine Lagarde",
+      "url": "https://x.com/Lagarde/status/2115746378181743041",
+      "created_at": "2026-10-29 18:03",
+      "likes": 6693,
+      "replies": 1031,
+      "reposts": 330,
+      "quotes": 174,
+      "score": 8228
+     }
+    ],
+    "published_at": "2026-10-29 18:03",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到欧洲央行 2026-10-29 正式公告：拉加德将于 2027-02-07 卸任（公告未标具体时刻）",
+     "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html"
+    },
+    "rank": 5
+   },
+   {
+    "topic": "美股科技股抛售，纳指单日跌 2.86%",
+    "category": "财经",
+    "summary": "2026-10-30 科技股财报和 AI 投入回报疑虑引发抛售：标普 500 收跌 1.82% 至 7,580.07 点，纳指跌 2.86% 至 25,437.00 点（路透），英特尔跌 28.6%，Alphabet 继周四跌 12.6% 后再跌 1.4%。黄金同步大跌，12 月合约收 3,884.90 美元。",
+    "url": "https://x.com/i/trending/2116226607035625508",
+    "score": 52882,
+    "engagement": 44222,
+    "post_count": 8660,
+    "post_count_query": "\"stock market\" (selloff OR \"sell-off\" OR wiped)",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 44,222 + 关键词近 24h 帖数 8,660；合并 2 个 X 话题",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2116168662558310467",
+      "created_at": "2026-10-30 22:01",
+      "likes": 9576,
+      "replies": 540,
+      "reposts": 1249,
+      "quotes": 449,
+      "score": 11814
+     },
+     {
+      "author": "@Osint613",
+      "author_name": "Open Source Intel",
+      "url": "https://x.com/Osint613/status/2116175115964813660",
+      "created_at": "2026-10-30 22:27",
+      "likes": 9151,
+      "replies": 188,
+      "reposts": 604,
+      "quotes": 188,
+      "score": 10131
+     }
+    ],
+    "published_at": "2026-10-30 22:01",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到收盘跌幅标普 −1.82%、纳指 −2.86%（eOption、路透）；X 上「开盘蒸发 8,500 亿美元」说法未找到可靠来源，本期不采用",
+     "url": "https://www.eoption.com/market-review-october-30-2026/"
+    },
+    "rank": 6
+   },
+   {
+    "topic": "印度 GSLV-F18 把导航卫星 NVS-03 送入轨道",
+    "category": "科技",
+    "summary": "ISRO 的 GSLV-F18 于印度时间 2026-10-30 23:51（北京时间 10-31 02:21）从斯里赫里戈达发射，18 分钟后把 2,250 公斤的 NVS-03 送入地球同步转移轨道。这是 NavIC 第三颗新一代导航卫星，带国产原子钟和 L1 信号；ISRO 北京时间 10-31 02:53 发帖宣布任务成功。",
+    "url": "https://x.com/i/trending/2116233264583320001",
+    "score": 47019,
+    "engagement": 32902,
+    "post_count": 14117,
+    "post_count_query": "GSLV-F18 OR NVS-03",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 32,902 + 关键词近 24h 帖数 14,117",
+    "posts": [
+     {
+      "author": "@isro",
+      "author_name": "ISRO",
+      "url": "https://x.com/isro/status/2116242156646220265",
+      "created_at": "2026-10-31 02:53",
+      "likes": 8580,
+      "replies": 311,
+      "reposts": 2154,
+      "quotes": 273,
+      "score": 11318
+     },
+     {
+      "author": "@Marswalkerr",
+      "author_name": "Sanket Savani",
+      "url": "https://x.com/Marswalkerr/status/2116025745831276772",
+      "created_at": "2026-10-30 12:33",
+      "likes": 5744,
+      "replies": 56,
+      "reposts": 654,
+      "quotes": 49,
+      "score": 6503
+     }
+    ],
+    "published_at": "2026-10-30 12:33",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 ISRO 官方任务页确认 NVS-03 入轨；发射时间 2026-10-30 23:51 IST（北京时间 10-31 02:21）",
+     "url": "https://www.isro.gov.in/ISRO_EN/Mission_GSLVF18.html"
+    },
+    "rank": 7
+   },
+   {
+    "topic": "英国折扣连锁 Poundland 提交拟委任破产管理人通知，1.2 万岗位受威胁",
+    "category": "财经",
+    "summary": "Poundland（门店 600 家）已提交拟委任破产管理人的通知，此前其美国东家 Gordon Brothers 拒绝了管理层支持的爱尔兰 Martin Property Group 收购方案。商务大臣等官员要求解释，工会和议员呼吁保住圣诞前的 1.2 万个岗位。",
+    "url": "https://x.com/i/trending/2115762195657281752",
+    "score": 28583,
+    "engagement": 22832,
+    "post_count": 5751,
+    "post_count_query": "\"Poundland\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 22,832 + 关键词近 24h 帖数 5,751",
+    "posts": [
+     {
+      "author": "@EstherMcVey1",
+      "author_name": "Esther McVey",
+      "url": "https://x.com/EstherMcVey1/status/2115698858097365104",
+      "created_at": "2026-10-29 14:54",
+      "likes": 8475,
+      "replies": 371,
+      "reposts": 1866,
+      "quotes": 75,
+      "score": 10787
+     },
+     {
+      "author": "@Artemisfornow",
+      "author_name": "Bernie",
+      "url": "https://x.com/Artemisfornow/status/2115887131776467189",
+      "created_at": "2026-10-30 03:22",
+      "likes": 7066,
+      "replies": 285,
+      "reposts": 1971,
+      "quotes": 107,
+      "score": 9429
+     }
+    ],
+    "published_at": "2026-10-29 14:54",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 PA/The Standard（2026-10-29）：提交的是拟任命破产管理人的意向通知，获 10 个工作日债权人追索保护，门店照常营业",
+     "url": "https://www.standard.co.uk/business/business-news/poundland-barry-williams-alixpartners-poundstretcher-aldi-b1302814.html"
+    },
+    "rank": 8
+   },
+   {
+    "topic": "加州「弗雷斯诺父亲」被遣返报道翻转：CalMatters 更正",
+    "category": "社会",
+    "summary": "CalMatters 先报道弗雷斯诺 54 岁居民 Luis Arreguin 被 ICE 突然遣返到墨西哥；ICE 随后称他此前被遣返 5 次，犯罪记录包括持械严重袭击、枪支违法和酒驾。CalMatters 北京时间 10-30 09:27 发帖承认当事人隐瞒了犯罪和遣返记录。",
+    "url": "https://x.com/i/trending/2115851590674350271",
+    "score": 19172,
+    "engagement": 17730,
+    "post_count": 1442,
+    "post_count_query": "\"Fresno father\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 17,730 + 关键词近 24h 帖数 1,442",
+    "posts": [
+     {
+      "author": "@BillMelugin_",
+      "author_name": "Bill Melugin",
+      "url": "https://x.com/BillMelugin_/status/2115851586622906642",
+      "created_at": "2026-10-30 01:01",
+      "likes": 9143,
+      "replies": 396,
+      "reposts": 3304,
+      "quotes": 314,
+      "score": 13157
+     },
+     {
+      "author": "@ICEgov",
+      "author_name": "U.S. Immigration and Customs Enforcement",
+      "url": "https://x.com/ICEgov/status/2115859145475621018",
+      "created_at": "2026-10-30 01:31",
+      "likes": 1414,
+      "replies": 39,
+      "reposts": 346,
+      "quotes": 31,
+      "score": 1830
+     }
+    ],
+    "published_at": "2026-10-30 01:01",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 CalMatters 原报道（10-28）和后续说明（10-29），犯罪与遣返记录出自 ICE",
+     "url": "https://calmatters.org/justice/2026/10/fresno-deportation-background/"
+    },
+    "rank": 9
+   },
+   {
+    "topic": "币安安全事件涉及 63 亿美元资产，CFTC 推进交易所自愿注册规则",
+    "category": "加密货币",
+    "summary": "AP 报道币安安全事件涉及 63 亿美元资产，其中 30 亿美元已被冻结，63 亿美元不等于最终损失；X 上 BTC 一度从 80,300 美元跌到 76,418 美元。@WatcherGuru 北京时间 10-31 04:27 称 CFTC 提出加强交易所网络安全的新规，CFTC 主席 10-05 已宣布推进让加密平台自愿注册的规则。",
+    "url": "https://x.com/i/trending/2116034431941300383",
+    "score": 16805,
+    "engagement": 12796,
+    "post_count": 4009,
+    "post_count_query": "\"Binance hack\"",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 12,796 + 关键词近 24h 帖数 4,009；合并 3 个 X 话题",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2116265700482576412",
+      "created_at": "2026-10-31 04:27",
+      "likes": 3089,
+      "replies": 167,
+      "reposts": 396,
+      "quotes": 45,
+      "score": 3697
+     },
+     {
+      "author": "@PEPE_Whale69",
+      "author_name": "OG DEGEN",
+      "url": "https://x.com/PEPE_Whale69/status/2115957256730693685",
+      "created_at": "2026-10-30 08:01",
+      "likes": 1793,
+      "replies": 248,
+      "reposts": 405,
+      "quotes": 98,
+      "score": 2544
+     }
+    ],
+    "published_at": "2026-10-30 08:01",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 核到 AP（2026-10-30 07:28 北京时间）：事件涉及 63 亿美元资产，其中 30 亿美元已冻结；CFTC 主席 10-05 已宣布推进自愿注册规则",
+     "url": "https://apnews.com/article/39cda8ceb8095e036334a18549d3d20d"
+    },
+    "rank": 10
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "Filecoin 官方推介 Warm Storage：读取 300 毫秒、写入不到 1 秒",
+    "summary": "@Filecoin 北京时间 2026-10-30 04:53 发帖，称面向 Agent 记忆和产物存储的 Filecoin Warm Storage 读取「~300 ms」、直接从存储提供商读取，写入不到 1 秒；帖子 147 赞、15 评论。判断：帖子 147 赞、15 评论，未附新版本号或发布公告，属于产品推介，不是新功能上线。",
+    "source_url": "https://x.com/Filecoin/status/2115909925520208097",
+    "source_name": "X @Filecoin",
+    "published_at": "2026-10-30 04:53",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "官方一手",
+    "type": "x",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方帖原文"
+    }
+   },
+   {
+    "title": "FIL 24 小时涨 3.88% 至 0.8663 美元，CMC 称无项目专属催化",
+    "summary": "CoinGecko 北京时间 2026-10-31 07:27 快照：FIL 0.8663 美元，24 小时 +3.88%。CoinMarketCap 的 AI 行情分析（2026-10-30 23:14 北京时间）称前一日 FIL 24 小时跌 5.19% 至 0.868 美元、成交额增 85% 至 2.14 亿美元，未找到项目专属新闻。判断：72 小时内 Protocol Labs、Filecoin Foundation、FilOz 均无 Filecoin 新公告，价格波动跟随大盘。",
+    "source_url": "https://coinmarketcap.com/cmc-ai/filecoin/price-analysis/",
+    "source_name": "CoinMarketCap / CoinGecko",
+    "published_at": "2026-10-30 23:14",
+    "fetched_at": "2026-10-31 07:40",
+    "grade": "专业数据平台",
+    "type": "news",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex 读到 CMC 行情分析原文（2026-10-30 15:14 UTC）；FIL 价格为 CoinGecko 快照",
+     "url": "https://coinmarketcap.com/cmc-ai/filecoin/price-analysis/"
+    }
+   }
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-10-31",
+   "cutoff": "2026-10-31 07:40（北京时间）",
+   "cutoff_note": "标普500、纳指、美元指数、10 年期美债为 2026-10-30（周五）收盘，周末休市。黄金为 12 月合约末价，布伦特 12 月合约 10-30 到期，本表改用 1 月合约结算价。BTC、ETH、FIL 为 CoinGecko 同一批快照（2026-10-31 07:27），涨跌为 24 小时变动。",
+   "missing": [
+    {
+     "item": "Farside 2026-10-30 BTC 现货 ETF 全天流向",
+     "reason": "截至本期截止 IBIT、FBTC 等 9 只基金未出数"
+    },
+    {
+     "item": "11-01 OPEC+ 七国会议具体时刻",
+     "reason": "沙特通讯社只公布日期"
+    },
+    {
+     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
+     "reason": "未找到可抓取的同批数据源"
+    },
+    {
+     "item": "10-29、10-30 两期日报",
+     "reason": "这两天自动任务未完成发布，本期覆盖 10-28 07:30 以来的内容"
+    }
+   ],
+   "yesterday_check": "昨日待验证：Alphabet、微软资本开支指引（北京时间 2026-10-29 04:30 起）；纳指能否守住 26,477.81。；德黑兰会谈后续是否有书面协议；沙特是否公布 Ras Tanura 损失。；美联储声明与主席沃什记者会对 12 月加息的表态；投票是否有人反对。；卢拉政府是否公布具体财政措施；Ibovespa 能否回到 176,608 点以上。；Farside 2026-10-27、10-28 ETF 流向；Strategy 下周一是否恢复买入；BTC 能否守住 80,000 美元。；巴西央行 2026-10-30 截止后公布的申请名单；币安下架 22 个币种的具体清单。（结果须在今日正文逐条写明）",
+   "three_lines": [
+    {
+     "conclusion": "科技股抛售：纳指 −2.86%、标普 500 −1.82%，英特尔跌 28.6%，美股连跌三周。",
+     "support": "路透、AP 收盘数据；AI 投入回报疑虑叠加英特尔财报。"
+    },
+    {
+     "conclusion": "美联储、欧洲央行、日本央行全部维持利率；拉加德宣布 2027-02-07 卸任。",
+     "support": "三家央行官方声明；美联储 2 票主张加息。"
+    },
+    {
+     "conclusion": "BTC 跌回 77,035 美元，币安安全事件涉及 63 亿美元资产。",
+     "support": "CoinGecko 07:27 快照；AP 报道 30 亿美元已冻结。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,580.07",
+     "change": "−1.82%（较前收）",
+     "time": "2026-10-31 04:00",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5EGSPC/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Codex 核到路透收盘报道：7,580.07、−140.32 点、−1.82%",
+      "url": "https://www.investing.com/news/economy-news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-4985741"
+     }
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "25,437.00",
+     "change": "−2.86%（较前收）",
+     "time": "2026-10-31 04:00",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5EIXIC/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Codex 核到路透收盘报道：25,437.00、−747.73 点、−2.86%",
+      "url": "https://www.investing.com/news/economy-news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-4985741"
+     }
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "101.96",
+     "change": "−0.08%（较前收）",
+     "time": "2026-10-31 04:59",
+     "status": "收盘",
+     "source": "Yahoo Finance / Investing.com",
+     "source_url": "https://finance.yahoo.com/quote/DX-Y.NYB/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "单一来源",
+      "by": "Codex",
+      "source": "Yahoo 末价 101.964；涨跌幅只有 Investing.com 日线一个来源（页面无发布时间），不计为核实",
+      "url": "https://www.investing.com/indices/usdollar-historical-data"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "4.929%",
+     "change": "−5.7 bp（较前收）",
+     "time": "2026-10-31 02:59",
+     "status": "收盘",
+     "source": "Yahoo Finance",
+     "source_url": "https://finance.yahoo.com/quote/%5ETNX/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "Codex",
+      "values": [
+       {
+        "value": "4.929%、−5.7 bp",
+        "source": "Yahoo Finance ^TNX",
+        "url": "https://finance.yahoo.com/quote/%5ETNX/"
+       },
+       {
+        "value": "4.931%、−5.8 bp",
+        "source": "路透晚间报价（Codex 核对）",
+        "url": "https://www.investing.com/news/economy-news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-4985741"
+       }
+      ],
+      "reason": "两家取价时点不同，相差 0.002 个百分点"
+     }
+    },
+    {
+     "asset": "COMEX 黄金（12月）",
+     "value": "3,884.90 美元/盎司",
+     "change": "−3.63%（较前收）",
+     "time": "2026-10-31 04:59",
+     "status": "收盘",
+     "source": "Yahoo Finance / Investing.com",
+     "source_url": "https://finance.yahoo.com/quote/GC=F/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "Codex",
+      "values": [
+       {
+        "value": "末价 3,884.90（−146.50，−3.63%）",
+        "source": "Investing.com GCZ6 行情页（与 Yahoo 末价一致）",
+        "url": "https://www.investing.com/commodities/gold"
+       },
+       {
+        "value": "10-30 结算价 3,898.90（−132.50，−3.29%）",
+        "source": "eOption 收盘复盘",
+        "url": "https://www.eoption.com/market-review-october-30-2026/"
+       }
+      ],
+      "reason": "结算价与结算后交易形成的末价不同，本表用末价"
+     }
+    },
+    {
+     "asset": "布伦特原油（1月）",
+     "value": "113.43 美元/桶",
+     "change": "+2.37%（较前收）",
+     "time": "2026-10-31 02:30",
+     "status": "收盘",
+     "source": "PFL Petroleum 结算数据",
+     "source_url": "https://pflpetroleum.com/reports/petroleum-daily-report-10-30-2026/",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "Codex",
+      "values": [
+       {
+        "value": "1 月合约结算 113.43（+2.63 美元）；12 月合约 10-30 到期结算 117.64（+2.4%）",
+        "source": "PFL Petroleum 2026-10-30 石油日报、eOption",
+        "url": "https://pflpetroleum.com/reports/petroleum-daily-report-10-30-2026/"
+       },
+       {
+        "value": "Yahoo BZ=F 连续合约 05:00 末价 112.33",
+        "source": "Yahoo Finance",
+        "url": "https://finance.yahoo.com/quote/BZ=F/"
+       }
+      ],
+      "reason": "12 月合约 10-30 到期，主力换到 1 月；Yahoo 为结算后报价，路透写 12 月合约 117.63，与 PFL 差 0.01"
+     }
+    },
+    {
+     "asset": "BTC",
+     "value": "77,035 美元",
+     "change": "−1.98%（24h）",
+     "time": "2026-10-31 07:27",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/bitcoin",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "单一来源",
+      "by": "Codex",
+      "source": "同一时点无第二个带时间报价，不计为核实",
+      "url": ""
+     }
+    },
+    {
+     "asset": "ETH",
+     "value": "2,240.11 美元",
+     "change": "−1.04%（24h）",
+     "time": "2026-10-31 07:27",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/ethereum",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "单一来源",
+      "by": "Codex",
+      "source": "同一时点无第二个带时间报价，不计为核实",
+      "url": ""
+     }
+    },
+    {
+     "asset": "FIL",
+     "value": "0.8663 美元",
+     "change": "+3.88%（24h）",
+     "time": "2026-10-31 07:27",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/filecoin",
+     "fetched_at": "2026-10-31 07:40",
+     "crosscheck": {
+      "status": "单一来源",
+      "by": "Codex",
+      "source": "同一时点无第二个带时间报价，不计为核实",
+      "url": ""
+     }
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "AI 投入回报疑虑引爆科技股抛售：纳指 −2.86%，英特尔跌 28.6%。",
+       "facts": "2026-10-30 收盘：标普 500 −1.82% 至 7,580.07 点，纳指 −2.86% 至 25,437.00 点（路透）。英特尔财报显示现金消耗压力、PC 需求放缓，股价跌 28.6%；Alphabet 周四跌 12.6% 后周五再跌 1.4%。美联社：标普 500 本周 −0.6%、纳指本周 −2.0%，连续第三周下跌，是 6 月以来最差单日表现。",
+       "plain": "大厂花钱买算力的速度快过赚钱的速度，市场开始用脚投票，芯片和云厂商一起挨打。",
+       "affects": "美股科技与芯片股、AI 概念股、全球风险资产。",
+       "pricing": "已定价",
+       "pricing_evidence": "纳指单日已跌 2.86%，英特尔、Alphabet 跌幅已在价格里。",
+       "next_check": "下周一（北京时间 11-02 22:30 起）纳指能否守住 25,437.00；11-02 23:00 ISM 制造业 PMI。",
+       "risks": "判断：纳指三周累计下跌且单日 −2.86%，若 11-02 开盘再跌 1% 以上，空头力量会延续到 11-06 非农。",
+       "sources": [
+        {
+         "outlet": "Reuters（Investing.com 转载）",
+         "title": "Stocks slump, bonds leap as AI giants' spending spooks investors",
+         "url": "https://www.investing.com/news/economy-news/stocks-slump-bonds-leap-as-ai-giants-spending-spooks-investors-4985741",
+         "date": "2026-10-30"
+        },
+        {
+         "outlet": "AP",
+         "title": "How major US stock indexes fared 10/30/2026",
+         "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2",
+         "date": "2026-10-30"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Codex 核到 AP（北京时间 2026-10-31 04:21 发布）周跌幅与路透收盘数据一致；英特尔跌幅只有路透",
+        "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a01d3551e794fed1a0c317c20bc3f0a2"
+       }
+      },
+      {
+       "no": 2,
+       "headline": "三大央行本周全部按兵不动；拉加德宣布 2027-02-07 提前卸任。",
+       "facts": "美联储北京时间 10-29 02:00 维持 3.75%—4.00%，10 票赞成、2 票反对（Cook、Hammack 主张加息 25bp）。欧洲央行 10-29 三项利率不变，存款利率 2.50%；同日官方公告拉加德将于 2027-02-07 卸任。日本央行北京时间 10-30 11:02 维持 1.25%，8 比 1（高田创主张升至 1.50%），并决定从 2027 年 1 月起加快出售 ETF。",
+       "plain": "通胀还高、增长还稳，央行都在等数据；美联储内部已有 2 人想加息。",
+       "affects": "美债收益率、美元、欧元、日元。",
+       "pricing": "部分定价",
+       "pricing_evidence": "10 年期美债收益率周五仍跌 5.7 bp 至 4.929%，抛售中资金躲进债市；美联储加息分歧未体现在收益率上。",
+       "next_check": "11-06 21:30 美国 10 月非农；12 月 FOMC 前美联储官员讲话。",
+       "risks": "判断：美联储已有 2 票主张加息，若 11-06 非农和工资继续强，12 月 FOMC 反对票增到 3 票以上、10 年期收益率回到 5% 的风险会上升。",
+       "sources": [
+        {
+         "outlet": "Federal Reserve",
+         "title": "FOMC statement 2026-10-28",
+         "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+         "date": "2026-10-28"
+        },
+        {
+         "outlet": "ECB",
+         "title": "Monetary policy decisions",
+         "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+         "date": "2026-10-29"
+        },
+        {
+         "outlet": "ECB",
+         "title": "Lagarde to step down 2027-02-07",
+         "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr261029~abbb6dc64b.en.html",
+         "date": "2026-10-29"
+        },
+        {
+         "outlet": "Bank of Japan",
+         "title": "Statement on Monetary Policy",
+         "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+         "date": "2026-10-30"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Codex 读到三家央行官方声明原文，利率、票数、发布时间一致",
+        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm"
+       }
+      },
+      {
+       "no": 3,
+       "headline": "美国三季度 GDP 折年 +3.4%，但 9 月 PCE 同比 3.6%，通胀仍高。",
+       "facts": "BEA 北京时间 10-29 20:30：三季度实际 GDP 初值折年 +3.4%（二季度 +2.2%）；9 月 PCE 价格指数环比 +0.5%、同比 +3.6%，核心 PCE 同比 +3.1%。BLS 北京时间 10-30 20:30：三季度就业成本指数环比 +0.8%。",
+       "plain": "经济跑得快、物价也降不下来，降息离得更远。",
+       "affects": "美债、美元、利率敏感板块。",
+       "pricing": "部分定价",
+       "pricing_evidence": "数据公布后美联储仍维持利率；周五债市反涨，资金更关注科技股抛售。",
+       "next_check": "11-02 23:00 ISM 制造业 PMI；11-06 21:30 非农。",
+       "risks": "判断：核心 PCE 同比 3.1%、高于 2% 目标 1.1 个百分点，12 月降息概率低于 10%。",
+       "sources": [
+        {
+         "outlet": "BEA",
+         "title": "GDP advance estimate, 3rd quarter 2026",
+         "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+         "date": "2026-10-29"
+        },
+        {
+         "outlet": "BEA",
+         "title": "Personal income and outlays, September 2026",
+         "url": "https://www.bea.gov/news/2026/personal-income-and-outlays-september-2026",
+         "date": "2026-10-29"
+        },
+        {
+         "outlet": "BLS",
+         "title": "Employment Cost Index",
+         "url": "https://www.bls.gov/news.release/eci.nr0.htm",
+         "date": "2026-10-30"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Codex 读到 BEA、BLS 官方发布稿原文",
+        "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "布伦特 12 月合约到期收 117.64 美元（+2.4%），主力 1 月合约收 113.43。",
+       "facts": "10-30 布伦特 12 月合约到期结算 117.64 美元（+2.76），1 月合约结算 113.43 美元（+2.63）（PFL、eOption）。PFL 称霍尔木兹海峡油轮遇袭、胡塞武装声称袭击沙特能源设施推高供应担忧。黄金同日大跌，12 月合约末价 3,884.90 美元（−3.63%）。",
+       "plain": "中东风险推油价，股市抛售压黄金，两者走势分开。",
+       "affects": "能源股、航空、通胀预期、黄金矿业股。",
+       "pricing": "部分定价",
+       "pricing_evidence": "油价当日已涨 2.4%；油轮遇袭和胡塞袭击的损失未公布，未进入价格。",
+       "next_check": "11-01 OPEC+ 七国会议（具体时刻未公布）；沙特对能源设施受损的官方说明。",
+       "risks": "判断：1 月合约 113.43 美元，若 11-01 OPEC+ 不增产且中东袭击延续，突破 117.64 的概率高于跌回 110。",
+       "sources": [
+        {
+         "outlet": "PFL Petroleum",
+         "title": "Petroleum Daily Report 10-30-2026",
+         "url": "https://pflpetroleum.com/reports/petroleum-daily-report-10-30-2026/",
+         "date": "2026-10-30"
+        },
+        {
+         "outlet": "eOption",
+         "title": "Market Review October 30, 2026",
+         "url": "https://www.eoption.com/market-review-october-30-2026/",
+         "date": "2026-10-30"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Codex 核到 PFL 与 eOption 的 12 月合约结算价一致（117.64）；路透写 117.63；油轮遇袭、胡塞袭击只有 PFL 一个来源",
+        "url": "https://www.eoption.com/market-review-october-30-2026/"
+       }
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 5,
+       "headline": "BTC 跌回 77,035 美元；ETF 10-29 净流入 1,720 万美元，10-30 未出齐。",
+       "facts": "CoinGecko 北京时间 07:27：BTC 77,035 美元（24h −1.98%），ETH 2,240.11 美元（−1.04%）。Farside：10-29 美国 BTC 现货 ETF 净流入 1,720 万美元（IBIT +1,280 万、FBTC +1,050 万）；10-30 仍有 9 只基金未出数，已披露的 GBTC 流出 5,330 万美元。",
+       "plain": "科技股大跌拖累加密货币，ETF 资金进出都很小。",
+       "affects": "BTC、ETH、加密相关股票。",
+       "pricing": "部分定价",
+       "pricing_evidence": "BTC 已从 80,300 美元跌到 77,035 美元；10-30 ETF 全天数据未出。",
+       "next_check": "Farside 10-30 完整数据；BTC 能否守住 76,418 美元（X 上 10-30 低点）。",
+       "risks": "判断：已披露的 GBTC 单日流出 5,330 万美元，超过 10-29 全部净流入 1,720 万美元，其余 9 只基金需合计流入 5,330 万美元以上 10-30 才能转正。",
+       "sources": [
+        {
+         "outlet": "CoinGecko",
+         "title": "Bitcoin price",
+         "url": "https://www.coingecko.com/en/coins/bitcoin",
+         "date": "2026-10-31"
+        },
+        {
+         "outlet": "Farside",
+         "title": "Bitcoin ETF Flow",
+         "url": "https://farside.co.uk/btc/",
+         "date": "2026-10-30"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "单一来源",
+        "by": "Codex",
+        "source": "Farside 数值由 Codex 读表核到；BTC 报价同一时点无第二来源",
+        "url": "https://farside.co.uk/btc/"
+       }
+      },
+      {
+       "no": 6,
+       "headline": "币安安全事件涉及 63 亿美元资产，30 亿美元已冻结；CFTC 推进交易所自愿注册。",
+       "facts": "AP（北京时间 2026-10-30 07:28）：币安安全事件涉及 63 亿美元资产，其中 30 亿美元已被冻结，最终损失未定。CFTC 主席 Selig 10-05 已宣布推进让加密平台自愿接受联邦监管的注册规则；@WatcherGuru 北京时间 10-31 04:27 称 CFTC 提出加强交易所网络安全的新规。",
+       "plain": "最大交易所出事，监管顺势加码，短期压制币价和交易所信心。",
+       "affects": "BTC、BNB、交易所股票。",
+       "pricing": "部分定价",
+       "pricing_evidence": "BTC 当天跌到 76,418 美元；最终损失金额和追回进度未公布。",
+       "next_check": "币安官方损失与赔付说明；CFTC 新规原文与意见征集期限。",
+       "risks": "判断：63 亿美元中 30 亿已冻结，未冻结的 33 亿美元若无追回进展，交易所资金流出会持续到下周。",
+       "sources": [
+        {
+         "outlet": "AP",
+         "title": "Binance security incident",
+         "url": "https://apnews.com/article/39cda8ceb8095e036334a18549d3d20d",
+         "date": "2026-10-29"
+        },
+        {
+         "outlet": "CFTC",
+         "title": "Statement of Chairman Selig",
+         "url": "https://www.cftc.gov/PressRoom/SpeechesTestimony/seligstatement100526",
+         "date": "2026-10-05"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Codex 核到 AP 原文（2026-10-29 23:28 UTC）与 CFTC 主席 10-05 声明",
+        "url": "https://apnews.com/article/39cda8ceb8095e036334a18549d3d20d"
+       }
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "time_bj": "2026-10-31 09:30",
+     "event": "中国 10 月官方 PMI",
+     "watch": "制造业 PMI 是否站上 50"
+    },
+    {
+     "time_bj": "2026-11-01 14:00",
+     "event": "美国结束夏令时",
+     "watch": "之后美股常规开盘为北京时间 22:30"
+    },
+    {
+     "time_bj": "2026-11-02 13:00",
+     "event": "日本央行 10 月经济与物价展望报告全文",
+     "watch": "对加息路径的表述"
+    },
+    {
+     "time_bj": "2026-11-02 23:00",
+     "event": "美国 10 月 ISM 制造业 PMI",
+     "watch": "新订单与价格分项"
+    },
+    {
+     "time_bj": "2026-11-06 21:30",
+     "event": "美国 10 月非农就业报告",
+     "watch": "非农、失业率、平均时薪"
+    }
+   ],
+   "events_source": [
+    {
+     "outlet": "国家统计局",
+     "title": "2026 年主要统计信息发布日程表",
+     "url": "https://www.stats.gov.cn/xw/tjxw/tzgg/202512/t20251224_1962137.html"
+    },
+    {
+     "outlet": "NIST",
+     "title": "Daylight Saving Time",
+     "url": "https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst"
+    },
+    {
+     "outlet": "Bank of Japan",
+     "title": "Statement on Monetary Policy",
+     "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf"
+    },
+    {
+     "outlet": "ISM",
+     "title": "ROB report calendar",
+     "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar"
+    },
+    {
+     "outlet": "BLS",
+     "title": "Employment Situation schedule",
+     "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+    }
+   ],
+   "footer": "以上仅作信息参考。"
+  },
+  "github_tools": [
+   {
+    "name": "Lightricks/LTX-2",
+    "repo": "Lightricks/LTX-2",
+    "url": "https://github.com/Lightricks/LTX-2",
+    "title": "Lightricks 开源的音画同步视频生成模型 LTX-2.5，文字或图片直接出带声音的视频",
+    "summary": "LTX-2 是 Lightricks 开源的 DiT 音视频基础模型，一个模型同时生成画面和同步音频，当前主力权重是 LTX-2.5（22B）。仓库提供多种推理管线：最快的蒸馏管线、出片质量更高的 DFR 管线、关键帧插值、视频转视频。注意：星标 9,983，低于 1 万，按动效类特别好用放宽门槛（≥3,000）收录。",
+    "features": [
+     "文生视频、图生视频，同时生成同步音频（需加载 audio VAE）",
+     "DFR 管线：生成关键帧并做空间细化，默认 1024×1536、24 fps，支持 3840×2176 4K 和 2 倍/4 倍补帧",
+     "关键帧插值管线：给首尾帧生成中间过渡",
+     "IC-LoRA 管线：视频转视频、风格迁移"
+    ],
+    "scenarios": [
+     "给一段动效片头生成带音效的 5 秒镜头",
+     "用两张设计稿做首尾关键帧，让模型补出过渡动画",
+     "把实拍素材转成统一风格，再导入剪辑软件"
+    ],
+    "for_you": "对你的用处：做动效视频时用它补 AI 生成的镜头和过渡，DFR 管线出的 4K 素材可以直接放进 Remotion 或 AE 合成；音画同步省掉单独配音效的步骤。",
+    "setup": "安装：git clone 后用 uv sync 装依赖，再用 hf download 从 Hugging Face 下载权重；需高显存 NVIDIA 显卡和命令行操作，不用写代码；模型开源，许可证 GitHub 标为 NOASSERTION（自定义许可），商用前需读 LICENSE。",
+    "stars": 9983,
+    "last_push": "2026-10-18",
+    "fetched_at": "2026-10-31 07:25",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "repo": "Anil-matcha/AI-Youtube-Shorts-Generator",
+    "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+    "title": "开源版 Opus Clip：长视频自动切成带评分的 9:16 竖屏短视频",
+    "summary": "把一条 YouTube 长视频或本地视频丢进去，用 Whisper 转写、大模型挑出最有传播力的片段，再自动裁成 9:16 竖屏，输出每段的评分、开头钩子和入选理由。可走 MuAPI 云端模式，也可本地离线跑（只有挑片段一步调 OpenAI 或 Gemini）。注意：星标 5,676，低于 1 万，按视频类特别好用放宽门槛（≥3,000）收录。",
+    "features": [
+     "Whisper 转写（云端或本地 faster-whisper，支持 CPU/CUDA）",
+     "大模型按钩子、情绪高点、金句等维度给片段打分并去重",
+     "自动竖屏裁切：本地模式用 OpenCV 人脸跟踪加运动平滑",
+     "--output-json 输出完整转写、候选片段和成片路径，支持本地文件和批量"
+    ],
+    "scenarios": [
+     "把一期 40 分钟的讲解视频切成 5 条竖屏短视频",
+     "先用 JSON 结果挑出高分片段，再进剪辑软件加动效字幕",
+     "批量处理一个频道的旧视频做二次分发"
+    ],
+    "for_you": "对你的用处：做完长版动效视频后，用它自动出 5 条竖屏切片和钩子文案，再用 Remotion 统一加字幕包装，省掉手动找高光的时间。",
+    "setup": "安装：需 Python、FFmpeg，pip 安装依赖后运行 python main.py \"视频链接\" --mode local；不用写代码，命令行操作；代码开源免费，但需自备 OpenAI 或 Gemini API key（本地模式）或 MuAPI key（云端模式，按量付费）。",
+    "stars": 5676,
+    "last_push": "2026-10-24",
+    "fetched_at": "2026-10-31 07:25",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "Comfy-Org/ComfyUI-Manager",
+    "repo": "Comfy-Org/ComfyUI-Manager",
+    "url": "https://github.com/Comfy-Org/ComfyUI-Manager",
+    "title": "ComfyUI 插件管家：一键安装视频生成工作流缺的节点和模型",
+    "summary": "ComfyUI-Manager 是 ComfyUI 的官方扩展，用来安装、卸载、禁用和启用自定义节点，并提供插件中心。下载别人分享的视频生成工作流（Wan、LTX、HunyuanVideo 等）时，它能识别缺失节点并一键补装，是跑 ComfyUI 视频工作流的基础工具。",
+    "features": [
+     "在 ComfyUI 界面里安装、卸载、禁用、启用自定义节点",
+     "打开工作流后自动列出缺失节点并一键安装",
+     "插件中心浏览节点和模型信息，支持更新全部插件",
+     "提供 comfy-cli、便携版脚本、Linux venv 脚本和 Colab 笔记本 4 种安装方式"
+    ],
+    "scenarios": [
+     "导入网上的 LTX-2 或 Wan 视频工作流后补齐缺失节点",
+     "给 ComfyUI 装上视频合成、补帧、放大类节点",
+     "重装环境时用 comfy-cli 一次装好 ComfyUI 和 Manager"
+    ],
+    "for_you": "对你的用处：你 10-25 收到的 ComfyUI 推荐配上它才好用，跑 AI 视频工作流时不用手动找节点仓库；做动效素材时也能快速装上补帧、放大节点。",
+    "setup": "安装：已有 ComfyUI 时 git clone 到 custom_nodes 目录，或 pip install comfy-cli 后 comfy install 一次装好；不用写代码；开源免费（GPL-3.0）。",
+    "stars": 16654,
+    "last_push": "2026-10-28",
+    "fetched_at": "2026-10-31 07:25",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "modelcontextprotocol/servers",
+    "repo": "modelcontextprotocol/servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "title": "MCP 官方参考服务器合集：给 AI 接文件、网页、Git、记忆等工具",
+    "summary": "Model Context Protocol 官方维护的参考服务器仓库，演示如何让 Claude、Codex 等 AI 通过 MCP 调用外部工具。当前保留 7 个参考服务器，其余旧服务器已归档到 servers-archived 或转给官方厂商维护。",
+    "features": [
+     "Filesystem：带访问控制的本地文件读写",
+     "Fetch：抓网页并转成适合大模型读的格式",
+     "Git：读取、搜索、操作 Git 仓库",
+     "Memory、Sequential Thinking、Time：知识图谱记忆、分步推理、时区换算"
+    ],
+    "scenarios": [
+     "让 Claude Desktop 直接读写你的动效项目文件夹",
+     "让 AI 抓取参考网页内容整理成脚本",
+     "用 Memory 服务器记住项目的品牌色和字体规范"
+    ],
+    "for_you": "对你的用处：给 Claude 接上 Filesystem 和 Git 服务器后，它能直接改你的 Remotion 工程文件并提交版本，不用来回复制代码。",
+    "setup": "安装：在 Claude Desktop 或其他 MCP 客户端的配置文件里加一段 npx 或 uvx 启动命令即可；不用写代码，要改 JSON 配置；开源免费。",
+    "stars": 91702,
+    "last_push": "2026-10-29",
+    "fetched_at": "2026-10-31 07:25",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "openai/codex",
+    "repo": "openai/codex",
+    "url": "https://github.com/openai/codex",
+    "title": "OpenAI 官方编程 Agent Codex CLI：在本机终端里读代码、改代码、跑命令",
+    "summary": "Codex CLI 是 OpenAI 在本机运行的编程 Agent，在终端里理解代码库、修改文件、执行命令；也有 IDE 插件（VS Code、Cursor、Windsurf）和桌面应用（codex app）。10-29 发布的 0.166.0 已加入 GPT-6.1 Terra。",
+    "features": [
+     "终端交互式编程：读代码、改文件、运行测试",
+     "codex exec 非交互模式，适合脚本和自动化",
+     "IDE 插件和 codex app 桌面版",
+     "支持 ChatGPT 账号登录或 API key"
+    ],
+    "scenarios": [
+     "让它在 Remotion 工程里新建一个动画组件并跑预览",
+     "批量改一批 Manim 场景脚本的配色",
+     "写一个把素材自动转码、改名的小脚本"
+    ],
+    "for_you": "对你的用处：和 Claude 并用写动效代码，用 codex exec 让它批量生成或修改 Remotion/Manim 场景，再自己挑结果。",
+    "setup": "安装：curl -fsSL https://chatgpt.com/codex/install.sh | sh，或 npm install -g @openai/codex、brew install --cask codex；不用写代码，用自然语言指挥；工具开源（Apache-2.0），使用需 ChatGPT 付费订阅或 API 额度。",
+    "stars": 131917,
+    "last_push": "2026-10-30",
+    "fetched_at": "2026-10-31 07:25",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   }
+  ]
+ },
+ "updated_at": "2026-10-31T07:34:55+08:00"
+}
