@@ -1,0 +1,1135 @@
+{
+ "date": "2026-11-05",
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-11-05 07:30",
+   "basis": "按公司分组（OpenAI / Anthropic / xAI / Google / Grok Bot），收上期截止 2026-11-04 07:25 后的新内容；X API 检索官方号原创帖（不含转发与回复，共 3 条：OpenAI 内核漏洞、OpenAI 开发者 10 月汇总、Anthropic vault 结构），另抓取 x.ai Grok Bot 更新日志",
+   "missing": [],
+   "pending": [],
+   "overflow": []
+  },
+  "x_top": {
+   "as_of": "2026-11-05 07:30",
+   "basis": "X search_news 5 组查询（max_age_hours=24）合并去重成候选池；同一事件合并（美国中期选举 5 个、南非选举 3 个、比特币 2 个话题）；热度 = 每话题 X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 + get_posts_counts_recent 关键词近 24h 帖数（起点 2026-11-03 23:30 UTC），取前 10",
+   "exclude": "排除体育、娱乐话题（Arsenal、A2O SOUL、Jennie、Love Island 等）；含 AI 的话题（马斯克太空算力、Riot AI 数据中心、Anthropic IPO 押注）；无法核实内容的帖子（莫迪「更快司法」帖仅一句话，未能确认所指政策；美国太空军月球「作战域」帖、NASA 雨燕相关帖，聚合帖混入无关内容）；上期已收录话题（肯尼亚反对派、韩国冷钱包）",
+   "missing": [],
+   "pending": [],
+   "note": "第 11 名起：印度莫迪「更快司法」帖（9,670）、美国太空军月球作战域（未计数）。X 互动数与帖数为 X API 一手计数。"
+  },
+  "filecoin": {
+   "as_of": "2026-11-05 07:30",
+   "basis": "检索 2026-11-04 07:25 后 @Filecoin、@_FilOz、@FilFoundation、@protocollabs 官方号原创帖（X API），均无 Filecoin 新内容；FIL 价格为 CoinGecko 快照",
+   "missing": [
+    {
+     "item": "Filecoin 协议或网络新公告",
+     "reason": "四个官方号 2026-11-04 07:25 后无 Filecoin 相关原创帖"
+    }
+   ],
+   "pending": []
+  },
+  "finance": {
+   "as_of": "2026-11-05 07:30",
+   "basis": "固定 9 项行情 + 要闻，按 FINANCE_SPEC 结构；传统资产为 2026-11-04（周三）收盘或结算，加密为 CoinGecko 新快照；新增美股、油价、苹果、ISM、比特币、Stripe 六条",
+   "missing": [
+    {
+     "item": "Farside 2026-11-04 BTC 现货 ETF 全天流向",
+     "reason": "本期未抓取到 Farside 完整数据，不写入"
+    },
+    {
+     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
+     "reason": "未找到可抓取的同批数据源"
+    }
+   ]
+  },
+  "github_tools": {
+   "as_of": "2026-11-05 07:30",
+   "basis": "按用户做动效视频的需求，4 个为动效/视频类：网页动画库 GSAP（30,175 星）、视频剪辑 Shotcut（15,597 星）、无损剪切 LosslessCut（45,713 星）、录屏 OBS Studio（78,964 星）；另 1 个为浏览器端 AI 模型库 Transformers.js（16,400 星）；5 个均未归档、近 90 天内有推送、仓库页返回 200、与历史推荐不重复；星标与最近推送来自 GitHub API 实时数据（北京时间 2026-11-05 07:25 取数），用途依据各仓库 README",
+   "missing": []
+  }
+ },
+ "sections": {
+  "ai_labs": [
+   {
+    "lab": "OpenAI",
+    "title": "OpenAI 用自动化漏洞挖掘流程在 Linux 内核找到并修复 948 个提权漏洞",
+    "summary": "OpenAI 发帖介绍一套自主网络安全漏洞挖掘流程，配合即将推出的网络安全模型，在 Linux 内核中发现了 948 个本地提权漏洞并已完成修复。帖子未公布新模型的名称、上线时间和价格。",
+    "source_url": "https://x.com/OpenAI/status/2118119451401048497",
+    "source_name": "X @OpenAI",
+    "published_at": "2026-11-05 07:13",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 X @OpenAI 原帖，发帖距发稿不足 1 小时，暂无第三方报道"
+    }
+   },
+   {
+    "lab": "OpenAI",
+    "title": "OpenAI 开发者号发布 10 月开发者更新汇总",
+    "summary": "@OpenAIDevs 发布长文《October for OpenAI developers》，汇总 10 月面向开发者的 API、Codex 等更新，属月度回顾，未宣布新的独立产品。",
+    "source_url": "https://x.com/OpenAIDevs/status/2118083933233357132",
+    "source_name": "X @OpenAIDevs",
+    "published_at": "2026-11-05 04:52",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 X @OpenAIDevs 原帖"
+    }
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Anthropic：Claude 协助绘出细菌 vault 颗粒的首个三维结构",
+    "summary": "Anthropic 发帖称 Claude 参与了一项结构生物学研究，帮助科研人员绘出细菌 vault 颗粒的首个三维结构。截至抓取时帖子获 2,361 个赞。",
+    "source_url": "https://x.com/AnthropicAI/status/2118073665296228863",
+    "source_name": "X @AnthropicAI",
+    "published_at": "2026-11-05 04:11",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "仅 X @AnthropicAI 原帖，暂无第三方报道"
+    }
+   },
+   {
+    "lab": "xAI",
+    "title": "今日无更新",
+    "summary": "2026-11-04 07:25 至 2026-11-05 07:25（北京时间），@xai、@grok 无原创发布帖，未见新产品或模型。",
+    "source_url": "https://x.com/xai",
+    "source_name": "X @xai",
+    "published_at": "2026-11-05 07:30",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X API 官方号检索结果为 0 条"
+    },
+    "status_card": true
+   },
+   {
+    "lab": "Google",
+    "title": "今日无更新",
+    "summary": "2026-11-04 07:25 至 2026-11-05 07:25（北京时间），@GoogleDeepMind、@GoogleAI 无原创发布帖，未见新产品或模型。",
+    "source_url": "https://x.com/GoogleDeepMind",
+    "source_name": "X @GoogleDeepMind",
+    "published_at": "2026-11-05 07:30",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X API 官方号检索结果为 0 条"
+    },
+    "status_card": true
+   },
+   {
+    "lab": "Grok Bot",
+    "title": "今日无更新",
+    "summary": "x.ai Grok Bot 官方更新日志最新版本仍为 v0.78.1（2026-10-27 发布，北京时间 2026-11-05 07:30 抓取），无新版本。",
+    "source_url": "https://x.ai/changelog/bot",
+    "source_name": "x.ai Grok Bot Changelog",
+    "published_at": "2026-11-05 07:30",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "直接抓取官方更新日志页面，最新版本号 0.78.1"
+    },
+    "status_card": true
+   }
+  ],
+  "x_top": [
+   {
+    "topic": "美国中期选举民主党拿下参众两院，万斯称输在伊朗战争",
+    "category": "时政",
+    "summary": "美东 11-03 中期选举后，民主党赢得众议院和参议院控制权，特朗普所在的共和党失去对国会的单独控制。副总统万斯发长帖称共和党输掉选举的原因是伊朗战争，桑德斯发帖感谢选民「按特朗普在选票上那样投票」，两帖分别获 30.4 万和 14.9 万互动。",
+    "url": "https://x.com/i/trending/2117834258299466235",
+    "score": 713841,
+    "engagement": 572043,
+    "post_count": 141798,
+    "post_count_query": "(midterms OR \"midterm elections\") -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 572,043 + 关键词近 24h 帖数 141,798",
+    "posts": [
+     {
+      "author": "@JDVance",
+      "author_name": "JD Vance",
+      "url": "https://x.com/JDVance/status/2118004988433641835",
+      "created_at": "2026-11-04 23:38",
+      "likes": 213583,
+      "replies": 49667,
+      "reposts": 23307,
+      "quotes": 17059,
+      "score": 303616
+     },
+     {
+      "author": "@BernieSanders",
+      "author_name": "Bernie Sanders",
+      "url": "https://x.com/BernieSanders/status/2118013304610103396",
+      "created_at": "2026-11-05 00:11",
+      "likes": 136312,
+      "replies": 839,
+      "reposts": 11467,
+      "quotes": 204,
+      "score": 148822
+     }
+    ],
+    "published_at": "2026-11-04 10:40",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对",
+     "source": "CBS News（2026-11-04 17:18 ET）与美联社收盘报道一致：民主党控制参众两院",
+     "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/"
+    },
+    "rank": 1
+   },
+   {
+    "topic": "国大党主席卡尔格在旁遮普开启 2027 选战，称 AAP 是「BJP 的 B 队」",
+    "category": "时政",
+    "summary": "国大党主席卡尔格 11-04 在旁遮普桑格鲁尔的集会上启动 2027 年邦议会选举竞选，称执政的平民党（AAP）是印度人民党的「B 队」，在古吉拉特、果阿分走国大党选票，并称从政 60 年没见过比旁遮普 AAP 政府更腐败的政府。拉胡尔·甘地出席集会。",
+    "url": "https://x.com/i/trending/2118011722003009596",
+    "score": 26106,
+    "engagement": 25495,
+    "post_count": 611,
+    "post_count_query": "(Kharge (AAP OR Punjab)) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 25,495 + 关键词近 24h 帖数 611",
+    "posts": [
+     {
+      "author": "@NewsAlgebraIND",
+      "author_name": "News Algebra",
+      "url": "https://x.com/NewsAlgebraIND/status/2117913184917151804",
+      "created_at": "2026-11-04 17:33",
+      "likes": 12916,
+      "replies": 333,
+      "reposts": 1858,
+      "quotes": 133,
+      "score": 15240
+     },
+     {
+      "author": "@INCIndia",
+      "author_name": "Congress",
+      "url": "https://x.com/INCIndia/status/2117911177451930099",
+      "created_at": "2026-11-04 17:25",
+      "likes": 5544,
+      "replies": 626,
+      "reposts": 1046,
+      "quotes": 240,
+      "score": 7456
+     }
+    ],
+    "published_at": "2026-11-04 17:25",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X 聚合新闻与国大党官方号、卡尔格本人帖子一致，未查到独立媒体报道链接"
+    },
+    "rank": 2
+   },
+   {
+    "topic": "民主党横扫后美股开盘大涨，比特币 30 分钟爆空 3.2 亿美元后升破 8.1 万",
+    "category": "加密货币",
+    "summary": "民主党拿下两院后，美股 11-04 开盘市值增加超过 9,000 亿美元。比特币随后升到 8 万美元，30 分钟内 3.2 亿美元空单被强平，并继续升破 8.1 万美元。",
+    "url": "https://x.com/i/trending/2117976148323762207",
+    "score": 24234,
+    "engagement": 22867,
+    "post_count": 1367,
+    "post_count_query": "(Bitcoin (80000 OR \"80,000\" OR \"$80K\" OR 81000 OR \"81,000\")) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 22,867 + 关键词近 24h 帖数 1,367",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2117989886926164261",
+      "created_at": "2026-11-04 22:38",
+      "likes": 6948,
+      "replies": 277,
+      "reposts": 587,
+      "quotes": 127,
+      "score": 7939
+     },
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2117997626515939527",
+      "created_at": "2026-11-04 23:09",
+      "likes": 5258,
+      "replies": 313,
+      "reposts": 533,
+      "quotes": 95,
+      "score": 6199
+     }
+    ],
+    "published_at": "2026-11-04 22:37",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对",
+     "source": "JBizNews 收盘报道（2026-11-04 16:12 ET）：比特币涨 3.6% 至 8 万美元上方",
+     "url": "https://jbiznews.com/closing-bell-dow-soars-1569-points-as-oil-plunges-8-after-democrats-win-congress/"
+    },
+    "rank": 3
+   },
+   {
+    "topic": "GB News 观众 3 天为无家可归退伍军人捐款超 56 万英镑",
+    "category": "社会",
+    "summary": "GB News 主持人 Patrick Christys 11-02 发起为慈善机构 Help 4 Homeless Veterans 募捐，几小时内筹得 32 万英镑，24 小时内含礼品援助税（Gift Aid）达 48.8 万英镑，截至 11-05 02:24 超过 56 万英镑。",
+    "url": "https://x.com/i/trending/2117397763851792724",
+    "score": 20901,
+    "engagement": 20885,
+    "post_count": 16,
+    "post_count_query": "(\"homeless veterans\" (GB News OR GBNEWS OR Christys)) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 20,885 + 关键词近 24h 帖数 16",
+    "posts": [
+     {
+      "author": "@PatrickChristys",
+      "author_name": "Patrick Christys",
+      "url": "https://x.com/PatrickChristys/status/2117401945304654167",
+      "created_at": "2026-11-03 07:42",
+      "likes": 9556,
+      "replies": 302,
+      "reposts": 1813,
+      "quotes": 70,
+      "score": 11741
+     },
+     {
+      "author": "@PatrickChristys",
+      "author_name": "Patrick Christys",
+      "url": "https://x.com/PatrickChristys/status/2117712657696391425",
+      "created_at": "2026-11-04 04:16",
+      "likes": 5602,
+      "replies": 192,
+      "reposts": 989,
+      "quotes": 40,
+      "score": 6823
+     }
+    ],
+    "published_at": "2026-11-03 07:42",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "数字均来自主持人本人 X 帖，未查到慈善机构或第三方公布的数字"
+    },
+    "rank": 4
+   },
+   {
+    "topic": "南非地方选举投票结束，ANC 晒首投族视频遭 Zille 嘲讽",
+    "category": "时政",
+    "summary": "南非 11-04 举行地方政府选举，登记选民超过 2,900 万。ANC 秘书长姆巴卢拉发布两名首次投票者表示支持 ANC 的视频，民主联盟联邦委员会主席 Zille 回帖称「想要改变却投 ANC 就是妄想」；ActionSA 发帖感谢支持者排长队投票。计票仍在进行。",
+    "url": "https://x.com/i/trending/2118035839800533440",
+    "score": 10355,
+    "engagement": 6510,
+    "post_count": 3845,
+    "post_count_query": "((ActionSA OR ANC OR \"MK Party\") (vote OR election OR elections)) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 6,510 + 关键词近 24h 帖数 3,845",
+    "posts": [
+     {
+      "author": "@Action4SA",
+      "author_name": "ActionSA",
+      "url": "https://x.com/Action4SA/status/2118057229744034234",
+      "created_at": "2026-11-05 03:06",
+      "likes": 1793,
+      "replies": 45,
+      "reposts": 260,
+      "quotes": 11,
+      "score": 2109
+     },
+     {
+      "author": "@Tsontsa_G",
+      "author_name": "Miss Pearl 🤍",
+      "url": "https://x.com/Tsontsa_G/status/2118013706621931900",
+      "created_at": "2026-11-05 00:13",
+      "likes": 1462,
+      "replies": 76,
+      "reposts": 71,
+      "quotes": 26,
+      "score": 1635
+     }
+    ],
+    "published_at": "2026-11-04 19:12",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X 聚合新闻与各党派官方号帖子一致；正式计票结果未出"
+    },
+    "rank": 5
+   },
+   {
+    "topic": "Tether CEO：公司持有 15 万枚比特币，价值超 115 亿美元",
+    "category": "加密货币",
+    "summary": "Tether CEO 阿尔多伊诺 11-03 在瑞士卢加诺 Plan ₿ 论坛上说公司持有 15 万枚比特币（原话为「give or take」，是口头说法、非审计数字），价值超过 115 亿美元，比三季度储备报告隐含的 10 万枚多 5 万枚。",
+    "url": "https://x.com/i/trending/2117432037946560796",
+    "score": 9033,
+    "engagement": 8924,
+    "post_count": 109,
+    "post_count_query": "(Tether (\"150,000\" OR 150000 OR 150K) Bitcoin) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 8,924 + 关键词近 24h 帖数 109",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2117423922803269754",
+      "created_at": "2026-11-03 09:09",
+      "likes": 3854,
+      "replies": 245,
+      "reposts": 265,
+      "quotes": 42,
+      "score": 4406
+     },
+     {
+      "author": "@BitcoinMagazine",
+      "author_name": "Bitcoin Magazine",
+      "url": "https://x.com/BitcoinMagazine/status/2117583079107645580",
+      "created_at": "2026-11-03 19:42",
+      "likes": 1717,
+      "replies": 152,
+      "reposts": 219,
+      "quotes": 20,
+      "score": 2108
+     }
+    ],
+    "published_at": "2026-11-03 09:09",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Cointelegraph、Bitcoin Magazine 帖子均转述论坛现场发言，Tether 未发布书面公告"
+    },
+    "rank": 6
+   },
+   {
+    "topic": "英国政府排除将 Poundland 国有化，1.2 万个岗位待定",
+    "category": "财经",
+    "summary": "折扣零售商 Poundland 的美国东家 Gordon Brothers 拒绝收购报价，公司面临进入破产管理。英国政府 11-05 表态排除国有化，改革党的詹里克要求审查收购报价以保住 1.2 万个直接岗位，保守党反对政府出手。",
+    "url": "https://x.com/i/trending/2117411196378689617",
+    "score": 7129,
+    "engagement": 6550,
+    "post_count": 579,
+    "post_count_query": "Poundland -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 6,550 + 关键词近 24h 帖数 579",
+    "posts": [
+     {
+      "author": "@PolitlcsUK",
+      "author_name": "Politics UK",
+      "url": "https://x.com/PolitlcsUK/status/2118042582173585456",
+      "created_at": "2026-11-05 02:07",
+      "likes": 3689,
+      "replies": 143,
+      "reposts": 107,
+      "quotes": 130,
+      "score": 4069
+     },
+     {
+      "author": "@premnsikka",
+      "author_name": "Prem Sikka",
+      "url": "https://x.com/premnsikka/status/2117523658545545326",
+      "created_at": "2026-11-03 15:45",
+      "likes": 877,
+      "replies": 52,
+      "reposts": 557,
+      "quotes": 11,
+      "score": 1497
+     }
+    ],
+    "published_at": "2026-11-03 15:45",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X 聚合新闻与 PolitlcsUK、詹里克帖子一致，未查到政府书面声明链接"
+    },
+    "rank": 7
+   },
+   {
+    "topic": "Stripe 上线稳定币全球付款：美国企业可向 160 多个市场的钱包付 USDC",
+    "category": "加密货币",
+    "summary": "Stripe 11-05 宣布，美国企业可通过 Global Payouts 用 OUSD 或 USDC 向 160 多个市场的加密钱包付款，资金通常几分钟到账，可从法币或稳定币余额直接付出。",
+    "url": "https://x.com/i/trending/2118043126111805621",
+    "score": 5548,
+    "engagement": 5386,
+    "post_count": 162,
+    "post_count_query": "(Stripe stablecoin) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 5,386 + 关键词近 24h 帖数 162",
+    "posts": [
+     {
+      "author": "@WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2118032359664853317",
+      "created_at": "2026-11-05 01:27",
+      "likes": 4174,
+      "replies": 211,
+      "reposts": 543,
+      "quotes": 64,
+      "score": 4992
+     },
+     {
+      "author": "@StripeCrypto",
+      "author_name": "Stripe Crypto",
+      "url": "https://x.com/StripeCrypto/status/2118027635230117889",
+      "created_at": "2026-11-05 01:08",
+      "likes": 116,
+      "replies": 17,
+      "reposts": 16,
+      "quotes": 5,
+      "score": 154
+     }
+    ],
+    "published_at": "2026-11-05 01:08",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对",
+     "source": "Stripe 官方号 @StripeCrypto 原帖与 Cointelegraph 报道一致",
+     "url": "https://x.com/StripeCrypto/status/2118027635230117889"
+    },
+    "rank": 8
+   },
+   {
+    "topic": "链上侦探 ZachXBT 披露法国银行 Crédit Mutuel Arkéa 被盗至少 1.33 亿美元",
+    "category": "加密货币",
+    "summary": "ZachXBT 11-03 先称西欧一家大型金融机构遭攻击、被盗资金超过 1.33 亿美元，11-04 指认受害方为法国 Crédit Mutuel Arkéa。被盗的 USDC、USDT 被换成 ETH 再换成门罗币洗白，部分资金被 Kraken 冻结。",
+    "url": "https://x.com/i/trending/2117240097997484033",
+    "score": 4237,
+    "engagement": 2333,
+    "post_count": 1904,
+    "post_count_query": "(Arkéa OR Arkea OR (zachxbt 133M)) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 2,333 + 关键词近 24h 帖数 1,904",
+    "posts": [
+     {
+      "author": "@gregory_raymond",
+      "author_name": "Grégory Raymond",
+      "url": "https://x.com/gregory_raymond/status/2117864901108432999",
+      "created_at": "2026-11-04 14:21",
+      "likes": 1034,
+      "replies": 54,
+      "reposts": 318,
+      "quotes": 72,
+      "score": 1478
+     },
+     {
+      "author": "@DegenerateNews",
+      "author_name": "DEGEN NEWS",
+      "url": "https://x.com/DegenerateNews/status/2117523006209868039",
+      "created_at": "2026-11-03 15:43",
+      "likes": 554,
+      "replies": 64,
+      "reposts": 56,
+      "quotes": 23,
+      "score": 697
+     }
+    ],
+    "published_at": "2026-11-03 15:43",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "ZachXBT 调查经 WuBlockchain、法国记者 Gregory Raymond 转述；银行官方声明未查到原文链接"
+    },
+    "rank": 9
+   },
+   {
+    "topic": "苹果股价盘中涨 7% 创新高，市值 5.12 万亿美元重回全球第一",
+    "category": "财经",
+    "summary": "苹果 11-04 盘中涨幅扩大到 7%，创历史新高，市值 5.12 万亿美元，超过英伟达的 4.87 万亿美元，重新成为全球市值最高公司。",
+    "url": "https://x.com/i/trending/2118087347384525208",
+    "score": 3779,
+    "engagement": 3596,
+    "post_count": 183,
+    "post_count_query": "((Apple OR AAPL) (\"most valuable\" OR \"record high\")) -is:retweet",
+    "score_basis": "热度 = X 聚合帖前 4 条（只计 48h 内）赞+评+转+引 3,596 + 关键词近 24h 帖数 183",
+    "posts": [
+     {
+      "author": "@KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2118018182598504854",
+      "created_at": "2026-11-05 00:31",
+      "likes": 1362,
+      "replies": 136,
+      "reposts": 118,
+      "quotes": 32,
+      "score": 1648
+     },
+     {
+      "author": "@brewmarkets",
+      "author_name": "Brew Markets",
+      "url": "https://x.com/brewmarkets/status/2118001218920353868",
+      "created_at": "2026-11-04 23:23",
+      "likes": 838,
+      "replies": 42,
+      "reposts": 66,
+      "quotes": 23,
+      "score": 969
+     }
+    ],
+    "published_at": "2026-11-04 22:54",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch 人工核对",
+     "source": "路透（Boursorama 转载）：苹果市值 5.12 万亿美元超过英伟达 4.87 万亿美元",
+     "url": "https://www.boursorama.com/bourse/actualites/apple-depasse-nvidia-en-termes-de-capitalisation-boursiere-et-prend-la-tete-du-classement-3ae2528f2eb05f3e9208ecefe3412619"
+    },
+    "rank": 10
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "FIL 24 小时 +1.59% 至 0.8785 美元，官方号无新公告",
+    "summary": "CoinGecko 北京时间 2026-11-05 07:23 快照：FIL 0.8785 美元，24 小时 +1.59%。同一快照 BTC +3.35%、ETH +5.92%。2026-11-04 07:25 后 @Filecoin、@_FilOz、@FilFoundation 无原创帖，@protocollabs 仅转引 BitRobot 机器人项目，与 Filecoin 无关。判断：FIL 涨 1.59%，比 BTC 的 3.35% 低 1.76 个百分点，涨幅来自大盘反弹，没有项目专属利好。",
+    "source_url": "https://www.coingecko.com/en/coins/filecoin",
+    "source_name": "CoinGecko",
+    "published_at": "2026-11-05 07:23",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "专业数据平台",
+    "type": "news",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "CoinGecko API 快照"
+    }
+   }
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-11-05",
+   "cutoff": "2026-11-05 07:30（北京时间）",
+   "cutoff_note": "标普500、纳指、美元指数、10 年期美债为 2026-11-04（周三）收盘；黄金为 COMEX 近月合约结算价，布伦特为 1 月合约结算价。BTC、ETH、FIL 为 CoinGecko 同一批快照（2026-11-05 07:23），涨跌为 24 小时变动。",
+   "missing": [
+    {
+     "item": "Farside 2026-11-04 BTC 现货 ETF 全天流向",
+     "reason": "本期未抓取到 Farside 完整数据，不写入"
+    },
+    {
+     "item": "Filecoin 链上付费存储量与 FIL 交易所净流量",
+     "reason": "未找到可抓取的同批数据源"
+    }
+   ],
+   "yesterday_check": "昨日待验证：北京时间 11-04 白天各州计票结果；11-04 23:00 ISM 服务业 PMI。；北京时间 11-04 白天各州宣布结果。；美伊谈判进展；霍尔木兹海峡航运。；杠杆 ETF 资金流向。；Farside 11-03 BTC 现货 ETF 流向；中期选举结果后的风险偏好。；金融委后续指引发布时间。（结果须在今日正文逐条写明）",
+   "three_lines": [
+    {
+     "conclusion": "民主党拿下两院，道指 +3.03% 创年内最大涨幅，标普 +1.58%、纳指 +1.44%。",
+     "support": "美联社、CBS News 收盘数据；苹果创新高，芯片股下跌。"
+    },
+    {
+     "conclusion": "布伦特暴跌 8.67% 至 94.62 美元，市场押注伊朗战争提前结束；黄金涨 3.4%，美元指数跌 0.3%。",
+     "support": "新华社、CNBC 结算价；万斯称共和党输在伊朗战争。"
+    },
+    {
+     "conclusion": "BTC 升至 80,441 美元（24h +3.35%），Stripe 上线稳定币跨境付款。",
+     "support": "CoinGecko 07:23 快照；Stripe 官方号公告。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,688.62",
+     "change": "+1.58%（较前收）",
+     "time": "2026-11-05 05:00",
+     "status": "收盘",
+     "source": "AP News",
+     "source_url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c0be7ca45b5875abe758e0570cb9a265",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对",
+      "source": "CBS News 2026-11-04 17:18 ET：收 7,689、+1.6%，与美联社一致",
+      "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/"
+     }
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "25,736.51",
+     "change": "+1.44%（较前收）",
+     "time": "2026-11-05 05:00",
+     "status": "收盘",
+     "source": "AP News",
+     "source_url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c0be7ca45b5875abe758e0570cb9a265",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对",
+      "source": "CBS News、华盛顿邮报 2026-11-04 收盘报道：纳指 +1.4%",
+      "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/"
+     }
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "101.52",
+     "change": "−0.30%（较前收）",
+     "time": "2026-11-05 05:12",
+     "status": "收盘",
+     "source": "JBizNews 收盘报道",
+     "source_url": "https://jbiznews.com/closing-bell-dow-soars-1569-points-as-oil-plunges-8-after-democrats-win-congress/",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "冲突",
+      "by": "WebSearch 人工核对",
+      "values": [
+       {
+        "value": "101.52，−0.3%",
+        "source": "JBizNews 2026-11-04 16:12 ET 收盘报道",
+        "url": "https://jbiznews.com/closing-bell-dow-soars-1569-points-as-oil-plunges-8-after-democrats-win-congress/"
+       },
+       {
+        "value": "101.511，−0.35%",
+        "source": "JournalArta（18:38 GMT 报价）",
+        "url": "https://journalarta.com/en/2026/11/05/dow-jumps-2-91-as-brent-slides-7-77-and-gold-climbs-3-73/"
+       }
+      ],
+      "reason": "取价时点不同，相差 0.009；本表用收盘报道值"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "4.894%",
+     "change": "−5.8 bp（较前收）",
+     "time": "2026-11-05 03:59",
+     "status": "收盘",
+     "source": "Yahoo Finance ^TNX",
+     "source_url": "https://finance.yahoo.com/quote/%5ETNX/history/",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对",
+      "source": "JBizNews 15:35 ET 报道与 ODYSSEY100（19:59 UTC）一致：4.89%、跌 6 bp",
+      "url": "https://odyssey100.se/rate3"
+     }
+    },
+    {
+     "asset": "COMEX 黄金（近月）",
+     "value": "4,073 美元/盎司",
+     "change": "+3.4%（较前收）",
+     "time": "2026-11-05 02:30",
+     "status": "收盘",
+     "source": "CNBC",
+     "source_url": "https://www.cnbc.com/2026/11/04/gold-silver-platinum-dollar-midterms.html",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CNBC 结算价；现货金 4,062.28（+3.15%，exa 行情 23:26 UTC）为现货口径，方向一致"
+     }
+    },
+    {
+     "asset": "布伦特原油（1月）",
+     "value": "94.62 美元/桶",
+     "change": "−8.67%（较前收）",
+     "time": "2026-11-05 03:30",
+     "status": "收盘",
+     "source": "新华社",
+     "source_url": "https://english.news.cn/20261105/7f27da3589b64d618f24ad7ebcd6f039/c.html",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "WebSearch 人工核对",
+      "source": "CNBC、CNA（路透）2026-11-04 报道一致：94.62、跌 8.98 美元，8-31 以来最低",
+      "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html"
+     }
+    },
+    {
+     "asset": "BTC",
+     "value": "80,441 美元",
+     "change": "+3.35%（24h）",
+     "time": "2026-11-05 07:23",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/bitcoin",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko 同批快照；同一时点无第二个带时间报价，不计为核实"
+     }
+    },
+    {
+     "asset": "ETH",
+     "value": "2,423.88 美元",
+     "change": "+5.92%（24h）",
+     "time": "2026-11-05 07:23",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/ethereum",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko 同批快照；同一时点无第二个带时间报价，不计为核实"
+     }
+    },
+    {
+     "asset": "FIL",
+     "value": "0.8785 美元",
+     "change": "+1.59%（24h）",
+     "time": "2026-11-05 07:23",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/en/coins/filecoin",
+     "fetched_at": "2026-11-05 07:30",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko 同批快照；同一时点无第二个带时间报价，不计为核实"
+     }
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "民主党拿下参众两院，道指大涨 1,569 点创年内最大单日涨幅。",
+       "facts": "11-04 道指 +3.03%（+1,569.40 点）收 53,356.12；标普500 +1.58% 收 7,688.62；纳指 +1.44% 收 25,736.51。特朗普媒体科技集团跌近 25%，SpaceX 跌 3.8%、特斯拉跌 3.3%；英伟达、美光等芯片股下跌。10 年期美债收益率跌 5.8 bp 至 4.894%。",
+       "plain": "选举不确定性消失，市场普遍上涨，但押注特朗普和马斯克的股票下跌。",
+       "affects": "美股、美债、美元、芯片和数据中心相关股。",
+       "pricing": "已定价",
+       "pricing_evidence": "收盘价已反映选举结果。",
+       "next_check": "11-06 21:30 非农就业报告。",
+       "risks": "判断：道指单日涨 3.03%，是年内最大涨幅，11-06 非农若偏强，回吐部分涨幅的风险高。",
+       "sources": [
+        {
+         "outlet": "AP News",
+         "title": "Wall Street stocks, Dow, Nasdaq 2026-11-04",
+         "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-c0be7ca45b5875abe758e0570cb9a265",
+         "date": "2026-11-04"
+        },
+        {
+         "outlet": "CBS News",
+         "title": "Dow posts biggest gain of the year after Democrats take control of Congress",
+         "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/",
+         "date": "2026-11-04"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch 人工核对",
+        "source": "美联社、CBS News、华盛顿邮报收盘数字一致",
+        "url": "https://www.cbsnews.com/news/stock-market-soar-democrats-take-control-of-congress/"
+       }
+      },
+      {
+       "no": 2,
+       "headline": "布伦特暴跌 8.67% 至 94.62 美元，为 8-31 以来最低。",
+       "facts": "ICE 布伦特 1 月合约 11-04 结算 94.62 美元/桶，跌 8.98 美元；WTI 跌 8.29% 收 88.12 美元。CNBC 报道，万斯称共和党「输在战争」，市场认为特朗普与伊朗达成协议的动力上升。COMEX 黄金近月合约涨 3.4% 结算 4,073 美元。",
+       "plain": "市场押注伊朗战争提前结束，油价大跌，通胀压力缓解。",
+       "affects": "原油、航空和运输股、通胀预期、美债。",
+       "pricing": "已定价",
+       "pricing_evidence": "结算价已反映。",
+       "next_check": "美伊谈判进展；霍尔木兹海峡航运。",
+       "risks": "判断：布伦特一天跌 8.98 美元，若美伊谈判没有实质进展，油价回补跌幅的风险高。",
+       "sources": [
+        {
+         "outlet": "新华社",
+         "title": "Oil prices settle lower",
+         "url": "https://english.news.cn/20261105/7f27da3589b64d618f24ad7ebcd6f039/c.html",
+         "date": "2026-11-05"
+        },
+        {
+         "outlet": "CNBC",
+         "title": "Oil price, Iran war, US election",
+         "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+         "date": "2026-11-04"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch 人工核对",
+        "source": "新华社、CNBC、CNA（路透）结算价一致",
+        "url": "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html"
+       }
+      },
+      {
+       "no": 3,
+       "headline": "苹果盘中涨 7% 创新高，市值 5.12 万亿美元超过英伟达。",
+       "facts": "苹果 11-04 盘中创历史新高，涨幅一度扩大到 7%（The Kobeissi Letter），市值 5.12 万亿美元，超过英伟达的 4.87 万亿美元（路透）。同日英伟达、美光等芯片股下跌（美联社）。",
+       "plain": "资金从依赖数据中心的 AI 芯片股转向苹果等大型科技股。",
+       "affects": "苹果、英伟达、AI 芯片股。",
+       "pricing": "已定价",
+       "pricing_evidence": "盘中价已反映。",
+       "next_check": "苹果 11-05 收盘价与市值排名是否保持。",
+       "risks": "判断：苹果市值比英伟达高 0.25 万亿美元（5.12 对 4.87），差距只有 5%，单日股价波动 5% 就足以让两者排名再换。",
+       "sources": [
+        {
+         "outlet": "路透（Boursorama 转载）",
+         "title": "Apple dépasse Nvidia en termes de capitalisation boursière",
+         "url": "https://www.boursorama.com/bourse/actualites/apple-depasse-nvidia-en-termes-de-capitalisation-boursiere-et-prend-la-tete-du-classement-3ae2528f2eb05f3e9208ecefe3412619",
+         "date": "2026-11-04"
+        },
+        {
+         "outlet": "X @KobeissiLetter",
+         "title": "Apple extends gains to +7%",
+         "url": "https://x.com/KobeissiLetter/status/2118018182598504854",
+         "date": "2026-11-05"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch 人工核对",
+        "source": "路透与 The Kobeissi Letter 一致：创新高、市值超 5.1 万亿美元",
+        "url": "https://www.boursorama.com/bourse/actualites/apple-depasse-nvidia-en-termes-de-capitalisation-boursiere-et-prend-la-tete-du-classement-3ae2528f2eb05f3e9208ecefe3412619"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "美国 10 月 ISM 服务业 PMI 54.5，略低于预期 54.8。",
+       "facts": "ISM 11-04 公布 10 月服务业 PMI 54.5，9 月为 54.9，市场预期 54.8，仍高于 50 的扩张线。",
+       "plain": "服务业还在扩张，但速度略放慢。",
+       "affects": "美债、美元、美联储预期。",
+       "pricing": "已定价",
+       "pricing_evidence": "数据公布当天市场主线是选举结果。",
+       "next_check": "11-06 21:30 非农就业报告。",
+       "risks": "判断：PMI 54.5 比预期低 0.3，差距小，不足以改变美联储偏紧的立场。",
+       "sources": [
+        {
+         "outlet": "Kitco News",
+         "title": "Gold holding firm as US ISM says Service Sector expands in October",
+         "url": "https://www.kitco.com/news/article/2026-11-04/gold-holding-firm-us-ism-says-service-sector-expands-october",
+         "date": "2026-11-04"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "单一来源",
+        "note": "Kitco 引用 ISM 公告，ISM 原文未抓取"
+       }
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 5,
+       "headline": "BTC 升至 80,441 美元（24h +3.35%），民主党横扫后空单被强平。",
+       "facts": "CoinGecko 北京时间 2026-11-05 07:23：BTC 80,441 美元（24h +3.35%），ETH 2,423.88 美元（+5.92%），FIL 0.8785 美元（+1.59%）。美东 11-04 盘中 30 分钟内 3.2 亿美元空单被强平（Watcher.Guru）。",
+       "plain": "比特币跟着美股大涨，重新站上 8 万美元。",
+       "affects": "BTC、ETH、加密相关股票。",
+       "pricing": "已定价",
+       "pricing_evidence": "BTC 从上期 77,837 美元升到 80,441 美元。",
+       "next_check": "Farside 11-04 BTC 现货 ETF 流向；11-06 非农。",
+       "risks": "判断：BTC 比上期 77,837 美元高 3.35%，主要来自空单被强平，若非农偏强，回落到 8 万美元以下的风险高。",
+       "sources": [
+        {
+         "outlet": "CoinGecko",
+         "title": "Bitcoin price",
+         "url": "https://www.coingecko.com/en/coins/bitcoin",
+         "date": "2026-11-05"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "单一来源",
+        "note": "CoinGecko 同批快照"
+       }
+      },
+      {
+       "no": 6,
+       "headline": "Stripe 上线稳定币全球付款，美国企业可向 160 多个市场的钱包付款。",
+       "facts": "Stripe 11-05 宣布，美国企业可通过 Global Payouts 用 OUSD 或 USDC 向 160 多个市场的加密钱包付款，通常几分钟到账，可从法币或稳定币余额直接付出。",
+       "plain": "企业给海外合作方付款多了一条几分钟到账的通道。",
+       "affects": "稳定币发行方、跨境支付、Solana 等公链。",
+       "pricing": "无法判断",
+       "pricing_evidence": "新功能刚上线，未见价格反应。",
+       "next_check": "Stripe 公布的使用量数据。",
+       "risks": "判断：覆盖 160 多个市场，若大企业采用，USDC 的支付用途会扩大，但上线首日没有使用量数据可判断规模。",
+       "sources": [
+        {
+         "outlet": "X @StripeCrypto",
+         "title": "Stablecoin payouts to crypto wallets in 160+ markets",
+         "url": "https://x.com/StripeCrypto/status/2118027635230117889",
+         "date": "2026-11-05"
+        },
+        {
+         "outlet": "Cointelegraph",
+         "title": "Stripe stablecoin payouts",
+         "url": "https://x.com/Cointelegraph/status/2118072097452769588",
+         "date": "2026-11-05"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "单一来源",
+        "note": "Stripe 官方号原帖与 Cointelegraph 转述一致"
+       }
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "time_bj": "2026-11-06 21:30",
+     "event": "美国 10 月非农就业报告",
+     "watch": "非农、失业率、平均时薪"
+    },
+    {
+     "time_bj": "2026-11-05 09:00",
+     "event": "南非地方选举计票结果陆续公布",
+     "watch": "ANC 得票率变化"
+    }
+   ],
+   "events_source": [
+    {
+     "outlet": "ISM",
+     "title": "ROB report calendar",
+     "url": "https://www.ismworld.org/supply-management-news-and-reports/reports/rob-report-calendar/"
+    },
+    {
+     "outlet": "BLS",
+     "title": "Employment Situation schedule",
+     "url": "https://www.bls.gov/schedule/news_release/empsit.htm"
+    },
+    {
+     "outlet": "CNBC",
+     "title": "Stock market next week: Outlook for Nov. 2-6, 2026",
+     "url": "https://www.cnbc.com/2026/10/30/stock-market-next-week-outlook-for-nov-2-6-2026.html"
+    }
+   ],
+   "footer": "以上仅作信息参考。"
+  },
+  "github_tools": [
+   {
+    "name": "greensock/GSAP",
+    "repo": "greensock/GSAP",
+    "url": "https://github.com/greensock/GSAP",
+    "title": "GSAP：网页动画库，现已全部免费含付费插件",
+    "summary": "GreenSock 动画平台，零依赖的 JavaScript 动画库，可动画 CSS、SVG、canvas、React、Vue、WebGL 等任何 JS 能访问的属性，README 称被超过 1,200 万个网站使用。被 Webflow 收购后全部免费，原付费插件 SplitText、MorphSVG 等也免费。",
+    "features": [
+     "时间线（timeline）精确编排多段动画顺序和重叠",
+     "ScrollTrigger 滚动驱动动画、ScrollSmoother 平滑滚动",
+     "SplitText 拆字动画、MorphSVG 形状变形、MotionPath 路径运动",
+     "提供 @gsap/react 的 useGSAP() 钩子"
+    ],
+    "scenarios": [
+     "做网页里的标题逐字出场、数字滚动动画",
+     "在 Remotion 视频里用时间线编排复杂动效",
+     "做随滚动播放的产品介绍页"
+    ],
+    "for_you": "对你的用处：Remotion 视频本质是 React 网页，GSAP 的时间线和拆字、变形插件可以直接用来做标题动画和图形变形，再由 Remotion 渲染成视频。",
+    "setup": "上手：npm install gsap 或用 CDN 一行引入，需要写 JavaScript；100% 免费，含全部插件。",
+    "stars": 30175,
+    "last_push": "2026-11-04",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "mltframework/shotcut",
+    "repo": "mltframework/shotcut",
+    "url": "https://github.com/mltframework/shotcut",
+    "title": "Shotcut：免费开源的跨平台视频剪辑软件",
+    "summary": "基于 MLT 多媒体框架和 FFmpeg 的视频剪辑软件，支持 Windows、macOS、Linux，GPLv3 开源。",
+    "features": [
+     "多轨时间线剪辑，支持大量音视频格式（基于 FFmpeg）",
+     "内置 frei0r 视频滤镜和转场",
+     "关键帧调整滤镜参数",
+     "导出多种编码格式"
+    ],
+    "scenarios": [
+     "把 Remotion 或 Manim 渲染出的动效片段拼接成完整视频",
+     "给动效视频加配乐、字幕和转场",
+     "在 Linux 电脑上做简单剪辑"
+    ],
+    "for_you": "对你的用处：动效片段做完后需要拼接、配乐和导出，Shotcut 免费且跨平台，适合做最后一步的组装。",
+    "setup": "上手：从 shotcut.org/download 下载安装包，不用写代码；GPLv3 开源免费。",
+    "stars": 15597,
+    "last_push": "2026-11-04",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "mifi/lossless-cut",
+    "repo": "mifi/lossless-cut",
+    "url": "https://github.com/mifi/lossless-cut",
+    "title": "LosslessCut：不重新编码的快速视频剪切工具",
+    "summary": "一个 FFmpeg 图形界面工具，主打无损裁剪和切分音视频，几秒完成，不损画质，适合处理大体积素材。",
+    "features": [
+     "无损裁剪、切分、合并同编码的片段",
+     "增删替换或提取音轨、字幕轨，MKV 转 MP4 不重编码",
+     "按场景、黑帧、静音自动检测并切分",
+     "支持命令行（CLI）和 HTTP API"
+    ],
+    "scenarios": [
+     "从长录屏里快速截出需要的片段",
+     "把 AI 生成的多段视频无损拼接",
+     "批量抽取视频音轨做配音参考"
+    ],
+    "for_you": "对你的用处：AI 视频或录屏素材往往很大，用它几秒就能截出要用的段落，画质不损失；它有 CLI 和 HTTP API，也能让 Claude 写脚本批量处理。",
+    "setup": "上手：从 GitHub Releases 免费下载（应用商店版本付费支持作者），不用写代码；GPL-2.0 开源。",
+    "stars": 45713,
+    "last_push": "2026-11-03",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "huggingface/transformers.js",
+    "repo": "huggingface/transformers.js",
+    "url": "https://github.com/huggingface/transformers.js",
+    "title": "Transformers.js：在浏览器里直接运行 AI 模型",
+    "summary": "Hugging Face 出品，让 transformers 模型直接在浏览器或 Node.js 里运行，不需要服务器，用法与 Python 版 transformers 基本一致，底层用 ONNX Runtime。",
+    "features": [
+     "自然语言处理：分类、问答、摘要、翻译、文本生成",
+     "计算机视觉：图像分类、目标检测、分割、深度图生成",
+     "语音识别、语音合成",
+     "pipeline 接口一行加载模型"
+    ],
+    "scenarios": [
+     "在网页里做本地语音转字幕",
+     "给网页工具加抠图或深度图生成",
+     "离线做文本分类"
+    ],
+    "for_you": "对你的用处：可以在网页里直接跑语音识别和深度图生成，比如做一个本地自动加字幕或给图片生成景深动效的小工具，不用付 API 费。",
+    "setup": "上手：npm i @huggingface/transformers 或 CDN 引入，需要写 JavaScript；Apache-2.0 开源免费。",
+    "stars": 16400,
+    "last_push": "2026-10-30",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   },
+   {
+    "name": "obsproject/obs-studio",
+    "repo": "obsproject/obs-studio",
+    "url": "https://github.com/obsproject/obs-studio",
+    "title": "OBS Studio：免费开源的录屏和直播软件",
+    "summary": "最常用的开源录屏与直播软件，支持 Windows、macOS、Linux。",
+    "features": [
+     "多来源场景合成：屏幕、窗口、摄像头、图片、浏览器源",
+     "高质量录屏和推流",
+     "音频混音和滤镜",
+     "插件和脚本扩展"
+    ],
+    "scenarios": [
+     "录制动效软件的实时预览画面",
+     "把网页动画（浏览器源）直接录成视频",
+     "做教程视频的画中画录制"
+    ],
+    "for_you": "对你的用处：用浏览器源可以直接把 GSAP 或网页动效录成高帧率视频，也能录 TiXL 这类实时动效工具的输出。",
+    "setup": "上手：从 obsproject.com 下载安装，不用写代码；GPL-2.0 开源免费。",
+    "stars": 78964,
+    "last_push": "2026-11-03",
+    "fetched_at": "2026-11-05 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API 一手数据"
+    }
+   }
+  ]
+ },
+ "updated_at": "2026-11-05T07:30:46+08:00"
+}
