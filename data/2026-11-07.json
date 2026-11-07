@@ -1,0 +1,1602 @@
+{
+ "date": "2026-11-07",
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-11-07 15:22",
+   "basis": "五家公司分组；以上期2026-11-06 07:32为去重截止；官方发布日无时分则保留日期，不虚构分钟。",
+   "missing": [
+    {
+     "item": "Gemini API完整变更日志",
+     "reason": "Codex抓取失败；本次WebFetch再次抓取超时。官网文章与官方X已检查，但不声称渠道全覆盖。"
+    }
+   ],
+   "note": "本期为2026-11-07下午补发，不是08:00按时发布；时间均为北京时间。 Codex核查文件已完成；官方X检索窗口从上期截止开始，已翻页。",
+   "pending": [],
+   "overflow": []
+  },
+  "x_top": {
+   "as_of": "2026-11-07 15:23",
+   "basis": "四组各至多25条聚合候选，按已核实且去重后的10个合格话题排名；score=相关代表帖互动总和+关键词24小时帖数。不是全站完整榜单；关键词帖数不是话题全部帖数。",
+   "missing": [
+    {
+     "item": "全站绝对热榜",
+     "reason": "API只提供有限查询候选，不提供全站完整热度排名；本期明确为可观测候选榜。"
+    },
+    {
+     "item": "X互动数独立复核",
+     "reason": "X API为单一平台一手快照，其他网站不能复核完全相同时间的计数。"
+    }
+   ],
+   "note": "计数窗口：2026-11-06 15:15至2026-11-07 15:15（北京时间）。共和党选后经济评论合并到关税讨论，不叠加不同聚合话题；希拉里旧访谈、秋季预算旧闻已剔除。",
+   "exclude": "排除AI、体育、娱乐、游戏、名人娱乐、旧闻翻炒和无法核实的病毒视频；剔除聚合错配帖子与超过48小时代表帖。",
+   "pending": []
+  },
+  "filecoin": {
+   "as_of": "2026-11-07 15:22",
+   "basis": "只收上期截止后的72小时内新消息；Lotus发布于2026-11-06 07:56；不重复Solstice旧闻，不在此重复金融行情。",
+   "missing": [
+    {
+     "item": "Filecoin Foundation博客完整核查",
+     "reason": "Codex访问返回429；本次官方X查询无结果，不等于全网无新增。"
+    },
+    {
+     "item": "filecoin-pin安全补丁传闻",
+     "reason": "搜索发现2026-11-06媒体提及CVE-2026-62300，但尚未打开项目安全公告证实，不进正文。"
+    }
+   ],
+   "note": "本期为2026-11-07下午补发，不是08:00按时发布；时间均为北京时间。",
+   "pending": []
+  },
+  "finance": {
+   "as_of": "2026-11-07 15:25",
+   "basis": "美股、债券与商品采用明确日线/交割月；加密采用同批CoinGecko快照；Codex实时核对，差异按既定容差说明。",
+   "missing": [
+    {
+     "item": "日线精确成交时分",
+     "reason": "DXY、美债、GCZ6来源只标2026-11-06交易日，没有日终报价精确时分；行内时间明确为本期读取截止。"
+    },
+    {
+     "item": "黄金独立同月合约日终核对",
+     "reason": "GCZ6收盘价为Investing单一来源；不以较早盘中报价冒充第二个收盘源。"
+    },
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "CoinGecko为同批快照；Binance请求HTTP451，未绕过，保留单一来源。"
+    },
+    {
+     "item": "未来24—72小时精确事件日程",
+     "reason": "尚未取得可核实到具体北京时间的完整官方日程，本期不虚构事件时间。"
+    },
+    {
+     "item": "昨日ETF、INJC与海峡航运待验证",
+     "reason": "Farside完整流向、INJC首周成交与持仓、UKMTO航运原始通告未完成独立核验；不把未确认项目写成已验证。"
+    }
+   ],
+   "note": "本期为2026-11-07下午补发，不是08:00按时发布；时间均为北京时间。"
+  },
+  "github_tools": {
+   "as_of": "2026-11-07 15:22",
+   "basis": "5项均未在历史推荐中出现、未归档、90天内活跃、星标超过10000；前3项是可配合AI编码助手的动效基础工具，明确不是AI视频生成器。按对动效工作的直接用途排序。",
+   "missing": [],
+   "note": "本期为2026-11-07下午补发，不是08:00按时发布；时间均为北京时间。 五个仓库网页均已确认HTTP200。"
+  }
+ },
+ "sections": {
+  "ai_labs": [
+   {
+    "title": "开发者插件新增 Showcase 标签，可浏览示例项目",
+    "summary": "OpenAI Developers 官方账号在2026-11-07宣布插件新增 Showcase 标签。官网案例库包含定格动画桌面、程序化场景和材质实验室，适合寻找动效原型参考；不是新模型发布。合资格 Pro、Business 用户的 API 额度须以账号实际资格为准。",
+    "source_url": "https://x.com/OpenAIDevs/status/2118856544733532452",
+    "published_at": "2026-11-07 08:02",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X API已读官方原帖及UTC发布时间，官网Showcase页面已打开。Codex只能打开示例与额度文档，原帖403，不能独立确认当天新增标签页。"
+    },
+    "lab": "OpenAI",
+    "source_name": "OpenAI Developers 官方账号"
+   },
+   {
+    "title": "Claude Enterprise 新增按项目标签归集支出（Beta）",
+    "summary": "2026-11-06官方发布记录新增项目标签。合资格 Enterprise 组织可用成本代码或客户案号归集项目内支出，每项目最多16个标签；不覆盖项目外工作。HIPAA、CMEK、ZDR及美国境外存储等组织不在本次Beta适用范围。",
+    "source_url": "https://support.claude.com/en/articles/12138966-release-notes",
+    "published_at": "2026-11-06",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Claude发布记录与项目标签官方指南",
+     "url": "https://support.claude.com/en/articles/18251257-track-spend-by-cost-code-with-project-tags",
+     "note": "官方仅标发布日期，未提供精确时分。"
+    },
+    "lab": "Anthropic",
+    "source_name": "Claude 官方发布记录"
+   },
+   {
+    "title": "今日无更新",
+    "summary": "已查官网新闻及上期截止后官方账号。未核实到新增模型或产品功能；官网最新列示新闻日期为2026-11-02，不把研究讨论当产品更新。",
+    "source_url": "https://x.ai/news",
+    "published_at": "2026-11-07 15:22",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源；未独立复核"
+    },
+    "lab": "xAI",
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "title": "今日无更新",
+    "summary": "已查官方账号与Gemini博客。2026-11-05草图转应用文章为使用教程，不把它写成新功能上线；Omni 1.2 Flash上期已报，本期不重复。Gemini API完整变更日志本次抓取超时，见本期缺失。",
+    "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini/",
+    "published_at": "2026-11-07 15:22",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源；未独立复核"
+    },
+    "lab": "Google",
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "title": "今日无更新",
+    "summary": "已检查官方更新日志，最新仍为2026-10-27的v0.78.1。未核实到上期截止后新增版本或功能。",
+    "source_url": "https://x.ai/changelog/bot",
+    "published_at": "2026-11-07 15:22",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源；未独立复核"
+    },
+    "lab": "Grok Bot",
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "Lotus v1.39.0发布：限制昂贵网关请求，修复封装调度故障",
+    "summary": "官方推荐网关运营者及存储提供者评估升级。新版本对trace_transaction及空tipset的StateReplay应用回溯限制，默认20个epoch；修复CommitFailed扇区缺少CommR/CommD引发的崩溃及取消任务阻塞调度。升级警告还包括API地址不得重复带/rpc/vN、调试端点默认仅本地访问；这里仅说明官方变化，不代替运维测试。",
+    "source_url": "https://github.com/filecoin-project/lotus/releases/tag/v1.39.0",
+    "published_at": "2026-11-06 07:56",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Lotus版本页与CHANGELOG；发布时间另据GitHub API UTC字段换算",
+     "url": "https://raw.githubusercontent.com/filecoin-project/lotus/v1.39.0/CHANGELOG.md"
+    },
+    "type": "news",
+    "source_name": "Filecoin Lotus官方Release"
+   }
+  ],
+  "github_tools": [
+   {
+    "name": "pmndrs/drei",
+    "url": "https://github.com/pmndrs/drei",
+    "title": "用现成React组件搭三维镜头与文字动效",
+    "summary": "给React Three Fiber补齐相机、控制器、文字与模型等组件，减少反复手写场景基础设施。它不是AI模型，也不是视频剪辑器；适合让编码助手配合生成网页动效。",
+    "features": [
+     "相机与交互控制组件",
+     "Text、Text3D与Html叠加",
+     "useAnimations与glTF模型辅助"
+    ],
+    "scenarios": [
+     "产品三维转场与镜头演示",
+     "带文字说明的交互式作品集"
+    ],
+    "for_you": "对你的用处：你已关注三维网页动效，这套组件可在现有React Three Fiber项目上直接补能力，不需要从渲染底层写起。",
+    "setup": "需要React及Three.js基础；在已有React Three Fiber项目中运行 npm install @react-three/drei，从官网组件示例开始。",
+    "stars": 10121,
+    "last_push": "2026-10-21",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "pmndrs/drei"
+   },
+   {
+    "name": "pixijs/pixijs",
+    "url": "https://github.com/pixijs/pixijs",
+    "title": "用GPU画布制作二维粒子、遮罩与文字动效",
+    "summary": "WebGL/WebGPU驱动的二维图形引擎，提供精灵、绘图、遮罩、滤镜和逐帧更新。不是AI生成模型；适合把编码助手写出的动画逻辑变成可交互网页。",
+    "features": [
+     "WebGL与WebGPU二维渲染",
+     "遮罩、滤镜与混合模式",
+     "文字、SVG绘图与动态纹理",
+     "Ticker逐帧更新"
+    ],
+    "scenarios": [
+     "二维品牌片头原型",
+     "粒子或文字交互背景"
+    ],
+    "for_you": "对你的用处：适合需要大量二维元素及自定义画面逻辑的动效；先做网页预览，导出视频要另配录制或渲染流程。",
+    "setup": "需要JavaScript/TypeScript基础；npm create pixi.js@latest 建项目，先运行README的精灵旋转示例。",
+    "stars": 48643,
+    "last_push": "2026-11-07",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "pixijs/pixijs"
+   },
+   {
+    "name": "BabylonJS/Babylon.js",
+    "url": "https://github.com/BabylonJS/Babylon.js",
+    "title": "在浏览器搭三维动画、粒子和物理场景",
+    "summary": "完整的三维场景引擎，内置灯光、相机、动画与粒子系统，并提供在线Playground。不是AI视频模型；适合用编码助手制作可控三维动态镜头。",
+    "features": [
+     "场景图与动画引擎",
+     "CPU/GPU粒子及物理集成",
+     "glTF场景预览与WebGPU渲染"
+    ],
+    "scenarios": [
+     "产品环绕镜头与材质展示",
+     "带粒子效果的三维片头原型"
+    ],
+    "for_you": "对你的用处：比只拼二维元素更适合三维场景；在线Playground能先验证镜头和材质，再决定是否投入工程化。",
+    "setup": "可先用官方Playground免安装试例；工程集成运行 npm install babylonjs --save。需要JavaScript和三维坐标基础；视频导出另配流程。",
+    "stars": 26301,
+    "last_push": "2026-11-07",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "BabylonJS/Babylon.js"
+   },
+   {
+    "name": "langgenius/dify",
+    "url": "https://github.com/langgenius/dify",
+    "title": "把脚本、素材知识库与审核串成AI工作流",
+    "summary": "可视化LLM应用平台，集成工作流、RAG、模型接入、工具和日志。适合给视频创作建立脚本生成与素材资料检索流程；它不直接替你渲染成片。",
+    "features": [
+     "可视化工作流编排",
+     "文档知识库与检索增强",
+     "模型接入与运行日志",
+     "Agent与工具扩展"
+    ],
+    "scenarios": [
+     "固定格式分镜初稿",
+     "素材资料库问答与脚本复核"
+    ],
+    "for_you": "对你的用处：把反复使用的脚本规范固化成流程；同一份品牌资料用于多条短片，不必每次重贴上下文。",
+    "setup": "可先试官方云端；自托管README最低2核4GiB，需Docker及Compose，按部署指南配置模型服务。模型和云服务费用另计。",
+    "stars": 160588,
+    "last_push": "2026-11-07",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "langgenius/dify"
+   },
+   {
+    "name": "vllm-project/vllm",
+    "url": "https://github.com/vllm-project/vllm",
+    "title": "自建兼容API的语言模型推理服务",
+    "summary": "语言模型推理与服务框架，支持连续批处理、结构化输出和兼容OpenAI的接口。适合技术人员把本地或服务器模型接入脚本工作流；不是文生视频引擎。",
+    "features": [
+     "连续批处理与前缀缓存",
+     "结构化输出与工具调用",
+     "兼容API服务及流式输出"
+    ],
+    "scenarios": [
+     "批量分镜JSON生成",
+     "给团队脚本工具提供统一模型接口"
+    ],
+    "for_you": "对你的用处：只有在你已有模型部署需求时才值得用；单人偶尔写脚本不必先自建服务。",
+    "setup": "门槛较高；README建议 uv pip install vllm，硬件和显存须匹配所选模型与官方安装文档，不承诺普通电脑都能运行。",
+    "stars": 96491,
+    "last_push": "2026-11-07",
+    "fetched_at": "2026-11-07 15:22",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "vllm-project/vllm"
+   }
+  ],
+  "x_top": [
+   {
+    "topic": "股市涨跌与普通人生活的关系引发争论",
+    "category": "财经",
+    "summary": "热帖争论股票市场与普通家庭生活之间的联系，有人淡化股市波动，也有人指出就业与养老金的关联。这里只记录观点讨论，不将聚合摘要中的旧日涨幅当成今日行情。",
+    "url": "https://x.com/i/trending/2118842020215070809",
+    "score": 108785,
+    "engagement": 108609,
+    "post_count": 176,
+    "post_count_query": "(stocks election rally) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "OrangeFreddyG",
+      "author_name": "Hope Maxxing FreddyG",
+      "url": "https://x.com/OrangeFreddyG/status/2118487507524333929",
+      "created_at": "2026-11-06 07:35",
+      "likes": 77333,
+      "replies": 889,
+      "reposts": 2060,
+      "quotes": 54,
+      "score": 80336
+     },
+     {
+      "author": "EndWokeness",
+      "author_name": "End Wokeness",
+      "url": "https://x.com/EndWokeness/status/2118431643841048611",
+      "created_at": "2026-11-06 03:53",
+      "likes": 24766,
+      "replies": 1274,
+      "reposts": 1969,
+      "quotes": 261,
+      "score": 28270
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "OrangeFreddyG",
+      "author_name": "Hope Maxxing FreddyG",
+      "url": "https://x.com/OrangeFreddyG/status/2118487507524333929",
+      "created_at": "2026-11-06 07:35",
+      "likes": 77333,
+      "replies": 889,
+      "reposts": 2060,
+      "quotes": 54,
+      "score": 80336
+     },
+     {
+      "author": "EndWokeness",
+      "author_name": "End Wokeness",
+      "url": "https://x.com/EndWokeness/status/2118431643841048611",
+      "created_at": "2026-11-06 03:53",
+      "likes": 24766,
+      "replies": 1274,
+      "reposts": 1969,
+      "quotes": 261,
+      "score": 28270
+     },
+     {
+      "author": "Blak_magik7",
+      "author_name": "The Architect",
+      "url": "https://x.com/Blak_magik7/status/2118766004822020312",
+      "created_at": "2026-11-07 02:02",
+      "likes": 1,
+      "replies": 0,
+      "reposts": 1,
+      "quotes": 0,
+      "score": 2
+     },
+     {
+      "author": "PontiMike",
+      "author_name": "New Rules50",
+      "url": "https://x.com/PontiMike/status/2118796679122133251",
+      "created_at": "2026-11-07 04:04",
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "quotes": 0,
+      "score": 1
+     }
+    ],
+    "published_at": "2026-11-06 03:53",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "热度为X API一手计数；摘要区分官方公告、媒体指控及用户观点。只确认讨论存在，不认可各方观点。"
+    },
+    "background_url": "https://x.com/i/trending/2118842020215070809",
+    "rank": 1
+   },
+   {
+    "topic": "美国关税政策的收益与生活成本之争",
+    "category": "时政",
+    "summary": "支持者强调关税对本土产业链的作用，反对者聚焦物价与政策成本。相关评论存在立场分歧，不把关于建厂规模或政策成效的发言当作独立统计结论。",
+    "url": "https://x.com/i/trending/2118800545875976547",
+    "score": 21960,
+    "engagement": 21695,
+    "post_count": 265,
+    "post_count_query": "(Trump tariffs midterms) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "RapidResponse47",
+      "author_name": "Rapid Response 47",
+      "url": "https://x.com/RapidResponse47/status/2118455729988542941",
+      "created_at": "2026-11-06 05:29",
+      "likes": 10138,
+      "replies": 546,
+      "reposts": 2075,
+      "quotes": 74,
+      "score": 12833
+     },
+     {
+      "author": "sjkokinda",
+      "author_name": "Susan Kokinda",
+      "url": "https://x.com/sjkokinda/status/2118765961859707003",
+      "created_at": "2026-11-07 02:02",
+      "likes": 6190,
+      "replies": 169,
+      "reposts": 2137,
+      "quotes": 52,
+      "score": 8548
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "RapidResponse47",
+      "author_name": "Rapid Response 47",
+      "url": "https://x.com/RapidResponse47/status/2118455729988542941",
+      "created_at": "2026-11-06 05:29",
+      "likes": 10138,
+      "replies": 546,
+      "reposts": 2075,
+      "quotes": 74,
+      "score": 12833
+     },
+     {
+      "author": "sjkokinda",
+      "author_name": "Susan Kokinda",
+      "url": "https://x.com/sjkokinda/status/2118765961859707003",
+      "created_at": "2026-11-07 02:02",
+      "likes": 6190,
+      "replies": 169,
+      "reposts": 2137,
+      "quotes": 52,
+      "score": 8548
+     },
+     {
+      "author": "shipwreckedcrew",
+      "author_name": "Shipwreckedcrew",
+      "url": "https://x.com/shipwreckedcrew/status/2118733208066113718",
+      "created_at": "2026-11-06 23:52",
+      "likes": 127,
+      "replies": 124,
+      "reposts": 17,
+      "quotes": 9,
+      "score": 277
+     },
+     {
+      "author": "realDSteinberg",
+      "author_name": "David Steinberg",
+      "url": "https://x.com/realDSteinberg/status/2118738062285177142",
+      "created_at": "2026-11-07 00:11",
+      "likes": 27,
+      "replies": 1,
+      "reposts": 9,
+      "quotes": 0,
+      "score": 37
+     }
+    ],
+    "published_at": "2026-11-06 05:29",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "热度为X API一手计数；摘要区分官方公告、媒体指控及用户观点。只确认讨论存在，不认可各方观点。"
+    },
+    "background_url": "https://x.com/i/trending/2118800545875976547",
+    "rank": 2
+   },
+   {
+    "topic": "The Lever称记者被拒绝会议采访资格",
+    "category": "社会",
+    "summary": "The Lever在2026-11-06文章中称，Majority Democrats拒绝其记者采访即将举行的会议。社媒讨论集中在新闻采访权与政治捐助透明度；报复动机是该媒体的指控，不是本期认定的事实。",
+    "url": "https://x.com/i/trending/2118857589744185391",
+    "score": 8550,
+    "engagement": 8547,
+    "post_count": 3,
+    "post_count_query": "(\"Lever\" reporters conference) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "davidsirota",
+      "author_name": "David Sirota",
+      "url": "https://x.com/davidsirota/status/2118807416154526063",
+      "created_at": "2026-11-07 04:47",
+      "likes": 4358,
+      "replies": 62,
+      "reposts": 1103,
+      "quotes": 65,
+      "score": 5588
+     },
+     {
+      "author": "RoKhanna",
+      "author_name": "Ro Khanna",
+      "url": "https://x.com/RoKhanna/status/2118870603654697173",
+      "created_at": "2026-11-07 08:58",
+      "likes": 1374,
+      "replies": 108,
+      "reposts": 146,
+      "quotes": 7,
+      "score": 1635
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "davidsirota",
+      "author_name": "David Sirota",
+      "url": "https://x.com/davidsirota/status/2118807416154526063",
+      "created_at": "2026-11-07 04:47",
+      "likes": 4358,
+      "replies": 62,
+      "reposts": 1103,
+      "quotes": 65,
+      "score": 5588
+     },
+     {
+      "author": "RoKhanna",
+      "author_name": "Ro Khanna",
+      "url": "https://x.com/RoKhanna/status/2118870603654697173",
+      "created_at": "2026-11-07 08:58",
+      "likes": 1374,
+      "replies": 108,
+      "reposts": 146,
+      "quotes": 7,
+      "score": 1635
+     },
+     {
+      "author": "davidsirota",
+      "author_name": "David Sirota",
+      "url": "https://x.com/davidsirota/status/2118807418746617945",
+      "created_at": "2026-11-07 04:47",
+      "likes": 625,
+      "replies": 2,
+      "reposts": 72,
+      "quotes": 0,
+      "score": 699
+     },
+     {
+      "author": "davidsirota",
+      "author_name": "David Sirota",
+      "url": "https://x.com/davidsirota/status/2118807420155941346",
+      "created_at": "2026-11-07 04:47",
+      "likes": 560,
+      "replies": 3,
+      "reposts": 62,
+      "quotes": 0,
+      "score": 625
+     }
+    ],
+    "published_at": "2026-11-07 04:47",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "Codex及本次均已打开The Lever原文；采访被拒为媒体当事方说法，报复动机未经独立证实；会议不是民主党官方活动。"
+    },
+    "background_url": "https://www.levernews.com/we-exposed-democrats-billionaire-backers-now-theyre-blocking-our-reporters/",
+    "rank": 3
+   },
+   {
+    "topic": "俄罗斯公布零售投资者可购加密资产名单",
+    "category": "加密货币",
+    "summary": "俄罗斯央行2026-11-06公布Bitcoin、Ether与USDT名单，相关规定从2026-11-17生效。非合格投资者每年通过单个中介购买上限为30万卢布，交易前须测试并了解风险；不是今日已全面开放无限交易。",
+    "url": "https://x.com/i/trending/2118110189291524534",
+    "score": 8306,
+    "engagement": 8152,
+    "post_count": 154,
+    "post_count_query": "(Russia Bitcoin retail) -is:retweet",
+    "score_basis": "3条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2118735403687563330",
+      "created_at": "2026-11-07 00:00",
+      "likes": 6021,
+      "replies": 287,
+      "reposts": 675,
+      "quotes": 122,
+      "score": 7105
+     },
+     {
+      "author": "BitcoinMagazine",
+      "author_name": "Bitcoin Magazine",
+      "url": "https://x.com/BitcoinMagazine/status/2118736218359996865",
+      "created_at": "2026-11-07 00:04",
+      "likes": 507,
+      "replies": 46,
+      "reposts": 74,
+      "quotes": 3,
+      "score": 630
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2118735403687563330",
+      "created_at": "2026-11-07 00:00",
+      "likes": 6021,
+      "replies": 287,
+      "reposts": 675,
+      "quotes": 122,
+      "score": 7105
+     },
+     {
+      "author": "BitcoinMagazine",
+      "author_name": "Bitcoin Magazine",
+      "url": "https://x.com/BitcoinMagazine/status/2118736218359996865",
+      "created_at": "2026-11-07 00:04",
+      "likes": 507,
+      "replies": 46,
+      "reposts": 74,
+      "quotes": 3,
+      "score": 630
+     },
+     {
+      "author": "CoinDesk",
+      "author_name": "CoinDesk",
+      "url": "https://x.com/CoinDesk/status/2118733015782195203",
+      "created_at": "2026-11-06 23:51",
+      "likes": 292,
+      "replies": 53,
+      "reposts": 61,
+      "quotes": 11,
+      "score": 417
+     }
+    ],
+    "published_at": "2026-11-06 23:51",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "俄央行英俄文公告与Anadolu报道",
+     "url": "https://www.aa.com.tr/en/economy/russia-approves-bitcoin-ether-usdt-for-exchange-trading/4114385",
+     "note": "2026-11-06公布，2026-11-17生效。热度仍是X API单一平台计数。"
+    },
+    "background_url": "https://www.cbr.ru/eng/press/event/?id=32966",
+    "rank": 4
+   },
+   {
+    "topic": "中美通话要求落实釜山经贸安排",
+    "category": "国际",
+    "summary": "美国财政部2026-11-06通报贝森特、格里尔与何立峰通话，并要求中方充分、立即落实釜山安排。公开通报没有给出稀土交付比例，本期不采用聚合摘要中的比例说法。",
+    "url": "https://x.com/i/trending/2118787808999645532",
+    "score": 5674,
+    "engagement": 5586,
+    "post_count": 88,
+    "post_count_query": "(China Busan trade) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "SecScottBessent",
+      "author_name": "Treasury Secretary Scott Bessent",
+      "url": "https://x.com/SecScottBessent/status/2118757944007201255",
+      "created_at": "2026-11-07 01:30",
+      "likes": 3275,
+      "replies": 134,
+      "reposts": 606,
+      "quotes": 24,
+      "score": 4039
+     },
+     {
+      "author": "DeItaone",
+      "author_name": "*Walter Bloomberg",
+      "url": "https://x.com/DeItaone/status/2118755928040219127",
+      "created_at": "2026-11-07 01:22",
+      "likes": 535,
+      "replies": 47,
+      "reposts": 75,
+      "quotes": 21,
+      "score": 678
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "SecScottBessent",
+      "author_name": "Treasury Secretary Scott Bessent",
+      "url": "https://x.com/SecScottBessent/status/2118757944007201255",
+      "created_at": "2026-11-07 01:30",
+      "likes": 3275,
+      "replies": 134,
+      "reposts": 606,
+      "quotes": 24,
+      "score": 4039
+     },
+     {
+      "author": "DeItaone",
+      "author_name": "*Walter Bloomberg",
+      "url": "https://x.com/DeItaone/status/2118755928040219127",
+      "created_at": "2026-11-07 01:22",
+      "likes": 535,
+      "replies": 47,
+      "reposts": 75,
+      "quotes": 21,
+      "score": 678
+     },
+     {
+      "author": "MarioNawfal",
+      "author_name": "Mario Nawfal",
+      "url": "https://x.com/MarioNawfal/status/2118766200553660884",
+      "created_at": "2026-11-07 02:03",
+      "likes": 429,
+      "replies": 113,
+      "reposts": 95,
+      "quotes": 13,
+      "score": 650
+     },
+     {
+      "author": "FT",
+      "author_name": "Financial Times",
+      "url": "https://x.com/FT/status/2118757092416791022",
+      "created_at": "2026-11-07 01:27",
+      "likes": 157,
+      "replies": 21,
+      "reposts": 30,
+      "quotes": 11,
+      "score": 219
+     }
+    ],
+    "published_at": "2026-11-07 01:22",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "财政部sb0684正文与官方X；Codex已打开通报",
+     "url": "https://home.treasury.gov/news/press-releases/sb0684",
+     "note": "仅确认通话与落实安排，不声称达成新协议。"
+    },
+    "background_url": "https://home.treasury.gov/news/press-releases/sb0684",
+    "rank": 5
+   },
+   {
+    "topic": "印度开放半导体申请入口并批准电子元件项目",
+    "category": "科技",
+    "summary": "印度PIB在2026-11-06公告Semicon 2.0申请门户开放，并宣布批准12项电子元件制造申请。项目投资与产出是公告中的计划值，不写成已经完成的投资或投产结果。",
+    "url": "https://x.com/i/trending/2118655806057087268",
+    "score": 3391,
+    "engagement": 3367,
+    "post_count": 24,
+    "post_count_query": "(India \"Semicon\" projects) -is:retweet",
+    "score_basis": "2条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "AshwiniVaishnaw",
+      "author_name": "Ashwini Vaishnaw",
+      "url": "https://x.com/AshwiniVaishnaw/status/2118704797222355344",
+      "created_at": "2026-11-06 21:59",
+      "likes": 2405,
+      "replies": 47,
+      "reposts": 471,
+      "quotes": 15,
+      "score": 2938
+     },
+     {
+      "author": "UpdatesChennai",
+      "author_name": "Chennai Updates",
+      "url": "https://x.com/UpdatesChennai/status/2118625105895198891",
+      "created_at": "2026-11-06 16:42",
+      "likes": 378,
+      "replies": 6,
+      "reposts": 44,
+      "quotes": 1,
+      "score": 429
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "AshwiniVaishnaw",
+      "author_name": "Ashwini Vaishnaw",
+      "url": "https://x.com/AshwiniVaishnaw/status/2118704797222355344",
+      "created_at": "2026-11-06 21:59",
+      "likes": 2405,
+      "replies": 47,
+      "reposts": 471,
+      "quotes": 15,
+      "score": 2938
+     },
+     {
+      "author": "UpdatesChennai",
+      "author_name": "Chennai Updates",
+      "url": "https://x.com/UpdatesChennai/status/2118625105895198891",
+      "created_at": "2026-11-06 16:42",
+      "likes": 378,
+      "replies": 6,
+      "reposts": 44,
+      "quotes": 1,
+      "score": 429
+     }
+    ],
+    "published_at": "2026-11-06 16:42",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "PIB公告与DD India报道（同源佐证）",
+     "url": "https://ddindia.co.in/2026/11/ashwini-vaishnaw-launches-semicon-2-0-portal-announces-12-more-ecms-approvals-worth-rs-7503-crore/",
+     "note": "Semicon申请门户与12项ECMS批准是两个计划；公告北京时间2026-11-06 20:35。"
+    },
+    "background_url": "https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2333716&lang=2&reg=48",
+    "rank": 6
+   },
+   {
+    "topic": "美国对涉及MEXC的资金转移采取限制措施",
+    "category": "加密货币",
+    "summary": "美国财政部2026-11-06宣布FinCEN限制美国金融机构处理涉及MEXC的资金转移，正式命令在联邦公报刊登30天后生效。MEXC回应称运营正常并启动独立合规审查；措施不等于已冻结全部用户资产。",
+    "url": "https://x.com/i/trending/2118960939169108390",
+    "score": 3283,
+    "engagement": 2312,
+    "post_count": 971,
+    "post_count_query": "(FinCEN MEXC) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "MEXC",
+      "author_name": "MEXC",
+      "url": "https://x.com/MEXC/status/2118856659619717218",
+      "created_at": "2026-11-07 08:02",
+      "likes": 854,
+      "replies": 157,
+      "reposts": 119,
+      "quotes": 98,
+      "score": 1228
+     },
+     {
+      "author": "Cointelegraph",
+      "author_name": "Cointelegraph",
+      "url": "https://x.com/Cointelegraph/status/2118798949708595633",
+      "created_at": "2026-11-07 04:13",
+      "likes": 677,
+      "replies": 77,
+      "reposts": 124,
+      "quotes": 29,
+      "score": 907
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "MEXC",
+      "author_name": "MEXC",
+      "url": "https://x.com/MEXC/status/2118856659619717218",
+      "created_at": "2026-11-07 08:02",
+      "likes": 854,
+      "replies": 157,
+      "reposts": 119,
+      "quotes": 98,
+      "score": 1228
+     },
+     {
+      "author": "Cointelegraph",
+      "author_name": "Cointelegraph",
+      "url": "https://x.com/Cointelegraph/status/2118798949708595633",
+      "created_at": "2026-11-07 04:13",
+      "likes": 677,
+      "replies": 77,
+      "reposts": 124,
+      "quotes": 29,
+      "score": 907
+     },
+     {
+      "author": "Aceonblockchain",
+      "author_name": "𝒜𝒸ℯ ☄️",
+      "url": "https://x.com/Aceonblockchain/status/2118944693039821043",
+      "created_at": "2026-11-07 13:52",
+      "likes": 69,
+      "replies": 43,
+      "reposts": 11,
+      "quotes": 0,
+      "score": 123
+     },
+     {
+      "author": "BitcoinNewsCom",
+      "author_name": "Bitcoin News",
+      "url": "https://x.com/BitcoinNewsCom/status/2118874630207222034",
+      "created_at": "2026-11-07 09:14",
+      "likes": 36,
+      "replies": 10,
+      "reposts": 5,
+      "quotes": 3,
+      "score": 54
+     }
+    ],
+    "published_at": "2026-11-07 04:13",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "美国财政部公告与FinCEN命令",
+     "url": "https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf",
+     "note": "资金转移限制在联邦公报刊登后30天生效；计数来自X API。"
+    },
+    "background_url": "https://home.treasury.gov/news/press-releases/sb0685",
+    "rank": 7
+   },
+   {
+    "topic": "欧盟与印度完成科研计划关联谈判",
+    "category": "科学",
+    "summary": "欧盟官方2026-11-06确认完成印度关联Horizon Europe的谈判。新的资金参与安排仍须签署协议并完成程序，不能把谈判结束写成资格已经生效。",
+    "url": "https://x.com/i/trending/2118758307993440596",
+    "score": 2255,
+    "engagement": 2193,
+    "post_count": 62,
+    "post_count_query": "(India \"Horizon Europe\") -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "sidhant",
+      "author_name": "Sidhant Sibal",
+      "url": "https://x.com/sidhant/status/2118755572774576500",
+      "created_at": "2026-11-07 01:21",
+      "likes": 1009,
+      "replies": 10,
+      "reposts": 111,
+      "quotes": 4,
+      "score": 1134
+     },
+     {
+      "author": "sidhant",
+      "author_name": "Sidhant Sibal",
+      "url": "https://x.com/sidhant/status/2118683789291405656",
+      "created_at": "2026-11-06 20:35",
+      "likes": 744,
+      "replies": 10,
+      "reposts": 110,
+      "quotes": 9,
+      "score": 873
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "sidhant",
+      "author_name": "Sidhant Sibal",
+      "url": "https://x.com/sidhant/status/2118755572774576500",
+      "created_at": "2026-11-07 01:21",
+      "likes": 1009,
+      "replies": 10,
+      "reposts": 111,
+      "quotes": 4,
+      "score": 1134
+     },
+     {
+      "author": "sidhant",
+      "author_name": "Sidhant Sibal",
+      "url": "https://x.com/sidhant/status/2118683789291405656",
+      "created_at": "2026-11-06 20:35",
+      "likes": 744,
+      "replies": 10,
+      "reposts": 110,
+      "quotes": 9,
+      "score": 873
+     },
+     {
+      "author": "EUAmbIndia",
+      "author_name": "Jean-Eric Paquet",
+      "url": "https://x.com/EUAmbIndia/status/2118700916698497290",
+      "created_at": "2026-11-06 21:43",
+      "likes": 124,
+      "replies": 4,
+      "reposts": 25,
+      "quotes": 3,
+      "score": 156
+     },
+     {
+      "author": "thenewsdrill",
+      "author_name": "The News Drill™",
+      "url": "https://x.com/thenewsdrill/status/2118751480564072785",
+      "created_at": "2026-11-07 01:04",
+      "likes": 24,
+      "replies": 0,
+      "reposts": 6,
+      "quotes": 0,
+      "score": 30
+     }
+    ],
+    "published_at": "2026-11-06 20:35",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "本次已打开EURAXESS官方全文；Codex读到官方索引，直开失败，未冒称完整第二来源；协议尚未生效。"
+    },
+    "background_url": "https://euraxess.ec.europa.eu/worldwide/india/news/eu-india-eu-and-india-conclude-negotiations-association-horizon-europe",
+    "rank": 8
+   },
+   {
+    "topic": "印度执法局通报调查加密交易平台",
+    "category": "加密货币",
+    "summary": "印度执法局2026-11-06通报对CoinDCX及Delta Exchange相关场所进行调查，搜查发生在2026-11-04、2026-11-05。公司表示配合调查；相关跨境交易问题属于执法指控，不能写成已定罪。",
+    "url": "https://x.com/i/trending/2118773895373136323",
+    "score": 2255,
+    "engagement": 2155,
+    "post_count": 100,
+    "post_count_query": "(CoinDCX Delta ED) -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "dir_ed",
+      "author_name": "ED",
+      "url": "https://x.com/dir_ed/status/2118730797553496453",
+      "created_at": "2026-11-06 23:42",
+      "likes": 759,
+      "replies": 81,
+      "reposts": 103,
+      "quotes": 78,
+      "score": 1021
+     },
+     {
+      "author": "cryptoady",
+      "author_name": "Aditya Singh",
+      "url": "https://x.com/cryptoady/status/2118768254907023859",
+      "created_at": "2026-11-07 02:11",
+      "likes": 378,
+      "replies": 20,
+      "reposts": 41,
+      "quotes": 0,
+      "score": 439
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "dir_ed",
+      "author_name": "ED",
+      "url": "https://x.com/dir_ed/status/2118730797553496453",
+      "created_at": "2026-11-06 23:42",
+      "likes": 759,
+      "replies": 81,
+      "reposts": 103,
+      "quotes": 78,
+      "score": 1021
+     },
+     {
+      "author": "cryptoady",
+      "author_name": "Aditya Singh",
+      "url": "https://x.com/cryptoady/status/2118768254907023859",
+      "created_at": "2026-11-07 02:11",
+      "likes": 378,
+      "replies": 20,
+      "reposts": 41,
+      "quotes": 0,
+      "score": 439
+     },
+     {
+      "author": "CoinDCX",
+      "author_name": "CoinDCX",
+      "url": "https://x.com/CoinDCX/status/2118782238716494314",
+      "created_at": "2026-11-07 03:07",
+      "likes": 341,
+      "replies": 34,
+      "reposts": 20,
+      "quotes": 2,
+      "score": 397
+     },
+     {
+      "author": "CryptooIndia",
+      "author_name": "Crypto India",
+      "url": "https://x.com/CryptooIndia/status/2118739358383849512",
+      "created_at": "2026-11-07 00:16",
+      "likes": 270,
+      "replies": 8,
+      "reposts": 19,
+      "quotes": 1,
+      "score": 298
+     }
+    ],
+    "published_at": "2026-11-06 23:42",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "X API已读ED官方帖；NDTV Profit与Free Press Journal",
+     "url": "https://www.freepressjournal.in/mumbai/ed-searches-coindcx-delta-exchange-over-alleged-fema-violations-in-crypto-trading",
+     "note": "确认调查通报存在，不把指控当作定罪。"
+    },
+    "background_url": "https://www.ndtvprofit.com/india/ed-probes-coindcx-delta-exchange-over-suspected-illegal-foreign-crypto-transactions-12294647",
+    "rank": 9
+   },
+   {
+    "topic": "联合国呼吁保护战争中的环境与自然资源",
+    "category": "国际",
+    "summary": "2026-11-06为防止战争和武装冲突糟蹋环境国际日，联合国等官方账号当天发帖强调自然资源与冲突的关系。本期只记录当日纪念活动及官方呼吁，不把历史研究统计写成新发生事件。",
+    "url": "https://x.com/i/trending/2118611291300679837",
+    "score": 763,
+    "engagement": 735,
+    "post_count": 28,
+    "post_count_query": "(\"environment\" \"war\" \"November 6\") -is:retweet",
+    "score_basis": "4条48小时内相关帖的赞+评+转+引之和，加指定关键词24小时原创及回复帖数；不计转发帖。",
+    "posts": [
+     {
+      "author": "UN",
+      "author_name": "United Nations",
+      "url": "https://x.com/UN/status/2118569314139660556",
+      "created_at": "2026-11-06 13:01",
+      "likes": 174,
+      "replies": 40,
+      "reposts": 72,
+      "quotes": 12,
+      "score": 298
+     },
+     {
+      "author": "IntlCrimCourt",
+      "author_name": "Int'l Criminal Court",
+      "url": "https://x.com/IntlCrimCourt/status/2118676386235728163",
+      "created_at": "2026-11-06 20:06",
+      "likes": 171,
+      "replies": 27,
+      "reposts": 82,
+      "quotes": 8,
+      "score": 288
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "UN",
+      "author_name": "United Nations",
+      "url": "https://x.com/UN/status/2118569314139660556",
+      "created_at": "2026-11-06 13:01",
+      "likes": 174,
+      "replies": 40,
+      "reposts": 72,
+      "quotes": 12,
+      "score": 298
+     },
+     {
+      "author": "IntlCrimCourt",
+      "author_name": "Int'l Criminal Court",
+      "url": "https://x.com/IntlCrimCourt/status/2118676386235728163",
+      "created_at": "2026-11-06 20:06",
+      "likes": 171,
+      "replies": 27,
+      "reposts": 82,
+      "quotes": 8,
+      "score": 288
+     },
+     {
+      "author": "SindhCMHouse",
+      "author_name": "Sindh Chief Minister House",
+      "url": "https://x.com/SindhCMHouse/status/2118592493994520682",
+      "created_at": "2026-11-06 14:33",
+      "likes": 42,
+      "replies": 12,
+      "reposts": 31,
+      "quotes": 0,
+      "score": 85
+     },
+     {
+      "author": "volker_turk",
+      "author_name": "Volker Türk",
+      "url": "https://x.com/volker_turk/status/2118702127295979937",
+      "created_at": "2026-11-06 21:48",
+      "likes": 33,
+      "replies": 9,
+      "reposts": 21,
+      "quotes": 1,
+      "score": 64
+     }
+    ],
+    "published_at": "2026-11-06 13:01",
+    "fetched_at": "2026-11-07 15:23",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "联合国官方纪念日页、驻印尼转载与当日官方X帖",
+     "url": "https://indonesia.un.org/en/251483-international-day-preventing-exploitation-environment-war-and-armed-conflict-6-november",
+     "note": "每年11月6日，不是2026年新设。"
+    },
+    "background_url": "https://www.un.org/en/observances/environment-in-war-protection-day",
+    "rank": 10
+   }
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-11-07",
+   "cutoff": "2026-11-07 15:25",
+   "cutoff_note": "北京时间下午补发。美股为美国2026-11-06收盘；布伦特为2027年1月合约结算。DXY、美债、黄金为来源2026-11-06日线，行内时间是本期读取截止而非成交时分。加密三项为同一CoinGecko请求快照，不与日线混称同步行情。",
+   "missing": [
+    {
+     "item": "日线精确成交时分",
+     "reason": "DXY、美债、GCZ6来源只标2026-11-06交易日，没有日终报价精确时分；行内时间明确为本期读取截止。"
+    },
+    {
+     "item": "黄金独立同月合约日终核对",
+     "reason": "GCZ6收盘价为Investing单一来源；不以较早盘中报价冒充第二个收盘源。"
+    },
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "CoinGecko为同批快照；Binance请求HTTP451，未绕过，保留单一来源。"
+    },
+    {
+     "item": "未来24—72小时精确事件日程",
+     "reason": "尚未取得可核实到具体北京时间的完整官方日程，本期不虚构事件时间。"
+    },
+    {
+     "item": "昨日ETF、INJC与海峡航运待验证",
+     "reason": "Farside完整流向、INJC首周成交与持仓、UKMTO航运原始通告未完成独立核验；不把未确认项目写成已验证。"
+    }
+   ],
+   "yesterday_check": "昨日待验证逐项结果：非农已公布16.5万、失业率4.10%、平均时薪环比+0.40%；GCZ6日线4,079.50低于昨日关注的4,100；BTC在本期快照为75,933，高于73,000，但不能据此声称整个时段一直守住。Farside完整流向、INJC首周成交与持仓、海峡航运一手通告仍未核实，均列入缺失。",
+   "three_lines": [
+    {
+     "conclusion": "非农结果已落地，不能继续写成等待公布。",
+     "support": "BLS：10月新增16.5万就业，失业率4.10%，平均时薪环比+0.40%；发布时间2026-11-06 21:30。"
+    },
+    {
+     "conclusion": "标普与纳指收涨，黄金日线收跌。",
+     "support": "美国11-06标普+0.31%、纳指+1.09%；GCZ6为4,079.50、−0.83%，不得混用4,071.80盘中报道。"
+    },
+    {
+     "conclusion": "加密报价与监管事件分别呈现。",
+     "support": "CoinGecko同批快照BTC 75,933、ETH 2,243.90、FIL 0.809475美元；MEXC措施生效以联邦公报刊登后30天为准。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,376.86",
+     "change": "+0.31%（较前收）",
+     "time": "2026-11-07 05:00",
+     "status": "收盘",
+     "source": "Exa / Investing；美国11-06收盘",
+     "source_url": "https://exa.ai/library/markets/index/SPX?date=2026-11-06&view=daily",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "url": "https://www.investing.com/indices/us-spx-500-historical-data",
+      "source": "Investing历史日线",
+      "note": "与Exa日线一致。"
+     }
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "24,579.42",
+     "change": "+1.09%（较前收）",
+     "time": "2026-11-07 05:00",
+     "status": "收盘",
+     "source": "Exa / Investing；美国11-06收盘",
+     "source_url": "https://exa.ai/library/markets/index/IXIC?date=2026-11-06&view=daily",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "url": "https://www.investing.com/indices/nasdaq-composite-historical-data",
+      "source": "Investing历史日线与MetaCap",
+      "note": "Investing为24,579.43，Exa及MetaCap为24,579.42，差0.01点，在0.30%容差内。"
+     }
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "102.30",
+     "change": "+0.74%（较前收）",
+     "time": "2026-11-07 15:25",
+     "status": "收盘",
+     "source": "Portfolio Terminal；11-06日线，时间为读取截止",
+     "source_url": "https://portfolio-terminal.com/markets/us-dollar-index",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "url": "https://www.investing.com/indices/usdollar-historical-data",
+      "source": "Investing与Portfolio Terminal日线",
+      "note": "本次两页均为102.30、+0.74%；Codex较早抓取另一页为102.28，差0.02点，在外汇0.10%容差内。不是ICE官方日终认证。"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "4.859%",
+     "change": "+2.20 bp（较前收）",
+     "time": "2026-11-07 15:25",
+     "status": "收盘",
+     "source": "Investing；11-06日线，时间为读取截止",
+     "source_url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "url": "https://www.cnbc.com/2026/11/06/dollar-holds-yen-gains-as-equity-rout-saps-risk-appetite-ahead-of-payrolls.html",
+      "source": "Investing日线与CNBC盘中报道",
+      "note": "以4.859%、前收4.837%计算+2.20bp；CNBC较早盘中4.868%，差0.9bp，在2bp容差内但时间不同。"
+     }
+    },
+    {
+     "asset": "COMEX 黄金（2026年12月GCZ6）",
+     "value": "4,079.50 美元/盎司",
+     "change": "−0.83%（较前收）",
+     "time": "2026-11-07 15:25",
+     "status": "收盘",
+     "source": "Investing；11-06日线，时间为读取截止",
+     "source_url": "https://www.investing.com/commodities/gold-historical-data",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "Codex与本次读取均确认Investing GCZ6日线；暂未取得独立同月合约日终来源。CNBC的4,071.80为较早报道数字，不当成收盘。"
+     }
+    },
+    {
+     "asset": "布伦特原油（2027年1月LCOF7）",
+     "value": "98.32 美元/桶",
+     "change": "+0.03%（较前收）",
+     "time": "2026-11-07 03:30",
+     "status": "收盘",
+     "source": "Reuters / Euronext；ICE日结算",
+     "source_url": "https://live.euronext.com/en/financial-news/crude-gains-worries-about-renewed-us-attacks-iran",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "url": "https://energynow.com/2026/11/oil-prices-plunge-13-in-one-week-as-u-s-election-results-raise-hopes-of-iran-peace-deal-wti-closes-below-91-brent-below-99/",
+      "source": "EnergyNow与Reuters/Euronext",
+      "note": "均为2027年1月合约98.32、+0.03%；不混用换月前合约周涨跌。"
+     }
+    },
+    {
+     "asset": "BTC",
+     "value": "75,933.00 美元",
+     "change": "+0.74%（24h）",
+     "time": "2026-11-07 15:18",
+     "status": "快照",
+     "source": "CoinGecko同批API",
+     "source_url": "https://www.coingecko.com/en/coins/bitcoin",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "同一次CoinGecko API响应的USD及24小时变动；Binance第二来源请求返回HTTP451，未绕过；未取得同刻第二平台快照。"
+     }
+    },
+    {
+     "asset": "ETH",
+     "value": "2,243.90 美元",
+     "change": "+1.02%（24h）",
+     "time": "2026-11-07 15:18",
+     "status": "快照",
+     "source": "CoinGecko同批API",
+     "source_url": "https://www.coingecko.com/en/coins/ethereum",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "同一次CoinGecko API响应的USD及24小时变动；Binance第二来源请求返回HTTP451，未绕过；未取得同刻第二平台快照。"
+     }
+    },
+    {
+     "asset": "FIL",
+     "value": "0.809475 美元",
+     "change": "+0.65%（24h）",
+     "time": "2026-11-07 15:18",
+     "status": "快照",
+     "source": "CoinGecko同批API",
+     "source_url": "https://www.coingecko.com/en/coins/filecoin",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "同一次CoinGecko API响应的USD及24小时变动；Binance第二来源请求返回HTTP451，未绕过；未取得同刻第二平台快照。"
+     }
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "美国10月非农新增16.5万，失业率4.10%",
+       "facts": "BLS于2026-11-06 21:30公布：新增165,000就业，失业率4.10%；平均时薪38.00美元，环比+0.40%、同比+3.10%。",
+       "plain": "报告是已公布事实，不再列为未来催化。",
+       "affects": "美元、债券、全球股票。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "同日美元和美债收益率上升，但不能把全部波动归因于单份报告。",
+       "next_check": "观察后续官方通胀数据与联储沟通；具体发布时间须以官方日程为准。",
+       "risks": "判断：16.5万新增就业不能单独决定下一次利率路径，仍须结合4.10%失业率及后续通胀。",
+       "sources": [
+        {
+         "outlet": "BLS",
+         "title": "2026年10月就业报告",
+         "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "Yahoo Finance",
+         "title": "美国11-06市场与就业数据",
+         "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+         "date": "2026-11-06"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html",
+        "source": "BLS与Yahoo Finance，Codex已核对官方原文",
+        "note": ""
+       }
+      },
+      {
+       "no": 2,
+       "headline": "标普与纳指收涨；10年美债日线4.859%",
+       "facts": "美国11-06标普7,376.86、+0.31%；纳指24,579.42、+1.09%。10年美债日线4.859%，前值4.837%，增加2.20bp；DXY日线102.30、+0.74%。",
+       "plain": "股票反弹与债券收益率上升同时出现，不能等同所有资产风险偏好一致。",
+       "affects": "股票估值、持债成本与美元计价资产。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "涨跌数据已出现；不同来源日线尾差详见快照，不能宣称政策影响已完全定价。",
+       "next_check": "下一交易日观察反弹能否延续及收益率变化，不预写尚未发生的交易结果。",
+       "risks": "判断：纳指+1.09%只是1个交易日表现，不能据此确认下跌趋势结束。",
+       "sources": [
+        {
+         "outlet": "Exa",
+         "title": "标普11-06日线",
+         "url": "https://exa.ai/library/markets/index/SPX?date=2026-11-06&view=daily",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "Exa",
+         "title": "纳指11-06日线",
+         "url": "https://exa.ai/library/markets/index/IXIC?date=2026-11-06&view=daily",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "Investing",
+         "title": "美债日线",
+         "url": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield-historical-data",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "Portfolio Terminal",
+         "title": "DXY日线",
+         "url": "https://portfolio-terminal.com/markets/us-dollar-index",
+         "date": "2026-11-06"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "url": "https://www.investing.com/indices/us-spx-500-historical-data",
+        "source": "Investing历史日线",
+        "note": "与Exa日线一致。"
+       }
+      },
+      {
+       "no": 3,
+       "headline": "黄金采用GCZ6日线4,079.50，不混用盘中价",
+       "facts": "Investing的2026年12月黄金GCZ6日线为4,079.50美元/盎司，较前收−0.83%；前收为4,113.50。CNBC较早报道4,071.80及−1.00%，不是本期收盘口径。",
+       "plain": "同一品种的不同时间报价不是互相替换的收盘值。",
+       "affects": "黄金持仓、保证金与美元利率敏感资产。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "日线跌幅已出现；尚无证据拆分美元、利率与避险需求的各自贡献。",
+       "next_check": "后续只用相同GCZ6口径对比；独立日终第二来源仍待补齐。",
+       "risks": "判断：4,079.50是GCZ6日线，不应拿其他合约或较早盘中价直接判断技术位。",
+       "sources": [
+        {
+         "outlet": "Investing",
+         "title": "GCZ6历史日线",
+         "url": "https://www.investing.com/commodities/gold-historical-data",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "CNBC",
+         "title": "较早盘中黄金报道",
+         "url": "https://www.cnbc.com/2026/11/06/gold-eases-on-inflation-worries-from-higher-oil-us-payrolls-data-in-focus.html",
+         "date": "2026-11-06"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "单一来源",
+        "note": "Codex与本次读取均确认Investing GCZ6日线；暂未取得独立同月合约日终来源。CNBC的4,071.80为较早报道数字，不当成收盘。"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "布伦特2027年1月合约结算98.32美元",
+       "facts": "Reuters/Euronext与EnergyNow均报2027年1月布伦特结算98.32美元/桶，前结算98.29，变动+0.03%。",
+       "plain": "这里只比较同一交割月的前后结算，不混合连续合约换月造成的周涨跌。",
+       "affects": "能源成本、通胀与油气资产。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "结算变动只有+0.03%，不能据此认定中东风险已经消失。",
+       "next_check": "关注后续正式外交与航运公告；没有新的官方通告就不填写事件结论。",
+       "risks": "判断：单日+0.03%不能证明航运供应风险已解除，98.32也不是未来价格保证。",
+       "sources": [
+        {
+         "outlet": "Reuters/Euronext",
+         "title": "原油11-06结算",
+         "url": "https://live.euronext.com/en/financial-news/crude-gains-worries-about-renewed-us-attacks-iran",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "EnergyNow",
+         "title": "同月合约结算说明",
+         "url": "https://energynow.com/2026/11/oil-prices-plunge-13-in-one-week-as-u-s-election-results-raise-hopes-of-iran-peace-deal-wti-closes-below-91-brent-below-99/",
+         "date": "2026-11-06"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "url": "https://energynow.com/2026/11/oil-prices-plunge-13-in-one-week-as-u-s-election-results-raise-hopes-of-iran-peace-deal-wti-closes-below-91-brent-below-99/",
+        "source": "EnergyNow与Reuters/Euronext",
+        "note": "均为2027年1月合约98.32、+0.03%；不混用换月前合约周涨跌。"
+       }
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 5,
+       "headline": "FinCEN限制涉及MEXC的资金转移，生效日不能提前写",
+       "facts": "美国财政部2026-11-06公告：FinCEN禁止美国金融机构进行涉及MEXC的资金转移，命令在联邦公报刊登30天后生效。160亿美元是财政部指称的相关非法资金流规模，不是罚款；MEXC回应称运营正常并审查合规。",
+       "plain": "这是美国金融机构资金通道限制，不等于已冻结全部用户资产。",
+       "affects": "交易所通道、平台合规与对手方风险。",
+       "pricing": "无法判断",
+       "pricing_evidence": "没有可核验的事件前后资金流样本，无法判断已定价程度。",
+       "next_check": "核实联邦公报正式刊登日期、最终生效日及平台后续公告。",
+       "risks": "判断：30天从联邦公报刊登起算，不可从2026-11-06公告日自行推定立即生效。",
+       "sources": [
+        {
+         "outlet": "美国财政部",
+         "title": "MEXC措施",
+         "url": "https://home.treasury.gov/news/press-releases/sb0685",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "MEXC",
+         "title": "回应FinCEN命令",
+         "url": "https://www.mexc.com/announcements/article/statement-regarding-fincen-s-november-6-order-17827791539626",
+         "date": "2026-11-07"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "url": "https://www.fincen.gov/system/files/2026-11/MEXC-Section-9714.pdf",
+        "source": "财政部公告与FinCEN正式命令，Codex已打开PDF",
+        "note": ""
+       }
+      },
+      {
+       "no": 6,
+       "headline": "俄罗斯公布零售投资者加密名单，11月17日生效",
+       "facts": "俄罗斯央行2026-11-06公布Bitcoin、Ether及USDT名单；2026-11-17起规定生效，非合格投资者每年通过单个中介购买上限30万卢布，交易前须测试并了解风险。",
+       "plain": "公告并非当天已经无限量开放；限额按每家中介计算。",
+       "affects": "俄罗斯合规准入与加密交易渠道。",
+       "pricing": "无法判断",
+       "pricing_evidence": "未取得实施后的实际成交或资金净流入数据，不能把准入公告直接当作新增买盘。",
+       "next_check": "跟踪2026-11-17实际实施及各中介规则；不将未来准入写成已发生资金流。",
+       "risks": "判断：30万卢布是每个中介的年度限额，不代表每人已经投入同等金额。",
+       "sources": [
+        {
+         "outlet": "俄罗斯央行",
+         "title": "零售加密名单",
+         "url": "https://www.cbr.ru/eng/press/event/?id=32966",
+         "date": "2026-11-06"
+        },
+        {
+         "outlet": "Anadolu",
+         "title": "俄罗斯加密规则报道",
+         "url": "https://www.aa.com.tr/en/economy/russia-approves-bitcoin-ether-usdt-for-exchange-trading/4114385",
+         "date": "2026-11-06"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "url": "https://www.cbr.ru/press/event/?id=32964",
+        "source": "俄央行俄文公告与英文页面，Codex已核对",
+        "note": ""
+       }
+      }
+     ]
+    }
+   ],
+   "events": [],
+   "events_source": [],
+   "footer": "以上仅作信息参考。"
+  }
+ },
+ "updated_at": "2026-11-07T15:26:14+08:00"
+}
