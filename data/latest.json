@@ -2,7 +2,7 @@
  "date": "2026-11-08",
  "meta": {
   "ai_labs": {
-   "as_of": "2026-11-08 07:52",
+   "as_of": "2026-11-08 07:34",
    "basis": "五家公司分组；以上期2026-11-07 15:22为去重截止；研究文章、合作公告不算产品或模型更新。",
    "missing": [
     {
@@ -14,12 +14,12 @@
      "reason": "Codex额度用尽（至2026-11-11 14:53恢复）。"
     }
    ],
-   "note": "官方RSS/新闻页抓取时间2026-11-08 07:48–07:51（北京时间）。",
+   "note": "官方RSS/新闻页抓取时间2026-11-08 07:31–07:33（北京时间）。",
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-11-08 07:52",
+   "as_of": "2026-11-08 07:34",
    "basis": "5组search_news（各至多25条，近24小时）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数。不是全站完整榜单。",
    "missing": [
     {
@@ -36,7 +36,7 @@
    "pending": []
   },
   "filecoin": {
-   "as_of": "2026-11-08 07:52",
+   "as_of": "2026-11-08 07:34",
    "basis": "只收上期截止（2026-11-07 15:22）后的72小时内新消息；旧闻不重复。",
    "missing": [
     {
@@ -52,7 +52,7 @@
    "pending": []
   },
   "finance": {
-   "as_of": "2026-11-08 07:52",
+   "as_of": "2026-11-08 07:34",
    "basis": "美股、债券与商品沿用美国2026-11-06收盘（上期已Codex核对）；加密采用同批CoinGecko快照；新增事实用WebSearch核对。",
    "missing": [
     {
@@ -71,7 +71,7 @@
    "note": "周日刊：周六美国市场休市。"
   },
   "github_tools": {
-   "as_of": "2026-11-08 07:55",
+   "as_of": "2026-11-08 07:34",
    "basis": "5项均未在历史推荐中出现、未归档、90天内活跃；前4项为视频/动效类（其中2项星标3,000–10,000按动效类放宽并注明），第5项为信息采集工具。",
    "missing": [],
    "note": "motion-canvas最近推送为2026-07-02，超过90天，本期未选。"
@@ -83,8 +83,8 @@
     "title": "今日无更新",
     "summary": "已查官网新闻RSS：上期截止（2026-11-07 15:22）后无新条目；最新为2026-11-06 16:00的Hacktron漏洞合作与湿实验评测文章，属合作与研究，不是产品或模型更新。",
     "source_url": "https://openai.com/news/",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -98,8 +98,8 @@
     "title": "今日无更新",
     "summary": "已查官网新闻页：最新为2026-11-06两篇研究文章（智能体记忆、构建科学模型），不是产品或模型更新；头图Claude Opus 5.5发布于2026-09-22，属旧闻不重发。",
     "source_url": "https://www.anthropic.com/news",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -113,8 +113,8 @@
     "title": "今日无更新",
     "summary": "上期（2026-11-07 15:22）已查官网，最新新闻日期为2026-11-02；本期官网为脚本渲染页面，命令行抓取未取到新条目，未核实到新增模型或产品功能。",
     "source_url": "https://x.ai/news",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -128,8 +128,8 @@
     "title": "今日无更新",
     "summary": "已查Google与DeepMind官方RSS：最新为2026-11-06 01:00的Gemini Omni 1.2 Flash，已于2026-11-06期报过，本期不重复；无新增条目。",
     "source_url": "https://blog.google/",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -143,8 +143,8 @@
     "title": "今日无更新",
     "summary": "上期确认最新为2026-10-27的v0.78.1；本期命令行抓取更新日志页未取到版本号，未核实到新版本，见本期缺失。",
     "source_url": "https://x.ai/changelog/bot",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -237,7 +237,7 @@
      }
     ],
     "published_at": "2026-11-06 23:29",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -318,7 +318,7 @@
      }
     ],
     "published_at": "2026-11-06 08:32",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -410,7 +410,7 @@
      }
     ],
     "published_at": "2026-11-06 22:24",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -491,7 +491,7 @@
      }
     ],
     "published_at": "2026-11-06 12:39",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -572,7 +572,7 @@
      }
     ],
     "published_at": "2026-11-06 11:34",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -664,7 +664,7 @@
      }
     ],
     "published_at": "2026-11-06 22:36",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -756,7 +756,7 @@
      }
     ],
     "published_at": "2026-11-07 18:00",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -848,7 +848,7 @@
      }
     ],
     "published_at": "2026-11-07 18:17",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -940,7 +940,7 @@
      }
     ],
     "published_at": "2026-11-07 19:00",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -1032,7 +1032,7 @@
      }
     ],
     "published_at": "2026-11-07 03:20",
-    "fetched_at": "2026-11-08 07:52",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -1049,8 +1049,8 @@
     "title": "72小时内无新的Filecoin新闻",
     "summary": "已查Lotus官方Release：最新v1.39.0发布于2026-11-06 07:56，已于2026-11-07期报道，本期不重复；上期截止后未核实到新的官方动态。",
     "source_url": "https://github.com/filecoin-project/lotus/releases",
-    "published_at": "2026-11-08 07:52",
-    "fetched_at": "2026-11-08 07:52",
+    "published_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1063,7 +1063,7 @@
   ],
   "finance": {
    "title": "每日金融市场简报｜2026-11-08",
-   "cutoff": "2026-11-08 07:52",
+   "cutoff": "2026-11-08 07:34",
    "cutoff_note": "周日。美股、美债、DXY、黄金、布伦特沿用美国2026-11-06（周五）收盘/结算，周六休市无新价；加密三项为同一次CoinGecko请求快照。",
    "missing": [
     {
@@ -1398,7 +1398,7 @@
     "setup": "有桌面版和源码两种方式，按README快速开始安装；不需要写代码，开源免费，所接模型与API费用另计。",
     "stars": 14217,
     "last_push": "2026-11-06",
-    "fetched_at": "2026-11-08 07:55",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1425,7 +1425,7 @@
     "setup": "免费开源（MIT或Apache-2.0）；从getartcraft.com下载或自行编译，不需要写代码。",
     "stars": 17764,
     "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:55",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1452,7 +1452,7 @@
     "setup": "免费（Unlicense）；按官网安装说明装好后命令行运行 auto-editor 视频文件，需要会用命令行，不需写代码。",
     "stars": 5805,
     "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:55",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1479,7 +1479,7 @@
     "setup": "免费开源（MIT），支持Windows、macOS、Linux，从Releases下载即可；skill用 npx skills add getopenscreen/openscreen --skill openscreen-demo -y 安装。",
     "stars": 6572,
     "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:55",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1505,7 +1505,7 @@
     "setup": "需要Python 3.10+，按README安装；开源免费（MIT），部分平台需自行登录配置。",
     "stars": 109994,
     "last_push": "2026-11-06",
-    "fetched_at": "2026-11-08 07:55",
+    "fetched_at": "2026-11-08 07:34",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1515,5 +1515,5 @@
    }
   ]
  },
- "updated_at": "2026-11-08T07:33:57+08:00"
+ "updated_at": "2026-11-08T07:34:06+08:00"
 }
