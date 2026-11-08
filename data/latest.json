@@ -1,9 +1,9 @@
 {
- "date": "2026-11-08",
+ "date": "2026-11-09",
  "meta": {
   "ai_labs": {
-   "as_of": "2026-11-08 07:34",
-   "basis": "五家公司分组；以上期2026-11-07 15:22为去重截止；研究文章、合作公告不算产品或模型更新。",
+   "as_of": "2026-11-09 07:40",
+   "basis": "五家公司分组；以上期2026-11-08 07:34为去重截止；研究文章、合作、融资与基础设施交易不算产品或模型更新。",
    "missing": [
     {
      "item": "x.ai新闻页与Grok Bot更新日志本期实时版本号",
@@ -14,12 +14,12 @@
      "reason": "Codex额度用尽（至2026-11-11 14:53恢复）。"
     }
    ],
-   "note": "官方RSS/新闻页抓取时间2026-11-08 07:31–07:33（北京时间）。",
+   "note": "官方RSS/新闻页抓取时间2026-11-09 07:26–07:31（北京时间）。",
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-11-08 07:34",
+   "as_of": "2026-11-09 07:40",
    "basis": "5组search_news（各至多25条，近24小时）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数。不是全站完整榜单。",
    "missing": [
     {
@@ -29,62 +29,85 @@
     {
      "item": "X互动数独立复核",
      "reason": "X API为单一平台一手快照。"
+    },
+    {
+     "item": "Codex交叉核对",
+     "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     }
    ],
-   "exclude": "排除AI、体育、娱乐、游戏、名人、梗图、旧闻翻炒（如上期已报的俄罗斯加密名单、釜山经贸安排）和无法核实的病毒视频；FEC遭黑客41小时说法未能核实，未收录；剔除与话题无关的聚合帖（如拉胡尔话题下的玩笑回复）。",
-   "note": "帖数计数窗口：2026-11-07 07:40至2026-11-08 07:31（北京时间）。中期选举话题聚合帖含Stephen Miller赞扬特朗普的高互动帖，计入热度但不代表其质疑结果。",
+   "exclude": "排除AI、体育、娱乐（K-pop、剧集）、梗图与情感八卦；排除旧闻翻炒：美国财政部950亿美元回购（2026-11-04公布）、俄亥俄州长选举（2026-11-03投票）、AO3下线（2026-10-31期已报）、美国10月非农（上期已报）；排除无法核实的病毒视频与互动过低的地方新闻（阿萨巴集会冲突、查谟市场火灾）。日经话题剔除一条无法核实身份的交易员崩溃视频帖，不计入热度。",
+   "note": "帖数计数窗口：2026-11-08 07:35至2026-11-09 07:29（北京时间）。代表帖互动数抓取于2026-11-09 07:27。",
    "pending": []
   },
   "filecoin": {
-   "as_of": "2026-11-08 07:34",
-   "basis": "只收上期截止（2026-11-07 15:22）后的72小时内新消息；旧闻不重复。",
+   "as_of": "2026-11-09 07:40",
+   "basis": "只收上期截止（2026-11-08 07:34）后的72小时内新消息；旧闻不重复。",
    "missing": [
     {
      "item": "Filecoin Foundation博客与官方X完整核查",
-     "reason": "本期时间所限，仅核查Lotus Release；不等于全网无新增。"
+     "reason": "本期时间所限未逐条核查；不等于全网无新增。"
     },
     {
      "item": "filecoin-pin安全补丁传闻（CVE-2026-62300）",
-     "reason": "上期列为待核，本期仍未打开项目安全公告证实。"
+     "reason": "仍未打开项目安全公告证实。"
     }
    ],
    "note": "FIL价格见金融简报。",
-   "pending": []
+   "pending": [
+    {
+     "title": "Cardano侧链Midnight拟用Filecoin做归档存储",
+     "summary": "KuCoin资讯转述：Charles Hoskinson称Midnight将以Celestia做数据可用性、Filecoin做长期归档存储。本期未找到Hoskinson原帖或Midnight官方公告，未证实。",
+     "source_url": "https://www.kucoin.com/news/insight/ADA/6af022a1abae5e0007c56bef",
+     "published_at": "2026-11-08 07:24",
+     "fetched_at": "2026-11-09 07:40",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "仅KuCoin资讯转述，未见一手来源。"
+     },
+     "type": "news",
+     "unverified": true,
+     "unverified_reason": "未找到Charles Hoskinson原帖或Midnight官方公告；KuCoin页面时间未标时区。",
+     "pending_reason": "未证实：未找到Charles Hoskinson原帖或Midnight官方公告；KuCoin页面时间未标时区。"
+    }
+   ]
   },
   "finance": {
-   "as_of": "2026-11-08 07:34",
-   "basis": "美股、债券与商品沿用美国2026-11-06收盘（上期已Codex核对）；加密采用同批CoinGecko快照；新增事实用WebSearch核对。",
+   "as_of": "2026-11-09 07:40",
+   "basis": "美股、债券与商品沿用美国2026-11-06收盘（2026-11-07期已Codex核对）；加密采用同批CoinGecko快照；新增事实用WebSearch核对。",
    "missing": [
     {
      "item": "Codex交叉核对",
-     "reason": "Codex额度用尽（至2026-11-11 14:53恢复）；本期第二来源用WebSearch人工核对，周五收盘数据沿用上期Codex核对结果。"
+     "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。周五收盘数据沿用2026-11-07期Codex核对结果。"
     },
     {
      "item": "加密同刻第二平台核对",
      "reason": "仅CoinGecko同批快照。"
     },
     {
-     "item": "未来24—72小时完整官方日程",
-     "reason": "仅核实到东京股市2026-11-09重新开盘与南非选委会2026-11-08宣布结果（无精确时分），其余不虚构。"
+     "item": "日经2026-11-09开盘价",
+     "reason": "发稿时东京刚开盘，未取到可核实报价。"
+    },
+    {
+     "item": "美国本周CPI具体发布时间",
+     "reason": "本期未打开BLS日程核实，不写入日程。"
     }
-   ],
-   "note": "周日刊：周六美国市场休市。"
+   ]
   },
   "github_tools": {
-   "as_of": "2026-11-08 07:34",
-   "basis": "5项均未在历史推荐中出现、未归档、90天内活跃；前4项为视频/动效类（其中2项星标3,000–10,000按动效类放宽并注明），第5项为信息采集工具。",
-   "missing": [],
-   "note": "motion-canvas最近推送为2026-07-02，超过90天，本期未选。"
+   "as_of": "2026-11-09 07:40",
+   "basis": "gh api实时取星标、最后推送与归档状态；只选近90天有推送、未归档、未推荐过的仓库；5条中4条为动效/视频类（huashu-design、Concat、FunClip、scenario-labs/skills），1条为信息采集类。scenario-labs/skills星标3,540，按动效类放宽到≥3,000收录。",
+   "missing": []
   }
  },
  "sections": {
   "ai_labs": [
    {
     "title": "今日无更新",
-    "summary": "已查官网新闻RSS：上期截止（2026-11-07 15:22）后无新条目；最新为2026-11-06 16:00的Hacktron漏洞合作与湿实验评测文章，属合作与研究，不是产品或模型更新。",
+    "summary": "已查官网新闻RSS（2026-11-09 07:26抓取）：最新仍为2026-11-06 16:00的Hacktron漏洞合作与湿实验评测文章，上期已核查，属合作与研究，不是产品或模型更新。",
     "source_url": "https://openai.com/news/",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -96,10 +119,10 @@
    },
    {
     "title": "今日无更新",
-    "summary": "已查官网新闻页：最新为2026-11-06两篇研究文章（智能体记忆、构建科学模型），不是产品或模型更新；头图Claude Opus 5.5发布于2026-09-22，属旧闻不重发。",
+    "summary": "已查官网新闻页（2026-11-09 07:31抓取）：未见2026-11-07后新的模型或产品发布；CNBC 2026-11-08报道的34亿美元发电机采购属基础设施交易，IPO进展属公司事务，均不算产品更新。",
     "source_url": "https://www.anthropic.com/news",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -111,10 +134,10 @@
    },
    {
     "title": "今日无更新",
-    "summary": "上期（2026-11-07 15:22）已查官网，最新新闻日期为2026-11-02；本期官网为脚本渲染页面，命令行抓取未取到新条目，未核实到新增模型或产品功能。",
+    "summary": "官网为脚本渲染页面，命令行抓取未取到新条目；上期已查到的最新新闻日期为2026-11-02，本期未核实到新增模型或产品功能。",
     "source_url": "https://x.ai/news",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -126,10 +149,10 @@
    },
    {
     "title": "今日无更新",
-    "summary": "已查Google与DeepMind官方RSS：最新为2026-11-06 01:00的Gemini Omni 1.2 Flash，已于2026-11-06期报过，本期不重复；无新增条目。",
+    "summary": "已查Google官方AI博客RSS（2026-11-09 07:26抓取）：最新仍为2026-11-06 01:00的Gemini Omni 1.2 Flash，已于2026-11-06期报过，本期不重复。",
     "source_url": "https://blog.google/",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -143,8 +166,8 @@
     "title": "今日无更新",
     "summary": "上期确认最新为2026-10-27的v0.78.1；本期命令行抓取更新日志页未取到版本号，未核实到新版本，见本期缺失。",
     "source_url": "https://x.ai/changelog/bot",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -157,888 +180,919 @@
   ],
   "x_top": [
    {
-    "topic": "特朗普盟友质疑中期选举结果",
+    "topic": "共和党参议员要求跛脚鸭期间天天开会",
     "category": "时政",
-    "summary": "民主党在2026年中期选举赢得两院后，部分特朗普盟友在X上发帖质疑选举结果、称选举被操纵。美联社事实核查指出这些舞弊说法缺乏证据；本条只记录讨论热度，不认可任何一方说法。",
-    "url": "https://x.com/i/trending/2119115242278113486",
-    "score": 199517,
-    "engagement": 182883,
-    "post_count": 16634,
-    "post_count_query": "(midterm stolen OR rigged) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和182883，加关键词近24小时原创及回复帖数16634。",
+    "summary": "民主党在中期选举拿下两院后，共和党参议员Rick Scott、Mike Lee等在X上呼吁取消假期、到2027年1月交权前每天开会，尽量多确认法官和提名人。参议院2026-11-09（美东时间）15:00复会，首个程序表决是能源项目审批改革法案。",
+    "url": "https://x.com/i/trending/2119315902105784756",
+    "score": 70343,
+    "engagement": 70075,
+    "post_count": 268,
+    "post_count_query": "(\"lame duck\" OR \"lame-duck\") Senate -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和70075，加关键词近24小时原创及回复帖数268。",
     "posts": [
      {
-      "author": "laralogan",
-      "author_name": "Lara Logan",
-      "url": "https://x.com/laralogan/status/2119075263359197522",
-      "created_at": "2026-11-07 22:31",
-      "likes": 4809,
-      "replies": 235,
-      "reposts": 1562,
-      "quotes": 54,
-      "score": 6660
+      "author": "ScottforFlorida",
+      "author_name": "Rick Scott",
+      "url": "https://x.com/ScottforFlorida/status/2119181347176816830",
+      "created_at": "2026-11-08 05:33",
+      "likes": 27983,
+      "replies": 5603,
+      "reposts": 4079,
+      "quotes": 497,
+      "score": 38162
      },
      {
-      "author": "StephenM",
-      "author_name": "Stephen Miller",
-      "url": "https://x.com/StephenM/status/2118816530951544838",
-      "created_at": "2026-11-07 05:23",
-      "likes": 134366,
-      "replies": 14599,
-      "reposts": 20663,
-      "quotes": 1526,
-      "score": 171154
+      "author": "chiproytx",
+      "author_name": "Chip Roy",
+      "url": "https://x.com/chiproytx/status/2119278938899759241",
+      "created_at": "2026-11-08 12:00",
+      "likes": 11619,
+      "replies": 1827,
+      "reposts": 2279,
+      "quotes": 203,
+      "score": 15928
      }
     ],
     "scoring_posts": [
      {
-      "author": "laralogan",
-      "author_name": "Lara Logan",
-      "url": "https://x.com/laralogan/status/2119075263359197522",
-      "created_at": "2026-11-07 22:31",
-      "likes": 4809,
-      "replies": 235,
-      "reposts": 1562,
-      "quotes": 54,
-      "score": 6660
+      "author": "ScottforFlorida",
+      "author_name": "Rick Scott",
+      "url": "https://x.com/ScottforFlorida/status/2119181347176816830",
+      "created_at": "2026-11-08 05:33",
+      "likes": 27983,
+      "replies": 5603,
+      "reposts": 4079,
+      "quotes": 497,
+      "score": 38162
      },
      {
-      "author": "StephenM",
-      "author_name": "Stephen Miller",
-      "url": "https://x.com/StephenM/status/2118816530951544838",
-      "created_at": "2026-11-07 05:23",
-      "likes": 134366,
-      "replies": 14599,
-      "reposts": 20663,
-      "quotes": 1526,
-      "score": 171154
+      "author": "EricLDaugh",
+      "author_name": "Eric Daugherty",
+      "url": "https://x.com/EricLDaugh/status/2119200229991829951",
+      "created_at": "2026-11-08 06:48",
+      "likes": 7040,
+      "replies": 1164,
+      "reposts": 1851,
+      "quotes": 178,
+      "score": 10233
      },
      {
-      "author": "laralogan",
-      "author_name": "Lara Logan",
-      "url": "https://x.com/laralogan/status/2119069649736212742",
-      "created_at": "2026-11-07 22:09",
-      "likes": 3065,
-      "replies": 137,
-      "reposts": 1182,
-      "quotes": 24,
-      "score": 4408
+      "author": "chiproytx",
+      "author_name": "Chip Roy",
+      "url": "https://x.com/chiproytx/status/2119278938899759241",
+      "created_at": "2026-11-08 12:00",
+      "likes": 11619,
+      "replies": 1827,
+      "reposts": 2279,
+      "quotes": 203,
+      "score": 15928
      },
      {
-      "author": "CMoTWSF",
-      "author_name": "Dr. Robert Craig",
-      "url": "https://x.com/CMoTWSF/status/2118727561840574638",
-      "created_at": "2026-11-06 23:29",
-      "likes": 447,
-      "replies": 25,
-      "reposts": 181,
-      "quotes": 8,
-      "score": 661
+      "author": "BasedMikeLee",
+      "author_name": "Mike Lee",
+      "url": "https://x.com/BasedMikeLee/status/2119305564824232407",
+      "created_at": "2026-11-08 13:46",
+      "likes": 4211,
+      "replies": 913,
+      "reposts": 573,
+      "quotes": 55,
+      "score": 5752
      }
     ],
-    "published_at": "2026-11-06 23:29",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-08 05:33",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "美联社事实核查",
-     "url": "https://apnews.com/article/election-voting-results-rigged-facts-trump-f8e70e3d60186ae969629644e64a2df6",
+     "source": "Meaww汇编Scott帖文；Senate Daily Press议程",
+     "url": "https://www.dailypress.senate.gov/monday-november-2-2026/",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 1
    },
    {
-    "topic": "老牌网媒Salon宣布停刊",
-    "category": "社会",
-    "summary": "Salon于2026-11-05宣布在运营31年后停止出版，称独立数字新闻的商业模式已不可持续。X上的热帖以保守派账号的嘲讽为主，也有人讨论网媒生存困境。",
-    "url": "https://x.com/i/trending/2118441513046675545",
-    "score": 73302,
-    "engagement": 73264,
-    "post_count": 38,
-    "post_count_query": "Salon (shut OR shutting OR closing) -is:retweet",
-    "score_basis": "3条48小时内聚合代表帖的赞+评+转+引之和73264，加关键词近24小时原创及回复帖数38。",
+    "topic": "NASA在肯尼迪航天中心公布月球基地新合同",
+    "category": "科学",
+    "summary": "特朗普2026-11-06到肯尼迪航天中心为MAX POWER航空航天展揭幕。NASA于2026-11-07宣布月球基地一批合同：8家公司进入CLPS下一阶段、推进核动力月球车PROMISE、6个发射与在轨运输任务订单合计13亿美元，并开放新一期宇航员报名。",
+    "url": "https://x.com/i/trending/2119088885397586337",
+    "score": 25667,
+    "engagement": 25007,
+    "post_count": 660,
+    "post_count_query": "(\"Moon base\" OR \"moon base\" OR \"Kennedy Space Center\") (NASA OR Trump) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和25007，加关键词近24小时原创及回复帖数660。",
     "posts": [
      {
-      "author": "MrAndyNgo",
-      "author_name": "Andy Ngo",
-      "url": "https://x.com/MrAndyNgo/status/2118501822017003898",
-      "created_at": "2026-11-06 08:32",
-      "likes": 33626,
-      "replies": 377,
-      "reposts": 2168,
-      "quotes": 45,
-      "score": 36216
+      "author": "WhiteHouse",
+      "author_name": "The White House",
+      "url": "https://x.com/WhiteHouse/status/2119081144050208823",
+      "created_at": "2026-11-07 22:54",
+      "likes": 5875,
+      "replies": 532,
+      "reposts": 1149,
+      "quotes": 71,
+      "score": 7627
      },
      {
-      "author": "kangminlee",
-      "author_name": "Kangmin Lee | 이강민",
-      "url": "https://x.com/kangminlee/status/2118534536015610087",
-      "created_at": "2026-11-06 10:42",
-      "likes": 22712,
-      "replies": 477,
-      "reposts": 1652,
-      "quotes": 90,
-      "score": 24931
+      "author": "NASA",
+      "author_name": "NASA",
+      "url": "https://x.com/NASA/status/2119083432835764635",
+      "created_at": "2026-11-07 23:03",
+      "likes": 5006,
+      "replies": 833,
+      "reposts": 694,
+      "quotes": 126,
+      "score": 6659
      }
     ],
     "scoring_posts": [
      {
-      "author": "MrAndyNgo",
-      "author_name": "Andy Ngo",
-      "url": "https://x.com/MrAndyNgo/status/2118501822017003898",
-      "created_at": "2026-11-06 08:32",
-      "likes": 33626,
-      "replies": 377,
-      "reposts": 2168,
-      "quotes": 45,
-      "score": 36216
+      "author": "WhiteHouse",
+      "author_name": "The White House",
+      "url": "https://x.com/WhiteHouse/status/2119081144050208823",
+      "created_at": "2026-11-07 22:54",
+      "likes": 5875,
+      "replies": 532,
+      "reposts": 1149,
+      "quotes": 71,
+      "score": 7627
      },
      {
-      "author": "kangminlee",
-      "author_name": "Kangmin Lee | 이강민",
-      "url": "https://x.com/kangminlee/status/2118534536015610087",
-      "created_at": "2026-11-06 10:42",
-      "likes": 22712,
-      "replies": 477,
-      "reposts": 1652,
-      "quotes": 90,
-      "score": 24931
+      "author": "NASA",
+      "author_name": "NASA",
+      "url": "https://x.com/NASA/status/2119083432835764635",
+      "created_at": "2026-11-07 23:03",
+      "likes": 5006,
+      "replies": 833,
+      "reposts": 694,
+      "quotes": 126,
+      "score": 6659
      },
      {
-      "author": "Nerdrotics",
-      "author_name": "Nerdrotic",
-      "url": "https://x.com/Nerdrotics/status/2118555268044783674",
-      "created_at": "2026-11-06 12:05",
-      "likes": 11065,
-      "replies": 241,
-      "reposts": 777,
-      "quotes": 34,
-      "score": 12117
+      "author": "cb_doge",
+      "author_name": "DogeDesigner",
+      "url": "https://x.com/cb_doge/status/2119202845731987700",
+      "created_at": "2026-11-08 06:58",
+      "likes": 4139,
+      "replies": 199,
+      "reposts": 820,
+      "quotes": 63,
+      "score": 5221
+     },
+     {
+      "author": "NASA",
+      "author_name": "NASA",
+      "url": "https://x.com/NASA/status/2119136607009734978",
+      "created_at": "2026-11-08 02:35",
+      "likes": 4152,
+      "replies": 342,
+      "reposts": 785,
+      "quotes": 221,
+      "score": 5500
      }
     ],
-    "published_at": "2026-11-06 08:32",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-07 22:54",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "Salon官方告别文与美联社报道",
-     "url": "https://www.salon.com/2026/11/05/goodbye-from-salon/",
+     "source": "NASA官方新闻稿",
+     "url": "https://www.nasa.gov/news-release/nasa-awards-moon-base-transportation-technology-science-projects/",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 2
    },
    {
-    "topic": "美国10月非农新增16.5万引发解读之争",
+    "topic": "Chamath承认看错美国经济",
     "category": "财经",
-    "summary": "美国劳工统计局2026-11-06公布10月新增16.5万个就业岗位。白宫与副总统账号宣传就业强劲，另一些账号聚焦外国出生与本土出生就业变化的分项数据。",
-    "url": "https://x.com/i/trending/2118698633344553351",
-    "score": 59211,
-    "engagement": 57182,
-    "post_count": 2029,
-    "post_count_query": "(\"jobs report\" OR payrolls) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和57182，加关键词近24小时原创及回复帖数2029。",
+    "summary": "投资人Chamath Palihapitiya在All-In播客中承认，原以为低失业率和GDP增长代表经济健康，但中期选举结果显示选民在否定一个对工薪阶层失灵的经济。他的发帖和节目片段引发对美国两极化经济的讨论。",
+    "url": "https://x.com/i/trending/2119473884084744356",
+    "score": 18174,
+    "engagement": 17904,
+    "post_count": 270,
+    "post_count_query": "(Chamath OR Palihapitiya) economy -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和17904，加关键词近24小时原创及回复帖数270。",
     "posts": [
      {
-      "author": "WhiteHouse",
-      "author_name": "The White House",
-      "url": "https://x.com/WhiteHouse/status/2118713011640623143",
-      "created_at": "2026-11-06 22:32",
-      "likes": 14002,
-      "replies": 2012,
-      "reposts": 3415,
-      "quotes": 208,
-      "score": 19637
+      "author": "chamath",
+      "author_name": "Chamath Palihapitiya",
+      "url": "https://x.com/chamath/status/2119498078957064423",
+      "created_at": "2026-11-09 02:31",
+      "likes": 3144,
+      "replies": 1096,
+      "reposts": 277,
+      "quotes": 189,
+      "score": 4706
      },
      {
-      "author": "zerohedge",
-      "author_name": "zerohedge",
-      "url": "https://x.com/zerohedge/status/2118711025012756498",
-      "created_at": "2026-11-06 22:24",
-      "likes": 6605,
-      "replies": 424,
-      "reposts": 1912,
-      "quotes": 573,
-      "score": 9514
+      "author": "tonjkb",
+      "author_name": "Tony Jacob | FindaClip.com",
+      "url": "https://x.com/tonjkb/status/2119166499734888694",
+      "created_at": "2026-11-08 04:34",
+      "likes": 5740,
+      "replies": 688,
+      "reposts": 561,
+      "quotes": 319,
+      "score": 7308
      }
     ],
     "scoring_posts": [
      {
-      "author": "WhiteHouse",
-      "author_name": "The White House",
-      "url": "https://x.com/WhiteHouse/status/2118713011640623143",
-      "created_at": "2026-11-06 22:32",
-      "likes": 14002,
-      "replies": 2012,
-      "reposts": 3415,
-      "quotes": 208,
-      "score": 19637
+      "author": "chamath",
+      "author_name": "Chamath Palihapitiya",
+      "url": "https://x.com/chamath/status/2119498078957064423",
+      "created_at": "2026-11-09 02:31",
+      "likes": 3144,
+      "replies": 1096,
+      "reposts": 277,
+      "quotes": 189,
+      "score": 4706
      },
      {
-      "author": "VP",
-      "author_name": "Vice President JD Vance",
-      "url": "https://x.com/VP/status/2118758924849434765",
-      "created_at": "2026-11-07 01:34",
-      "likes": 3658,
-      "replies": 3079,
-      "reposts": 467,
-      "quotes": 215,
-      "score": 7419
+      "author": "tonjkb",
+      "author_name": "Tony Jacob | FindaClip.com",
+      "url": "https://x.com/tonjkb/status/2119166499734888694",
+      "created_at": "2026-11-08 04:34",
+      "likes": 5740,
+      "replies": 688,
+      "reposts": 561,
+      "quotes": 319,
+      "score": 7308
      },
      {
-      "author": "catturd2",
-      "author_name": "Catturd ™",
-      "url": "https://x.com/catturd2/status/2118719623583645939",
-      "created_at": "2026-11-06 22:58",
-      "likes": 17652,
-      "replies": 216,
-      "reposts": 2721,
-      "quotes": 23,
-      "score": 20612
+      "author": "unusual_whales",
+      "author_name": "unusual_whales",
+      "url": "https://x.com/unusual_whales/status/2119520582131945728",
+      "created_at": "2026-11-09 04:01",
+      "likes": 4071,
+      "replies": 149,
+      "reposts": 424,
+      "quotes": 56,
+      "score": 4700
      },
      {
-      "author": "zerohedge",
-      "author_name": "zerohedge",
-      "url": "https://x.com/zerohedge/status/2118711025012756498",
-      "created_at": "2026-11-06 22:24",
-      "likes": 6605,
-      "replies": 424,
-      "reposts": 1912,
-      "quotes": 573,
-      "score": 9514
+      "author": "TheTNHoller",
+      "author_name": "The Tennessee Holler",
+      "url": "https://x.com/TheTNHoller/status/2119431516128268702",
+      "created_at": "2026-11-08 22:07",
+      "likes": 888,
+      "replies": 64,
+      "reposts": 221,
+      "quotes": 17,
+      "score": 1190
      }
     ],
-    "published_at": "2026-11-06 22:24",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-08 04:34",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "BLS就业报告原文",
-     "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+     "source": "All-In播客节目页（Midterm Blood Bath一期）",
+     "url": "https://podspun.com/@allin/episodes/midterm-blood-bath-4t-ai-sell-off-data-center-freeze-what-s-next-for-trump",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 3
    },
    {
-    "topic": "拉胡尔·甘地批评选民身份证与福利挂钩",
-    "category": "时政",
-    "summary": "印度国大党领袖拉胡尔·甘地2026-11-06发帖，指政府拟以选民身份证认定福利资格，并把它与选民名单特别修订（SIR）删名争议联系起来。印度政府随后澄清Aadhaar与选民身份证都将用于核验受益人。",
-    "url": "https://x.com/i/trending/2118356265348759665",
-    "score": 55968,
-    "engagement": 55837,
-    "post_count": 131,
-    "post_count_query": "(\"Rahul Gandhi\" (SIR OR \"voter ID\")) -is:retweet",
-    "score_basis": "3条48小时内聚合代表帖的赞+评+转+引之和55837，加关键词近24小时原创及回复帖数131。",
+    "topic": "比特币周末闪跌，一度跌破7.4万美元",
+    "category": "加密货币",
+    "summary": "2026-11-09清晨（北京时间06:00–06:10（X帖时间））BTC一度跌破74,000美元，引发多头集中爆仓。爆仓规模两源不一：TokenPost称20分钟内超7亿美元，WatcherGuru帖称10分钟10亿美元，后者未找到独立数据来源。CoinGecko 07:26快照BTC回到75,444美元。",
+    "url": "https://x.com/i/trending/2119554562994655624",
+    "score": 15099,
+    "engagement": 13950,
+    "post_count": 1149,
+    "post_count_query": "(bitcoin OR BTC) (liquidated OR liquidations OR \"$74,000\" OR 74k) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和13950，加关键词近24小时原创及回复帖数1149。",
     "posts": [
      {
-      "author": "RahulGandhi",
-      "author_name": "Rahul Gandhi",
-      "url": "https://x.com/RahulGandhi/status/2118601321398047082",
-      "created_at": "2026-11-06 15:08",
-      "likes": 25525,
-      "replies": 1212,
-      "reposts": 9670,
-      "quotes": 338,
-      "score": 36745
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119551689523179764",
+      "created_at": "2026-11-09 06:04",
+      "likes": 7587,
+      "replies": 752,
+      "reposts": 974,
+      "quotes": 469,
+      "score": 9782
      },
      {
-      "author": "prakashraaj",
-      "author_name": "Prakash Raj",
-      "url": "https://x.com/prakashraaj/status/2118563808830804356",
-      "created_at": "2026-11-06 12:39",
-      "likes": 8651,
-      "replies": 2339,
-      "reposts": 1785,
-      "quotes": 341,
-      "score": 13116
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "url": "https://x.com/AshCrypto/status/2119551284990836880",
+      "created_at": "2026-11-09 06:03",
+      "likes": 1486,
+      "replies": 147,
+      "reposts": 124,
+      "quotes": 15,
+      "score": 1772
      }
     ],
     "scoring_posts": [
      {
-      "author": "RahulGandhi",
-      "author_name": "Rahul Gandhi",
-      "url": "https://x.com/RahulGandhi/status/2118601321398047082",
-      "created_at": "2026-11-06 15:08",
-      "likes": 25525,
-      "replies": 1212,
-      "reposts": 9670,
-      "quotes": 338,
-      "score": 36745
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119551689523179764",
+      "created_at": "2026-11-09 06:04",
+      "likes": 7587,
+      "replies": 752,
+      "reposts": 974,
+      "quotes": 469,
+      "score": 9782
      },
      {
-      "author": "prakashraaj",
-      "author_name": "Prakash Raj",
-      "url": "https://x.com/prakashraaj/status/2118563808830804356",
-      "created_at": "2026-11-06 12:39",
-      "likes": 8651,
-      "replies": 2339,
-      "reposts": 1785,
-      "quotes": 341,
-      "score": 13116
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "url": "https://x.com/AshCrypto/status/2119551284990836880",
+      "created_at": "2026-11-09 06:03",
+      "likes": 1486,
+      "replies": 147,
+      "reposts": 124,
+      "quotes": 15,
+      "score": 1772
      },
      {
-      "author": "srinivasiyc",
-      "author_name": "Srinivas BV",
-      "url": "https://x.com/srinivasiyc/status/2118968101081641065",
-      "created_at": "2026-11-07 15:25",
-      "likes": 4985,
-      "replies": 175,
-      "reposts": 788,
-      "quotes": 28,
-      "score": 5976
+      "author": "KillaXBT",
+      "author_name": "Killa",
+      "url": "https://x.com/KillaXBT/status/2119553273422389752",
+      "created_at": "2026-11-09 06:10",
+      "likes": 1070,
+      "replies": 96,
+      "reposts": 42,
+      "quotes": 6,
+      "score": 1214
+     },
+     {
+      "author": "cryptorover",
+      "author_name": "Crypto Rover",
+      "url": "https://x.com/cryptorover/status/2119549992256025072",
+      "created_at": "2026-11-09 05:57",
+      "likes": 957,
+      "replies": 107,
+      "reposts": 104,
+      "quotes": 14,
+      "score": 1182
      }
     ],
-    "published_at": "2026-11-06 12:39",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 05:57",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "The Hindu与Telegraph India",
-     "url": "https://www.thehindu.com/news/national/not-just-vote-theft-its-rights-theft-rahul-gandhi-on-centres-voter-id-for-welfare-schemes-remark/article71673548.ece",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "冲突",
+     "values": [
+      {
+       "value": "超7亿美元（20分钟内）",
+       "source": "TokenPost",
+       "url": "https://www.tokenpost.com/news/investing/51872"
+      },
+      {
+       "value": "10亿美元（10分钟）",
+       "source": "WatcherGuru X帖",
+       "url": "https://x.com/WatcherGuru/status/2119554562994655624"
+      }
+     ],
+     "reason": "统计窗口与口径不同，WatcherGuru未给出数据来源。"
     },
     "rank": 4
    },
    {
-    "topic": "星舰第15次飞行定于2026-11-13尝试双塔回收",
-    "category": "科学",
-    "summary": "SpaceX发布纪录片回顾星舰首次入轨飞行，并把第15次飞行目标定在美国时间2026-11-13，计划首次同时用发射塔回收助推器和飞船。发射仍待美国联邦航空管理局批准。",
-    "url": "https://x.com/i/trending/2118448209886605549",
-    "score": 42913,
-    "engagement": 42365,
-    "post_count": 548,
-    "post_count_query": "(Starship \"Flight 15\") -is:retweet",
-    "score_basis": "3条48小时内聚合代表帖的赞+评+转+引之和42365，加关键词近24小时原创及回复帖数548。",
+    "topic": "特朗普称中期选举让美国“倒退一大步”",
+    "category": "时政",
+    "summary": "特朗普在Truth Social发文称，美国因上周选举结果“在历史上倒退一大步”，并把股市单日蒸发3万亿美元归咎于民主党获胜。3万亿美元是特朗普本人说法，本期未独立核算；标普500在2026-11-05单日跌4.36%。",
+    "url": "https://x.com/i/trending/2119506454977868154",
+    "score": 13849,
+    "engagement": 13434,
+    "post_count": 415,
+    "post_count_query": "Trump (\"giant step back\" OR \"$3 trillion\") -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和13434，加关键词近24小时原创及回复帖数415。",
     "posts": [
      {
-      "author": "SpaceX",
-      "author_name": "SpaceX",
-      "url": "https://x.com/SpaceX/status/2118719281038770389",
-      "created_at": "2026-11-06 22:56",
-      "likes": 29037,
-      "replies": 1027,
-      "reposts": 3912,
-      "quotes": 542,
-      "score": 34518
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2119430988769943968",
+      "created_at": "2026-11-08 22:04",
+      "likes": 4742,
+      "replies": 255,
+      "reposts": 390,
+      "quotes": 51,
+      "score": 5438
      },
      {
-      "author": "teslaownersSV",
-      "author_name": "Tesla Owners Silicon Valley",
-      "url": "https://x.com/teslaownersSV/status/2118547492459651339",
-      "created_at": "2026-11-06 11:34",
-      "likes": 1934,
-      "replies": 107,
-      "reposts": 323,
-      "quotes": 32,
-      "score": 2396
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119432871228457417",
+      "created_at": "2026-11-08 22:12",
+      "likes": 4140,
+      "replies": 261,
+      "reposts": 244,
+      "quotes": 25,
+      "score": 4670
      }
     ],
     "scoring_posts": [
      {
-      "author": "SpaceX",
-      "author_name": "SpaceX",
-      "url": "https://x.com/SpaceX/status/2118719281038770389",
-      "created_at": "2026-11-06 22:56",
-      "likes": 29037,
-      "replies": 1027,
-      "reposts": 3912,
-      "quotes": 542,
-      "score": 34518
+      "author": "TrumpTruthOnX",
+      "author_name": "Commentary Donald J. Trump Truth Social Posts On X",
+      "url": "https://x.com/TrumpTruthOnX/status/2119427312672534894",
+      "created_at": "2026-11-08 21:50",
+      "likes": 1019,
+      "replies": 143,
+      "reposts": 183,
+      "quotes": 15,
+      "score": 1360
      },
      {
-      "author": "MoonManX22",
-      "author_name": "Xander 🚀",
-      "url": "https://x.com/MoonManX22/status/2118738019700150761",
-      "created_at": "2026-11-07 00:11",
-      "likes": 4825,
-      "replies": 217,
-      "reposts": 389,
-      "quotes": 20,
-      "score": 5451
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2119430988769943968",
+      "created_at": "2026-11-08 22:04",
+      "likes": 4742,
+      "replies": 255,
+      "reposts": 390,
+      "quotes": 51,
+      "score": 5438
      },
      {
-      "author": "teslaownersSV",
-      "author_name": "Tesla Owners Silicon Valley",
-      "url": "https://x.com/teslaownersSV/status/2118547492459651339",
-      "created_at": "2026-11-06 11:34",
-      "likes": 1934,
-      "replies": 107,
-      "reposts": 323,
-      "quotes": 32,
-      "score": 2396
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119432871228457417",
+      "created_at": "2026-11-08 22:12",
+      "likes": 4140,
+      "replies": 261,
+      "reposts": 244,
+      "quotes": 25,
+      "score": 4670
+     },
+     {
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2119467484830904753",
+      "created_at": "2026-11-09 00:30",
+      "likes": 1638,
+      "replies": 142,
+      "reposts": 160,
+      "quotes": 26,
+      "score": 1966
      }
     ],
-    "published_at": "2026-11-06 11:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-08 21:50",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "SpaceX官网飞行页",
-     "url": "https://www.spacex.com/launches/starship-flight-15",
+     "source": "Truth Social原帖；Times of India报道",
+     "url": "https://truthsocial.com/@realDonaldTrump/posts/117581137343877006",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 5
    },
    {
-    "topic": "美国401(k)纳入加密资产的最终规则送白宫审查",
-    "category": "加密货币",
-    "summary": "美国劳工部关于401(k)选择另类投资的最终规则（RIN 1210-AC38）于2026-11-05送交白宫信息与监管事务办公室审查，涵盖私募、房地产和加密资产。规则提供受托人安全港，不强制计划提供加密资产。",
-    "url": "https://x.com/i/trending/2118717263465370099",
-    "score": 24068,
-    "engagement": 23689,
-    "post_count": 379,
-    "post_count_query": "(401k OR 401(k)) crypto -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和23689，加关键词近24小时原创及回复帖数379。",
-    "posts": [
-     {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2118716393176912350",
-      "created_at": "2026-11-06 22:45",
-      "likes": 10122,
-      "replies": 338,
-      "reposts": 1053,
-      "quotes": 171,
-      "score": 11684
-     },
-     {
-      "author": "AshCrypto",
-      "author_name": "Ash Crypto",
-      "url": "https://x.com/AshCrypto/status/2118717186847940767",
-      "created_at": "2026-11-06 22:48",
-      "likes": 4359,
-      "replies": 190,
-      "reposts": 540,
-      "quotes": 43,
-      "score": 5132
-     }
-    ],
-    "scoring_posts": [
-     {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2118716393176912350",
-      "created_at": "2026-11-06 22:45",
-      "likes": 10122,
-      "replies": 338,
-      "reposts": 1053,
-      "quotes": 171,
-      "score": 11684
-     },
-     {
-      "author": "AshCrypto",
-      "author_name": "Ash Crypto",
-      "url": "https://x.com/AshCrypto/status/2118717186847940767",
-      "created_at": "2026-11-06 22:48",
-      "likes": 4359,
-      "replies": 190,
-      "reposts": 540,
-      "quotes": 43,
-      "score": 5132
-     },
-     {
-      "author": "cryptorover",
-      "author_name": "Crypto Rover",
-      "url": "https://x.com/cryptorover/status/2118714189355065754",
-      "created_at": "2026-11-06 22:36",
-      "likes": 3319,
-      "replies": 94,
-      "reposts": 429,
-      "quotes": 25,
-      "score": 3867
-     },
-     {
-      "author": "BitcoinArchive",
-      "author_name": "Bitcoin Archive",
-      "url": "https://x.com/BitcoinArchive/status/2118720170164109619",
-      "created_at": "2026-11-06 23:00",
-      "likes": 2648,
-      "replies": 60,
-      "reposts": 291,
-      "quotes": 7,
-      "score": 3006
-     }
-    ],
-    "published_at": "2026-11-06 22:36",
-    "fetched_at": "2026-11-08 07:34",
-    "grade": "社媒传闻",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "reginfo.gov官方审查记录与The Block",
-     "url": "https://www.reginfo.gov/public/do/eo/neweomeeting?rin=1210-AC38",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
-    },
-    "rank": 6
-   },
-   {
-    "topic": "日经225单日跌5.96%，较52周高点回落超20%",
-    "category": "财经",
-    "summary": "日经225指数2026-11-06收于57,434.77点，单日跌5.96%，当周跌9.25%。X上热帖称日股进入技术性熊市；以Investing 52周高点72,831.73计算，回落21.14%。东京市场2026-11-09重新开盘。",
-    "url": "https://x.com/i/trending/2119056137345475024",
-    "score": 12501,
-    "engagement": 12333,
-    "post_count": 168,
-    "post_count_query": "Nikkei (bear OR crash) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和12333，加关键词近24小时原创及回复帖数168。",
-    "posts": [
-     {
-      "author": "cryptorover",
-      "author_name": "Crypto Rover",
-      "url": "https://x.com/cryptorover/status/2119013799974052011",
-      "created_at": "2026-11-07 18:27",
-      "likes": 2872,
-      "replies": 121,
-      "reposts": 373,
-      "quotes": 42,
-      "score": 3408
-     },
-     {
-      "author": "macropaperr",
-      "author_name": "The Macro Paper",
-      "url": "https://x.com/macropaperr/status/2119007070959923418",
-      "created_at": "2026-11-07 18:00",
-      "likes": 457,
-      "replies": 13,
-      "reposts": 80,
-      "quotes": 9,
-      "score": 559
-     }
-    ],
-    "scoring_posts": [
-     {
-      "author": "ABU_KHALED2021",
-      "author_name": "ABU_KHALED",
-      "url": "https://x.com/ABU_KHALED2021/status/2119061152260862402",
-      "created_at": "2026-11-07 21:35",
-      "likes": 6249,
-      "replies": 588,
-      "reposts": 955,
-      "quotes": 197,
-      "score": 7989
-     },
-     {
-      "author": "cryptorover",
-      "author_name": "Crypto Rover",
-      "url": "https://x.com/cryptorover/status/2119013799974052011",
-      "created_at": "2026-11-07 18:27",
-      "likes": 2872,
-      "replies": 121,
-      "reposts": 373,
-      "quotes": 42,
-      "score": 3408
-     },
-     {
-      "author": "Emarged",
-      "author_name": "Uncle Ruckus",
-      "url": "https://x.com/Emarged/status/2119102773270868425",
-      "created_at": "2026-11-08 00:20",
-      "likes": 312,
-      "replies": 24,
-      "reposts": 39,
-      "quotes": 2,
-      "score": 377
-     },
-     {
-      "author": "macropaperr",
-      "author_name": "The Macro Paper",
-      "url": "https://x.com/macropaperr/status/2119007070959923418",
-      "created_at": "2026-11-07 18:00",
-      "likes": 457,
-      "replies": 13,
-      "reposts": 80,
-      "quotes": 9,
-      "score": 559
-     }
-    ],
-    "published_at": "2026-11-07 18:00",
-    "fetched_at": "2026-11-08 07:34",
-    "grade": "社媒传闻",
-    "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "Investing日经历史数据与JAPAN.co.jp周评",
-     "url": "https://japan.co.jp/e/japan-market-desk/",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
-    },
-    "rank": 7
-   },
-   {
-    "topic": "南非地方选举非国大得票降至30.9%",
+    "topic": "南非非国大地方选举得票创新低",
     "category": "国际",
-    "summary": "南非2026-11-04地方选举计票接近完成，The Outlier汇总的选举委员会数据显示非国大比例代表票得票30.9%，民主联盟24.7%。多数城市议会无单一政党过半，选举委员会定于2026-11-08宣布正式结果。",
+    "summary": "南非选举委员会2026-11-08宣布2026-11-04地方选举结果：非国大（ANC）得票30.76%，为1994年以来最差，2021年为45.59%；民主联盟24.64%，祖马的MK党9.76%。213个市议会中127个无单一政党过半。",
     "url": "https://x.com/i/trending/2118700828907237454",
-    "score": 10808,
-    "engagement": 9513,
-    "post_count": 1295,
-    "post_count_query": "(ANC (election OR elections)) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和9513，加关键词近24小时原创及回复帖数1295。",
+    "score": 13389,
+    "engagement": 12417,
+    "post_count": 972,
+    "post_count_query": "ANC (\"local elections\" OR \"local government elections\" OR LGE OR votes) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和12417，加关键词近24小时原创及回复帖数972。",
     "posts": [
      {
       "author": "SizweMpofuWalsh",
       "author_name": "Sizwe Mpofu-Walsh",
       "url": "https://x.com/SizweMpofuWalsh/status/2119011417382592796",
       "created_at": "2026-11-07 18:17",
-      "likes": 4483,
-      "replies": 177,
-      "reposts": 699,
-      "quotes": 54,
-      "score": 5413
+      "likes": 6461,
+      "replies": 234,
+      "reposts": 998,
+      "quotes": 74,
+      "score": 7767
      },
      {
       "author": "MbalulaFikile",
       "author_name": "ANC SECRETARY GENERAL | Fikile Mbalula",
       "url": "https://x.com/MbalulaFikile/status/2119059826412015623",
       "created_at": "2026-11-07 21:30",
-      "likes": 775,
-      "replies": 624,
-      "reposts": 131,
-      "quotes": 68,
-      "score": 1598
+      "likes": 1115,
+      "replies": 875,
+      "reposts": 218,
+      "quotes": 109,
+      "score": 2317
      }
     ],
     "scoring_posts": [
+     {
+      "author": "MbalulaFikile",
+      "author_name": "ANC SECRETARY GENERAL | Fikile Mbalula",
+      "url": "https://x.com/MbalulaFikile/status/2119059826412015623",
+      "created_at": "2026-11-07 21:30",
+      "likes": 1115,
+      "replies": 875,
+      "reposts": 218,
+      "quotes": 109,
+      "score": 2317
+     },
+     {
+      "author": "MbalulaFikile",
+      "author_name": "ANC SECRETARY GENERAL | Fikile Mbalula",
+      "url": "https://x.com/MbalulaFikile/status/2119045291382833517",
+      "created_at": "2026-11-07 20:32",
+      "likes": 133,
+      "replies": 273,
+      "reposts": 22,
+      "quotes": 29,
+      "score": 457
+     },
      {
       "author": "SizweMpofuWalsh",
       "author_name": "Sizwe Mpofu-Walsh",
       "url": "https://x.com/SizweMpofuWalsh/status/2119011417382592796",
       "created_at": "2026-11-07 18:17",
-      "likes": 4483,
-      "replies": 177,
-      "reposts": 699,
-      "quotes": 54,
-      "score": 5413
-     },
-     {
-      "author": "MbalulaFikile",
-      "author_name": "ANC SECRETARY GENERAL | Fikile Mbalula",
-      "url": "https://x.com/MbalulaFikile/status/2119059826412015623",
-      "created_at": "2026-11-07 21:30",
-      "likes": 775,
-      "replies": 624,
-      "reposts": 131,
-      "quotes": 68,
-      "score": 1598
-     },
-     {
-      "author": "waynesussman",
-      "author_name": "Wayne Sussman",
-      "url": "https://x.com/waynesussman/status/2119050658049626116",
-      "created_at": "2026-11-07 20:53",
-      "likes": 772,
-      "replies": 94,
-      "reposts": 245,
-      "quotes": 50,
-      "score": 1161
+      "likes": 6461,
+      "replies": 234,
+      "reposts": 998,
+      "quotes": 74,
+      "score": 7767
      },
      {
       "author": "MzansiFarmer",
       "author_name": "Mzansi Farmer",
       "url": "https://x.com/MzansiFarmer/status/2119066873807478943",
       "created_at": "2026-11-07 21:58",
-      "likes": 935,
-      "replies": 156,
-      "reposts": 183,
-      "quotes": 67,
-      "score": 1341
+      "likes": 1352,
+      "replies": 198,
+      "reposts": 248,
+      "quotes": 78,
+      "score": 1876
      }
     ],
     "published_at": "2026-11-07 18:17",
-    "fetched_at": "2026-11-08 07:34",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "The Outlier（数据源南非选举委员会）与The Witness",
-     "url": "https://theoutlier.co.za/results/",
+     "source": "南非政府新闻SAnews（IEC宣布结果）",
+     "url": "https://www.sanews.gov.za/south-africa/iec-declares-lge-2026-free-and-fair",
+     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。Politicsweb早版本为30.89%，以IEC最终宣布30.76%为准。"
+    },
+    "rank": 6
+   },
+   {
+    "topic": "The Free Press误称El-Sayed用阿拉伯语演讲后删视频",
+    "category": "社会",
+    "summary": "媒体The Free Press发布评论视频，称密歇根当选者Abdul El-Sayed用阿拉伯语发表胜选演讲；实际演讲主体为英语，只夹杂少量阿拉伯语短语。该媒体先更正，后于2026-11-09 02:33在X发帖称已删除该视频，引发对媒体核实流程的批评。",
+    "url": "https://x.com/i/trending/2119158958770282497",
+    "score": 7069,
+    "engagement": 7004,
+    "post_count": 65,
+    "post_count_query": "(\"Free Press\" OR TheFP OR Sulkin) (\"El-Sayed\" OR Arabic) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和7004，加关键词近24小时原创及回复帖数65。",
+    "posts": [
+     {
+      "author": "TheFP",
+      "author_name": "The Free Press",
+      "url": "https://x.com/TheFP/status/2119498491055734881",
+      "created_at": "2026-11-09 02:33",
+      "likes": 473,
+      "replies": 294,
+      "reposts": 47,
+      "quotes": 89,
+      "score": 903
+     },
+     {
+      "author": "infinite_jaz",
+      "author_name": "jasper nathaniel",
+      "url": "https://x.com/infinite_jaz/status/2119154176252858386",
+      "created_at": "2026-11-08 03:45",
+      "likes": 3669,
+      "replies": 20,
+      "reposts": 342,
+      "quotes": 8,
+      "score": 4039
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "TheFP",
+      "author_name": "The Free Press",
+      "url": "https://x.com/TheFP/status/2119498491055734881",
+      "created_at": "2026-11-09 02:33",
+      "likes": 473,
+      "replies": 294,
+      "reposts": 47,
+      "quotes": 89,
+      "score": 903
+     },
+     {
+      "author": "infinite_jaz",
+      "author_name": "jasper nathaniel",
+      "url": "https://x.com/infinite_jaz/status/2119154176252858386",
+      "created_at": "2026-11-08 03:45",
+      "likes": 3669,
+      "replies": 20,
+      "reposts": 342,
+      "quotes": 8,
+      "score": 4039
+     },
+     {
+      "author": "JeremiahDJohns",
+      "author_name": "Jeremiah Johnson 🌐",
+      "url": "https://x.com/JeremiahDJohns/status/2119206430947385720",
+      "created_at": "2026-11-08 07:12",
+      "likes": 1463,
+      "replies": 61,
+      "reposts": 192,
+      "quotes": 18,
+      "score": 1734
+     },
+     {
+      "author": "EliLake",
+      "author_name": "Eli Lake",
+      "url": "https://x.com/EliLake/status/2119084082709868802",
+      "created_at": "2026-11-07 23:06",
+      "likes": 15,
+      "replies": 284,
+      "reposts": 1,
+      "quotes": 28,
+      "score": 328
+     }
+    ],
+    "published_at": "2026-11-07 23:06",
+    "fetched_at": "2026-11-09 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch",
+     "source": "The Independent报道；TheFP官方X帖",
+     "url": "https://www.independent.co.uk/news/world/americas/us-politics/el-sayed-winner-speech-midterms-free-press-apology-b3081034.html",
+     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+    },
+    "rank": 7
+   },
+   {
+    "topic": "共和党内围绕万斯2028前景分裂",
+    "category": "时政",
+    "summary": "中期选举失利后，副总统万斯的败选归因言论引发党内反弹。佛州众议员Randy Fine称万斯在“把败选归咎于犹太人”，表示2028年不会支持他；电台主持人Mark Levin也公开批评。",
+    "url": "https://x.com/i/trending/2119570167571353892",
+    "score": 6075,
+    "engagement": 4217,
+    "post_count": 1858,
+    "post_count_query": "(Vance OR \"JD Vance\") (2028 OR midterm OR \"Randy Fine\" OR Levin) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和4217，加关键词近24小时原创及回复帖数1858。",
+    "posts": [
+     {
+      "author": "FoxNews",
+      "author_name": "Fox News",
+      "url": "https://x.com/FoxNews/status/2119454692119842924",
+      "created_at": "2026-11-08 23:39",
+      "likes": 1043,
+      "replies": 447,
+      "reposts": 150,
+      "quotes": 22,
+      "score": 1662
+     },
+     {
+      "author": "EricLDaugh",
+      "author_name": "Eric Daugherty",
+      "url": "https://x.com/EricLDaugh/status/2119546134381113434",
+      "created_at": "2026-11-09 05:42",
+      "likes": 634,
+      "replies": 137,
+      "reposts": 140,
+      "quotes": 15,
+      "score": 926
+     }
+    ],
+    "scoring_posts": [
+     {
+      "author": "FoxNews",
+      "author_name": "Fox News",
+      "url": "https://x.com/FoxNews/status/2119454692119842924",
+      "created_at": "2026-11-08 23:39",
+      "likes": 1043,
+      "replies": 447,
+      "reposts": 150,
+      "quotes": 22,
+      "score": 1662
+     },
+     {
+      "author": "EricLDaugh",
+      "author_name": "Eric Daugherty",
+      "url": "https://x.com/EricLDaugh/status/2119546134381113434",
+      "created_at": "2026-11-09 05:42",
+      "likes": 634,
+      "replies": 137,
+      "reposts": 140,
+      "quotes": 15,
+      "score": 926
+     },
+     {
+      "author": "OunkaOnX",
+      "author_name": "Ounka",
+      "url": "https://x.com/OunkaOnX/status/2119431520960360901",
+      "created_at": "2026-11-08 22:07",
+      "likes": 914,
+      "replies": 189,
+      "reposts": 179,
+      "quotes": 35,
+      "score": 1317
+     },
+     {
+      "author": "RyanSchmelzFOX",
+      "author_name": "Ryan Schmelz",
+      "url": "https://x.com/RyanSchmelzFOX/status/2119525102760906971",
+      "created_at": "2026-11-09 04:18",
+      "likes": 184,
+      "replies": 69,
+      "reposts": 36,
+      "quotes": 23,
+      "score": 312
+     }
+    ],
+    "published_at": "2026-11-08 22:07",
+    "fetched_at": "2026-11-09 07:40",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch",
+     "source": "LiveNOW from FOX报道",
+     "url": "https://www.livenowfox.com/news/florida-gop-lawmaker-compares-vances-midterm-remarks-nazi-era-germany-hes-got-go",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 8
    },
    {
-    "topic": "比特币周末徘徊7.5万美元，多空争论升温",
-    "category": "加密货币",
-    "summary": "比特币周末在7.5万美元附近徘徊，Saylor等账号发帖鼓励长期持有，也有账号讨论未平仓合约与轧空。CoinGecko 2026-11-08快照为75,704美元，24小时−0.20%。",
-    "url": "https://x.com/i/trending/2119084654015971370",
-    "score": 10127,
-    "engagement": 9672,
-    "post_count": 455,
-    "post_count_query": "(bitcoin 75000 OR \"$75K\" bitcoin) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和9672，加关键词近24小时原创及回复帖数455。",
+    "topic": "新西兰大选结果胶着，等待特别票",
+    "category": "国际",
+    "summary": "新西兰2026-11-07大选点票后，国家党以42席暂列第一大党，工党政党票略高；右翼阵营暂得67席，比过半所需66席多1席。399,365张特别票未计，官方最终结果2026-11-27公布。",
+    "url": "https://x.com/i/trending/2119158954131390937",
+    "score": 5938,
+    "engagement": 5245,
+    "post_count": 693,
+    "post_count_query": "(\"New Zealand\" OR NZ OR Luxon OR Hipkins) election -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和5245，加关键词近24小时原创及回复帖数693。",
     "posts": [
      {
-      "author": "saylor",
-      "author_name": "Michael Saylor",
-      "url": "https://x.com/saylor/status/2119129992135397422",
-      "created_at": "2026-11-08 02:08",
-      "likes": 3308,
-      "replies": 318,
-      "reposts": 300,
-      "quotes": 58,
-      "score": 3984
+      "author": "PolitlcsGlobal",
+      "author_name": "Politics Global",
+      "url": "https://x.com/PolitlcsGlobal/status/2119088780317463003",
+      "created_at": "2026-11-07 23:25",
+      "likes": 1582,
+      "replies": 44,
+      "reposts": 104,
+      "quotes": 49,
+      "score": 1779
      },
      {
-      "author": "TedPillows",
-      "author_name": "Ted",
-      "url": "https://x.com/TedPillows/status/2119022063038136666",
-      "created_at": "2026-11-07 19:00",
-      "likes": 2045,
-      "replies": 165,
-      "reposts": 212,
-      "quotes": 25,
-      "score": 2447
+      "author": "chrisluxonmp",
+      "author_name": "Christopher Luxon",
+      "url": "https://x.com/chrisluxonmp/status/2119140887787880551",
+      "created_at": "2026-11-08 02:52",
+      "likes": 620,
+      "replies": 275,
+      "reposts": 38,
+      "quotes": 19,
+      "score": 952
      }
     ],
     "scoring_posts": [
      {
-      "author": "saylor",
-      "author_name": "Michael Saylor",
-      "url": "https://x.com/saylor/status/2119129992135397422",
-      "created_at": "2026-11-08 02:08",
-      "likes": 3308,
-      "replies": 318,
-      "reposts": 300,
-      "quotes": 58,
-      "score": 3984
+      "author": "chrisluxonmp",
+      "author_name": "Christopher Luxon",
+      "url": "https://x.com/chrisluxonmp/status/2119140887787880551",
+      "created_at": "2026-11-08 02:52",
+      "likes": 620,
+      "replies": 275,
+      "reposts": 38,
+      "quotes": 19,
+      "score": 952
      },
      {
-      "author": "TedPillows",
-      "author_name": "Ted",
-      "url": "https://x.com/TedPillows/status/2119022063038136666",
-      "created_at": "2026-11-07 19:00",
-      "likes": 2045,
-      "replies": 165,
-      "reposts": 212,
-      "quotes": 25,
-      "score": 2447
+      "author": "PolitlcsGlobal",
+      "author_name": "Politics Global",
+      "url": "https://x.com/PolitlcsGlobal/status/2119088780317463003",
+      "created_at": "2026-11-07 23:25",
+      "likes": 1582,
+      "replies": 44,
+      "reposts": 104,
+      "quotes": 49,
+      "score": 1779
      },
      {
-      "author": "BitcoinMagazine",
-      "author_name": "Bitcoin Magazine",
-      "url": "https://x.com/BitcoinMagazine/status/2119050354310688869",
-      "created_at": "2026-11-07 20:52",
-      "likes": 1736,
-      "replies": 92,
-      "reposts": 250,
-      "quotes": 15,
-      "score": 2093
+      "author": "HelenClarkNZ",
+      "author_name": "Helen Clark",
+      "url": "https://x.com/HelenClarkNZ/status/2119147999422984323",
+      "created_at": "2026-11-08 03:20",
+      "likes": 1350,
+      "replies": 7,
+      "reposts": 289,
+      "quotes": 45,
+      "score": 1691
      },
      {
-      "author": "cryptorover",
-      "author_name": "Crypto Rover",
-      "url": "https://x.com/cryptorover/status/2119097548388303307",
-      "created_at": "2026-11-08 00:00",
-      "likes": 936,
-      "replies": 108,
-      "reposts": 95,
-      "quotes": 9,
-      "score": 1148
+      "author": "JoeM_NZ",
+      "author_name": "Joe M",
+      "url": "https://x.com/JoeM_NZ/status/2119205594129408196",
+      "created_at": "2026-11-08 07:09",
+      "likes": 573,
+      "replies": 142,
+      "reposts": 70,
+      "quotes": 38,
+      "score": 823
      }
     ],
-    "published_at": "2026-11-07 19:00",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-07 23:25",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "CoinGecko API快照",
-     "url": "https://www.coingecko.com/en/coins/bitcoin",
+     "source": "The Guardian解读；新西兰选举委员会结果页",
+     "url": "https://www.theguardian.com/world/2026/nov/08/nz-election-who-won-results-explained-overhang-special-votes-new-zealand",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 9
    },
    {
-    "topic": "加拿大10月失业率升至6.7%，补选前朝野交锋",
-    "category": "时政",
-    "summary": "加拿大统计局2026-11-06公布10月就业减少4,700个，失业率升0.2个百分点至6.7%。同期保守党人士在X上围绕赤字、移民与媒体报道攻击政府，保守党领袖博励治称补选失利也将继续战斗。",
-    "url": "https://x.com/i/trending/2118864837698830534",
-    "score": 9321,
-    "engagement": 9215,
-    "post_count": 106,
-    "post_count_query": "(Canada unemployment 6.7) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和9215，加关键词近24小时原创及回复帖数106。",
+    "topic": "日经225进入技术性熊市",
+    "category": "财经",
+    "summary": "日经225在2026-11-06收57,434.77点、单日−5.96%，较6月高点跌超20%，进入技术性熊市。市场把抛售归因于民主党胜选后对AI与数据中心监管收紧的担忧；东京2026-11-09开盘是下一个观察点。",
+    "url": "https://x.com/i/trending/2119056137345475024",
+    "score": 5085,
+    "engagement": 5007,
+    "post_count": 78,
+    "post_count_query": "(Nikkei OR \"Japan stock\" OR \"Japanese stock\") (\"bear market\" OR crash) -is:retweet",
+    "score_basis": "3条48小时内聚合代表帖的赞+评+转+引之和5007，加关键词近24小时原创及回复帖数78。",
     "posts": [
      {
-      "author": "AndrewScheer",
-      "author_name": "Andrew Scheer",
-      "url": "https://x.com/AndrewScheer/status/2118798375781101664",
-      "created_at": "2026-11-07 04:11",
-      "likes": 4348,
-      "replies": 283,
-      "reposts": 774,
-      "quotes": 25,
-      "score": 5430
+      "author": "cryptorover",
+      "author_name": "Crypto Rover",
+      "url": "https://x.com/cryptorover/status/2119013799974052011",
+      "created_at": "2026-11-07 18:27",
+      "likes": 3295,
+      "replies": 130,
+      "reposts": 439,
+      "quotes": 47,
+      "score": 3911
      },
      {
-      "author": "Roman_Baber",
-      "author_name": "Roman Baber",
-      "url": "https://x.com/Roman_Baber/status/2118796679138730339",
-      "created_at": "2026-11-07 04:04",
-      "likes": 2225,
-      "replies": 107,
-      "reposts": 686,
-      "quotes": 17,
-      "score": 3035
+      "author": "Emarged",
+      "author_name": "Uncle Ruckus",
+      "url": "https://x.com/Emarged/status/2119102773270868425",
+      "created_at": "2026-11-08 00:20",
+      "likes": 402,
+      "replies": 30,
+      "reposts": 49,
+      "quotes": 3,
+      "score": 484
      }
     ],
     "scoring_posts": [
      {
-      "author": "AndrewScheer",
-      "author_name": "Andrew Scheer",
-      "url": "https://x.com/AndrewScheer/status/2118798375781101664",
-      "created_at": "2026-11-07 04:11",
-      "likes": 4348,
-      "replies": 283,
-      "reposts": 774,
-      "quotes": 25,
-      "score": 5430
+      "author": "cryptorover",
+      "author_name": "Crypto Rover",
+      "url": "https://x.com/cryptorover/status/2119013799974052011",
+      "created_at": "2026-11-07 18:27",
+      "likes": 3295,
+      "replies": 130,
+      "reposts": 439,
+      "quotes": 47,
+      "score": 3911
      },
      {
-      "author": "CTVNews",
-      "author_name": "CTV News",
-      "url": "https://x.com/CTVNews/status/2118785553055301719",
-      "created_at": "2026-11-07 03:20",
-      "likes": 314,
-      "replies": 219,
-      "reposts": 30,
-      "quotes": 17,
-      "score": 580
+      "author": "Emarged",
+      "author_name": "Uncle Ruckus",
+      "url": "https://x.com/Emarged/status/2119102773270868425",
+      "created_at": "2026-11-08 00:20",
+      "likes": 402,
+      "replies": 30,
+      "reposts": 49,
+      "quotes": 3,
+      "score": 484
      },
      {
-      "author": "Roman_Baber",
-      "author_name": "Roman Baber",
-      "url": "https://x.com/Roman_Baber/status/2118796679138730339",
-      "created_at": "2026-11-07 04:04",
-      "likes": 2225,
-      "replies": 107,
-      "reposts": 686,
-      "quotes": 17,
-      "score": 3035
-     },
-     {
-      "author": "CP24",
-      "author_name": "CP24",
-      "url": "https://x.com/CP24/status/2118810731122491620",
-      "created_at": "2026-11-07 05:00",
-      "likes": 93,
-      "replies": 65,
-      "reposts": 5,
-      "quotes": 7,
-      "score": 170
+      "author": "macropaperr",
+      "author_name": "The Macro Paper",
+      "url": "https://x.com/macropaperr/status/2119007070959923418",
+      "created_at": "2026-11-07 18:00",
+      "likes": 501,
+      "replies": 15,
+      "reposts": 87,
+      "quotes": 9,
+      "score": 612
      }
     ],
-    "published_at": "2026-11-07 03:20",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-07 18:00",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "加拿大统计局与CBC",
-     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm",
+     "source": "The Japan Times；NHK WORLD",
+     "url": "https://www.japantimes.co.jp/business/2026/11/06/markets/market-nov-6/",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 10
@@ -1046,11 +1100,11 @@
   ],
   "filecoin": [
    {
-    "title": "72小时内无新的Filecoin新闻",
-    "summary": "已查Lotus官方Release：最新v1.39.0发布于2026-11-06 07:56，已于2026-11-07期报道，本期不重复；上期截止后未核实到新的官方动态。",
+    "title": "72小时内无新的Filecoin官方新闻",
+    "summary": "Lotus最新Release仍为v1.39.0（2026-11-06 07:56，已于2026-11-07期报道）；上期截止后未核实到新的Filecoin官方动态。FIL价格见金融简报。",
     "source_url": "https://github.com/filecoin-project/lotus/releases",
-    "published_at": "2026-11-08 07:34",
-    "fetched_at": "2026-11-08 07:34",
+    "published_at": "2026-11-09 07:40",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1062,36 +1116,40 @@
    }
   ],
   "finance": {
-   "title": "每日金融市场简报｜2026-11-08",
-   "cutoff": "2026-11-08 07:34",
-   "cutoff_note": "周日。美股、美债、DXY、黄金、布伦特沿用美国2026-11-06（周五）收盘/结算，周六休市无新价；加密三项为同一次CoinGecko请求快照。",
+   "title": "每日金融市场简报｜2026-11-09",
+   "cutoff": "2026-11-09 07:40",
+   "cutoff_note": "周一早晨。美股、美债、DXY、黄金、布伦特沿用美国2026-11-06（周五）收盘/结算，周末无新价；东京2026-11-09 08:00（北京时间）开盘，本期发稿前未取到开盘数据；加密三项为同一次CoinGecko请求快照（2026-11-09 07:26）。",
    "missing": [
     {
      "item": "Codex交叉核对",
-     "reason": "Codex额度用尽（至2026-11-11 14:53恢复）；本期第二来源用WebSearch人工核对，周五收盘数据沿用上期Codex核对结果。"
+     "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。周五收盘数据沿用2026-11-07期Codex核对结果。"
     },
     {
      "item": "加密同刻第二平台核对",
      "reason": "仅CoinGecko同批快照。"
     },
     {
-     "item": "未来24—72小时完整官方日程",
-     "reason": "仅核实到东京股市2026-11-09重新开盘与南非选委会2026-11-08宣布结果（无精确时分），其余不虚构。"
+     "item": "日经2026-11-09开盘价",
+     "reason": "发稿时东京刚开盘，未取到可核实报价。"
+    },
+    {
+     "item": "美国本周CPI具体发布时间",
+     "reason": "本期未打开BLS日程核实，不写入日程。"
     }
    ],
-   "yesterday_check": "昨日待验证：后续通胀数据与联储沟通——周末无新的官方数据；美股反弹能否延续——2026-11-07、11-08休市，下一交易日为美国2026-11-09，暂无结果；Farside流向、INJC与海峡航运仍未核实。",
+   "yesterday_check": "昨日待验证：日经能否守住57,434.77点——东京2026-11-09 08:00开盘，发稿前无结果，下期写明；加拿大央行沟通——周末未见新表态；401(k)规则OIRA审查——未见结束审查公告；BTC能否守住75,000美元——2026-11-09清晨一度跌破74,000美元，07:26回到75,444美元；FIL能否回到0.809475美元——未回到，07:26为0.757044美元。",
    "three_lines": [
     {
-     "conclusion": "周末无美股新价，快照沿用周五收盘。",
-     "support": "标普500为7,376.86、+0.31%；纳指24,579.42、+1.09%（美国2026-11-06收盘）。"
+     "conclusion": "美股周末无新价，本周第一个观察点是周一亚洲开盘。",
+     "support": "标普500为7,376.86、+0.31%，纳指24,579.42、+1.09%（美国2026-11-06收盘）；日经2026-11-06收57,434.77点。"
     },
     {
-     "conclusion": "日股周五重挫，周一开盘是亚洲首个观察点。",
-     "support": "日经225在2026-11-06收57,434.77点、−5.96%，当周−9.25%；东京2026-11-09重新开盘。"
+     "conclusion": "加密周日夜间闪跌后部分收复。",
+     "support": "BTC清晨一度跌破74,000美元，CoinGecko 07:26快照75,444美元（−0.34%（24h））；ETH 2,158.60美元（−3.27%（24h））。"
     },
     {
-     "conclusion": "加密周末小幅走弱，FIL跌幅较大。",
-     "support": "CoinGecko同批快照BTC 75,704美元（−0.20%（24h）），FIL 0.786965美元（−3.49%（24h））。"
+     "conclusion": "美债本周有1,250亿美元再融资拍卖。",
+     "support": "美国财政部2026-11-04声明：3年期580亿、10年期420亿、30年期250亿美元，2026-11-16结算。"
     }
    ],
    "snapshot": [
@@ -1190,9 +1248,9 @@
     },
     {
      "asset": "BTC",
-     "value": "75,704 美元",
-     "change": "−0.20%（24h）",
-     "time": "2026-11-08 07:28",
+     "value": "75,444 美元",
+     "change": "−0.34%（24h）",
+     "time": "2026-11-09 07:26",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/bitcoin",
@@ -1203,9 +1261,9 @@
     },
     {
      "asset": "ETH",
-     "value": "2,231.65 美元",
-     "change": "−0.16%（24h）",
-     "time": "2026-11-08 07:28",
+     "value": "2,158.60 美元",
+     "change": "−3.27%（24h）",
+     "time": "2026-11-09 07:26",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/ethereum",
@@ -1216,9 +1274,9 @@
     },
     {
      "asset": "FIL",
-     "value": "0.786965 美元",
-     "change": "−3.49%（24h）",
-     "time": "2026-11-08 07:28",
+     "value": "0.757044 美元",
+     "change": "−3.80%（24h）",
+     "time": "2026-11-09 07:26",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/filecoin",
@@ -1234,67 +1292,67 @@
      "items": [
       {
        "no": 1,
-       "headline": "日经225周五跌5.96%，当周跌9.25%",
-       "facts": "日经225于2026-11-06收57,434.77点，单日−5.96%；TOPIX收3,707.99、−5.90%。当周日经−9.25%、TOPIX−6.48%。2026-11-07为周六休市，2026-11-09重新开盘。",
-       "plain": "日本股市上周跌幅明显大于美股，周一开盘会显示周五美股反弹能否传导到亚洲。",
-       "affects": "日本股票、日元、亚洲半导体股。",
-       "pricing": "已有反应但程度不明",
-       "pricing_evidence": "大阪夜盘日经期货12月合约报58,250、+840（日经电子版，2026-11-07 06:21），高于现货收盘，但不是周一开盘价。",
-       "next_check": "2026-11-09东京开盘后日经能否守住57,434.77点。",
-       "risks": "判断：期货较现货高815点只是夜盘报价，不等于2026-11-09开盘价，不能据此预判反弹。",
+       "headline": "美国财政部本周拍卖1,250亿美元中长期国债",
+       "facts": "财政部2026-11-04季度再融资声明：发行3年期580亿、10年期420亿、30年期250亿美元，偿还970亿美元到期债，新增现金280亿美元，2026-11-16结算；本季度另计划回购最多950亿美元（流动性支持700亿、现金管理250亿）。",
+       "plain": "本周三场拍卖的需求会直接反映投资者愿不愿意以当前收益率买美国长债。回购是用新发债置换旧债，不等于减少债务。",
+       "affects": "美国国债收益率、美元、成长股估值。",
+       "pricing": "部分定价",
+       "pricing_evidence": "10年期收益率2026-11-06收4.859%（Investing日线），发行规模已于2026-11-04公布。",
+       "next_check": "10年期拍卖得标利率与发行前市场利率之差（尾部）。",
+       "risks": "判断：950亿美元回购为上限，财政部声明写明实际买入可低于上限，不能当成950亿美元流动性注入。",
        "sources": [
         {
-         "outlet": "Investing",
-         "title": "日经225历史数据",
-         "url": "https://cn.investing.com/indices/japan-ni225-historical-data",
-         "date": "2026-11-06"
+         "outlet": "美国财政部",
+         "title": "Quarterly Refunding Statement",
+         "url": "https://home.treasury.gov/news/press-releases/sb0678",
+         "date": "2026-11-04"
         },
         {
-         "outlet": "JAPAN.co.jp",
-         "title": "Nikkei Down 9.25% for the Week",
-         "url": "https://japan.co.jp/e/japan-market-desk/",
-         "date": "2026-11-07"
-        }
-       ],
-       "grade": "专业数据平台",
-       "crosscheck": {
-        "status": "已交叉核对",
-        "by": "WebSearch",
-        "source": "JAPAN.co.jp周评与日经电子版市场日历",
-        "url": "https://japan.co.jp/e/japan-market-desk/",
-        "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
-       }
-      },
-      {
-       "no": 2,
-       "headline": "加拿大10月就业减少4,700个，失业率6.7%",
-       "facts": "加拿大统计局2026-11-06公布：10月就业−4,700（0.0%），失业率升0.2个百分点至6.7%，就业率60.5%。",
-       "plain": "加拿大劳动力市场连续第二个月失业率上升，与美国16.5万新增就业形成对比。",
-       "affects": "加元、加拿大国债、加拿大央行利率预期。",
-       "pricing": "无法判断",
-       "pricing_evidence": "周末无新交易，未取得加元对该数据的独立反应数据。",
-       "next_check": "加拿大央行后续沟通是否提及6.7%失业率。",
-       "risks": "判断：失业率6.7%仍低于2026年4月6.9%的近期高点，单月数据不足以确认就业转弱趋势。",
-       "sources": [
-        {
-         "outlet": "Statistics Canada",
-         "title": "Labour Force Survey, October 2026",
-         "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261106/dq261106a-eng.htm",
-         "date": "2026-11-06"
-        },
-        {
-         "outlet": "CBC",
-         "title": "Canadian economy lost 4,700 jobs in October",
-         "url": "https://www.cbc.ca/news/business/canada-jobs-report-oct-2026-statscan-9.7411830",
-         "date": "2026-11-06"
+         "outlet": "美国财政部",
+         "title": "Tentative Schedule of Treasury Buyback Operations",
+         "url": "https://home.treasury.gov/system/files/221/Tentative-Buyback-Schedule.pdf",
+         "date": "2026-11-04"
         }
        ],
        "grade": "官方一手",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch",
-        "source": "CBC",
-        "url": "https://www.cbc.ca/news/business/canada-jobs-report-oct-2026-statscan-9.7411830",
+        "source": "FXNews.ai与US News报道",
+        "url": "https://money.usnews.com/investing/news/articles/2026-11-04/us-treasury-shifts-language-opening-door-to-auction-size-changes",
+        "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+       }
+      },
+      {
+       "no": 2,
+       "headline": "特朗普把股市大跌归咎于民主党胜选",
+       "facts": "特朗普在Truth Social称美国因选举结果“倒退一大步”，股市单日蒸发3万亿美元；标普500在2026-11-05单日−4.36%、收7,353.73，2026-11-06反弹+0.31%收7,376.86。",
+       "plain": "白宫把市场波动与选举结果挂钩，美股2026-11-09开盘是首个检验点。3万亿美元为特朗普说法，本期未独立核算。",
+       "affects": "美股、科技股。",
+       "pricing": "无法判断",
+       "pricing_evidence": "发帖在周末，美股2026-11-09才开盘。",
+       "next_check": "2026-11-09美股开盘标普500能否站上7,376.86点。",
+       "risks": "判断：3万亿美元未经独立核算，不宜与标普500单日−4.36%直接换算。",
+       "sources": [
+        {
+         "outlet": "Truth Social",
+         "title": "Donald J. Trump帖文",
+         "url": "https://truthsocial.com/@realDonaldTrump/posts/117581137343877006",
+         "date": "2026-11-08"
+        },
+        {
+         "outlet": "Times of India",
+         "title": "Giant step back in history: Trump blames Democrats' midterm sweep for $3 trillion market loss",
+         "url": "https://timesofindia.indiatimes.com/world/us/giant-step-back-in-history-trump-blames-democrats-midterm-sweep-for-3-trillion-market-loss/articleshow/135661310.cms",
+         "date": "2026-11-08"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch",
+        "source": "Just The News报道",
+        "url": "https://justthenews.com/government/white-house/trump-election-results-led-giant-step-back-history-after-stock-market-lost-3",
         "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
        }
       }
@@ -1305,53 +1363,62 @@
      "items": [
       {
        "no": 3,
-       "headline": "401(k)纳入加密等另类资产的最终规则送白宫审查",
-       "facts": "美国劳工部规则「Fiduciary Duties In Selecting Designated Investment Alternatives」（RIN 1210-AC38）于2026-11-05送交OIRA，状态为最终规则、待审查、无法定期限。",
-       "plain": "这是规则发布前的程序步骤，正式文本尚未公布；即便通过，也不强制401(k)计划提供加密资产。",
-       "affects": "BTC、ETH、现货加密ETF与资管公司。",
-       "pricing": "无法判断",
-       "pricing_evidence": "消息公布后BTC在CoinGecko快照为75,704美元、24小时−0.20%（24h），无法把价格变动归因于该规则。",
-       "next_check": "OIRA何时结束审查及劳工部公布最终文本。",
-       "risks": "判断：该规则2026年1月那轮OIRA审查用了70天（2026-01-13至2026-03-24），本轮无法定期限，短期公布时间不确定。",
+       "headline": "BTC清晨跌破74,000美元引发集中爆仓",
+       "facts": "2026-11-09北京时间06:00–06:10（X帖时间）BTC一度跌破74,000美元。TokenPost称20分钟内多头爆仓超7亿美元；WatcherGuru帖称10分钟爆仓10亿美元，未给出数据来源。CoinGecko 07:26快照BTC 75,444美元。",
+       "plain": "周末流动性薄，杠杆多头被集中清算，价格随后部分收复。",
+       "affects": "BTC、ETH、加密相关股。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "CoinGecko 07:26快照BTC 24小时−0.34%，ETH −3.27%。",
+       "next_check": "BTC能否守住74,000美元。",
+       "risks": "判断：爆仓规模两源相差3亿美元，在取得CoinGlass等数据平台统计前不宜引用10亿美元。",
        "sources": [
         {
-         "outlet": "reginfo.gov",
-         "title": "RIN 1210-AC38审查记录",
-         "url": "https://www.reginfo.gov/public/do/eo/neweomeeting?rin=1210-AC38",
-         "date": "2026-11-05"
+         "outlet": "TokenPost",
+         "title": "Bitcoin's Slide Below $74,000 Triggers $700 Million Liquidation Wave",
+         "url": "https://www.tokenpost.com/news/investing/51872",
+         "date": "2026-11-09"
         },
         {
-         "outlet": "The Block",
-         "title": "Trump administration moves closer to allowing crypto in 401(k)",
-         "url": "https://www.theblock.co/news/regulation/2026-11-06-trump-administration-moves-closer-allowing-crypto-401k-retirement-plans-435939",
-         "date": "2026-11-06"
+         "outlet": "CoinGecko",
+         "title": "Bitcoin price",
+         "url": "https://www.coingecko.com/en/coins/bitcoin",
+         "date": "2026-11-09"
         }
        ],
-       "grade": "官方一手",
+       "grade": "专业数据平台",
        "crosscheck": {
-        "status": "已交叉核对",
-        "by": "WebSearch",
-        "source": "Bitcoin Magazine/Bloomberg Law",
-        "url": "https://bitcoinmagazine.com/news/dol-rule-crypto-401k-white-house-review",
-        "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+        "status": "冲突",
+        "values": [
+         {
+          "value": "超7亿美元（20分钟内）",
+          "source": "TokenPost",
+          "url": "https://www.tokenpost.com/news/investing/51872"
+         },
+         {
+          "value": "10亿美元（10分钟）",
+          "source": "WatcherGuru X帖",
+          "url": "https://x.com/WatcherGuru/status/2119554562994655624"
+         }
+        ],
+        "reason": "统计窗口与口径不同，WatcherGuru未给出数据来源。"
        }
       },
       {
        "no": 4,
-       "headline": "周末加密小幅走弱，FIL 24小时跌幅大于BTC",
-       "facts": "CoinGecko同批快照（2026-11-08 07:28）：BTC 75,704美元、−0.20%（24h）；ETH 2,231.65美元、−0.16%（24h）；FIL 0.786965美元、−3.49%（24h）。",
-       "plain": "周末流动性较低，单一平台24小时变动只反映快照时点。",
-       "affects": "BTC、ETH、FIL持仓。",
+       "headline": "FIL续跌至0.757美元",
+       "facts": "CoinGecko 2026-11-09 07:26快照FIL 0.757044美元，24小时−3.80%（24h）；上期快照0.786965美元。",
+       "plain": "FIL连续两期24小时跌幅大于BTC。",
+       "affects": "FIL。",
        "pricing": "无法判断",
-       "pricing_evidence": "仅单一平台快照，无成交量与资金流数据。",
-       "next_check": "BTC能否守住75,000美元；FIL能否回到上期0.809475美元。",
-       "risks": "判断：FIL 24小时−3.49%（24h）为单一平台快照，未取得第二平台数据，不能代表全市场成交价。",
+       "pricing_evidence": "仅单一平台快照。",
+       "next_check": "FIL能否回到0.786965美元。",
+       "risks": "判断：FIL本期较上期快照低3.80%，单一平台数据，未做同刻第二平台核对。",
        "sources": [
         {
          "outlet": "CoinGecko",
-         "title": "Simple Price API",
+         "title": "Filecoin price",
          "url": "https://www.coingecko.com/en/coins/filecoin",
-         "date": "2026-11-08"
+         "date": "2026-11-09"
         }
        ],
        "grade": "专业数据平台",
@@ -1366,154 +1433,171 @@
    "events": [
     {
      "time_bj": "2026-11-09 08:00",
-     "event": "东京股市重新开盘（东证09:00 JST）",
-     "watch": "日经225相对2026-11-06收盘57,434.77点的开盘表现"
+     "event": "东京股市开盘（东证09:00 JST）",
+     "watch": "日经225相对2026-11-06收盘57,434.77点的表现"
+    },
+    {
+     "time_bj": "2026-11-10 04:00",
+     "event": "美国参议院复会（美东2026-11-09 15:00）",
+     "watch": "能源项目审批改革法案程序表决（美东17:30）"
     }
    ],
    "events_source": [
     {
-     "outlet": "MarketCalendars",
-     "title": "Is TSE Tokyo open on Saturday 7 November 2026?",
-     "url": "https://marketcalendars.com/markets/jpx/2026-11-07"
+     "outlet": "U.S. Senate Daily Press",
+     "title": "Monday, November 2, 2026",
+     "url": "https://www.dailypress.senate.gov/monday-november-2-2026/"
+    },
+    {
+     "outlet": "美国财政部",
+     "title": "Quarterly Refunding Statement",
+     "url": "https://home.treasury.gov/news/press-releases/sb0678"
     }
    ],
    "footer": "以上仅作信息参考。"
   },
   "github_tools": [
    {
-    "name": "krillinai/OpenCreator",
-    "url": "https://github.com/krillinai/OpenCreator",
-    "title": "把脚本、配音、翻译和剪辑放进一个AI创作工作台",
-    "summary": "原名KrillinAI，开源的创作者AI工作台，用可复用Skills和Agent串起脚本、视频、图像、配音、翻译与剪辑。适合做多语言短视频的个人创作者。",
+    "name": "alchaincyf/huashu-design",
+    "url": "https://github.com/alchaincyf/huashu-design",
+    "title": "在agent里一句话出产品发布动画、原型和PPT的设计skill",
+    "summary": "跨agent通用的设计skill，可在Claude Code、Cursor、Codex里一句话产出产品发布动画、可点击App原型、可编辑PPT和信息图；给它品牌logo、色板和截图会按品牌风格出稿。README中的发布片和样张由该skill自己生成。",
     "features": [
-     "视频下载与120多种语言翻译配音",
-     "用Agent生成视频、图像、音频并编辑",
-     "可复用的创作Skills"
+     "一句话生成产品发布动画（README展示32秒3.0发布片）",
+     "先出六张缩略图再挑三个方向做成真稿，内置84种带样张的风格库",
+     "产出可编辑PPTX、可点击App原型与3:4小红书图文",
+     "附设计体检，检查字号、出界和压字"
     ],
     "scenarios": [
-     "把一条中文动效片翻译配音成英文版",
-     "批量为社媒平台生成不同尺寸版本"
+     "给新产品做一段30秒发布动画",
+     "把品牌资产喂给它，批量出风格统一的动效分镜稿",
+     "活动宣传同时要动画、海报和PPT时一次产出"
     ],
-    "for_you": "对你的用处：动效片做完后，可用它补多语言字幕和配音，省去逐条手工翻译。",
-    "setup": "有桌面版和源码两种方式，按README快速开始安装；不需要写代码，开源免费，所接模型与API费用另计。",
-    "stars": 14217,
-    "last_push": "2026-11-06",
-    "fetched_at": "2026-11-08 07:34",
+    "for_you": "对你的用处：在Claude Code或Codex里装上后，可以先用它出动效片的风格方向和分镜画面，再接你现有的动效流程精修；它已开源MIT，可商用。",
+    "setup": "一条命令安装：npx skills add alchaincyf/huashu-design；不用写代码，用自然语言下指令；MIT协议免费，所用agent的模型费用另计。",
+    "stars": 28980,
+    "last_push": "2026-11-04",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
     },
-    "repo": "krillinai/OpenCreator"
+    "repo": "alchaincyf/huashu-design"
    },
    {
-    "name": "storytold/filmcraft",
-    "url": "https://github.com/storytold/filmcraft",
-    "title": "纯Rust写的开源专业非线性剪辑软件",
-    "summary": "FilmCraft是ArtCraft团队的非线性剪辑器，含剪辑、调色和声音工作区，支持macOS、Windows、Linux并可在浏览器（WebAssembly）运行。README标明项目年轻、迭代很快。",
+    "name": "jub0t/Concat",
+    "url": "https://github.com/jub0t/Concat",
+    "title": "本地运行、内置MCP服务器的免费开源视频剪辑器",
+    "summary": "Rust引擎+GPU合成的跨平台视频剪辑器，支持macOS、Windows、Linux和Android；自带本地Whisper字幕、配音、抠像和关键帧动画，内置MCP服务器，让Claude等agent直接剪片。无水印、无账号、不上传素材。",
     "features": [
-     "非线性时间线剪辑",
-     "调色（Color）工作区",
-     "声音处理",
-     "桌面原生与浏览器WebAssembly版本"
+     "关键帧动画：位置、缩放、旋转、透明度和效果参数，带曲线编辑器",
+     "本地Whisper自动字幕、文字转语音、背景抠除，离线可用",
+     "多轨剪辑与4K导出",
+     "内置MCP服务器（concat --mcp）和JSON-RPC接口"
     ],
     "scenarios": [
-     "把代码渲染出的动效片段拼成成片并调色",
-     "在浏览器里快速粗剪"
+     "让Claude通过MCP把AI生成的动效片段拼接、加字幕后导出",
+     "把横版动效片改剪成竖版短视频",
+     "离线给教程录屏加字幕和配音"
     ],
-    "for_you": "对你的用处：Remotion或Manim渲染出的片段可在这里做最后的拼接、调色和配乐，免费替代部分商业剪辑软件。",
-    "setup": "免费开源（MIT或Apache-2.0）；从getartcraft.com下载或自行编译，不需要写代码。",
-    "stars": 17764,
-    "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:34",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。与已推荐的storytold/effectcraft为同一组织的不同仓库。"
-    },
-    "repo": "storytold/filmcraft"
-   },
-   {
-    "name": "WyattBlue/auto-editor",
-    "url": "https://github.com/WyattBlue/auto-editor",
-    "title": "命令行自动剪掉静音和静止片段",
-    "summary": "Auto-Editor按音量、画面运动等方法自动切掉视频中的空白段，完成粗剪的第一遍。还提供给AI代理用的skill。星标5,805，按动效类放宽门槛（≥3,000）收录。",
-    "features": [
-     "按音量阈值自动剪静音",
-     "按画面运动量剪静止段",
-     "--margin调整剪辑节奏",
-     "可导出到剪辑软件继续精修"
-    ],
-    "scenarios": [
-     "录屏讲解视频自动去掉停顿",
-     "长素材先粗剪再做动效包装"
-    ],
-    "for_you": "对你的用处：配音或录屏素材可先用它一行命令去掉停顿，再交给动效流程；npx skills add WyattBlue/auto-editor 可让Claude或Codex直接调用。",
-    "setup": "免费（Unlicense）；按官网安装说明装好后命令行运行 auto-editor 视频文件，需要会用命令行，不需写代码。",
-    "stars": 5805,
-    "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:34",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。星标低于10,000，按动效/视频类放宽门槛收录。"
-    },
-    "repo": "WyattBlue/auto-editor"
-   },
-   {
-    "name": "getopenscreen/openscreen",
-    "url": "https://github.com/getopenscreen/openscreen",
-    "title": "录屏并一键做成带缩放的产品演示视频",
-    "summary": "OpenScreen是免费开源的桌面录屏与编辑应用，GPU加速、无水印；可在转写稿里删句子同步剪视频，编辑器代理会在每次点击处加缩放。还提供给AI代理用的演示skill。星标6,572，按视频类放宽门槛收录。",
-    "features": [
-     "屏幕录制与GPU加速导出",
-     "删转写文字即剪对应视频",
-     "自动在点击处加缩放",
-     "AI代理skill一句话生成演示视频"
-    ],
-    "scenarios": [
-     "给自己的动效工具或网页做功能演示片",
-     "制作教程类录屏"
-    ],
-    "for_you": "对你的用处：做动效作品展示或教程时，可用它的skill让AI代理直接录制并加镜头缩放，减少手动打关键帧。",
-    "setup": "免费开源（MIT），支持Windows、macOS、Linux，从Releases下载即可；skill用 npx skills add getopenscreen/openscreen --skill openscreen-demo -y 安装。",
-    "stars": 6572,
-    "last_push": "2026-11-07",
-    "fetched_at": "2026-11-08 07:34",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。星标低于10,000，按动效/视频类放宽门槛收录。"
-    },
-    "repo": "getopenscreen/openscreen"
-   },
-   {
-    "name": "Panniantong/Agent-Reach",
-    "url": "https://github.com/Panniantong/Agent-Reach",
-    "title": "让AI代理搜索和阅读X、YouTube、B站、小红书等平台",
-    "summary": "Agent Reach是一个命令行工具，让AI代理直接搜索和读取X、Reddit、YouTube、GitHub、B站、小红书内容，README称不需要平台API费用。适合用AI做信息采集的人。",
-    "features": [
-     "搜索与读取X、Reddit等平台内容",
-     "读取YouTube与B站视频信息",
-     "统一命令行给AI代理调用"
-    ],
-    "scenarios": [
-     "让Claude收集近期热门动效视频参考",
-     "汇总小红书与B站上某类动效的讨论"
-    ],
-    "for_you": "对你的用处：找动效灵感或竞品案例时，让AI代理一次跨平台搜集素材链接，再挑选参考。",
-    "setup": "需要Python 3.10+，按README安装；开源免费（MIT），部分平台需自行登录配置。",
-    "stars": 109994,
-    "last_push": "2026-11-06",
-    "fetched_at": "2026-11-08 07:34",
+    "for_you": "对你的用处：动效片段生成后，可让Claude通过它的MCP完成粗剪、加字幕和关键帧微调，减少在剪辑软件里手工操作；素材全在本地。",
+    "setup": "官网或GitHub Releases下载安装包即可用；接agent只需按docs/MCP.md加一行配置，不用写代码；AGPL-3.0开源免费。",
+    "stars": 15705,
+    "last_push": "2026-11-09",
+    "fetched_at": "2026-11-09 07:40",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
     },
-    "repo": "Panniantong/Agent-Reach"
+    "repo": "jub0t/Concat"
+   },
+   {
+    "name": "modelscope/FunClip",
+    "url": "https://github.com/modelscope/FunClip",
+    "title": "按语音识别文本或说话人一键剪片的开源工具",
+    "summary": "阿里通义语音实验室开源的本地视频剪辑工具：用FunASR Paraformer识别视频语音并带时间戳，选中文字段落或说话人即可剪出对应片段，同时输出整片和片段SRT字幕；已接入大模型辅助剪辑。",
+    "features": [
+     "中文语音识别并预测时间戳（Paraformer-Large）",
+     "热词定制，提高人名和专有名词识别准确率",
+     "按说话人ID剪辑（CAM++声纹识别）",
+     "多段自由剪辑，自动输出SRT字幕；支持大模型辅助选段"
+    ],
+    "scenarios": [
+     "从访谈或直播长视频里按关键词剪出金句片段",
+     "只保留某位嘉宾的发言片段",
+     "给动效解说片自动生成中文字幕"
+    ],
+    "for_you": "对你的用处：做带解说的动效视频时，可先用它把口播录音转成带时间戳的字幕，再按字幕时间点对齐动画节奏。",
+    "setup": "Python安装后启动Gradio网页界面操作，也可部署到服务器用浏览器访问；不需要写代码；MIT协议免费，大模型辅助剪辑需另配模型API。",
+    "stars": 6512,
+    "last_push": "2026-11-01",
+    "fetched_at": "2026-11-09 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "modelscope/FunClip"
+   },
+   {
+    "name": "scenario-labs/skills",
+    "url": "https://github.com/scenario-labs/skills",
+    "title": "让AI编程代理生成图像、视频、音频和3D素材的skill合集",
+    "summary": "一组遵循Agent Skills格式的skill，教Claude Code、Cursor、Codex等70多种代理通过Scenario MCP生成图像、视频、音频、贴图和3D资产；另有驱动Blender、Maya、Unreal等本地软件的专家skill。",
+    "features": [
+     "视频生成、视频剪辑、调色与字幕（scenario-video、scenario-video-editing、scenario-caption-studio）",
+     "动效循环、动态音乐视频与分镜（scenario-motion-loops、scenario-kinetic-music-video、scenario-storyboards）",
+     "精灵动画与Blender 2D动画skill",
+     "质量检查与生成前试算费用（quality-gate、dry-run pricing）"
+    ],
+    "scenarios": [
+     "让Claude生成一组循环动效素材用作片头",
+     "按歌曲节奏生成动态文字音乐视频",
+     "先出分镜再逐镜头生成视频片段"
+    ],
+    "for_you": "对你的用处：如果你愿意用Scenario的生成服务，可以在Claude Code里直接调用动效循环和分镜skill批量出素材，再用自己的流程合成；星标3,540，未达1万，按动效类优质项目放宽收录。",
+    "setup": "npx skills add scenario-labs/skills安装；需登录Scenario账号（OAuth）或填API key，生成按Scenario额度计费；skill本身MIT免费，不用写代码。",
+    "stars": 3540,
+    "last_push": "2026-11-09",
+    "fetched_at": "2026-11-09 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "scenario-labs/skills"
+   },
+   {
+    "name": "Evil0ctal/Douyin_TikTok_Download_API",
+    "url": "https://github.com/Evil0ctal/Douyin_TikTok_Download_API",
+    "title": "自托管抖音、TikTok、B站数据采集与无水印下载API，支持MCP",
+    "summary": "自托管的抖音、TikTok、B站数据接口：docker compose up一键部署，提供REST API、MCP服务器和网页控制台；可抓作品、作者、评论、热榜和搜索结果，下载无水印视频并在本地离线转文字。",
+    "features": [
+     "抓取作品、作者、评论、音乐、话题、直播间、热榜和搜索结果",
+     "下载无水印视频和图集，数据存入自己的PostgreSQL",
+     "本地离线把视频转成文字",
+     "REST API、MCP和CLI三种接入方式"
+    ],
+    "scenarios": [
+     "每天让agent抓抖音和TikTok动效类热门视频做选题参考",
+     "把参考视频下载后转文字，拆解脚本结构",
+     "监测某个创作者的新作品和评论反馈"
+    ],
+    "for_you": "对你的用处：可让Claude通过它的MCP定期抓同类动效账号的热门作品和评论，作为选题和风格参考；全部跑在自己的电脑上。",
+    "setup": "需要Docker，docker compose up启动；通过网页控制台或MCP使用，不用写代码；Apache-2.0开源免费。",
+    "stars": 21287,
+    "last_push": "2026-11-08",
+    "fetched_at": "2026-11-09 07:40",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "Evil0ctal/Douyin_TikTok_Download_API"
    }
   ]
  },
- "updated_at": "2026-11-08T07:34:06+08:00"
+ "updated_at": "2026-11-09T07:31:29+08:00"
 }
