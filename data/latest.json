@@ -1,26 +1,26 @@
 {
- "date": "2026-11-10",
+ "date": "2026-11-11",
  "meta": {
   "ai_labs": {
-   "as_of": "2026-11-10 07:40",
-   "basis": "五家公司分组；以上期2026-11-09 07:31为去重截止；研究文章、合作与基础设施交易不算产品或模型更新。Gemini 4 Argon机器人文章（官方日期2026-10-13）为旧闻，不收录。",
+   "as_of": "2026-11-11 07:31",
+   "basis": "五家公司分组；以上期2026-11-10 07:31为去重截止；教育研究、公益活动与预告不算产品或模型更新（OpenAI教育指导文章、照护者工作坊未收录）。",
    "missing": [
     {
      "item": "Codex交叉核对",
      "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     {
-     "item": "OpenAI AWS Marketplace正文细节",
-     "reason": "官网正文命令行抓取返回403，只依据官方RSS标题。"
+     "item": "OpenAI Businesses官方精确发布时间",
+     "reason": "官方页只标日期，RSS条目时间未能与标题对应，按TechCrunch报道时间记录。"
     }
    ],
-   "note": "更正：前三期Grok Bot版本号沿用有误，本期已按更新日志原文改正。",
+   "note": "Google同日共3条更新，Workspace skills为2026-11-09起的推送进度更新，未单列。",
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-11-10 07:40",
-   "basis": "5组search_news（各至多25条，近24小时）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数。米勒相关两个话题合并计算。不是全站完整榜单。",
+   "as_of": "2026-11-11 07:31",
+   "basis": "5组search_news（各至多25条，近24小时）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数。CPI、BTC跌破73,000美元、高盛警告加息三个话题合并计算。不是全站完整榜单。",
    "missing": [
     {
      "item": "全站绝对热榜",
@@ -32,32 +32,32 @@
     },
     {
      "item": "Codex交叉核对",
-     "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "reason": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。多数话题只有X一手帖，已标单一来源。"
     }
    ],
-   "exclude": "排除AI、体育（NFL等）、娱乐（K-pop、剧集、梅拉尼娅纪录片）与情感八卦；排除旧闻翻炒：SpaceX与高通5G合作（2026-11-04公布，马斯克2026-11-09转发再度走热）、Starship第15次飞行（SpaceX预告帖为2026-11-07，超48小时）、NASA宇航员招募（上期已报）、新西兰大选与El-Sayed视频（上期已报）；排除无法核实的说法：“近2,980个县转向民主党”图表帖（未找到官方县级统计）；SpaceX 240亿美元星舰基地发电与超算园区因含AI数据中心内容排除。",
-   "note": "帖数计数窗口：2026-11-09 07:30至2026-11-10 07:27（北京时间）。代表帖互动数抓取于2026-11-10 07:24。",
+   "exclude": "排除AI（OpenAI Businesses、Gemini 4 Carbon演示、英国央行AI泡沫警告等）、体育与娱乐（Lil Baby、BTS等）；排除上期已报：特朗普《60分钟》移民表态、米勒拘押记者报道、Rocket Lab财报、新西兰大选；排除核实不了的说法：特朗普及支持者质疑中期选举结果的得州、南卡计票数据帖（无官方统计支持）；英国民调话题因代表帖多为无关政党宣传未收录。",
+   "note": "帖数计数窗口：2026-11-10 07:30至2026-11-11 07:27（北京时间）。代表帖互动数抓取于2026-11-11 07:28。Trump Media与Coinbase话题已剔除聚合中无关的巨鲸买入帖和PNC帖。",
    "pending": []
   },
   "filecoin": {
-   "as_of": "2026-11-10 07:40",
-   "basis": "只收上期截止（2026-11-09 07:31）后的72小时内新消息；旧闻不重复。",
+   "as_of": "2026-11-11 07:31",
+   "basis": "只收上期截止（2026-11-10 07:31）后的72小时内新消息；旧闻不重复。",
    "missing": [
     {
      "item": "Filecoin官网博客与Foundation动态",
-     "reason": "filecoin.io返回Vercel安全验证页，命令行无法读取；AInvest两篇FIL分析稿返回403，未能确认发布时间，不收录。"
+     "reason": "本期只做了一次网页搜索和Lotus Release核对，搜索结果中的Solstice奖励机制文章无完整发布日期，未收录。"
     },
     {
-     "item": "Midnight拟用Filecoin归档（上期待验证）",
-     "reason": "仍未找到Charles Hoskinson原帖或Midnight官方公告。"
+     "item": "Midnight拟用Filecoin归档（待验证）",
+     "reason": "仍只有Bitnxt、CryptoPanic转述，未找到Charles Hoskinson原帖或Midnight官方公告。"
     }
    ],
    "note": "FIL价格见金融简报。",
    "pending": []
   },
   "finance": {
-   "as_of": "2026-11-10 07:40",
-   "basis": "美股、债券、汇率与商品为美国2026-11-09收盘/结算；加密采用同批CoinGecko快照；新增事实用WebSearch核对，冲突值并列。",
+   "as_of": "2026-11-11 07:31",
+   "basis": "美股、债券、汇率与商品为美国2026-11-10收盘/结算；加密采用同批CoinGecko快照；新增事实用WebSearch核对，冲突值并列。",
    "missing": [
     {
      "item": "Codex交叉核对",
@@ -68,61 +68,85 @@
      "reason": "仅CoinGecko同批快照。"
     },
     {
-     "item": "美国3年期国债拍卖结果",
-     "reason": "本期未取得财政部拍卖结果公告。"
+     "item": "10年期国债拍卖结果",
+     "reason": "本期未取得财政部2026-11-10拍卖结果公告。"
     },
     {
-     "item": "12月加息概率",
-     "reason": "BigGo与TradingNews转述的数值不一致（82%与80%），未取得CME FedWatch原始数据，不写入。"
+     "item": "CPI同比",
+     "reason": "BLS因2025年政府停摆缺数据，本月未公布同比。"
+    },
+    {
+     "item": "未来24–72小时经济日程",
+     "reason": "本期未取得官方日程表，2026-11-11为美国退伍军人节，只列已确认的更远期事件。"
     }
    ]
   },
   "github_tools": {
-   "as_of": "2026-11-10 07:40",
-   "basis": "gh api实时取星标、最后推送与归档状态；只选近90天有推送、未归档、未推荐过且星标≥1万的仓库；5条中3条为动效视频制作类（Open-Generative-AI视频生成与动效、whisperX逐词字幕时间轴、fish-speech配音），2条为信息采集（gpt-researcher）和MCP开发（fastmcp）。",
+   "as_of": "2026-11-11 07:31",
+   "basis": "gh api实时取星标、最后推送与归档状态；只选近90天有推送、未归档、未推荐过的仓库；5条中4条为动效视频制作类（ArcReel、DramaClaw、stickman-video-director、SmartSub），其中stickman-video-director（5,446星）与SmartSub（6,000星）按动效类规则放宽到≥3,000；1条为加密数据与自动化（freqtrade，56,745星）。",
    "missing": [],
-   "note": "候选LTX-Video因README声明已停止开发、Kdenlive因README未写明AI功能而未选。"
+   "note": "候选Motion Canvas（最后推送2026-07-03）、FramePack、lottie-web、Open-Sora因超过90天未推送未选；OpenBB仓库所属组织显示为openbq-org，归属存疑，未选。"
   }
  },
  "sections": {
   "ai_labs": [
    {
     "lab": "OpenAI",
-    "title": "ChatGPT Enterprise上架AWS Marketplace",
-    "summary": "OpenAI官网新闻RSS于2026-11-10 03:00（北京时间）发布：ChatGPT Enterprise现已在AWS Marketplace上架。正文页命令行抓取返回403，细节以官网原文为准。同日另一篇Control Room为内部研究基础设施文章，不算产品更新。",
-    "source_url": "https://openai.com/index/chatgpt-enterprise-aws-marketplace",
-    "published_at": "2026-11-10 03:00",
-    "fetched_at": "2026-11-10 07:40",
+    "title": "ChatGPT推出Businesses（商家主页与Business Agent，测试版）",
+    "summary": "OpenAI 2026-11-10发布：商家可在Business Hub认领并验证自己在ChatGPT里的主页，更新信息、上传带价格和库存的商品源，并查看被提及次数、网站点击等汇总数据；美国符合条件的电商和在线服务商家还可搭建Business Agent，回答用户对其产品的提问，也可作为ChatGPT广告的落地页。官方称不会把用户对话分享给商家。",
+    "source_url": "https://openai.com/index/introducing-businesses-chatgpt",
+    "published_at": "2026-11-11 02:49",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "官方原始来源；Codex额度用尽，未独立复核"
+     "status": "已交叉核对",
+     "by": "WebSearch",
+     "source": "TechCrunch 2026-11-10 10:49 PST报道",
+     "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/",
+     "note": "发布时间按TechCrunch报道时间计（官方页只标日期）。Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "source_name": "OpenAI官网"
    },
    {
     "lab": "Anthropic",
-    "title": "发布Claude Fable 5.2与Claude Mythos 5.2",
-    "summary": "Anthropic于2026-11-09发布两款新模型：Fable 5.2面向所有用户，Mythos 5.2只开放给通过网络安全和生命科学验证计划的机构。官方称输出速度比5.1快30%，定价每百万输入token 8美元、输出40美元，另有最快2.5倍的快速模式（16/80美元）；上下文窗口1M token，最大输出128K。Fable 5.2已上线Claude API、Amazon Bedrock、Google Cloud和Microsoft Foundry。",
-    "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-    "published_at": "2026-11-10 03:00",
-    "fetched_at": "2026-11-10 07:40",
+    "title": "Claude Meetings：Claude以参会者身份加入Google Meet（测试版）",
+    "summary": "Anthropic 2026-11-10发布：Team和Enterprise用户可把Claude拉进Google Meet会议，它会在会中起草计划、在白板上排时间线、回答会议聊天里的问题并调取已连接应用的数据，会后笔记和待办留在claude.ai。Claude会在聊天中声明自己是参会者，有外部来宾加入时自动离开（除非管理员授权）。",
+    "source_url": "https://www.axios.com/2026/11/10/anthropic-claude-meetings-knowledge-work",
+    "published_at": "2026-11-11 01:30",
+    "fetched_at": "2026-11-11 07:31",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch",
+     "source": "TechCrunch 2026-11-10 09:30 PST；Fortune",
+     "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
+     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+    },
+    "source_name": "Axios"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude Whiteboards、Claude Sheets测试版，Claude Data正式上线",
+    "summary": "同日Anthropic官方文章：Whiteboards是团队与Claude共同头脑风暴的白板，可转成文档或幻灯片；Sheets可按一句话生成带多标签页、公式、格式和下拉菜单的表格并在单元格里协同编辑；原Claude Dashboards更名Claude Data并正式上线，可连接Redshift、BigQuery、ClickHouse生成看板、数据报告和带旁白的视频。三者面向所有付费计划。另外交互式连接器可在Claude旁打开Adobe、Atlassian、HubSpot等应用的完整界面。",
+    "source_url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+    "published_at": "2026-11-11 01:30",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "CNBC 2026-11-09报道；The Verge；Claude平台模型文档",
-     "url": "https://www.cnbc.com/2026/11/09/anthropic-claude-fable-5-2-mythos-5-2.html",
+     "source": "TechCrunch 2026-11-10 09:30 PST",
+     "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
-    "source_name": "Anthropic官网"
+    "source_name": "Claude官网"
    },
    {
     "title": "今日无更新",
-    "summary": "上期截止后未核实到xAI新的模型或产品发布。x.ai/news/data-bot（Grok Bot的Data Bot团队机器人介绍）页面未标发布日期，无法确认是否在48小时内，未收录。",
+    "summary": "48小时内未核实到xAI正式发布新模型或产品。马斯克2026-11-10 17:35（北京时间）在X发帖称Grok 4.8已完成预训练、进入强化学习阶段，“本周晚些时候”向Bot用户小范围推送；xAI官网和API文档尚无Grok 4.8页面、价格或型号ID，属于预告，未作为更新收录。",
     "source_url": "https://x.ai/news",
-    "published_at": "2026-11-10 07:40",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-11 07:31",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -134,11 +158,25 @@
    },
    {
     "lab": "Google",
-    "title": "AI Studio内可直接接入Google Maps Platform",
-    "summary": "Google官方博客2026-11-09：开发者可在Google AI Studio里直接启用Google Maps Platform，用自然语言让Gemini生成带实时地图的应用，无需离开工作区配置计费和凭证，可免费试用。",
-    "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-google-maps-platform-ai-studio/",
-    "published_at": "2026-11-10 01:00",
-    "fetched_at": "2026-11-10 07:40",
+    "title": "Gemini Robotics 2.5发布",
+    "summary": "Google DeepMind 2026-11-10发布视觉-语言-动作模型Gemini Robotics 2.5：在200多项任务上测试，官方称成功率比此前基线高30%–100%、完成速度快20%–30%；在梅赛德斯-奔驰产线的概念验证中帮助Apptronik Apollo 2人形机器人拣选包装零件，成功率96%。目前向机器人合作伙伴推送。",
+    "source_url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+    "published_at": "2026-11-11 01:00",
+    "fetched_at": "2026-11-11 07:31",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源；Codex额度用尽，未独立复核"
+    },
+    "source_name": "Google DeepMind"
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini Intelligence扩展到Pixel 10等设备，新增自建小组件",
+    "summary": "Google 2026-11-10：Gemini Intelligence随Pixel Drop登陆Pixel 10系列，摩托罗拉signature 27为首款搭载机型（美国2026-11-19开订）；新功能Create My Widget可用一句话生成个人主屏小组件（未来几周推送），Device Assistance可让Gemini帮你清理空间、检查定位权限；跨应用任务自动化扩展到英国、印度和日本。",
+    "source_url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence-november-features-devices/",
+    "published_at": "2026-11-11 01:00",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -148,27 +186,27 @@
    },
    {
     "lab": "Google",
-    "title": "Gemini网页版上线「Memory summary」",
-    "summary": "9to5Google 2026-11-09报道：Gemini推出记忆摘要页面，可查看、编辑、删除Gemini记住的个人信息，并查看记忆修改历史；入口为设置中的Personal Intelligence。目前限美国英语、开启Keep Activity与Memory的Google AI订阅用户，先上网页版。",
-    "source_url": "https://9to5google.com/2026/11/09/google-gemini-memory-summary/",
-    "published_at": "2026-11-10 00:47",
-    "fetched_at": "2026-11-10 07:40",
-    "grade": "主流媒体",
+    "title": "Gemini 4 Carbon全面开放",
+    "summary": "Google 2026-11-10宣布Gemini 4 Carbon向开发者、企业和消费者开放：定位为其最强模型，面向长时程智能体任务、复杂编程调试、网络安全和科研推理，会比Gemini 4 Argon用更多token做深入推理与验证。API在Google AI Studio和Gemini for business上线，引入价与Argon相同（每百万输入token 2美元、输出10美元）；同时向Google AI Ultra订阅用户的Antigravity、Gemini应用和搜索AI Mode推送。",
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
+    "published_at": "2026-11-11 00:00",
+    "fetched_at": "2026-11-11 07:31",
+    "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "MobileSyrup 2026-11-09报道",
-     "url": "https://mobilesyrup.com/2026/11/09/gemini-memory-summary",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "source": "Google开发者博客同日文章",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-4-carbon-developers/",
+     "note": "发布时间取Google博客RSS（2026-11-10 16:00 UTC）。Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
-    "source_name": "9to5Google"
+    "source_name": "Google官方博客"
    },
    {
     "title": "今日无更新",
-    "summary": "已打开官方更新日志（2026-11-10 07:28抓取）：最新版本为v0.79.3（2026-11-06），48小时内无新版本。更正：2026-11-07至11-09三期写的「仍为v0.78.1」有误，实际2026-11-03至11-06已连续发布v0.78.4至v0.79.3（新增礼物代购、航班预订流程、ssh/psql等）。",
+    "summary": "已打开官方更新日志（2026-11-11 07:27抓取）：最新版本仍为v0.79.3（2026-11-06），48小时内无新版本。",
     "source_url": "https://x.ai/changelog/bot",
-    "published_at": "2026-11-10 07:40",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-11 07:31",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -181,922 +219,873 @@
   ],
   "x_top": [
    {
-    "topic": "特朗普在《60分钟》称驱逐政策“太强硬”",
+    "topic": "凯蒂·米勒辞去SpaceX职务并卖掉股票",
     "category": "时政",
-    "summary": "特朗普在2026-11-08（美东时间）播出的CBS《60分钟》专访中说，驱逐政策“might have been too tough”（原话），并在中期选举中伤害了共和党；他表示有意与民主党谈移民协议。MAGA阵营强烈反对，多位大V发帖喊“不要大赦”，并拿里根1986年中期选举后签署大赦法案作比较。",
-    "url": "https://x.com/i/trending/2119673111268196554",
-    "score": 181284,
-    "engagement": 175062,
-    "post_count": 6222,
-    "post_count_query": "\"60 Minutes\" Trump -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和175062，加关键词近24小时原创及回复帖数6222。",
+    "summary": "新任白宫幕僚长斯蒂芬·米勒的妻子凯蒂·米勒于上周末离开SpaceX，卖出包括未归属股权在内的持股，并退出与派拉蒙的播客合约，以消除丈夫任职的利益冲突。MAGA阵营大V纷纷称赞，相关帖文成为24小时内互动最高的政治话题。",
+    "url": "https://x.com/i/trending/2119937909910372525",
+    "score": 113726,
+    "engagement": 113506,
+    "post_count": 220,
+    "post_count_query": "\"Katie Miller\" (SpaceX OR quit OR shares) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和113506，加关键词近24小时原创及回复帖数220。",
     "posts": [
      {
-      "author": "EndWokeness",
-      "author_name": "End Wokeness",
-      "url": "https://x.com/EndWokeness/status/2119601653716504849",
-      "created_at": "2026-11-09 09:23",
-      "likes": 54466,
-      "replies": 927,
-      "reposts": 7266,
-      "quotes": 298,
-      "score": 62957
+      "author": "EricLDaugh",
+      "author_name": "Eric Daugherty",
+      "url": "https://x.com/EricLDaugh/status/2119978432473784364",
+      "created_at": "2026-11-10 10:20",
+      "likes": 62665,
+      "replies": 1335,
+      "reposts": 11249,
+      "quotes": 415,
+      "score": 75664
      },
      {
-      "author": "PopBase",
-      "author_name": "Pop Base",
-      "url": "https://x.com/PopBase/status/2119645271022002415",
-      "created_at": "2026-11-09 12:16",
-      "likes": 26332,
-      "replies": 748,
-      "reposts": 1147,
-      "quotes": 1937,
-      "score": 30164
+      "author": "JewelsJonesLive",
+      "author_name": "Jewels Jones ®",
+      "url": "https://x.com/JewelsJonesLive/status/2120097631930024013",
+      "created_at": "2026-11-10 18:13",
+      "likes": 13708,
+      "replies": 362,
+      "reposts": 2027,
+      "quotes": 75,
+      "score": 16172
      }
     ],
     "scoring_posts": [
      {
-      "author": "EndWokeness",
-      "author_name": "End Wokeness",
-      "url": "https://x.com/EndWokeness/status/2119601653716504849",
-      "created_at": "2026-11-09 09:23",
-      "likes": 54466,
-      "replies": 927,
-      "reposts": 7266,
-      "quotes": 298,
-      "score": 62957
+      "author": "EricLDaugh",
+      "author_name": "Eric Daugherty",
+      "url": "https://x.com/EricLDaugh/status/2119978432473784364",
+      "created_at": "2026-11-10 10:20",
+      "likes": 62665,
+      "replies": 1335,
+      "reposts": 11249,
+      "quotes": 415,
+      "score": 75664
      },
      {
-      "author": "ScottPresler",
-      "author_name": "ThePersistence",
-      "url": "https://x.com/ScottPresler/status/2119647074517991664",
-      "created_at": "2026-11-09 12:23",
-      "likes": 38746,
-      "replies": 1317,
-      "reposts": 7977,
-      "quotes": 322,
-      "score": 48362
+      "author": "JewelsJonesLive",
+      "author_name": "Jewels Jones ®",
+      "url": "https://x.com/JewelsJonesLive/status/2120097631930024013",
+      "created_at": "2026-11-10 18:13",
+      "likes": 13708,
+      "replies": 362,
+      "reposts": 2027,
+      "quotes": 75,
+      "score": 16172
      },
      {
-      "author": "nicksortor",
-      "author_name": "Nick Sortor",
-      "url": "https://x.com/nicksortor/status/2119596332453109971",
-      "created_at": "2026-11-09 09:02",
-      "likes": 28782,
-      "replies": 827,
-      "reposts": 3796,
-      "quotes": 174,
-      "score": 33579
+      "author": "atensnut",
+      "author_name": "Juanita Broaddrick",
+      "url": "https://x.com/atensnut/status/2120000201033486675",
+      "created_at": "2026-11-10 11:46",
+      "likes": 9790,
+      "replies": 103,
+      "reposts": 1195,
+      "quotes": 15,
+      "score": 11103
      },
      {
-      "author": "PopBase",
-      "author_name": "Pop Base",
-      "url": "https://x.com/PopBase/status/2119645271022002415",
-      "created_at": "2026-11-09 12:16",
-      "likes": 26332,
-      "replies": 748,
-      "reposts": 1147,
-      "quotes": 1937,
-      "score": 30164
+      "author": "Milajoy",
+      "author_name": "Mila Joy",
+      "url": "https://x.com/Milajoy/status/2119977840842244580",
+      "created_at": "2026-11-10 10:17",
+      "likes": 9199,
+      "replies": 89,
+      "reposts": 1265,
+      "quotes": 14,
+      "score": 10567
      }
     ],
-    "published_at": "2026-11-09 09:02",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 10:17",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "CBS News；AP；NBC News",
-     "url": "https://www.cbsnews.com/news/trump-says-some-of-his-immigration-policies-may-have-been-too-tough-60-minutes/",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "X新闻聚合摘要与代表帖说法一致；未找到主流媒体或当事人声明原文，金额与时间以后续报道为准。"
     },
     "rank": 1
    },
    {
-    "topic": "斯蒂芬·米勒出任白宫幕僚长，主张拘押记者的报道引发争议",
-    "category": "时政",
-    "summary": "白宫2026-11-06宣布米勒接替苏西·怀尔斯任第33任白宫幕僚长，他于2026-11-09正式上任。新当选参议员El-Sayed称米勒“与美国文化不相容”引发争吵；《大西洋月刊》报道米勒支持在泄密调查中拘押记者以逼其交出消息源，美国司法部称该说法“完全错误”。",
-    "url": "https://x.com/i/trending/2119692601742029191",
-    "score": 39291,
-    "engagement": 36645,
-    "post_count": 2646,
-    "post_count_query": "\"Stephen Miller\" (\"chief of staff\" OR journalists) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和36645，加关键词近24小时原创及回复帖数2646。",
+    "topic": "Coinbase获美国联邦信托银行牌照",
+    "category": "加密货币",
+    "summary": "Coinbase 2026-11-09宣布，美国货币监理署（OCC）批准其成立联邦特许的Coinbase National Trust Company，可在联邦监管下提供托管等信托业务。CEO阿姆斯特朗称可信托管是把更多金融体系搬上链的基础。",
+    "url": "https://x.com/i/trending/2119735424512061638",
+    "score": 40245,
+    "engagement": 39726,
+    "post_count": 519,
+    "post_count_query": "Coinbase (\"trust bank\" OR \"National Trust\" OR OCC) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和39726，加关键词近24小时原创及回复帖数519。",
     "posts": [
      {
-      "author": "PamelaHensley22",
-      "author_name": "Pamela Hensley🇺🇸",
-      "url": "https://x.com/PamelaHensley22/status/2119600737059819636",
-      "created_at": "2026-11-09 09:19",
-      "likes": 29139,
-      "replies": 1055,
-      "reposts": 3337,
-      "quotes": 64,
-      "score": 33595
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119732829668205009",
+      "created_at": "2026-11-09 18:04",
+      "likes": 23342,
+      "replies": 611,
+      "reposts": 2758,
+      "quotes": 362,
+      "score": 27073
      },
      {
-      "author": "NewsWire_US",
-      "author_name": "NewsWire",
-      "url": "https://x.com/NewsWire_US/status/2119908175747166350",
-      "created_at": "2026-11-10 05:41",
-      "likes": 1822,
-      "replies": 120,
-      "reposts": 218,
-      "quotes": 135,
-      "score": 2295
+      "author": "pete_rizzo_",
+      "author_name": "The Bitcoin Historian",
+      "url": "https://x.com/pete_rizzo_/status/2119734512829784113",
+      "created_at": "2026-11-09 18:11",
+      "likes": 4128,
+      "replies": 149,
+      "reposts": 598,
+      "quotes": 25,
+      "score": 4900
      }
     ],
     "scoring_posts": [
      {
-      "author": "PamelaHensley22",
-      "author_name": "Pamela Hensley🇺🇸",
-      "url": "https://x.com/PamelaHensley22/status/2119600737059819636",
-      "created_at": "2026-11-09 09:19",
-      "likes": 29139,
-      "replies": 1055,
-      "reposts": 3337,
-      "quotes": 64,
-      "score": 33595
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119732829668205009",
+      "created_at": "2026-11-09 18:04",
+      "likes": 23342,
+      "replies": 611,
+      "reposts": 2758,
+      "quotes": 362,
+      "score": 27073
      },
      {
-      "author": "NewsWire_US",
-      "author_name": "NewsWire",
-      "url": "https://x.com/NewsWire_US/status/2119908175747166350",
-      "created_at": "2026-11-10 05:41",
-      "likes": 1822,
-      "replies": 120,
-      "reposts": 218,
-      "quotes": 135,
-      "score": 2295
+      "author": "pete_rizzo_",
+      "author_name": "The Bitcoin Historian",
+      "url": "https://x.com/pete_rizzo_/status/2119734512829784113",
+      "created_at": "2026-11-09 18:11",
+      "likes": 4128,
+      "replies": 149,
+      "reposts": 598,
+      "quotes": 25,
+      "score": 4900
      },
      {
-      "author": "TrumpsHurricane",
-      "author_name": "Val",
-      "url": "https://x.com/TrumpsHurricane/status/2119534664989987265",
-      "created_at": "2026-11-09 04:56",
-      "likes": 235,
-      "replies": 89,
-      "reposts": 96,
-      "quotes": 14,
-      "score": 434
-     },
-     {
-      "author": "BrandonFalco121",
-      "author_name": "BrandonFalco",
-      "url": "https://x.com/BrandonFalco121/status/2119592052979568820",
-      "created_at": "2026-11-09 08:45",
-      "likes": 122,
-      "replies": 161,
-      "reposts": 22,
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "url": "https://x.com/AshCrypto/status/2119743550560825766",
+      "created_at": "2026-11-09 18:47",
+      "likes": 3398,
+      "replies": 211,
+      "reposts": 354,
       "quotes": 16,
-      "score": 321
+      "score": 3979
+     },
+     {
+      "author": "coinbase",
+      "author_name": "Coinbase 🛡️",
+      "url": "https://x.com/coinbase/status/2119752393839800427",
+      "created_at": "2026-11-09 19:22",
+      "likes": 2894,
+      "replies": 249,
+      "reposts": 493,
+      "quotes": 138,
+      "score": 3774
      }
     ],
-    "published_at": "2026-11-09 04:56",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-09 18:04",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "白宫公告；The Guardian 2026-11-09；The Independent",
-     "url": "https://www.whitehouse.gov/releases/2026/11/president-trump-names-stephen-miller-as-33rd-white-house-chief-of-staff/",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "Coinbase官方账号与CEO帖为一手来源；本期未取得OCC公告原文。"
     },
     "rank": 2
    },
    {
-    "topic": "Strategy再买1,036枚BTC，持仓达850,364枚",
-    "category": "加密货币",
-    "summary": "Strategy于2026-11-09公告：2026-11-02至11-08以8,190万美元、均价79,012美元买入1,036枚BTC，同时回购1.88亿美元STRC优先股；总持仓850,364枚，平均成本75,456美元/枚。BTC现价已低于其本轮买入均价。",
-    "url": "https://x.com/i/trending/2119778351317463326",
-    "score": 21964,
-    "engagement": 21241,
-    "post_count": 723,
-    "post_count_query": "(Strategy OR Saylor OR MSTR) (\"1,036\" OR \"850,364\") -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和21241，加关键词近24小时原创及回复帖数723。",
+    "topic": "美国10月CPI超预期，加息预期升温，股债币齐跌",
+    "category": "财经",
+    "summary": "美国劳工统计局2026-11-10公布：10月CPI环比上涨0.4%（预期0.3%），核心CPI环比0.3%（预期0.2%），因去年政府停摆未公布同比。CME FedWatch显示12月加息25个基点已被完全定价；标普500收跌0.38%、纳指跌0.74%，10年期美债收益率升至4.99%附近，BTC跌破73,000美元。",
+    "url": "https://x.com/i/trending/2120082502635192342",
+    "score": 25242,
+    "engagement": 16520,
+    "post_count": 8722,
+    "post_count_query": "(CPI OR inflation) (October OR hotter OR \"rate hike\") -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和16520，加关键词近24小时原创及回复帖数8722。",
     "posts": [
      {
-      "author": "saylor",
-      "author_name": "Michael Saylor",
-      "url": "https://x.com/saylor/status/2119778202931388769",
-      "created_at": "2026-11-09 21:04",
-      "likes": 9968,
-      "replies": 586,
-      "reposts": 1054,
-      "quotes": 200,
-      "score": 11808
-     },
-     {
-      "author": "ColeMacro",
-      "author_name": "Matt Cole",
-      "url": "https://x.com/ColeMacro/status/2119777373306646777",
-      "created_at": "2026-11-09 21:01",
-      "likes": 1469,
-      "replies": 56,
-      "reposts": 159,
-      "quotes": 25,
-      "score": 1709
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2120180683486486622",
+      "created_at": "2026-11-10 23:44",
+      "likes": 3750,
+      "replies": 413,
+      "reposts": 473,
+      "quotes": 110,
+      "score": 4746
      }
     ],
     "scoring_posts": [
      {
-      "author": "saylor",
-      "author_name": "Michael Saylor",
-      "url": "https://x.com/saylor/status/2119778202931388769",
-      "created_at": "2026-11-09 21:04",
-      "likes": 9968,
-      "replies": 586,
-      "reposts": 1054,
-      "quotes": 200,
-      "score": 11808
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2120180683486486622",
+      "created_at": "2026-11-10 23:44",
+      "likes": 3750,
+      "replies": 413,
+      "reposts": 473,
+      "quotes": 110,
+      "score": 4746
      },
      {
       "author": "WatcherGuru",
       "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119776347266703413",
-      "created_at": "2026-11-09 20:57",
-      "likes": 3600,
-      "replies": 250,
-      "reposts": 290,
-      "quotes": 45,
-      "score": 4185
+      "url": "https://x.com/WatcherGuru/status/2120202954867437952",
+      "created_at": "2026-11-11 01:12",
+      "likes": 3328,
+      "replies": 416,
+      "reposts": 423,
+      "quotes": 122,
+      "score": 4289
      },
      {
-      "author": "Strategy",
-      "author_name": "Strategy",
-      "url": "https://x.com/Strategy/status/2119777554756501887",
-      "created_at": "2026-11-09 21:02",
-      "likes": 3131,
-      "replies": 69,
-      "reposts": 292,
-      "quotes": 47,
-      "score": 3539
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2120148215211462672",
+      "created_at": "2026-11-10 21:34",
+      "likes": 3201,
+      "replies": 294,
+      "reposts": 303,
+      "quotes": 84,
+      "score": 3882
      },
      {
-      "author": "ColeMacro",
-      "author_name": "Matt Cole",
-      "url": "https://x.com/ColeMacro/status/2119777373306646777",
-      "created_at": "2026-11-09 21:01",
-      "likes": 1469,
-      "replies": 56,
-      "reposts": 159,
-      "quotes": 25,
-      "score": 1709
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2120147133542125818",
+      "created_at": "2026-11-10 21:30",
+      "likes": 2910,
+      "replies": 203,
+      "reposts": 371,
+      "quotes": 119,
+      "score": 3603
      }
     ],
-    "published_at": "2026-11-09 20:57",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 21:30",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
-     "source": "Strategy官方公告；Cointelegraph",
-     "url": "https://www.strategy.com/press/strategy-acquires-1036-btc-and-repurchases-188-million-of-strc_11-09-2026",
+     "source": "CNBC CPI报道；AP；Sharecast收盘",
+     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
     },
     "rank": 3
    },
    {
-    "topic": "美股周一大反弹，标普创4月以来最大单日涨幅",
-    "category": "财经",
-    "summary": "2026-11-09美股收盘：标普500涨2.35%至7,549.94点，为4月8日以来最大单日涨幅；纳指涨2.74%，道指涨1,104.02点。油价大跌缓解通胀担忧，科技股回补上周跌幅，英伟达逆势下跌。",
-    "url": "https://x.com/i/trending/2119810066484473894",
-    "score": 20078,
-    "engagement": 17641,
-    "post_count": 2437,
-    "post_count_query": "(\"stock market\" OR \"S&P 500\" OR stocks) (trillion OR rebound OR rally) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和17641，加关键词近24小时原创及回复帖数2437。",
+    "topic": "SpaceX发布Starlink Mini 2，内置电池",
+    "category": "科技",
+    "summary": "Starlink官方2026-11-11凌晨发布便携终端Mini 2：内置可快拆电池，单次充电可用最长4.5小时，重1.6公斤；官方对比称Wi-Fi覆盖增加50%、机身薄40%。据Sawyer Merritt帖，首发价999美元并含一年Roam Unlimited。",
+    "url": "https://x.com/i/trending/2120229259830550698",
+    "score": 19289,
+    "engagement": 17680,
+    "post_count": 1609,
+    "post_count_query": "\"Starlink Mini 2\" OR \"Mini 2\" Starlink -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和17680，加关键词近24小时原创及回复帖数1609。",
     "posts": [
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119806126846046630",
-      "created_at": "2026-11-09 22:55",
-      "likes": 8396,
-      "replies": 412,
-      "reposts": 757,
-      "quotes": 231,
-      "score": 9796
+      "author": "Starlink",
+      "author_name": "Starlink",
+      "url": "https://x.com/Starlink/status/2120206875581186293",
+      "created_at": "2026-11-11 01:28",
+      "likes": 5399,
+      "replies": 280,
+      "reposts": 687,
+      "quotes": 260,
+      "score": 6626
      },
      {
-      "author": "KobeissiLetter",
-      "author_name": "The Kobeissi Letter",
-      "url": "https://x.com/KobeissiLetter/status/2119802815367528894",
-      "created_at": "2026-11-09 22:42",
-      "likes": 4864,
-      "replies": 213,
-      "reposts": 433,
-      "quotes": 84,
-      "score": 5594
+      "author": "SawyerMerritt",
+      "author_name": "Sawyer Merritt",
+      "url": "https://x.com/SawyerMerritt/status/2120208552652345450",
+      "created_at": "2026-11-11 01:34",
+      "likes": 4877,
+      "replies": 239,
+      "reposts": 374,
+      "quotes": 73,
+      "score": 5563
      }
     ],
     "scoring_posts": [
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119806126846046630",
-      "created_at": "2026-11-09 22:55",
-      "likes": 8396,
-      "replies": 412,
-      "reposts": 757,
-      "quotes": 231,
-      "score": 9796
+      "author": "Starlink",
+      "author_name": "Starlink",
+      "url": "https://x.com/Starlink/status/2120206875581186293",
+      "created_at": "2026-11-11 01:28",
+      "likes": 5399,
+      "replies": 280,
+      "reposts": 687,
+      "quotes": 260,
+      "score": 6626
      },
      {
-      "author": "KobeissiLetter",
-      "author_name": "The Kobeissi Letter",
-      "url": "https://x.com/KobeissiLetter/status/2119802815367528894",
-      "created_at": "2026-11-09 22:42",
-      "likes": 4864,
-      "replies": 213,
-      "reposts": 433,
-      "quotes": 84,
-      "score": 5594
+      "author": "SawyerMerritt",
+      "author_name": "Sawyer Merritt",
+      "url": "https://x.com/SawyerMerritt/status/2120208552652345450",
+      "created_at": "2026-11-11 01:34",
+      "likes": 4877,
+      "replies": 239,
+      "reposts": 374,
+      "quotes": 73,
+      "score": 5563
      },
      {
-      "author": "KobeissiLetter",
-      "author_name": "The Kobeissi Letter",
-      "url": "https://x.com/KobeissiLetter/status/2119827237918646547",
-      "created_at": "2026-11-10 00:19",
-      "likes": 1717,
-      "replies": 95,
-      "reposts": 133,
-      "quotes": 21,
-      "score": 1966
+      "author": "SawyerMerritt",
+      "author_name": "Sawyer Merritt",
+      "url": "https://x.com/SawyerMerritt/status/2120210080041963910",
+      "created_at": "2026-11-11 01:40",
+      "likes": 3514,
+      "replies": 172,
+      "reposts": 388,
+      "quotes": 37,
+      "score": 4111
      },
      {
-      "author": "coinbureau",
-      "author_name": "Coin Bureau",
-      "url": "https://x.com/coinbureau/status/2119834765734060336",
-      "created_at": "2026-11-10 00:49",
-      "likes": 238,
-      "replies": 25,
-      "reposts": 22,
+      "author": "Erdayastronaut",
+      "author_name": "Everyday Astronaut",
+      "url": "https://x.com/Erdayastronaut/status/2120232568159432762",
+      "created_at": "2026-11-11 03:10",
+      "likes": 1329,
+      "replies": 21,
+      "reposts": 30,
       "quotes": 0,
-      "score": 285
+      "score": 1380
      }
     ],
-    "published_at": "2026-11-09 22:42",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-11 01:28",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "CNBC；Reuters（经StreetInsider）",
-     "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "Starlink官方帖为一手来源；价格来自Sawyer Merritt转述，未在官网核对。"
     },
     "rank": 4
    },
    {
-    "topic": "PNC银行联手Coinbase试点USDC收款",
-    "category": "加密货币",
-    "summary": "PNC银行2026-11-09宣布有限试点：符合条件的企业与机构客户可接收以太坊上的USDC付款，由Coinbase支付产品处理，到账后按1:1自动兑换成美元存入PNC账户。这是美国大型商业银行把稳定币收款接入企业账户的案例。",
-    "url": "https://x.com/i/trending/2119807937027756166",
-    "score": 8267,
-    "engagement": 7665,
-    "post_count": 602,
-    "post_count_query": "PNC (USDC OR Coinbase OR stablecoin) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和7665，加关键词近24小时原创及回复帖数602。",
+    "topic": "星舰第15次飞行：首枚V3助推器B22上发射台",
+    "category": "科技",
+    "summary": "SpaceX 2026-11-11凌晨发帖：Super Heavy Booster 22已运到星港发射台，它是首枚计划返回塔架被捕获的V3助推器。第15次飞行计划首次同时用发射塔机械臂捕获助推器和飞船，并部署26颗Starlink V3卫星；SpaceX尚未公布发射日期。",
+    "url": "https://x.com/i/trending/2120202777557164080",
+    "score": 14924,
+    "engagement": 14480,
+    "post_count": 444,
+    "post_count_query": "(\"Booster 22\" OR B22 OR \"Flight 15\") Starship -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和14480，加关键词近24小时原创及回复帖数444。",
     "posts": [
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119799721065922707",
-      "created_at": "2026-11-09 22:30",
-      "likes": 3339,
-      "replies": 155,
-      "reposts": 493,
-      "quotes": 45,
-      "score": 4032
+      "author": "SpaceX",
+      "author_name": "SpaceX",
+      "url": "https://x.com/SpaceX/status/2120220290219208884",
+      "created_at": "2026-11-11 02:21",
+      "likes": 9109,
+      "replies": 283,
+      "reposts": 1142,
+      "quotes": 174,
+      "score": 10708
      },
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119861821712810115",
-      "created_at": "2026-11-10 02:36",
-      "likes": 1948,
-      "replies": 135,
+      "author": "NURM_Dima",
+      "author_name": "Dima Nurm",
+      "url": "https://x.com/NURM_Dima/status/2120192013848965285",
+      "created_at": "2026-11-11 00:29",
+      "likes": 1467,
+      "replies": 127,
       "reposts": 257,
-      "quotes": 29,
-      "score": 2369
+      "quotes": 32,
+      "score": 1883
      }
     ],
     "scoring_posts": [
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119799721065922707",
-      "created_at": "2026-11-09 22:30",
-      "likes": 3339,
-      "replies": 155,
-      "reposts": 493,
-      "quotes": 45,
-      "score": 4032
+      "author": "SpaceX",
+      "author_name": "SpaceX",
+      "url": "https://x.com/SpaceX/status/2120220290219208884",
+      "created_at": "2026-11-11 02:21",
+      "likes": 9109,
+      "replies": 283,
+      "reposts": 1142,
+      "quotes": 174,
+      "score": 10708
      },
      {
-      "author": "WatcherGuru",
-      "author_name": "Watcher.Guru",
-      "url": "https://x.com/WatcherGuru/status/2119861821712810115",
-      "created_at": "2026-11-10 02:36",
-      "likes": 1948,
-      "replies": 135,
+      "author": "NURM_Dima",
+      "author_name": "Dima Nurm",
+      "url": "https://x.com/NURM_Dima/status/2120192013848965285",
+      "created_at": "2026-11-11 00:29",
+      "likes": 1467,
+      "replies": 127,
       "reposts": 257,
-      "quotes": 29,
-      "score": 2369
+      "quotes": 32,
+      "score": 1883
      },
      {
-      "author": "coinbase",
-      "author_name": "Coinbase 🛡️",
-      "url": "https://x.com/coinbase/status/2119810717591519256",
-      "created_at": "2026-11-09 23:13",
-      "likes": 728,
-      "replies": 70,
-      "reposts": 86,
-      "quotes": 10,
-      "score": 894
+      "author": "DimaZeniuk",
+      "author_name": "Dima Zeniuk",
+      "url": "https://x.com/DimaZeniuk/status/2120050024188887378",
+      "created_at": "2026-11-10 15:04",
+      "likes": 814,
+      "replies": 71,
+      "reposts": 153,
+      "quotes": 12,
+      "score": 1050
      },
      {
-      "author": "Cointelegraph",
-      "author_name": "Cointelegraph",
-      "url": "https://x.com/Cointelegraph/status/2119807692801786252",
-      "created_at": "2026-11-09 23:01",
-      "likes": 280,
-      "replies": 46,
-      "reposts": 36,
-      "quotes": 8,
-      "score": 370
+      "author": "colleenadastra",
+      "author_name": "Colleen",
+      "url": "https://x.com/colleenadastra/status/2120050105134825906",
+      "created_at": "2026-11-10 15:05",
+      "likes": 741,
+      "replies": 9,
+      "reposts": 84,
+      "quotes": 5,
+      "score": 839
      }
     ],
-    "published_at": "2026-11-09 22:30",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 15:04",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "PNC官方新闻稿；The Block",
-     "url": "https://pnc.mediaroom.com/2026-11-09-PNC-Bank-Launches-Incoming-Stablecoin-Payments-for-Corporate-and-Institutional-Banking-Clients",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "SpaceX官方帖为一手来源；26颗卫星与双捕获计划来自X新闻聚合摘要。"
     },
     "rank": 5
    },
    {
-    "topic": "巴基斯坦女主播Rabia Ahsan在家中遭枪杀",
-    "category": "社会",
-    "summary": "巴基斯坦电视主播Rabia Ahsan于2026-11-08在拉瓦尔品第家中中枪身亡，其丈夫被捕并被警方羁押两天。警方称起获一支无证手枪，丈夫起初称走火，后供认开枪，事件引发巴基斯坦对家庭暴力和女性安全的讨论。",
-    "url": "https://x.com/i/trending/2119416510040916198",
-    "score": 4849,
-    "engagement": 4467,
-    "post_count": 382,
-    "post_count_query": "(\"Rabia Ahsan\" OR \"Rabiya Ahsan\" OR \"Rabia Ehsan\") -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和4467，加关键词近24小时原创及回复帖数382。",
+    "topic": "桑托勒姆称选民应为“更高利益”承受经济痛苦，遭两党批评",
+    "category": "时政",
+    "summary": "前参议员里克·桑托勒姆在中期选举后的直播中把共和党失利归咎于选民不愿“承受经济痛苦”，称高油价是“暂时问题”、选民应“超越钱包”投票。保守派评论员Jesse Kelly等也发帖批评，相关视频由Right Wing Watch首发。",
+    "url": "https://x.com/i/trending/2120255085628530804",
+    "score": 14362,
+    "engagement": 13820,
+    "post_count": 542,
+    "post_count_query": "Santorum -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和13820，加关键词近24小时原创及回复帖数542。",
     "posts": [
      {
-      "author": "AmirMateen2",
-      "author_name": "Amir Mateen",
-      "url": "https://x.com/AmirMateen2/status/2119462889862103106",
-      "created_at": "2026-11-09 00:11",
-      "likes": 1231,
-      "replies": 102,
-      "reposts": 260,
-      "quotes": 29,
-      "score": 1622
+      "author": "RightWingWatch",
+      "author_name": "Right Wing Watch",
+      "url": "https://x.com/RightWingWatch/status/2119880522436595753",
+      "created_at": "2026-11-10 03:51",
+      "likes": 2370,
+      "replies": 2798,
+      "reposts": 656,
+      "quotes": 968,
+      "score": 6792
      },
      {
-      "author": "AmirMateen2",
-      "author_name": "Amir Mateen",
-      "url": "https://x.com/AmirMateen2/status/2119507837458255999",
-      "created_at": "2026-11-09 03:10",
-      "likes": 423,
-      "replies": 39,
-      "reposts": 76,
-      "quotes": 4,
-      "score": 542
+      "author": "JesseKellyDC",
+      "author_name": "Jesse Kelly",
+      "url": "https://x.com/JesseKellyDC/status/2120222765319876747",
+      "created_at": "2026-11-11 02:31",
+      "likes": 4519,
+      "replies": 431,
+      "reposts": 550,
+      "quotes": 28,
+      "score": 5528
      }
     ],
     "scoring_posts": [
      {
-      "author": "javerias",
-      "author_name": "Javeria Siddique",
-      "url": "https://x.com/javerias/status/2119422335291895910",
-      "created_at": "2026-11-08 21:30",
-      "likes": 1342,
-      "replies": 30,
-      "reposts": 331,
-      "quotes": 5,
-      "score": 1708
+      "author": "RightWingWatch",
+      "author_name": "Right Wing Watch",
+      "url": "https://x.com/RightWingWatch/status/2119880522436595753",
+      "created_at": "2026-11-10 03:51",
+      "likes": 2370,
+      "replies": 2798,
+      "reposts": 656,
+      "quotes": 968,
+      "score": 6792
      },
      {
-      "author": "AmirMateen2",
-      "author_name": "Amir Mateen",
-      "url": "https://x.com/AmirMateen2/status/2119462889862103106",
-      "created_at": "2026-11-09 00:11",
-      "likes": 1231,
-      "replies": 102,
-      "reposts": 260,
-      "quotes": 29,
-      "score": 1622
+      "author": "JesseKellyDC",
+      "author_name": "Jesse Kelly",
+      "url": "https://x.com/JesseKellyDC/status/2120222765319876747",
+      "created_at": "2026-11-11 02:31",
+      "likes": 4519,
+      "replies": 431,
+      "reposts": 550,
+      "quotes": 28,
+      "score": 5528
      },
      {
-      "author": "AsadAToor",
-      "author_name": "Asad Ali Toor",
-      "url": "https://x.com/AsadAToor/status/2119410534961287658",
-      "created_at": "2026-11-08 20:43",
-      "likes": 477,
-      "replies": 20,
-      "reposts": 83,
-      "quotes": 15,
-      "score": 595
+      "author": "WomanDefiner",
+      "author_name": "Paul",
+      "url": "https://x.com/WomanDefiner/status/2120230843578986859",
+      "created_at": "2026-11-11 03:03",
+      "likes": 1220,
+      "replies": 25,
+      "reposts": 150,
+      "quotes": 0,
+      "score": 1395
      },
      {
-      "author": "AmirMateen2",
-      "author_name": "Amir Mateen",
-      "url": "https://x.com/AmirMateen2/status/2119507837458255999",
-      "created_at": "2026-11-09 03:10",
-      "likes": 423,
-      "replies": 39,
-      "reposts": 76,
-      "quotes": 4,
-      "score": 542
+      "author": "johnddavidson",
+      "author_name": "John Daniel Davidson",
+      "url": "https://x.com/johnddavidson/status/2120191547648163861",
+      "created_at": "2026-11-11 00:27",
+      "likes": 78,
+      "replies": 13,
+      "reposts": 13,
+      "quotes": 1,
+      "score": 105
      }
     ],
-    "published_at": "2026-11-08 20:43",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 03:51",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "DAWN；SAMAA TV；Arab News",
-     "url": "https://www.dawn.com/news/2043070",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "依据Right Wing Watch发布的直播片段；未找到主流媒体报道。"
     },
     "rank": 6
    },
    {
-    "topic": "Rocket Lab三季度营收创新高，积压订单增52%",
+    "topic": "中国前10个月贸易顺差突破1万亿美元",
     "category": "财经",
-    "summary": "Rocket Lab于2026-11-09（美东时间）盘后公布三季报：营收2.68亿美元、同比增73%，积压订单35.7亿美元、环比增52%；每股亏损0.12美元，差于市场预期。公司称Neutron火箭需求创新高，并指引四季度营收再创纪录。",
-    "url": "https://x.com/i/trending/2119900053510758581",
-    "score": 4542,
-    "engagement": 2990,
-    "post_count": 1552,
-    "post_count_query": "(\"Rocket Lab\" OR RKLB) (earnings OR revenue OR Neutron) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和2990，加关键词近24小时原创及回复帖数1552。",
+    "summary": "海关数据显示，中国10月贸易顺差1,052.8亿美元、低于市场预期；前10个月累计顺差突破1万亿美元，连续第二年超过这一关口。《纽约时报》帖称今年前10个月顺差已超过1万亿美元。",
+    "url": "https://x.com/i/trending/2119993589774078148",
+    "score": 11843,
+    "engagement": 10659,
+    "post_count": 1184,
+    "post_count_query": "China (\"trade surplus\" OR exports) -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和10659，加关键词近24小时原创及回复帖数1184。",
     "posts": [
      {
-      "author": "RocketLab",
-      "author_name": "Rocket Lab",
-      "url": "https://x.com/RocketLab/status/2119925297860735347",
-      "created_at": "2026-11-10 06:49",
-      "likes": 676,
-      "replies": 21,
-      "reposts": 90,
-      "quotes": 13,
-      "score": 800
+      "author": "spectatorindex",
+      "author_name": "The Spectator Index",
+      "url": "https://x.com/spectatorindex/status/2119991581243748530",
+      "created_at": "2026-11-10 11:12",
+      "likes": 4584,
+      "replies": 79,
+      "reposts": 353,
+      "quotes": 57,
+      "score": 5073
      },
      {
-      "author": "wallstengine",
-      "author_name": "Wall St Engine",
-      "url": "https://x.com/wallstengine/status/2119899757011259657",
-      "created_at": "2026-11-10 05:07",
-      "likes": 340,
-      "replies": 11,
-      "reposts": 44,
-      "quotes": 8,
-      "score": 403
+      "author": "nytimes",
+      "author_name": "The New York Times",
+      "url": "https://x.com/nytimes/status/2120003541444030796",
+      "created_at": "2026-11-10 12:00",
+      "likes": 1209,
+      "replies": 112,
+      "reposts": 311,
+      "quotes": 54,
+      "score": 1686
      }
     ],
     "scoring_posts": [
      {
-      "author": "RocketLab",
-      "author_name": "Rocket Lab",
-      "url": "https://x.com/RocketLab/status/2119878450614026452",
-      "created_at": "2026-11-10 03:43",
-      "likes": 924,
-      "replies": 24,
-      "reposts": 80,
-      "quotes": 22,
-      "score": 1050
+      "author": "spectatorindex",
+      "author_name": "The Spectator Index",
+      "url": "https://x.com/spectatorindex/status/2119991581243748530",
+      "created_at": "2026-11-10 11:12",
+      "likes": 4584,
+      "replies": 79,
+      "reposts": 353,
+      "quotes": 57,
+      "score": 5073
      },
      {
-      "author": "RocketLab",
-      "author_name": "Rocket Lab",
-      "url": "https://x.com/RocketLab/status/2119925297860735347",
-      "created_at": "2026-11-10 06:49",
-      "likes": 676,
-      "replies": 21,
-      "reposts": 90,
-      "quotes": 13,
-      "score": 800
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2119982337803108636",
+      "created_at": "2026-11-10 10:35",
+      "likes": 2469,
+      "replies": 151,
+      "reposts": 158,
+      "quotes": 15,
+      "score": 2793
      },
      {
-      "author": "StockSavvyShay",
-      "author_name": "Shay Boloor",
-      "url": "https://x.com/StockSavvyShay/status/2119900523944190303",
-      "created_at": "2026-11-10 05:10",
-      "likes": 637,
-      "replies": 30,
-      "reposts": 61,
-      "quotes": 9,
-      "score": 737
+      "author": "nytimes",
+      "author_name": "The New York Times",
+      "url": "https://x.com/nytimes/status/2120003541444030796",
+      "created_at": "2026-11-10 12:00",
+      "likes": 1209,
+      "replies": 112,
+      "reposts": 311,
+      "quotes": 54,
+      "score": 1686
      },
      {
-      "author": "wallstengine",
-      "author_name": "Wall St Engine",
-      "url": "https://x.com/wallstengine/status/2119899757011259657",
-      "created_at": "2026-11-10 05:07",
-      "likes": 340,
-      "replies": 11,
-      "reposts": 44,
-      "quotes": 8,
-      "score": 403
+      "author": "Polymarket",
+      "author_name": "Polymarket",
+      "url": "https://x.com/Polymarket/status/2120010051595239529",
+      "created_at": "2026-11-10 12:25",
+      "likes": 968,
+      "replies": 51,
+      "reposts": 74,
+      "quotes": 14,
+      "score": 1107
      }
     ],
-    "published_at": "2026-11-10 03:43",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 10:35",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "Rocket Lab投资者关系公告；GuruFocus",
-     "url": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-third-quarter-2026-financial-results-posts",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "数字来自The Spectator Index、WatcherGuru与《纽约时报》帖；本期未打开海关总署原文核对。"
     },
     "rank": 7
    },
    {
-    "topic": "中国10月PPI同比5.7%，创逾四年新高",
-    "category": "财经",
-    "summary": "国家统计局2026-11-09公布：10月CPI同比上涨0.7%、环比持平，低于市场预期的0.8%；PPI同比上涨5.7%、环比上涨0.7%，为2022年6月以来最高，已连续三个月加速。",
-    "url": "https://x.com/i/trending/2119616033694634355",
-    "score": 3073,
-    "engagement": 2634,
-    "post_count": 439,
-    "post_count_query": "China (CPI OR PPI OR \"producer prices\" OR \"consumer prices\") -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和2634，加关键词近24小时原创及回复帖数439。",
+    "topic": "特朗普媒体集团披露增持1,510枚BTC",
+    "category": "加密货币",
+    "summary": "特朗普媒体科技集团（DJT）在三季报中披露，三季度买入1,510枚BTC、金额超过1.12亿美元，总持仓15,649枚，按披露时价格计值11.7亿美元。",
+    "url": "https://x.com/i/trending/2120071346474594413",
+    "score": 11502,
+    "engagement": 11038,
+    "post_count": 464,
+    "post_count_query": "\"Trump Media\" (Bitcoin OR BTC) -is:retweet",
+    "score_basis": "3条48小时内聚合代表帖的赞+评+转+引之和11038，加关键词近24小时原创及回复帖数464。",
     "posts": [
      {
-      "author": "BullTheoryio",
-      "author_name": "Bull Theory",
-      "url": "https://x.com/BullTheoryio/status/2119603581192196548",
-      "created_at": "2026-11-09 09:30",
-      "likes": 1375,
-      "replies": 43,
-      "reposts": 104,
-      "quotes": 8,
-      "score": 1530
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2120115649523703984",
+      "created_at": "2026-11-10 19:25",
+      "likes": 5787,
+      "replies": 285,
+      "reposts": 474,
+      "quotes": 77,
+      "score": 6623
      },
      {
-      "author": "zerohedge",
-      "author_name": "zerohedge",
-      "url": "https://x.com/zerohedge/status/2119610090839826531",
-      "created_at": "2026-11-09 09:56",
-      "likes": 167,
-      "replies": 21,
-      "reposts": 19,
-      "quotes": 2,
-      "score": 209
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "url": "https://x.com/AshCrypto/status/2120062990921925012",
+      "created_at": "2026-11-10 15:56",
+      "likes": 2778,
+      "replies": 182,
+      "reposts": 319,
+      "quotes": 14,
+      "score": 3293
      }
     ],
     "scoring_posts": [
      {
-      "author": "BullTheoryio",
-      "author_name": "Bull Theory",
-      "url": "https://x.com/BullTheoryio/status/2119603581192196548",
-      "created_at": "2026-11-09 09:30",
-      "likes": 1375,
-      "replies": 43,
-      "reposts": 104,
-      "quotes": 8,
-      "score": 1530
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2120115649523703984",
+      "created_at": "2026-11-10 19:25",
+      "likes": 5787,
+      "replies": 285,
+      "reposts": 474,
+      "quotes": 77,
+      "score": 6623
      },
      {
-      "author": "BullTheoryio",
-      "author_name": "Bull Theory",
-      "url": "https://x.com/BullTheoryio/status/2119604882298871946",
-      "created_at": "2026-11-09 09:35",
-      "likes": 732,
-      "replies": 27,
-      "reposts": 56,
-      "quotes": 3,
-      "score": 818
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "url": "https://x.com/AshCrypto/status/2120062990921925012",
+      "created_at": "2026-11-10 15:56",
+      "likes": 2778,
+      "replies": 182,
+      "reposts": 319,
+      "quotes": 14,
+      "score": 3293
      },
      {
-      "author": "zerohedge",
-      "author_name": "zerohedge",
-      "url": "https://x.com/zerohedge/status/2119610090839826531",
-      "created_at": "2026-11-09 09:56",
-      "likes": 167,
-      "replies": 21,
-      "reposts": 19,
-      "quotes": 2,
-      "score": 209
-     },
-     {
-      "author": "CNBC",
-      "author_name": "CNBC",
-      "url": "https://x.com/CNBC/status/2119641145508536378",
-      "created_at": "2026-11-09 12:00",
-      "likes": 48,
-      "replies": 20,
-      "reposts": 8,
-      "quotes": 1,
-      "score": 77
+      "author": "bitcoinlfgo",
+      "author_name": "BITCOINLFG®",
+      "url": "https://x.com/bitcoinlfgo/status/2120134865550967182",
+      "created_at": "2026-11-10 20:41",
+      "likes": 957,
+      "replies": 49,
+      "reposts": 116,
+      "quotes": 0,
+      "score": 1122
      }
     ],
-    "published_at": "2026-11-09 09:30",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 15:56",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "国家统计局解读；CNBC",
-     "url": "https://www.stats.gov.cn/sj/zxfbhjd/202611/t20261109_1965796.html",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "数字来自WatcherGuru、AshCrypto帖；本期未打开公司财报原文核对。"
     },
     "rank": 8
    },
    {
-    "topic": "《新报》关闭莫斯科编辑部",
-    "category": "国际",
-    "summary": "俄罗斯独立报纸《新报》2026-11-09在当局压力下关闭使用近30年的莫斯科编辑部，员工取下遇害同事的肖像。报社此前被列为“外国代理人”、网站遭封锁、捐款渠道被切断。",
-    "url": "https://x.com/i/trending/2119776624375922807",
-    "score": 2381,
-    "engagement": 2089,
-    "post_count": 292,
-    "post_count_query": "(\"Novaya Gazeta\" OR \"Новая газета\") -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和2089，加关键词近24小时原创及回复帖数292。",
+    "topic": "旅行者1号将于11月18日距地球一光日",
+    "category": "科学",
+    "summary": "NASA 2026-11-11凌晨发帖：1977年发射的旅行者1号将在2026-11-18成为首个距地球一光日（光走一天的距离）的人造物体，NASA邀请公众在11-17参与“金色光浪”纪念活动。",
+    "url": "https://x.com/i/trending/2120239699113783805",
+    "score": 10336,
+    "engagement": 10037,
+    "post_count": 299,
+    "post_count_query": "\"Voyager 1\" -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和10037，加关键词近24小时原创及回复帖数299。",
     "posts": [
      {
-      "author": "visegrad24",
-      "author_name": "Visegrád 24",
-      "url": "https://x.com/visegrad24/status/2119780594154414233",
-      "created_at": "2026-11-09 21:14",
-      "likes": 867,
-      "replies": 21,
-      "reposts": 202,
-      "quotes": 18,
-      "score": 1108
+      "author": "NASASolarSystem",
+      "author_name": "NASA Solar System",
+      "url": "https://x.com/NASASolarSystem/status/2120201873181610199",
+      "created_at": "2026-11-11 01:08",
+      "likes": 5552,
+      "replies": 108,
+      "reposts": 1296,
+      "quotes": 136,
+      "score": 7092
      },
      {
-      "author": "novayagazeta_en",
-      "author_name": "Novaya Gazeta Europe",
-      "url": "https://x.com/novayagazeta_en/status/2119738892727329229",
-      "created_at": "2026-11-09 18:28",
-      "likes": 436,
-      "replies": 12,
-      "reposts": 241,
-      "quotes": 29,
-      "score": 718
+      "author": "Polymarket",
+      "author_name": "Polymarket",
+      "url": "https://x.com/Polymarket/status/2120245582526566444",
+      "created_at": "2026-11-11 04:01",
+      "likes": 1101,
+      "replies": 35,
+      "reposts": 141,
+      "quotes": 20,
+      "score": 1297
      }
     ],
     "scoring_posts": [
      {
-      "author": "visegrad24",
-      "author_name": "Visegrád 24",
-      "url": "https://x.com/visegrad24/status/2119780594154414233",
-      "created_at": "2026-11-09 21:14",
-      "likes": 867,
-      "replies": 21,
-      "reposts": 202,
-      "quotes": 18,
-      "score": 1108
+      "author": "NASASolarSystem",
+      "author_name": "NASA Solar System",
+      "url": "https://x.com/NASASolarSystem/status/2120201873181610199",
+      "created_at": "2026-11-11 01:08",
+      "likes": 5552,
+      "replies": 108,
+      "reposts": 1296,
+      "quotes": 136,
+      "score": 7092
      },
      {
-      "author": "novayagazeta_en",
-      "author_name": "Novaya Gazeta Europe",
-      "url": "https://x.com/novayagazeta_en/status/2119738892727329229",
-      "created_at": "2026-11-09 18:28",
-      "likes": 436,
-      "replies": 12,
-      "reposts": 241,
-      "quotes": 29,
-      "score": 718
+      "author": "Polymarket",
+      "author_name": "Polymarket",
+      "url": "https://x.com/Polymarket/status/2120245582526566444",
+      "created_at": "2026-11-11 04:01",
+      "likes": 1101,
+      "replies": 35,
+      "reposts": 141,
+      "quotes": 20,
+      "score": 1297
      },
      {
-      "author": "Mike_Eckel",
-      "author_name": "Mike Eckel",
-      "url": "https://x.com/Mike_Eckel/status/2119768217535303876",
-      "created_at": "2026-11-09 20:25",
-      "likes": 94,
+      "author": "NASASolarSystem",
+      "author_name": "NASA Solar System",
+      "url": "https://x.com/NASASolarSystem/status/2120201874695692679",
+      "created_at": "2026-11-11 01:08",
+      "likes": 826,
+      "replies": 25,
+      "reposts": 171,
+      "quotes": 12,
+      "score": 1034
+     },
+     {
+      "author": "NASAhistory",
+      "author_name": "NASA History Office",
+      "url": "https://x.com/NASAhistory/status/2120257517171233121",
+      "created_at": "2026-11-11 04:49",
+      "likes": 490,
       "replies": 10,
-      "reposts": 51,
-      "quotes": 4,
-      "score": 159
-     },
-     {
-      "author": "nexta_tv",
-      "author_name": "NEXTA",
-      "url": "https://x.com/nexta_tv/status/2119793808468557944",
-      "created_at": "2026-11-09 22:06",
-      "likes": 72,
-      "replies": 3,
-      "reposts": 29,
-      "quotes": 0,
-      "score": 104
+      "reposts": 108,
+      "quotes": 6,
+      "score": 614
      }
     ],
-    "published_at": "2026-11-09 18:28",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-11 01:08",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "AP；DW；The Moscow Times",
-     "url": "https://apnews.com/article/russian-newspaper-media-novaya-gazeta-closure-01cca444cb9636ee74a57979b0dcd604",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "NASA官方账号为一手来源。"
     },
     "rank": 9
    },
    {
-    "topic": "乌克兰议会一读通过设立太空军",
+    "topic": "南非三季度失业率升至33.7%，同日公职人员加薪引不满",
     "category": "国际",
-    "summary": "乌克兰最高拉达2026-11-09以252票一读通过第13255号法案，拟在陆军、空军、海军之外设立太空军，法案进入二读准备。支持者称目标之一是发展本国卫星能力，减少对Starlink的依赖。",
-    "url": "https://x.com/i/trending/2119778347504767432",
-    "score": 2125,
-    "engagement": 2078,
-    "post_count": 47,
-    "post_count_query": "Ukraine (\"Space Forces\" OR \"Space Force\") (Rada OR parliament OR law OR bill) -is:retweet",
-    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和2078，加关键词近24小时原创及回复帖数47。",
+    "summary": "南非统计局2026-11-10公布三季度失业率升至33.7%，求职者增加7万人；同日拉马福萨总统府公布内阁、议员、法官等公职人员2026/27年度加薪方案，两条消息叠加在南非社交媒体上引发批评。",
+    "url": "https://x.com/i/trending/2120092763660460301",
+    "score": 6319,
+    "engagement": 6188,
+    "post_count": 131,
+    "post_count_query": "\"South Africa\" unemployment -is:retweet",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和6188，加关键词近24小时原创及回复帖数131。",
     "posts": [
      {
-      "author": "NOELreports",
-      "author_name": "NOELREPORTS 🇪🇺 🇺🇦",
-      "url": "https://x.com/NOELreports/status/2119756392596685119",
-      "created_at": "2026-11-09 19:38",
-      "likes": 208,
-      "replies": 0,
-      "reposts": 25,
-      "quotes": 1,
-      "score": 234
+      "author": "eNCA",
+      "author_name": "eNCA",
+      "url": "https://x.com/eNCA/status/2120086416227029205",
+      "created_at": "2026-11-10 17:29",
+      "likes": 1556,
+      "replies": 231,
+      "reposts": 768,
+      "quotes": 153,
+      "score": 2708
      },
      {
-      "author": "Maks_NAFO_FELLA",
-      "author_name": "MAKS 26 🇺🇦👀",
-      "url": "https://x.com/Maks_NAFO_FELLA/status/2119755714226688186",
-      "created_at": "2026-11-09 19:35",
-      "likes": 408,
-      "replies": 8,
-      "reposts": 57,
-      "quotes": 5,
-      "score": 478
+      "author": "News24",
+      "author_name": "News24 🇿🇦",
+      "url": "https://x.com/News24/status/2120130227934220577",
+      "created_at": "2026-11-10 20:23",
+      "likes": 577,
+      "replies": 368,
+      "reposts": 223,
+      "quotes": 207,
+      "score": 1375
      }
     ],
     "scoring_posts": [
      {
-      "author": "BowesChay",
-      "author_name": "Chay Bowes",
-      "url": "https://x.com/BowesChay/status/2119753853528883287",
-      "created_at": "2026-11-09 19:27",
-      "likes": 831,
-      "replies": 87,
-      "reposts": 248,
-      "quotes": 14,
-      "score": 1180
+      "author": "eNCA",
+      "author_name": "eNCA",
+      "url": "https://x.com/eNCA/status/2120086416227029205",
+      "created_at": "2026-11-10 17:29",
+      "likes": 1556,
+      "replies": 231,
+      "reposts": 768,
+      "quotes": 153,
+      "score": 2708
      },
      {
-      "author": "Maks_NAFO_FELLA",
-      "author_name": "MAKS 26 🇺🇦👀",
-      "url": "https://x.com/Maks_NAFO_FELLA/status/2119755714226688186",
-      "created_at": "2026-11-09 19:35",
-      "likes": 408,
-      "replies": 8,
-      "reposts": 57,
-      "quotes": 5,
-      "score": 478
+      "author": "News24",
+      "author_name": "News24 🇿🇦",
+      "url": "https://x.com/News24/status/2120130227934220577",
+      "created_at": "2026-11-10 20:23",
+      "likes": 577,
+      "replies": 368,
+      "reposts": 223,
+      "quotes": 207,
+      "score": 1375
      },
      {
-      "author": "NOELreports",
-      "author_name": "NOELREPORTS 🇪🇺 🇺🇦",
-      "url": "https://x.com/NOELreports/status/2119756392596685119",
-      "created_at": "2026-11-09 19:38",
-      "likes": 208,
-      "replies": 0,
-      "reposts": 25,
-      "quotes": 1,
-      "score": 234
+      "author": "Sinawo_Thambo",
+      "author_name": "Sinawo Thambo",
+      "url": "https://x.com/Sinawo_Thambo/status/2120104817372668045",
+      "created_at": "2026-11-10 18:42",
+      "likes": 887,
+      "replies": 33,
+      "reposts": 315,
+      "quotes": 8,
+      "score": 1243
      },
      {
-      "author": "OlgaBazova",
-      "author_name": "Olga Bazova",
-      "url": "https://x.com/OlgaBazova/status/2119780430996021512",
-      "created_at": "2026-11-09 21:13",
-      "likes": 152,
-      "replies": 14,
-      "reposts": 17,
-      "quotes": 3,
-      "score": 186
+      "author": "PresidencyZA",
+      "author_name": "The Presidency 🇿🇦",
+      "url": "https://x.com/PresidencyZA/status/2120106629047726517",
+      "created_at": "2026-11-10 18:49",
+      "likes": 451,
+      "replies": 208,
+      "reposts": 104,
+      "quotes": 99,
+      "score": 862
      }
     ],
-    "published_at": "2026-11-09 19:27",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-10 17:29",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "社媒传闻",
     "crosscheck": {
-     "status": "已交叉核对",
-     "by": "WebSearch",
-     "source": "乌克兰最高拉达官网；Kyiv Independent",
-     "url": "https://kyivindependent.com/ukrainian-parliament-backs-creation-of-space-forces-in-first-reading/",
-     "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+     "status": "单一来源",
+     "note": "eNCA、News24与总统府官方帖为来源；本期未打开南非统计局原文核对。"
     },
     "rank": 10
    }
@@ -1106,8 +1095,8 @@
     "title": "72小时内无新的Filecoin官方新闻",
     "summary": "Lotus最新Release仍为v1.39.0（2026-11-06 07:56，已于2026-11-07期报道）；上期截止后未核实到新的Filecoin官方动态。FIL价格见金融简报。",
     "source_url": "https://github.com/filecoin-project/lotus/releases",
-    "published_at": "2026-11-10 07:40",
-    "fetched_at": "2026-11-10 07:40",
+    "published_at": "2026-11-11 07:31",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1119,9 +1108,9 @@
    }
   ],
   "finance": {
-   "title": "每日金融市场简报｜2026-11-10",
-   "cutoff": "2026-11-10 07:40",
-   "cutoff_note": "美股、美债、DXY、黄金、布伦特为美国2026-11-09（周一）收盘/结算；加密三项为同一次CoinGecko请求快照（2026-11-10 07:23）。",
+   "title": "每日金融市场简报｜2026-11-11",
+   "cutoff": "2026-11-11 07:31",
+   "cutoff_note": "美股、美债、DXY、黄金、布伦特为美国2026-11-10（周二）收盘/结算；加密三项为同一次CoinGecko请求快照（2026-11-11 07:25）。",
    "missing": [
     {
      "item": "Codex交叉核对",
@@ -1132,146 +1121,159 @@
      "reason": "仅CoinGecko同批快照。"
     },
     {
-     "item": "美国3年期国债拍卖结果",
-     "reason": "本期未取得财政部拍卖结果公告。"
+     "item": "10年期国债拍卖结果",
+     "reason": "本期未取得财政部2026-11-10拍卖结果公告。"
     },
     {
-     "item": "12月加息概率",
-     "reason": "BigGo与TradingNews转述的数值不一致（82%与80%），未取得CME FedWatch原始数据，不写入。"
+     "item": "CPI同比",
+     "reason": "BLS因2025年政府停摆缺数据，本月未公布同比。"
+    },
+    {
+     "item": "未来24–72小时经济日程",
+     "reason": "本期未取得官方日程表，2026-11-11为美国退伍军人节，只列已确认的更远期事件。"
     }
    ],
-   "yesterday_check": "昨日待验证：美股开盘能否站上7,376.86点——已站上，标普500收7,549.94点（+2.35%）；BTC能否守住74,000美元——守住，07:23快照75,200美元；FIL能否回到0.786965美元——未回到，07:23为0.764287美元；10年期拍卖尾部——拍卖在2026-11-11 02:00（北京时间），尚未进行。",
+   "yesterday_check": "昨日待验证：CPI后标普能否守住7,549.94点——未守住，收7,520.93点（−0.38%）；布伦特能否守住92.57美元——未守住，结算91.49美元；BTC能否回到75,456美元——未回到，07:25快照73,634美元；FIL能否回到0.786965美元——未回到，0.755466美元。",
    "three_lines": [
     {
-     "conclusion": "美股周一收复上周大部分跌幅。",
-     "support": "标普500收7,549.94点、+2.35%，纳指25,253.14点、+2.74%，道指52,389.75点、+2.15%（2026-11-09收盘）。"
+     "conclusion": "10月CPI超预期，12月加息已被完全定价。",
+     "support": "CPI环比+0.4%（预期+0.3%），核心+0.3%（预期+0.2%）；CNBC援引CME FedWatch，加息25个基点已完全定价，加息50个基点概率13.6%。"
     },
     {
-     "conclusion": "油价大跌是反弹主因之一。",
-     "support": "布伦特1月合约跌5.85%至92.57美元/桶，WTI跌4.38%至86.85美元；特朗普称再次打击伊朗的概率“extremely low”。"
+     "conclusion": "美股收跌，英伟达再跌5.5%。",
+     "support": "标普500收7,520.93点、−0.38%，纳指25,065.87点、−0.74%，道指52,231.89点、−0.30%（2026-11-10收盘）。"
     },
     {
-     "conclusion": "今晚美国10月CPI是本周最大变量。",
-     "support": "10年期美债收益率在股市大涨中仍升至4.874%（+1.48 bp）；CPI北京时间2026-11-10 21:30公布。"
+     "conclusion": "美债收益率跳升，黄金与BTC走弱。",
+     "support": "10年期收益率收在4.986%–4.992%（两源），黄金跌1.76%–2.05%，BTC 07:25快照73,634美元（24h −2.04%）。"
     }
    ],
    "snapshot": [
     {
      "asset": "标普500",
-     "value": "7,549.94",
-     "change": "+2.35%（较前收）",
-     "time": "2026-11-10 05:00",
+     "value": "7,520.93",
+     "change": "−0.38%（较前收）",
+     "time": "2026-11-11 05:00",
      "status": "收盘",
-     "source": "CNBC；美国2026-11-09收盘",
-     "source_url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+     "source": "CNBC；美国2026-11-10收盘",
+     "source_url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch",
-      "source": "Reuters（经StreetInsider）",
-      "url": "https://www.streetinsider.com/General+News/Wall+St+jumps+as+oil+slide+cools+inflation+worries%3B+Nvidia+slumps/27310155.html",
+      "source": "Sharecast美股收盘",
+      "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html",
       "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
      }
     },
     {
      "asset": "纳斯达克综合指数",
-     "value": "25,253.14",
-     "change": "+2.74%（较前收）",
-     "time": "2026-11-10 05:00",
+     "value": "25,065.87",
+     "change": "−0.74%（较前收）",
+     "time": "2026-11-11 05:00",
      "status": "收盘",
-     "source": "CNBC；美国2026-11-09收盘",
-     "source_url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+     "source": "CNBC；美国2026-11-10收盘",
+     "source_url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
      "crosscheck": {
       "status": "已交叉核对",
       "by": "WebSearch",
-      "source": "Reuters（经StreetInsider）",
-      "url": "https://www.streetinsider.com/General+News/Wall+St+jumps+as+oil+slide+cools+inflation+worries%3B+Nvidia+slumps/27310155.html",
+      "source": "Sharecast美股收盘",
+      "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html",
       "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
      }
     },
     {
      "asset": "美元指数 DXY",
-     "value": "101.75",
-     "change": "−0.47%（较前收）",
-     "time": "2026-11-10 06:00",
+     "value": "102.261",
+     "change": "+0.60%（较前收）",
+     "time": "2026-11-11 05:30",
      "status": "收盘",
-     "source": "BigGo Finance纽约收盘表（2026-11-09）",
-     "source_url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
+     "source": "Hyperdash收盘概览（2026-11-10 21:30 UTC）",
+     "source_url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing",
      "crosscheck": {
-      "status": "冲突",
-      "values": [
-       {
-        "value": "101.75（−0.47%，纽约收盘）",
-        "source": "BigGo Finance",
-        "url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01"
-       },
-       {
-        "value": "101.93（−0.36%，盘中）",
-        "source": "TradingNews",
-        "url": "https://www.tradingnews.com/news/gold-4216-usd-rallies-through-rising-yeilds-on-oil-collapse-4300-usd"
-       }
-      ],
-      "reason": "取值时点不同：后者为美东上午盘中读数。"
+      "status": "单一来源",
+      "note": "Barchart同日报道美元上涨但本期未读取具体点位。"
      }
     },
     {
      "asset": "美国10年期国债收益率",
-     "value": "4.874%",
-     "change": "+1.48 bp（较前收）",
-     "time": "2026-11-10 06:00",
+     "value": "4.992%",
+     "change": "+13 bp（较前收）",
+     "time": "2026-11-11 05:30",
      "status": "收盘",
-     "source": "BigGo Finance纽约收盘表（2026-11-09）",
-     "source_url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
+     "source": "Hyperdash收盘概览",
+     "source_url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing",
      "crosscheck": {
       "status": "冲突",
       "values": [
        {
-        "value": "4.874%（+1.48 bp）",
-        "source": "BigGo Finance纽约收盘",
-        "url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01"
+        "value": "4.992%（+13 bp）",
+        "source": "Hyperdash",
+        "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing"
        },
        {
-        "value": "4.863%（+0.4 bp）",
-        "source": "Dow Jones/Tradeweb美东15:00收盘价（Morningstar）",
-        "url": "https://www.morningstar.com/news/dow-jones/202611099292/10-year-treasury-yield-rises-to-4863-data-talk"
+        "value": "4.986%（上升逾9 bp）",
+        "source": "Sharecast美股收盘",
+        "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html"
        }
       ],
-      "reason": "Tradeweb取美东15:00定盘值，前者为纽约收盘后读数。"
+      "reason": "取值时点不同，涨幅基准也不同（前收取值时点不一）。"
      }
     },
     {
-     "asset": "COMEX 黄金（2026年12月GCZ6）",
-     "value": "4,114.50 美元/盎司",
-     "change": "+1.00%（较前收）",
-     "time": "2026-11-10 06:00",
+     "asset": "COMEX 黄金",
+     "value": "4,042 美元/盎司",
+     "change": "−1.76%（较前收）",
+     "time": "2026-11-11 05:30",
      "status": "收盘",
-     "source": "BigGo Finance纽约收盘表（2026-11-09）",
-     "source_url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
+     "source": "Hyperdash收盘概览",
+     "source_url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing",
      "crosscheck": {
-      "status": "单一来源",
-      "note": "TradingNews美东10:53盘中为4,129.10美元，非结算价，不作核对。"
+      "status": "冲突",
+      "values": [
+       {
+        "value": "4,042（−1.76%）",
+        "source": "Hyperdash",
+        "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing"
+       },
+       {
+        "value": "12月期货4,036.00（−2.05%）",
+        "source": "Barchart（经搜索摘要）",
+        "url": "https://www.barchart.com/story/news/8766312/dollar-rallies-and-gold-slumps-on-us-price-pressures-and-hawkish-fedspeak"
+       }
+      ],
+      "reason": "前者为收盘时现价读数，后者为12月合约结算。"
      }
     },
     {
-     "asset": "布伦特原油（2027年1月LCOF7）",
-     "value": "92.57 美元/桶",
-     "change": "−5.85%（较前收）",
-     "time": "2026-11-10 06:00",
+     "asset": "布伦特原油",
+     "value": "91.49 美元/桶",
+     "change": "−1.17%（较前收）",
+     "time": "2026-11-11 04:30",
      "status": "收盘",
-     "source": "CNBC；ICE结算（2026-11-09）",
-     "source_url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
+     "source": "新华社：原油期货收跌（2026-11-11）",
+     "source_url": "https://english.news.cn/20261111/5dcdb4c27d894a41a31000e49c960328/c.html",
      "crosscheck": {
-      "status": "已交叉核对",
-      "by": "WebSearch",
-      "source": "BigGo Finance纽约收盘表",
-      "url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
-      "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+      "status": "冲突",
+      "values": [
+       {
+        "value": "91.49（−1.17%，结算）",
+        "source": "新华社；CNBC称跌破90美元为盘中",
+        "url": "https://english.news.cn/20261111/5dcdb4c27d894a41a31000e49c960328/c.html"
+       },
+       {
+        "value": "−0.65%",
+        "source": "Hyperdash收盘概览",
+        "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing"
+       }
+      ],
+      "reason": "结算价与收盘后读数时点不同。"
      }
     },
     {
      "asset": "BTC",
-     "value": "75,200 美元",
-     "change": "−0.46%（24h）",
-     "time": "2026-11-10 07:23",
+     "value": "73,634 美元",
+     "change": "−2.04%（24h）",
+     "time": "2026-11-11 07:25",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/bitcoin",
@@ -1282,9 +1284,9 @@
     },
     {
      "asset": "ETH",
-     "value": "2,131.77 美元",
-     "change": "−1.37%（24h）",
-     "time": "2026-11-10 07:23",
+     "value": "2,048.77 美元",
+     "change": "−3.84%（24h）",
+     "time": "2026-11-11 07:25",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/ethereum",
@@ -1295,9 +1297,9 @@
     },
     {
      "asset": "FIL",
-     "value": "0.764287 美元",
-     "change": "+0.99%（24h）",
-     "time": "2026-11-10 07:23",
+     "value": "0.755466 美元",
+     "change": "−0.88%（24h）",
+     "time": "2026-11-11 07:25",
      "status": "快照",
      "source": "CoinGecko同批API",
      "source_url": "https://www.coingecko.com/en/coins/filecoin",
@@ -1313,100 +1315,100 @@
      "items": [
       {
        "no": 1,
-       "headline": "美股大涨，标普创4月以来最大单日涨幅",
-       "facts": "2026-11-09标普500涨173.08点（+2.35%）收7,549.94点，为2026-04-08以来最大单日涨幅；纳指+2.74%收25,253.14点，为2026-07-30以来最大涨幅；道指+1,104.02点收52,389.75点，已回到中期选举日收盘之上。标普11个行业全部上涨，工业和可选消费涨超3%；英伟达逆势下跌。",
-       "plain": "上周因民主党胜选引发的AI监管担忧抛售，周一被油价下跌带来的通胀缓和预期部分抵消。",
-       "affects": "美股、科技股。",
-       "pricing": "已有反应但程度不明",
-       "pricing_evidence": "标普与纳指仍略低于选举日收盘（CNBC）。",
-       "next_check": "今晚CPI后标普500能否守住7,549.94点。",
-       "risks": "判断：10年期收益率同日仍升至4.874%，若CPI偏高，股市反弹与债市方向会再度背离。",
+       "headline": "美国10月CPI环比0.4%，高于预期",
+       "facts": "BLS 2026-11-10公布：10月CPI环比+0.4%（道琼斯调查预期+0.3%，9月+0.6%），核心CPI环比+0.3%（预期+0.2%）；住房+0.3%、占整体涨幅30%以上，食品+0.5%，能源+0.7%。因2025年政府停摆缺数据，未公布同比。美联储理事沃勒同日表示，若核心CPI环比在0.3%，12月加息50个基点应在考虑范围。",
+       "plain": "通胀连续第三个月高于预期，美联储12月加息几乎成定局。",
+       "affects": "美债、美元、美股、黄金、加密。",
+       "pricing": "已定价",
+       "pricing_evidence": "CNBC援引CME FedWatch：12月加息25个基点已完全定价，50个基点概率由接近0升至13.6%。",
+       "next_check": "美联储官员对12月加息50个基点的表态。",
+       "risks": "判断：核心CPI连续3个月环比0.3%，若11月数据仍在0.3%，加息50个基点概率会高于13.6%。",
        "sources": [
         {
          "outlet": "CNBC",
-         "title": "Dow surges 1,100 points, Nasdaq climbs more than 2% as tech rebounds",
-         "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-         "date": "2026-11-09"
+         "title": "Consumer prices rose 0.4% in October, more than expected",
+         "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+         "date": "2026-11-10"
         },
         {
-         "outlet": "Reuters（经StreetInsider）",
-         "title": "Wall St jumps as oil slide cools inflation worries; Nvidia slumps",
-         "url": "https://www.streetinsider.com/General+News/Wall+St+jumps+as+oil+slide+cools+inflation+worries%3B+Nvidia+slumps/27310155.html",
-         "date": "2026-11-09"
+         "outlet": "Sharecast",
+         "title": "US close: Stocks head south following hotter-than-expected CPI reading",
+         "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html",
+         "date": "2026-11-10"
         }
        ],
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch",
-        "source": "Reuters（经StreetInsider）",
-        "url": "https://www.streetinsider.com/General+News/Wall+St+jumps+as+oil+slide+cools+inflation+worries%3B+Nvidia+slumps/27310155.html",
+        "source": "Sharecast；AP",
+        "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html",
         "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
        }
       },
       {
        "no": 2,
-       "headline": "布伦特单日跌5.85%至8月下旬以来低位",
-       "facts": "布伦特1月合约2026-11-09跌5.75美元（−5.85%）结算于92.57美元/桶，为8月下旬以来最低；WTI 12月合约跌4.38%至86.85美元。特朗普称再次打击伊朗的概率“extremely low”，供应中断风险溢价回落。",
-       "plain": "油价回落直接压低通胀预期，也是周一股市大涨的原因之一。",
-       "affects": "原油、能源股、通胀预期、美债。",
-       "pricing": "已定价",
-       "pricing_evidence": "结算价已反映特朗普表态。",
-       "next_check": "布伦特能否守住92.57美元。",
-       "risks": "判断：布伦特单日从98.32美元跌到92.57美元、跌幅5.85%，中东表态反复时价格波动会继续放大。",
+       "headline": "美股收跌，英伟达两日跌至3月以来最低市值",
+       "facts": "2026-11-10标普500跌0.38%收7,520.93点，纳指跌0.74%收25,065.87点，道指跌157.86点（−0.30%）收52,231.89点。英伟达跌5.5%，CNBC称两日下跌后市值降至4.07万亿美元附近、为3月下旬以来最低。",
+       "plain": "周一的大反弹被CPI和英伟达拖累回吐一部分。",
+       "affects": "美股、半导体。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "标普仍在200日均线之上、低于50日均线，距纪录高点4.1%（CNBC）。",
+       "next_check": "标普500能否守住7,520.93点。",
+       "risks": "判断：纳指收在50日与200日均线之下、距纪录高点9.6%，技术面弱于标普。",
        "sources": [
         {
          "outlet": "CNBC",
-         "title": "Stock market news for Nov. 9, 2026",
-         "url": "https://www.cnbc.com/2026/11/08/stock-market-today-live-updates.html",
-         "date": "2026-11-09"
+         "title": "Stock market today: Live updates",
+         "url": "https://www.cnbc.com/2026/11/10/stock-market-today-live-updates.html",
+         "date": "2026-11-10"
         },
         {
-         "outlet": "BigGo Finance",
-         "title": "Dollar Index Falls 0.47% as Mideast Tensions Ease",
-         "url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
-         "date": "2026-11-09"
+         "outlet": "AP",
+         "title": "How major US stock indexes fared Tuesday 11/10/2026",
+         "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-a97eb31c415811065561f2c2ac552cd7",
+         "date": "2026-11-10"
         }
        ],
        "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch",
-        "source": "BigGo Finance",
-        "url": "https://finance.biggo.com/news/eab88783-15f5-4b28-ba84-b91427cf7e01",
+        "source": "Sharecast",
+        "url": "https://www.sharecast.com/news/market-report-us-close/wall-street-nyse-dow-jones-nasdaq-stocks-equities--24118290.html",
         "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
        }
       },
       {
        "no": 3,
-       "headline": "中国10月PPI同比5.7%，CPI同比0.7%",
-       "facts": "国家统计局2026-11-09公布：10月CPI同比+0.7%、环比持平，核心CPI同比+0.8%；PPI同比+5.7%、环比+0.7%，为2022年6月以来最高，连续三个月加速。",
-       "plain": "上游工业品价格涨得快，消费端价格仍温和，利润分配向上游倾斜。",
-       "affects": "人民币资产、大宗商品、中国制造业利润。",
-       "pricing": "无法判断",
-       "pricing_evidence": "数据公布于2026-11-09，本期未取得A股与港股对数据的单独反应。",
-       "next_check": "中国10月社融与信贷数据。",
-       "risks": "判断：PPI 5.7%与CPI 0.7%相差5.0个百分点，中下游企业利润承压。",
+       "headline": "布伦特结算91.49美元，盘中跌破90美元",
+       "facts": "新华社：2026-11-10布伦特结算91.49美元/桶、跌1.17%，WTI结算86.04美元、跌0.93%。CNBC称布伦特盘中跌破90美元，为8月以来首次，市场押注美伊局势缓和。",
+       "plain": "油价连续两天下跌，但CPI里能源分项仍涨0.7%，油价回落还没传导到通胀数据。",
+       "affects": "原油、能源股、通胀预期。",
+       "pricing": "已定价",
+       "pricing_evidence": "结算价已反映。",
+       "next_check": "布伦特能否守住90美元。",
+       "risks": "判断：布伦特两日从98.32美元跌到91.49美元，跌幅6.95%，单日波动超过1美元时会直接影响下期通胀预期。",
        "sources": [
         {
-         "outlet": "国家统计局",
-         "title": "董莉娟解读2026年10月份CPI和PPI数据",
-         "url": "https://www.stats.gov.cn/sj/zxfbhjd/202611/t20261109_1965796.html",
-         "date": "2026-11-09"
+         "outlet": "新华社",
+         "title": "Crude futures settle lower",
+         "url": "https://english.news.cn/20261111/5dcdb4c27d894a41a31000e49c960328/c.html",
+         "date": "2026-11-11"
         },
         {
          "outlet": "CNBC",
-         "title": "China wholesale inflation hits highest in more than four years",
-         "url": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
-         "date": "2026-11-09"
+         "title": "Brent crude dips below $90 for first time since August on Iran hopes",
+         "url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
+         "date": "2026-11-10"
         }
        ],
-       "grade": "官方一手",
+       "grade": "主流媒体",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch",
-        "source": "CGTN；CNBC",
-        "url": "https://news.cgtn.com/news/2026-11-09/China-s-October-CPI-up-0-7-PPI-rises-5-7--1RVFvJks2Fa/p.html",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/11/10/oil-prices-trump-iran.html",
         "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
        }
       }
@@ -1417,86 +1419,77 @@
      "items": [
       {
        "no": 4,
-       "headline": "Strategy再买1,036枚BTC，买入均价高于现价",
-       "facts": "Strategy 2026-11-09公告：2026-11-02至11-08以8,190万美元买入1,036枚BTC，均价79,012美元；总持仓850,364枚，平均成本75,456美元；另回购1.88亿美元STRC。CoinGecko 2026-11-10 07:23快照BTC为75,200美元。",
-       "plain": "最大企业持币方继续小额买入，但现价已略低于其整体平均成本。",
-       "affects": "BTC、MSTR。",
+       "headline": "CPI后BTC跌破73,000美元",
+       "facts": "CoinGecko 2026-11-11 07:25快照BTC 73,634美元（24h −2.04%（24h）），ETH 2,048.77美元（24h −3.84%（24h））。WatcherGuru 2026-11-10 23:44帖称BTC跌破73,000美元，15分钟内多头爆仓2亿美元。",
+       "plain": "加息预期升温，加密跟随风险资产走弱。",
+       "affects": "BTC、ETH、加密股。",
        "pricing": "已有反应但程度不明",
-       "pricing_evidence": "BTC 24小时−0.46%（24h）。",
-       "next_check": "BTC能否回到Strategy平均成本75,456美元之上。",
-       "risks": "判断：BTC 75,200美元低于Strategy平均成本75,456美元，若继续下跌，其持仓整体转为账面亏损。",
+       "pricing_evidence": "BTC 24h跌幅见快照。",
+       "next_check": "BTC能否回到75,000美元。",
+       "risks": "判断：BTC 73,634美元已低于Strategy平均成本75,456美元，若继续下跌，企业持币方账面亏损扩大。",
        "sources": [
         {
-         "outlet": "Strategy",
-         "title": "Strategy Acquires 1,036 BTC and Repurchases $188 Million of STRC",
-         "url": "https://www.strategy.com/press/strategy-acquires-1036-btc-and-repurchases-188-million-of-strc_11-09-2026",
-         "date": "2026-11-09"
+         "outlet": "CoinGecko",
+         "title": "Bitcoin price",
+         "url": "https://www.coingecko.com/en/coins/bitcoin",
+         "date": "2026-11-11"
         },
         {
-         "outlet": "Cointelegraph",
-         "title": "Strategy Buys 1,036 Bitcoin, Spends $188M on STRC Buybacks",
-         "url": "https://cointelegraph.com/news/strategy-buy-1036-bitcoin-holdings-850364-btc",
-         "date": "2026-11-09"
+         "outlet": "Hyperdash",
+         "title": "Close Market Overview November 10, 2026",
+         "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing",
+         "date": "2026-11-10"
         }
        ],
-       "grade": "官方一手",
+       "grade": "专业数据平台",
        "crosscheck": {
         "status": "已交叉核对",
         "by": "WebSearch",
-        "source": "Cointelegraph",
-        "url": "https://cointelegraph.com/news/strategy-buy-1036-bitcoin-holdings-850364-btc",
+        "source": "Hyperdash收盘概览（BTC 73,876，−1.34%）",
+        "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing",
         "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
        }
       },
       {
        "no": 5,
-       "headline": "PNC银行试点企业客户接收USDC",
-       "facts": "PNC银行2026-11-09宣布有限试点：符合条件的企业与机构客户可接收以太坊上的USDC付款，经Coinbase支付产品处理后按1:1自动兑换为美元存入PNC账户。",
-       "plain": "企业客户不用自己持有稳定币，就能收稳定币付款。",
-       "affects": "USDC、COIN、稳定币支付。",
+       "headline": "Coinbase获OCC批准成立联邦信托公司",
+       "facts": "Coinbase 2026-11-09宣布成立获OCC批准的Coinbase National Trust Company，为联邦特许信托公司。",
+       "plain": "Coinbase的托管业务改由联邦层面监管，对机构客户更有吸引力。",
+       "affects": "COIN、机构托管。",
        "pricing": "无法判断",
-       "pricing_evidence": "试点规模与客户数未披露。",
-       "next_check": "PNC是否公布试点客户数或扩大到出款。",
-       "risks": "判断：本次试点只开放收款1个方向、只限以太坊1条链上的USDC，客户数量未披露，短期对USDC流通量影响有限。",
+       "pricing_evidence": "本期未取得COIN对公告的单独反应。",
+       "next_check": "OCC公告原文与信托公司开业时间。",
+       "risks": "判断：本期只有1条Coinbase一手帖，未取得OCC原文，业务范围以OCC批文为准。",
        "sources": [
         {
-         "outlet": "PNC",
-         "title": "PNC Bank Launches Incoming Stablecoin Payments for Corporate and Institutional Banking Clients",
-         "url": "https://pnc.mediaroom.com/2026-11-09-PNC-Bank-Launches-Incoming-Stablecoin-Payments-for-Corporate-and-Institutional-Banking-Clients",
-         "date": "2026-11-09"
-        },
-        {
-         "outlet": "The Block",
-         "title": "Coinbase and PNC Bank expand partnership with USDC payments for corporate clients",
-         "url": "https://www.theblock.co/news/business/2026-11-09-coinbase-pnc-bank-expand-partnership-with-usdc-payments-corporate-clients-436466",
+         "outlet": "Coinbase（X官方账号）",
+         "title": "Introducing Coinbase National Trust Company",
+         "url": "https://x.com/coinbase",
          "date": "2026-11-09"
         }
        ],
        "grade": "官方一手",
        "crosscheck": {
-        "status": "已交叉核对",
-        "by": "WebSearch",
-        "source": "The Block",
-        "url": "https://www.theblock.co/news/business/2026-11-09-coinbase-pnc-bank-expand-partnership-with-usdc-payments-corporate-clients-436466",
-        "note": "Codex额度用尽（至2026-11-11 14:53恢复），第二来源改用WebSearch人工核对。"
+        "status": "单一来源",
+        "note": "仅Coinbase官方帖。"
        }
       },
       {
        "no": 6,
-       "headline": "FIL小幅回升至0.764美元",
-       "facts": "CoinGecko 2026-11-10 07:23快照FIL 0.764287美元，24小时+0.99%（24h）；上期快照0.757044美元。",
-       "plain": "FIL结束连续两期下跌，仍低于2026-11-08期的0.786965美元。",
+       "headline": "FIL回落至0.755美元",
+       "facts": "CoinGecko 2026-11-11 07:25快照FIL 0.755466美元，24小时−0.88%（24h）；上期快照0.764287美元。",
+       "plain": "FIL跟随大盘小幅回落。",
        "affects": "FIL。",
        "pricing": "无法判断",
        "pricing_evidence": "仅单一平台快照。",
-       "next_check": "FIL能否回到0.786965美元。",
-       "risks": "判断：FIL本期较上期快照高0.96%，单一平台数据，未做同刻第二平台核对。",
+       "next_check": "FIL能否回到0.764287美元。",
+       "risks": "判断：FIL本期较上期快照低1.15%，单一平台数据，未做同刻第二平台核对。",
        "sources": [
         {
          "outlet": "CoinGecko",
          "title": "Filecoin price",
          "url": "https://www.coingecko.com/en/coins/filecoin",
-         "date": "2026-11-10"
+         "date": "2026-11-11"
         }
        ],
        "grade": "专业数据平台",
@@ -1510,172 +1503,172 @@
    ],
    "events": [
     {
-     "time_bj": "2026-11-10 21:30",
-     "event": "美国10月CPI",
-     "watch": "整体与核心CPI同比，对12月加息预期的影响"
+     "time_bj": "2026-11-19 00:00",
+     "event": "Anthropic IPO（Hyperdash称2026-11-19上市，具体时间待定）",
+     "watch": "超出72小时窗口；定价区间与首日表现"
     },
     {
-     "time_bj": "2026-11-11 02:00",
-     "event": "美国10年期国债拍卖（420亿美元）",
-     "watch": "得标利率与发行前市场利率之差（尾部）"
+     "time_bj": "2026-12-10 03:00",
+     "event": "美联储12月议息（2026-12-08至12-09会议，决议时间以官方为准）",
+     "watch": "超出72小时窗口；加息25还是50个基点"
     }
    ],
    "events_source": [
     {
-     "outlet": "Finance Unc",
-     "title": "The Nov 9, 2026 edition",
-     "url": "https://www.financeunc.com/2026-11-09/"
+     "outlet": "Hyperdash",
+     "title": "Close Market Overview November 10, 2026",
+     "url": "https://hyperdash.com/news/stocks-slip-as-treasury-yields-climb-dollar-firms-on-rate-hike-repricing"
     },
     {
-     "outlet": "美国财政部",
-     "title": "Quarterly Refunding Statement",
-     "url": "https://home.treasury.gov/news/press-releases/sb0678"
+     "outlet": "CNBC",
+     "title": "Consumer prices rose 0.4% in October",
+     "url": "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html"
     }
    ],
    "footer": "以上仅作信息参考。"
   },
   "github_tools": [
    {
-    "name": "Anil-matcha/Open-Generative-AI",
-    "url": "https://github.com/Anil-matcha/Open-Generative-AI",
-    "title": "开源自托管的AI图像与视频生成工作室，含动效与对口型专区",
-    "summary": "MIT开源的桌面/自托管AI创作工作室，把文生视频、图生视频、对口型、动效等14个专区放在一个界面里，可调用云端模型，也能接本地sd.cpp和Wan2GP离线生成。仓库已从Open-Higgsfield-AI更名为Open-Generative-AI。",
+    "name": "ArcReel/ArcReel",
+    "url": "https://github.com/ArcReel/ArcReel",
+    "title": "把小说或剧本变成角色一致的AI短视频，并导出剪映草稿",
+    "summary": "开源自托管的AI视频生产工作台，用AI Agent把小说、成品剧本或商品素材拆成角色、场景、道具资产和分镜，再调用多家视频模型生成片段，过程可审核、可中断恢复，并追踪每一步费用。",
     "features": [
-     "Video Studio：40多个文生视频和60多个图生视频模型，按是否给首帧图自动切换模式",
-     "Vibe Motion Studio：生成风格化动效视频",
-     "Lip Sync Studio：9个模型，人像图+音频生成说话视频，或给已有视频对口型",
-     "Workflow Studio：节点式串联图像、视频、音频模型做自动流水线"
+     "内容分析→资产→分镜→媒体生成→成片的完整流水线，关键阶段可人工确认、单个素材可重做",
+     "跨分镜复用角色和场景参考图，保持跨镜头一致",
+     "支持多家模型供应商并记录费用",
+     "可直接合成视频，也可导出中国大陆版剪映草稿继续调字幕、配音、节奏和转场"
     ],
     "scenarios": [
-     "给一张角色图做图生视频，再用对口型专区配上旁白",
-     "同一提示词在多个视频模型间对比，挑最适合的动效风格",
-     "把出图、出视频、配音串成一条工作流批量出短片素材"
+     "把一章小说改编成AI漫剧分集",
+     "给商品素材生成带货短片",
+     "做旁白解说类短视频的分镜和镜头素材"
     ],
-    "for_you": "对你的用处：可以把它当成多模型试片台，先在这里快速比较不同视频模型做同一个动效镜头的效果，再把选中的素材放进你自己的剪辑和合成流程；已装Wan2GP的话还能本地生成不花额度。",
-    "setup": "下载macOS、Windows或Linux安装包即可用，不用写代码；软件MIT免费，云端模型通过MuAPI调用，需注册账号并按模型付费；本地模式（sd.cpp、Wan2GP）不需要API key。",
-    "stars": 33655,
-    "last_push": "2026-11-09",
-    "fetched_at": "2026-11-10 07:40",
+    "for_you": "对你的用处：做带叙事的动效短片时，可以先让它出分镜和角色一致的镜头素材，再导出剪映草稿精修节奏和字幕，比手动在多个视频模型间来回切省事。",
+    "setup": "准备好Docker和Docker Compose后运行docker compose up -d即可，不用写代码；AGPL-3.0开源免费，视频模型需自备API并按量付费。",
+    "stars": 6405,
+    "last_push": "2026-11-11",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
     },
-    "repo": "Anil-matcha/Open-Generative-AI"
+    "repo": "ArcReel/ArcReel"
    },
    {
-    "name": "m-bain/whisperX",
-    "url": "https://github.com/m-bain/whisperX",
-    "title": "带逐词时间戳和说话人分离的快速语音转写",
-    "summary": "基于Whisper的语音识别工具：用faster-whisper批量推理，large-v2模型可达70倍实时速度；再用wav2vec2做强制对齐，输出精确到每个词的时间戳，并可用pyannote区分说话人。",
+    "name": "dramaclaw/dramaclaw",
+    "url": "https://github.com/dramaclaw/dramaclaw",
+    "title": "从剧本到成片的AIGC视频引擎，可通过MCP给Claude Code和Codex调用",
+    "summary": "可自托管的AI短剧生产线：内置智能体Xia Director规划流程并在你确认后执行，配合无限画布XiaHua生成、编辑、连接图像、视频、音频和3D场景；工作流可通过MCP暴露给其他AI代理。",
     "features": [
-     "逐词时间戳（wav2vec2强制对齐），比原版Whisper的句级时间戳更准",
-     "批量推理达70倍实时，large-v2在beam_size=5时显存需求低于8GB",
-     "说话人分离，给每段文字标注说话人",
-     "输出SRT等字幕，--highlight_words可在字幕里标出逐词时间"
+     "内置智能体按描述规划工作流、排布节点并逐步执行",
+     "无限画布：图像、视频、音频、剧本、分镜、风格、360°全景、3D场景、Previz等节点自由连接",
+     "内置短剧、电商与IP角色广告、日漫、乐高风动画等工作流Skills与Recipes，可导入导出分享",
+     "Agent Kit通过MCP把同一套工作流提供给Codex、Claude Code等任意stdio MCP客户端"
     ],
     "scenarios": [
-     "给动效解说视频生成逐词字幕，做跟读高亮的文字动画",
-     "把访谈录音转成带说话人标签的文字稿",
-     "批量给一批教程视频出字幕"
+     "在Claude Code里一句话触发一条乐高风动画工作流",
+     "用画布把角色图、镜头和配音串起来做广告短片",
+     "复用别人分享的Recipe快速出一集短剧"
     ],
-    "for_you": "对你的用处：逐词时间戳可以直接驱动文字动效——把它导出的每个词的起止时间喂给Remotion或After Effects脚本，就能做出逐字弹出、卡点高亮的字幕动画。",
-    "setup": "pip install whisperx一条命令安装，命令行运行，不用写代码；GPU需装CUDA 12.8，也可只用CPU；BSD-2-Clause开源免费，说话人分离需在Hugging Face申请模型访问令牌。",
-    "stars": 25180,
-    "last_push": "2026-10-22",
-    "fetched_at": "2026-11-10 07:40",
+    "for_you": "对你的用处：它的MCP接口可以让你在Claude或Codex里直接调起视频工作流，把动效短片的分镜、出图、出视频交给它，你只在画布上挑选和微调。",
+    "setup": "需要Docker：docker compose -f docker-compose.release.yml up -d，无需GPU和数据库，不用写代码；Elastic License 2.0，可免费商用（需在界面标注Powered by DramaClaw，不能做成托管SaaS），模型调用另付费。",
+    "stars": 7663,
+    "last_push": "2026-11-11",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
     },
-    "repo": "m-bain/whisperX"
+    "repo": "dramaclaw/dramaclaw"
    },
    {
-    "name": "fishaudio/fish-speech",
-    "url": "https://github.com/fishaudio/fish-speech",
-    "title": "支持声音克隆和情绪标签的开源语音合成",
-    "summary": "Fish Audio开源的语音合成项目，最新旗舰模型Drama 3（35B总参数、每token激活3B）支持多说话人、跨语言声音克隆、自然语言控制语气；可像改文字一样替换音频里的单个词，并按“再温柔一点”这类指令重录上一条。",
+    "name": "kaomei/stickman-video-director",
+    "url": "https://github.com/kaomei/stickman-video-director",
+    "title": "给Claude Code或Codex用的火柴人动画解说视频Skill",
+    "summary": "把一个主题、文章链接或完整脚本自动做成火柴人风格动画视频的Skill，自动编排画面、旁白、字幕和音效；提供11种视觉风格，适合科普、心理、故事类无露脸频道。",
     "features": [
-     "跨语言声音克隆，用一段参考音生成同一音色的多语种配音",
-     "行内标签控制情绪和语气，如[whisper]、[angry]、[laughing]",
-     "局部编辑：替换音频中的单个词，前后音色和衔接保持自然",
-     "命令行、API服务和WebUI三种推理方式，提供Docker镜像"
+     "Director模式：AI规划镜头、给出分镜和提示词，你用Google Flow、Runway、Luma、Kling等生成片段后在剪映或Premiere组装",
+     "Autopilot模式：在Claude Code、Codex、Cursor等能访问文件和终端的代理里，从主题直接产出成片，适合10分钟以上长视频",
+     "支持9:16、16:9、1:1画幅和多语言旁白",
+     "11种风格：经典黑白、现代波普、史前洞穴、复古电视等"
     ],
     "scenarios": [
-     "给动效短片批量生成中英文旁白",
-     "用自己的声音克隆配音，改脚本时只重录改动的词",
-     "多角色对话类动画一次生成多个角色配音"
+     "把一篇科普文章做成10分钟火柴人解说视频",
+     "给一个概念做30秒竖版动画短片",
+     "批量生成同一风格的系列视频"
     ],
-    "for_you": "对你的用处：动效视频的旁白可以先用它生成并反复按指令调语气，改稿时只替换改动的词，不用整段重录；配合whisperX拿到逐词时间，就能让动画卡在配音节奏上。",
-    "setup": "按官方文档安装（支持Docker），有WebUI可不写代码；需要GPU运行；代码和权重采用Fish Audio社区许可（非OSI开源），商用前要看LICENSE条款。",
-    "stars": 33642,
-    "last_push": "2026-11-03",
-    "fetched_at": "2026-11-10 07:40",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
-    },
-    "repo": "fishaudio/fish-speech"
-   },
-   {
-    "name": "assafelovic/gpt-researcher",
-    "url": "https://github.com/assafelovic/gpt-researcher",
-    "title": "自动做深度网络调研并输出带引用报告的研究代理",
-    "summary": "开源深度调研代理：规划代理先把问题拆成多个子问题，执行代理分别爬取网页或本地文档、逐条记录来源，最后汇总成2,000字以上带引用的报告；可作为Claude Skill安装。",
-    "features": [
-     "一次汇总20个以上来源，每条结论带出处",
-     "同时检索网页和本地文档（PDF、Word等）",
-     "支持JavaScript渲染页面抓取，报告可导出PDF、Word",
-     "可装成Claude Skill，在Claude对话里直接调用"
-    ],
-    "scenarios": [
-     "做某个动效工具或AI视频模型的横向调研报告",
-     "每周汇总一个行业话题的新闻和观点并附来源",
-     "把一批本地资料（PDF、文档）整理成综述"
-    ],
-    "for_you": "对你的用处：选新的动效工具或视频模型前，可以让Claude通过这个Skill先做一份带来源的对比调研，省去自己逐个搜索和整理的时间。",
-    "setup": "npx skills add assafelovic/gpt-researcher装成Claude Skill，或pip install gpt-researcher；需配置大模型API key和搜索API key（按用量付费）；Apache-2.0开源免费。",
-    "stars": 30602,
-    "last_push": "2026-11-09",
-    "fetched_at": "2026-11-10 07:40",
-    "grade": "官方一手",
-    "crosscheck": {
-     "status": "单一来源",
-     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
-    },
-    "repo": "assafelovic/gpt-researcher"
-   },
-   {
-    "name": "PrefectHQ/fastmcp",
-    "url": "https://github.com/PrefectHQ/fastmcp",
-    "title": "用Python几行代码写MCP服务器和客户端的框架",
-    "summary": "Prefect团队维护的MCP应用框架：用一个Python函数加@mcp.tool装饰器就能变成MCP工具，参数结构、校验和文档自动生成；同时支持写MCP客户端和在对话里渲染交互界面的MCP Apps。FastMCP 1.0已并入官方MCP Python SDK。",
-    "features": [
-     "@mcp.tool装饰器把Python函数直接变成MCP工具，自动生成参数结构",
-     "Servers、Apps、Clients三部分：暴露工具、在对话中渲染交互界面、连接任意MCP服务器",
-     "本地或远程运行，支持命令行客户端",
-     "有官方TypeScript版本fastmcp-ts"
-    ],
-    "scenarios": [
-     "把自己的FFmpeg或渲染脚本包装成MCP工具，让Claude直接调用",
-     "给常用素材库写一个查询工具接入Claude或Codex",
-     "测试和调试别人的MCP服务器"
-    ],
-    "for_you": "对你的用处：你现有的动效渲染、转码、批量导出脚本，可以用十几行Python包成MCP工具，之后在Claude或Codex里一句话就能触发渲染，不用切到终端手动跑。",
-    "setup": "uv add fastmcp或pip安装；需要会一点Python；Apache-2.0开源免费。",
-    "stars": 28364,
+    "for_you": "对你的用处：这是直接装进Claude或Codex的动效视频Skill，你给主题就能出带旁白字幕的动画，可作为解说类动效的起稿工具，再按你的风格二次加工。",
+    "setup": "让AI助手按README安装Skill即可，不用写代码，作者推荐Codex；MIT开源免费，部分画面生成走云端API，按用量付费。星标5,446，动效类按规则放宽到≥3,000。",
+    "stars": 5446,
     "last_push": "2026-11-10",
-    "fetched_at": "2026-11-10 07:40",
+    "fetched_at": "2026-11-11 07:31",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
      "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
     },
-    "repo": "PrefectHQ/fastmcp"
+    "repo": "kaomei/stickman-video-director"
+   },
+   {
+    "name": "buxuku/SmartSub",
+    "url": "https://github.com/buxuku/SmartSub",
+    "title": "字幕生成、翻译、AI配音与烧录一站式桌面工具，带111个MCP工具",
+    "summary": "开源桌面应用（妙幕），把下载→语音转文字→字幕翻译→校对→TTS配音与声音克隆→烧录合成串成一条流水线，可本地离线运行，并提供MCP和CLI供AI代理批量调用。",
+    "features": [
+     "8类转写引擎可切换：whisper.cpp、faster-whisper、FunASR、Qwen3-ASR等本地模型，以及免GPU云端听写",
+     "字幕翻译、校对润色、AI配音与声音克隆、字幕烧录合成",
+     "111个MCP工具与对应smartsub CLI，可一键导入Cursor、Codex、Claude配置",
+     "粘贴链接下载B站、YouTube视频并自动配对官方字幕"
+    ],
+    "scenarios": [
+     "给动效视频批量生成中英双语字幕并烧录",
+     "把英文教程配成中文配音版",
+     "让Claude通过MCP自动跑一批视频的转写和翻译"
+    ],
+    "for_you": "对你的用处：动效视频做完后，字幕、翻译和多语言配音这几步可以交给它，并能让Claude或Codex通过MCP批量处理，不用逐个手动导出导入。",
+    "setup": "下载Windows、macOS或Linux安装包即可用，不用写代码；MIT开源免费，GPU加速包在应用内下载，云端翻译和配音按服务商计费。星标6,000，动效视频类按规则放宽到≥3,000。",
+    "stars": 6000,
+    "last_push": "2026-11-09",
+    "fetched_at": "2026-11-11 07:31",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "buxuku/SmartSub"
+   },
+   {
+    "name": "freqtrade/freqtrade",
+    "url": "https://github.com/freqtrade/freqtrade",
+    "title": "开源加密货币量化交易机器人，带回测和机器学习策略优化",
+    "summary": "Python编写的免费开源加密交易机器人，支持主流交易所（含Hyperliquid现货与合约），可通过Telegram或网页界面控制，内置回测、作图和资金管理工具，以及用机器学习优化策略参数的模块。",
+    "features": [
+     "回测：用历史数据模拟买卖策略",
+     "Hyperopt用机器学习优化策略参数",
+     "FreqAI：自适应训练的预测模型策略",
+     "Telegram或WebUI远程管理机器人"
+    ],
+    "scenarios": [
+     "先用历史K线回测一个FIL或BTC的定投/趋势策略",
+     "用模拟盘（dry-run）观察策略几周再决定是否实盘",
+     "通过Telegram随时查看持仓与盈亏"
+    ],
+    "for_you": "对你的用处：你关注FIL和BTC行情，可以用它把自己的买卖规则写成策略先回测，验证日报里的价格信号是否真的有效，再决定是否用模拟盘跑。",
+    "setup": "官方推荐Docker快速开始，需要会一点Python写策略；GPL-3.0开源免费；实盘有亏损风险，需交易所API密钥。",
+    "stars": 56745,
+    "last_push": "2026-11-10",
+    "fetched_at": "2026-11-11 07:31",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "已读仓库README；星标、最后推送及归档状态为GitHub API一手数据。"
+    },
+    "repo": "freqtrade/freqtrade"
    }
   ]
  },
- "updated_at": "2026-11-10T07:31:20+08:00"
+ "updated_at": "2026-11-11T07:30:42+08:00"
 }
