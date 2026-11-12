@@ -2,27 +2,20 @@
  "date": "2026-11-13",
  "meta": {
   "ai_labs": {
-   "as_of": "2026-11-13 07:58",
+   "as_of": "2026-11-13 07:25",
    "basis": "五家公司分组；以上期2026-11-12 07:30为去重截止；客户案例、研究声明、预告不算产品或模型更新。",
    "missing": [
-    {
-     "item": "Codex实时核对结果",
-     "reason": "Codex核对发稿前未返回完整结论，第二来源改用WebSearch人工核对。"
-    },
-    {
-     "item": "Codex CLI 0.167.2发布日期",
-     "reason": "Codex检索提到该版本，发稿前未核实发布时间，未收录。"
-    },
     {
      "item": "Anthropic与Google条目精确发布时刻",
      "reason": "官方页只标日期，时刻取主流媒体报道时间。"
     }
    ],
+   "note": "更正：Codex CLI 0.167.2发布于2026-11-12 06:44，上期写OpenAI今日无更新，属漏报。",
    "pending": [],
    "overflow": []
   },
   "x_top": {
-   "as_of": "2026-11-13 07:58",
+   "as_of": "2026-11-13 07:25",
    "basis": "5组search_news（近24小时）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数。南非两个话题、比特币两个话题各自合并。不是全站完整榜单。",
    "missing": [
     {
@@ -42,7 +35,7 @@
    "pending": []
   },
   "filecoin": {
-   "as_of": "2026-11-13 07:58",
+   "as_of": "2026-11-13 07:25",
    "basis": "只收上期截止（2026-11-11 07:31）后的72小时内新消息；旧闻不重复。",
    "missing": [
     {
@@ -54,7 +47,7 @@
    "pending": []
   },
   "finance": {
-   "as_of": "2026-11-13 07:58",
+   "as_of": "2026-11-13 07:25",
    "basis": "FINANCE_SPEC：美股/美债/商品取美国2026-11-12收盘或结算，加密取CoinGecko同批快照。",
    "missing": [
     {
@@ -68,7 +61,7 @@
    ]
   },
   "github_tools": {
-   "as_of": "2026-11-13 08:00",
+   "as_of": "2026-11-13 07:25",
    "basis": "gh api实时取星标、最后推送与归档状态；只选近90天有推送、未归档、未推荐过的仓库；5条中3条为动效视频类（video-use 30,959星、OpenDesign、/brag），另有编程代理OpenHands和加密数据库CCXT。",
    "missing": [],
    "note": "Lightricks/LTX-Video README声明已停止活跃开发（由LTX-2接替，已推荐过），未选；motion-canvas最后推送2026-07-02超过90天，未选。"
@@ -81,8 +74,8 @@
     "title": "今日无更新",
     "summary": "上期截止（2026-11-12 07:30）后，OpenAI官网新闻为Amplitude、Gondola、Holiday Extras客户案例和儿童安全研究支持声明（2026-11-12），均不是新产品或新模型。",
     "source_url": "https://openai.com/news/",
-    "published_at": "2026-11-13 07:58",
-    "fetched_at": "2026-11-13 07:58",
+    "published_at": "2026-11-13 07:25",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -97,14 +90,14 @@
     "summary": "Anthropic 2026-11-12推出自托管版Claude Managed Agents（私测）：代理服务器、会话记录、凭证和沙箱都运行在客户自己的云账户或本地机房，模型请求可发往Anthropic、Amazon Bedrock、Google或Microsoft Foundry。需通过Anthropic客户团队申请；开发用Docker Compose，生产用Helm部署，持久化需PostgreSQL 16以上；webhook和定时运行暂不支持。",
     "source_url": "https://claude.com/fr/resources/articles/self-hosted-claude-managed-agents",
     "published_at": "2026-11-13 03:06",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
      "source": "The Next Web；Unite.AI",
      "url": "https://thenextweb.com/news/anthropic-self-hosted-claude-managed-agents",
-     "note": "官方页无精确时刻，发布时间取TNW报道时间2026-11-12 19:06 GMT；Unite.AI同样写2026-11-12推出。"
+     "note": "官方页无精确时刻，发布时间取TNW报道时间2026-11-12 19:06 GMT；Unite.AI同样写2026-11-12推出。 Codex核对官方发布说明确认2026-11-12。"
     },
     "source_name": "Claude官方"
    },
@@ -113,12 +106,15 @@
     "title": "今日无更新",
     "summary": "上期截止后未在x.ai/news看到新模型或功能发布；Grok 4.8仍只有马斯克预告，无官方上线公告。",
     "source_url": "https://x.ai/news",
-    "published_at": "2026-11-13 07:58",
-    "fetched_at": "2026-11-13 07:58",
+    "published_at": "2026-11-13 07:25",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "官方原始来源"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex核对x.ai/news与x.ai/changelog/bot",
+     "url": "https://x.ai/news",
+     "note": "Codex确认x.ai/news无窗口内新公告、Grok 4.8无正式上线公告；更新日志最新为v1.0.1（2026-11-11）。"
     },
     "status_card": true,
     "source_name": "官方更新渠道"
@@ -129,14 +125,14 @@
     "summary": "Google 2026-11-12发布Gemini 4 Hydrogen，取代Flash定位：100万token上下文，四档思考强度，输入每百万token 1.50美元、输出7.50美元；官方称默认high档在Artificial Analysis智能指数上得51分（高于Argon的50），xhigh档54分。即日起在Gemini API、AI Studio、Gemini app、Google搜索、Gemini for business上线，免费用户通过自动选模型使用。",
     "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
     "published_at": "2026-11-13 02:01",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "已交叉核对",
      "by": "WebSearch",
      "source": "9to5Google；DeepMind模型卡",
      "url": "https://9to5google.com/2026/11/12/gemini-4-hydrogen-launch/",
-     "note": "官方博客只标日期2026-11-12，发布时间取9to5Google报道时间10:01 PT；模型卡标注发布于2026-11-12。"
+     "note": "官方博客只标日期2026-11-12，发布时间取9to5Google报道时间10:01 PT；模型卡标注发布于2026-11-12。 Codex核对确认官方公告日期2026-11-12。"
     },
     "source_name": "Google官方博客"
    },
@@ -146,7 +142,7 @@
     "summary": "Google 2026-11-12宣布，Gemini 4 Hydrogen即日起面向全球所有搜索用户上线：更好理解多部分和含错字的问题，查询扩展连接更多网页，回答里有更多图片、对比表和定制小工具，所有AI Mode语言都受益。",
     "source_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/",
     "published_at": "2026-11-13 02:01",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -159,12 +155,15 @@
     "title": "今日无更新",
     "summary": "x.ai/changelog/bot最新版本仍为v1.0.1（2026-11-11，上期已报），48小时内无新版本。",
     "source_url": "https://x.ai/changelog/bot",
-    "published_at": "2026-11-13 07:58",
-    "fetched_at": "2026-11-13 07:58",
+    "published_at": "2026-11-13 07:25",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
-     "status": "单一来源",
-     "note": "官方原始来源"
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Codex核对x.ai/news与x.ai/changelog/bot",
+     "url": "https://x.ai/changelog/bot",
+     "note": "Codex确认x.ai/news无窗口内新公告、Grok 4.8无正式上线公告；更新日志最新为v1.0.1（2026-11-11）。"
     },
     "status_card": true,
     "source_name": "官方更新渠道"
@@ -206,7 +205,7 @@
      }
     ],
     "published_at": "2026-11-13 01:31",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -217,7 +216,7 @@
    {
     "topic": "比特币跌破72,000美元，多头30分钟内爆仓2.22亿美元",
     "category": "加密货币",
-    "summary": "CoinGecko 2026-11-13 07:32快照BTC为71,177美元、24小时−3.29%；X帖称比特币跌破72,000美元，30分钟内2.22亿美元多头被强平，ETH跌破2,000美元为近3个月首次。爆仓金额来自X帖，未经第二来源核对。",
+    "summary": "CoinGecko 2026-11-13 07:25快照BTC为71,177美元、24小时−3.29%；X帖称比特币跌破72,000美元，30分钟内2.22亿美元多头被强平，ETH跌破2,000美元为近3个月首次。爆仓金额来自X帖，未经第二来源核对。",
     "url": "https://x.com/i/trending/2120760524329947501",
     "score": 15293,
     "engagement": 12870,
@@ -249,7 +248,7 @@
      }
     ],
     "published_at": "2026-11-12 22:40",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -292,7 +291,7 @@
      }
     ],
     "published_at": "2026-11-12 02:05",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -335,7 +334,7 @@
      }
     ],
     "published_at": "2026-11-12 18:34",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "已交叉核对",
@@ -381,7 +380,7 @@
      }
     ],
     "published_at": "2026-11-12 19:54",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -424,7 +423,7 @@
      }
     ],
     "published_at": "2026-11-13 03:02",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -467,7 +466,7 @@
      }
     ],
     "published_at": "2026-11-11 23:00",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -510,7 +509,7 @@
      }
     ],
     "published_at": "2026-11-12 15:47",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -553,7 +552,7 @@
      }
     ],
     "published_at": "2026-11-13 00:50",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -585,7 +584,7 @@
      }
     ],
     "published_at": "2026-11-12 00:42",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "社媒传闻",
     "crosscheck": {
      "status": "单一来源",
@@ -600,7 +599,7 @@
     "summary": "币安公告：2026-11-13 14:00（北京时间，06:00 UTC）起，FIL和HBAR在全仓杠杆（借币与转出）和统一账户中的抵押率由50%上调到60%，统一账户专业版的阶梯抵押率同步调整，调整过程30分钟。抵押率提高意味着同样数量的FIL能借到更多资金。",
     "source_url": "https://www.tokenpost.com/news/business/53782",
     "published_at": "2026-11-11 18:01",
-    "fetched_at": "2026-11-13 07:58",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "主流媒体",
     "crosscheck": {
      "status": "已交叉核对",
@@ -615,8 +614,8 @@
   ],
   "finance": {
    "title": "每日金融市场简报｜2026-11-13",
-   "cutoff": "2026-11-13 07:58",
-   "cutoff_note": "美股、美债、黄金、布伦特为美国2026-11-12（周四）收盘/结算；DXY为The Edge北京时间2026-11-13 05:44报价；加密三项为同一次CoinGecko请求快照（2026-11-13 07:32）。",
+   "cutoff": "2026-11-13 07:25",
+   "cutoff_note": "美股、美债、黄金、布伦特为美国2026-11-12（周四）收盘/结算；DXY为The Edge北京时间2026-11-13 05:44报价；加密三项为同一次CoinGecko请求快照（2026-11-13 07:25）。",
    "missing": [
     {
      "item": "Codex第二来源核对",
@@ -758,7 +757,7 @@
      "asset": "BTC",
      "value": "71,177",
      "change": "−3.29%（24h）",
-     "time": "2026-11-13 07:32",
+     "time": "2026-11-13 07:25",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/",
@@ -771,7 +770,7 @@
      "asset": "ETH",
      "value": "2,011.03",
      "change": "−1.49%（24h）",
-     "time": "2026-11-13 07:32",
+     "time": "2026-11-13 07:25",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/",
@@ -784,7 +783,7 @@
      "asset": "FIL",
      "value": "0.7433",
      "change": "−0.11%（24h）",
-     "time": "2026-11-13 07:32",
+     "time": "2026-11-13 07:25",
      "status": "快照",
      "source": "CoinGecko",
      "source_url": "https://www.coingecko.com/",
@@ -902,7 +901,7 @@
       {
        "no": 4,
        "headline": "BTC跌破72,000美元，ETH跌破2,000美元",
-       "facts": "CoinGecko 2026-11-13 07:32快照：BTC 71,177美元（24h −3.29%），ETH 2,011.03美元（−1.49%），FIL 0.7433美元（−0.11%）。The Edge北京时间05:44报BTC 71,503.32美元（−4.03%）。X帖称30分钟内2.22亿美元多头被强平（未经第二来源核对）。",
+       "facts": "CoinGecko 2026-11-13 07:25快照：BTC 71,177美元（24h −3.29%），ETH 2,011.03美元（−1.49%），FIL 0.7433美元（−0.11%）。The Edge北京时间05:44报BTC 71,503.32美元（−4.03%）。X帖称30分钟内2.22亿美元多头被强平（未经第二来源核对）。",
        "plain": "加密货币跟随美股、美债利率上升走弱。",
        "affects": "BTC、ETH、加密相关股票。",
        "pricing": "已有反应但程度不明",
@@ -982,7 +981,7 @@
     "setup": "把README里的安装提示词贴给Claude Code或Codex即可自动安装，也可git clone后uv sync并装ffmpeg；不用写代码，开源免费，转写需要ElevenLabs API密钥（按其价格付费）。",
     "stars": 30959,
     "last_push": "2026-10-09",
-    "fetched_at": "2026-11-13 08:00",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1010,7 +1009,7 @@
     "setup": "官网下载桌面版或本地运行开源版，用自己的编程代理即可，不用写代码；Apache-2.0开源免费，OpenDesign Cloud为付费服务（README称首月8美元）。",
     "stars": 107373,
     "last_push": "2026-11-13",
-    "fetched_at": "2026-11-13 08:00",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1038,7 +1037,7 @@
     "setup": "Claude Code里/plugin marketplace add latent-spaces/brag后/plugin install brag@brag，Codex用codex plugin命令安装，不用写代码；MIT开源免费。",
     "stars": 21240,
     "last_push": "2026-10-24",
-    "fetched_at": "2026-11-13 08:00",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1066,7 +1065,7 @@
     "setup": "pip或Docker本地启动，需自备模型API密钥；不用写代码即可在界面里下任务；MIT开源免费，云版另计费。星标93,346。",
     "stars": 93346,
     "last_push": "2026-11-13",
-    "fetched_at": "2026-11-13 08:00",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1094,7 +1093,7 @@
     "setup": "pip install ccxt或npm install ccxt，需要写少量Python/JS代码；只读行情不需要交易所密钥；MIT开源免费。",
     "stars": 44871,
     "last_push": "2026-11-13",
-    "fetched_at": "2026-11-13 08:00",
+    "fetched_at": "2026-11-13 07:25",
     "grade": "官方一手",
     "crosscheck": {
      "status": "单一来源",
@@ -1104,5 +1103,5 @@
    }
   ]
  },
- "updated_at": "2026-11-13T07:32:28+08:00"
+ "updated_at": "2026-11-13T07:32:56+08:00"
 }
