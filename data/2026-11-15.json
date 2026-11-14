@@ -1,0 +1,1186 @@
+{
+ "date": "2026-11-15",
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-11-15 07:30",
+   "basis": "五家公司分组；以上期2026-11-14 07:30为去重截止，只收新发布的功能和模型；组织调整、套餐调整、测试版不算产品更新。",
+   "missing": [],
+   "note": "更正：上期漏报Claude Code Projects协调者更新（北京时间2026-11-14 06:51，早于上期截止39分钟）。",
+   "pending": [],
+   "overflow": []
+  },
+  "x_top": {
+   "as_of": "2026-11-15 07:30",
+   "basis": "5组search_news（近24小时，每组20条，共95个话题）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数（X计数接口，2026-11-13 23:35至2026-11-14 23:28 UTC）。星舰合并4个话题、加密暴跌合并3个、尼日利亚合并3个。不是全站完整榜单。",
+   "missing": [
+    {
+     "item": "万斯、德桑蒂斯话题第二来源",
+     "reason": "只有X聚合摘要与代表帖，未经Codex核对。"
+    }
+   ],
+   "exclude": "排除AI（英伟达黄仁勋辞职、Nebius财报暴跌、Gemini 4 Hydrogen、Antigravity、AI公司被诉、美联储称AI为金融稳定头号风险）、体育与娱乐（NewJeans、Stray Kids、Ariana Grande、9-1-1、Underdog NFL投注）、个人猎奇/无法核实时间地点的视频（土星卫星视频、2017年博帕尔塔齐亚倒塌旧视频、校车打人视频）；特朗普称比特币可抹平国债（代表帖来自恶搞账号，无法核实）排除；星盾限速（上期已报）、币安6.3亿美元被盗后储备证明（盗币发生于2026-10-29）按旧闻排除；《华邮》ICE新雇员不当记录（原报道2026-11-10，超过72小时）按旧闻排除；阿根廷技术性衰退（Codex核对：INDEC三季度GDP 2026-12-16才公布，未获官方确认）不收录；中国前10月贸易顺差1.04万亿美元（数据公布日未核实）不收录。",
+   "pending": []
+  },
+  "filecoin": {
+   "as_of": "2026-11-15 07:30",
+   "basis": "全网与Filecoin官方X，只收72小时内；上期已报的客户端加密（2026-11-13）不再重复。",
+   "missing": [],
+   "note": "FIL价格见金融简报。",
+   "pending": [
+    {
+     "title": "CERN ATLAS实验经Seal试用Filecoin存储（X帖转述）",
+     "summary": "Signalyze 2026-11-14 04:24（北京时间）援引一条X帖：CERN的ATLAS实验通过Filecoin存储商Seal试点去中心化存储，所在研发项目容量10 PiB。目前只有X帖与二手转述，未找到CERN或Seal官方公告。",
+     "source_url": "https://signalyze.org/news/fil/fil-cern-filecoin-atlas-data-storage-pilot",
+     "published_at": "2026-11-14 04:24",
+     "fetched_at": "2026-11-15 07:30",
+     "grade": "社媒传闻",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "仅Signalyze转述X帖，CMC分析提及，均非一手。"
+     },
+     "type": "news",
+     "source_name": "Signalyze",
+     "unverified": true,
+     "unverified_reason": "无CERN或Seal官方公告。",
+     "pending_reason": "未证实：无CERN或Seal官方公告。"
+    }
+   ]
+  },
+  "finance": {
+   "as_of": "2026-11-15 07:30",
+   "basis": "FINANCE_SPEC：周日沿用美国2026-11-13收盘或结算，加密取CoinGecko同批快照。",
+   "missing": [
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "仅CoinGecko同批快照。"
+    },
+    {
+     "item": "新的美股/美债行情",
+     "reason": "周末休市，沿用2026-11-13收盘。"
+    }
+   ]
+  },
+  "github_tools": {
+   "as_of": "2026-11-15 07:30",
+   "basis": "gh api实时取星标、最后推送与归档状态；只选近90天有推送、未归档且未推荐过的仓库；5条中3条为动效/视频类（react-spring、FFmpeg、lottie-react-native），全部≥10,000星；每条依据仓库README撰写。",
+   "missing": []
+  }
+ },
+ "sections": {
+  "ai_labs": [
+   {
+    "lab": "OpenAI",
+    "title": "今日无更新",
+    "summary": "上期截止（2026-11-14 07:30）后无新产品发布：ChatGPT Wallet（2026-11-13）上期已报；Codex CLI正式版仍为0.169.0（上期已报），之后只有0.171.0-alpha.4/alpha.5测试版（2026-11-14 02:52、09:20）；机器人团队并入研究与应用部门属组织调整，不算产品更新。",
+    "source_url": "https://openai.com/products/release-notes/",
+    "published_at": "2026-11-15 07:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude Code Projects更新：协调者直接在项目聊天里回答问题，并实时汇报各线程进度（上期漏报）",
+    "summary": "Anthropic官方开发者账号@ClaudeDevs在北京时间2026-11-14 06:51发布Projects更新：在Claude Code Projects里，负责拆分任务的协调者会主动在项目聊天中直接回答你的问题，并发布正在运行的各个线程的实时状态，不用逐个打开线程查看。同期Claude Code桌面版支持用mods自定义界面主题（改配色、加动画背景），可用自然语言描述让Claude生成，或从官方theme-examples插件的预设开始。Projects重做版本身于2026-09-17首发（多线程并行、共享记忆，先向部分Pro和Max用户开放）。",
+    "source_url": "https://code.claude.com/docs/en/claude-projects",
+    "published_at": "2026-11-14 06:51",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "CellCog更新记录；Anthropic 2026-09-17原文",
+     "url": "https://cellcog.ai/blog/claude-code-projects-redesign/",
+     "note": "Codex核对：Projects重做版2026-09-17首发；本条协调者更新的官方帖发于2026-11-13 22:51 UTC（北京时间2026-11-14 06:51）。"
+    },
+    "source_name": "Claude Code官方"
+   },
+   {
+    "lab": "xAI",
+    "title": "今日无更新",
+    "summary": "x.ai/news上期截止后未见新发布；Grok 4.8仍无官方上线公告。",
+    "source_url": "https://x.ai/news",
+    "published_at": "2026-11-15 07:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "lab": "Google",
+    "title": "今日无更新",
+    "summary": "上期截止后未见新产品发布：Gemini接入Google Wallet（2026-11-13）、Gemini 4 Hydrogen（2026-11-12）均已在前两期报道；Google AI Plus从2026-11-13起不能手动选Pro模型属套餐调整。",
+    "source_url": "https://blog.google/",
+    "published_at": "2026-11-15 07:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "lab": "Grok Bot",
+    "title": "今日无更新",
+    "summary": "2026-11-15 07:27打开x.ai/changelog/bot：最新版本仍为v1.0.1（2026-11-11，已报），48小时内无新版本。",
+    "source_url": "https://x.ai/changelog/bot",
+    "published_at": "2026-11-15 07:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "官方原始来源"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   }
+  ],
+  "x_top": [
+   {
+    "topic": "星舰第15次试飞：部署26颗V3星链卫星，发射塔首次接住飞船上面级",
+    "category": "科技",
+    "summary": "SpaceX星舰Flight 15于美国时间2026-11-13发射，飞船进入轨道并部署26颗Starlink V3卫星，助推器溅落；美国时间2026-11-14发射塔首次用塔臂接住星舰上面级（AP报道）。马斯克两条帖子合计互动超过25万次。",
+    "url": "https://x.com/i/trending/2120924964345827572",
+    "score": 462538,
+    "engagement": 422881,
+    "post_count": 39657,
+    "post_count_query": "Starship (\"Flight 15\" OR catch OR Starlink)",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和422,881，加关键词近24小时帖数39,657。",
+    "posts": [
+     {
+      "author": "elonmusk",
+      "author_name": "Elon Musk",
+      "url": "https://x.com/elonmusk/status/2121502131056177514",
+      "created_at": "2026-11-14 15:14",
+      "likes": 139383,
+      "replies": 4653,
+      "reposts": 11018,
+      "quotes": 1014,
+      "score": 156068
+     },
+     {
+      "author": "elonmusk",
+      "author_name": "Elon Musk",
+      "url": "https://x.com/elonmusk/status/2121489571213168758",
+      "created_at": "2026-11-14 14:25",
+      "likes": 90869,
+      "replies": 3934,
+      "reposts": 6469,
+      "quotes": 536,
+      "score": 101808
+     }
+    ],
+    "published_at": "2026-11-14 05:58",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "AP；SpaceX任务页",
+     "url": "https://apnews.com/article/df394c1b5a0f85e11194f9ff7db9ee6b",
+     "note": "Codex核对：美国时间2026-11-13发射、2026-11-14首次塔臂捕获上面级，部署26颗Starlink V3属实。"
+    },
+    "rank": 1
+   },
+   {
+    "topic": "加密市场暴跌：BTC跌破66,000美元，XRP两年来首次跌破1美元",
+    "category": "加密货币",
+    "summary": "2026-11-14 BTC连续跌破67,000和66,000美元，ETH跌破1,850美元，XRP跌破0.95美元（WatcherGuru称为2024年11月以来首次）；24小时爆仓额两家来源不同：BeInCrypto 12.3亿美元、较晚报道12.6亿美元，以多头为主。帖子把下跌与科技股走弱、保证金追缴和Anthropic上市前资金腾挪联系在一起。",
+    "url": "https://x.com/i/trending/2121390898244190633",
+    "score": 56955,
+    "engagement": 47380,
+    "post_count": 9575,
+    "post_count_query": "(bitcoin OR crypto) (crash OR liquidated OR liquidations)",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和47,380，加关键词近24小时帖数9,575。",
+    "posts": [
+     {
+      "author": "UmairNauman_",
+      "author_name": "Umair Nauman",
+      "url": "https://x.com/UmairNauman_/status/2121469581751669101",
+      "created_at": "2026-11-14 13:05",
+      "likes": 18388,
+      "replies": 653,
+      "reposts": 1183,
+      "quotes": 275,
+      "score": 20499
+     },
+     {
+      "author": "WatcherGuru",
+      "author_name": "Watcher.Guru",
+      "url": "https://x.com/WatcherGuru/status/2121447564335788308",
+      "created_at": "2026-11-14 11:38",
+      "likes": 7650,
+      "replies": 765,
+      "reposts": 963,
+      "quotes": 240,
+      "score": 9618
+     }
+    ],
+    "published_at": "2026-11-14 10:34",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "冲突",
+     "values": [
+      {
+       "value": "24小时爆仓12.3亿美元",
+       "source": "BeInCrypto（2026-11-14 03:35 UTC）",
+       "url": "https://beincrypto.com/bitcoin-below-68000-crypto-liquidations-bulls/"
+      },
+      {
+       "value": "24小时爆仓12.6亿美元",
+       "source": "较晚报道（Codex检索）",
+       "url": "https://economictimes.indiatimes.com/news/international/us/november-crypto-sell-off-intensifies-as-bitcoin-price-crashes-below-66000-and-ethereum-loses-1850-236-million-liquidated-in-60-minutes-is-a-bigger-crash-coming/articleshow/135836820.cms"
+      }
+     ],
+     "reason": "统计窗口不同；价格关口经Economic Times核对属实（BTC 65,202.47、ETH 1,833.91、XRP 0.97美元）。",
+     "by": "Codex"
+    },
+    "rank": 2
+   },
+   {
+    "topic": "尼日利亚2027大选前政治暴力升温，蒂努布下令安全部门打击",
+    "category": "国际",
+    "summary": "尼日利亚总统蒂努布2026-11-13发表声明谴责政治集会暴力，要求竞选围绕民生议题，并指示安全机构处置；X聚合摘要称美国也警告2027年1月大选存在暴力风险。蒂努布账号这条声明互动17,320次。",
+    "url": "https://x.com/i/trending/2121545300552855999",
+    "score": 21779,
+    "engagement": 21173,
+    "post_count": 606,
+    "post_count_query": "Tinubu violence",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和21,173，加关键词近24小时帖数606。",
+    "posts": [
+     {
+      "author": "officialABAT",
+      "author_name": "Bola Ahmed Tinubu",
+      "url": "https://x.com/officialABAT/status/2121314498820600301",
+      "created_at": "2026-11-14 02:49",
+      "likes": 6912,
+      "replies": 5914,
+      "reposts": 2146,
+      "quotes": 2348,
+      "score": 17320
+     },
+     {
+      "author": "TheDamiForeign",
+      "author_name": "DAMI FOREIGN🥶",
+      "url": "https://x.com/TheDamiForeign/status/2121333744745509207",
+      "created_at": "2026-11-14 04:05",
+      "likes": 2094,
+      "replies": 172,
+      "reposts": 445,
+      "quotes": 23,
+      "score": 2734
+     }
+    ],
+    "published_at": "2026-11-14 02:49",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "尼日利亚总统府；PUNCH",
+     "url": "https://statehouse.gov.ng/lets-shun-violence-our-campaigns-must-be-about-issues-that-promote-the-welfare-of-our-people/",
+     "note": "Codex核对：蒂努布声明发于2026-11-13；美国官员警告来自2026-11-12国会听证会，PUNCH 2026-11-13报道。"
+    },
+    "rank": 3
+   },
+   {
+    "topic": "美国10月PPI同比6.5%，近4年最高",
+    "category": "财经",
+    "summary": "美国劳工统计局2026-11-13公布10月PPI同比6.5%，为2022年11月以来最高，核心PPI同比5.0%，与预期一致。Kobeissi Letter和参议员兰德·保罗的帖子带动讨论加息预期。",
+    "url": "https://x.com/i/trending/2121169674729844825",
+    "score": 18586,
+    "engagement": 17977,
+    "post_count": 609,
+    "post_count_query": "PPI inflation",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和17,977，加关键词近24小时帖数609。",
+    "posts": [
+     {
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2121234688391942348",
+      "created_at": "2026-11-13 21:32",
+      "likes": 6097,
+      "replies": 326,
+      "reposts": 801,
+      "quotes": 160,
+      "score": 7384
+     },
+     {
+      "author": "RandPaul",
+      "author_name": "Rand Paul",
+      "url": "https://x.com/RandPaul/status/2121348879316910303",
+      "created_at": "2026-11-14 05:06",
+      "likes": 4590,
+      "replies": 328,
+      "reposts": 448,
+      "quotes": 20,
+      "score": 5386
+     }
+    ],
+    "published_at": "2026-11-13 21:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "美国劳工统计局",
+     "url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+     "note": "Codex核对：2026-11-13 08:30 ET公布，PPI同比6.5%，剔除食品能源核心5.0%（剔除贸易服务口径4.9%）。"
+    },
+    "rank": 4
+   },
+   {
+    "topic": "默克尔称交出的德国“状况比接手时更好”，引发反驳",
+    "category": "国际",
+    "summary": "前总理默克尔在面向年轻人的播客中，以失业率更低、债务规则更严、育儿补贴扩大为据，称2021年交出的德国比2005年接手时更好。批评者指向移民、弃核和能源依赖；总理默茨在基民盟大会上要求立即改革养老金、税收和社保。",
+    "url": "https://x.com/i/trending/2121732940107571281",
+    "score": 17233,
+    "engagement": 7730,
+    "post_count": 9503,
+    "post_count_query": "Merkel",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和7,730，加关键词近24小时帖数9,503。",
+    "posts": [
+     {
+      "author": "NaomiSeibt",
+      "author_name": "Naomi Seibt",
+      "url": "https://x.com/NaomiSeibt/status/2121697895325766063",
+      "created_at": "2026-11-15 04:12",
+      "likes": 2997,
+      "replies": 85,
+      "reposts": 471,
+      "quotes": 8,
+      "score": 3561
+     },
+     {
+      "author": "welt",
+      "author_name": "WELT",
+      "url": "https://x.com/welt/status/2121274047761727902",
+      "created_at": "2026-11-14 00:08",
+      "likes": 254,
+      "replies": 1812,
+      "reposts": 80,
+      "quotes": 301,
+      "score": 2447
+     }
+    ],
+    "published_at": "2026-11-14 00:08",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "WELT；Studopolis播客《Kaffee und Fluchen》",
+     "url": "https://www.welt.de/politik/deutschland/article6af702b127adfb0b7bb2d15a/angela-merkel-ich-habe-das-land-in-einem-besseren-zustand-uebergeben-als-ich-es-bekommen-habe.html",
+     "note": "Codex核对：播客2026-11-13 07:30 UTC上线，原话为“状况比接手时更好”。"
+    },
+    "rank": 5
+   },
+   {
+    "topic": "Rocket Lab完成第100次Electron发射",
+    "category": "科技",
+    "summary": "Rocket Lab 2026-11-14宣布Electron火箭完成第100次发射（任务名“The Mountain God Rises”，新西兰时间2026-11-14 18:30发射），CEO Peter Beck发帖称“100%任务成功”。",
+    "url": "https://x.com/i/trending/2121062679049543719",
+    "score": 16989,
+    "engagement": 16609,
+    "post_count": 380,
+    "post_count_query": "\"Rocket Lab\" Electron",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和16,609，加关键词近24小时帖数380。",
+    "posts": [
+     {
+      "author": "Peter_J_Beck",
+      "author_name": "Peter Beck",
+      "url": "https://x.com/Peter_J_Beck/status/2121526414587609177",
+      "created_at": "2026-11-14 16:51",
+      "likes": 4753,
+      "replies": 121,
+      "reposts": 269,
+      "quotes": 23,
+      "score": 5166
+     },
+     {
+      "author": "RocketLab",
+      "author_name": "Rocket Lab",
+      "url": "https://x.com/RocketLab/status/2121501709285638267",
+      "created_at": "2026-11-14 15:13",
+      "likes": 3858,
+      "replies": 99,
+      "reposts": 375,
+      "quotes": 87,
+      "score": 4419
+     }
+    ],
+    "published_at": "2026-11-14 13:31",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Rocket Lab官方",
+     "url": "https://rocketlabcorp.com/updates/rocket-lab-hits-100-electron-launches-fastest-commercial-rocket-to-reach-the-milestone/",
+     "note": "Codex核对：第100次Electron任务“The Mountain God Rises”，新西兰时间2026-11-14 18:30发射。"
+    },
+    "rank": 6
+   },
+   {
+    "topic": "旅行者1号将于2026-11-18成为首个距地球一光日的人造物体",
+    "category": "科学",
+    "summary": "X聚合摘要称，1977年发射的旅行者1号将在美东时间2026-11-18 05:16距地球一光日（信号单程需一整天）；NASA邀请公众在2026-11-17日落后用灯光打出摩斯码“VGR”致敬。尼尔·德格拉斯·泰森的帖子互动3,003次。",
+    "url": "https://x.com/i/trending/2121617904563089799",
+    "score": 4221,
+    "engagement": 3528,
+    "post_count": 693,
+    "post_count_query": "Voyager light-day",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和3,528，加关键词近24小时帖数693。",
+    "posts": [
+     {
+      "author": "neiltyson",
+      "author_name": "Neil deGrasse Tyson",
+      "url": "https://x.com/neiltyson/status/2121628095979598238",
+      "created_at": "2026-11-14 23:35",
+      "likes": 2429,
+      "replies": 129,
+      "reposts": 409,
+      "quotes": 36,
+      "score": 3003
+     },
+     {
+      "author": "AJEnglish",
+      "author_name": "Al Jazeera English",
+      "url": "https://x.com/AJEnglish/status/2121645584197030361",
+      "created_at": "2026-11-15 00:45",
+      "likes": 218,
+      "replies": 12,
+      "reposts": 69,
+      "quotes": 1,
+      "score": 300
+     }
+    ],
+    "published_at": "2026-11-14 20:00",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "NASA JPL",
+     "url": "https://www.jpl.nasa.gov/news/nasa-invites-media-public-to-join-voyager-1-one-light-day-activities/",
+     "note": "Codex核对：NASA给出2026-11-18 05:16:07 EST，为预测里程碑。"
+    },
+    "rank": 7
+   },
+   {
+    "topic": "美国10月成屋销售降至2010年8月以来最低",
+    "category": "财经",
+    "summary": "美国全国地产经纪商协会（NAR）2026-11-12公布：10月成屋销售环比−5.5%，年化375万套，为2010年8月以来最低。Kobeissi Letter 2026-11-15 02:30的帖子再次带起讨论。",
+    "url": "https://x.com/i/trending/2121713641837711360",
+    "score": 2026,
+    "engagement": 1675,
+    "post_count": 351,
+    "post_count_query": "\"existing home sales\"",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和1,675，加关键词近24小时帖数351。",
+    "posts": [
+     {
+      "author": "KobeissiLetter",
+      "author_name": "The Kobeissi Letter",
+      "url": "https://x.com/KobeissiLetter/status/2121672047117914373",
+      "created_at": "2026-11-15 02:30",
+      "likes": 1248,
+      "replies": 122,
+      "reposts": 167,
+      "quotes": 35,
+      "score": 1572
+     },
+     {
+      "author": "stockmom",
+      "author_name": "Stock Mom™",
+      "url": "https://x.com/stockmom/status/2121679723285578165",
+      "created_at": "2026-11-15 03:00",
+      "likes": 75,
+      "replies": 18,
+      "reposts": 4,
+      "quotes": 0,
+      "score": 97
+     }
+    ],
+    "published_at": "2026-11-15 02:30",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "美国全国地产经纪商协会（NAR）",
+     "url": "https://www.nar.realtor/newsroom/existing-home-sales-decreased-5-5-percent-october-nar-report",
+     "note": "Codex核对：环比−5.5%、年化375万套、2010年8月以来最低属实；NAR于2026-11-12发布。"
+    },
+    "rank": 8
+   },
+   {
+    "topic": "特朗普把万斯调离伊朗谈判，改管国内犯罪与腐败",
+    "category": "时政",
+    "summary": "特朗普2026-11-14在Truth Social发帖称美国靠制裁和控制霍尔木兹海峡已有足够筹码、不再需要与伊朗达成协议，并让副总统万斯专注国内犯罪和腐败问题。此前万斯把共和党中期选举失利归因于战争推高能源价格；X上随即讨论2028年共和党人选。",
+    "url": "https://x.com/i/trending/2121624056458031227",
+    "score": 1126,
+    "engagement": 682,
+    "post_count": 444,
+    "post_count_query": "Vance Iran talks",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和682，加关键词近24小时帖数444。",
+    "posts": [
+     {
+      "author": "richardgalaxia",
+      "author_name": "Richard FL",
+      "url": "https://x.com/richardgalaxia/status/2121529786296103172",
+      "created_at": "2026-11-14 17:04",
+      "likes": 282,
+      "replies": 64,
+      "reposts": 29,
+      "quotes": 2,
+      "score": 377
+     },
+     {
+      "author": "richardgalaxia",
+      "author_name": "Richard FL",
+      "url": "https://x.com/richardgalaxia/status/2121503448885522767",
+      "created_at": "2026-11-14 15:20",
+      "likes": 146,
+      "replies": 66,
+      "reposts": 12,
+      "quotes": 3,
+      "score": 227
+     }
+    ],
+    "published_at": "2026-11-14 15:20",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X API一手互动计数；话题事实以X聚合摘要和代表帖为准。"
+    },
+    "rank": 9
+   },
+   {
+    "topic": "德桑蒂斯称共和党中期选举失利是“灭绝级事件”",
+    "category": "时政",
+    "summary": "即将卸任佛州州长的德桑蒂斯称共和党中期选举失利是“灭绝级事件”，主张党的未来要靠理念而不是依赖某个人物，令部分支持者意外。X上讨论转向2028年鲁比奥—德桑蒂斯搭档参选的话题。",
+    "url": "https://x.com/i/trending/2121595936187318540",
+    "score": 686,
+    "engagement": 647,
+    "post_count": 39,
+    "post_count_query": "DeSantis (midterm OR \"extinction\")",
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和647，加关键词近24小时帖数39。",
+    "posts": [
+     {
+      "author": "neanne_derthal",
+      "author_name": "DeSantis Queen",
+      "url": "https://x.com/neanne_derthal/status/2121461788981997870",
+      "created_at": "2026-11-14 12:34",
+      "likes": 260,
+      "replies": 65,
+      "reposts": 17,
+      "quotes": 10,
+      "score": 352
+     },
+     {
+      "author": "richardgalaxia",
+      "author_name": "Richard FL",
+      "url": "https://x.com/richardgalaxia/status/2121503448885522767",
+      "created_at": "2026-11-14 15:20",
+      "likes": 146,
+      "replies": 66,
+      "reposts": 12,
+      "quotes": 3,
+      "score": 227
+     }
+    ],
+    "published_at": "2026-11-14 12:34",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "X API一手互动计数；话题事实以X聚合摘要和代表帖为准。"
+    },
+    "rank": 10
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "FIL 24小时跌13.49%至0.608美元，随大盘去杠杆，无项目自身利空",
+    "summary": "CoinGecko 2026-11-15 07:26快照FIL 0.608美元（24小时−13.49%）。CoinMarketCap 2026-11-14 15:04（北京时间）分析称，FIL下跌跟随BTC跌破关键价位引发的12亿–16亿美元爆仓，过去24小时没有协议漏洞、下架或治理事件；FIL 7日跌15.01%，弱于全市场的−10.6%。",
+    "source_url": "https://coinmarketcap.com/top-stories/6af8080019ea3e3530cd27b6/",
+    "published_at": "2026-11-14 15:04",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "专业数据平台",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "WebSearch",
+     "source": "钜亨网盘中速报",
+     "url": "https://news.cnyes.com/news/id/6662705",
+     "note": "钜亨网2026-11-14 22:05报FIL 24小时跌8.72%至0.67美元，与CMC方向一致；跌幅随时点不同。"
+    },
+    "type": "news",
+    "source_name": "CoinMarketCap"
+   }
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-11-15",
+   "cutoff": "2026-11-15 07:30",
+   "cutoff_note": "周日：美股、美债、黄金、布伦特、DXY沿用美国2026-11-13（周五）收盘/结算（与上期相同）；加密三项为同一次CoinGecko请求快照（2026-11-15 07:26）。",
+   "missing": [
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "仅CoinGecko同批快照。"
+    },
+    {
+     "item": "新的美股/美债行情",
+     "reason": "周末休市，沿用2026-11-13收盘。"
+    }
+   ],
+   "yesterday_check": "昨日待验证：12月议息前的CPI与PCE是否继续上行。；英伟达2026-11-17财报。；10年期能否突破10月高点。；布伦特能否守住95美元。；BTC能否守住200周均线一带。（结果须在今日正文逐条写明）",
+   "three_lines": [
+    {
+     "conclusion": "10月PPI同比6.5%创近4年新高，美股周五小跌但全周上涨。",
+     "support": "PPI环比+0.3%（预期+0.4%）；标普500收7,561.67点（−0.40%），纳指25,136.27点（−0.91%），道指52,347.55点（+0.10%）；三大指数全周涨2.1%–2.5%（CNBC）。"
+    },
+    {
+     "conclusion": "联储官员继续放鹰，10年期美债收5.15%。",
+     "support": "财政部收益率曲线10年期5.15%（前一日5.10%）；古尔斯比称联储“还有工作要做”，柯林斯支持更紧政策；美元指数收103.423（+0.25%），1.5年高位。"
+    },
+    {
+     "conclusion": "周末加密继续下跌，BTC跌破64,000美元。",
+     "support": "CoinGecko 2026-11-15 07:26快照：BTC 63,814美元（−6.01%（24h）），ETH 1,751.48美元（−8.71%（24h）），FIL 0.6080美元（−13.49%（24h））。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,561.67",
+     "change": "−0.40%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "AP（美国2026-11-13收盘）",
+     "source_url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "AP（Codex独立检索）；CNBC；RTTNews",
+      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+      "note": "Codex核对AP 2026-11-13 21:18 UTC报道：标普7,561.67（−30.73点）；与CNBC、RTTNews一致。"
+     }
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "25,136.27",
+     "change": "−0.91%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "AP（美国2026-11-13收盘）",
+     "source_url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "AP（Codex独立检索）；CNBC",
+      "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+      "note": "Codex核对纳指25,136.27（−229.82点）、道指52,347.55（+50.46点）。"
+     }
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "103.423",
+     "change": "+0.25%（较前收）",
+     "time": "2026-11-14 06:00",
+     "status": "收盘",
+     "source": "Gate新闻（ICE美元指数纽约收盘）",
+     "source_url": "https://www.gate.com/en-us/news/detail/17928127",
+     "crosscheck": {
+      "status": "冲突",
+      "values": [
+       {
+        "value": "103.423（+0.25%）",
+        "source": "Gate新闻",
+        "url": "https://www.gate.com/en-us/news/detail/17928127"
+       },
+       {
+        "value": "103.41（+0.23%）",
+        "source": "Portfolio Terminal",
+        "url": "https://portfolio-terminal.com/markets/us-dollar-index/november-2026"
+       }
+      ],
+      "reason": "两源取数时点不同，差0.013点；Barchart同日称美元指数升至1.5年高位，方向一致。"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "5.15%",
+     "change": "+5.0 bp（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "美国财政部每日收益率曲线",
+     "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "AP（Codex独立检索）；CNBC",
+      "url": "https://apnews.com/article/f8edd0eeb1494d4d2584715686c5e619",
+      "note": "Codex核对AP收盘版5.15%（前一交易日5.10%）；CNBC称盘中升至5.17%。"
+     }
+    },
+    {
+     "asset": "COMEX 黄金",
+     "value": "3,879.70",
+     "change": "+0.03%（较前收）",
+     "time": "2026-11-14 03:30",
+     "status": "收盘",
+     "source": "道琼斯市场数据（Morningstar，近月合约结算）",
+     "source_url": "https://www.morningstar.com/news/dow-jones/202611139071/comex-gold-ends-the-week-455-lower-at-387970-data-talk",
+     "crosscheck": {
+      "status": "冲突",
+      "values": [
+       {
+        "value": "3,879.70美元（+0.03%，近月合约结算）",
+        "source": "道琼斯/Morningstar",
+        "url": "https://www.morningstar.com/news/dow-jones/202611139071/comex-gold-ends-the-week-455-lower-at-387970-data-talk"
+       },
+       {
+        "value": "3,878.25美元（−0.18%，12月合约尾盘）",
+        "source": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-010-5026559"
+       }
+      ],
+      "reason": "合约月份与取价时点不同；全周近月合约跌4.55%。"
+     }
+    },
+    {
+     "asset": "布伦特原油",
+     "value": "95.84",
+     "change": "+0.02%（较前收）",
+     "time": "2026-11-14 03:30",
+     "status": "收盘",
+     "source": "DTN（ICE 1月合约结算）",
+     "source_url": "https://www.dtnpf.com/agriculture/web/AG/news/world-policy/article/2026/11/13/oil-falls-2nd-week-row-iran",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "WebSearch",
+      "source": "新华社；道琼斯/Morningstar",
+      "url": "https://english.news.cn/20261114/754f202267ed4bb493f98681c351e83a/c.html",
+      "note": "三源结算价95.84美元一致。"
+     }
+    },
+    {
+     "asset": "BTC",
+     "value": "63,814",
+     "change": "−6.01%（24h）",
+     "time": "2026-11-15 07:26",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，未与第二平台同刻核对。"
+     }
+    },
+    {
+     "asset": "ETH",
+     "value": "1,751.48",
+     "change": "−8.71%（24h）",
+     "time": "2026-11-15 07:26",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，未与第二平台同刻核对。"
+     }
+    },
+    {
+     "asset": "FIL",
+     "value": "0.6080",
+     "change": "−13.49%（24h）",
+     "time": "2026-11-15 07:26",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，未与第二平台同刻核对。"
+     }
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "10月PPI同比6.5%，为2022年11月以来最大涨幅",
+       "facts": "美国2026-11-13公布10月PPI：环比+0.3%，低于道琼斯调查预期+0.4%；同比+6.5%，为2022年11月以来最大年度涨幅（CNBC）。",
+       "plain": "批发价格月度涨得比预期慢，但一年累计涨幅是近4年最高。",
+       "affects": "美债、联储12月议息、美股。",
+       "pricing": "部分定价",
+       "pricing_evidence": "公布后美股先涨后跌，10年期盘中升至5.17%（CNBC）。",
+       "next_check": "12月议息前的CPI与PCE是否继续上行。",
+       "risks": "判断：PPI同比6.5%叠加10年期5.15%，若下一份CPI环比再超0.3%，12月加息预期将进一步升温。",
+       "sources": [
+        {
+         "outlet": "CNBC",
+         "title": "Stock market news for Nov. 13, 2026",
+         "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+         "date": "2026-11-13"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "BLS官方公告",
+        "url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+        "note": "Codex核对：BLS于2026-11-13 08:30（美东）发布，最终需求PPI同比6.5%、环比0.3%。"
+       }
+      },
+      {
+       "no": 2,
+       "headline": "芯片股抛售，标普、纳指收跌但全周录得8月以来最好表现",
+       "facts": "标普500收7,561.67点（−0.40%），纳指25,136.27点（−0.91%），道指52,347.55点（+0.10%）。AMD−8.75%至534.06美元，戴尔−7.18%，思科−6.24%，英伟达−2.01%至162.85美元、创52周新低；汇丰把英伟达降为持有。全周标普+2.5%、纳指+2.3%、道指+2.1%（CNBC）。",
+       "plain": "黄仁勋离职的余波和高利率继续压芯片股，但周初涨幅让全周仍是涨的。",
+       "affects": "美股、芯片股、AI产业链。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "VIX升3.10%至19.28（Investing.com）。",
+       "next_check": "英伟达2026-11-17财报。",
+       "risks": "判断：英伟达两天累计跌6%以上（−4.34%、−2.01%），若财报未给出继任方案，汇丰的持有评级将成为更多机构的方向。",
+       "sources": [
+        {
+         "outlet": "AP",
+         "title": "How major US stock indexes fared Friday 11/13/2026",
+         "url": "https://apnews.com/article/wall-street-stocks-dow-nasdaq-12c1e8155fb85c3c7b09e058ed6d3c74",
+         "date": "2026-11-13"
+        },
+        {
+         "outlet": "Investing.com",
+         "title": "U.S. stocks mixed at close of trade",
+         "url": "https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-010-5026559",
+         "date": "2026-11-13"
+        },
+        {
+         "outlet": "CNBC",
+         "title": "Stock market news for Nov. 13, 2026",
+         "url": "https://www.cnbc.com/2026/11/12/stock-market-today-live-updates.html",
+         "date": "2026-11-13"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch",
+        "source": "RTTNews；雅虎财经",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
+        "note": "指数点位一致。"
+       }
+      },
+      {
+       "no": 3,
+       "headline": "古尔斯比、柯林斯放鹰，10年期收5.15%，美元指数1.5年新高",
+       "facts": "芝加哥联储古尔斯比称联储在通胀上“还有工作要做”，波士顿联储柯林斯称支持更紧的货币政策（Barchart）。财政部数据10年期收益率5.15%（前一日5.10%）；美元指数纽约收盘103.423（+0.25%），全周+1.10%（Gate）。",
+       "plain": "联储官员接连说还要收紧，长债利率和美元一起走高。",
+       "affects": "美债、美元、黄金、新兴市场。",
+       "pricing": "部分定价",
+       "pricing_evidence": "10年期盈亏平衡通胀率升至1周高点2.270%（Barchart）。",
+       "next_check": "10年期能否突破10月高点。",
+       "risks": "判断：10年期从2026-11-10的4.98%升到11-13的5.15%，三个交易日升17bp，美元同步走强，黄金和非美货币继续承压。",
+       "sources": [
+        {
+         "outlet": "Barchart",
+         "title": "Stocks Retreat as Chipmakers Sink and Bond Yields Rise",
+         "url": "https://www.barchart.com/story/news/8824404/stocks-retreat-as-chipmakers-sink-and-bond-yields-rise",
+         "date": "2026-11-13"
+        },
+        {
+         "outlet": "美国财政部",
+         "title": "Daily Treasury Par Yield Curve Rates",
+         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all?field_tdr_date_value=2026&type=daily_treasury_yield_curve",
+         "date": "2026-11-13"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch",
+        "source": "CNBC",
+        "url": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+        "note": "盘中5.17%与Barchart 5.172%一致。"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "IEA下调需求、称本季度供应过剩，布伦特平收95.84美元",
+       "facts": "IEA把2026年全球原油需求预测下调9万桶/日至1.0229亿桶/日，并称本季度市场过剩200万桶/日；美军中央司令部称击落伊朗革命卫队射向巴林美军基地的两架无人机（Barchart）。布伦特1月合约结算95.84美元（+0.02%），WTI 12月合约88.56美元（−0.20%），两者全周均跌2.5%（DTN）。COMEX近月黄金结算3,879.70美元（+0.03%），全周−4.55%（道琼斯）。",
+       "plain": "需求下调和中东冲突两股力量抵消，油价原地不动；金价被强美元压着。",
+       "affects": "原油、通胀预期、黄金。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "布伦特盘中最高97.13美元后回落（DTN）。",
+       "next_check": "布伦特能否守住95美元。",
+       "risks": "判断：布伦特两周累计跌18.53%（道琼斯），IEA的200万桶/日过剩若延续，油价下行将缓和11月通胀读数。",
+       "sources": [
+        {
+         "outlet": "DTN",
+         "title": "Oil Falls 2nd Week in Row as Iran Uncertainty Continues",
+         "url": "https://www.dtnpf.com/agriculture/web/AG/news/world-policy/article/2026/11/13/oil-falls-2nd-week-row-iran",
+         "date": "2026-11-13"
+        },
+        {
+         "outlet": "Barchart",
+         "title": "Stocks Retreat as Chipmakers Sink and Bond Yields Rise",
+         "url": "https://www.barchart.com/story/news/8824404/stocks-retreat-as-chipmakers-sink-and-bond-yields-rise",
+         "date": "2026-11-13"
+        },
+        {
+         "outlet": "Morningstar",
+         "title": "Comex Gold Ends the Week 4.55% Lower",
+         "url": "https://www.morningstar.com/news/dow-jones/202611139071/comex-gold-ends-the-week-455-lower-at-387970-data-talk",
+         "date": "2026-11-13"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "WebSearch",
+        "source": "新华社",
+        "url": "https://english.news.cn/20261114/754f202267ed4bb493f98681c351e83a/c.html",
+        "note": "布伦特95.84、WTI 88.56一致。"
+       }
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 5,
+       "headline": "BTC周末跌破64,000美元，X上爆仓刷屏",
+       "facts": "CoinGecko 2026-11-15 07:26快照：BTC 63,814美元（−6.01%），ETH 1,751.48美元（−8.71%），FIL 0.6080美元（−13.49%）。CoinMarketCap 2026-11-14称BTC跌破关键价位后爆仓12亿–16亿美元、80%为多头；X聚合摘要给出24小时爆仓12.3亿美元。",
+       "plain": "高利率、ETF资金流出和杠杆平仓叠加，周末无美股托底，加密继续下跌。",
+       "affects": "BTC、ETH、加密股、FIL。",
+       "pricing": "已有反应但程度不明",
+       "pricing_evidence": "BTC从上期快照67,871美元继续下跌至63,814美元。",
+       "next_check": "BTC能否收复66,000美元。",
+       "risks": "判断：BTC 24小时跌6.01%、ETH跌8.71%，若周一美股开盘后10年期仍高于5.1%，反弹空间受限。",
+       "sources": [
+        {
+         "outlet": "CoinGecko",
+         "title": "BTC/ETH/FIL价格",
+         "url": "https://www.coingecko.com/",
+         "date": "2026-11-15"
+        },
+        {
+         "outlet": "CoinMarketCap",
+         "title": "Filecoin Drops 6% Amid Broad Crypto Selloff",
+         "url": "https://coinmarketcap.com/top-stories/6af8080019ea3e3530cd27b6/",
+         "date": "2026-11-14"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "冲突",
+        "values": [
+         {
+          "value": "24小时爆仓12.3亿美元",
+          "source": "BeInCrypto（2026-11-14 03:35 UTC）",
+          "url": "https://beincrypto.com/bitcoin-below-68000-crypto-liquidations-bulls/"
+         },
+         {
+          "value": "爆仓12亿–16亿美元",
+          "source": "CoinMarketCap（2026-11-14 07:04 UTC）",
+          "url": "https://coinmarketcap.com/top-stories/6af8080019ea3e3530cd27b6/"
+         }
+        ],
+        "reason": "统计窗口和口径不同（Codex另查到较晚报道为12.6亿美元）；价格仅CoinGecko。",
+        "by": "Codex"
+       }
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "time_bj": "2026-11-16 21:30",
+     "event": "美国11月纽约州制造业指数",
+     "watch": "制造业是否随利率上升走弱"
+    },
+    {
+     "time_bj": "2026-11-17 21:30",
+     "event": "美国10月零售销售",
+     "watch": "PPI同比6.5%下消费是否降温"
+    },
+    {
+     "time_bj": "2026-11-18 05:00",
+     "event": "英伟达三季度财报（美东2026-11-17盘后）",
+     "watch": "黄仁勋离职后的继任安排与指引"
+    }
+   ],
+   "events_source": [
+    {
+     "outlet": "AMP Automations经济日历",
+     "title": "Economic calendar 2026-11-16/17",
+     "url": "https://ampautomations.com/economic-calendar?date=2026-11-17"
+    },
+    {
+     "outlet": "雅虎财经",
+     "title": "Stock market today (Nov 13): Nvidia earnings next Tuesday",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+    }
+   ],
+   "footer": "以上仅作信息参考。"
+  },
+  "github_tools": [
+   {
+    "name": "pmndrs/react-spring",
+    "url": "https://github.com/pmndrs/react-spring",
+    "title": "弹簧物理动画库：给React网页和3D场景做自然的弹性动效",
+    "summary": "react-spring是以弹簧物理为默认的跨平台动画库，支持react-dom和react-three-fiber，可声明式也可命令式写动画，也支持按时长加缓动曲线。几行useSpring就能做出淡入、位移、弹跳等动效。",
+    "features": [
+     "useSpring等Hook：写起止状态即可生成弹簧动画",
+     "同时支持网页（@react-spring/web）和3D（@react-spring/three）",
+     "默认弹簧物理，也可改成时长+缓动",
+     "可声明式或命令式控制动画"
+    ],
+    "scenarios": [
+     "给网页作品集或日报卡片加弹性入场动效",
+     "在react-three-fiber 3D场景里让物体弹性移动",
+     "做可交互的动效演示页再录屏成视频"
+    ],
+    "for_you": "对你的用处：如果你的动效视频用Remotion（基于React）制作，react-spring的弹簧参数思路可以直接借鉴到Remotion的spring()上；做网页版动效演示时也能直接用。",
+    "setup": "npm install @react-spring/web，需要会写React代码；MIT开源免费。",
+    "stars": 29286,
+    "last_push": "2026-11-01",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "pmndrs/react-spring"
+   },
+   {
+    "name": "FFmpeg/FFmpeg",
+    "url": "https://github.com/FFmpeg/FFmpeg",
+    "title": "FFmpeg：几乎所有视频转码、剪切、合成、加字幕工具背后的引擎",
+    "summary": "FFmpeg是处理音频、视频、字幕和元数据的库与命令行工具集合，包含ffmpeg（转换、处理、推流）、ffplay（播放）、ffprobe（分析媒体信息）。Remotion、ComfyUI视频节点等工具输出视频时都依赖它。",
+    "features": [
+     "ffmpeg命令行：转码、裁剪、拼接、调速、缩放、加水印和字幕",
+     "libavfilter滤镜图：串联多个滤镜处理画面和声音",
+     "ffprobe：查看视频编码、帧率、时长、码率",
+     "libswscale/libswresample：色彩空间转换、缩放、音频重采样"
+    ],
+    "scenarios": [
+     "把Remotion导出的视频压成适合发X或微信的尺寸和码率",
+     "把AI生成的多段镜头无损拼接、统一帧率",
+     "批量给动效视频加字幕或转GIF"
+    ],
+    "for_you": "对你的用处：做动效视频的最后一步几乎都要用它；让Claude或Codex帮你写ffmpeg命令，就能批量压缩、转格式、拼接AI生成的镜头。",
+    "setup": "Linux用apt install ffmpeg，macOS用brew install ffmpeg；命令行工具，不需写代码但要会敲命令（可让AI代写）；LGPL/GPL开源免费。",
+    "stars": 67283,
+    "last_push": "2026-11-15",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "FFmpeg/FFmpeg"
+   },
+   {
+    "name": "lottie-react-native/lottie-react-native",
+    "url": "https://github.com/lottie-react-native/lottie-react-native",
+    "title": "Lottie的React Native组件：把AE导出的动画直接放进iOS、安卓和网页应用",
+    "summary": "Lottie生态解析Adobe After Effects经bodymovin导出的JSON动画并原生渲染；这个仓库提供React Native组件，覆盖iOS、Android、Windows和网页（网页端用dotLottie播放器）。v6要求React Native 0.84以上和新架构。",
+    "features": [
+     "在React Native里播放AE导出的Lottie JSON动画",
+     "iOS、Android、Windows、网页四端同一组件",
+     "网页端通过@lottiefiles/dotlottie-react播放",
+     "v6迁移指南说明与旧版的不兼容改动"
+    ],
+    "scenarios": [
+     "把你做的AE/Lottie动效直接交付给App开发使用",
+     "做App启动页、按钮反馈、加载动画",
+     "同一份动效同时用于视频和App界面"
+    ],
+    "for_you": "对你的用处：你做的动效如果能导出Lottie，就不只能做成视频，还能交付给App和网页直接用，扩大作品的用途。",
+    "setup": "yarn add lottie-react-native，iOS还要pod install；需要React Native开发基础；Apache-2.0开源免费。",
+    "stars": 17215,
+    "last_push": "2026-11-14",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "lottie-react-native/lottie-react-native"
+   },
+   {
+    "name": "D4Vinci/Scrapling",
+    "url": "https://github.com/D4Vinci/Scrapling",
+    "title": "Scrapling：网页抓取框架，自带MCP服务器，让AI代理直接抓网页转Markdown",
+    "summary": "Scrapling把快速HTTP请求、隐身浏览器、解析和并发爬取放进一个Python库，可以抓静态页、渲染JavaScript、处理Cloudflare Turnstile，并把整站转成干净的Markdown；提供CLI、MCP服务器和Agent Skill。",
+    "features": [
+     "Fetcher快速请求，隐身浏览器渲染JavaScript并处理Cloudflare Turnstile",
+     "CSS、XPath、正则选择，页面改版后自适应定位元素",
+     "Spider并发爬取：代理轮换、重试、暂停续爬，导出JSON/JSONL/CSV",
+     "MCP服务器和Agent Skill：给Claude等AI代理直接抓网页"
+    ],
+    "scenarios": [
+     "日报收集时抓取官方博客和更新日志转成Markdown",
+     "让Claude通过MCP抓取竞品动效作品页的文字信息",
+     "定时抓取某些网站的价格或新闻"
+    ],
+    "for_you": "对你的用处：日报这类信息采集任务常遇到网页打不开或被拦，Scrapling的MCP服务器可以让AI代理更稳定地抓官方页面并转成Markdown。",
+    "setup": "pip install scrapling，浏览器抓取需再装浏览器依赖；简单用法要写几行Python，MCP方式不用写代码；BSD-3-Clause开源免费。",
+    "stars": 102920,
+    "last_push": "2026-11-15",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "D4Vinci/Scrapling"
+   },
+   {
+    "name": "openinterpreter/openinterpreter",
+    "url": "https://github.com/openinterpreter/openinterpreter",
+    "title": "Open Interpreter：为低价模型优化的终端编程代理，兼容Codex协议",
+    "summary": "Open Interpreter现在是OpenAI Codex的分支，重点是模拟各家代理框架（claude-code、kimi-code、qwen-code等），让低价模型发挥更好效果；在终端输入i或interpreter即可开始，兼容ACP编辑器和Codex SDK。",
+    "features": [
+     "/harness切换代理框架：native、claude-code、kimi-code、qwen-code、deepseek-tui等",
+     "兼容Codex exec协议，Codex SDK一行改路径即可替换",
+     "支持ACP编辑器通过interpreter acp启动",
+     "一行命令安装（macOS/Linux/Windows）"
+    ],
+    "scenarios": [
+     "用更便宜的模型跑日常脚本和文件整理",
+     "在Codex额度用完时换成低价模型继续写代码",
+     "在支持ACP的编辑器里接入不同模型"
+    ],
+    "for_you": "对你的用处：日报交叉核对依赖Codex，额度用完时（11月上旬发生过）可以用它接低价模型做备用；写动效脚本时也能降低成本。",
+    "setup": "curl -fsSL https://www.openinterpreter.com/install | sh，需自备模型API密钥；命令行使用不需写代码；Apache-2.0开源免费。",
+    "stars": 68889,
+    "last_push": "2026-11-15",
+    "fetched_at": "2026-11-15 07:30",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "openinterpreter/openinterpreter"
+   }
+  ]
+ },
+ "updated_at": "2026-11-15T07:38:13+08:00"
+}
