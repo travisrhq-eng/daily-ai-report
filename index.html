@@ -271,6 +271,7 @@
   }
   .snap-meta a:hover, .fin-srcs a:hover, .fin-evsrc a:hover { color: var(--t-head); }
   .snap-reason { margin-top: 4px; font-size: 13px; color: var(--t-meta); word-break: break-word; }
+  .snap-sym { margin-left: 8px; font-size: 13px; font-weight: 400; color: var(--t-meta); }
   .fin-item { padding: 24px 0; border-bottom: 1px solid var(--line); }
   .fin-item:first-of-type { padding-top: 0; }
   .fin-item:last-child { border-bottom: 0; padding-bottom: 0; }
@@ -873,6 +874,50 @@
       });
       ss.appendChild(su);
       root.appendChild(ss);
+    }
+
+    // 个股行情：沿用快照卡片，仅增加代码与类别
+    var stocks = arr(f.stocks).filter(function (s) { return s && typeof s === 'object'; });
+    if (stocks.length) {
+      var ks = finSection('个股行情', ++k);
+      var ku = el('ul', 'fin-list snap');
+      stocks.forEach(function (s) {
+        var li = el('li');
+        var d = el('details'), sm = el('summary');
+        var top = el('div', 'snap-top');
+        var asset = el('span', 'snap-asset', str(s.name) || str(s.asset));
+        if (s.share_class) asset.appendChild(el('span', 'snap-sym', s.share_class));
+        if (s.symbol) asset.appendChild(el('span', 'snap-sym', s.symbol));
+        top.appendChild(asset);
+        var v = el('span', 'snap-val', str(s.value) || '—');
+        if (s.status !== '未上市' && s.change != null && s.change !== '') {
+          var cg = el('span', 'chg');
+          var up = /^\+/.test(s.change), dn = /^[−-]/.test(s.change);
+          if (up || dn) cg.appendChild(el('span', 'arrow', up ? '▲' : '▼'));
+          cg.appendChild(document.createTextNode(s.change));
+          v.appendChild(cg);
+        }
+        top.appendChild(v);
+        sm.appendChild(top);
+        var sub = el('div', 'snap-sub');
+        var parts = [str(s.time), str(s.status)].filter(Boolean);
+        if (parts.length) sub.appendChild(el('span', '', parts.join(' · ')));
+        if (s.crosscheck && s.crosscheck.status === '冲突') sub.appendChild(el('span', 'tag', '数据冲突'));
+        sub.appendChild(el('span', 'chev'));
+        sm.appendChild(sub);
+        d.appendChild(sm);
+        var meta = el('div', 'snap-meta');
+        if (s.source) meta.appendChild(link(s.source_url, '', s.source));
+        if (s.fetched_at) { if (meta.childNodes.length) sep(meta); meta.appendChild(document.createTextNode('抓取 ' + s.fetched_at)); }
+        if (s.crosscheck && s.crosscheck.status !== '冲突') { if (meta.childNodes.length) sep(meta); meta.appendChild(xcNode(s.crosscheck)); }
+        if (meta.childNodes.length) d.appendChild(meta);
+        var cfx = conflictNode(s.crosscheck); if (cfx) d.appendChild(cfx);
+        li.appendChild(d);
+        if (s.status === '未核实' && s.reason) li.appendChild(el('div', 'snap-reason', '原因：' + str(s.reason)));
+        ku.appendChild(li);
+      });
+      ks.appendChild(ku);
+      root.appendChild(ks);
     }
 
     // groups：事实与白话常显，其余点开

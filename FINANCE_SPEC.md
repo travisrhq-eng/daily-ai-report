@@ -36,3 +36,11 @@ JSON 结构：
 - 冲突容差：两来源差值超过以下容差才标「冲突」，否则标「已交叉核对」并在 note 写差值——指数/股价/商品 0.30%；外汇与美元指数 0.10%；收益率 2 bp；加密 0.50%；资金流 5%。
 - 核对状态一致：snapshot 与 groups 引用同一数字时，crosscheck.status 必须相同。
 - 第二来源降级（Codex 不可用）按 README 第 2 节加 `"fallback":true`。
+
+## 2026-11-16 起新增个股行情（stocks）
+每日必须收录 5 只，顺序固定：英伟达（NVDA）、Meta（META）、谷歌（GOOGL，须注明 Alphabet A类，不得用 GOOG C类冒充）、SpaceX、特斯拉（TSLA）。
+- 字段：name、symbol、value、change、time、status（收盘|盘中|快照|未核实|未上市）、source、source_url、crosscheck；谷歌另须 share_class（如「Alphabet A类」）。
+- 口径与 snapshot 美股一致：交易日用当日常规交易收盘，不用盘后价；周末/休市沿用最近交易日收盘，并在 time 与 source 标注该日期。
+- SpaceX：每期先核实是否已在公开交易所上市。已上市则用真实代码与收盘价（2026-06-12 起在纳斯达克全球精选市场及 Nasdaq Texas 交易，代码 SPCX，以当期核实为准）；若未上市，status=未上市，value 固定为「未上市，无公开股价」，严禁用二级市场估值、回购或私募报价冒充股价。
+- 数字须第二来源核对（Codex 优先；Codex 不可用时用 WebSearch 并加 fallback:true）；冲突规则同 snapshot（股价容差 0.30%）。
+- generate.py 校验必须恰好这五项；index.html「个股行情」区渲染，样式与行情快照一致。

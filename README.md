@@ -12,7 +12,7 @@
 - Filecoin：近 72h 官方、开发团队、GitHub、媒体与 X 帖子；只收上期截止后的新内容，上期已报的不进正文。
 - GitHub 工具：5 个与 AI 相关、近 90 天内有提交、未归档的仓库，每期覆盖不同用途；stars 与 last_push 由 GitHub API 实时读取；与历史推荐不重复。
 - 状态卡（今日无更新）：status_card:true；summary 写明检查范围与最近一次版本/发帖日期；published_at 填抓取时间，页面不显示。
-- 金融：见 FINANCE_SPEC.md。
+- 金融：见 FINANCE_SPEC.md。自 2026-11-16 起须含个股行情（英伟达 NVDA、Meta、谷歌 GOOGL A类、SpaceX、特斯拉 TSLA）。
 ## 2. 第二来源交叉核对（用 Codex；不再使用 Gemini / agy）
 - 补漏候选与关键数字/事实逐条核对都交给 Codex（联网搜索）：`codex --search exec --skip-git-repo-check -s read-only -o crosscheck.json "<claims 列表，要求只输出 JSON 数组 [{id,status,url,note}]，url 必须是可打开的原始页面>" </dev/null`。参数以生成机上的 Codex 版本为准。gemini_crosscheck.py 与 agy 调用停用。
 - 结果写入每条的 crosscheck：`{"status":"已交叉核对","by":"Codex","source","url"}` / `{"status":"单一来源","note"}` / `{"status":"冲突","values":[{value,source,url}≥2],"reason"}`。X 互动数为 X API 一手计数，标单一来源。
@@ -33,3 +33,6 @@
 `python3 generate.py draft.json && ./publish.sh`（校验 → 写 DATE.json/latest.json/index.json → 刷新 SW 缓存 → push GitHub Pages）。
 - publish.sh 推送前先 `git pull --rebase`：index.html、README 等页面文件也会在别处修改，不能用本地旧副本覆盖。
 - 事后补充或修改历史某期：更新对应栏目的 meta.<板块>.as_of，并在该期顶层写 `revised_at`（ISO 时间）；页面会显示「补充于」。updated_at 保持原首发时间。
+
+## 2026-11-16 起（用户要求）
+- 金融板块新增个股行情（finance.stocks）：每日 5 只——英伟达（NVDA）、Meta（META）、谷歌（GOOGL，须注明 Alphabet A类）、SpaceX、特斯拉（TSLA）。规则与校验见 FINANCE_SPEC.md。

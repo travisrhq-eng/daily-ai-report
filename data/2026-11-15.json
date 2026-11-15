@@ -47,8 +47,8 @@
    ]
   },
   "finance": {
-   "as_of": "2026-11-15 07:30",
-   "basis": "FINANCE_SPEC：周日沿用美国2026-11-13收盘或结算，加密取CoinGecko同批快照。",
+   "as_of": "2026-11-15 11:11",
+   "basis": "FINANCE_SPEC：周日沿用美国2026-11-13常规交易收盘或结算，个股行情五项同口径；加密取CoinGecko同批快照。",
    "missing": [
     {
      "item": "加密同刻第二平台核对",
@@ -633,8 +633,8 @@
   ],
   "finance": {
    "title": "每日金融市场简报｜2026-11-15",
-   "cutoff": "2026-11-15 07:30",
-   "cutoff_note": "周日：美股、美债、黄金、布伦特、DXY沿用美国2026-11-13（周五）收盘/结算（与上期相同）；加密三项为同一次CoinGecko请求快照（2026-11-15 07:26）。",
+   "cutoff": "2026-11-15 11:11",
+   "cutoff_note": "周日：美股、美债、黄金、布伦特、DXY以及个股行情（英伟达、Meta、谷歌 Alphabet A类、SpaceX、特斯拉）沿用美国2026-11-13（周五）常规交易收盘/结算（指数与上期相同）；加密三项为同一次CoinGecko请求快照（2026-11-15 07:26）。",
    "missing": [
     {
      "item": "加密同刻第二平台核对",
@@ -1037,7 +1037,105 @@
      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
     }
    ],
-   "footer": "以上仅作信息参考。"
+   "footer": "以上仅作信息参考。",
+   "stocks": [
+    {
+     "name": "英伟达",
+     "symbol": "NVDA",
+     "exchange": "Nasdaq",
+     "value": "162.85",
+     "change": "−2.01%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-13收盘）",
+     "source_url": "https://finance.yahoo.com/quote/NVDA/",
+     "fetched_at": "2026-11-15 11:11",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "StockAnalysis 历史行情",
+      "url": "https://stockanalysis.com/stocks/nvda/history/",
+      "note": "Codex核对 StockAnalysis 历史行情：2026-11-13 16:00 EST 常规收盘 162.85（前收 166.19，−3.34，−2.01%），与 Yahoo Finance 一致；未采用盘后价。"
+     }
+    },
+    {
+     "name": "Meta",
+     "symbol": "META",
+     "exchange": "Nasdaq",
+     "value": "641.69",
+     "change": "+2.90%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-13收盘）",
+     "source_url": "https://finance.yahoo.com/quote/META/",
+     "fetched_at": "2026-11-15 11:11",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "StockAnalysis 历史行情",
+      "url": "https://stockanalysis.com/stocks/meta/history/",
+      "note": "Codex核对 StockAnalysis 历史行情：2026-11-13 16:00 EST 常规收盘 641.69（前收 623.61，+18.08，+2.90%），与 Yahoo Finance 一致；未采用盘后价。"
+     }
+    },
+    {
+     "name": "谷歌",
+     "symbol": "GOOGL",
+     "share_class": "Alphabet A类",
+     "exchange": "Nasdaq",
+     "value": "295.77",
+     "change": "−0.98%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-13收盘，Alphabet A类）",
+     "source_url": "https://finance.yahoo.com/quote/GOOGL/",
+     "fetched_at": "2026-11-15 11:11",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "StockAnalysis 历史行情",
+      "url": "https://stockanalysis.com/stocks/googl/history/",
+      "note": "Codex核对 StockAnalysis 历史行情：2026-11-13 16:00 EST 常规收盘 295.77（前收 298.70，−2.93，−0.98%），与 Yahoo Finance 一致；未采用盘后价。"
+     }
+    },
+    {
+     "name": "SpaceX",
+     "symbol": "SPCX",
+     "exchange": "Nasdaq",
+     "value": "139.11",
+     "change": "−0.59%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-13收盘）",
+     "source_url": "https://finance.yahoo.com/quote/SPCX/",
+     "fetched_at": "2026-11-15 11:11",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "StockAnalysis 历史行情",
+      "url": "https://stockanalysis.com/stocks/spcx/history/",
+      "note": "Codex核对 StockAnalysis 历史行情：2026-11-13 16:00 EST 常规收盘 139.11（前收 139.94，−0.83，−0.59%），与 Yahoo Finance 一致；未采用盘后价。"
+     }
+    },
+    {
+     "name": "特斯拉",
+     "symbol": "TSLA",
+     "exchange": "Nasdaq",
+     "value": "390.22",
+     "change": "−1.82%（较前收）",
+     "time": "2026-11-14 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-13收盘）",
+     "source_url": "https://finance.yahoo.com/quote/TSLA/",
+     "fetched_at": "2026-11-15 11:11",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "StockAnalysis 历史行情",
+      "url": "https://stockanalysis.com/stocks/tsla/history/",
+      "note": "Codex核对 StockAnalysis 历史行情：2026-11-13 16:00 EST 常规收盘 390.22（前收 397.45，−7.23，−1.82%），与 Yahoo Finance 一致；未采用盘后价。"
+     }
+    }
+   ]
   },
   "github_tools": [
    {
@@ -1182,5 +1280,6 @@
    }
   ]
  },
- "updated_at": "2026-11-15T07:38:13+08:00"
+ "updated_at": "2026-11-15T07:38:13+08:00",
+ "revised_at": "2026-11-15T11:11:55+08:00"
 }
