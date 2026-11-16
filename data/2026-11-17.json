@@ -1,0 +1,1310 @@
+{
+ "date": "2026-11-17",
+ "meta": {
+  "ai_labs": {
+   "as_of": "2026-11-17 07:45",
+   "basis": "五家公司分组；以上期2026-11-16 07:32为去重截止，只收新发布的功能和模型。",
+   "missing": [],
+   "pending": [],
+   "overflow": []
+  },
+  "x_top": {
+   "as_of": "2026-11-17 07:45",
+   "basis": "5组search_news（近24小时，每组25条）聚合候选，去重合并后按score排序；score=前4条48小时内代表帖互动和+关键词近24小时帖数（X计数接口）。不是全站完整榜单。",
+   "missing": [
+    {
+     "item": "部分X话题的Codex最终回报",
+     "reason": "截稿时Codex仍在检索，伯纳姆讲话、日本GDP、美股收盘、Strategy公告、夸克瓦索冲突已用官方或主流媒体核对；西科尔斯基发帖、Restore Britain争论、共和党议员评论以X一手帖为准。"
+    }
+   ],
+   "exclude": "排除体育娱乐（K-pop、封面人物、影视综艺）以及Grok Bot广告等产品话题；上期已报或旧闻翻炒不重复：星舰第15次试飞接住飞船、旅行者1号一光日、塞勒暗示增持（本期改为已落地的485枚公告）、ULA火神发射失利、美国国债40.6万亿美元、三星奥斯汀工厂、尼日利亚2027大选旧闻；成屋销售为2026-11-12旧闻不收录；猫咪鸣叫、AO3恢复、父母月子边界等社会软话题以及欧盟瓶盖对比火箭等梗图讨论未进前10；海军核动力安全性争论缺乏新的官方事件，不收录。",
+   "pending": []
+  },
+  "filecoin": {
+   "as_of": "2026-11-17 07:45",
+   "basis": "全网与Filecoin官方X，只收72小时内；官方博客与官方账号在窗口内无新公告。",
+   "missing": [],
+   "note": "FIL价格见金融简报。",
+   "pending": []
+  },
+  "finance": {
+   "as_of": "2026-11-17 07:45",
+   "basis": "FINANCE_SPEC：美股与个股用美国2026-11-16常规交易收盘；10年期用财政部官方收益率；黄金、布伦特用交易所结算；DXY用The Edge 21:47 GMT报价；加密取CoinGecko同批快照。",
+   "missing": [
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "仅CoinGecko同批快照。"
+    }
+   ]
+  },
+  "github_tools": {
+   "as_of": "2026-11-17 07:45",
+   "basis": "高星标（原则上不少于1万）、近90天有提交、未归档；5条中4条为动效或视频类（Natron、OpenToonz、Paper.js、Diffusers），另1条为Godot实时2D和3D动画引擎；Natron（5,722星）与OpenToonz（8,269星）为动效类优质项目，星标门槛放宽到3,000并注明；不与历史推荐重复。",
+   "missing": []
+  }
+ },
+ "sections": {
+  "ai_labs": [
+   {
+    "lab": "OpenAI",
+    "title": "ChatGPT for Healthcare新增计算机使用代理、加强临床检索，并上线20多个医疗插件",
+    "summary": "OpenAI于2026-11-16发布ChatGPT for Healthcare更新：推出可在现有医疗软件上执行多步操作的计算机使用代理，改进临床检索的查找、评估与引用来源方式，并新增20多个医疗插件。同一天API changelog增加面向获批组织的免费CSAM图像分类接口（omni-moderation-csam-latest），用于帮助人工审核排序。",
+    "source_url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "ChatGPT release notes",
+     "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+     "note": "官方博客与ChatGPT release notes均标注2026-11-16；API条目见changelog Nov 16。"
+    },
+    "source_name": "OpenAI"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude Code发布v2.1.326，可在代理团队开启时使用Code Mode",
+    "summary": "GitHub于2026-11-16 22:11（UTC，北京时间2026-11-17 06:11）发布Claude Code v2.1.326：已开启Code Mode的用户在代理团队打开时，新会话会直接进入Code Mode；并增加启动警告、状态行提示和多项修复。上一个正式版v2.1.325发布于2026-11-13，已在前期报告。",
+    "source_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+    "published_at": "2026-11-17 06:11",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "GitHub Releases API",
+     "url": "https://api.github.com/repos/anthropics/claude-code/releases",
+     "note": "API显示v2.1.326 published_at为2026-11-16T22:11:05Z，非预发布。"
+    },
+    "source_name": "GitHub Releases"
+   },
+   {
+    "lab": "Anthropic",
+    "title": "Claude API为Opus 4.6/4.5、Sonnet 4.5、Haiku 4.5文本增加水印",
+    "summary": "Anthropic API release notes在2026-11-16写道：在受支持平台上，Claude Opus 4.6、Claude Opus 4.5、Claude Sonnet 4.5和Claude Haiku 4.5生成的文本带有Anthropic文本水印。非默认参数下文本不一定带水印，说明见官方Text watermark文档。",
+    "source_url": "https://docs.claude.com/en/release-notes/overview",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Claude API release notes页面",
+     "url": "https://docs.claude.com/en/release-notes/overview",
+     "note": "页面正文可见November 16, 2026条目，列明上述四个模型。"
+    },
+    "source_name": "Anthropic Docs"
+   },
+   {
+    "lab": "xAI",
+    "title": "今日无更新",
+    "summary": "上期截止（2026-11-16 07:32）后，x.ai/news最新官方稿仍为2026-11-02的Grok Bot 1.0，未见新产品或模型上线公告。",
+    "source_url": "https://x.ai/news",
+    "published_at": "2026-11-17 07:45",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "xAI News页面",
+     "url": "https://x.ai/news",
+     "note": "页面可见最新产品稿日期为Nov 2, 2026，窗口内无新条目。"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini应用上线66种地区语音",
+    "summary": "Google于2026-11-16在官方博客宣布，Gemini应用在Android和iOS推出66种新的地区语音，覆盖美式英语、英式英语、印度英语、印地语、巴西葡萄牙语、印尼语和韩语等，并可在Gemini Live与朗读中沿用所选声音。",
+    "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Google Blog",
+     "url": "https://blog.google/innovation-and-ai/products/gemini-app/regional-voices/",
+     "note": "官方博客标注Nov 16, 2026，作者Neel Joshi。"
+    },
+    "source_name": "Google Blog"
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini技能支持分享，并可引用Drive、Notebook和Photos文件",
+    "summary": "Google Workspace Updates于2026-11-16宣布：可在Gemini网页版把技能分享给他人并设置查看或编辑权限；创建技能时可加入Google Drive、Gemini Notebook和Google Photos中的文件，单技能上传不超过100 MB，Drive与Notebook会按最新版本引用。该功能从2026-11-12起分批推送（最多15天）。",
+    "source_url": "https://workspaceupdates.googleblog.com/2026/11/share-skills-add-files-from-Drive-Notebook-Photos-to-skills-Gemini-app.html",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "9to5Google",
+     "url": "https://9to5google.com/2026/11/16/gemini-skills-files-sharing/",
+     "note": "9to5Google 2026-11-16 14:11 PT发文转述同一官方公告，并提到Gems将开始停用。"
+    },
+    "source_name": "Google Workspace Updates"
+   },
+   {
+    "lab": "Google",
+    "title": "Gemini Notebook可把资料生成可分享的互动网站",
+    "summary": "Google于2026-11-16宣布，Gemini Notebook用户在网页端对聊天输入“make me a site”并给出说明后，可把笔记和资料生成互动网站，例如时间线、数据看板和项目跟踪页，并可在新标签打开或分享。该功能面向18岁及以上用户，移动应用稍后推出。",
+    "source_url": "https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/",
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Google Blog",
+     "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/interactive-sites/",
+     "note": "官方博客标注Nov 16, 2026，作者Maria Ines Aranguren。"
+    },
+    "source_name": "Google Blog"
+   },
+   {
+    "lab": "Grok Bot",
+    "title": "今日无更新",
+    "summary": "x.ai/changelog/bot最新版本仍为v1.0.1（2026-11-11，已报），48小时内无新版本。",
+    "source_url": "https://x.ai/changelog/bot",
+    "published_at": "2026-11-17 07:45",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Grok Bot changelog",
+     "url": "https://x.ai/changelog/bot",
+     "note": "页面Latest仍显示v 1.0.1 · Nov 11, 2026，未见更新版本。"
+    },
+    "status_card": true,
+    "source_name": "官方更新渠道"
+   }
+  ],
+  "x_top": [
+   {
+    "rank": 1,
+    "topic": "卡诺警方确认竞选冲突，夸克瓦索车队在比奇遇袭",
+    "category": "国际",
+    "summary": "事件发生在2026-11-15（周日），尼日利亚媒体于2026-11-16集中报道。The Sun援引卡诺警方称5人受伤、13辆车被毁，并逮捕8名嫌疑人。Punch报道卡诺信息专员否认夸克瓦索车队遇袭。夸克瓦索和彼得·奥比发帖要求调查；总统发言人奥纳努加则发帖称其在集会上鼓动支持者准备暴力。多方说法并存。彼得·奥比北京时间2026-11-16 13:51发帖，该帖互动31,679次。",
+    "url": "https://x.com/i/trending/2122053947552846235",
+    "engagement": 56988,
+    "post_count": 2871,
+    "post_count_query": "Kwankwaso (convoy OR attack OR Bichi)",
+    "score": 59859,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和56,988，加关键词近24小时帖数2,871。",
+    "posts": [
+     {
+      "author": "PeterObi",
+      "author_name": "Peter Obi",
+      "created_at": "2026-11-16 13:51",
+      "likes": 21604,
+      "replies": 1027,
+      "reposts": 8806,
+      "quotes": 242,
+      "score": 31679,
+      "url": "https://x.com/PeterObi/status/2122205950744412366"
+     },
+     {
+      "author": "KwankwasoRM",
+      "author_name": "Rabiu Musa Kwankwaso",
+      "created_at": "2026-11-16 21:17",
+      "likes": 12338,
+      "replies": 341,
+      "reposts": 4791,
+      "quotes": 104,
+      "score": 17574,
+      "url": "https://x.com/KwankwasoRM/status/2122318107247014091"
+     }
+    ],
+    "published_at": "2026-11-15",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "冲突",
+     "values": [
+      {
+       "value": "警方称5人受伤、13辆车被毁、逮捕8人",
+       "source": "The Sun",
+       "url": "https://thesun.ng/kano-police-arrest-8-as-kwankwasos-gwarzos-convoys-come-under-attack/"
+      },
+      {
+       "value": "卡诺信息专员否认车队遇袭",
+       "source": "Punch",
+       "url": "https://punchng.com/kano-commissioner-dismisses-attack-on-kwankwasos-convoy/"
+      }
+     ],
+     "reason": "The Sun在2026-11-16 15:18 WAT引用警方数字；Punch在2026-11-16 11:41刊发信息专员的否认。事件日期为11-15，不是11-16。"
+    }
+   },
+   {
+    "rank": 2,
+    "topic": "波兰外长西科尔斯基批评俄罗斯重对外扩张、轻国内民生",
+    "category": "国际",
+    "summary": "波兰外长拉多斯瓦夫·西科尔斯基北京时间2026-11-16 01:57发帖称，俄罗斯政府近期诉求显示出其政治文化更关注占领外国城镇，而不是国内民生。该帖互动29,606次，是本期互动最高的单帖之一。随后多条帖子转发有关俄罗斯地方住房和基础设施破败的影像，形成围绕这条评论的讨论，并不是新的战场交火报道。",
+    "url": "https://x.com/i/trending/2122084680962826311",
+    "engagement": 40883,
+    "post_count": 432,
+    "post_count_query": "Sikorski (Russia OR Russian)",
+    "score": 41315,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和40,883，加关键词近24小时帖数432。",
+    "posts": [
+     {
+      "author": "sikorskiradek",
+      "author_name": "Radosław Sikorski",
+      "created_at": "2026-11-16 01:57",
+      "likes": 24444,
+      "replies": 668,
+      "reposts": 4322,
+      "quotes": 172,
+      "score": 29606,
+      "url": "https://x.com/sikorskiradek/status/2122026233399738742"
+     },
+     {
+      "author": "ghostofRoc",
+      "author_name": "Rocca",
+      "created_at": "2026-11-16 21:21",
+      "likes": 3202,
+      "replies": 205,
+      "reposts": 1007,
+      "quotes": 162,
+      "score": 4576,
+      "url": "https://x.com/ghostofRoc/status/2122319038940369306"
+     }
+    ],
+    "published_at": "2026-11-16 01:57",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "以外长本人X帖为一手来源；这是外长评论带动的讨论，未见同步的官方战报。X互动数为API一手计数。"
+    }
+   },
+   {
+    "rank": 3,
+    "topic": "美股连跌第三日，纳指收跌2.49%，沃什谈技术冲击路径",
+    "category": "财经",
+    "summary": "美国2026-11-16，标普500收7,416.59点（−1.92%），纳斯达克综合指数收24,509.76点（−2.49%），道指收51,608.17点（−1.41%），为连续第三个交易日下跌（CNBC、新华社）。Watcher Guru发帖称美股市值蒸发1.4万亿美元。美联储主席凯文·沃什当天在生产率与就业工作组会议上发表开幕讲话，提出生产率走强、自动化冲击就业、投资结果不及预期导致资产回撤与增长放缓三条路径，讲话全文见美联储网站。",
+    "url": "https://x.com/i/trending/2122441406195150932",
+    "engagement": 25007,
+    "post_count": 2420,
+    "post_count_query": "(Nasdaq OR \"S&P 500\" OR Dow) (drop OR dropped OR fell OR lower OR selloff)",
+    "score": 27427,
+    "score_basis": "4条48小时内新闻类代表帖的赞+评+转+引之和25,007，加关键词近24小时帖数2,420。",
+    "posts": [
+     {
+      "author": "BullTheoryio",
+      "author_name": "Bull Theory",
+      "created_at": "2026-11-17 01:11",
+      "likes": 6082,
+      "replies": 342,
+      "reposts": 788,
+      "quotes": 213,
+      "score": 7425,
+      "url": "https://x.com/BullTheoryio/status/2122377057963516410"
+     },
+     {
+      "author": "WatcherGuru",
+      "author_name": "Watcher Guru",
+      "created_at": "2026-11-17 05:27",
+      "likes": 5800,
+      "replies": 322,
+      "reposts": 753,
+      "quotes": 187,
+      "score": 7062,
+      "url": "https://x.com/WatcherGuru/status/2122441406195150932"
+     }
+    ],
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "CNBC",
+     "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+     "note": "CNBC 16:18 ET与新华社、Yahoo Finance常规收盘一致：标普7,416.59、纳指24,509.76、道指51,608.17。沃什讲话以美联储官网为准。1.4万亿美元为社媒表述，未当作官方统计。"
+    }
+   },
+   {
+    "rank": 4,
+    "topic": "英国Restore与改革党就头号威胁争论，右翼选票现分裂",
+    "category": "国际",
+    "summary": "X上围绕英国新兴政党Restore Britain与改革党的争论升温。一条高互动帖列出两党对当前英国头号威胁的不同看法：改革党强调俄罗斯，Restore Britain强调激进伊斯兰，并据此讨论右翼选票是否被分流。这是网络政治争论，不是新的议会表决或选举结果。",
+    "url": "https://x.com/i/trending/2122464097799176260",
+    "engagement": 9485,
+    "post_count": 10722,
+    "post_count_query": "(\"Restore Britain\" OR (Reform Restore))",
+    "score": 20207,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和9,485，加关键词近24小时帖数10,722。帖数查询包含Reform与Restore并列，口径偏宽，不是单一标签的精确计数。",
+    "posts": [
+     {
+      "author": "BasilTheGreat",
+      "author_name": "Basil the Great",
+      "created_at": "2026-11-16 14:55",
+      "likes": 3225,
+      "replies": 2353,
+      "reposts": 378,
+      "quotes": 113,
+      "score": 6069,
+      "url": "https://x.com/BasilTheGreat/status/2122222120084418974"
+     },
+     {
+      "author": "KeepT69655",
+      "author_name": "James",
+      "created_at": "2026-11-16 02:22",
+      "likes": 1292,
+      "replies": 233,
+      "reposts": 1750,
+      "quotes": 54,
+      "score": 3329,
+      "url": "https://x.com/KeepT69655/status/2122032481763279343"
+     }
+    ],
+    "published_at": "2026-11-16 14:55",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "代表帖与互动数为X API一手计数；话题是网络争论，无政府公告可核对。帖数查询口径偏宽，已在计算方法中说明。"
+    }
+   },
+   {
+    "rank": 5,
+    "topic": "英国首相伯纳姆在市长宴会称脱欧得不偿失，将寻求对欧新协议",
+    "category": "国际",
+    "summary": "英国首相安迪·伯纳姆2026-11-16在伦敦市长宴会发表讲话，全文发布于GOV.UK。他表示过去十年失去的比得到的更多，硬脱欧协议不够好，若新协议符合其宣言、红线和Makerfield Test，将支持与欧盟达成新协议。天空新闻同步引用他的原话：We have lost more than we have gained in the last 10 years.",
+    "url": "https://x.com/i/trending/2122460845674541419",
+    "engagement": 4181,
+    "post_count": 8889,
+    "post_count_query": "Burnham (Brexit OR \"lost more\")",
+    "score": 13070,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和4,181，加关键词近24小时帖数8,889。",
+    "posts": [
+     {
+      "author": "SkyNews",
+      "author_name": "Sky News",
+      "created_at": "2026-11-17 05:28",
+      "likes": 298,
+      "replies": 239,
+      "reposts": 56,
+      "quotes": 22,
+      "score": 615,
+      "url": "https://x.com/SkyNews/status/2122441579260477474"
+     },
+     {
+      "author": "PeterStefanovi2",
+      "author_name": "Peter Stefanovic",
+      "created_at": "2026-11-17 05:33",
+      "likes": 456,
+      "replies": 50,
+      "reposts": 76,
+      "quotes": 6,
+      "score": 588,
+      "url": "https://x.com/PeterStefanovi2/status/2122442953637634415"
+     }
+    ],
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "GOV.UK",
+     "url": "https://www.gov.uk/government/speeches/pm-speech-at-the-lord-mayors-banquet-16-november-2026",
+     "note": "GOV.UK刊登首相2026-11-16市长宴会讲话；美联社、卫报同步报道脱欧评价及寻求对欧新协议。"
+    }
+   },
+   {
+    "rank": 6,
+    "topic": "共和党人将2026年中期失利归咎参议院不作为",
+    "category": "时政",
+    "summary": "美国中期选举后，多位共和党参议员继续在X上讨论失利原因。参议员Ron Johnson北京时间2026-11-16 00:58发帖称选民愤怒、赌注很高；迈克·李发帖强调必须守住自由市场。相关讨论把失利与参议院推进议程不力联系起来，是选举后的党内争论，不是新的计票结果。",
+    "url": "https://x.com/i/trending/2122074845424824828",
+    "engagement": 10972,
+    "post_count": 793,
+    "post_count_query": "(Senate OR Republicans) (midterm OR midterms) (inaction OR losses OR voters)",
+    "score": 11765,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和10,972，加关键词近24小时帖数793。",
+    "posts": [
+     {
+      "author": "SenRonJohnson",
+      "author_name": "Senator Ron Johnson",
+      "created_at": "2026-11-16 00:58",
+      "likes": 1612,
+      "replies": 1134,
+      "reposts": 332,
+      "quotes": 60,
+      "score": 3138,
+      "url": "https://x.com/SenRonJohnson/status/2122011472595128569"
+     },
+     {
+      "author": "BasedMikeLee",
+      "author_name": "Mike Lee",
+      "created_at": "2026-11-16 03:04",
+      "likes": 2202,
+      "replies": 239,
+      "reposts": 508,
+      "quotes": 14,
+      "score": 2963,
+      "url": "https://x.com/BasedMikeLee/status/2122043039770399159"
+     }
+    ],
+    "published_at": "2026-11-16 00:58",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "社媒传闻",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "以议员本人X帖为一手来源；这是选举后评论，不是新的官方计票。X互动数为API一手计数。"
+    }
+   },
+   {
+    "rank": 7,
+    "topic": "Strategy公布买进485枚比特币，Strive同期买进251枚",
+    "category": "加密货币",
+    "summary": "Strategy于2026-11-16发布公告：在2026-11-09至2026-11-15买进485枚比特币，总价3,340万美元，均价每枚68,887美元，持仓升至850,849枚，并回购2.281亿美元STRC。Bitcoin Magazine等同步报道Strive买进251枚比特币，总价1,750万美元，均价每枚69,853美元，持仓43,404枚。这是对上期塞勒暗示增持的落地。",
+    "url": "https://x.com/i/trending/2122325186867327008",
+    "engagement": 5083,
+    "post_count": 2847,
+    "post_count_query": "(Strategy OR MicroStrategy OR Strive) (Bitcoin OR BTC) (bought OR acquired OR purchase)",
+    "score": 7930,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和5,083，加关键词近24小时帖数2,847。",
+    "posts": [
+     {
+      "author": "BitcoinMagazine",
+      "author_name": "Bitcoin Magazine",
+      "created_at": "2026-11-16 21:06",
+      "likes": 1892,
+      "replies": 99,
+      "reposts": 199,
+      "quotes": 22,
+      "score": 2212,
+      "url": "https://x.com/BitcoinMagazine/status/2122315369247388071"
+     },
+     {
+      "author": "ColeMacro",
+      "author_name": "Cole",
+      "created_at": "2026-11-16 21:02",
+      "likes": 1649,
+      "replies": 108,
+      "reposts": 209,
+      "quotes": 48,
+      "score": 2014,
+      "url": "https://x.com/ColeMacro/status/2122314310127079639"
+     }
+    ],
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Strategy官网",
+     "url": "https://www.strategy.com/press/strategy-acquires-485-btc-and-repurchases-228-million-of-strc_11-16-2026",
+     "note": "官方8-K确认485枚、3,340万美元、均价68,887美元、持仓850,849枚；STRC回购为2.281亿美元（2,282,510股），不是取整后的2.28亿。"
+    }
+   },
+   {
+    "rank": 8,
+    "topic": "比特币回落至64,000美元一带后，清晨在64,900美元附近波动",
+    "category": "加密货币",
+    "summary": "X在2026-11-16密集讨论比特币跌至64,000美元一带，以及是否守住近期低点。CoinGecko北京时间2026-11-17 07:39快照为64,946美元（24小时−0.50%），较上期清晨65,066美元略低，仍未回到66,000美元上方。价格以金融简报的同批快照为准。",
+    "url": "https://x.com/i/trending/2122338085929464037",
+    "engagement": 6774,
+    "post_count": 1122,
+    "post_count_query": "Bitcoin (64000 OR \"64,000\" OR \"64k\" OR 64K)",
+    "score": 7896,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和6,774，加关键词近24小时帖数1,122。",
+    "posts": [
+     {
+      "author": "DrProfitCrypto",
+      "author_name": "Dr Profit",
+      "created_at": "2026-11-16 22:55",
+      "likes": 3147,
+      "replies": 188,
+      "reposts": 121,
+      "quotes": 5,
+      "score": 3461,
+      "url": "https://x.com/DrProfitCrypto/status/2122342804374647159"
+     },
+     {
+      "author": "TedPillows",
+      "author_name": "Ted Pillows",
+      "created_at": "2026-11-16 15:30",
+      "likes": 914,
+      "replies": 187,
+      "reposts": 97,
+      "quotes": 17,
+      "score": 1215,
+      "url": "https://x.com/TedPillows/status/2122230779086328125"
+     }
+    ],
+    "published_at": "2026-11-16 22:55",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "专业数据平台",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "CoinGecko",
+     "url": "https://www.coingecko.com/",
+     "note": "价格以CoinGecko 2026-11-17 07:39快照64,946美元为准；盘中低点64,000美元来自X讨论，未作为官方结算价。"
+    }
+   },
+   {
+    "rank": 9,
+    "topic": "《纽约邮报》迎来225周年，霍楚尔等到场致辞",
+    "category": "社会",
+    "summary": "《纽约邮报》在2026-11-16度过创刊225周年。该报自己发帖展示纽约州长凯西·霍楚尔的祝贺，并称报纸由亚历山大·哈密尔顿于1801年11月16日创办。Josh Barro等转发讨论纽约自由派对这份报纸又爱又恨的态度。这是纪念活动，不是新的政策发布。",
+    "url": "https://x.com/i/trending/2122327187693125734",
+    "engagement": 6615,
+    "post_count": 336,
+    "post_count_query": "(\"New York Post\" OR NYPost) (225 OR anniversary)",
+    "score": 6951,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和6,615，加关键词近24小时帖数336。",
+    "posts": [
+     {
+      "author": "nypost",
+      "author_name": "New York Post",
+      "created_at": "2026-11-16 22:27",
+      "likes": 2225,
+      "replies": 39,
+      "reposts": 165,
+      "quotes": 92,
+      "score": 2521,
+      "url": "https://x.com/nypost/status/2122335720995955089"
+     },
+     {
+      "author": "jbarro",
+      "author_name": "Josh Barro",
+      "created_at": "2026-11-17 02:20",
+      "likes": 1721,
+      "replies": 27,
+      "reposts": 53,
+      "quotes": 4,
+      "score": 1805,
+      "url": "https://x.com/jbarro/status/2122394470046110197"
+     }
+    ],
+    "published_at": "2026-11-16 22:27",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "主流媒体",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "以《纽约邮报》官方账号帖为一手来源；创刊日期与225周年为该报自行表述。"
+    }
+   },
+   {
+    "rank": 10,
+    "topic": "日本内阁府公布三季度实际GDP年率下跌0.1%，四个季度来首次收缩",
+    "category": "财经",
+    "summary": "日本内阁府2026-11-16公布2026年7-9月GDP一次速报：实际GDP季节调整后前期比−0.0%（年率−0.1%），为四个季度来首次收缩；名义GDP前期比+0.4%（年率+1.6%）。民间消费前期比−0.3%，企业设备投资+1.6%，出口−0.2%，进口+2.5%。共同社报道称这低于民间机构调查均值（年率+0.2%）。",
+    "url": "https://x.com/i/trending/2122274662197400059",
+    "engagement": 4877,
+    "post_count": 355,
+    "post_count_query": "Japan (GDP OR \"gross domestic\") (contract OR contraction OR shrinks OR shrank)",
+    "score": 5232,
+    "score_basis": "4条48小时内聚合代表帖的赞+评+转+引之和4,877，加关键词近24小时帖数355。",
+    "posts": [
+     {
+      "author": "BullTheoryio",
+      "author_name": "Bull Theory",
+      "created_at": "2026-11-16 18:18",
+      "likes": 1250,
+      "replies": 70,
+      "reposts": 197,
+      "quotes": 35,
+      "score": 1552,
+      "url": "https://x.com/BullTheoryio/status/2122273039324717286"
+     },
+     {
+      "author": "AshCrypto",
+      "author_name": "Ash Crypto",
+      "created_at": "2026-11-16 12:10",
+      "likes": 1106,
+      "replies": 123,
+      "reposts": 128,
+      "quotes": 15,
+      "score": 1372,
+      "url": "https://x.com/AshCrypto/status/2122180606981492903"
+     }
+    ],
+    "published_at": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "日本内阁府经济社会综合研究所",
+     "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/pdf/gaiyou2631.pdf",
+     "note": "官方PDF标注2026-11-16发布，实际年率−0.1%、名义年率+1.6%、消费−0.3%、设备投资+1.6%，与共同社报道一致。"
+    }
+   }
+  ],
+  "filecoin": [
+   {
+    "title": "72小时内未见Filecoin官方新公告，FIL现报0.6025美元",
+    "summary": "Filecoin官网博客置顶仍为Solstice奖励机制文，属于窗口之外的旧闻。官方账号@Filecoin在2026-11-14 07:30至2026-11-17 07:45（北京时间）无新帖。CoinGecko 2026-11-17 07:39快照FIL为0.6025美元（24小时−1.58%），仍高于2026-11-15汇总中的0.588美元低点。价格详见金融简报。",
+    "source_url": "https://filecoin.io/blog/",
+    "published_at": "2026-11-17 07:45",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "已交叉核对",
+     "by": "Codex",
+     "source": "Filecoin官方X",
+     "url": "https://x.com/Filecoin",
+     "note": "getUsersPosts显示72小时内官方账号无原创帖；博客未见窗口内新文。"
+    },
+    "type": "news",
+    "source_name": "Filecoin"
+   }
+  ],
+  "finance": {
+   "title": "每日金融市场简报｜2026-11-17",
+   "cutoff": "2026-11-17 07:45",
+   "cutoff_note": "美股、个股为美国2026-11-16常规交易收盘（北京时间2026-11-17 05:00）；10年期为财政部当日官方收益率；黄金、布伦特为交易所结算（The Edge在21:55 GMT更新）；DXY为The Edge在21:47 GMT的收盘附近报价；加密三项为同一次CoinGecko请求快照（2026-11-17 07:39）。",
+   "missing": [
+    {
+     "item": "加密同刻第二平台核对",
+     "reason": "仅CoinGecko同批快照，未与CoinMarketCap或其他平台同一时刻对价。"
+    }
+   ],
+   "yesterday_check": "昨日待验证事项结果：美国10年期财政部数据回落至5.12%，未突破上周五5.15%，也未创新高；布伦特原油1月合约结算92.44美元，跌破95美元；比特币未站上66,000美元，Strategy于2026-11-16公布在11月9日至15日买进485枚比特币。12月议息前的CPI与PCE、以及英伟达2026-11-17盘后财报仍待公布。",
+   "three_lines": [
+    {
+     "conclusion": "美股连续第三个交易日收跌，纳指−2.49%，英伟达常规交易收156.14美元（−4.12%）。",
+     "support": "CNBC与Yahoo Finance：标普500收7,416.59点（−1.92%），纳指收24,509.76点，道指收51,608.17点（−1.41%）。CNBC称商务部收紧中国企业在境外租赁英伟达算力的漏洞，知情人士向其表示董事会未讨论请回黄仁勋。"
+    },
+    {
+     "conclusion": "布伦特原油结算92.44美元，跌破95美元；10年期收益率回落至5.12%。",
+     "support": "The Edge与Newsquawk记录ICE布伦特1月合约结算92.44美元（−3.55%，−3.40美元）；美国财政部官方收益率曲线11/16/2026的10年期为5.12%，前值11/13/2026为5.15%。"
+    },
+    {
+     "conclusion": "Strategy落地买进485枚比特币；日本三季度实际GDP年率−0.1%，为四个季度来首次收缩。",
+     "support": "Strategy 2026-11-16新闻稿：11月9日至15日买进485枚，总价3,340万美元，均价68,887美元，持仓850,849枚，并回购2.281亿美元STRC。日本内阁府一次速报：实际GDP前期比−0.0%（年率−0.1%），民间消费−0.3%。"
+    }
+   ],
+   "snapshot": [
+    {
+     "asset": "标普500",
+     "value": "7,416.59",
+     "change": "−1.92%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance / CNBC",
+     "source_url": "https://finance.yahoo.com/quote/%5EGSPC/",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+      "note": "CNBC 16:18 ET与新华社均写标普收7,416.59点、−1.92%，与Yahoo常规收盘一致。"
+     }
+    },
+    {
+     "asset": "纳斯达克综合指数",
+     "value": "24,509.76",
+     "change": "−2.49%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance / CNBC",
+     "source_url": "https://finance.yahoo.com/quote/%5EIXIC/",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+      "note": "CNBC与新华社写纳指收24,509.76（新华社到24,509.758），−2.49%，与Yahoo一致。"
+     }
+    },
+    {
+     "asset": "美元指数 DXY",
+     "value": "103.58",
+     "change": "+0.16%（较前收）",
+     "time": "2026-11-17 05:47",
+     "status": "收盘",
+     "source": "The Edge（21:47 GMT报价）",
+     "source_url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/",
+     "crosscheck": {
+      "status": "冲突",
+      "values": [
+       {
+        "value": "103.58",
+        "source": "The Edge（21:47 GMT）",
+        "url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/"
+       },
+       {
+        "value": "103.450",
+        "source": "DTN",
+        "url": "https://www.dtnpf.com/agriculture/web/AG/news/world-policy/article/2026/11/16/oil-3-supply-surplus-signs-offset"
+       }
+      ],
+      "reason": "The Edge与Yahoo（103.586）接近，为103.58；DTN写103.450、+0.127点。两个专业来源对周一收盘或报价不一致，差值0.13点。本期正文采用The Edge的103.58，并在此并列。"
+     }
+    },
+    {
+     "asset": "美国10年期国债收益率",
+     "value": "5.12%",
+     "change": "−3 bp（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "美国财政部",
+     "source_url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Yahoo Finance ^TNX",
+      "url": "https://finance.yahoo.com/quote/%5ETNX/",
+      "note": "财政部11/16/2026官方10年期5.12%，11/13/2026为5.15%；Yahoo TNX收5.121，与官方5.12一致。"
+     }
+    },
+    {
+     "asset": "COMEX 黄金",
+     "value": "3,853.00",
+     "change": "−0.86%（较前收）",
+     "time": "2026-11-17 05:55",
+     "status": "收盘",
+     "source": "The Edge（COMEX 12月合约结算）",
+     "source_url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/",
+     "crosscheck": {
+      "status": "冲突",
+      "values": [
+       {
+        "value": "3,853.00",
+        "source": "The Edge（COMEX Dec26结算）",
+        "url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/"
+       },
+       {
+        "value": "3,858.90",
+        "source": "Yahoo Finance GC=F最新价",
+        "url": "https://finance.yahoo.com/quote/GC=F/"
+       }
+      ],
+      "reason": "The Edge采用交易所官方结算3,853.00美元（−0.86%）；Yahoo给出的3,858.90为该合约最新成交，不是结算价。本期采用结算价。"
+     }
+    },
+    {
+     "asset": "布伦特原油",
+     "value": "92.44",
+     "change": "−3.55%（较前收）",
+     "time": "2026-11-17 05:55",
+     "status": "收盘",
+     "source": "The Edge / Newsquawk（ICE 1月合约结算）",
+     "source_url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/",
+     "crosscheck": {
+      "status": "冲突",
+      "values": [
+       {
+        "value": "92.44",
+        "source": "The Edge与Newsquawk结算",
+        "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl"
+       },
+       {
+        "value": "92.21",
+        "source": "Yahoo Finance BZ=F最新价",
+        "url": "https://finance.yahoo.com/quote/BZ=F/"
+       }
+      ],
+      "reason": "官方结算为ICE布伦特1月合约92.44美元（较上日结算95.84美元下跌3.40美元，−3.55%）；Yahoo 92.21为最新成交。本期采用结算价。CNBC盘中曾写布伦特涨至96.13美元，那是盘中价，不是收盘结算。"
+     }
+    },
+    {
+     "asset": "BTC",
+     "value": "64,946",
+     "change": "−0.50%（24h）",
+     "time": "2026-11-17 07:39",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，last_updated_at=1794872342，未与第二平台同刻核对。"
+     }
+    },
+    {
+     "asset": "ETH",
+     "value": "1,816.75",
+     "change": "−0.97%（24h）",
+     "time": "2026-11-17 07:39",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，未与第二平台同刻核对。"
+     }
+    },
+    {
+     "asset": "FIL",
+     "value": "0.6025",
+     "change": "−1.58%（24h）",
+     "time": "2026-11-17 07:39",
+     "status": "快照",
+     "source": "CoinGecko",
+     "source_url": "https://www.coingecko.com/",
+     "crosscheck": {
+      "status": "单一来源",
+      "note": "CoinGecko同批快照，未与第二平台同刻核对。"
+     }
+    }
+   ],
+   "stocks": [
+    {
+     "name": "英伟达",
+     "symbol": "NVDA",
+     "exchange": "Nasdaq",
+     "value": "156.14",
+     "change": "−4.12%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-16收盘）",
+     "source_url": "https://finance.yahoo.com/quote/NVDA/",
+     "fetched_at": "2026-11-17 07:45",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "CNBC",
+      "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+      "note": "CNBC写英伟达下跌4.1%；Yahoo常规收盘156.14、前收162.85，精确计算为−4.12%，未采用盘后价。"
+     }
+    },
+    {
+     "name": "Meta",
+     "symbol": "META",
+     "exchange": "Nasdaq",
+     "value": "626.41",
+     "change": "−2.38%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-16收盘）",
+     "source_url": "https://finance.yahoo.com/quote/META/",
+     "fetched_at": "2026-11-17 07:45",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Yahoo历史日线",
+      "url": "https://finance.yahoo.com/quote/META/history/",
+      "note": "日线收626.41、前收641.69，−2.38%；未采用盘后价。"
+     }
+    },
+    {
+     "name": "谷歌",
+     "symbol": "GOOGL",
+     "share_class": "Alphabet A类",
+     "exchange": "Nasdaq",
+     "value": "283.72",
+     "change": "−4.07%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-16收盘，Alphabet A类）",
+     "source_url": "https://finance.yahoo.com/quote/GOOGL/",
+     "fetched_at": "2026-11-17 07:45",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Yahoo历史日线",
+      "url": "https://finance.yahoo.com/quote/GOOGL/history/",
+      "note": "GOOGL（A类）日线收283.72、前收295.77，−4.07%；未使用GOOG。"
+     }
+    },
+    {
+     "name": "SpaceX",
+     "symbol": "SPCX",
+     "exchange": "Nasdaq",
+     "value": "137.36",
+     "change": "−1.26%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-16收盘）",
+     "source_url": "https://finance.yahoo.com/quote/SPCX/",
+     "fetched_at": "2026-11-17 07:45",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Yahoo历史日线",
+      "url": "https://finance.yahoo.com/quote/SPCX/history/",
+      "note": "SPCX仍在纳斯达克交易，日线收137.36、前收139.11，−1.26%。"
+     }
+    },
+    {
+     "name": "特斯拉",
+     "symbol": "TSLA",
+     "exchange": "Nasdaq",
+     "value": "379.74",
+     "change": "−2.69%（较前收）",
+     "time": "2026-11-17 05:00",
+     "status": "收盘",
+     "source": "Yahoo Finance（美国2026-11-16收盘）",
+     "source_url": "https://finance.yahoo.com/quote/TSLA/",
+     "fetched_at": "2026-11-17 07:45",
+     "crosscheck": {
+      "status": "已交叉核对",
+      "by": "Codex",
+      "source": "Yahoo历史日线",
+      "url": "https://finance.yahoo.com/quote/TSLA/history/",
+      "note": "日线收379.74、前收390.22，−2.69%；未采用盘后价。"
+     }
+    }
+   ],
+   "groups": [
+    {
+     "name": "全球金融市场",
+     "items": [
+      {
+       "no": 1,
+       "headline": "美股连跌三日，纳指−2.49%，英伟达收156.14美元",
+       "facts": "2026-11-16标普500收7,416.59点（−1.92%），纳指24,509.76点（−2.49%），道指51,608.17点（−1.41%、−739.38点），均为连续第三个交易日下跌（CNBC，16:18 ET）。英伟达常规交易收156.14美元（−4.12%）。CNBC称商务部当天收紧中国企业在境外租赁英伟达算力的漏洞；一名知情人士向CNBC表示，董事会未讨论请回黄仁勋，并正由Wachtell Lipton主导调查。财长贝森特周末呼吁董事会物色外部继任者。",
+       "plain": "科技股继续带指数往下走，英伟达的领导层和出口管制消息是当天的压力来源。",
+       "affects": "美股、芯片股、英伟达2026-11-17盘后财报。",
+       "pricing": "已定价",
+       "pricing_evidence": "三大指数均以下跌收盘，英伟达单日−4.12%。",
+       "next_check": "英伟达2026-11-17盘后财报与指引。",
+       "risks": "判断：若财报无法对冲领导层和出口管制的不确定性，股价会在156.14美元附近继续承压。",
+       "sources": [
+        {
+         "outlet": "CNBC",
+         "title": "Stock market news for Nov. 16, 2026",
+         "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+         "date": "2026-11-16"
+        }
+       ],
+       "grade": "主流媒体",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "新华社",
+        "url": "https://english.news.cn/20261117/259e0999b1964405af89ce839c650aec/c.html",
+        "note": "新华社写三大指数收盘与CNBC一致；英伟达精确跌幅以Yahoo常规收盘计算为−4.12%。"
+       }
+      },
+      {
+       "no": 2,
+       "headline": "沃什提出技术影响经济的三条路径，纽约联储制造业指数回落至7.8",
+       "facts": "美联储主席凯文·沃什2026-11-16在生产率与就业工作组会议发表开幕讲话，全文见美联储网站。他列出三条路径：生产率走强并保持高就业；自动化带来失业上升；投资结果不及预期，引发资产回撤、增长放缓和失业上升。纽约联储同日公布11月Empire State制造业调查：总体经营状况指数由10月的25.5回落至7.8（下降17.7点），新订单3.0，出货8.8，雇员指数18.1，支付价格45.9。",
+       "plain": "联储在为技术抬升增长、冲击就业或投资回报不及预期准备情景；纽约州工厂活动仍在扩张，但速度比10月慢很多。",
+       "affects": "美股、美债、12月议息预期。",
+       "pricing": "部分定价",
+       "pricing_evidence": "讲话当天纳指收跌2.49%，10年期回落3个基点至5.12%。",
+       "next_check": "2026-11-18 03:00发布的美联储10月FOMC会议纪要。",
+       "risks": "判断：在纳指已连跌三日且10年期仍处5.12%的背景下，若纪要偏鹰，指数将继续承压。",
+       "sources": [
+        {
+         "outlet": "美联储",
+         "title": "Opening remarks by Chairman Warsh",
+         "url": "https://www.federalreserve.gov/newsevents/speech/warsh20261116a.htm",
+         "date": "2026-11-16"
+        },
+        {
+         "outlet": "纽约联储",
+         "title": "Empire State Manufacturing Survey November 2026",
+         "url": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_11_empire-state-manufacturing-survey.pdf",
+         "date": "2026-11-16"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "纽约联储PDF",
+        "url": "https://www.newyorkfed.org/medialibrary/media/survey/empire/empire2026/2026_11_empire-state-manufacturing-survey.pdf",
+        "note": "官方PDF写11月指数7.8、10月25.5、变化−17.7；新订单3.0、出货8.8、雇员18.1、支付价格45.9。"
+       }
+      },
+      {
+       "no": 3,
+       "headline": "布伦特结算92.44美元跌破95，COMEX黄金结算3,853.00美元",
+       "facts": "The Edge在21:55 GMT更新的结算表：ICE布伦特1月合约结算92.44美元（−3.55%），较上日结算95.84美元下跌3.40美元；WTI 12月合约结算85.72美元（−3.21%）。COMEX黄金12月合约结算3,853.00美元（−0.86%）。美元指数DXY在21:47 GMT报103.58（+0.16%）。Yahoo最新成交黄金3,858.90美元、布伦特92.21美元，与结算价不同，已在行情快照并列。",
+       "plain": "油价周一没守住95美元，黄金和美元走势符合风险资产偏弱、美元偏强的组合。",
+       "affects": "能源股、通胀预期、黄金。",
+       "pricing": "已定价",
+       "pricing_evidence": "布伦特以结算价较上日下跌3.40美元，收在92.44美元。",
+       "next_check": "布伦特能否留在90至95美元区间；2026-11-18美国EIA库存。",
+       "risks": "判断：在结算价已较95.84美元下跌3.40美元后，若再失90美元，能源股和通胀预期会同步走弱。",
+       "sources": [
+        {
+         "outlet": "The Edge",
+         "title": "Commodities Wrap 16 November 2026",
+         "url": "https://edgeconsultancykw.com/commodities-wrap-16-november-2026/",
+         "date": "2026-11-16"
+        },
+        {
+         "outlet": "Newsquawk",
+         "title": "CRUDE WRAP: Brent settles at 92.44",
+         "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl",
+         "date": "2026-11-16"
+        }
+       ],
+       "grade": "专业数据平台",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Newsquawk",
+        "url": "https://www.newsquawk.com/headlines/crude-wrap-wti-z6-settles-usd-284-lower-at-8572bbl-brent-f7-settles-usd-340-lower-at-9244bbl",
+        "note": "Newsquawk与The Edge的布伦特结算同为92.44美元、WTI 85.72美元；黄金采用The Edge的COMEX结算3,853.00美元。"
+       }
+      },
+      {
+       "no": 4,
+       "headline": "美国10年期回落至5.12%；日本三季度实际GDP年率−0.1%，中国10月社零同比+0.4%",
+       "facts": "美国财政部官方收益率曲线：2026-11-16的10年期为5.12%，2026-11-13为5.15%，回落3个基点。日本内阁府2026-11-16公布7-9月一次速报，实际GDP前期比−0.0%（年率−0.1%），为四个季度来首次收缩，民间消费−0.3%，设备投资+1.6%。中国国家统计局2026-11-16公布：10月规模以上工业增加值同比+4.8%，社会消费品零售总额同比+0.4%、金额4.6463万亿元。",
+       "plain": "美国长端利率从高位略回，但日本经济转负、中国消费同比只增0.4%，显示主要经济体增长并不均衡。",
+       "affects": "美债、日元、中国相关资产。",
+       "pricing": "部分定价",
+       "pricing_evidence": "10年期收5.12%；亚洲市场已在2026-11-16对日本GDP作出反应，具体指数跌幅各家报道不一，这里只采用官方GDP数字。",
+       "next_check": "美国10月零售销售（2026-11-17 21:30）是否也走弱。",
+       "risks": "判断：在日本实际GDP年率已是−0.1%、中国10月社零同比只有0.4%时，若美国零售销售环比转负，全球增长定价会再下一台阶。",
+       "sources": [
+        {
+         "outlet": "美国财政部",
+         "title": "Daily Treasury Yield Curve Rates",
+         "url": "https://home.treasury.gov/resource-center/data-chart-center/interest-rates/TextView?type=daily_treasury_yield_curve&field_tdr_date_value=2026",
+         "date": "2026-11-16"
+        },
+        {
+         "outlet": "日本内阁府",
+         "title": "2026年7-9月GDP一次速报",
+         "url": "https://www.esri.cao.go.jp/jp/sna/data/data_list/sokuhou/files/2026/qe263/pdf/gaiyou2631.pdf",
+         "date": "2026-11-16"
+        },
+        {
+         "outlet": "中国政府网/统计局",
+         "title": "National Economy was Generally Stable in October",
+         "url": "https://english.www.gov.cn/archive/statistics/202611/16/content_WS6afa6dccc6d00ca5f9a0e4b3.html",
+         "date": "2026-11-16"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "共同社",
+        "url": "https://english.kyodonews.net/articles/-/91510",
+        "note": "共同社报道实际年率−0.1%、消费−0.3%、设备投资+1.6%，与内阁府PDF一致。"
+       }
+      }
+     ]
+    },
+    {
+     "name": "加密二级市场",
+     "items": [
+      {
+       "no": 5,
+       "headline": "Strategy买进485枚比特币，BTC清晨快照64,946美元",
+       "facts": "Strategy 2026-11-16新闻稿：2026-11-09至2026-11-15买进485枚比特币，总价3,340万美元，均价每枚68,887美元，持仓达到850,849枚，并回购2.281亿美元STRC。CoinGecko 2026-11-17 07:39快照：BTC 64,946美元（24小时−0.50%），ETH 1,816.75美元（−0.97%），FIL 0.6025美元（−1.58%）。BTC仍未回到66,000美元上方。",
+       "plain": "公司仍在价格回调时加仓，但现货价格还停在6.5万美元下方。",
+       "affects": "BTC、Strategy股票、加密风险偏好。",
+       "pricing": "部分定价",
+       "pricing_evidence": "公告后BTC仍在64,000至65,200美元区间波动，未收复66,000美元。",
+       "next_check": "BTC能否重新站上66,000美元；Strategy是否继续披露周度买进。",
+       "risks": "判断：在现价64,946美元仍低于本次买进均价68,887美元时，若不能回到66,000美元，市场会继续质疑加仓效果。",
+       "sources": [
+        {
+         "outlet": "Strategy",
+         "title": "Strategy Acquires 485 BTC and Repurchases 228 Million of STRC",
+         "url": "https://www.strategy.com/press/strategy-acquires-485-btc-and-repurchases-228-million-of-strc_11-16-2026",
+         "date": "2026-11-16"
+        },
+        {
+         "outlet": "CoinGecko",
+         "title": "简单价格接口快照",
+         "url": "https://www.coingecko.com/",
+         "date": "2026-11-17"
+        }
+       ],
+       "grade": "官方一手",
+       "crosscheck": {
+        "status": "已交叉核对",
+        "by": "Codex",
+        "source": "Strategy官网",
+        "url": "https://www.strategy.com/press/strategy-acquires-485-btc-and-repurchases-228-million-of-strc_11-16-2026",
+        "note": "官方稿确认485枚、均价68,887美元、持仓850,849枚；加密价格仅CoinGecko同批快照。"
+       }
+      }
+     ]
+    }
+   ],
+   "events": [
+    {
+     "time_bj": "2026-11-17 21:30",
+     "event": "美国10月零售销售",
+     "watch": "市场共识为环比+0.2%，看消费是否降温"
+    },
+    {
+     "time_bj": "2026-11-18 05:00",
+     "event": "英伟达三季度财报（美东2026-11-17盘后）",
+     "watch": "指引、毛利率，以及领导层和出口管制相关说明"
+    },
+    {
+     "time_bj": "2026-11-18 21:30",
+     "event": "美国营建许可与新屋开工",
+     "watch": "在成屋销售已偏低后，新开工是否同步走弱"
+    },
+    {
+     "time_bj": "2026-11-19 03:00",
+     "event": "美联储10月FOMC会议纪要",
+     "watch": "委员对利率路径和通胀的表述"
+    }
+   ],
+   "events_source": [
+    {
+     "outlet": "Schwab Network",
+     "title": "Week Ahead: Nvidia and Retail Earnings, FOMC Minutes",
+     "url": "https://schwabnetwork.beehiiv.com/p/week-ahead-nvidia-nvda-and-retail-earnings-fomc-minutes-on-tap"
+    },
+    {
+     "outlet": "CNBC",
+     "title": "Stock market news for Nov. 16, 2026",
+     "url": "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html"
+    }
+   ],
+   "footer": "以上仅作信息参考。"
+  },
+  "github_tools": [
+   {
+    "name": "NatronGitHub/Natron",
+    "url": "https://github.com/NatronGitHub/Natron",
+    "title": "Natron：免费开源的节点式视频合成软件，功能对标After Effects和Nuke",
+    "summary": "Natron是跨平台（Windows、macOS、Linux）的开源视频合成器，采用节点图工作流，功能接近Adobe After Effects、Foundry Nuke和Blackmagic Fusion。支持32位浮点线性色彩管线、OpenColorIO色彩管理和OFX插件。图形界面即可完成合成，不必先写代码。本条为动效类项目，星标5,722，按规则放宽到3,000。",
+    "features": [
+     "节点式合成，功能接近After Effects、Nuke和Fusion",
+     "32位浮点线性色彩管线和OpenColorIO色彩管理",
+     "支持OFX插件和Python脚本做批处理",
+     "提供Windows、macOS、Linux安装包"
+    ],
+    "scenarios": [
+     "把生成的镜头做抠像、叠加和调色",
+     "给动效视频加辉光、粒子或转场合成",
+     "用节点图把多层设计稿合到一条成片时间线"
+    ],
+    "for_you": "对你的用处：做完设计稿或生成镜头后，可在Natron里做节点式合成、调色和特效，作为After Effects的免费替代，再导出到成片。",
+    "setup": "免费开源（GPLv2），官网提供安装包，图形界面为主，不必写代码即可合成；Python只在需要批处理时才用。星标5,722，动效类已按放宽到3,000的规则注明。",
+    "stars": 5722,
+    "last_push": "2026-11-17",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "NatronGitHub/Natron"
+   },
+   {
+    "name": "opentoonz/opentoonz",
+    "url": "https://github.com/opentoonz/opentoonz",
+    "title": "OpenToonz：源自吉卜力生产线的开源二维动画软件",
+    "summary": "OpenToonz由DWANGO发布，基于Digital Video的Toonz，并经过吉卜力多年制作流程定制，是完整的二维动画制作软件。官方网站提供Windows、macOS、Linux安装包，也可从GitHub Releases获取旧版和每夜构建。本条为动效类项目，星标8,269，按规则放宽到3,000。",
+    "features": [
+     "完整的二维动画制作流程，包含摄影表、扫描、描线和上色",
+     "源自吉卜力定制的Toonz Studio Ghibli Version",
+     "官方提供Windows、macOS、Linux安装包",
+     "可用特效节点处理已绘制的镜头"
+    ],
+    "scenarios": [
+     "手绘或位图角色的逐帧动画和上色",
+     "把分镜或设计稿做成二维镜头",
+     "导出序列帧，再交给合成或剪辑软件"
+    ],
+    "for_you": "对你的用处：若要做二维角色或图形动画，可用OpenToonz完成描线、上色和摄影表，再把序列帧交给Natron、FFmpeg或你现有的剪辑流程。",
+    "setup": "免费开源，从opentoonz.github.io下载安装包即可用，图形界面操作为主，不必写代码。星标8,269，动效类已按放宽到3,000的规则注明。",
+    "stars": 8269,
+    "last_push": "2026-11-16",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "opentoonz/opentoonz"
+   },
+   {
+    "name": "paperjs/paper.js",
+    "url": "https://github.com/paperjs/paper.js",
+    "title": "Paper.js：用JavaScript在Canvas上写矢量图形和动画的脚本库",
+    "summary": "Paper.js是面向浏览器、Node.js和Electron的矢量图形脚本库，可用路径、布尔运算和帧循环写出精确的2D动画。通过npm安装，在webpack、Rollup、esbuild或Vite里导入后，对canvas调用paper.setup()即可开始。适合代码驱动的动效，而不是时间线剪辑。",
+    "features": [
+     "矢量路径、图层和布尔运算",
+     "view.onFrame帧循环，可按帧旋转、变形和插值",
+     "支持浏览器、Node.js和Electron，可用PaperScript或纯JavaScript",
+     "可用npm安装，并与常见打包器配合"
+    ],
+    "scenarios": [
+     "用代码画出logo变形、轨迹或几何动效",
+     "在网页里做可交互的矢量动画",
+     "导出或录制Canvas动画，再贴进视频"
+    ],
+    "for_you": "对你的用处：和Remotion或p5.js类似，可用代码精确控制矢量动效；做好后可录屏或导出帧，接到你的视频时间线里。",
+    "setup": "免费开源。运行npm install paper后，在项目里导入即可；需要写JavaScript，但示例短，几行就能做出旋转图形。",
+    "stars": 15204,
+    "last_push": "2026-11-17",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "paperjs/paper.js"
+   },
+   {
+    "name": "huggingface/diffusers",
+    "url": "https://github.com/huggingface/diffusers",
+    "title": "Diffusers：Hugging Face的开源扩散模型库，覆盖图像、视频和音频生成",
+    "summary": "Diffusers是Hugging Face的模块化扩散模型工具箱，提供可直接推理的pipeline，也支持训练和微调。文档写明可用于生成图像、音频甚至分子三维结构，并支持多种图像和视频生成模型。用Python调用，几行代码就能跑官方pipeline。",
+    "features": [
+     "预训练扩散模型的推理pipeline，几行代码即可出图或出视频",
+     "模块化组件，便于换调度器、微调或训练",
+     "覆盖图像、视频、音频等多种生成任务",
+     "与Hugging Face模型库和常见加速工具衔接"
+    ],
+    "scenarios": [
+     "用开源视频或图像模型批量出动态素材",
+     "把自有画风微调进现有扩散模型",
+     "在本地或云端搭一个文生视频或图生视频脚本"
+    ],
+    "for_you": "对你的用处：做动效若需要生成的动态背景或转场素材，可用Diffusers调用开源视频或图像模型，把结果再交给合成或Remotion时间线。",
+    "setup": "免费开源（Apache 2.0）。需Python环境，用pip安装diffusers及相关依赖；要写少量Python，并准备兼容的GPU才能顺畅跑视频模型。",
+    "stars": 34925,
+    "last_push": "2026-11-17",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "huggingface/diffusers"
+   },
+   {
+    "name": "godotengine/godot",
+    "url": "https://github.com/godotengine/godot",
+    "title": "Godot：免费开源的2D和3D引擎，可用动画系统做实时或预渲染动效",
+    "summary": "Godot是功能完整的跨平台2D和3D引擎，MIT许可，无版税。编辑器提供动画系统、场景、粒子和相机控制，作品可一键导出到Windows、macOS、Linux、Android、iOS和Web。官方网站提供编辑器与导出模板的二进制下载，也可用源码编译。",
+    "features": [
+     "统一的2D和3D编辑器，含AnimationPlayer等动画工具",
+     "一键导出到桌面、移动和Web",
+     "MIT许可，免费且无版税",
+     "可用GDScript或C#写交互和程序化动画"
+    ],
+    "scenarios": [
+     "在3D场景里做镜头运动、灯光和角色动画并导出视频",
+     "做可交互的网页或桌面动效演示",
+     "用粒子和骨骼动画生成循环背景"
+    ],
+    "for_you": "对你的用处：可用Godot的动画和场景系统做可交互动效或预渲染镜头，导出视频或实时演示，再和你现有的剪辑流程衔接。",
+    "setup": "免费开源（MIT）。从godotengine.org下载官方编辑器即可用，图形界面为主；要做复杂程序化动画才需要写GDScript或C#。",
+    "stars": 120280,
+    "last_push": "2026-11-17",
+    "fetched_at": "2026-11-17 07:45",
+    "grade": "官方一手",
+    "crosscheck": {
+     "status": "单一来源",
+     "note": "GitHub API一手数据"
+    },
+    "repo": "godotengine/godot"
+   }
+  ]
+ },
+ "updated_at": "2026-11-17T07:47:57+08:00",
+ "revised_at": "2026-11-17T07:48:20+08:00"
+}
